@@ -19,20 +19,20 @@ callout-appearance: simple
 `Funktionalität in Anwendungen realisieren`
 
 ::: {.content-visible when-profile="internal"}
-![](libs/_Images/Art-of-Programming.jpg)
+![](libs/_Images/xkcd-378_real_programmers.png)
 
 ::: {style="font-size: 1rem"}
-Urheber: Geek and Poke, Oliver Widder  
-<https://devhumor.com/media/the-art-of-programming>
+Quelle: xkcd
+<https://xkcd.com/378/>
 :::
 :::
 
 ::: {.content-hidden when-profile="internal"}
 ::: {style="font-size: 2rem"}
-Cartoon *The Art of Programming*  
-Geek and Code, Oliver Widder
+Cartoon *Real Programmers*  
+xkcd No. 378
 
-<https://devhumor.com/media/the-art-of-programming>
+<https://xkcd.com/378/>
 :::
 :::
 
@@ -43,11 +43,11 @@ Geek and Code, Oliver Widder
 
 ### Themenübersicht
 
-- Algorithmen, Pseudocode, Datenstrukturen
-- Software-Anforderungen
-- UML, Modellierung, Analyse- und Designverfahren
-- Werkzeuge und Entwicklungsumgebungen
-- Benutzeroberflächen: UI / UX, Usability
+- Modellierung und Analyse
+- Algorithmen und Programmierkonzepte
+- Objektorientierte Programmierung und Software-Design
+- Schnittstellen, APIs, Datenformate
+- Qualitätssicherung und Tests
 
 
 ## Zeitplan und Noten

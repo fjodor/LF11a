@@ -1,0 +1,72 @@
+---
+title: "Willkommen in LF11a!"
+title-slide-attributes:
+  data-background-color: "#D7E6F4"
+subtitle: " "
+format:
+  revealjs:
+    theme: simple
+execute:
+  echo: false
+  eval: true
+  freeze: auto
+  warning: false
+  message: false
+callout-appearance: simple
+---
+
+## Willkommen in LF11a!
+`Funktionalität in Anwendungen realisieren`
+
+::: {.content-visible when-profile="internal"}
+![](libs/_Images/Art-of-Programming.jpg)
+
+::: {style="font-size: 1rem"}
+Urheber: Geek and Poke, Oliver Widder  
+<https://devhumor.com/media/the-art-of-programming>
+:::
+:::
+
+::: {.content-hidden when-profile="internal"}
+::: {style="font-size: 2rem"}
+Cartoon *The Art of Programming*  
+Geek and Code, Oliver Widder
+
+<https://devhumor.com/media/the-art-of-programming>
+:::
+:::
+
+
+## Willkommen in LF11a!
+
+`Funktionalität in Anwendungen realisieren`
+
+### Themenübersicht
+
+- Algorithmen, Pseudocode, Datenstrukturen
+- Software-Anforderungen
+- UML, Modellierung, Analyse- und Designverfahren
+- Werkzeuge und Entwicklungsumgebungen
+- Benutzeroberflächen: UI / UX, Usability
+
+
+## Zeitplan und Noten
+
+- **Klassenarbeit** 
+- **Klassenarbeit** 
+- **SOL** 
+- **Praxisprojekt** vom bis 
+- Präsentation des Praxisprojekts am xxx: Noten für Mitarbeit und fachliche Leistung
+- Am xxx beginnt LF12a
+
+## <!-- -->
+
+![](libs/_Images/coffee.jpg){fig-align="center" width="50%"}
+
+::: {style="text-align: center; font-size: 1rem;"}
+[©torange.biz](https://torange.biz/cup-coffee-30851) CC-BY 4.0
+:::
+
+::: {style="color: green; text-align: center; font-size: 2.8rem"}
+**Viel Erfolg!**
+:::

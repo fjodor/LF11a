@@ -132,6 +132,91 @@ ENDE KLASSE
 - Nur über die Methoden `einzahlen()` und `abheben()` – die eine Validierung durchführen – kann der Wert verändert werden.
 
 
+## Vererbung: UML
+
+Eine Klasse (Kindklasse / Unterklasse) kann Attribute und Methoden einer anderen Klasse (Elternklasse / Oberklasse) übernehmen und erweitern.
+
+#### UML-Darstellung
+
+```
++----------------------------+
+|       Fahrzeug             |
+|----------------------------|
+| # marke: String            |
+| # baujahr: int             |
+|----------------------------|
+| + beschreibung(): String   |
++----------------------------+
+         ^            ^
+         |            |
+    erbt von      erbt von
+         |            |
++----------------+  +--------------------+
+|     PKW        |  |       LKW          |
+|----------------|  |--------------------|
+| - anzahlSitze  |  | - ladekapazitaet   |
+|----------------|  |--------------------|
+| + beschreibung |  | + beschreibung()   |
++----------------+  +--------------------+
+```
+
+
+## Vererbung: Pseudocode
+
+```
+KLASSE Fahrzeug                         // Elternklasse
+    GESCHUETZT marke: String
+    GESCHUETZT baujahr: Zahl
+
+    METHODE beschreibung(): String
+        RUECKGABE marke + " (" + baujahr + ")"
+    ENDE METHODE
+ENDE KLASSE
+```
+
+:::: columns
+::: column
+
+```
+KLASSE PKW ERBT VON Fahrzeug           // Kindklasse
+    PRIVAT anzahlSitze: Zahl
+
+    METHODE beschreibung(): String      // ueberschrieben
+        RUECKGABE marke + " (" + baujahr + "), " + anzahlSitze + " Sitze"
+    ENDE METHODE
+ENDE KLASSE
+```
+
+:::
+
+::: column
+
+```
+KLASSE LKW ERBT VON Fahrzeug           // Kindklasse
+    PRIVAT ladekapazitaet: Zahl         // in Tonnen
+
+    METHODE beschreibung(): String      // ueberschrieben
+        RUECKGABE marke + " (" + baujahr + "), " + ladekapazitaet + " t"
+    ENDE METHODE
+ENDE KLASSE
+```
+
+:::
+::::
+
+
+## Vererbung: Begriffe
+
+- **Oberklasse (Superklasse)** – Klasse, von der geerbt wird
+- **Unterklasse (Subklasse)** – Klasse, die erbt
+- **super** – Zugriff auf Methoden/Konstruktor der Oberklasse
+- **Ist-ein-Beziehung** – PKW ist ein Fahrzeug (Vererbung)
+- **Hat-ein-Beziehung** – Fahrzeug hat einen Motor (Komposition, keine Vererbung)
+
+- Durch Vererbung müssen gemeinsame Attribute (marke, baujahr) und Methoden nur einmal in der Elternklasse definiert werden.
+- Kindklassen fügen spezifische Attribute hinzu und können Methoden überschreiben.
+
+
 ## Polymorphie: Pseudocode
 
 #### Überschreiben (Overriding)
@@ -169,6 +254,32 @@ ENDE KLASSE
 
 :::
 ::::
+
+## Polymorphie: Beispiel
+
+```
+// tiere: Liste von Tier = [neuer Hund(), neue Katze()]
+FUER JEDES t IN tiere
+    ausgabe(t.sprechen())            // "Wau!", "Miau!"
+ENDE FUER
+```
+
+
+## Polymorphie: Pseudocode
+
+#### Überladen (Overloading)
+
+```
+KLASSE Rechner
+    METHODE addiere(a: Zahl, b: Zahl): Zahl
+        RUECKGABE a + b
+    ENDE METHODE
+
+    METHODE addiere(a: Zahl, b: Zahl, c: Zahl): Zahl   // überladene Methode
+        RUECKGABE a + b + c
+    ENDE METHODE
+ENDE KLASSE
+```
 
 
 ## Schnittstellen *(Interfaces)*

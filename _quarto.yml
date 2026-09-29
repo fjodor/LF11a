@@ -5,12 +5,12 @@ website:
   title: "LF11a"
   sidebar:
     style: "docked"
-    search: true
+    search: false
     contents:
       - href: index.qmd
         text: Home
-      - href: Willkommen_Struktur.qmd
-        text: Willkommen zu LF11a - Themen und Zeitplan
+      - href: 01_Willkommen_Struktur.qmd
+        text: 01 Willkommen zu LF11a - Themen und Zeitplan
 
 format:
   revealjs:

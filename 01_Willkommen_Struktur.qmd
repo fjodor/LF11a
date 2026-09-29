@@ -18,23 +18,9 @@ callout-appearance: simple
 ## Willkommen in LF11a!
 `Funktionalität in Anwendungen realisieren`
 
-::: {.content-visible when-profile="internal"}
 ![](libs/_Images/xkcd-378_real_programmers.png)
 
-::: {style="font-size: 1rem"}
-Quelle: xkcd
-<https://xkcd.com/378/>
-:::
-:::
-
-::: {.content-hidden when-profile="internal"}
-::: {style="font-size: 2rem"}
-Cartoon *Real Programmers*  
-xkcd No. 378
-
-<https://xkcd.com/378/>
-:::
-:::
+[Quelle: <https://xkcd.com/378/>]{style="font-size: 1.2rem"}
 
 
 ## Willkommen in LF11a!
@@ -56,7 +42,7 @@ xkcd No. 378
 - **Klassenarbeit** am 28.10.
 - **SOLs** am 9.10. und 23.10.
 - **Praxisprojekt** vom 28.10. bis 02.12.
-- **Präsentation** des Praxisprojekts am 2. Dezember: Noten für Mitarbeit und fachliche Leistung
+- **Präsentation** des Praxisprojekts am 2. Dezember: <br>Noten für Mitarbeit und fachliche Leistung
 - Am 3. Dezember beginnt **LF12a**
 
 ## <!-- -->

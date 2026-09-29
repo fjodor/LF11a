@@ -78,7 +78,7 @@ Grundpfeiler der objektorientierten Programmierung (OOP) verstehen und anwenden 
 
 ## Was ist eine Klasse?
 
-::: {.incremental style="font-size: 2rem"}
+::: {.incremental style="font-size: 2.1rem"}
 
 - Eine Klasse ist ein **Bauplan für die Erstellung von Objekten.**
 - Klasse definiert Attribute und Methoden eines Objekts
@@ -94,7 +94,7 @@ Lernkarten AP2 2025 Nr. 137
 
 ## Was ist ein Objekt?
 
-::: {.incremental style="font-size: 2rem"}
+::: {.incremental style="font-size: 2.1rem"}
 
 - eine konkrete Instanz einer Klasse
 - besitzt die Attribute und Methoden, die in seiner Klasse definiert sind
@@ -306,9 +306,9 @@ ENDE KLASSE
 
 ## Vererbung: UML
 
-:::: {style="font-size: 1.8rem"}
+:::: {style="font-size: 1.7rem"}
 
-```{.text style="overflow: hidden;"}
+```
                  +----------------------------+
                  |       Fahrzeug             |
                  |----------------------------|
@@ -517,7 +517,8 @@ ENDE KLASSE
 
 ```
 KLASSE Hund ERBT VON Tier
-    METHODE sprechen(): String       // ueberschreibt Tier.sprechen()
+    METHODE sprechen(): String
+    // überschreibt Tier.sprechen()
         RUECKGABE "Wau!"
     ENDE METHODE
 ENDE KLASSE
@@ -529,7 +530,8 @@ ENDE KLASSE
 
 ```
 KLASSE Katze ERBT VON Tier
-    METHODE sprechen(): String       // ueberschreibt Tier.sprechen()
+    METHODE sprechen(): String
+    // überschreibt Tier.sprechen()
         RUECKGABE "Miau!"
     ENDE METHODE
 ENDE KLASSE
@@ -544,7 +546,8 @@ ENDE KLASSE
 ```
 // tiere: Liste von Tier = [neuer Hund(), neue Katze()]
 FUER JEDES t IN tiere
-    ausgabe(t.sprechen())            // "Wau!", "Miau!"
+    ausgabe(t.sprechen())
+    // "Wau!", "Miau!"
 ENDE FUER
 ```
 
@@ -568,7 +571,9 @@ ENDE KLASSE
 
 ## Schnittstellen *(Interfaces)*
 
-**Definition:** Ein Interface (Schnittstelle) definiert eine Menge von Methodensignaturen, die eine implementierende Klasse umsetzen MUSS. Ein Interface enthält keinen eigenen Code (keine Implementierung).
+[**Definition:** Ein Interface (Schnittstelle) definiert eine Menge von Methodensignaturen, die eine implementierende Klasse umsetzen MUSS. Ein Interface enthält keinen eigenen Code (keine Implementierung).]{style="font-size: 2rem"}
+
+::::: {style="font-size: 1.6rem"}
 
 **Pseudocode:**
 
@@ -600,13 +605,15 @@ KLASSE Lieferschein IMPLEMENTIERT Druckbar
     ATTRIBUT artikelListe: Liste
 
     METHODE drucke()
-        ausgabe("Lieferschein mit " + laenge(artikelListe) + " Artikeln")
+        ausgabe("Lieferschein mit " + 
+        laenge(artikelListe) + " Artikeln")
     ENDE METHODE
 ENDE KLASSE
 ```
 
 :::
 ::::
+:::::
 
 
 ## Schnittstellen: UML-Notation
@@ -639,16 +646,22 @@ ENDE KLASSE
 
 ## Interface vs. abstrakte Klasse
 
+:::: {style="font-size: 1.7rem"}
+
 | Kriterium | Interface | Abstrakte Klasse |
 |-----------|-----------|-----------------|
 | Implementierung | Keine (nur Signaturen) | Kann Methoden mit Code enthalten |
 | Mehrfachvererbung | Ja (Klasse kann mehrere Interfaces implementieren) | Nein (nur eine Elternklasse) |
 | Attribute | Keine (nur Konstanten) | Ja |
 | Konstruktor | Nein | Ja |
-| Einsatz | Vertrag/Schnittstelle definieren | Gemeinsame Basis mit Teilimplementierung |
+| Einsatz | Vertrag / Schnittstelle definieren | Gemeinsame Basis mit Teilimplementierung |
+
+::::
 
 
 ## Interface vs. abstrakte Klasse: UML
+
+::: {style="font-size: 1.9rem"}
 
 ```
 +-------------------+       +-------------------+
@@ -661,6 +674,7 @@ ENDE KLASSE
 +-------------------+       | + speichere()     |  (implementiert)
         ^                   +-------------------+
         |                            ^
+        |                            |
   implementiert                   erbt von
         |                            |
 +-------------------+       +-------------------+
@@ -669,6 +683,8 @@ ENDE KLASSE
 | + drucke(): void  |       | + drucke(): void  |
 +-------------------+       +-------------------+
 ```
+
+:::
 
 
 ## Klassendiagramm

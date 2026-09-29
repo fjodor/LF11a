@@ -609,6 +609,34 @@ ENDE KLASSE
 ::::
 
 
+## Schnittstellen: UML-Notation
+
+::: {style="font-size: 1.8rem"}
+
+```
++-------------------+
+| <<interface>>     |
+| Druckbar          |
+|-------------------|
+|                   |
+|-------------------|
+| + drucke(): void  |
++-------------------+
+        ^
+        |
+  implementiert
+        |       
++-------------------+
+| Rechnung          |
+|-------------------|
+| + drucke(): void  |
++-------------------+
+```
+
+:::
+
+
+
 ## Interface vs. abstrakte Klasse
 
 | Kriterium | Interface | Abstrakte Klasse |

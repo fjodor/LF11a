@@ -306,37 +306,41 @@ ENDE KLASSE
 
 ## Vererbung: UML
 
-::: {style="font-size: 2rem"}
-
-Eine Klasse (Kindklasse / Unterklasse) kann Attribute und Methoden einer anderen Klasse (Elternklasse / Oberklasse) übernehmen und erweitern.
-
-:::
-
-::: {style="font-size: 1.8rem"}
+:::: {style="font-size: 1.8rem"}
 
 ```
-+----------------------------+
-|       Fahrzeug             |
-|----------------------------|
-| # marke: String            |
-| # baujahr: int             |
-|----------------------------|
-| + beschreibung(): String   |
-+----------------------------+
-         ^            ^
-         |            |
-    erbt von      erbt von
-         |            |
-+------------------+  +--------------------+
-|     PKW          |  |       LKW          |
-|------------------|  |--------------------|
-| - anzahlSitze    |  | - ladekapazitaet   |
-|------------------|  |--------------------|
-| + beschreibung() |  | + beschreibung()   |
-+------------------+  +--------------------+
+
+                 +----------------------------+
+                 |       Fahrzeug             |
+                 |----------------------------|
+                 | # marke: String            |
+                 | # baujahr: int             |
+                 |----------------------------|
+                 | + beschreibung(): String   |
+                 +----------------------------+
+                    ^                  ^
+                    |                  |
+                erbt von           erbt von
+                    |                  |
++--------------------------+  +----------------------------+
+|     PKW                  |  |       LKW                  |
+|--------------------------|  |----------------------------|
+| - anzahlSitze: int       |  | - ladekapazitaet: int      |
+|--------------------------|  |----------------------------|
+| + beschreibung(): String |  | + beschreibung(): String   |
++--------------------------+  +----------------------------+
 
 ```
+
+::: fragment
+
+- `PKW` und `LKW` erben von `Fahrzeug`
+- Beide übernehmen die `protected`-Attribute `marke` und `baujahr`
+- Beide erhalten jeweils ein eigenes privates Attribut (`anzahlSitze` bzw. `ladekapazität`)
+
 :::
+::::
+
 
 
 ## Vererbung: Pseudocode
@@ -390,7 +394,46 @@ ENDE KLASSE
 :::::
 
 
+## Vererbung: Python-Beispiel
+
+::::: {style="font-size: 2.2rem"}
+
+```python
+# Elternklasse = Basisklasse = Oberklasse
+
+class Haustier:
+    def __init__(self, name):
+        self.name = name
+        self._energie = 100  # Unterstrich: 
+        # Konvention für geschütztes Attribut
+
+    def spielen(self):
+      ...
+```
+
+```python
+# Kindklasse = abgeleitete Klasse = Unterklasse
+
+class Hund(Haustier):
+    pass    # erbt alles unverändert
+```
+
+::: fragment
+
+```python
+# Anwendung
+
+bello = Hund("Bello")
+bello.spielen()   # nutzt die geerbte Methode
+```
+
+:::
+:::::
+
+
 ## Vererbung: Begriffe
+
+::: {style="font-size: 2rem"}
 
 - **Oberklasse (Superklasse)** – Klasse, von der geerbt wird
 - **Unterklasse (Subklasse)** – Klasse, die erbt
@@ -400,6 +443,24 @@ ENDE KLASSE
 
 - Durch Vererbung müssen gemeinsame Attribute (marke, baujahr) und Methoden nur einmal in der Elternklasse definiert werden.
 - Kindklassen fügen spezifische Attribute hinzu und können Methoden überschreiben.
+
+:::
+
+
+## Vererbung: Lernkarte
+
+::: {.incremental style="font-size: 1.8rem"}
+
+- Schlüsselprinzip: ermöglicht, neue Klassen aus bereits existierenden Klassen zu erzeugen
+- eine Klasse *(Kindklasse)* kann Attribute und Methoden einer anderen Klasse *(Elternklasse)* übernehmen
+- fördert **Wiederverwendbarkeit** und **Hierarchiebildung**; vermeidet **Redundanz**
+- **Kindklasse** heißt auch **abgeleitete Klasse** oder **Unterklasse**
+- **Elternklasse** heißt auch **Oberklasse, Basisklasse** oder **Superklasse**
+:::
+
+::: notes
+Lernkarten AP2 2025 Nr. 133
+:::
 
 
 ## Polymorphie: Pseudocode
@@ -439,6 +500,7 @@ ENDE KLASSE
 
 :::
 ::::
+
 
 ## Polymorphie: Beispiel
 

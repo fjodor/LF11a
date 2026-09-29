@@ -76,7 +76,7 @@ Grundpfeiler der objektorientierten Programmierung (OOP) verstehen und anwenden 
 - Pseudocode mit OOP-Konzepten
 
 
-## OOP: Was ist eine Klasse?
+## Was ist eine Klasse?
 
 ::: {.incremental style="font-size: 2rem"}
 
@@ -92,7 +92,7 @@ Lernkarten AP2 2025 Nr. 137
 :::
 
 
-## OOP: Was ist ein Objekt?
+## Was ist ein Objekt?
 
 ::: {.incremental style="font-size: 2rem"}
 
@@ -117,7 +117,7 @@ Lernkarten AP2 2025 Nr. 140
 - Interfaces
 
 
-## OOP: Kapselung *(Encapsulation)*
+## Kapselung *(Encapsulation)*
 
 ::: {.incremental style="font-size: 1.9rem"}
 
@@ -196,7 +196,7 @@ Lernkarten AP2 2025 Nr. 135
 :::
 
 
-## OOP: Kapselung - Zugriffsmodifikatoren
+## Kapselung - Zugriffsmodifikatoren
 
 ::::: {style="font-size: 1.8rem"}
 Zugriffsmodifikatoren bestimmen, wo auf Klassen, Methoden und Variablen zugegriffen werden kann.
@@ -229,7 +229,7 @@ Lernkarte AP2 2025 Nr. 142
 :::
 
 
-## OOP: Kapselung - Zugriffsmodifikatoren
+## Kapselung - Zugriffsmodifikatoren
 
 ::::: {style="font-size: 1.8rem"}
 
@@ -462,6 +462,44 @@ Lernkarten AP2 2025 Nr. 133
 :::
 
 
+## OOP: Polymorphie ("Vielgestaltigkeit")
+
+:::: {style="font-size: 1.8rem"}
+
+**Definition:** Polymorphie (Vielgestaltigkeit) bedeutet, dass Objekte verschiedener Klassen über eine gemeinsame Schnittstelle angesprochen werden können und sich **unterschiedlich verhalten**.
+
+::: incremental
+
+- Wie wird das unterschiedliche Verhalten der Objekte ausgelöst?  
+  durch den **Datentyp** oder die **Klasse**
+- Klassen teilen Methoden, aber die **Implementierungen** der Methoden können variieren
+- Wann wird entschieden, welche Implementierung ausgeführt wird? Zur Laufzeit! Tatsächlicher Objekttyp entscheidet
+- verbessert **Flexibilität**
+- erhöht **Wiederverwendbarkeit von Code**
+- erleichtert **standardisierte Schnittstellen**
+
+:::
+::::
+
+::: notes
+Lernkarten AP2 2025 Nr. 141
+:::
+
+
+## Polymorphie: Zwei Arten
+
+<br>
+
+::: {style="font-size: 1.8rem"}
+
+| Art | Beschreibung | Beispiel |
+|:---|:---------|:-----|
+| Überladen (*Overloading*) | Gleicher Methodenname, verschiedene Parameter | `berechne(a)` und `berechne(a, b)` |
+| Überschreiben (*Overriding*) | Kindklasse überschreibt Methode der Elternklasse | `Hund.sprechen()` statt `Tier.sprechen()` |
+
+:::
+
+
 ## Polymorphie: Pseudocode
 
 #### Überschreiben (Overriding)
@@ -603,6 +641,138 @@ ENDE KLASSE
 | + drucke(): void  |       | + drucke(): void  |
 +-------------------+       +-------------------+
 ```
+
+
+## Klassendiagramm
+
+:::: columns
+::: column
+
+![](libs/_Images/Klassendia-1_Klasse.png)
+![](libs/_Images/Klassendia-2_Klasse-Attribute-Methoden.png)
+
+:::
+
+::: column
+
+![](libs/_Images/Klassendia-3_Interface.png)
+
+:::
+::::
+
+![](libs/_Images/Klassendia-4_Syntax.png)
+
+::: notes
+Quelle: Belegsatz zu AP2, Sommer 2026
+:::
+
+
+## Klassendiagramm: Beispiel
+
+#### Vererbung & Polymorphie: UML
+
+::: {style="font-size: 1.8rem"}
+
+```
++----------------------------+
+|         Haustier           |
+|----------------------------|
+| - name : String            |
+| - energie : int            |
+|----------------------------|
+| + spielen() : void         |
+| + ausruhen() : void        |
++----------------------------+
+         ^            ^
+         |            |
+         |            |
++----------------+  +----------------+
+|      Hund      |  |     Katze      |
+|----------------|  |----------------|
+| + spielen()    |  | + spielen()    |
+| + ausruhen()   |  | + ausruhen()   |
++----------------+  +----------------+
+```
+
+:::
+
+
+## Klassendiagramm: Beziehungen
+
+:::: columns
+::: column
+
+![](libs/_Images/Klassendia-5_Beziehungen.png)
+
+:::
+
+::: {.column style="font-size: 1.7rem"}
+
+- Vererbung: Pfeil zeigt auf Oberklasse
+- Assoziation: Beziehung zwischen Klassen; kann gerichtet oder ungerichtet sein
+  + Beispiele ungerichtet: Lehrer - Schüler; Produkt - Kategorie
+  + Beispiele gerichtet: Email -> Empfänger; Rechnung -> Kunde
+- Aggregation und Komposition: Beziehung Teil - Ganzes
+  + Aggregation: Teil kann ohne das Ganze existieren, z. B. Schüler (Teil) - Unterricht
+  + Komposition: Teile existenziell vom Ganzen abhängig, z. B. Raum - Haus
+:::
+::::
+
+
+## Klassendiagramm: Kardinalitäten
+
+::: {style="font-size: 1.8rem"}
+
+**Definition Kardinalitäten = Multiplizitäten:** Wie viele Instanzen einer Klasse können mit einer Instanz einer anderen Klasse in Beziehung stehen?
+
+Schreibweise | Bedeutung | Erklärung
+:----|:----|:-----------
+`0..*` oder `*` | Null bis beliebig viele | Die Beziehung ist optional. Es können keine oder unendlich viele Objekte verknüpft sein.
+`1..*` | Eins bis beliebig viele | Mindestens ein Objekt muss existieren (Pflichtbeziehung).
+`0..1` | Null oder eins | Optional, aber maximal ein Objekt (z. B. ein Profil für einen Nutzer).
+`1` oder `1..1` | Genau eins | Exakt ein Objekt muss verknüpft sein
+`n..m`, z. B. `2..5` | Bestimmte Spanne | Mindestens n und maximal m Objekte 
+
+:::
+
+
+## Komposition, Aggregation
+
+:::: columns
+::: column
+
+![](libs/_Images/Komposition_Aggregation.webp)
+
+[Quelle: Kakashi-Madara, Wikimedia Commons]{style="font-size: 1.2rem"}
+
+:::
+
+::: {.column .fragment style="font-size: 1.9rem"}
+- Raum kann nicht ohne Gebäude existieren: starke Beziehung, **Komposition**
+- Student kann ohne Vorlesung existieren: lose Beziehung, **Aggregation**
+- *Kardinalitäten beachten*
+:::
+::::
+
+
+## Klassendiagramm: Erläuterung
+
+:::: {style="font-size: 1.8rem"}
+
+Das **Klassendiagramm** zeigt Klassen, ihre Attribute und Methoden sowie Beziehungen zwischen Klassen.
+
+::: incremental 
+- **Klassen und Objekte:** Welche Klassen gibt es und welche Objekte repräsentieren sie?
+- **Attribute und Operationen:** Welche Eigenschaften und Verhaltensweisen haben die Klassen?
+- **Beziehungen:** Wie sind die Klassen miteinander verknüpft (z. B. durch Assoziationen und Vererbungen)?
+- **Sichtbarkeit:** Welche Attribute und Operationen sind öffentlich, privat oder geschützt?
+- **Kardinalität:** Wie viele Instanzen einer Klasse können mit einer anderen in Beziehung stehen?
+:::
+::::
+
+::: notes
+Lernkarten AP2 2025 Nr. 131
+:::
 
 
 ## <!-- -->

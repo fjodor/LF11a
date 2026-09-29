@@ -18,6 +18,53 @@ execute:
 callout-appearance: simple
 ---
 
+## OOP: Blick in die Geschichte ...
+
+:::: columns
+::: column
+
+![](libs/_Images/Oslo-Hafen-M%C3%B6we-Thomas-Woodtli-Wikim-C.jpg)
+
+[[Quelle: Thomas Woodtli, Wikimedia Commons, CC-BY-SA-2.0](https://creativecommons.org/licenses/by-sa/2.0/deed.en)]{style="font-size: 1.4rem"}
+
+:::
+
+::: {.column .incremental style="font-size: 1.7rem"}
+- 1960er: **Ole-Johan Dahl** und **Kristen Nygaard** am Norwegian Computing Center in Oslo simulieren Schiffsbewegungen im Osloer Hafen
+- Damalige prozedurale Programiersprachen (Algol, Fortran): verfilzter Code; -> **Simula** (OOP)
+- 1970er: **Alan Kay** wollte interaktives Computersystem bauen -> Simula -> **Smalltalk** (OOP)
+:::
+::::
+
+
+## Geschichte: Schiffe
+
+:::: columns
+::: column
+
+![](libs/_Images/Kolumbus-Santa-Maria_Edward-H-Hart_Wikim-C.jpg)
+
+[Santa Maria, Schiff von Kolumbus 1492, Wikimedia Commons, vermutlich von Edward H. Hart, public domain]{style="font-size: 1.2rem"}
+
+:::
+
+::: column
+
+![](libs/_Images/Mayflower_Wikim-C.jpg)
+
+[Mayflower, 1620, Wikimedia Commons, CC0 1.0 public domain]{style="font-size: 1.2rem"}
+
+:::
+::::
+
+
+## Geschichte: Schiffe
+
+![](libs/_Images/RMS_Titanic_3_Wikim-C.webp)
+
+[RMS Titanic 1912, Francis Godolphin Osbourne Stuart gest. 1923, Wikimedia Commons, public domain]{style="font-size: 1.2rem"}
+
+
 ## Ziele
 
 Grundpfeiler der objektorientierten Programmierung (OOP) verstehen und anwenden können:
@@ -26,7 +73,40 @@ Grundpfeiler der objektorientierten Programmierung (OOP) verstehen und anwenden 
 - Fehlerbehandlung
 - UML-Notation
 - Zugriffsmodifikatoren
-- Einführung in Pseudocode mit OOP-Konzepten
+- Pseudocode mit OOP-Konzepten
+
+
+## OOP: Was ist eine Klasse?
+
+::: {.incremental style="font-size: 2rem"}
+
+- Eine Klasse ist ein **Bauplan für die Erstellung von Objekten.**
+- Klasse definiert Attribute und Methoden eines Objekts
+  + Attribute: Eigenschaften, Variablen; repräsentieren den **Zustand**
+  + Methoden: Funktionen; repräsentieren das **Verhalten**
+- Klasse ermöglicht Erstellung **mehrerer Objekte mit ähnlichen Merkmalen und Verhaltensweisen**
+:::
+
+::: notes
+Lernkarten AP2 2025 Nr. 137
+:::
+
+
+## OOP: Was ist ein Objekt?
+
+::: {.incremental style="font-size: 2rem"}
+
+- eine konkrete Instanz einer Klasse
+- besitzt die Attribute und Methoden, die in seiner Klasse definiert sind
+- **Jedes Objekt hat seinen eigenen Satz von *Werten* für die Attribute**.
+- Attribute -> Zustand des Objekts
+- Methoden -> Verhalten des Objekts, das auf diesem Zustand operiert
+- **Ein Objekt ist eine Verkapselung von Daten (Zustand) und den dazu gehörenden Operationen (Verhalten).**
+:::
+
+::: notes
+Lernkarten AP2 2025 Nr. 140
+:::
 
 
 ## OOP: Grundideen
@@ -37,46 +117,156 @@ Grundpfeiler der objektorientierten Programmierung (OOP) verstehen und anwenden 
 - Interfaces
 
 
-## OOP: Grundideen
+## OOP: Kapselung *(Encapsulation)*
 
-#### Kapselung *(Encapsulation)*
+::: {.incremental style="font-size: 1.9rem"}
 
 - interne Daten eines Objekts werden vor direktem Zugriff geschützt
 - Zugriff erfolgt über definierte Methoden (Getter/Setter)
-- Zugriffsmodifikatoren (public, private, protected) steuern die Sichtbarkeit.
+- Zugriffsmodifikatoren steuern die Sichtbarkeit:  
+  *public, private, protected, package*
+- schafft **Datenintegrität**: Manipulation nur auf sichere, kontrollierte Weise
+- verbessert **Wartbarkeit**: Änderungen an der internen Implementierung der Klasse beeinflussen nicht die Programmteile, die die Klasse verwenden
+:::
 
-#### Vererbung
-
-- eine Klasse (Kindklasse) kann Attribute und Methoden einer anderen Klasse (Elternklasse) übernehmen
-- fördert Wiederverwendbarkeit und Hierarchiebildung
-
-#### Polymorphie ("Vielgestaltigkeit")
-
-- Objekte verschiedener Klassen können über eine gemeinsame Schnittstelle angesprochen werden
-- Varianten: Überladen (Overloading) / Überschreiben (Overriding)
-
-#### Schnittstellen *(Interfaces)*
-
-- definiert, **welche** Methoden eine Klasse implementieren muss
-- lässt offen, **wie**
-- ermöglichen lose Kopplung und Austauschbarkeit von Komponenten
+::: notes
+Lernkarten AP2 2025 Nr. 134
+:::
 
 
-## Kapselung
+## OOP vs. prozedurale Programmierung
 
-#### Definition
+:::: {.columns style="font-size: 1.9rem"}
+::: {.column width="40%"}
 
-- interne Daten eines Objekts werden vor direktem Zugriff von außen geschützt werden
-- Zugriff erfolgt ausschließlich über definierte Methoden (Getter/Setter)
+### OOP
 
-#### Zugriffsmodifikatoren
+- Daten und Funktionen werden zu Objekten **zusammengefasst**
+- Objekt kann Attribute (Daten) und Methoden (Funktionen) enthalten
 
-| Modifikator | Sichtbarkeit | UML-Symbol |
-|-------------|-------------|------------|
-| public | Überall sichtbar | + |
-| private | Nur innerhalb der eigenen Klasse | - |
-| protected | Eigene Klasse + Unterklassen | # |
-| package/internal | Innerhalb des Pakets/Moduls | ~ |
+:::
+
+::: {.column width="60%"}
+
+### Prozedurale Programmierung
+
+::: fragment
+
+- Programm führt eine Reihe von Aufgaben aus: **Prozeduren**
+- Prozeduren operieren auf **Daten**
+- Daten sind **getrennt** von Prozeduren; Prozeduren **bearbeiten** die Daten
+
+:::
+:::
+::::
+
+::: notes
+Lernkarten AP2 2025 Nr. 136
+:::
+
+
+## Prozedur vs. Funktion
+
+:::: {.columns style="font-size: 1.9rem"}
+::: {.column width="45%"}
+
+### Funktion
+
+- Codeblock, der eine spezifische Aufgabe ausführt
+- **liefert in der Regel einen Wert zurück**
+
+:::
+
+::: {.column width="55%"}
+
+### Prozedur
+
+::: fragment
+
+- Codeblock, der eine spezifische Aufgabe ausführt
+- **liefert in der Regel *keinen* Wert zurück**
+- Prozedur führt Aufgabe aus und kehrt dann zur aufrufenden Stelle im Code zurück
+
+:::
+:::
+::::
+
+::: notes
+Lernkarten AP2 2025 Nr. 135
+:::
+
+
+## OOP: Kapselung - Zugriffsmodifikatoren
+
+::::: {style="font-size: 1.8rem"}
+Zugriffsmodifikatoren bestimmen, wo auf Klassen, Methoden und Variablen zugegriffen werden kann.
+
+:::: columns
+::: {.column width="40%"}
+
+Zugriffs-<br>modifikator | Symbol |
+--------------------|----------|
+`public` <br> &nbsp; | + |
+`private` <br> &nbsp; | - |
+`protected` <br> &nbsp; | # |
+`package` | ~ |
+:::
+
+::: {.column .fragment width="60%"}
+
+| Bedeutung <br> &nbsp; |
+|-----------|
+| Zugriff **überall** erlaubt, sowohl innerhalb als auch außerhalb der Klasse
+| Zugriff **nur innerhalb der Klasse** erlaubt, in der sie definiert sind
+| Zugriff nur innerhalb der Klasse, des Pakets und von abgeleiteten Klassen erlaubt
+| Zugriff ist innerhalb der Klasse und in allen Klassen desselben Pakets erlaubt
+:::
+::::
+:::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 142
+:::
+
+
+## OOP: Kapselung - Zugriffsmodifikatoren
+
+::::: {style="font-size: 1.8rem"}
+
+#### IHK-Standard in Prüfungen
+
+Zugriffs-<br>modifikator | Symbol | Bedeutung | Verwendung
+:-----|:---:|:-----------|:---
+`private` | - | Zugriff **nur innerhalb der Klasse** erlaubt, in der sie definiert sind | Attribute
+`public` | + | Zugriff **überall** erlaubt, sowohl innerhalb als auch außerhalb der Klasse | Operation / Methode
+
+#### UML-Beispiel
+
+:::: columns
+::: {.column .fragment width="40%"}
+
+```
++------------------------------+
+|          Konto               |
+|------------------------------|
+| - kontostand: double         |
+|------------------------------|
+| + getKontostand(): double    |
+| + einzahlen(betrag: double)  |
+| + abheben(betrag: double)    |
++------------------------------+
+```
+
+:::
+
+::: {.column .fragment width="60%"}
+
+- Niemand darf direkt auf den Kontostand (`private`) zugreifen und ihn verändern
+- Veränderung nur über die `public`-Methoden `einzahlen()` und `abheben()`, die eine **Validierung** durchführen
+
+:::
+::::
+:::::
 
 
 ## Kapselung: Pseudocode

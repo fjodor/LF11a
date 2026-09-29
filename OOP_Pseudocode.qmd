@@ -273,7 +273,7 @@ Zugriffs-<br>modifikator | Symbol | Bedeutung | Verwendung
 
 ::: {style="font-size: 1.6rem"}
 
-```
+```pseudo
 KLASSE Konto
     PRIVAT kontostand: Zahl
 
@@ -304,29 +304,15 @@ ENDE KLASSE
 :::
 
 
-## Kapselung: UML
-
-```
-+------------------------------+
-|          Konto               |
-|------------------------------|
-| - kontostand: double         |
-|------------------------------|
-| + getKontostand(): double    |
-| + einzahlen(betrag: double)  |
-| + abheben(betrag: double)    |
-+------------------------------+
-```
-
-- Durch Kapselung wird sichergestellt, dass der Kontostand nicht direkt auf einen negativen Wert gesetzt werden kann.
-- Nur über die Methoden `einzahlen()` und `abheben()` – die eine Validierung durchführen – kann der Wert verändert werden.
-
-
 ## Vererbung: UML
+
+::: {style="font-size: 2rem"}
 
 Eine Klasse (Kindklasse / Unterklasse) kann Attribute und Methoden einer anderen Klasse (Elternklasse / Oberklasse) übernehmen und erweitern.
 
-#### UML-Darstellung
+:::
+
+::: {style="font-size: 1.8rem"}
 
 ```
 +----------------------------+
@@ -341,19 +327,23 @@ Eine Klasse (Kindklasse / Unterklasse) kann Attribute und Methoden einer anderen
          |            |
     erbt von      erbt von
          |            |
-+----------------+  +--------------------+
-|     PKW        |  |       LKW          |
-|----------------|  |--------------------|
-| - anzahlSitze  |  | - ladekapazitaet   |
-|----------------|  |--------------------|
-| + beschreibung |  | + beschreibung()   |
-+----------------+  +--------------------+
++------------------+  +--------------------+
+|     PKW          |  |       LKW          |
+|------------------|  |--------------------|
+| - anzahlSitze    |  | - ladekapazitaet   |
+|------------------|  |--------------------|
+| + beschreibung() |  | + beschreibung()   |
++------------------+  +--------------------+
+
 ```
+:::
 
 
 ## Vererbung: Pseudocode
 
-```
+::::: {style="font-size: 1.7rem"}
+
+```pseudo
 KLASSE Fahrzeug                         // Elternklasse
     GESCHUETZT marke: String
     GESCHUETZT baujahr: Zahl
@@ -364,35 +354,40 @@ KLASSE Fahrzeug                         // Elternklasse
 ENDE KLASSE
 ```
 
-:::: columns
-::: column
+<br>
 
-```
-KLASSE PKW ERBT VON Fahrzeug           // Kindklasse
+:::: columns
+::: {.column .fragment}
+
+```pseudo
+KLASSE PKW ERBT VON Fahrzeug        // Kindklasse
     PRIVAT anzahlSitze: Zahl
 
-    METHODE beschreibung(): String      // ueberschrieben
-        RUECKGABE marke + " (" + baujahr + "), " + anzahlSitze + " Sitze"
+    METHODE beschreibung(): String  // überschrieben
+        RUECKGABE marke + " (" + baujahr + "), 
+        " + anzahlSitze + " Sitze"
     ENDE METHODE
 ENDE KLASSE
 ```
 
 :::
 
-::: column
+::: {.column .fragment}
 
-```
-KLASSE LKW ERBT VON Fahrzeug           // Kindklasse
-    PRIVAT ladekapazitaet: Zahl         // in Tonnen
+```pseudo
+KLASSE LKW ERBT VON Fahrzeug        // Kindklasse
+    PRIVAT ladekapazitaet: Zahl     // in Tonnen
 
-    METHODE beschreibung(): String      // ueberschrieben
-        RUECKGABE marke + " (" + baujahr + "), " + ladekapazitaet + " t"
+    METHODE beschreibung(): String  // überschrieben
+        RUECKGABE marke + " (" + baujahr + "), 
+        " + ladekapazitaet + " t"
     ENDE METHODE
 ENDE KLASSE
 ```
 
 :::
 ::::
+:::::
 
 
 ## Vererbung: Begriffe

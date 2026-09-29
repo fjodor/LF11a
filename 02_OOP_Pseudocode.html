@@ -247,9 +247,9 @@
 <li>Pseudocode mit OOP-Konzepten</li>
 </ul>
 </section>
-<section id="oop-was-ist-eine-klasse" class="slide level2">
-<h2>OOP: Was ist eine Klasse?</h2>
-<div style="font-size: 2rem">
+<section id="was-ist-eine-klasse" class="slide level2">
+<h2>Was ist eine Klasse?</h2>
+<div style="font-size: 2.1rem">
 <ul>
 <li class="fragment">Eine Klasse ist ein <strong>Bauplan für die Erstellung von Objekten.</strong></li>
 <li class="fragment">Klasse definiert Attribute und Methoden eines Objekts
@@ -274,9 +274,9 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="oop-was-ist-ein-objekt" class="slide level2">
-<h2>OOP: Was ist ein Objekt?</h2>
-<div style="font-size: 2rem">
+<section id="was-ist-ein-objekt" class="slide level2">
+<h2>Was ist ein Objekt?</h2>
+<div style="font-size: 2.1rem">
 <ul>
 <li class="fragment">eine konkrete Instanz einer Klasse</li>
 <li class="fragment">besitzt die Attribute und Methoden, die in seiner Klasse definiert sind</li>
@@ -309,8 +309,8 @@
 <li>Interfaces</li>
 </ul>
 </section>
-<section id="oop-kapselung-encapsulation" class="slide level2">
-<h2>OOP: Kapselung <em>(Encapsulation)</em></h2>
+<section id="kapselung-encapsulation" class="slide level2">
+<h2>Kapselung <em>(Encapsulation)</em></h2>
 <div style="font-size: 1.9rem">
 <ul>
 <li class="fragment">interne Daten eines Objekts werden vor direktem Zugriff geschützt</li>
@@ -401,8 +401,8 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="oop-kapselung---zugriffsmodifikatoren" class="slide level2">
-<h2>OOP: Kapselung - Zugriffsmodifikatoren</h2>
+<section id="kapselung---zugriffsmodifikatoren" class="slide level2">
+<h2>Kapselung - Zugriffsmodifikatoren</h2>
 <div style="font-size: 1.8rem">
 <p>Zugriffsmodifikatoren bestimmen, wo auf Klassen, Methoden und Variablen zugegriffen werden kann.</p>
 <div class="columns">
@@ -474,8 +474,8 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="oop-kapselung---zugriffsmodifikatoren-1" class="slide level2">
-<h2>OOP: Kapselung - Zugriffsmodifikatoren</h2>
+<section id="kapselung---zugriffsmodifikatoren-1" class="slide level2">
+<h2>Kapselung - Zugriffsmodifikatoren</h2>
 <div style="font-size: 1.8rem">
 <h4 id="ihk-standard-in-prüfungen">IHK-Standard in Prüfungen</h4>
 <table class="caption-top">
@@ -560,26 +560,27 @@
 </section>
 <section id="vererbung-uml" class="slide level2">
 <h2>Vererbung: UML</h2>
-<div style="font-size: 1.8rem">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3" style="overflow: hidden;"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb3-1"><a aria-label="1"></a>                 +----------------------------+</span>
-<span id="cb3-2"><a aria-label="2"></a>                 |       Fahrzeug             |</span>
-<span id="cb3-3"><a aria-label="3"></a>                 |----------------------------|</span>
-<span id="cb3-4"><a aria-label="4"></a>                 | # marke: String            |</span>
-<span id="cb3-5"><a aria-label="5"></a>                 | # baujahr: int             |</span>
-<span id="cb3-6"><a aria-label="6"></a>                 |----------------------------|</span>
-<span id="cb3-7"><a aria-label="7"></a>                 | + beschreibung(): String   |</span>
-<span id="cb3-8"><a aria-label="8"></a>                 +----------------------------+</span>
-<span id="cb3-9"><a aria-label="9"></a>                    ^                  ^</span>
-<span id="cb3-10"><a aria-label="10"></a>                    |                  |</span>
-<span id="cb3-11"><a aria-label="11"></a>                erbt von           erbt von</span>
-<span id="cb3-12"><a aria-label="12"></a>                    |                  |</span>
-<span id="cb3-13"><a aria-label="13"></a>+--------------------------+  +----------------------------+</span>
-<span id="cb3-14"><a aria-label="14"></a>|     PKW                  |  |       LKW                  |</span>
-<span id="cb3-15"><a aria-label="15"></a>|--------------------------|  |----------------------------|</span>
-<span id="cb3-16"><a aria-label="16"></a>| - anzahlSitze: int       |  | - ladekapazitaet: int      |</span>
-<span id="cb3-17"><a aria-label="17"></a>|--------------------------|  |----------------------------|</span>
-<span id="cb3-18"><a aria-label="18"></a>| + beschreibung(): String |  | + beschreibung(): String   |</span>
-<span id="cb3-19"><a aria-label="19"></a>+--------------------------+  +----------------------------+</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div style="font-size: 1.7rem">
+<pre><code>                 +----------------------------+
+                 |       Fahrzeug             |
+                 |----------------------------|
+                 | # marke: String            |
+                 | # baujahr: int             |
+                 |----------------------------|
+                 | + beschreibung(): String   |
+                 +----------------------------+
+                    ^                  ^
+                    |                  |
+                erbt von           erbt von
+                    |                  |
++--------------------------+  +----------------------------+
+|     PKW                  |  |       LKW                  |
+|--------------------------|  |----------------------------|
+| - anzahlSitze: int       |  | - ladekapazitaet: int      |
+|--------------------------|  |----------------------------|
+| + beschreibung(): String |  | + beschreibung(): String   |
++--------------------------+  +----------------------------+
+</code></pre>
 <div class="fragment">
 <ul>
 <li><code>PKW</code> und <code>LKW</code> erben von <code>Fahrzeug</code></li>
@@ -687,6 +688,66 @@
           display:block!important;
       }</style></aside>
 </section>
+<section id="oop-polymorphie-vielgestaltigkeit" class="slide level2">
+<h2>OOP: Polymorphie (“Vielgestaltigkeit”)</h2>
+<div style="font-size: 1.8rem">
+<p><strong>Definition:</strong> Polymorphie (Vielgestaltigkeit) bedeutet, dass Objekte verschiedener Klassen über eine gemeinsame Schnittstelle angesprochen werden können und sich <strong>unterschiedlich verhalten</strong>.</p>
+<ul>
+<li class="fragment">Wie wird das unterschiedliche Verhalten der Objekte ausgelöst?<br>
+durch den <strong>Datentyp</strong> oder die <strong>Klasse</strong></li>
+<li class="fragment">Klassen teilen Methoden, aber die <strong>Implementierungen</strong> der Methoden können variieren</li>
+<li class="fragment">Wann wird entschieden, welche Implementierung ausgeführt wird? Zur Laufzeit! Tatsächlicher Objekttyp entscheidet</li>
+<li class="fragment">verbessert <strong>Flexibilität</strong></li>
+<li class="fragment">erhöht <strong>Wiederverwendbarkeit von Code</strong></li>
+<li class="fragment">erleichtert <strong>standardisierte Schnittstellen</strong></li>
+</ul>
+</div>
+<aside class="notes">
+<p>Lernkarten AP2 2025 Nr. 141</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="polymorphie-zwei-arten" class="slide level2">
+<h2>Polymorphie: Zwei Arten</h2>
+<p><br></p>
+<div style="font-size: 1.8rem">
+<table class="caption-top">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 50%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Art</th>
+<th style="text-align: left;">Beschreibung</th>
+<th style="text-align: left;">Beispiel</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Überladen (<em>Overloading</em>)</td>
+<td style="text-align: left;">Gleicher Methodenname, verschiedene Parameter</td>
+<td style="text-align: left;"><code>berechne(a)</code> und <code>berechne(a, b)</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Überschreiben (<em>Overriding</em>)</td>
+<td style="text-align: left;">Kindklasse überschreibt Methode der Elternklasse</td>
+<td style="text-align: left;"><code>Hund.sprechen()</code> statt <code>Tier.sprechen()</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
 <section id="polymorphie-pseudocode" class="slide level2">
 <h2>Polymorphie: Pseudocode</h2>
 <h4 id="überschreiben-overriding">Überschreiben (Overriding)</h4>
@@ -698,13 +759,15 @@ ENDE KLASSE</code></pre>
 <div class="columns">
 <div class="column">
 <pre><code>KLASSE Hund ERBT VON Tier
-    METHODE sprechen(): String       // ueberschreibt Tier.sprechen()
+    METHODE sprechen(): String
+    // überschreibt Tier.sprechen()
         RUECKGABE "Wau!"
     ENDE METHODE
 ENDE KLASSE</code></pre>
 </div><div class="column">
 <pre><code>KLASSE Katze ERBT VON Tier
-    METHODE sprechen(): String       // ueberschreibt Tier.sprechen()
+    METHODE sprechen(): String
+    // überschreibt Tier.sprechen()
         RUECKGABE "Miau!"
     ENDE METHODE
 ENDE KLASSE</code></pre>
@@ -714,7 +777,8 @@ ENDE KLASSE</code></pre>
 <h2>Polymorphie: Beispiel</h2>
 <pre><code>// tiere: Liste von Tier = [neuer Hund(), neue Katze()]
 FUER JEDES t IN tiere
-    ausgabe(t.sprechen())            // "Wau!", "Miau!"
+    ausgabe(t.sprechen())
+    // "Wau!", "Miau!"
 ENDE FUER</code></pre>
 </section>
 <section id="polymorphie-pseudocode-1" class="slide level2">
@@ -732,7 +796,8 @@ ENDE KLASSE</code></pre>
 </section>
 <section id="schnittstellen-interfaces" class="slide level2">
 <h2>Schnittstellen <em>(Interfaces)</em></h2>
-<p><strong>Definition:</strong> Ein Interface (Schnittstelle) definiert eine Menge von Methodensignaturen, die eine implementierende Klasse umsetzen MUSS. Ein Interface enthält keinen eigenen Code (keine Implementierung).</p>
+<p><span style="font-size: 2rem"><strong>Definition:</strong> Ein Interface (Schnittstelle) definiert eine Menge von Methodensignaturen, die eine implementierende Klasse umsetzen MUSS. Ein Interface enthält keinen eigenen Code (keine Implementierung).</span></p>
+<div style="font-size: 1.6rem">
 <p><strong>Pseudocode:</strong></p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode numberSource pseudo number-lines code-with-copy"><code class="sourceCode"><span id="cb15-1"><a aria-label="1"></a>INTERFACE Druckbar</span>
 <span id="cb15-2"><a aria-label="2"></a>    METHODE drucke(): nichts</span>
@@ -751,13 +816,38 @@ ENDE KLASSE</code></pre>
 <span id="cb17-2"><a aria-label="2"></a>    ATTRIBUT artikelListe: Liste</span>
 <span id="cb17-3"><a aria-label="3"></a></span>
 <span id="cb17-4"><a aria-label="4"></a>    METHODE drucke()</span>
-<span id="cb17-5"><a aria-label="5"></a>        ausgabe("Lieferschein mit " + laenge(artikelListe) + " Artikeln")</span>
-<span id="cb17-6"><a aria-label="6"></a>    ENDE METHODE</span>
-<span id="cb17-7"><a aria-label="7"></a>ENDE KLASSE</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb17-5"><a aria-label="5"></a>        ausgabe("Lieferschein mit " + </span>
+<span id="cb17-6"><a aria-label="6"></a>        laenge(artikelListe) + " Artikeln")</span>
+<span id="cb17-7"><a aria-label="7"></a>    ENDE METHODE</span>
+<span id="cb17-8"><a aria-label="8"></a>ENDE KLASSE</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div></div>
+</div>
+</section>
+<section id="schnittstellen-uml-notation" class="slide level2">
+<h2>Schnittstellen: UML-Notation</h2>
+<div style="font-size: 1.8rem">
+<pre><code>+-------------------+
+| &lt;&lt;interface&gt;&gt;     |
+| Druckbar          |
+|-------------------|
+|                   |
+|-------------------|
+| + drucke(): void  |
++-------------------+
+        ^
+        |
+  implementiert
+        |       
++-------------------+
+| Rechnung          |
+|-------------------|
+| + drucke(): void  |
++-------------------+</code></pre>
+</div>
 </section>
 <section id="interface-vs.-abstrakte-klasse" class="slide level2">
 <h2>Interface vs.&nbsp;abstrakte Klasse</h2>
+<div style="font-size: 1.7rem">
 <table class="caption-top">
 <colgroup>
 <col style="width: 28%">
@@ -794,14 +884,16 @@ ENDE KLASSE</code></pre>
 </tr>
 <tr class="odd">
 <td>Einsatz</td>
-<td>Vertrag/Schnittstelle definieren</td>
+<td>Vertrag / Schnittstelle definieren</td>
 <td>Gemeinsame Basis mit Teilimplementierung</td>
 </tr>
 </tbody>
 </table>
+</div>
 </section>
 <section id="interface-vs.-abstrakte-klasse-uml" class="slide level2">
 <h2>Interface vs.&nbsp;abstrakte Klasse: UML</h2>
+<div style="font-size: 1.9rem">
 <pre><code>+-------------------+       +-------------------+
 | &lt;&lt;interface&gt;&gt;     |       | &lt;&lt;abstract&gt;&gt;      |
 | Druckbar          |       | Dokument          |
@@ -812,6 +904,7 @@ ENDE KLASSE</code></pre>
 +-------------------+       | + speichere()     |  (implementiert)
         ^                   +-------------------+
         |                            ^
+        |                            |
   implementiert                   erbt von
         |                            |
 +-------------------+       +-------------------+
@@ -819,6 +912,162 @@ ENDE KLASSE</code></pre>
 |-------------------|       |-------------------|
 | + drucke(): void  |       | + drucke(): void  |
 +-------------------+       +-------------------+</code></pre>
+</div>
+</section>
+<section id="klassendiagramm" class="slide level2">
+<h2>Klassendiagramm</h2>
+<div class="columns">
+<div class="column">
+<p><img data-src="libs/_Images/Klassendia-1_Klasse.png"> <img data-src="libs/_Images/Klassendia-2_Klasse-Attribute-Methoden.png"></p>
+</div><div class="column">
+<p><img data-src="libs/_Images/Klassendia-3_Interface.png"></p>
+</div></div>
+<p><img data-src="libs/_Images/Klassendia-4_Syntax.png"></p>
+<aside class="notes">
+<p>Quelle: Belegsatz zu AP2, Sommer 2026</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="klassendiagramm-beispiel" class="slide level2">
+<h2>Klassendiagramm: Beispiel</h2>
+<h4 id="vererbung-polymorphie-uml">Vererbung &amp; Polymorphie: UML</h4>
+<div style="font-size: 1.8rem">
+<pre><code>+----------------------------+
+|         Haustier           |
+|----------------------------|
+| - name : String            |
+| - energie : int            |
+|----------------------------|
+| + spielen() : void         |
+| + ausruhen() : void        |
++----------------------------+
+         ^            ^
+         |            |
+         |            |
++----------------+  +----------------+
+|      Hund      |  |     Katze      |
+|----------------|  |----------------|
+| + spielen()    |  | + spielen()    |
+| + ausruhen()   |  | + ausruhen()   |
++----------------+  +----------------+</code></pre>
+</div>
+</section>
+<section id="klassendiagramm-beziehungen" class="slide level2">
+<h2>Klassendiagramm: Beziehungen</h2>
+<div class="columns">
+<div class="column">
+<p><img data-src="libs/_Images/Klassendia-5_Beziehungen.png"></p>
+</div><div class="column" style="font-size: 1.7rem">
+<ul>
+<li>Vererbung: Pfeil zeigt auf Oberklasse</li>
+<li>Assoziation: Beziehung zwischen Klassen; kann gerichtet oder ungerichtet sein
+<ul>
+<li>Beispiele ungerichtet: Lehrer - Schüler; Produkt - Kategorie</li>
+<li>Beispiele gerichtet: Email -&gt; Empfänger; Rechnung -&gt; Kunde</li>
+</ul></li>
+<li>Aggregation und Komposition: Beziehung Teil - Ganzes
+<ul>
+<li>Aggregation: Teil kann ohne das Ganze existieren, z. B. Schüler (Teil) - Unterricht</li>
+<li>Komposition: Teile existenziell vom Ganzen abhängig, z. B. Raum - Haus</li>
+</ul></li>
+</ul>
+</div></div>
+</section>
+<section id="klassendiagramm-kardinalitäten" class="slide level2">
+<h2>Klassendiagramm: Kardinalitäten</h2>
+<div style="font-size: 1.8rem">
+<p><strong>Definition Kardinalitäten = Multiplizitäten:</strong> Wie viele Instanzen einer Klasse können mit einer Instanz einer anderen Klasse in Beziehung stehen?</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 22%">
+<col style="width: 22%">
+<col style="width: 54%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Schreibweise</th>
+<th style="text-align: left;">Bedeutung</th>
+<th style="text-align: left;">Erklärung</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><code>0..*</code> oder <code>*</code></td>
+<td style="text-align: left;">Null bis beliebig viele</td>
+<td style="text-align: left;">Die Beziehung ist optional. Es können keine oder unendlich viele Objekte verknüpft sein.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>1..*</code></td>
+<td style="text-align: left;">Eins bis beliebig viele</td>
+<td style="text-align: left;">Mindestens ein Objekt muss existieren (Pflichtbeziehung).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>0..1</code></td>
+<td style="text-align: left;">Null oder eins</td>
+<td style="text-align: left;">Optional, aber maximal ein Objekt (z. B. ein Profil für einen Nutzer).</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>1</code> oder <code>1..1</code></td>
+<td style="text-align: left;">Genau eins</td>
+<td style="text-align: left;">Exakt ein Objekt muss verknüpft sein</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>n..m</code>, z. B. <code>2..5</code></td>
+<td style="text-align: left;">Bestimmte Spanne</td>
+<td style="text-align: left;">Mindestens n und maximal m Objekte</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="komposition-aggregation" class="slide level2">
+<h2>Komposition, Aggregation</h2>
+<div class="columns">
+<div class="column">
+<p><img data-src="libs/_Images/Komposition_Aggregation.webp"></p>
+<p><span style="font-size: 1.2rem">Quelle: Kakashi-Madara, Wikimedia Commons</span></p>
+</div><div class="column fragment" style="font-size: 1.9rem">
+<ul>
+<li>Raum kann nicht ohne Gebäude existieren: starke Beziehung, <strong>Komposition</strong></li>
+<li>Student kann ohne Vorlesung existieren: lose Beziehung, <strong>Aggregation</strong></li>
+<li><em>Kardinalitäten beachten</em></li>
+</ul>
+</div></div>
+</section>
+<section id="klassendiagramm-erläuterung" class="slide level2">
+<h2>Klassendiagramm: Erläuterung</h2>
+<div style="font-size: 1.8rem">
+<p>Das <strong>Klassendiagramm</strong> zeigt Klassen, ihre Attribute und Methoden sowie Beziehungen zwischen Klassen.</p>
+<ul>
+<li class="fragment"><strong>Klassen und Objekte:</strong> Welche Klassen gibt es und welche Objekte repräsentieren sie?</li>
+<li class="fragment"><strong>Attribute und Operationen:</strong> Welche Eigenschaften und Verhaltensweisen haben die Klassen?</li>
+<li class="fragment"><strong>Beziehungen:</strong> Wie sind die Klassen miteinander verknüpft (z. B. durch Assoziationen und Vererbungen)?</li>
+<li class="fragment"><strong>Sichtbarkeit:</strong> Welche Attribute und Operationen sind öffentlich, privat oder geschützt?</li>
+<li class="fragment"><strong>Kardinalität:</strong> Wie viele Instanzen einer Klasse können mit einer anderen in Beziehung stehen?</li>
+</ul>
+</div>
+<aside class="notes">
+<p>Lernkarten AP2 2025 Nr. 131</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="section" class="slide level2">
 <h2><!-- --></h2>
@@ -1045,7 +1294,7 @@ ENDE KLASSE</code></pre>
         ]
       });
     </script>
-    <a class="backlink" href="index.html">Zurück zur Übersicht LF10a</a>
+    <a class="backlink" href="index.html">Zurück zur Übersicht LF11a</a>
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
@@ -1116,7 +1365,7 @@ ENDE KLASSE</code></pre>
         }
           var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
           var mailtoRegex = new RegExp(/^mailto:/);
-            var filterRegex = new RegExp('/' + window.location.host + '/');
+            var filterRegex = new RegExp("https:\/\/fjodor\.github\.io\/LF11a\/");
           var isInternal = (href) => {
               return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
           }

@@ -1,5 +1,33 @@
 [
   {
+    "objectID": "08_Qualitätssicherung_Tests.html#tests",
+    "href": "08_Qualitätssicherung_Tests.html#tests",
+    "title": "Qualitätssicherung, Tests",
+    "section": "Tests",
+    "text": "Tests\nsiehe LF10a Testsoftware!"
+  },
+  {
+    "objectID": "08_Qualitätssicherung_Tests.html#section",
+    "href": "08_Qualitätssicherung_Tests.html#section",
+    "title": "Qualitätssicherung, Tests",
+    "section": "",
+    "text": "©torange.biz CC-BY 4.0\n\n\nViel Erfolg!"
+  },
+  {
+    "objectID": "06_SQL.html#sql",
+    "href": "06_SQL.html#sql",
+    "title": "SQL",
+    "section": "SQL",
+    "text": "SQL"
+  },
+  {
+    "objectID": "06_SQL.html#section",
+    "href": "06_SQL.html#section",
+    "title": "SQL",
+    "section": "",
+    "text": "©torange.biz CC-BY 4.0\n\n\nViel Erfolg!"
+  },
+  {
     "objectID": "04_UML_Sequenz_Zustand.html#sequenzdiagramme",
     "href": "04_UML_Sequenz_Zustand.html#sequenzdiagramme",
     "title": "UML",
@@ -49,18 +77,18 @@
     "text": "Ziele\nGrundpfeiler der objektorientierten Programmierung (OOP) verstehen und anwenden können:\n\nKapselung, Vererbung, Polymorphie, Interfaces\nFehlerbehandlung\nUML-Notation\nZugriffsmodifikatoren\nPseudocode mit OOP-Konzepten"
   },
   {
-    "objectID": "02_OOP_Pseudocode.html#oop-was-ist-eine-klasse",
-    "href": "02_OOP_Pseudocode.html#oop-was-ist-eine-klasse",
+    "objectID": "02_OOP_Pseudocode.html#was-ist-eine-klasse",
+    "href": "02_OOP_Pseudocode.html#was-ist-eine-klasse",
     "title": "OOP, Klassendiagramm",
-    "section": "OOP: Was ist eine Klasse?",
-    "text": "OOP: Was ist eine Klasse?\n\n\nEine Klasse ist ein Bauplan für die Erstellung von Objekten.\nKlasse definiert Attribute und Methoden eines Objekts\n\nAttribute: Eigenschaften, Variablen; repräsentieren den Zustand\nMethoden: Funktionen; repräsentieren das Verhalten\n\nKlasse ermöglicht Erstellung mehrerer Objekte mit ähnlichen Merkmalen und Verhaltensweisen\n\n\n\nLernkarten AP2 2025 Nr. 137"
+    "section": "Was ist eine Klasse?",
+    "text": "Was ist eine Klasse?\n\n\nEine Klasse ist ein Bauplan für die Erstellung von Objekten.\nKlasse definiert Attribute und Methoden eines Objekts\n\nAttribute: Eigenschaften, Variablen; repräsentieren den Zustand\nMethoden: Funktionen; repräsentieren das Verhalten\n\nKlasse ermöglicht Erstellung mehrerer Objekte mit ähnlichen Merkmalen und Verhaltensweisen\n\n\n\nLernkarten AP2 2025 Nr. 137"
   },
   {
-    "objectID": "02_OOP_Pseudocode.html#oop-was-ist-ein-objekt",
-    "href": "02_OOP_Pseudocode.html#oop-was-ist-ein-objekt",
+    "objectID": "02_OOP_Pseudocode.html#was-ist-ein-objekt",
+    "href": "02_OOP_Pseudocode.html#was-ist-ein-objekt",
     "title": "OOP, Klassendiagramm",
-    "section": "OOP: Was ist ein Objekt?",
-    "text": "OOP: Was ist ein Objekt?\n\n\neine konkrete Instanz einer Klasse\nbesitzt die Attribute und Methoden, die in seiner Klasse definiert sind\nJedes Objekt hat seinen eigenen Satz von Werten für die Attribute.\nAttribute -&gt; Zustand des Objekts\nMethoden -&gt; Verhalten des Objekts, das auf diesem Zustand operiert\nEin Objekt ist eine Verkapselung von Daten (Zustand) und den dazu gehörenden Operationen (Verhalten).\n\n\n\nLernkarten AP2 2025 Nr. 140"
+    "section": "Was ist ein Objekt?",
+    "text": "Was ist ein Objekt?\n\n\neine konkrete Instanz einer Klasse\nbesitzt die Attribute und Methoden, die in seiner Klasse definiert sind\nJedes Objekt hat seinen eigenen Satz von Werten für die Attribute.\nAttribute -&gt; Zustand des Objekts\nMethoden -&gt; Verhalten des Objekts, das auf diesem Zustand operiert\nEin Objekt ist eine Verkapselung von Daten (Zustand) und den dazu gehörenden Operationen (Verhalten).\n\n\n\nLernkarten AP2 2025 Nr. 140"
   },
   {
     "objectID": "02_OOP_Pseudocode.html#oop-grundideen",
@@ -70,11 +98,11 @@
     "text": "OOP: Grundideen\n\nKapselung (Encapsulation)\nVererbung\nPolymorphie\nInterfaces"
   },
   {
-    "objectID": "02_OOP_Pseudocode.html#oop-kapselung-encapsulation",
-    "href": "02_OOP_Pseudocode.html#oop-kapselung-encapsulation",
+    "objectID": "02_OOP_Pseudocode.html#kapselung-encapsulation",
+    "href": "02_OOP_Pseudocode.html#kapselung-encapsulation",
     "title": "OOP, Klassendiagramm",
-    "section": "OOP: Kapselung (Encapsulation)",
-    "text": "OOP: Kapselung (Encapsulation)\n\n\ninterne Daten eines Objekts werden vor direktem Zugriff geschützt\nZugriff erfolgt über definierte Methoden (Getter/Setter)\nZugriffsmodifikatoren steuern die Sichtbarkeit:\npublic, private, protected, package\nschafft Datenintegrität: Manipulation nur auf sichere, kontrollierte Weise\nverbessert Wartbarkeit: Änderungen an der internen Implementierung der Klasse beeinflussen nicht die Programmteile, die die Klasse verwenden\n\n\n\nLernkarten AP2 2025 Nr. 134"
+    "section": "Kapselung (Encapsulation)",
+    "text": "Kapselung (Encapsulation)\n\n\ninterne Daten eines Objekts werden vor direktem Zugriff geschützt\nZugriff erfolgt über definierte Methoden (Getter/Setter)\nZugriffsmodifikatoren steuern die Sichtbarkeit:\npublic, private, protected, package\nschafft Datenintegrität: Manipulation nur auf sichere, kontrollierte Weise\nverbessert Wartbarkeit: Änderungen an der internen Implementierung der Klasse beeinflussen nicht die Programmteile, die die Klasse verwenden\n\n\n\nLernkarten AP2 2025 Nr. 134"
   },
   {
     "objectID": "02_OOP_Pseudocode.html#oop-vs.-prozedurale-programmierung",
@@ -91,18 +119,18 @@
     "text": "Prozedur vs. Funktion\n\n\nFunktion\n\nCodeblock, der eine spezifische Aufgabe ausführt\nliefert in der Regel einen Wert zurück\n\n\nProzedur\n\n\nCodeblock, der eine spezifische Aufgabe ausführt\nliefert in der Regel keinen Wert zurück\nProzedur führt Aufgabe aus und kehrt dann zur aufrufenden Stelle im Code zurück\n\n\n\n\nLernkarten AP2 2025 Nr. 135"
   },
   {
-    "objectID": "02_OOP_Pseudocode.html#oop-kapselung---zugriffsmodifikatoren",
-    "href": "02_OOP_Pseudocode.html#oop-kapselung---zugriffsmodifikatoren",
+    "objectID": "02_OOP_Pseudocode.html#kapselung---zugriffsmodifikatoren",
+    "href": "02_OOP_Pseudocode.html#kapselung---zugriffsmodifikatoren",
     "title": "OOP, Klassendiagramm",
-    "section": "OOP: Kapselung - Zugriffsmodifikatoren",
-    "text": "OOP: Kapselung - Zugriffsmodifikatoren\n\nZugriffsmodifikatoren bestimmen, wo auf Klassen, Methoden und Variablen zugegriffen werden kann.\n\n\n\n\n\nZugriffs-modifikator\nSymbol\n\n\n\n\npublic   \n+\n\n\nprivate   \n-\n\n\nprotected   \n#\n\n\npackage\n~\n\n\n\n\n\n\n\n\n\n\nBedeutung   \n\n\n\n\nZugriff überall erlaubt, sowohl innerhalb als auch außerhalb der Klasse\n\n\nZugriff nur innerhalb der Klasse erlaubt, in der sie definiert sind\n\n\nZugriff nur innerhalb der Klasse, des Pakets und von abgeleiteten Klassen erlaubt\n\n\nZugriff ist innerhalb der Klasse und in allen Klassen desselben Pakets erlaubt\n\n\n\n\n\n\nLernkarte AP2 2025 Nr. 142"
+    "section": "Kapselung - Zugriffsmodifikatoren",
+    "text": "Kapselung - Zugriffsmodifikatoren\n\nZugriffsmodifikatoren bestimmen, wo auf Klassen, Methoden und Variablen zugegriffen werden kann.\n\n\n\n\n\nZugriffs-modifikator\nSymbol\n\n\n\n\npublic   \n+\n\n\nprivate   \n-\n\n\nprotected   \n#\n\n\npackage\n~\n\n\n\n\n\n\n\n\n\n\nBedeutung   \n\n\n\n\nZugriff überall erlaubt, sowohl innerhalb als auch außerhalb der Klasse\n\n\nZugriff nur innerhalb der Klasse erlaubt, in der sie definiert sind\n\n\nZugriff nur innerhalb der Klasse, des Pakets und von abgeleiteten Klassen erlaubt\n\n\nZugriff ist innerhalb der Klasse und in allen Klassen desselben Pakets erlaubt\n\n\n\n\n\n\nLernkarte AP2 2025 Nr. 142"
   },
   {
-    "objectID": "02_OOP_Pseudocode.html#oop-kapselung---zugriffsmodifikatoren-1",
-    "href": "02_OOP_Pseudocode.html#oop-kapselung---zugriffsmodifikatoren-1",
+    "objectID": "02_OOP_Pseudocode.html#kapselung---zugriffsmodifikatoren-1",
+    "href": "02_OOP_Pseudocode.html#kapselung---zugriffsmodifikatoren-1",
     "title": "OOP, Klassendiagramm",
-    "section": "OOP: Kapselung - Zugriffsmodifikatoren",
-    "text": "OOP: Kapselung - Zugriffsmodifikatoren\n\nIHK-Standard in Prüfungen\n\n\n\n\n\n\n\n\n\nZugriffs-modifikator\nSymbol\nBedeutung\nVerwendung\n\n\n\n\nprivate\n-\nZugriff nur innerhalb der Klasse erlaubt, in der sie definiert sind\nAttribute\n\n\npublic\n+\nZugriff überall erlaubt, sowohl innerhalb als auch außerhalb der Klasse\nOperation / Methode\n\n\n\nUML-Beispiel\n\n\n+------------------------------+\n|          Konto               |\n|------------------------------|\n| - kontostand: double         |\n|------------------------------|\n| + getKontostand(): double    |\n| + einzahlen(betrag: double)  |\n| + abheben(betrag: double)    |\n+------------------------------+\n\n\nNiemand darf direkt auf den Kontostand (private) zugreifen und ihn verändern\nVeränderung nur über die public-Methoden einzahlen() und abheben(), die eine Validierung durchführen"
+    "section": "Kapselung - Zugriffsmodifikatoren",
+    "text": "Kapselung - Zugriffsmodifikatoren\n\nIHK-Standard in Prüfungen\n\n\n\n\n\n\n\n\n\nZugriffs-modifikator\nSymbol\nBedeutung\nVerwendung\n\n\n\n\nprivate\n-\nZugriff nur innerhalb der Klasse erlaubt, in der sie definiert sind\nAttribute\n\n\npublic\n+\nZugriff überall erlaubt, sowohl innerhalb als auch außerhalb der Klasse\nOperation / Methode\n\n\n\nUML-Beispiel\n\n\n+------------------------------+\n|          Konto               |\n|------------------------------|\n| - kontostand: double         |\n|------------------------------|\n| + getKontostand(): double    |\n| + einzahlen(betrag: double)  |\n| + abheben(betrag: double)    |\n+------------------------------+\n\n\nNiemand darf direkt auf den Kontostand (private) zugreifen und ihn verändern\nVeränderung nur über die public-Methoden einzahlen() und abheben(), die eine Validierung durchführen"
   },
   {
     "objectID": "02_OOP_Pseudocode.html#kapselung-pseudocode",
@@ -116,7 +144,7 @@
     "href": "02_OOP_Pseudocode.html#vererbung-uml",
     "title": "OOP, Klassendiagramm",
     "section": "Vererbung: UML",
-    "text": "Vererbung: UML\n\n                 +----------------------------+\n                 |       Fahrzeug             |\n                 |----------------------------|\n                 | # marke: String            |\n                 | # baujahr: int             |\n                 |----------------------------|\n                 | + beschreibung(): String   |\n                 +----------------------------+\n                    ^                  ^\n                    |                  |\n                erbt von           erbt von\n                    |                  |\n+--------------------------+  +----------------------------+\n|     PKW                  |  |       LKW                  |\n|--------------------------|  |----------------------------|\n| - anzahlSitze: int       |  | - ladekapazitaet: int      |\n|--------------------------|  |----------------------------|\n| + beschreibung(): String |  | + beschreibung(): String   |\n+--------------------------+  +----------------------------+\n\n\nPKW und LKW erben von Fahrzeug\nBeide übernehmen die protected-Attribute marke und baujahr\nBeide erhalten jeweils ein eigenes privates Attribut (anzahlSitze bzw. ladekapazität)"
+    "text": "Vererbung: UML\n\n                 +----------------------------+\n                 |       Fahrzeug             |\n                 |----------------------------|\n                 | # marke: String            |\n                 | # baujahr: int             |\n                 |----------------------------|\n                 | + beschreibung(): String   |\n                 +----------------------------+\n                    ^                  ^\n                    |                  |\n                erbt von           erbt von\n                    |                  |\n+--------------------------+  +----------------------------+\n|     PKW                  |  |       LKW                  |\n|--------------------------|  |----------------------------|\n| - anzahlSitze: int       |  | - ladekapazitaet: int      |\n|--------------------------|  |----------------------------|\n| + beschreibung(): String |  | + beschreibung(): String   |\n+--------------------------+  +----------------------------+\n\n\n\nPKW und LKW erben von Fahrzeug\nBeide übernehmen die protected-Attribute marke und baujahr\nBeide erhalten jeweils ein eigenes privates Attribut (anzahlSitze bzw. ladekapazität)"
   },
   {
     "objectID": "02_OOP_Pseudocode.html#vererbung-pseudocode",
@@ -147,18 +175,32 @@
     "text": "Vererbung: Lernkarte\n\n\nSchlüsselprinzip: ermöglicht, neue Klassen aus bereits existierenden Klassen zu erzeugen\neine Klasse (Kindklasse) kann Attribute und Methoden einer anderen Klasse (Elternklasse) übernehmen\nfördert Wiederverwendbarkeit und Hierarchiebildung; vermeidet Redundanz\nKindklasse heißt auch abgeleitete Klasse oder Unterklasse\nElternklasse heißt auch Oberklasse, Basisklasse oder Superklasse\n\n\n\nLernkarten AP2 2025 Nr. 133"
   },
   {
+    "objectID": "02_OOP_Pseudocode.html#oop-polymorphie-vielgestaltigkeit",
+    "href": "02_OOP_Pseudocode.html#oop-polymorphie-vielgestaltigkeit",
+    "title": "OOP, Klassendiagramm",
+    "section": "OOP: Polymorphie (“Vielgestaltigkeit”)",
+    "text": "OOP: Polymorphie (“Vielgestaltigkeit”)\n\nDefinition: Polymorphie (Vielgestaltigkeit) bedeutet, dass Objekte verschiedener Klassen über eine gemeinsame Schnittstelle angesprochen werden können und sich unterschiedlich verhalten.\n\nWie wird das unterschiedliche Verhalten der Objekte ausgelöst?\ndurch den Datentyp oder die Klasse\nKlassen teilen Methoden, aber die Implementierungen der Methoden können variieren\nWann wird entschieden, welche Implementierung ausgeführt wird? Zur Laufzeit! Tatsächlicher Objekttyp entscheidet\nverbessert Flexibilität\nerhöht Wiederverwendbarkeit von Code\nerleichtert standardisierte Schnittstellen\n\n\n\nLernkarten AP2 2025 Nr. 141"
+  },
+  {
+    "objectID": "02_OOP_Pseudocode.html#polymorphie-zwei-arten",
+    "href": "02_OOP_Pseudocode.html#polymorphie-zwei-arten",
+    "title": "OOP, Klassendiagramm",
+    "section": "Polymorphie: Zwei Arten",
+    "text": "Polymorphie: Zwei Arten\n\n\n\n\n\n\n\n\n\n\nArt\nBeschreibung\nBeispiel\n\n\n\n\nÜberladen (Overloading)\nGleicher Methodenname, verschiedene Parameter\nberechne(a) und berechne(a, b)\n\n\nÜberschreiben (Overriding)\nKindklasse überschreibt Methode der Elternklasse\nHund.sprechen() statt Tier.sprechen()"
+  },
+  {
     "objectID": "02_OOP_Pseudocode.html#polymorphie-pseudocode",
     "href": "02_OOP_Pseudocode.html#polymorphie-pseudocode",
     "title": "OOP, Klassendiagramm",
     "section": "Polymorphie: Pseudocode",
-    "text": "Polymorphie: Pseudocode\nÜberschreiben (Overriding)\nKLASSE Tier\n    METHODE sprechen(): String\n        RUECKGABE \"...\"\n    ENDE METHODE\nENDE KLASSE\n\n\nKLASSE Hund ERBT VON Tier\n    METHODE sprechen(): String       // ueberschreibt Tier.sprechen()\n        RUECKGABE \"Wau!\"\n    ENDE METHODE\nENDE KLASSE\n\nKLASSE Katze ERBT VON Tier\n    METHODE sprechen(): String       // ueberschreibt Tier.sprechen()\n        RUECKGABE \"Miau!\"\n    ENDE METHODE\nENDE KLASSE"
+    "text": "Polymorphie: Pseudocode\nÜberschreiben (Overriding)\nKLASSE Tier\n    METHODE sprechen(): String\n        RUECKGABE \"...\"\n    ENDE METHODE\nENDE KLASSE\n\n\nKLASSE Hund ERBT VON Tier\n    METHODE sprechen(): String\n    // überschreibt Tier.sprechen()\n        RUECKGABE \"Wau!\"\n    ENDE METHODE\nENDE KLASSE\n\nKLASSE Katze ERBT VON Tier\n    METHODE sprechen(): String\n    // überschreibt Tier.sprechen()\n        RUECKGABE \"Miau!\"\n    ENDE METHODE\nENDE KLASSE"
   },
   {
     "objectID": "02_OOP_Pseudocode.html#polymorphie-beispiel",
     "href": "02_OOP_Pseudocode.html#polymorphie-beispiel",
     "title": "OOP, Klassendiagramm",
     "section": "Polymorphie: Beispiel",
-    "text": "Polymorphie: Beispiel\n// tiere: Liste von Tier = [neuer Hund(), neue Katze()]\nFUER JEDES t IN tiere\n    ausgabe(t.sprechen())            // \"Wau!\", \"Miau!\"\nENDE FUER"
+    "text": "Polymorphie: Beispiel\n// tiere: Liste von Tier = [neuer Hund(), neue Katze()]\nFUER JEDES t IN tiere\n    ausgabe(t.sprechen())\n    // \"Wau!\", \"Miau!\"\nENDE FUER"
   },
   {
     "objectID": "02_OOP_Pseudocode.html#polymorphie-pseudocode-1",
@@ -172,21 +214,70 @@
     "href": "02_OOP_Pseudocode.html#schnittstellen-interfaces",
     "title": "OOP, Klassendiagramm",
     "section": "Schnittstellen (Interfaces)",
-    "text": "Schnittstellen (Interfaces)\nDefinition: Ein Interface (Schnittstelle) definiert eine Menge von Methodensignaturen, die eine implementierende Klasse umsetzen MUSS. Ein Interface enthält keinen eigenen Code (keine Implementierung).\nPseudocode:\nINTERFACE Druckbar\n    METHODE drucke(): nichts\nENDE INTERFACE\n\n\nKLASSE Rechnung IMPLEMENTIERT Druckbar\n    ATTRIBUT betrag: Zahl\n\n    METHODE drucke()\n        ausgabe(\"Rechnung: \" + betrag + \" EUR\")\n    ENDE METHODE\nENDE KLASSE\n\nKLASSE Lieferschein IMPLEMENTIERT Druckbar\n    ATTRIBUT artikelListe: Liste\n\n    METHODE drucke()\n        ausgabe(\"Lieferschein mit \" + laenge(artikelListe) + \" Artikeln\")\n    ENDE METHODE\nENDE KLASSE"
+    "text": "Schnittstellen (Interfaces)\nDefinition: Ein Interface (Schnittstelle) definiert eine Menge von Methodensignaturen, die eine implementierende Klasse umsetzen MUSS. Ein Interface enthält keinen eigenen Code (keine Implementierung).\n\nPseudocode:\nINTERFACE Druckbar\n    METHODE drucke(): nichts\nENDE INTERFACE\n\n\nKLASSE Rechnung IMPLEMENTIERT Druckbar\n    ATTRIBUT betrag: Zahl\n\n    METHODE drucke()\n        ausgabe(\"Rechnung: \" + betrag + \" EUR\")\n    ENDE METHODE\nENDE KLASSE\n\nKLASSE Lieferschein IMPLEMENTIERT Druckbar\n    ATTRIBUT artikelListe: Liste\n\n    METHODE drucke()\n        ausgabe(\"Lieferschein mit \" + \n        laenge(artikelListe) + \" Artikeln\")\n    ENDE METHODE\nENDE KLASSE"
+  },
+  {
+    "objectID": "02_OOP_Pseudocode.html#schnittstellen-uml-notation",
+    "href": "02_OOP_Pseudocode.html#schnittstellen-uml-notation",
+    "title": "OOP, Klassendiagramm",
+    "section": "Schnittstellen: UML-Notation",
+    "text": "Schnittstellen: UML-Notation\n\n+-------------------+\n| &lt;&lt;interface&gt;&gt;     |\n| Druckbar          |\n|-------------------|\n|                   |\n|-------------------|\n| + drucke(): void  |\n+-------------------+\n        ^\n        |\n  implementiert\n        |       \n+-------------------+\n| Rechnung          |\n|-------------------|\n| + drucke(): void  |\n+-------------------+"
   },
   {
     "objectID": "02_OOP_Pseudocode.html#interface-vs.-abstrakte-klasse",
     "href": "02_OOP_Pseudocode.html#interface-vs.-abstrakte-klasse",
     "title": "OOP, Klassendiagramm",
     "section": "Interface vs. abstrakte Klasse",
-    "text": "Interface vs. abstrakte Klasse\n\n\n\n\n\n\n\n\nKriterium\nInterface\nAbstrakte Klasse\n\n\n\n\nImplementierung\nKeine (nur Signaturen)\nKann Methoden mit Code enthalten\n\n\nMehrfachvererbung\nJa (Klasse kann mehrere Interfaces implementieren)\nNein (nur eine Elternklasse)\n\n\nAttribute\nKeine (nur Konstanten)\nJa\n\n\nKonstruktor\nNein\nJa\n\n\nEinsatz\nVertrag/Schnittstelle definieren\nGemeinsame Basis mit Teilimplementierung"
+    "text": "Interface vs. abstrakte Klasse\n\n\n\n\n\n\n\n\n\nKriterium\nInterface\nAbstrakte Klasse\n\n\n\n\nImplementierung\nKeine (nur Signaturen)\nKann Methoden mit Code enthalten\n\n\nMehrfachvererbung\nJa (Klasse kann mehrere Interfaces implementieren)\nNein (nur eine Elternklasse)\n\n\nAttribute\nKeine (nur Konstanten)\nJa\n\n\nKonstruktor\nNein\nJa\n\n\nEinsatz\nVertrag / Schnittstelle definieren\nGemeinsame Basis mit Teilimplementierung"
   },
   {
     "objectID": "02_OOP_Pseudocode.html#interface-vs.-abstrakte-klasse-uml",
     "href": "02_OOP_Pseudocode.html#interface-vs.-abstrakte-klasse-uml",
     "title": "OOP, Klassendiagramm",
     "section": "Interface vs. abstrakte Klasse: UML",
-    "text": "Interface vs. abstrakte Klasse: UML\n+-------------------+       +-------------------+\n| &lt;&lt;interface&gt;&gt;     |       | &lt;&lt;abstract&gt;&gt;      |\n| Druckbar          |       | Dokument          |\n|-------------------|       |-------------------|\n|                   |       | # titel: String   |\n|-------------------|       |-------------------|\n| + drucke(): void  |       | + drucke(): void  |  (abstrakt)\n+-------------------+       | + speichere()     |  (implementiert)\n        ^                   +-------------------+\n        |                            ^\n  implementiert                   erbt von\n        |                            |\n+-------------------+       +-------------------+\n| Rechnung          |       | Rechnung          |\n|-------------------|       |-------------------|\n| + drucke(): void  |       | + drucke(): void  |\n+-------------------+       +-------------------+"
+    "text": "Interface vs. abstrakte Klasse: UML\n\n+-------------------+       +-------------------+\n| &lt;&lt;interface&gt;&gt;     |       | &lt;&lt;abstract&gt;&gt;      |\n| Druckbar          |       | Dokument          |\n|-------------------|       |-------------------|\n|                   |       | # titel: String   |\n|-------------------|       |-------------------|\n| + drucke(): void  |       | + drucke(): void  |  (abstrakt)\n+-------------------+       | + speichere()     |  (implementiert)\n        ^                   +-------------------+\n        |                            ^\n        |                            |\n  implementiert                   erbt von\n        |                            |\n+-------------------+       +-------------------+\n| Rechnung          |       | Rechnung          |\n|-------------------|       |-------------------|\n| + drucke(): void  |       | + drucke(): void  |\n+-------------------+       +-------------------+"
+  },
+  {
+    "objectID": "02_OOP_Pseudocode.html#klassendiagramm",
+    "href": "02_OOP_Pseudocode.html#klassendiagramm",
+    "title": "OOP, Klassendiagramm",
+    "section": "Klassendiagramm",
+    "text": "Klassendiagramm\n\n\n \n\n\n\n\n\nQuelle: Belegsatz zu AP2, Sommer 2026"
+  },
+  {
+    "objectID": "02_OOP_Pseudocode.html#klassendiagramm-beispiel",
+    "href": "02_OOP_Pseudocode.html#klassendiagramm-beispiel",
+    "title": "OOP, Klassendiagramm",
+    "section": "Klassendiagramm: Beispiel",
+    "text": "Klassendiagramm: Beispiel\nVererbung & Polymorphie: UML\n\n+----------------------------+\n|         Haustier           |\n|----------------------------|\n| - name : String            |\n| - energie : int            |\n|----------------------------|\n| + spielen() : void         |\n| + ausruhen() : void        |\n+----------------------------+\n         ^            ^\n         |            |\n         |            |\n+----------------+  +----------------+\n|      Hund      |  |     Katze      |\n|----------------|  |----------------|\n| + spielen()    |  | + spielen()    |\n| + ausruhen()   |  | + ausruhen()   |\n+----------------+  +----------------+"
+  },
+  {
+    "objectID": "02_OOP_Pseudocode.html#klassendiagramm-beziehungen",
+    "href": "02_OOP_Pseudocode.html#klassendiagramm-beziehungen",
+    "title": "OOP, Klassendiagramm",
+    "section": "Klassendiagramm: Beziehungen",
+    "text": "Klassendiagramm: Beziehungen\n\n\n\n\n\nVererbung: Pfeil zeigt auf Oberklasse\nAssoziation: Beziehung zwischen Klassen; kann gerichtet oder ungerichtet sein\n\nBeispiele ungerichtet: Lehrer - Schüler; Produkt - Kategorie\nBeispiele gerichtet: Email -&gt; Empfänger; Rechnung -&gt; Kunde\n\nAggregation und Komposition: Beziehung Teil - Ganzes\n\nAggregation: Teil kann ohne das Ganze existieren, z. B. Schüler (Teil) - Unterricht\nKomposition: Teile existenziell vom Ganzen abhängig, z. B. Raum - Haus"
+  },
+  {
+    "objectID": "02_OOP_Pseudocode.html#klassendiagramm-kardinalitäten",
+    "href": "02_OOP_Pseudocode.html#klassendiagramm-kardinalitäten",
+    "title": "OOP, Klassendiagramm",
+    "section": "Klassendiagramm: Kardinalitäten",
+    "text": "Klassendiagramm: Kardinalitäten\n\nDefinition Kardinalitäten = Multiplizitäten: Wie viele Instanzen einer Klasse können mit einer Instanz einer anderen Klasse in Beziehung stehen?\n\n\n\n\n\n\n\n\nSchreibweise\nBedeutung\nErklärung\n\n\n\n\n0..* oder *\nNull bis beliebig viele\nDie Beziehung ist optional. Es können keine oder unendlich viele Objekte verknüpft sein.\n\n\n1..*\nEins bis beliebig viele\nMindestens ein Objekt muss existieren (Pflichtbeziehung).\n\n\n0..1\nNull oder eins\nOptional, aber maximal ein Objekt (z. B. ein Profil für einen Nutzer).\n\n\n1 oder 1..1\nGenau eins\nExakt ein Objekt muss verknüpft sein\n\n\nn..m, z. B. 2..5\nBestimmte Spanne\nMindestens n und maximal m Objekte"
+  },
+  {
+    "objectID": "02_OOP_Pseudocode.html#komposition-aggregation",
+    "href": "02_OOP_Pseudocode.html#komposition-aggregation",
+    "title": "OOP, Klassendiagramm",
+    "section": "Komposition, Aggregation",
+    "text": "Komposition, Aggregation\n\n\n\nQuelle: Kakashi-Madara, Wikimedia Commons\n\n\nRaum kann nicht ohne Gebäude existieren: starke Beziehung, Komposition\nStudent kann ohne Vorlesung existieren: lose Beziehung, Aggregation\nKardinalitäten beachten"
+  },
+  {
+    "objectID": "02_OOP_Pseudocode.html#klassendiagramm-erläuterung",
+    "href": "02_OOP_Pseudocode.html#klassendiagramm-erläuterung",
+    "title": "OOP, Klassendiagramm",
+    "section": "Klassendiagramm: Erläuterung",
+    "text": "Klassendiagramm: Erläuterung\n\nDas Klassendiagramm zeigt Klassen, ihre Attribute und Methoden sowie Beziehungen zwischen Klassen.\n\nKlassen und Objekte: Welche Klassen gibt es und welche Objekte repräsentieren sie?\nAttribute und Operationen: Welche Eigenschaften und Verhaltensweisen haben die Klassen?\nBeziehungen: Wie sind die Klassen miteinander verknüpft (z. B. durch Assoziationen und Vererbungen)?\nSichtbarkeit: Welche Attribute und Operationen sind öffentlich, privat oder geschützt?\nKardinalität: Wie viele Instanzen einer Klasse können mit einer anderen in Beziehung stehen?\n\n\n\nLernkarten AP2 2025 Nr. 131"
   },
   {
     "objectID": "02_OOP_Pseudocode.html#section",
@@ -281,6 +372,41 @@
     "objectID": "03_Software-Architektur.html#section",
     "href": "03_Software-Architektur.html#section",
     "title": "Software-Architektur",
+    "section": "",
+    "text": "©torange.biz CC-BY 4.0\n\n\nViel Erfolg!"
+  },
+  {
+    "objectID": "05_Schnittstellen_APIs.html#schnittstellen-apis",
+    "href": "05_Schnittstellen_APIs.html#schnittstellen-apis",
+    "title": "Schnittstellen, APIs",
+    "section": "Schnittstellen, APIs",
+    "text": "Schnittstellen, APIs"
+  },
+  {
+    "objectID": "05_Schnittstellen_APIs.html#section",
+    "href": "05_Schnittstellen_APIs.html#section",
+    "title": "Schnittstellen, APIs",
+    "section": "",
+    "text": "©torange.biz CC-BY 4.0\n\n\nViel Erfolg!"
+  },
+  {
+    "objectID": "07_Frameworks_Laufzeitumgebungen.html#frameworks",
+    "href": "07_Frameworks_Laufzeitumgebungen.html#frameworks",
+    "title": "Frameworks, Laufzeitumgebungen",
+    "section": "Frameworks",
+    "text": "Frameworks"
+  },
+  {
+    "objectID": "07_Frameworks_Laufzeitumgebungen.html#laufzeitumgebungen",
+    "href": "07_Frameworks_Laufzeitumgebungen.html#laufzeitumgebungen",
+    "title": "Frameworks, Laufzeitumgebungen",
+    "section": "Laufzeitumgebungen",
+    "text": "Laufzeitumgebungen"
+  },
+  {
+    "objectID": "07_Frameworks_Laufzeitumgebungen.html#section",
+    "href": "07_Frameworks_Laufzeitumgebungen.html#section",
+    "title": "Frameworks, Laufzeitumgebungen",
     "section": "",
     "text": "©torange.biz CC-BY 4.0\n\n\nViel Erfolg!"
   },

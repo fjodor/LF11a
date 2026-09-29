@@ -308,8 +308,7 @@ ENDE KLASSE
 
 :::: {style="font-size: 1.8rem"}
 
-```
-
+```{.text style="overflow: hidden;"}
                  +----------------------------+
                  |       Fahrzeug             |
                  |----------------------------|
@@ -336,7 +335,7 @@ ENDE KLASSE
 
 - `PKW` und `LKW` erben von `Fahrzeug`
 - Beide übernehmen die `protected`-Attribute `marke` und `baujahr`
-- Beide erhalten jeweils ein eigenes privates Attribut (`anzahlSitze` bzw. `ladekapazität`)
+- Beide erhalten jeweils ein eigenes privates Attribut <br>(`anzahlSitze` bzw. `ladekapazität`)
 
 :::
 ::::

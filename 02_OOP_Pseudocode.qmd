@@ -794,11 +794,13 @@ Lernkarte AP2 2025 Nr. 132
 Das **Klassendiagramm** zeigt Klassen, ihre Attribute und Methoden sowie Beziehungen zwischen Klassen.
 
 ::: incremental 
+
 - **Klassen und Objekte:** Welche Klassen gibt es und welche Objekte repräsentieren sie?
 - **Attribute und Operationen:** Welche Eigenschaften und Verhaltensweisen haben die Klassen?
 - **Beziehungen:** Wie sind die Klassen miteinander verknüpft (z. B. durch Assoziationen und Vererbungen)?
 - **Sichtbarkeit:** Welche Attribute und Operationen sind öffentlich, privat oder geschützt?
 - **Kardinalität:** Wie viele Instanzen einer Klasse können mit einer anderen in Beziehung stehen?
+
 :::
 ::::
 
@@ -807,6 +809,42 @@ Lernkarte AP2 2025 Nr. 131
 :::
 
 
+## Generische Klassen
+
+:::: {.incremental style="font-size: 1.8rem"}
+
+**Definition:** Eine **generische Klasse** ist ein Konzept in der objektorientierten Programmierung, das es erlaubt, eine Klasse zu definieren, die auf **Typen** arbeiten kann, die **beim Erstellen einer Instanz der Klasse spezifiziert** werden</u>.
+
+- Hauptvorteil: ermöglichen **Code-Wiederverwendung** und **Typsicherheit**
+- Sie können **eine einzige generische Klasse** definieren, die auf **mehrere Datentypen** angewendet werden kann, **anstatt separate Klassen für jeden Datentyp** erstellen zu müssen
+
+::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 138
+:::
+
+
+## Abstrakte Klassen
+
+:::: {.incremental style="font-size: 1.8rem"}
+
+**Wie werden abstrakte Klassen in der Anwendungsentwicklung verwendet und welche Vorteile bieten sie?**
+
+- Abstrakte Klassen sind Klassen, die **nicht instanziiert werden** können und in der Regel eine oder mehrere **abstrakte Methoden** enthalten
+- Diese **Methoden** werden **in den abgeleiteten Klassen implementiert**
+- Abstrakte Klassen können jedoch auch **konkrete Methoden** (Methoden mit einer Implementierung) enthalten
+- Hauptanwendungen und Vorteile:
+  + Bereitstellung einer **gemeinsamen Schnittstelle**
+  + Code-Wiederverwendung
+  + Erzwingung bestimmter Methoden
+  + **Polymorphismus** kann realisiert werden
+
+::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 139
+:::
 
 
 ## Interface vs. abstrakte Klasse

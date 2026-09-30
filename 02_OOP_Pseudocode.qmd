@@ -105,7 +105,7 @@ Lernkarten AP2 2025 Nr. 137
 :::
 
 ::: notes
-Lernkarten AP2 2025 Nr. 140
+Lernkarte AP2 2025 Nr. 140
 :::
 
 
@@ -455,6 +455,8 @@ bello.spielen()   # nutzt die geerbte Methode
 - fördert **Wiederverwendbarkeit** und **Hierarchiebildung**; vermeidet **Redundanz**
 - **Kindklasse** heißt auch **abgeleitete Klasse** oder **Unterklasse**
 - **Elternklasse** heißt auch **Oberklasse, Basisklasse** oder **Superklasse**
+- Eigenschaften (Attribute) und Verhaltensweisen (Methoden), die in der Oberklasse definiert sind, werden an die Unterklasse weitergegeben
+
 :::
 
 ::: notes
@@ -643,50 +645,6 @@ ENDE KLASSE
 :::
 
 
-
-## Interface vs. abstrakte Klasse
-
-:::: {style="font-size: 1.7rem"}
-
-| Kriterium | Interface | Abstrakte Klasse |
-|-----------|-----------|-----------------|
-| Implementierung | Keine (nur Signaturen) | Kann Methoden mit Code enthalten |
-| Mehrfachvererbung | Ja (Klasse kann mehrere Interfaces implementieren) | Nein (nur eine Elternklasse) |
-| Attribute | Keine (nur Konstanten) | Ja |
-| Konstruktor | Nein | Ja |
-| Einsatz | Vertrag / Schnittstelle definieren | Gemeinsame Basis mit Teilimplementierung |
-
-::::
-
-
-## Interface vs. abstrakte Klasse: UML
-
-::: {style="font-size: 1.9rem"}
-
-```
-+-------------------+       +-------------------+
-| <<interface>>     |       | <<abstract>>      |
-| Druckbar          |       | Dokument          |
-|-------------------|       |-------------------|
-|                   |       | # titel: String   |
-|-------------------|       |-------------------|
-| + drucke(): void  |       | + drucke(): void  |  (abstrakt)
-+-------------------+       | + speichere()     |  (implementiert)
-        ^                   +-------------------+
-        |                            ^
-        |                            |
-  implementiert                   erbt von
-        |                            |
-+-------------------+       +-------------------+
-| Rechnung          |       | Rechnung          |
-|-------------------|       |-------------------|
-| + drucke(): void  |       | + drucke(): void  |
-+-------------------+       +-------------------+
-```
-
-:::
-
-
 ## Klassendiagramm
 
 :::: columns
@@ -799,6 +757,36 @@ Schreibweise | Bedeutung | Erklärung
 ::::
 
 
+## Komposition vs. Aggregation
+
+:::: {.columns style="font-size: 1.8rem"}
+::: {.column .incremental}
+
+### Aggregation
+
+- lose Beziehung zwischen zwei Klassen
+- eine Klasse (das Ganze) **enthält** Sammlung oder Gruppe von Objekten einer anderen Klasse (die Teile)
+- Beziehung zwischen dem Ganzen und den Teilen ist **optional: das Ganze kann ohne die Teile existieren**
+
+:::
+
+::: {.column .incremental}
+
+### Komposition
+
+- starke Beziehung zwischen zwei Klassen
+- eine Klasse (das Ganze) **besteht aus** einer anderen Klasse (dem Teil)
+- **Teile können nur als Teil des Ganzen existieren** und haben keine eigenständige Existenz
+- Wenn das Ganze zerstört wird, werden auch die Teile zerstört
+
+:::
+::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 132
+:::
+
+
 ## Klassendiagramm: Erläuterung
 
 :::: {style="font-size: 1.8rem"}
@@ -815,8 +803,54 @@ Das **Klassendiagramm** zeigt Klassen, ihre Attribute und Methoden sowie Beziehu
 ::::
 
 ::: notes
-Lernkarten AP2 2025 Nr. 131
+Lernkarte AP2 2025 Nr. 131
 :::
+
+
+
+
+## Interface vs. abstrakte Klasse
+
+:::: {style="font-size: 1.7rem"}
+
+| Kriterium | Interface | Abstrakte Klasse |
+|-----------|-----------|-----------------|
+| Implementierung | Keine (nur Signaturen) | Kann Methoden mit Code enthalten |
+| Mehrfachvererbung | Ja (Klasse kann mehrere Interfaces implementieren) | Nein (nur eine Elternklasse) |
+| Attribute | Keine (nur Konstanten) | Ja |
+| Konstruktor | Nein | Ja |
+| Einsatz | Vertrag / Schnittstelle definieren | Gemeinsame Basis mit Teilimplementierung |
+
+::::
+
+
+## Interface vs. abstrakte Klasse: UML
+
+::: {style="font-size: 1.9rem"}
+
+```
++-------------------+       +-------------------+
+| <<interface>>     |       | <<abstract>>      |
+| Druckbar          |       | Dokument          |
+|-------------------|       |-------------------|
+|                   |       | # titel: String   |
+|-------------------|       |-------------------|
+| + drucke(): void  |       | + drucke(): void  |  (abstrakt)
++-------------------+       | + speichere()     |  (implementiert)
+        ^                   +-------------------+
+        |                            ^
+        |                            |
+  implementiert                   erbt von
+        |                            |
++-------------------+       +-------------------+
+| Rechnung          |       | Rechnung          |
+|-------------------|       |-------------------|
+| + drucke(): void  |       | + drucke(): void  |
++-------------------+       +-------------------+
+```
+
+:::
+
 
 
 ## <!-- -->

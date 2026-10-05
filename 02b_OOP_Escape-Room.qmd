@@ -1,0 +1,151 @@
+---
+title: "OOP: Escape Room"
+title-slide-attributes:
+  data-background-color: "#D7E6F4"
+subtitle: "Objektorientierte Programmierung"
+format:
+  revealjs:
+    theme: simple
+    logo: libs/_Images/logo-AFBB.svg
+    css: libs/styles.css
+execute:
+  echo: false
+  eval: true
+  freeze: auto
+  warning: false
+  message: false
+callout-appearance: simple
+---
+
+## UML: Room
+
+:::: {style="font-size: 1.8rem"}
+
+```
++-----------------------------+
+|      Room                   |
++-----------------------------+
+| - name: str                 |
+| - description: str          |
+| - doors: List<Door>         |
+| - items: List<Item>         |
++-----------------------------+
+| + enter()                   |
+| + show_items()              |
+| + show_doors()              |
+| + add_door(d:Door)          |
+| + add_item(i:Item)          |
+| + take_item(name:str): Item |
++-----------------------------+
+```
+
+#### Beziehung Room - Door
+
+::: fragment
+
+```
+            1    * 
+Room ------------------> Door
+            contains
+```
+
+:::
+::::
+
+
+## UML Door
+
+::::: {style="font-size: 1.8rem"}
+
+```
++---------------------+
+|      Door           |
++---------------------+
+| - target_room: Room |
+| - is_open: bool     |
++---------------------+
+| + open()            |
+| + close()           |
+| + is_open(): bool   |
++---------------------+
+
+        ^ 
+        |
+        | inheritance
+        |
+
+```
+
+:::: columns
+::: column
+
+```
++--------------------+
+|   NormalDoor       |
++--------------------+
+|  (no extra fields) |
++--------------------+
+```
+:::
+
+::: column
+
+```
++---------------------------------+
+|     KeyDoor                     |
++---------------------------------+
+| - required_key: str             |
++---------------------------------+
+| + try_open(player:Player): bool |
++---------------------------------+
+```
+
+:::
+::::
+:::::
+
+
+## UML: Item
+
+```
++--------------------+
+|      Item          |
++--------------------+
+| - name: str        |
+| - description: str |
++--------------------+
+| + describe()       |
++--------------------+
+```
+
+
+## UML: Player
+
+```
++----------------------------+
+|     Player                 |
++----------------------------+
+| - current_room: Room       |
+| - inventory: List<Item>    |
++----------------------------+
+| + enter_current_room()     |
+| + show_inventory()         |
+| + has_item(name:str): bool |
+| + take_item(name:str)      |
+| + go_through(index:int)    |
++----------------------------+
+```
+
+Player --> Room (current_room)
+Player --> Item (inventory)
+Player --> Door (go_through)
+
+
+
+## <!-- -->
+
+![](libs/_Images/coffee.jpg){fig-align="center" width="50%"}
+
+::: {style="color: green; text-align: center; font-size: 2.8rem"}
+**Viel Erfolg!**
+:::

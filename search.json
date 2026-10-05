@@ -88,7 +88,7 @@
     "href": "02_OOP_Pseudocode.html#was-ist-ein-objekt",
     "title": "OOP, Klassendiagramm",
     "section": "Was ist ein Objekt?",
-    "text": "Was ist ein Objekt?\n\n\neine konkrete Instanz einer Klasse\nbesitzt die Attribute und Methoden, die in seiner Klasse definiert sind\nJedes Objekt hat seinen eigenen Satz von Werten für die Attribute.\nAttribute -&gt; Zustand des Objekts\nMethoden -&gt; Verhalten des Objekts, das auf diesem Zustand operiert\nEin Objekt ist eine Verkapselung von Daten (Zustand) und den dazu gehörenden Operationen (Verhalten).\n\n\n\nLernkarten AP2 2025 Nr. 140"
+    "text": "Was ist ein Objekt?\n\n\neine konkrete Instanz einer Klasse\nbesitzt die Attribute und Methoden, die in seiner Klasse definiert sind\nJedes Objekt hat seinen eigenen Satz von Werten für die Attribute.\nAttribute -&gt; Zustand des Objekts\nMethoden -&gt; Verhalten des Objekts, das auf diesem Zustand operiert\nEin Objekt ist eine Verkapselung von Daten (Zustand) und den dazu gehörenden Operationen (Verhalten).\n\n\n\nLernkarte AP2 2025 Nr. 140"
   },
   {
     "objectID": "02_OOP_Pseudocode.html#oop-grundideen",
@@ -172,7 +172,7 @@
     "href": "02_OOP_Pseudocode.html#vererbung-lernkarte",
     "title": "OOP, Klassendiagramm",
     "section": "Vererbung: Lernkarte",
-    "text": "Vererbung: Lernkarte\n\n\nSchlüsselprinzip: ermöglicht, neue Klassen aus bereits existierenden Klassen zu erzeugen\neine Klasse (Kindklasse) kann Attribute und Methoden einer anderen Klasse (Elternklasse) übernehmen\nfördert Wiederverwendbarkeit und Hierarchiebildung; vermeidet Redundanz\nKindklasse heißt auch abgeleitete Klasse oder Unterklasse\nElternklasse heißt auch Oberklasse, Basisklasse oder Superklasse\n\n\n\nLernkarten AP2 2025 Nr. 133"
+    "text": "Vererbung: Lernkarte\n\n\nSchlüsselprinzip: ermöglicht, neue Klassen aus bereits existierenden Klassen zu erzeugen\neine Klasse (Kindklasse) kann Attribute und Methoden einer anderen Klasse (Elternklasse) übernehmen\nfördert Wiederverwendbarkeit und Hierarchiebildung; vermeidet Redundanz\nKindklasse heißt auch abgeleitete Klasse oder Unterklasse\nElternklasse heißt auch Oberklasse, Basisklasse oder Superklasse\nEigenschaften (Attribute) und Verhaltensweisen (Methoden), die in der Oberklasse definiert sind, werden an die Unterklasse weitergegeben\n\n\n\nLernkarten AP2 2025 Nr. 133"
   },
   {
     "objectID": "02_OOP_Pseudocode.html#oop-polymorphie-vielgestaltigkeit",
@@ -224,20 +224,6 @@
     "text": "Schnittstellen: UML-Notation\n\n+-------------------+\n| &lt;&lt;interface&gt;&gt;     |\n| Druckbar          |\n|-------------------|\n|                   |\n|-------------------|\n| + drucke(): void  |\n+-------------------+\n        ^\n        |\n  implementiert\n        |       \n+-------------------+\n| Rechnung          |\n|-------------------|\n| + drucke(): void  |\n+-------------------+"
   },
   {
-    "objectID": "02_OOP_Pseudocode.html#interface-vs.-abstrakte-klasse",
-    "href": "02_OOP_Pseudocode.html#interface-vs.-abstrakte-klasse",
-    "title": "OOP, Klassendiagramm",
-    "section": "Interface vs. abstrakte Klasse",
-    "text": "Interface vs. abstrakte Klasse\n\n\n\n\n\n\n\n\n\nKriterium\nInterface\nAbstrakte Klasse\n\n\n\n\nImplementierung\nKeine (nur Signaturen)\nKann Methoden mit Code enthalten\n\n\nMehrfachvererbung\nJa (Klasse kann mehrere Interfaces implementieren)\nNein (nur eine Elternklasse)\n\n\nAttribute\nKeine (nur Konstanten)\nJa\n\n\nKonstruktor\nNein\nJa\n\n\nEinsatz\nVertrag / Schnittstelle definieren\nGemeinsame Basis mit Teilimplementierung"
-  },
-  {
-    "objectID": "02_OOP_Pseudocode.html#interface-vs.-abstrakte-klasse-uml",
-    "href": "02_OOP_Pseudocode.html#interface-vs.-abstrakte-klasse-uml",
-    "title": "OOP, Klassendiagramm",
-    "section": "Interface vs. abstrakte Klasse: UML",
-    "text": "Interface vs. abstrakte Klasse: UML\n\n+-------------------+       +-------------------+\n| &lt;&lt;interface&gt;&gt;     |       | &lt;&lt;abstract&gt;&gt;      |\n| Druckbar          |       | Dokument          |\n|-------------------|       |-------------------|\n|                   |       | # titel: String   |\n|-------------------|       |-------------------|\n| + drucke(): void  |       | + drucke(): void  |  (abstrakt)\n+-------------------+       | + speichere()     |  (implementiert)\n        ^                   +-------------------+\n        |                            ^\n        |                            |\n  implementiert                   erbt von\n        |                            |\n+-------------------+       +-------------------+\n| Rechnung          |       | Rechnung          |\n|-------------------|       |-------------------|\n| + drucke(): void  |       | + drucke(): void  |\n+-------------------+       +-------------------+"
-  },
-  {
     "objectID": "02_OOP_Pseudocode.html#klassendiagramm",
     "href": "02_OOP_Pseudocode.html#klassendiagramm",
     "title": "OOP, Klassendiagramm",
@@ -273,11 +259,46 @@
     "text": "Komposition, Aggregation\n\n\n\nQuelle: Kakashi-Madara, Wikimedia Commons\n\n\nRaum kann nicht ohne Gebäude existieren: starke Beziehung, Komposition\nStudent kann ohne Vorlesung existieren: lose Beziehung, Aggregation\nKardinalitäten beachten"
   },
   {
+    "objectID": "02_OOP_Pseudocode.html#komposition-vs.-aggregation",
+    "href": "02_OOP_Pseudocode.html#komposition-vs.-aggregation",
+    "title": "OOP, Klassendiagramm",
+    "section": "Komposition vs. Aggregation",
+    "text": "Komposition vs. Aggregation\n\n\nAggregation\n\nlose Beziehung zwischen zwei Klassen\neine Klasse (das Ganze) enthält Sammlung oder Gruppe von Objekten einer anderen Klasse (die Teile)\nBeziehung zwischen dem Ganzen und den Teilen ist optional: das Ganze kann ohne die Teile existieren\n\n\nKomposition\n\nstarke Beziehung zwischen zwei Klassen\neine Klasse (das Ganze) besteht aus einer anderen Klasse (dem Teil)\nTeile können nur als Teil des Ganzen existieren und haben keine eigenständige Existenz\nWenn das Ganze zerstört wird, werden auch die Teile zerstört\n\n\n\nLernkarte AP2 2025 Nr. 132"
+  },
+  {
     "objectID": "02_OOP_Pseudocode.html#klassendiagramm-erläuterung",
     "href": "02_OOP_Pseudocode.html#klassendiagramm-erläuterung",
     "title": "OOP, Klassendiagramm",
     "section": "Klassendiagramm: Erläuterung",
-    "text": "Klassendiagramm: Erläuterung\n\nDas Klassendiagramm zeigt Klassen, ihre Attribute und Methoden sowie Beziehungen zwischen Klassen.\n\nKlassen und Objekte: Welche Klassen gibt es und welche Objekte repräsentieren sie?\nAttribute und Operationen: Welche Eigenschaften und Verhaltensweisen haben die Klassen?\nBeziehungen: Wie sind die Klassen miteinander verknüpft (z. B. durch Assoziationen und Vererbungen)?\nSichtbarkeit: Welche Attribute und Operationen sind öffentlich, privat oder geschützt?\nKardinalität: Wie viele Instanzen einer Klasse können mit einer anderen in Beziehung stehen?\n\n\n\nLernkarten AP2 2025 Nr. 131"
+    "text": "Klassendiagramm: Erläuterung\n\nDas Klassendiagramm zeigt Klassen, ihre Attribute und Methoden sowie Beziehungen zwischen Klassen.\n\nKlassen und Objekte: Welche Klassen gibt es und welche Objekte repräsentieren sie?\nAttribute und Operationen: Welche Eigenschaften und Verhaltensweisen haben die Klassen?\nBeziehungen: Wie sind die Klassen miteinander verknüpft (z. B. durch Assoziationen und Vererbungen)?\nSichtbarkeit: Welche Attribute und Operationen sind öffentlich, privat oder geschützt?\nKardinalität: Wie viele Instanzen einer Klasse können mit einer anderen in Beziehung stehen?\n\n\n\nLernkarte AP2 2025 Nr. 131"
+  },
+  {
+    "objectID": "02_OOP_Pseudocode.html#generische-klassen",
+    "href": "02_OOP_Pseudocode.html#generische-klassen",
+    "title": "OOP, Klassendiagramm",
+    "section": "Generische Klassen",
+    "text": "Generische Klassen\n\nDefinition: Eine generische Klasse ist ein Konzept in der objektorientierten Programmierung, das es erlaubt, eine Klasse zu definieren, die auf Typen arbeiten kann, die beim Erstellen einer Instanz der Klasse spezifiziert werden.\n\nHauptvorteil: ermöglichen Code-Wiederverwendung und Typsicherheit\nSie können eine einzige generische Klasse definieren, die auf mehrere Datentypen angewendet werden kann, anstatt separate Klassen für jeden Datentyp erstellen zu müssen\n\n\n\nLernkarte AP2 2025 Nr. 138"
+  },
+  {
+    "objectID": "02_OOP_Pseudocode.html#abstrakte-klassen",
+    "href": "02_OOP_Pseudocode.html#abstrakte-klassen",
+    "title": "OOP, Klassendiagramm",
+    "section": "Abstrakte Klassen",
+    "text": "Abstrakte Klassen\n\nWie werden abstrakte Klassen in der Anwendungsentwicklung verwendet und welche Vorteile bieten sie?\n\nAbstrakte Klassen sind Klassen, die nicht instanziiert werden können und in der Regel eine oder mehrere abstrakte Methoden enthalten\nDiese Methoden werden in den abgeleiteten Klassen implementiert\nAbstrakte Klassen können jedoch auch konkrete Methoden (Methoden mit einer Implementierung) enthalten\nHauptanwendungen und Vorteile:\n\nBereitstellung einer gemeinsamen Schnittstelle\nCode-Wiederverwendung\nErzwingung bestimmter Methoden\nPolymorphismus kann realisiert werden\n\n\n\n\nLernkarte AP2 2025 Nr. 139"
+  },
+  {
+    "objectID": "02_OOP_Pseudocode.html#interface-vs.-abstrakte-klasse",
+    "href": "02_OOP_Pseudocode.html#interface-vs.-abstrakte-klasse",
+    "title": "OOP, Klassendiagramm",
+    "section": "Interface vs. abstrakte Klasse",
+    "text": "Interface vs. abstrakte Klasse\n\n\n\n\n\n\n\n\n\nKriterium\nInterface\nAbstrakte Klasse\n\n\n\n\nImplementierung\nKeine (nur Signaturen)\nKann Methoden mit Code enthalten\n\n\nMehrfachvererbung\nJa (Klasse kann mehrere Interfaces implementieren)\nNein (nur eine Elternklasse)\n\n\nAttribute\nKeine (nur Konstanten)\nJa\n\n\nKonstruktor\nNein\nJa\n\n\nEinsatz\nVertrag / Schnittstelle definieren\nGemeinsame Basis mit Teilimplementierung"
+  },
+  {
+    "objectID": "02_OOP_Pseudocode.html#interface-vs.-abstrakte-klasse-uml",
+    "href": "02_OOP_Pseudocode.html#interface-vs.-abstrakte-klasse-uml",
+    "title": "OOP, Klassendiagramm",
+    "section": "Interface vs. abstrakte Klasse: UML",
+    "text": "Interface vs. abstrakte Klasse: UML\n\n+-------------------+       +-------------------+\n| &lt;&lt;interface&gt;&gt;     |       | &lt;&lt;abstract&gt;&gt;      |\n| Druckbar          |       | Dokument          |\n|-------------------|       |-------------------|\n|                   |       | # titel: String   |\n|-------------------|       |-------------------|\n| + drucke(): void  |       | + drucke(): void  |  (abstrakt)\n+-------------------+       | + speichere()     |  (implementiert)\n        ^                   +-------------------+\n        |                            ^\n        |                            |\n  implementiert                   erbt von\n        |                            |\n+-------------------+       +-------------------+\n| Rechnung          |       | Rechnung          |\n|-------------------|       |-------------------|\n| + drucke(): void  |       | + drucke(): void  |\n+-------------------+       +-------------------+"
   },
   {
     "objectID": "02_OOP_Pseudocode.html#section",
@@ -301,7 +322,7 @@
     "href": "01_Willkommen_Struktur.html#willkommen-in-lf11a-1",
     "title": "Willkommen in LF11a!",
     "section": "Willkommen in LF11a!",
-    "text": "Willkommen in LF11a!\nFunktionalität in Anwendungen realisieren\nThemenübersicht\n\nModellierung und Analyse\nAlgorithmen und Programmierkonzepte\nObjektorientierte Programmierung und Software-Design\nSchnittstellen, APIs, Datenformate\nQualitätssicherung und Tests",
+    "text": "Willkommen in LF11a!\nFunktionalität in Anwendungen realisieren\nThemenübersicht\n\nOOP Grundlagen\nOOP Vertiefung und Design\nObjektorientierte Modellierung und Design; UML\nSchnittstellen, APIs, SQL\nQualitätssicherung und Tests",
     "crumbs": [
       "01 Willkommen zu LF11a - Themen und Zeitplan"
     ]
@@ -312,6 +333,16 @@
     "title": "Willkommen in LF11a!",
     "section": "Zeitplan und Noten",
     "text": "Zeitplan und Noten\n\nKlassenarbeit am 21.10.\nKlassenarbeit am 28.10.\nSOLs am 9.10. und 23.10.\nPraxisprojekt vom 28.10. bis 02.12.\nPräsentation des Praxisprojekts am 2. Dezember: Noten für Mitarbeit und fachliche Leistung\nAm 3. Dezember beginnt LF12a",
+    "crumbs": [
+      "01 Willkommen zu LF11a - Themen und Zeitplan"
+    ]
+  },
+  {
+    "objectID": "01_Willkommen_Struktur.html#themen-für-vorträge",
+    "href": "01_Willkommen_Struktur.html#themen-für-vorträge",
+    "title": "Willkommen in LF11a!",
+    "section": "Themen für Vorträge",
+    "text": "Themen für Vorträge\n\nDo., 08.10.: Vererbung, Polymorphie (zu zweit oder zwei Einzelvorträge)\nMo., 19.10.: UML Sequenzdiagramm, Zustandsdiagramm (zu zweit oder zwei Einzelvorträge)\nDi., 20.10.: Architektur- und Designpatterns: Observer, Singleton, Factory, MVC\nMi., 21.10. / Do., 22.10.: (nach Klassenarbeit): REST-APIs; JSON; XML",
     "crumbs": [
       "01 Willkommen zu LF11a - Themen und Zeitplan"
     ]

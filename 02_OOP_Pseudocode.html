@@ -287,7 +287,7 @@
 </ul>
 </div>
 <aside class="notes">
-<p>Lernkarten AP2 2025 Nr. 140</p>
+<p>Lernkarte AP2 2025 Nr. 140</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -672,6 +672,7 @@
 <li class="fragment">fördert <strong>Wiederverwendbarkeit</strong> und <strong>Hierarchiebildung</strong>; vermeidet <strong>Redundanz</strong></li>
 <li class="fragment"><strong>Kindklasse</strong> heißt auch <strong>abgeleitete Klasse</strong> oder <strong>Unterklasse</strong></li>
 <li class="fragment"><strong>Elternklasse</strong> heißt auch <strong>Oberklasse, Basisklasse</strong> oder <strong>Superklasse</strong></li>
+<li class="fragment">Eigenschaften (Attribute) und Verhaltensweisen (Methoden), die in der Oberklasse definiert sind, werden an die Unterklasse weitergegeben</li>
 </ul>
 </div>
 <aside class="notes">
@@ -845,75 +846,6 @@ ENDE KLASSE</code></pre>
 +-------------------+</code></pre>
 </div>
 </section>
-<section id="interface-vs.-abstrakte-klasse" class="slide level2">
-<h2>Interface vs.&nbsp;abstrakte Klasse</h2>
-<div style="font-size: 1.7rem">
-<table class="caption-top">
-<colgroup>
-<col style="width: 28%">
-<col style="width: 28%">
-<col style="width: 43%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Kriterium</th>
-<th>Interface</th>
-<th>Abstrakte Klasse</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Implementierung</td>
-<td>Keine (nur Signaturen)</td>
-<td>Kann Methoden mit Code enthalten</td>
-</tr>
-<tr class="even">
-<td>Mehrfachvererbung</td>
-<td>Ja (Klasse kann mehrere Interfaces implementieren)</td>
-<td>Nein (nur eine Elternklasse)</td>
-</tr>
-<tr class="odd">
-<td>Attribute</td>
-<td>Keine (nur Konstanten)</td>
-<td>Ja</td>
-</tr>
-<tr class="even">
-<td>Konstruktor</td>
-<td>Nein</td>
-<td>Ja</td>
-</tr>
-<tr class="odd">
-<td>Einsatz</td>
-<td>Vertrag / Schnittstelle definieren</td>
-<td>Gemeinsame Basis mit Teilimplementierung</td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
-<section id="interface-vs.-abstrakte-klasse-uml" class="slide level2">
-<h2>Interface vs.&nbsp;abstrakte Klasse: UML</h2>
-<div style="font-size: 1.9rem">
-<pre><code>+-------------------+       +-------------------+
-| &lt;&lt;interface&gt;&gt;     |       | &lt;&lt;abstract&gt;&gt;      |
-| Druckbar          |       | Dokument          |
-|-------------------|       |-------------------|
-|                   |       | # titel: String   |
-|-------------------|       |-------------------|
-| + drucke(): void  |       | + drucke(): void  |  (abstrakt)
-+-------------------+       | + speichere()     |  (implementiert)
-        ^                   +-------------------+
-        |                            ^
-        |                            |
-  implementiert                   erbt von
-        |                            |
-+-------------------+       +-------------------+
-| Rechnung          |       | Rechnung          |
-|-------------------|       |-------------------|
-| + drucke(): void  |       | + drucke(): void  |
-+-------------------+       +-------------------+</code></pre>
-</div>
-</section>
 <section id="klassendiagramm" class="slide level2">
 <h2>Klassendiagramm</h2>
 <div class="columns">
@@ -1043,6 +975,39 @@ ENDE KLASSE</code></pre>
 </ul>
 </div></div>
 </section>
+<section id="komposition-vs.-aggregation" class="slide level2">
+<h2>Komposition vs.&nbsp;Aggregation</h2>
+<div class="columns" style="font-size: 1.8rem">
+<div class="column">
+<h3 id="aggregation">Aggregation</h3>
+<ul>
+<li class="fragment">lose Beziehung zwischen zwei Klassen</li>
+<li class="fragment">eine Klasse (das Ganze) <strong>enthält</strong> Sammlung oder Gruppe von Objekten einer anderen Klasse (die Teile)</li>
+<li class="fragment">Beziehung zwischen dem Ganzen und den Teilen ist <strong>optional: das Ganze kann ohne die Teile existieren</strong></li>
+</ul>
+</div><div class="column">
+<h3 id="komposition">Komposition</h3>
+<ul>
+<li class="fragment">starke Beziehung zwischen zwei Klassen</li>
+<li class="fragment">eine Klasse (das Ganze) <strong>besteht aus</strong> einer anderen Klasse (dem Teil)</li>
+<li class="fragment"><strong>Teile können nur als Teil des Ganzen existieren</strong> und haben keine eigenständige Existenz</li>
+<li class="fragment">Wenn das Ganze zerstört wird, werden auch die Teile zerstört</li>
+</ul>
+</div></div>
+<aside class="notes">
+<p>Lernkarte AP2 2025 Nr. 132</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
 <section id="klassendiagramm-erläuterung" class="slide level2">
 <h2>Klassendiagramm: Erläuterung</h2>
 <div style="font-size: 1.8rem">
@@ -1056,7 +1021,7 @@ ENDE KLASSE</code></pre>
 </ul>
 </div>
 <aside class="notes">
-<p>Lernkarten AP2 2025 Nr. 131</p>
+<p>Lernkarte AP2 2025 Nr. 131</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1068,6 +1033,129 @@ ENDE KLASSE</code></pre>
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
+</section>
+<section id="generische-klassen" class="slide level2">
+<h2>Generische Klassen</h2>
+<div style="font-size: 1.8rem">
+<p><strong>Definition:</strong> Eine <strong>generische Klasse</strong> ist ein Konzept in der objektorientierten Programmierung, das es erlaubt, eine Klasse zu definieren, die auf <strong>Typen</strong> arbeiten kann, die <strong>beim Erstellen einer Instanz der Klasse spezifiziert</strong> werden.</p>
+<ul>
+<li class="fragment">Hauptvorteil: ermöglichen <strong>Code-Wiederverwendung</strong> und <strong>Typsicherheit</strong></li>
+<li class="fragment">Sie können <strong>eine einzige generische Klasse</strong> definieren, die auf <strong>mehrere Datentypen</strong> angewendet werden kann, <strong>anstatt separate Klassen für jeden Datentyp</strong> erstellen zu müssen</li>
+</ul>
+</div>
+<aside class="notes">
+<p>Lernkarte AP2 2025 Nr. 138</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="abstrakte-klassen" class="slide level2">
+<h2>Abstrakte Klassen</h2>
+<div style="font-size: 1.8rem">
+<p><strong>Wie werden abstrakte Klassen in der Anwendungsentwicklung verwendet und welche Vorteile bieten sie?</strong></p>
+<ul>
+<li class="fragment">Abstrakte Klassen sind Klassen, die <strong>nicht instanziiert werden</strong> können und in der Regel eine oder mehrere <strong>abstrakte Methoden</strong> enthalten</li>
+<li class="fragment">Diese <strong>Methoden</strong> werden <strong>in den abgeleiteten Klassen implementiert</strong></li>
+<li class="fragment">Abstrakte Klassen können jedoch auch <strong>konkrete Methoden</strong> (Methoden mit einer Implementierung) enthalten</li>
+<li class="fragment">Hauptanwendungen und Vorteile:
+<ul>
+<li class="fragment">Bereitstellung einer <strong>gemeinsamen Schnittstelle</strong></li>
+<li class="fragment">Code-Wiederverwendung</li>
+<li class="fragment">Erzwingung bestimmter Methoden</li>
+<li class="fragment"><strong>Polymorphismus</strong> kann realisiert werden</li>
+</ul></li>
+</ul>
+</div>
+<aside class="notes">
+<p>Lernkarte AP2 2025 Nr. 139</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="interface-vs.-abstrakte-klasse" class="slide level2">
+<h2>Interface vs.&nbsp;abstrakte Klasse</h2>
+<div style="font-size: 1.7rem">
+<table class="caption-top">
+<colgroup>
+<col style="width: 28%">
+<col style="width: 28%">
+<col style="width: 43%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Kriterium</th>
+<th>Interface</th>
+<th>Abstrakte Klasse</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Implementierung</td>
+<td>Keine (nur Signaturen)</td>
+<td>Kann Methoden mit Code enthalten</td>
+</tr>
+<tr class="even">
+<td>Mehrfachvererbung</td>
+<td>Ja (Klasse kann mehrere Interfaces implementieren)</td>
+<td>Nein (nur eine Elternklasse)</td>
+</tr>
+<tr class="odd">
+<td>Attribute</td>
+<td>Keine (nur Konstanten)</td>
+<td>Ja</td>
+</tr>
+<tr class="even">
+<td>Konstruktor</td>
+<td>Nein</td>
+<td>Ja</td>
+</tr>
+<tr class="odd">
+<td>Einsatz</td>
+<td>Vertrag / Schnittstelle definieren</td>
+<td>Gemeinsame Basis mit Teilimplementierung</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="interface-vs.-abstrakte-klasse-uml" class="slide level2">
+<h2>Interface vs.&nbsp;abstrakte Klasse: UML</h2>
+<div style="font-size: 1.9rem">
+<pre><code>+-------------------+       +-------------------+
+| &lt;&lt;interface&gt;&gt;     |       | &lt;&lt;abstract&gt;&gt;      |
+| Druckbar          |       | Dokument          |
+|-------------------|       |-------------------|
+|                   |       | # titel: String   |
+|-------------------|       |-------------------|
+| + drucke(): void  |       | + drucke(): void  |  (abstrakt)
++-------------------+       | + speichere()     |  (implementiert)
+        ^                   +-------------------+
+        |                            ^
+        |                            |
+  implementiert                   erbt von
+        |                            |
++-------------------+       +-------------------+
+| Rechnung          |       | Rechnung          |
+|-------------------|       |-------------------|
+| + drucke(): void  |       | + drucke(): void  |
++-------------------+       +-------------------+</code></pre>
+</div>
 </section>
 <section id="section" class="slide level2">
 <h2><!-- --></h2>

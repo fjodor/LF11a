@@ -17,6 +17,49 @@ execute:
 callout-appearance: simple
 ---
 
+## Escape Room: Ziele
+
+::: incremental
+
+- Klassen definieren
+- Attribute kapseln
+- Methoden für Zustandsänderungen
+- Vererbung für Spezialisierungen
+
+:::
+
+
+## Kapselung
+
+::: {.incremental style="font-size: 2rem"}
+
+- Türen haben einen **privaten Zustand** (_geschlossen)
+- Items können **versteckte Informationen** haben 
+- Räume verwalten ihre Listen selbst (keine direkte Manipulation von außen)
+- Verwenden Sie bewusst **Getter / Setter** bzw. **kontrollierte Methoden**
+
+:::
+
+
+## Vererbung
+
+### Türtypen
+
+::: {.incremental style="font-size: 2rem"}
+
+- `NormaleTür` erbt von Tür
+- `SchlüsselTür`: zusätzlich benötigter Schlüsselname
+- `RätselTür`: zusätzlich Frage und Lösung
+
+:::
+
+::: {.fragment style="font-size: 2rem"}
+
+Hier werden keine Methoden überschrieben, <br> sondern nur **Verhalten erweitert**.
+
+:::
+
+
 ## UML: Room
 
 :::: {style="font-size: 1.8rem"}
@@ -136,10 +179,13 @@ Room ------------------> Door
 +----------------------------+
 ```
 
-Player --> Room (current_room)
-Player --> Item (inventory)
-Player --> Door (go_through)
+::: {style="font-size: 2rem"}
 
+Player --> Room (current_room)  
+Player --> Item (inventory)  
+Player --> Door (go_through)  
+
+:::
 
 
 ## <!-- -->

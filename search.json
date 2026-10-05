@@ -438,6 +438,16 @@
     ]
   },
   {
+    "objectID": "02b_OOP_Escape-Room.html#aufgabe-optional",
+    "href": "02b_OOP_Escape-Room.html#aufgabe-optional",
+    "title": "OOP: Escape Room",
+    "section": "Aufgabe: Optional",
+    "text": "Aufgabe: Optional\n\n\nRätsel-Tür: öffnet sich nur, wenn der Spieler eine Frage richtig beantwortet\nContainer-Item: Item, das andere Items enthalten kann (Komposition)\nRaum mit Zustand: Raum kann dunkel sein - Spieler braucht eine Lampe\nInventar-Limit: Spieler kann nur 3 Items tragen - Kapselung und Logik\nLogging: Jede Aktion wird protokolliert - zeigt Objekt-Interaktion",
+    "crumbs": [
+      "02b OOP Escape Room"
+    ]
+  },
+  {
     "objectID": "02b_OOP_Escape-Room.html#section",
     "href": "02b_OOP_Escape-Room.html#section",
     "title": "OOP: Escape Room",

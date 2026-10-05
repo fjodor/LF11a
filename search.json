@@ -358,6 +358,86 @@
     ]
   },
   {
+    "objectID": "02b_OOP_Escape-Room.html#escape-room-ziele",
+    "href": "02b_OOP_Escape-Room.html#escape-room-ziele",
+    "title": "OOP: Escape Room",
+    "section": "Escape Room: Ziele",
+    "text": "Escape Room: Ziele\n\nKlassen definieren\nAttribute kapseln\nMethoden für Zustandsänderungen\nVererbung für Spezialisierungen",
+    "crumbs": [
+      "02b OOP Escape Room"
+    ]
+  },
+  {
+    "objectID": "02b_OOP_Escape-Room.html#kapselung",
+    "href": "02b_OOP_Escape-Room.html#kapselung",
+    "title": "OOP: Escape Room",
+    "section": "Kapselung",
+    "text": "Kapselung\n\n\nTüren haben einen privaten Zustand (_geschlossen)\nItems können versteckte Informationen haben\nRäume verwalten ihre Listen selbst (keine direkte Manipulation von außen)\nVerwenden Sie bewusst Getter / Setter bzw. kontrollierte Methoden",
+    "crumbs": [
+      "02b OOP Escape Room"
+    ]
+  },
+  {
+    "objectID": "02b_OOP_Escape-Room.html#vererbung",
+    "href": "02b_OOP_Escape-Room.html#vererbung",
+    "title": "OOP: Escape Room",
+    "section": "Vererbung",
+    "text": "Vererbung\nTürtypen\n\n\nNormaleTür erbt von Tür\nSchlüsselTür: zusätzlich benötigter Schlüsselname\nRätselTür: zusätzlich Frage und Lösung\n\n\n\nHier werden keine Methoden überschrieben,  sondern nur Verhalten erweitert.",
+    "crumbs": [
+      "02b OOP Escape Room"
+    ]
+  },
+  {
+    "objectID": "02b_OOP_Escape-Room.html#uml-room",
+    "href": "02b_OOP_Escape-Room.html#uml-room",
+    "title": "OOP: Escape Room",
+    "section": "UML: Room",
+    "text": "UML: Room\n\n+-----------------------------+\n|      Room                   |\n+-----------------------------+\n| - name: str                 |\n| - description: str          |\n| - doors: List&lt;Door&gt;         |\n| - items: List&lt;Item&gt;         |\n+-----------------------------+\n| + enter()                   |\n| + show_items()              |\n| + show_doors()              |\n| + add_door(d:Door)          |\n| + add_item(i:Item)          |\n| + take_item(name:str): Item |\n+-----------------------------+\nBeziehung Room - Door\n\n            1    * \nRoom ------------------&gt; Door\n            contains",
+    "crumbs": [
+      "02b OOP Escape Room"
+    ]
+  },
+  {
+    "objectID": "02b_OOP_Escape-Room.html#uml-door",
+    "href": "02b_OOP_Escape-Room.html#uml-door",
+    "title": "OOP: Escape Room",
+    "section": "UML Door",
+    "text": "UML Door\n\n+---------------------+\n|      Door           |\n+---------------------+\n| - target_room: Room |\n| - is_open: bool     |\n+---------------------+\n| + open()            |\n| + close()           |\n| + is_open(): bool   |\n+---------------------+\n\n        ^ \n        |\n        | inheritance\n        |\n\n\n\n+--------------------+\n|   NormalDoor       |\n+--------------------+\n|  (no extra fields) |\n+--------------------+\n\n+---------------------------------+\n|     KeyDoor                     |\n+---------------------------------+\n| - required_key: str             |\n+---------------------------------+\n| + try_open(player:Player): bool |\n+---------------------------------+",
+    "crumbs": [
+      "02b OOP Escape Room"
+    ]
+  },
+  {
+    "objectID": "02b_OOP_Escape-Room.html#uml-item",
+    "href": "02b_OOP_Escape-Room.html#uml-item",
+    "title": "OOP: Escape Room",
+    "section": "UML: Item",
+    "text": "UML: Item\n+--------------------+\n|      Item          |\n+--------------------+\n| - name: str        |\n| - description: str |\n+--------------------+\n| + describe()       |\n+--------------------+",
+    "crumbs": [
+      "02b OOP Escape Room"
+    ]
+  },
+  {
+    "objectID": "02b_OOP_Escape-Room.html#uml-player",
+    "href": "02b_OOP_Escape-Room.html#uml-player",
+    "title": "OOP: Escape Room",
+    "section": "UML: Player",
+    "text": "UML: Player\n+----------------------------+\n|     Player                 |\n+----------------------------+\n| - current_room: Room       |\n| - inventory: List&lt;Item&gt;    |\n+----------------------------+\n| + enter_current_room()     |\n| + show_inventory()         |\n| + has_item(name:str): bool |\n| + take_item(name:str)      |\n| + go_through(index:int)    |\n+----------------------------+\n\nPlayer –&gt; Room (current_room)\nPlayer –&gt; Item (inventory)\nPlayer –&gt; Door (go_through)",
+    "crumbs": [
+      "02b OOP Escape Room"
+    ]
+  },
+  {
+    "objectID": "02b_OOP_Escape-Room.html#section",
+    "href": "02b_OOP_Escape-Room.html#section",
+    "title": "OOP: Escape Room",
+    "section": "",
+    "text": "Viel Erfolg!",
+    "crumbs": [
+      "02b OOP Escape Room"
+    ]
+  },
+  {
     "objectID": "03_Software-Architektur.html#modularität",
     "href": "03_Software-Architektur.html#modularität",
     "title": "Software-Architektur",

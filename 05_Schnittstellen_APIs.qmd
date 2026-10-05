@@ -8,7 +8,6 @@ format:
     theme: simple
     logo: libs/_Images/logo-AFBB.svg
     css: libs/styles.css
-    embed-resources: false
 execute:
   echo: false
   eval: true

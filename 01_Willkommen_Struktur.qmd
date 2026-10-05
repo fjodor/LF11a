@@ -29,10 +29,10 @@ callout-appearance: simple
 
 ### Themenübersicht
 
-- Modellierung und Analyse
-- Algorithmen und Programmierkonzepte
-- Objektorientierte Programmierung und Software-Design
-- Schnittstellen, APIs, Datenformate
+- OOP Grundlagen
+- OOP Vertiefung und Design
+- Objektorientierte Modellierung und Design; UML
+- Schnittstellen, APIs, SQL
 - Qualitätssicherung und Tests
 
 
@@ -44,6 +44,15 @@ callout-appearance: simple
 - **Praxisprojekt** vom 28.10. bis 02.12.
 - **Präsentation** des Praxisprojekts am 2. Dezember: <br>Noten für Mitarbeit und fachliche Leistung
 - Am 3. Dezember beginnt **LF12a**
+
+
+## Themen für Vorträge
+
+- Do., 08.10.: Vererbung, Polymorphie (zu zweit oder zwei Einzelvorträge)
+- Mo., 19.10.: UML Sequenzdiagramm, Zustandsdiagramm (zu zweit oder zwei Einzelvorträge)
+- Di., 20.10.: Architektur- und Designpatterns: Observer, Singleton, Factory, MVC
+- Mi., 21.10. / Do., 22.10.: (nach Klassenarbeit): REST-APIs; JSON; XML
+
 
 ## <!-- -->
 

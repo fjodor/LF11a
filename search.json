@@ -428,6 +428,16 @@
     ]
   },
   {
+    "objectID": "02b_OOP_Escape-Room.html#aufgabe",
+    "href": "02b_OOP_Escape-Room.html#aufgabe",
+    "title": "OOP: Escape Room",
+    "section": "Aufgabe",
+    "text": "Aufgabe\n\n\n\nErstellt einen Mini-Escape-Room mit:\n\nmindestens 2 Räumen\nmindestens 2 Türtypen (z. B. normale Tür und Schlüsseltür)\nmindestens 2 Items\neinem Spieler, der\n\nItems aufnehmen kann\nTüren öffnen kann\nRäume wechseln kann\n\n\n\nRegeln:\n\nkeine Polymorphie\nkeine Interfaces\nFokus auf Kapselung und Vererbung\nUML-Skizze vor Programmierung\nSprache frei wählbar (Python, Java, C#, …)",
+    "crumbs": [
+      "02b OOP Escape Room"
+    ]
+  },
+  {
     "objectID": "02b_OOP_Escape-Room.html#section",
     "href": "02b_OOP_Escape-Room.html#section",
     "title": "OOP: Escape Room",

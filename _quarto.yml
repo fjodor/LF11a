@@ -11,6 +11,8 @@ website:
         text: Home
       - href: 01_Willkommen_Struktur.qmd
         text: 01 Willkommen zu LF11a - Themen und Zeitplan
+      - href: 02b_OOP_Escape-Room.qmd
+        text: 02b OOP Escape Room
 
 format:
   revealjs:

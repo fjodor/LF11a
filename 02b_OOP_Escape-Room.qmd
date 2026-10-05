@@ -188,6 +188,39 @@ Player --> Door (go_through)
 :::
 
 
+## Aufgabe
+
+::::: {style="font-size: 2rem"}
+
+:::: columns
+::: column
+
+Erstellt einen Mini-Escape-Room mit:
+
+- mindestens 2 Räumen
+- mindestens 2 Türtypen (z. B. normale Tür und Schlüsseltür)
+- mindestens 2 Items
+- einem Spieler, der
+  + Items aufnehmen kann
+  + Türen öffnen kann
+  + Räume wechseln kann
+:::
+
+::: {.column .fragment}
+
+Regeln:
+
+- keine Polymorphie
+- keine Interfaces
+- Fokus auf Kapselung und Vererbung
+- UML-Skizze vor Programmierung
+- Sprache frei wählbar (Python, Java, C#, ...)
+
+:::
+::::
+:::::
+
+
 ## <!-- -->
 
 ![](libs/_Images/coffee.jpg){fig-align="center" width="50%"}

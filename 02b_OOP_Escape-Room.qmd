@@ -221,6 +221,19 @@ Regeln:
 :::::
 
 
+## Aufgabe: Optional
+
+::: {.incremental style="font-size: 2.1rem"}
+
+- **Rätsel-Tür:** öffnet sich nur, wenn der Spieler eine Frage richtig beantwortet
+- **Container-Item:** Item, das andere Items enthalten kann (Komposition)
+- **Raum mit Zustand:** Raum kann dunkel sein - Spieler braucht eine Lampe
+- **Inventar-Limit:** Spieler kann nur 3 Items tragen - Kapselung und Logik
+- **Logging:** Jede Aktion wird protokolliert - zeigt Objekt-Interaktion
+
+:::
+
+
 ## <!-- -->
 
 ![](libs/_Images/coffee.jpg){fig-align="center" width="50%"}

@@ -857,6 +857,7 @@ Lernkarte AP2 2025 Nr. 139
 | Attribute | Keine (nur Konstanten) | Ja |
 | Konstruktor | Nein | Ja |
 | Einsatz | Vertrag / Schnittstelle definieren | Gemeinsame Basis mit Teilimplementierung |
+| Eselsbrücke | "kann etwas" <br> "Hund kann spielen" | "ist ein" <br> "Hund ist ein Haustier"
 
 ::::
 

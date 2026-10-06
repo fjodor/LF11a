@@ -393,7 +393,7 @@
     "href": "02_OOP_Pseudocode.html#interface-vs.-abstrakte-klasse",
     "title": "OOP, Klassendiagramm",
     "section": "Interface vs. abstrakte Klasse",
-    "text": "Interface vs. abstrakte Klasse\n\n\n\n\n\n\n\n\n\nKriterium\nInterface\nAbstrakte Klasse\n\n\n\n\nImplementierung\nKeine (nur Signaturen)\nKann Methoden mit Code enthalten\n\n\nMehrfachvererbung\nJa (Klasse kann mehrere Interfaces implementieren)\nNein (nur eine Elternklasse)\n\n\nAttribute\nKeine (nur Konstanten)\nJa\n\n\nKonstruktor\nNein\nJa\n\n\nEinsatz\nVertrag / Schnittstelle definieren\nGemeinsame Basis mit Teilimplementierung",
+    "text": "Interface vs. abstrakte Klasse\n\n\n\n\n\n\n\n\n\nKriterium\nInterface\nAbstrakte Klasse\n\n\n\n\nImplementierung\nKeine (nur Signaturen)\nKann Methoden mit Code enthalten\n\n\nMehrfachvererbung\nJa (Klasse kann mehrere Interfaces implementieren)\nNein (nur eine Elternklasse)\n\n\nAttribute\nKeine (nur Konstanten)\nJa\n\n\nKonstruktor\nNein\nJa\n\n\nEinsatz\nVertrag / Schnittstelle definieren\nGemeinsame Basis mit Teilimplementierung\n\n\nEselsbrücke\n“kann etwas”  “Hund kann spielen”\n“ist ein”  “Hund ist ein Haustier”",
     "crumbs": [
       "02 OOP Pseudocode"
     ]

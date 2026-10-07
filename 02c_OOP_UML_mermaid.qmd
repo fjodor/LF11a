@@ -14,12 +14,12 @@ callout-appearance: simple
 ## Escape Room: UML
 
 ```{mermaid}
-{{< include escape-room.mmd >}}
+{{< include _escape-room.mmd >}}
 ```
 
 
 ## Escape Room: Mermaid-Code
 
 ```text
-{{< include escape-room.mmd >}}
+{{< include _escape-room.mmd >}}
 ```

@@ -1,0 +1,25 @@
+---
+title: "OOP UML - Mermaid"
+subtitle: " "
+format: html
+execute:
+  echo: false
+  eval: true
+  freeze: auto
+  warning: false
+  message: false
+callout-appearance: simple
+---
+
+## Escape Room: UML
+
+```{mermaid}
+{{< include escape-room.mmd >}}
+```
+
+
+## Escape Room: Mermaid-Code
+
+```text
+{{< include escape-room.mmd >}}
+```

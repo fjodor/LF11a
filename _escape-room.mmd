@@ -1,0 +1,52 @@
+classDiagram
+ 
+class Room {
+- name : String
+- description : String
+- doors : Door
+- items : Item
++ enter()
++ show_items()
++ show_doors()
++ add_door()
++ add_item()
++ take_item()
+}
+ 
+class Door {
+- target_room : Room
+- is_open : Boolean
++ open()
++ close()
+}
+ 
+class KeyDoor {
+- required_key : String
++ try_open(player : Player)
+}
+ 
+class Item {
+- name : String
+- description : String
++ describe()
+}
+ 
+class Player {
+- current_room : Room
+- inventory : Item
++ enter_current_room()
++ show_inventory()
++ has_item()
++ take_item()
++ go_through()
+}
+ 
+Door <|-- KeyDoor
+ 
+Room "1" o-- "0..*" Door : doors
+Room "1" o-- "0..*" Item : items
+ 
+Door --> "1" Room : target_room
+ 
+Player --> "1" Room : current_room
+Player o-- "0..*" Item : inventory

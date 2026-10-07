@@ -409,11 +409,31 @@
     ]
   },
   {
+    "objectID": "02a_OOP_Pseudocode.html#generische-klassen-wann",
+    "href": "02a_OOP_Pseudocode.html#generische-klassen-wann",
+    "title": "OOP, Klassendiagramm",
+    "section": "Generische Klassen: Wann?",
+    "text": "Generische Klassen: Wann?\n\n\nCodebeispiel: Futterstation für Haustiere\nOhne generische Klasse:  class Hundefutterstation, class Meerschweinchen-Futterstation, …\nNachteile:\n\nredundante Logik für jeden Tier-Typ\nProbleme bei neuen Tierklassen\n\nMit generischer Klasse: class Futterstation(Generic[T])\nVorteile:\n\neine Klasse für alle Tierarten\nTypsicherheit durch Typparameter “T”:  T = TypeVar(\"T\", bound=\"Haustier\")\nweniger Code, leichter erweiterbar\n\nMerksatz: Eine generische Klasse beschreibt einen Algorithmus nur einmal und lässt den konkreten Datentyp offen.",
+    "crumbs": [
+      "02a OOP Pseudocode"
+    ]
+  },
+  {
     "objectID": "02a_OOP_Pseudocode.html#abstrakte-klassen",
     "href": "02a_OOP_Pseudocode.html#abstrakte-klassen",
     "title": "OOP, Klassendiagramm",
     "section": "Abstrakte Klassen",
     "text": "Abstrakte Klassen\n\nWie werden abstrakte Klassen in der Anwendungsentwicklung verwendet und welche Vorteile bieten sie?\n\nAbstrakte Klassen sind Klassen, die nicht instanziiert werden können und in der Regel eine oder mehrere abstrakte Methoden enthalten\nDiese Methoden werden in den abgeleiteten Klassen implementiert\nAbstrakte Klassen können jedoch auch konkrete Methoden (Methoden mit einer Implementierung) enthalten\nHauptanwendungen und Vorteile:\n\nBereitstellung einer gemeinsamen Schnittstelle\nCode-Wiederverwendung\nErzwingung bestimmter Methoden\nPolymorphismus kann realisiert werden\n\n\n\n\nLernkarte AP2 2025 Nr. 139",
+    "crumbs": [
+      "02a OOP Pseudocode"
+    ]
+  },
+  {
+    "objectID": "02a_OOP_Pseudocode.html#abstrakte-klasse-wann",
+    "href": "02a_OOP_Pseudocode.html#abstrakte-klasse-wann",
+    "title": "OOP, Klassendiagramm",
+    "section": "Abstrakte Klasse: Wann?",
+    "text": "Abstrakte Klasse: Wann?\n\nWann wird eine abstrakte Klasse nützlich?\n\nWenn die Basisklasse gemeinsame Eigenschaften besitzt, aber nicht sinnvoll selbst existiert\nBeispiel Escape Room, Door:\n\nDoor\n|– KeyDoor\n|– PuzzleDoor\n\n\nFrage: Kommt im Spiel jemals eine “normale Tür” vor?\nWenn nein:\n&lt;&lt;abstract&gt;&gt;\nDoor\ndoor = Door() -&gt; Fehler: kann nicht instanziiert werden",
     "crumbs": [
       "02a OOP Pseudocode"
     ]

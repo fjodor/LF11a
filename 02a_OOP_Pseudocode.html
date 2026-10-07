@@ -1914,6 +1914,28 @@ overflow: hidden!important;
 display:block!important;
 }</style></aside>
 </section>
+<section id="generische-klassen-wann" class="slide level2">
+<h2>Generische Klassen: Wann?</h2>
+<div style="font-size: 1.7rem">
+<ul>
+<li class="fragment">Codebeispiel: Futterstation für Haustiere</li>
+<li class="fragment">Ohne generische Klasse: <br> <code>class Hundefutterstation, class Meerschweinchen-Futterstation</code>, …</li>
+<li class="fragment">Nachteile:
+<ul>
+<li class="fragment">redundante Logik für jeden Tier-Typ</li>
+<li class="fragment">Probleme bei neuen Tierklassen</li>
+</ul></li>
+<li class="fragment">Mit generischer Klasse: <code>class Futterstation(Generic[T])</code></li>
+<li class="fragment">Vorteile:
+<ul>
+<li class="fragment">eine Klasse für alle Tierarten</li>
+<li class="fragment">Typsicherheit durch Typparameter “T”: <br> <code>T = TypeVar(&quot;T&quot;, bound=&quot;Haustier&quot;)</code></li>
+<li class="fragment">weniger Code, leichter erweiterbar</li>
+</ul></li>
+<li class="fragment"><strong>Merksatz: Eine generische Klasse beschreibt einen Algorithmus nur einmal und lässt den konkreten Datentyp offen.</strong></li>
+</ul>
+</div>
+</section>
 <section id="abstrakte-klassen" class="slide level2">
 <h2>Abstrakte Klassen</h2>
 <div style="font-size: 1.8rem">
@@ -1944,6 +1966,27 @@ width: 1px!important;
 overflow: hidden!important;
 display:block!important;
 }</style></aside>
+</section>
+<section id="abstrakte-klasse-wann" class="slide level2">
+<h2>Abstrakte Klasse: Wann?</h2>
+<div style="font-size: 1.9rem">
+<p><strong>Wann wird eine abstrakte Klasse nützlich?</strong></p>
+<ul>
+<li class="fragment">Wenn die Basisklasse gemeinsame Eigenschaften besitzt, aber nicht sinnvoll selbst existiert</li>
+<li class="fragment">Beispiel Escape Room, Door:
+<ul>
+<li class="fragment">Door<br>
+|– KeyDoor<br>
+|– PuzzleDoor<br>
+</li>
+</ul></li>
+<li class="fragment">Frage: Kommt im Spiel jemals eine “normale Tür” vor?</li>
+<li class="fragment">Wenn nein:<br>
+<code>&lt;&lt;abstract&gt;&gt;</code><br>
+Door</li>
+<li class="fragment">door = Door() -&gt; Fehler: kann nicht instanziiert werden</li>
+</ul>
+</div>
 </section>
 <section id="interface-vs.-abstrakte-klasse" class="slide level2">
 <h2>Interface vs. abstrakte Klasse</h2>

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>LF11a</title>
+<title>OOP UML - Mermaid – LF11a</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -73,6 +73,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 </head>
@@ -86,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Home</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./02c_OOP_UML_mermaid.html">02c OOP Klassendiagramm Mermaid</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -105,7 +108,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Home</span></a>
   </div>
 </li>
@@ -129,7 +132,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./02c_OOP_UML_mermaid.html" class="sidebar-item-text sidebar-link">
+  <a href="./02c_OOP_UML_mermaid.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">02c OOP Klassendiagramm Mermaid</span></a>
   </div>
 </li>
@@ -144,7 +147,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">LF11a</h1>
+<h1 class="title">OOP UML - Mermaid</h1>
 </div>
 
 
@@ -161,10 +164,128 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="willkommen" class="level1">
-<h1>Willkommen!</h1>
-<p>Hier sammle ich Unterlagen zu LF11a.</p>
-<p>Der Quellcode liegt hier: <a href="https://github.com/fjodor/LF11a" class="uri">https://github.com/fjodor/LF11a</a></p>
+<section id="escape-room-uml" class="level2">
+<h2 class="anchored" data-anchor-id="escape-room-uml">Escape Room: UML</h2>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">classDiagram
+&nbsp;
+class Room {
+- name : String
+- description : String
+- doors : Door
+- items : Item
++ enter()
++ show_items()
++ show_doors()
++ add_door()
++ add_item()
++ take_item()
+}
+&nbsp;
+class Door {
+- target_room : Room
+- is_open : Boolean
++ open()
++ close()
+}
+&nbsp;
+class KeyDoor {
+- required_key : String
++ try_open(player : Player)
+}
+&nbsp;
+class Item {
+- name : String
+- description : String
++ describe()
+}
+&nbsp;
+class Player {
+- current_room : Room
+- inventory : Item
++ enter_current_room()
++ show_inventory()
++ has_item()
++ take_item()
++ go_through()
+}
+&nbsp;
+Door &lt;|-- KeyDoor
+&nbsp;
+Room "1" o-- "0..*" Door : doors
+Room "1" o-- "0..*" Item : items
+&nbsp;
+Door --&gt; "1" Room : target_room
+&nbsp;
+Player --&gt; "1" Room : current_room
+Player o-- "0..*" Item : inventory
+
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="escape-room-mermaid-code" class="level2">
+<h2 class="anchored" data-anchor-id="escape-room-mermaid-code">Escape Room: Mermaid-Code</h2>
+<pre class="text"><code>classDiagram
+&nbsp;
+class Room {
+- name : String
+- description : String
+- doors : Door
+- items : Item
++ enter()
++ show_items()
++ show_doors()
++ add_door()
++ add_item()
++ take_item()
+}
+&nbsp;
+class Door {
+- target_room : Room
+- is_open : Boolean
++ open()
++ close()
+}
+&nbsp;
+class KeyDoor {
+- required_key : String
++ try_open(player : Player)
+}
+&nbsp;
+class Item {
+- name : String
+- description : String
++ describe()
+}
+&nbsp;
+class Player {
+- current_room : Room
+- inventory : Item
++ enter_current_room()
++ show_inventory()
++ has_item()
++ take_item()
++ go_through()
+}
+&nbsp;
+Door &lt;|-- KeyDoor
+&nbsp;
+Room "1" o-- "0..*" Door : doors
+Room "1" o-- "0..*" Item : items
+&nbsp;
+Door --&gt; "1" Room : target_room
+&nbsp;
+Player --&gt; "1" Room : current_room
+Player o-- "0..*" Item : inventory
+</code></pre>
 
 
 </section>

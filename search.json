@@ -49,373 +49,403 @@
     "text": "©torange.biz CC-BY 4.0\n\n\nViel Erfolg!"
   },
   {
-    "objectID": "02_OOP_Pseudocode.html#oop-blick-in-die-geschichte",
-    "href": "02_OOP_Pseudocode.html#oop-blick-in-die-geschichte",
+    "objectID": "02c_OOP_UML_mermaid.html",
+    "href": "02c_OOP_UML_mermaid.html",
+    "title": "OOP UML - Mermaid",
+    "section": "",
+    "text": "classDiagram\n \nclass Room {\n- name : String\n- description : String\n- doors : Door\n- items : Item\n+ enter()\n+ show_items()\n+ show_doors()\n+ add_door()\n+ add_item()\n+ take_item()\n}\n \nclass Door {\n- target_room : Room\n- is_open : Boolean\n+ open()\n+ close()\n}\n \nclass KeyDoor {\n- required_key : String\n+ try_open(player : Player)\n}\n \nclass Item {\n- name : String\n- description : String\n+ describe()\n}\n \nclass Player {\n- current_room : Room\n- inventory : Item\n+ enter_current_room()\n+ show_inventory()\n+ has_item()\n+ take_item()\n+ go_through()\n}\n \nDoor &lt;|-- KeyDoor\n \nRoom \"1\" o-- \"0..*\" Door : doors\nRoom \"1\" o-- \"0..*\" Item : items\n \nDoor --&gt; \"1\" Room : target_room\n \nPlayer --&gt; \"1\" Room : current_room\nPlayer o-- \"0..*\" Item : inventory",
+    "crumbs": [
+      "02c OOP Klassendiagramm Mermaid"
+    ]
+  },
+  {
+    "objectID": "02c_OOP_UML_mermaid.html#escape-room-uml",
+    "href": "02c_OOP_UML_mermaid.html#escape-room-uml",
+    "title": "OOP UML - Mermaid",
+    "section": "",
+    "text": "classDiagram\n \nclass Room {\n- name : String\n- description : String\n- doors : Door\n- items : Item\n+ enter()\n+ show_items()\n+ show_doors()\n+ add_door()\n+ add_item()\n+ take_item()\n}\n \nclass Door {\n- target_room : Room\n- is_open : Boolean\n+ open()\n+ close()\n}\n \nclass KeyDoor {\n- required_key : String\n+ try_open(player : Player)\n}\n \nclass Item {\n- name : String\n- description : String\n+ describe()\n}\n \nclass Player {\n- current_room : Room\n- inventory : Item\n+ enter_current_room()\n+ show_inventory()\n+ has_item()\n+ take_item()\n+ go_through()\n}\n \nDoor &lt;|-- KeyDoor\n \nRoom \"1\" o-- \"0..*\" Door : doors\nRoom \"1\" o-- \"0..*\" Item : items\n \nDoor --&gt; \"1\" Room : target_room\n \nPlayer --&gt; \"1\" Room : current_room\nPlayer o-- \"0..*\" Item : inventory",
+    "crumbs": [
+      "02c OOP Klassendiagramm Mermaid"
+    ]
+  },
+  {
+    "objectID": "02c_OOP_UML_mermaid.html#escape-room-mermaid-code",
+    "href": "02c_OOP_UML_mermaid.html#escape-room-mermaid-code",
+    "title": "OOP UML - Mermaid",
+    "section": "Escape Room: Mermaid-Code",
+    "text": "Escape Room: Mermaid-Code\nclassDiagram\n \nclass Room {\n- name : String\n- description : String\n- doors : Door\n- items : Item\n+ enter()\n+ show_items()\n+ show_doors()\n+ add_door()\n+ add_item()\n+ take_item()\n}\n \nclass Door {\n- target_room : Room\n- is_open : Boolean\n+ open()\n+ close()\n}\n \nclass KeyDoor {\n- required_key : String\n+ try_open(player : Player)\n}\n \nclass Item {\n- name : String\n- description : String\n+ describe()\n}\n \nclass Player {\n- current_room : Room\n- inventory : Item\n+ enter_current_room()\n+ show_inventory()\n+ has_item()\n+ take_item()\n+ go_through()\n}\n \nDoor &lt;|-- KeyDoor\n \nRoom \"1\" o-- \"0..*\" Door : doors\nRoom \"1\" o-- \"0..*\" Item : items\n \nDoor --&gt; \"1\" Room : target_room\n \nPlayer --&gt; \"1\" Room : current_room\nPlayer o-- \"0..*\" Item : inventory",
+    "crumbs": [
+      "02c OOP Klassendiagramm Mermaid"
+    ]
+  },
+  {
+    "objectID": "02a_OOP_Pseudocode.html#oop-blick-in-die-geschichte",
+    "href": "02a_OOP_Pseudocode.html#oop-blick-in-die-geschichte",
     "title": "OOP, Klassendiagramm",
     "section": "OOP: Blick in die Geschichte …",
     "text": "OOP: Blick in die Geschichte …\n\n\n\nQuelle: Thomas Woodtli, Wikimedia Commons, CC-BY-SA-2.0\n\n\n1960er: Ole-Johan Dahl und Kristen Nygaard am Norwegian Computing Center in Oslo simulieren Schiffsbewegungen im Osloer Hafen\nDamalige prozedurale Programiersprachen (Algol, Fortran): verfilzter Code; -&gt; Simula (OOP)\n1970er: Alan Kay wollte interaktives Computersystem bauen -&gt; Simula -&gt; Smalltalk (OOP)",
     "crumbs": [
-      "02 OOP Pseudocode"
+      "02a OOP Pseudocode"
     ]
   },
   {
-    "objectID": "02_OOP_Pseudocode.html#geschichte-schiffe",
-    "href": "02_OOP_Pseudocode.html#geschichte-schiffe",
+    "objectID": "02a_OOP_Pseudocode.html#geschichte-schiffe",
+    "href": "02a_OOP_Pseudocode.html#geschichte-schiffe",
     "title": "OOP, Klassendiagramm",
     "section": "Geschichte: Schiffe",
     "text": "Geschichte: Schiffe\n\n\n\nSanta Maria, Schiff von Kolumbus 1492, Wikimedia Commons, vermutlich von Edward H. Hart, public domain\n\n\nMayflower, 1620, Wikimedia Commons, CC0 1.0 public domain",
     "crumbs": [
-      "02 OOP Pseudocode"
+      "02a OOP Pseudocode"
     ]
   },
   {
-    "objectID": "02_OOP_Pseudocode.html#geschichte-schiffe-1",
-    "href": "02_OOP_Pseudocode.html#geschichte-schiffe-1",
+    "objectID": "02a_OOP_Pseudocode.html#geschichte-schiffe-1",
+    "href": "02a_OOP_Pseudocode.html#geschichte-schiffe-1",
     "title": "OOP, Klassendiagramm",
     "section": "Geschichte: Schiffe",
     "text": "Geschichte: Schiffe\n\nRMS Titanic 1912, Francis Godolphin Osbourne Stuart gest. 1923, Wikimedia Commons, public domain",
     "crumbs": [
-      "02 OOP Pseudocode"
+      "02a OOP Pseudocode"
     ]
   },
   {
-    "objectID": "02_OOP_Pseudocode.html#ziele",
-    "href": "02_OOP_Pseudocode.html#ziele",
+    "objectID": "02a_OOP_Pseudocode.html#ziele",
+    "href": "02a_OOP_Pseudocode.html#ziele",
     "title": "OOP, Klassendiagramm",
     "section": "Ziele",
     "text": "Ziele\nGrundpfeiler der objektorientierten Programmierung (OOP) verstehen und anwenden können:\n\nKapselung, Vererbung, Polymorphie, Interfaces\nFehlerbehandlung\nUML-Notation\nZugriffsmodifikatoren\nPseudocode mit OOP-Konzepten",
     "crumbs": [
-      "02 OOP Pseudocode"
+      "02a OOP Pseudocode"
     ]
   },
   {
-    "objectID": "02_OOP_Pseudocode.html#was-ist-eine-klasse",
-    "href": "02_OOP_Pseudocode.html#was-ist-eine-klasse",
+    "objectID": "02a_OOP_Pseudocode.html#was-ist-eine-klasse",
+    "href": "02a_OOP_Pseudocode.html#was-ist-eine-klasse",
     "title": "OOP, Klassendiagramm",
     "section": "Was ist eine Klasse?",
     "text": "Was ist eine Klasse?\n\n\nEine Klasse ist ein Bauplan für die Erstellung von Objekten.\nKlasse definiert Attribute und Methoden eines Objekts\n\nAttribute: Eigenschaften, Variablen; repräsentieren den Zustand\nMethoden: Funktionen; repräsentieren das Verhalten\n\nKlasse ermöglicht Erstellung mehrerer Objekte mit ähnlichen Merkmalen und Verhaltensweisen\n\n\n\nLernkarten AP2 2025 Nr. 137",
     "crumbs": [
-      "02 OOP Pseudocode"
+      "02a OOP Pseudocode"
     ]
   },
   {
-    "objectID": "02_OOP_Pseudocode.html#was-ist-ein-objekt",
-    "href": "02_OOP_Pseudocode.html#was-ist-ein-objekt",
+    "objectID": "02a_OOP_Pseudocode.html#was-ist-ein-objekt",
+    "href": "02a_OOP_Pseudocode.html#was-ist-ein-objekt",
     "title": "OOP, Klassendiagramm",
     "section": "Was ist ein Objekt?",
     "text": "Was ist ein Objekt?\n\n\neine konkrete Instanz einer Klasse\nbesitzt die Attribute und Methoden, die in seiner Klasse definiert sind\nJedes Objekt hat seinen eigenen Satz von Werten für die Attribute.\nAttribute -&gt; Zustand des Objekts\nMethoden -&gt; Verhalten des Objekts, das auf diesem Zustand operiert\nEin Objekt ist eine Verkapselung von Daten (Zustand) und den dazu gehörenden Operationen (Verhalten).\n\n\n\nLernkarte AP2 2025 Nr. 140",
     "crumbs": [
-      "02 OOP Pseudocode"
+      "02a OOP Pseudocode"
     ]
   },
   {
-    "objectID": "02_OOP_Pseudocode.html#oop-grundideen",
-    "href": "02_OOP_Pseudocode.html#oop-grundideen",
+    "objectID": "02a_OOP_Pseudocode.html#oop-grundideen",
+    "href": "02a_OOP_Pseudocode.html#oop-grundideen",
     "title": "OOP, Klassendiagramm",
     "section": "OOP: Grundideen",
     "text": "OOP: Grundideen\n\nKapselung (Encapsulation)\nVererbung\nPolymorphie\nInterfaces",
     "crumbs": [
-      "02 OOP Pseudocode"
+      "02a OOP Pseudocode"
     ]
   },
   {
-    "objectID": "02_OOP_Pseudocode.html#kapselung-encapsulation",
-    "href": "02_OOP_Pseudocode.html#kapselung-encapsulation",
+    "objectID": "02a_OOP_Pseudocode.html#kapselung-encapsulation",
+    "href": "02a_OOP_Pseudocode.html#kapselung-encapsulation",
     "title": "OOP, Klassendiagramm",
     "section": "Kapselung (Encapsulation)",
     "text": "Kapselung (Encapsulation)\n\n\ninterne Daten eines Objekts werden vor direktem Zugriff geschützt\nZugriff erfolgt über definierte Methoden (Getter/Setter)\nZugriffsmodifikatoren steuern die Sichtbarkeit:\npublic, private, protected, package\nschafft Datenintegrität: Manipulation nur auf sichere, kontrollierte Weise\nverbessert Wartbarkeit: Änderungen an der internen Implementierung der Klasse beeinflussen nicht die Programmteile, die die Klasse verwenden\n\n\n\nLernkarten AP2 2025 Nr. 134",
     "crumbs": [
-      "02 OOP Pseudocode"
+      "02a OOP Pseudocode"
     ]
   },
   {
-    "objectID": "02_OOP_Pseudocode.html#oop-vs.-prozedurale-programmierung",
-    "href": "02_OOP_Pseudocode.html#oop-vs.-prozedurale-programmierung",
+    "objectID": "02a_OOP_Pseudocode.html#oop-vs.-prozedurale-programmierung",
+    "href": "02a_OOP_Pseudocode.html#oop-vs.-prozedurale-programmierung",
     "title": "OOP, Klassendiagramm",
     "section": "OOP vs. prozedurale Programmierung",
     "text": "OOP vs. prozedurale Programmierung\n\n\nOOP\n\nDaten und Funktionen werden zu Objekten zusammengefasst\nObjekt kann Attribute (Daten) und Methoden (Funktionen) enthalten\n\n\nProzedurale Programmierung\n\n\nProgramm führt eine Reihe von Aufgaben aus: Prozeduren\nProzeduren operieren auf Daten\nDaten sind getrennt von Prozeduren; Prozeduren bearbeiten die Daten\n\n\n\n\nLernkarten AP2 2025 Nr. 136",
     "crumbs": [
-      "02 OOP Pseudocode"
+      "02a OOP Pseudocode"
     ]
   },
   {
-    "objectID": "02_OOP_Pseudocode.html#prozedur-vs.-funktion",
-    "href": "02_OOP_Pseudocode.html#prozedur-vs.-funktion",
+    "objectID": "02a_OOP_Pseudocode.html#prozedur-vs.-funktion",
+    "href": "02a_OOP_Pseudocode.html#prozedur-vs.-funktion",
     "title": "OOP, Klassendiagramm",
     "section": "Prozedur vs. Funktion",
     "text": "Prozedur vs. Funktion\n\n\nFunktion\n\nCodeblock, der eine spezifische Aufgabe ausführt\nliefert in der Regel einen Wert zurück\n\n\nProzedur\n\n\nCodeblock, der eine spezifische Aufgabe ausführt\nliefert in der Regel keinen Wert zurück\nProzedur führt Aufgabe aus und kehrt dann zur aufrufenden Stelle im Code zurück\n\n\n\n\nLernkarten AP2 2025 Nr. 135",
     "crumbs": [
-      "02 OOP Pseudocode"
+      "02a OOP Pseudocode"
     ]
   },
   {
-    "objectID": "02_OOP_Pseudocode.html#kapselung---zugriffsmodifikatoren",
-    "href": "02_OOP_Pseudocode.html#kapselung---zugriffsmodifikatoren",
+    "objectID": "02a_OOP_Pseudocode.html#kapselung---zugriffsmodifikatoren",
+    "href": "02a_OOP_Pseudocode.html#kapselung---zugriffsmodifikatoren",
     "title": "OOP, Klassendiagramm",
     "section": "Kapselung - Zugriffsmodifikatoren",
     "text": "Kapselung - Zugriffsmodifikatoren\n\nZugriffsmodifikatoren bestimmen, wo auf Klassen, Methoden und Variablen zugegriffen werden kann.\n\n\n\n\n\nZugriffs-modifikator\nSymbol\n\n\n\n\npublic   \n+\n\n\nprivate   \n-\n\n\nprotected   \n#\n\n\npackage\n~\n\n\n\n\n\n\n\n\n\n\nBedeutung   \n\n\n\n\nZugriff überall erlaubt, sowohl innerhalb als auch außerhalb der Klasse\n\n\nZugriff nur innerhalb der Klasse erlaubt, in der sie definiert sind\n\n\nZugriff nur innerhalb der Klasse, des Pakets und von abgeleiteten Klassen erlaubt\n\n\nZugriff ist innerhalb der Klasse und in allen Klassen desselben Pakets erlaubt\n\n\n\n\n\n\nLernkarte AP2 2025 Nr. 142",
     "crumbs": [
-      "02 OOP Pseudocode"
+      "02a OOP Pseudocode"
     ]
   },
   {
-    "objectID": "02_OOP_Pseudocode.html#kapselung---zugriffsmodifikatoren-1",
-    "href": "02_OOP_Pseudocode.html#kapselung---zugriffsmodifikatoren-1",
+    "objectID": "02a_OOP_Pseudocode.html#kapselung---zugriffsmodifikatoren-1",
+    "href": "02a_OOP_Pseudocode.html#kapselung---zugriffsmodifikatoren-1",
     "title": "OOP, Klassendiagramm",
     "section": "Kapselung - Zugriffsmodifikatoren",
     "text": "Kapselung - Zugriffsmodifikatoren\n\nIHK-Standard in Prüfungen\n\n\n\n\n\n\n\n\n\nZugriffs-modifikator\nSymbol\nBedeutung\nVerwendung\n\n\n\n\nprivate\n-\nZugriff nur innerhalb der Klasse erlaubt, in der sie definiert sind\nAttribute\n\n\npublic\n+\nZugriff überall erlaubt, sowohl innerhalb als auch außerhalb der Klasse\nOperation / Methode\n\n\n\nUML-Beispiel\n\n\n+------------------------------+\n|          Konto               |\n|------------------------------|\n| - kontostand: double         |\n|------------------------------|\n| + getKontostand(): double    |\n| + einzahlen(betrag: double)  |\n| + abheben(betrag: double)    |\n+------------------------------+\n\n\nNiemand darf direkt auf den Kontostand (private) zugreifen und ihn verändern\nVeränderung nur über die public-Methoden einzahlen() und abheben(), die eine Validierung durchführen",
     "crumbs": [
-      "02 OOP Pseudocode"
+      "02a OOP Pseudocode"
     ]
   },
   {
-    "objectID": "02_OOP_Pseudocode.html#kapselung-pseudocode",
-    "href": "02_OOP_Pseudocode.html#kapselung-pseudocode",
+    "objectID": "02a_OOP_Pseudocode.html#kapselung-pseudocode",
+    "href": "02a_OOP_Pseudocode.html#kapselung-pseudocode",
     "title": "OOP, Klassendiagramm",
     "section": "Kapselung: Pseudocode",
     "text": "Kapselung: Pseudocode\n\nKLASSE Konto\n    PRIVAT kontostand: Zahl\n\n    OEFFENTLICH METHODE getKontostand(): Zahl\n        RUECKGABE kontostand\n    ENDE METHODE\n\n    OEFFENTLICH METHODE einzahlen(betrag: Zahl)\n        WENN betrag &gt; 0 DANN\n            kontostand = kontostand + betrag\n        SONST\n            ausgabe(\"Ungültiger Betrag!\")\n        ENDE WENN\n    ENDE METHODE\n\n    OEFFENTLICH METHODE abheben(betrag: Zahl): Wahrheitswert\n        WENN betrag &gt; 0 UND betrag &lt;= kontostand DANN\n            kontostand = kontostand - betrag\n            RUECKGABE WAHR\n        SONST\n            ausgabe(\"Nicht genuegend Guthaben!\")\n            RUECKGABE FALSCH\n        ENDE WENN\n    ENDE METHODE\nENDE KLASSE",
     "crumbs": [
-      "02 OOP Pseudocode"
+      "02a OOP Pseudocode"
     ]
   },
   {
-    "objectID": "02_OOP_Pseudocode.html#vererbung-uml",
-    "href": "02_OOP_Pseudocode.html#vererbung-uml",
+    "objectID": "02a_OOP_Pseudocode.html#vererbung-uml",
+    "href": "02a_OOP_Pseudocode.html#vererbung-uml",
     "title": "OOP, Klassendiagramm",
     "section": "Vererbung: UML",
     "text": "Vererbung: UML\n\n                 +----------------------------+\n                 |       Fahrzeug             |\n                 |----------------------------|\n                 | # marke: String            |\n                 | # baujahr: int             |\n                 |----------------------------|\n                 | + beschreibung(): String   |\n                 +----------------------------+\n                    ^                  ^\n                    |                  |\n                erbt von           erbt von\n                    |                  |\n+--------------------------+  +----------------------------+\n|     PKW                  |  |       LKW                  |\n|--------------------------|  |----------------------------|\n| - anzahlSitze: int       |  | - ladekapazitaet: int      |\n|--------------------------|  |----------------------------|\n| + beschreibung(): String |  | + beschreibung(): String   |\n+--------------------------+  +----------------------------+\n\n\n\nPKW und LKW erben von Fahrzeug\nBeide übernehmen die protected-Attribute marke und baujahr\nBeide erhalten jeweils ein eigenes privates Attribut (anzahlSitze bzw. ladekapazität)",
     "crumbs": [
-      "02 OOP Pseudocode"
+      "02a OOP Pseudocode"
     ]
   },
   {
-    "objectID": "02_OOP_Pseudocode.html#vererbung-pseudocode",
-    "href": "02_OOP_Pseudocode.html#vererbung-pseudocode",
+    "objectID": "02a_OOP_Pseudocode.html#vererbung-pseudocode",
+    "href": "02a_OOP_Pseudocode.html#vererbung-pseudocode",
     "title": "OOP, Klassendiagramm",
     "section": "Vererbung: Pseudocode",
     "text": "Vererbung: Pseudocode\n\nKLASSE Fahrzeug                         // Elternklasse\n    GESCHUETZT marke: String\n    GESCHUETZT baujahr: Zahl\n\n    METHODE beschreibung(): String\n        RUECKGABE marke + \" (\" + baujahr + \")\"\n    ENDE METHODE\nENDE KLASSE\n\n\n\nKLASSE PKW ERBT VON Fahrzeug        // Kindklasse\n    PRIVAT anzahlSitze: Zahl\n\n    METHODE beschreibung(): String  // überschrieben\n        RUECKGABE marke + \" (\" + baujahr + \"), \n        \" + anzahlSitze + \" Sitze\"\n    ENDE METHODE\nENDE KLASSE\n\nKLASSE LKW ERBT VON Fahrzeug        // Kindklasse\n    PRIVAT ladekapazitaet: Zahl     // in Tonnen\n\n    METHODE beschreibung(): String  // überschrieben\n        RUECKGABE marke + \" (\" + baujahr + \"), \n        \" + ladekapazitaet + \" t\"\n    ENDE METHODE\nENDE KLASSE",
     "crumbs": [
-      "02 OOP Pseudocode"
+      "02a OOP Pseudocode"
     ]
   },
   {
-    "objectID": "02_OOP_Pseudocode.html#vererbung-python-beispiel",
-    "href": "02_OOP_Pseudocode.html#vererbung-python-beispiel",
+    "objectID": "02a_OOP_Pseudocode.html#vererbung-python-beispiel",
+    "href": "02a_OOP_Pseudocode.html#vererbung-python-beispiel",
     "title": "OOP, Klassendiagramm",
     "section": "Vererbung: Python-Beispiel",
     "text": "Vererbung: Python-Beispiel\n\n# Elternklasse = Basisklasse = Oberklasse\n\nclass Haustier:\n    def __init__(self, name):\n        self.name = name\n        self._energie = 100  # Unterstrich: \n        # Konvention für geschütztes Attribut\n\n    def spielen(self):\n      ...\n# Kindklasse = abgeleitete Klasse = Unterklasse\n\nclass Hund(Haustier):\n    pass    # erbt alles unverändert\n\n# Anwendung\n\nbello = Hund(\"Bello\")\nbello.spielen()   # nutzt die geerbte Methode",
     "crumbs": [
-      "02 OOP Pseudocode"
+      "02a OOP Pseudocode"
     ]
   },
   {
-    "objectID": "02_OOP_Pseudocode.html#vererbung-begriffe",
-    "href": "02_OOP_Pseudocode.html#vererbung-begriffe",
+    "objectID": "02a_OOP_Pseudocode.html#vererbung-begriffe",
+    "href": "02a_OOP_Pseudocode.html#vererbung-begriffe",
     "title": "OOP, Klassendiagramm",
     "section": "Vererbung: Begriffe",
     "text": "Vererbung: Begriffe\n\n\nOberklasse (Superklasse) – Klasse, von der geerbt wird\nUnterklasse (Subklasse) – Klasse, die erbt\nsuper – Zugriff auf Methoden/Konstruktor der Oberklasse\nIst-ein-Beziehung – PKW ist ein Fahrzeug (Vererbung)\nHat-ein-Beziehung – Fahrzeug hat einen Motor (Komposition, keine Vererbung)\nDurch Vererbung müssen gemeinsame Attribute (marke, baujahr) und Methoden nur einmal in der Elternklasse definiert werden.\nKindklassen fügen spezifische Attribute hinzu und können Methoden überschreiben.",
     "crumbs": [
-      "02 OOP Pseudocode"
+      "02a OOP Pseudocode"
     ]
   },
   {
-    "objectID": "02_OOP_Pseudocode.html#vererbung-lernkarte",
-    "href": "02_OOP_Pseudocode.html#vererbung-lernkarte",
+    "objectID": "02a_OOP_Pseudocode.html#vererbung-lernkarte",
+    "href": "02a_OOP_Pseudocode.html#vererbung-lernkarte",
     "title": "OOP, Klassendiagramm",
     "section": "Vererbung: Lernkarte",
     "text": "Vererbung: Lernkarte\n\n\nSchlüsselprinzip: ermöglicht, neue Klassen aus bereits existierenden Klassen zu erzeugen\neine Klasse (Kindklasse) kann Attribute und Methoden einer anderen Klasse (Elternklasse) übernehmen\nfördert Wiederverwendbarkeit und Hierarchiebildung; vermeidet Redundanz\nKindklasse heißt auch abgeleitete Klasse oder Unterklasse\nElternklasse heißt auch Oberklasse, Basisklasse oder Superklasse\nEigenschaften (Attribute) und Verhaltensweisen (Methoden), die in der Oberklasse definiert sind, werden an die Unterklasse weitergegeben\n\n\n\nLernkarten AP2 2025 Nr. 133",
     "crumbs": [
-      "02 OOP Pseudocode"
+      "02a OOP Pseudocode"
     ]
   },
   {
-    "objectID": "02_OOP_Pseudocode.html#oop-polymorphie-vielgestaltigkeit",
-    "href": "02_OOP_Pseudocode.html#oop-polymorphie-vielgestaltigkeit",
+    "objectID": "02a_OOP_Pseudocode.html#oop-polymorphie-vielgestaltigkeit",
+    "href": "02a_OOP_Pseudocode.html#oop-polymorphie-vielgestaltigkeit",
     "title": "OOP, Klassendiagramm",
     "section": "OOP: Polymorphie (“Vielgestaltigkeit”)",
     "text": "OOP: Polymorphie (“Vielgestaltigkeit”)\n\nDefinition: Polymorphie (Vielgestaltigkeit) bedeutet, dass Objekte verschiedener Klassen über eine gemeinsame Schnittstelle angesprochen werden können und sich unterschiedlich verhalten.\n\nWie wird das unterschiedliche Verhalten der Objekte ausgelöst?\ndurch den Datentyp oder die Klasse\nKlassen teilen Methoden, aber die Implementierungen der Methoden können variieren\nWann wird entschieden, welche Implementierung ausgeführt wird? Zur Laufzeit! Tatsächlicher Objekttyp entscheidet\nverbessert Flexibilität\nerhöht Wiederverwendbarkeit von Code\nerleichtert standardisierte Schnittstellen\n\n\n\nLernkarten AP2 2025 Nr. 141",
     "crumbs": [
-      "02 OOP Pseudocode"
+      "02a OOP Pseudocode"
     ]
   },
   {
-    "objectID": "02_OOP_Pseudocode.html#polymorphie-zwei-arten",
-    "href": "02_OOP_Pseudocode.html#polymorphie-zwei-arten",
+    "objectID": "02a_OOP_Pseudocode.html#polymorphie-zwei-arten",
+    "href": "02a_OOP_Pseudocode.html#polymorphie-zwei-arten",
     "title": "OOP, Klassendiagramm",
     "section": "Polymorphie: Zwei Arten",
     "text": "Polymorphie: Zwei Arten\n\n\n\n\n\n\n\n\n\n\nArt\nBeschreibung\nBeispiel\n\n\n\n\nÜberladen (Overloading)\nGleicher Methodenname, verschiedene Parameter\nberechne(a) und berechne(a, b)\n\n\nÜberschreiben (Overriding)\nKindklasse überschreibt Methode der Elternklasse\nHund.sprechen() statt Tier.sprechen()",
     "crumbs": [
-      "02 OOP Pseudocode"
+      "02a OOP Pseudocode"
     ]
   },
   {
-    "objectID": "02_OOP_Pseudocode.html#polymorphie-pseudocode",
-    "href": "02_OOP_Pseudocode.html#polymorphie-pseudocode",
+    "objectID": "02a_OOP_Pseudocode.html#polymorphie-pseudocode",
+    "href": "02a_OOP_Pseudocode.html#polymorphie-pseudocode",
     "title": "OOP, Klassendiagramm",
     "section": "Polymorphie: Pseudocode",
     "text": "Polymorphie: Pseudocode\nÜberschreiben (Overriding)\nKLASSE Tier\n    METHODE sprechen(): String\n        RUECKGABE \"...\"\n    ENDE METHODE\nENDE KLASSE\n\n\nKLASSE Hund ERBT VON Tier\n    METHODE sprechen(): String\n    // überschreibt Tier.sprechen()\n        RUECKGABE \"Wau!\"\n    ENDE METHODE\nENDE KLASSE\n\nKLASSE Katze ERBT VON Tier\n    METHODE sprechen(): String\n    // überschreibt Tier.sprechen()\n        RUECKGABE \"Miau!\"\n    ENDE METHODE\nENDE KLASSE",
     "crumbs": [
-      "02 OOP Pseudocode"
+      "02a OOP Pseudocode"
     ]
   },
   {
-    "objectID": "02_OOP_Pseudocode.html#polymorphie-beispiel",
-    "href": "02_OOP_Pseudocode.html#polymorphie-beispiel",
+    "objectID": "02a_OOP_Pseudocode.html#polymorphie-beispiel",
+    "href": "02a_OOP_Pseudocode.html#polymorphie-beispiel",
     "title": "OOP, Klassendiagramm",
     "section": "Polymorphie: Beispiel",
     "text": "Polymorphie: Beispiel\n// tiere: Liste von Tier = [neuer Hund(), neue Katze()]\nFUER JEDES t IN tiere\n    ausgabe(t.sprechen())\n    // \"Wau!\", \"Miau!\"\nENDE FUER",
     "crumbs": [
-      "02 OOP Pseudocode"
+      "02a OOP Pseudocode"
     ]
   },
   {
-    "objectID": "02_OOP_Pseudocode.html#polymorphie-pseudocode-1",
-    "href": "02_OOP_Pseudocode.html#polymorphie-pseudocode-1",
+    "objectID": "02a_OOP_Pseudocode.html#polymorphie-pseudocode-1",
+    "href": "02a_OOP_Pseudocode.html#polymorphie-pseudocode-1",
     "title": "OOP, Klassendiagramm",
     "section": "Polymorphie: Pseudocode",
     "text": "Polymorphie: Pseudocode\nÜberladen (Overloading)\nKLASSE Rechner\n    METHODE addiere(a: Zahl, b: Zahl): Zahl\n        RUECKGABE a + b\n    ENDE METHODE\n\n    METHODE addiere(a: Zahl, b: Zahl, c: Zahl): Zahl   // überladene Methode\n        RUECKGABE a + b + c\n    ENDE METHODE\nENDE KLASSE",
     "crumbs": [
-      "02 OOP Pseudocode"
+      "02a OOP Pseudocode"
     ]
   },
   {
-    "objectID": "02_OOP_Pseudocode.html#schnittstellen-interfaces",
-    "href": "02_OOP_Pseudocode.html#schnittstellen-interfaces",
+    "objectID": "02a_OOP_Pseudocode.html#schnittstellen-interfaces",
+    "href": "02a_OOP_Pseudocode.html#schnittstellen-interfaces",
     "title": "OOP, Klassendiagramm",
     "section": "Schnittstellen (Interfaces)",
     "text": "Schnittstellen (Interfaces)\nDefinition: Ein Interface (Schnittstelle) definiert eine Menge von Methodensignaturen, die eine implementierende Klasse umsetzen MUSS. Ein Interface enthält keinen eigenen Code (keine Implementierung).\n\nPseudocode:\nINTERFACE Druckbar\n    METHODE drucke(): nichts\nENDE INTERFACE\n\n\nKLASSE Rechnung IMPLEMENTIERT Druckbar\n    ATTRIBUT betrag: Zahl\n\n    METHODE drucke()\n        ausgabe(\"Rechnung: \" + betrag + \" EUR\")\n    ENDE METHODE\nENDE KLASSE\n\nKLASSE Lieferschein IMPLEMENTIERT Druckbar\n    ATTRIBUT artikelListe: Liste\n\n    METHODE drucke()\n        ausgabe(\"Lieferschein mit \" + \n        laenge(artikelListe) + \" Artikeln\")\n    ENDE METHODE\nENDE KLASSE",
     "crumbs": [
-      "02 OOP Pseudocode"
+      "02a OOP Pseudocode"
     ]
   },
   {
-    "objectID": "02_OOP_Pseudocode.html#schnittstellen-uml-notation",
-    "href": "02_OOP_Pseudocode.html#schnittstellen-uml-notation",
+    "objectID": "02a_OOP_Pseudocode.html#schnittstellen-uml-notation",
+    "href": "02a_OOP_Pseudocode.html#schnittstellen-uml-notation",
     "title": "OOP, Klassendiagramm",
     "section": "Schnittstellen: UML-Notation",
     "text": "Schnittstellen: UML-Notation\n\n+-------------------+\n| &lt;&lt;interface&gt;&gt;     |\n| Druckbar          |\n|-------------------|\n|                   |\n|-------------------|\n| + drucke(): void  |\n+-------------------+\n        ^\n        |\n  implementiert\n        |       \n+-------------------+\n| Rechnung          |\n|-------------------|\n| + drucke(): void  |\n+-------------------+",
     "crumbs": [
-      "02 OOP Pseudocode"
+      "02a OOP Pseudocode"
     ]
   },
   {
-    "objectID": "02_OOP_Pseudocode.html#klassendiagramm",
-    "href": "02_OOP_Pseudocode.html#klassendiagramm",
+    "objectID": "02a_OOP_Pseudocode.html#klassendiagramm",
+    "href": "02a_OOP_Pseudocode.html#klassendiagramm",
     "title": "OOP, Klassendiagramm",
     "section": "Klassendiagramm",
     "text": "Klassendiagramm\n\n\n \n\n\n\n\n\nQuelle: Belegsatz zu AP2, Sommer 2026",
     "crumbs": [
-      "02 OOP Pseudocode"
+      "02a OOP Pseudocode"
     ]
   },
   {
-    "objectID": "02_OOP_Pseudocode.html#klassendiagramm-beispiel",
-    "href": "02_OOP_Pseudocode.html#klassendiagramm-beispiel",
+    "objectID": "02a_OOP_Pseudocode.html#klassendiagramm-beispiel",
+    "href": "02a_OOP_Pseudocode.html#klassendiagramm-beispiel",
     "title": "OOP, Klassendiagramm",
     "section": "Klassendiagramm: Beispiel",
     "text": "Klassendiagramm: Beispiel\nVererbung & Polymorphie: UML\n\n+----------------------------+\n|         Haustier           |\n|----------------------------|\n| - name : String            |\n| - energie : int            |\n|----------------------------|\n| + spielen() : void         |\n| + ausruhen() : void        |\n+----------------------------+\n         ^            ^\n         |            |\n         |            |\n+----------------+  +----------------+\n|      Hund      |  |     Katze      |\n|----------------|  |----------------|\n| + spielen()    |  | + spielen()    |\n| + ausruhen()   |  | + ausruhen()   |\n+----------------+  +----------------+",
     "crumbs": [
-      "02 OOP Pseudocode"
+      "02a OOP Pseudocode"
     ]
   },
   {
-    "objectID": "02_OOP_Pseudocode.html#klassendiagramm-beziehungen",
-    "href": "02_OOP_Pseudocode.html#klassendiagramm-beziehungen",
+    "objectID": "02a_OOP_Pseudocode.html#klassendiagramm-beziehungen",
+    "href": "02a_OOP_Pseudocode.html#klassendiagramm-beziehungen",
     "title": "OOP, Klassendiagramm",
     "section": "Klassendiagramm: Beziehungen",
     "text": "Klassendiagramm: Beziehungen\n\n\n\n\n\nVererbung: Pfeil zeigt auf Oberklasse\nAssoziation: Beziehung zwischen Klassen; kann gerichtet oder ungerichtet sein\n\nBeispiele ungerichtet: Lehrer - Schüler; Produkt - Kategorie\nBeispiele gerichtet: Email -&gt; Empfänger; Rechnung -&gt; Kunde\n\nAggregation und Komposition: Beziehung Teil - Ganzes\n\nAggregation: Teil kann ohne das Ganze existieren, z. B. Schüler (Teil) - Unterricht\nKomposition: Teile existenziell vom Ganzen abhängig, z. B. Raum - Haus",
     "crumbs": [
-      "02 OOP Pseudocode"
+      "02a OOP Pseudocode"
     ]
   },
   {
-    "objectID": "02_OOP_Pseudocode.html#klassendiagramm-kardinalitäten",
-    "href": "02_OOP_Pseudocode.html#klassendiagramm-kardinalitäten",
+    "objectID": "02a_OOP_Pseudocode.html#klassendiagramm-kardinalitäten",
+    "href": "02a_OOP_Pseudocode.html#klassendiagramm-kardinalitäten",
     "title": "OOP, Klassendiagramm",
     "section": "Klassendiagramm: Kardinalitäten",
     "text": "Klassendiagramm: Kardinalitäten\n\nDefinition Kardinalitäten = Multiplizitäten: Wie viele Instanzen einer Klasse können mit einer Instanz einer anderen Klasse in Beziehung stehen?\n\n\n\n\n\n\n\n\nSchreibweise\nBedeutung\nErklärung\n\n\n\n\n0..* oder *\nNull bis beliebig viele\nDie Beziehung ist optional. Es können keine oder unendlich viele Objekte verknüpft sein.\n\n\n1..*\nEins bis beliebig viele\nMindestens ein Objekt muss existieren (Pflichtbeziehung).\n\n\n0..1\nNull oder eins\nOptional, aber maximal ein Objekt (z. B. ein Profil für einen Nutzer).\n\n\n1 oder 1..1\nGenau eins\nExakt ein Objekt muss verknüpft sein\n\n\nn..m, z. B. 2..5\nBestimmte Spanne\nMindestens n und maximal m Objekte",
     "crumbs": [
-      "02 OOP Pseudocode"
+      "02a OOP Pseudocode"
     ]
   },
   {
-    "objectID": "02_OOP_Pseudocode.html#komposition-aggregation",
-    "href": "02_OOP_Pseudocode.html#komposition-aggregation",
+    "objectID": "02a_OOP_Pseudocode.html#komposition-aggregation",
+    "href": "02a_OOP_Pseudocode.html#komposition-aggregation",
     "title": "OOP, Klassendiagramm",
     "section": "Komposition, Aggregation",
     "text": "Komposition, Aggregation\n\n\n\nQuelle: Kakashi-Madara, Wikimedia Commons\n\n\nRaum kann nicht ohne Gebäude existieren: starke Beziehung, Komposition\nStudent kann ohne Vorlesung existieren: lose Beziehung, Aggregation\nKardinalitäten beachten",
     "crumbs": [
-      "02 OOP Pseudocode"
+      "02a OOP Pseudocode"
     ]
   },
   {
-    "objectID": "02_OOP_Pseudocode.html#komposition-vs.-aggregation",
-    "href": "02_OOP_Pseudocode.html#komposition-vs.-aggregation",
+    "objectID": "02a_OOP_Pseudocode.html#komposition-vs.-aggregation",
+    "href": "02a_OOP_Pseudocode.html#komposition-vs.-aggregation",
     "title": "OOP, Klassendiagramm",
     "section": "Komposition vs. Aggregation",
     "text": "Komposition vs. Aggregation\n\n\nAggregation\n\nlose Beziehung zwischen zwei Klassen\neine Klasse (das Ganze) enthält Sammlung oder Gruppe von Objekten einer anderen Klasse (die Teile)\nBeziehung zwischen dem Ganzen und den Teilen ist optional: das Ganze kann ohne die Teile existieren\n\n\nKomposition\n\nstarke Beziehung zwischen zwei Klassen\neine Klasse (das Ganze) besteht aus einer anderen Klasse (dem Teil)\nTeile können nur als Teil des Ganzen existieren und haben keine eigenständige Existenz\nWenn das Ganze zerstört wird, werden auch die Teile zerstört\n\n\n\nLernkarte AP2 2025 Nr. 132",
     "crumbs": [
-      "02 OOP Pseudocode"
+      "02a OOP Pseudocode"
     ]
   },
   {
-    "objectID": "02_OOP_Pseudocode.html#klassendiagramm-erläuterung",
-    "href": "02_OOP_Pseudocode.html#klassendiagramm-erläuterung",
+    "objectID": "02a_OOP_Pseudocode.html#klassendiagramm-erläuterung",
+    "href": "02a_OOP_Pseudocode.html#klassendiagramm-erläuterung",
     "title": "OOP, Klassendiagramm",
     "section": "Klassendiagramm: Erläuterung",
     "text": "Klassendiagramm: Erläuterung\n\nDas Klassendiagramm zeigt Klassen, ihre Attribute und Methoden sowie Beziehungen zwischen Klassen.\n\nKlassen und Objekte: Welche Klassen gibt es und welche Objekte repräsentieren sie?\nAttribute und Operationen: Welche Eigenschaften und Verhaltensweisen haben die Klassen?\nBeziehungen: Wie sind die Klassen miteinander verknüpft (z. B. durch Assoziationen und Vererbungen)?\nSichtbarkeit: Welche Attribute und Operationen sind öffentlich, privat oder geschützt?\nKardinalität: Wie viele Instanzen einer Klasse können mit einer anderen in Beziehung stehen?\n\n\n\nLernkarte AP2 2025 Nr. 131",
     "crumbs": [
-      "02 OOP Pseudocode"
+      "02a OOP Pseudocode"
     ]
   },
   {
-    "objectID": "02_OOP_Pseudocode.html#generische-klassen",
-    "href": "02_OOP_Pseudocode.html#generische-klassen",
+    "objectID": "02a_OOP_Pseudocode.html#generische-klassen",
+    "href": "02a_OOP_Pseudocode.html#generische-klassen",
     "title": "OOP, Klassendiagramm",
     "section": "Generische Klassen",
     "text": "Generische Klassen\n\nDefinition: Eine generische Klasse ist ein Konzept in der objektorientierten Programmierung, das es erlaubt, eine Klasse zu definieren, die auf Typen arbeiten kann, die beim Erstellen einer Instanz der Klasse spezifiziert werden.\n\nHauptvorteil: ermöglichen Code-Wiederverwendung und Typsicherheit\nSie können eine einzige generische Klasse definieren, die auf mehrere Datentypen angewendet werden kann, anstatt separate Klassen für jeden Datentyp erstellen zu müssen\n\n\n\nLernkarte AP2 2025 Nr. 138",
     "crumbs": [
-      "02 OOP Pseudocode"
+      "02a OOP Pseudocode"
     ]
   },
   {
-    "objectID": "02_OOP_Pseudocode.html#abstrakte-klassen",
-    "href": "02_OOP_Pseudocode.html#abstrakte-klassen",
+    "objectID": "02a_OOP_Pseudocode.html#abstrakte-klassen",
+    "href": "02a_OOP_Pseudocode.html#abstrakte-klassen",
     "title": "OOP, Klassendiagramm",
     "section": "Abstrakte Klassen",
     "text": "Abstrakte Klassen\n\nWie werden abstrakte Klassen in der Anwendungsentwicklung verwendet und welche Vorteile bieten sie?\n\nAbstrakte Klassen sind Klassen, die nicht instanziiert werden können und in der Regel eine oder mehrere abstrakte Methoden enthalten\nDiese Methoden werden in den abgeleiteten Klassen implementiert\nAbstrakte Klassen können jedoch auch konkrete Methoden (Methoden mit einer Implementierung) enthalten\nHauptanwendungen und Vorteile:\n\nBereitstellung einer gemeinsamen Schnittstelle\nCode-Wiederverwendung\nErzwingung bestimmter Methoden\nPolymorphismus kann realisiert werden\n\n\n\n\nLernkarte AP2 2025 Nr. 139",
     "crumbs": [
-      "02 OOP Pseudocode"
+      "02a OOP Pseudocode"
     ]
   },
   {
-    "objectID": "02_OOP_Pseudocode.html#interface-vs.-abstrakte-klasse",
-    "href": "02_OOP_Pseudocode.html#interface-vs.-abstrakte-klasse",
+    "objectID": "02a_OOP_Pseudocode.html#interface-vs.-abstrakte-klasse",
+    "href": "02a_OOP_Pseudocode.html#interface-vs.-abstrakte-klasse",
     "title": "OOP, Klassendiagramm",
     "section": "Interface vs. abstrakte Klasse",
     "text": "Interface vs. abstrakte Klasse\n\n\n\n\n\n\n\n\n\nKriterium\nInterface\nAbstrakte Klasse\n\n\n\n\nImplementierung\nKeine (nur Signaturen)\nKann Methoden mit Code enthalten\n\n\nMehrfachvererbung\nJa (Klasse kann mehrere Interfaces implementieren)\nNein (nur eine Elternklasse)\n\n\nAttribute\nKeine (nur Konstanten)\nJa\n\n\nKonstruktor\nNein\nJa\n\n\nEinsatz\nVertrag / Schnittstelle definieren\nGemeinsame Basis mit Teilimplementierung\n\n\nEselsbrücke\n“kann etwas”  “Hund kann spielen”\n“ist ein”  “Hund ist ein Haustier”",
     "crumbs": [
-      "02 OOP Pseudocode"
+      "02a OOP Pseudocode"
     ]
   },
   {
-    "objectID": "02_OOP_Pseudocode.html#interface-vs.-abstrakte-klasse-uml",
-    "href": "02_OOP_Pseudocode.html#interface-vs.-abstrakte-klasse-uml",
+    "objectID": "02a_OOP_Pseudocode.html#interface-vs.-abstrakte-klasse-uml",
+    "href": "02a_OOP_Pseudocode.html#interface-vs.-abstrakte-klasse-uml",
     "title": "OOP, Klassendiagramm",
     "section": "Interface vs. abstrakte Klasse: UML",
     "text": "Interface vs. abstrakte Klasse: UML\n\n+-------------------+       +-------------------+\n| &lt;&lt;interface&gt;&gt;     |       | &lt;&lt;abstract&gt;&gt;      |\n| Druckbar          |       | Dokument          |\n|-------------------|       |-------------------|\n|                   |       | # titel: String   |\n|-------------------|       |-------------------|\n| + drucke(): void  |       | + drucke(): void  |  (abstrakt)\n+-------------------+       | + speichere()     |  (implementiert)\n        ^                   +-------------------+\n        |                            ^\n        |                            |\n  implementiert                   erbt von\n        |                            |\n+-------------------+       +-------------------+\n| Rechnung          |       | Rechnung          |\n|-------------------|       |-------------------|\n| + drucke(): void  |       | + drucke(): void  |\n+-------------------+       +-------------------+",
     "crumbs": [
-      "02 OOP Pseudocode"
+      "02a OOP Pseudocode"
     ]
   },
   {
-    "objectID": "02_OOP_Pseudocode.html#section",
-    "href": "02_OOP_Pseudocode.html#section",
+    "objectID": "02a_OOP_Pseudocode.html#section",
+    "href": "02a_OOP_Pseudocode.html#section",
     "title": "OOP, Klassendiagramm",
     "section": "",
     "text": "Viel Erfolg!",
     "crumbs": [
-      "02 OOP Pseudocode"
+      "02a OOP Pseudocode"
     ]
   },
   {
@@ -469,103 +499,113 @@
     ]
   },
   {
-    "objectID": "02b_OOP_Escape-Room.html#escape-room-ziele",
-    "href": "02b_OOP_Escape-Room.html#escape-room-ziele",
-    "title": "OOP: Escape Room",
-    "section": "Escape Room: Ziele",
-    "text": "Escape Room: Ziele\n\nKlassen definieren\nAttribute kapseln\nMethoden für Zustandsänderungen\nVererbung für Spezialisierungen",
+    "objectID": "02b_OOP_Programmieraufgaben.html#escape-room-er-ziele",
+    "href": "02b_OOP_Programmieraufgaben.html#escape-room-er-ziele",
+    "title": "OOP: Programmieraufgaben",
+    "section": "Escape Room (ER): Ziele",
+    "text": "Escape Room (ER): Ziele\n\nKlassen definieren\nAttribute kapseln\nMethoden für Zustandsänderungen\nVererbung für Spezialisierungen",
     "crumbs": [
-      "02b OOP Escape Room"
+      "02b OOP Programmieraufgaben"
     ]
   },
   {
-    "objectID": "02b_OOP_Escape-Room.html#kapselung",
-    "href": "02b_OOP_Escape-Room.html#kapselung",
-    "title": "OOP: Escape Room",
-    "section": "Kapselung",
-    "text": "Kapselung\n\n\nTüren haben einen privaten Zustand (_geschlossen)\nItems können versteckte Informationen haben\nRäume verwalten ihre Listen selbst (keine direkte Manipulation von außen)\nVerwenden Sie bewusst Getter / Setter bzw. kontrollierte Methoden",
+    "objectID": "02b_OOP_Programmieraufgaben.html#er-kapselung",
+    "href": "02b_OOP_Programmieraufgaben.html#er-kapselung",
+    "title": "OOP: Programmieraufgaben",
+    "section": "ER: Kapselung",
+    "text": "ER: Kapselung\n\n\nTüren haben einen privaten Zustand (_geschlossen)\nItems können versteckte Informationen haben\nRäume verwalten ihre Listen selbst (keine direkte Manipulation von außen)\nVerwenden Sie bewusst Getter / Setter bzw. kontrollierte Methoden",
     "crumbs": [
-      "02b OOP Escape Room"
+      "02b OOP Programmieraufgaben"
     ]
   },
   {
-    "objectID": "02b_OOP_Escape-Room.html#vererbung",
-    "href": "02b_OOP_Escape-Room.html#vererbung",
-    "title": "OOP: Escape Room",
-    "section": "Vererbung",
-    "text": "Vererbung\nTürtypen\n\n\nNormaleTür erbt von Tür\nSchlüsselTür: zusätzlich benötigter Schlüsselname\nRätselTür: zusätzlich Frage und Lösung\n\n\n\nHier werden keine Methoden überschrieben,  sondern nur Verhalten erweitert.",
+    "objectID": "02b_OOP_Programmieraufgaben.html#er-vererbung",
+    "href": "02b_OOP_Programmieraufgaben.html#er-vererbung",
+    "title": "OOP: Programmieraufgaben",
+    "section": "ER: Vererbung",
+    "text": "ER: Vererbung\nTürtypen\n\n\nNormaleTür erbt von Tür\nSchlüsselTür: zusätzlich benötigter Schlüsselname\nRätselTür: zusätzlich Frage und Lösung\n\n\n\nHier werden keine Methoden überschrieben,  sondern nur Verhalten erweitert.",
     "crumbs": [
-      "02b OOP Escape Room"
+      "02b OOP Programmieraufgaben"
     ]
   },
   {
-    "objectID": "02b_OOP_Escape-Room.html#uml-room",
-    "href": "02b_OOP_Escape-Room.html#uml-room",
-    "title": "OOP: Escape Room",
-    "section": "UML: Room",
-    "text": "UML: Room\n\n+-----------------------------+\n|      Room                   |\n+-----------------------------+\n| - name: str                 |\n| - description: str          |\n| - doors: List&lt;Door&gt;         |\n| - items: List&lt;Item&gt;         |\n+-----------------------------+\n| + enter()                   |\n| + show_items()              |\n| + show_doors()              |\n| + add_door(d:Door)          |\n| + add_item(i:Item)          |\n| + take_item(name:str): Item |\n+-----------------------------+\nBeziehung Room - Door\n\n            1    * \nRoom ------------------&gt; Door\n            contains",
+    "objectID": "02b_OOP_Programmieraufgaben.html#er-uml---room",
+    "href": "02b_OOP_Programmieraufgaben.html#er-uml---room",
+    "title": "OOP: Programmieraufgaben",
+    "section": "ER: UML - Room",
+    "text": "ER: UML - Room\n\n+-----------------------------+\n|      Room                   |\n+-----------------------------+\n| - name: str                 |\n| - description: str          |\n| - doors: List&lt;Door&gt;         |\n| - items: List&lt;Item&gt;         |\n+-----------------------------+\n| + enter()                   |\n| + show_items()              |\n| + show_doors()              |\n| + add_door(d:Door)          |\n| + add_item(i:Item)          |\n| + take_item(name:str): Item |\n+-----------------------------+\nBeziehung Room - Door\n\n            1    * \nRoom ------------------&gt; Door\n            contains",
     "crumbs": [
-      "02b OOP Escape Room"
+      "02b OOP Programmieraufgaben"
     ]
   },
   {
-    "objectID": "02b_OOP_Escape-Room.html#uml-door",
-    "href": "02b_OOP_Escape-Room.html#uml-door",
-    "title": "OOP: Escape Room",
-    "section": "UML Door",
-    "text": "UML Door\n\n+---------------------+\n|      Door           |\n+---------------------+\n| - target_room: Room |\n| - is_open: bool     |\n+---------------------+\n| + open()            |\n| + close()           |\n| + is_open(): bool   |\n+---------------------+\n\n        ^ \n        |\n        | inheritance\n        |\n\n\n\n+--------------------+\n|   NormalDoor       |\n+--------------------+\n|  (no extra fields) |\n+--------------------+\n\n+---------------------------------+\n|     KeyDoor                     |\n+---------------------------------+\n| - required_key: str             |\n+---------------------------------+\n| + try_open(player:Player): bool |\n+---------------------------------+",
+    "objectID": "02b_OOP_Programmieraufgaben.html#er-uml---door",
+    "href": "02b_OOP_Programmieraufgaben.html#er-uml---door",
+    "title": "OOP: Programmieraufgaben",
+    "section": "ER: UML - Door",
+    "text": "ER: UML - Door\n\n+---------------------+\n|      Door           |\n+---------------------+\n| - target_room: Room |\n| - is_open: bool     |\n+---------------------+\n| + open()            |\n| + close()           |\n| + is_open(): bool   |\n+---------------------+\n\n        ^ \n        |\n        | inheritance\n        |\n\n\n\n+--------------------+\n|   NormalDoor       |\n+--------------------+\n|  (no extra fields) |\n+--------------------+\n\n+---------------------------------+\n|     KeyDoor                     |\n+---------------------------------+\n| - required_key: str             |\n+---------------------------------+\n| + try_open(player:Player): bool |\n+---------------------------------+",
     "crumbs": [
-      "02b OOP Escape Room"
+      "02b OOP Programmieraufgaben"
     ]
   },
   {
-    "objectID": "02b_OOP_Escape-Room.html#uml-item",
-    "href": "02b_OOP_Escape-Room.html#uml-item",
-    "title": "OOP: Escape Room",
-    "section": "UML: Item",
-    "text": "UML: Item\n+--------------------+\n|      Item          |\n+--------------------+\n| - name: str        |\n| - description: str |\n+--------------------+\n| + describe()       |\n+--------------------+",
+    "objectID": "02b_OOP_Programmieraufgaben.html#er-uml---item",
+    "href": "02b_OOP_Programmieraufgaben.html#er-uml---item",
+    "title": "OOP: Programmieraufgaben",
+    "section": "ER: UML - Item",
+    "text": "ER: UML - Item\n+--------------------+\n|      Item          |\n+--------------------+\n| - name: str        |\n| - description: str |\n+--------------------+\n| + describe()       |\n+--------------------+",
     "crumbs": [
-      "02b OOP Escape Room"
+      "02b OOP Programmieraufgaben"
     ]
   },
   {
-    "objectID": "02b_OOP_Escape-Room.html#uml-player",
-    "href": "02b_OOP_Escape-Room.html#uml-player",
-    "title": "OOP: Escape Room",
-    "section": "UML: Player",
-    "text": "UML: Player\n+----------------------------+\n|     Player                 |\n+----------------------------+\n| - current_room: Room       |\n| - inventory: List&lt;Item&gt;    |\n+----------------------------+\n| + enter_current_room()     |\n| + show_inventory()         |\n| + has_item(name:str): bool |\n| + take_item(name:str)      |\n| + go_through(index:int)    |\n+----------------------------+\n\nPlayer –&gt; Room (current_room)\nPlayer –&gt; Item (inventory)\nPlayer –&gt; Door (go_through)",
+    "objectID": "02b_OOP_Programmieraufgaben.html#er-uml---player",
+    "href": "02b_OOP_Programmieraufgaben.html#er-uml---player",
+    "title": "OOP: Programmieraufgaben",
+    "section": "ER: UML - Player",
+    "text": "ER: UML - Player\n+----------------------------+\n|     Player                 |\n+----------------------------+\n| - current_room: Room       |\n| - inventory: List&lt;Item&gt;    |\n+----------------------------+\n| + enter_current_room()     |\n| + show_inventory()         |\n| + has_item(name:str): bool |\n| + take_item(name:str)      |\n| + go_through(index:int)    |\n+----------------------------+\n\nPlayer –&gt; Room (current_room)\nPlayer –&gt; Item (inventory)\nPlayer –&gt; Door (go_through)",
     "crumbs": [
-      "02b OOP Escape Room"
+      "02b OOP Programmieraufgaben"
     ]
   },
   {
-    "objectID": "02b_OOP_Escape-Room.html#aufgabe",
-    "href": "02b_OOP_Escape-Room.html#aufgabe",
-    "title": "OOP: Escape Room",
-    "section": "Aufgabe",
-    "text": "Aufgabe\n\n\n\nErstellt einen Mini-Escape-Room mit:\n\nmindestens 2 Räumen\nmindestens 2 Türtypen (z. B. normale Tür und Schlüsseltür)\nmindestens 2 Items\neinem Spieler, der\n\nItems aufnehmen kann\nTüren öffnen kann\nRäume wechseln kann\n\n\n\nRegeln:\n\nkeine Polymorphie\nkeine Interfaces\nFokus auf Kapselung und Vererbung\nUML-Skizze vor Programmierung\nSprache frei wählbar (Python, Java, C#, …)",
+    "objectID": "02b_OOP_Programmieraufgaben.html#er-aufgabe",
+    "href": "02b_OOP_Programmieraufgaben.html#er-aufgabe",
+    "title": "OOP: Programmieraufgaben",
+    "section": "ER: Aufgabe",
+    "text": "ER: Aufgabe\n\n\n\nErstellt einen Mini-Escape-Room mit:\n\nmindestens 2 Räumen\nmindestens 2 Türtypen (z. B. normale Tür und Schlüsseltür)\nmindestens 2 Items\neinem Spieler, der\n\nItems aufnehmen kann\nTüren öffnen kann\nRäume wechseln kann\n\n\n\nRegeln:\n\nkeine Polymorphie\nkeine Interfaces\nFokus auf Kapselung und Vererbung\nUML-Skizze vor Programmierung\nSprache frei wählbar (Python, Java, C#, …)",
     "crumbs": [
-      "02b OOP Escape Room"
+      "02b OOP Programmieraufgaben"
     ]
   },
   {
-    "objectID": "02b_OOP_Escape-Room.html#aufgabe-optional",
-    "href": "02b_OOP_Escape-Room.html#aufgabe-optional",
-    "title": "OOP: Escape Room",
-    "section": "Aufgabe: Optional",
-    "text": "Aufgabe: Optional\n\n\nRätsel-Tür: öffnet sich nur, wenn der Spieler eine Frage richtig beantwortet\nContainer-Item: Item, das andere Items enthalten kann (Komposition)\nRaum mit Zustand: Raum kann dunkel sein - Spieler braucht eine Lampe\nInventar-Limit: Spieler kann nur 3 Items tragen - Kapselung und Logik\nLogging: Jede Aktion wird protokolliert - zeigt Objekt-Interaktion",
+    "objectID": "02b_OOP_Programmieraufgaben.html#er-aufgabe---optional",
+    "href": "02b_OOP_Programmieraufgaben.html#er-aufgabe---optional",
+    "title": "OOP: Programmieraufgaben",
+    "section": "ER: Aufgabe - Optional",
+    "text": "ER: Aufgabe - Optional\n\n\nRätsel-Tür: öffnet sich nur, wenn der Spieler eine Frage richtig beantwortet\nContainer-Item: Item, das andere Items enthalten kann (Komposition)\nRaum mit Zustand: Raum kann dunkel sein - Spieler braucht eine Lampe\nInventar-Limit: Spieler kann nur 3 Items tragen - Kapselung und Logik\nLogging: Jede Aktion wird protokolliert - zeigt Objekt-Interaktion",
     "crumbs": [
-      "02b OOP Escape Room"
+      "02b OOP Programmieraufgaben"
     ]
   },
   {
-    "objectID": "02b_OOP_Escape-Room.html#section",
-    "href": "02b_OOP_Escape-Room.html#section",
-    "title": "OOP: Escape Room",
+    "objectID": "02b_OOP_Programmieraufgaben.html#polymorphie-zoo",
+    "href": "02b_OOP_Programmieraufgaben.html#polymorphie-zoo",
+    "title": "OOP: Programmieraufgaben",
+    "section": "Polymorphie: Zoo",
+    "text": "Polymorphie: Zoo\n\nErstelle ein kleines Zoo-System mit verschiedenen Tierklassen. Jedes Tier kann make_sound() oder feed() ausführen.\nRegel: keine if/switch auf Typen. Alles über Polymorphie.\n\nErweiterungen:\n\nTiere haben unterschiedliche Futterarten\nEin Zoo-Manager ruft Methoden auf allen Tieren auf\nLogging einbauen (z. B. “Tiger fristt 5 kg Fleisch”)\n\n\n\nProgrammiertechniken:\n\noptional Interfaces, abstrakte Klassen\nObjektlisten",
+    "crumbs": [
+      "02b OOP Programmieraufgaben"
+    ]
+  },
+  {
+    "objectID": "02b_OOP_Programmieraufgaben.html#section",
+    "href": "02b_OOP_Programmieraufgaben.html#section",
+    "title": "OOP: Programmieraufgaben",
     "section": "",
     "text": "Viel Erfolg!",
     "crumbs": [
-      "02b OOP Escape Room"
+      "02b OOP Programmieraufgaben"
     ]
   },
   {

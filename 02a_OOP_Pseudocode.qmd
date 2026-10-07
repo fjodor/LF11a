@@ -824,6 +824,25 @@ Lernkarte AP2 2025 Nr. 138
 :::
 
 
+## Generische Klassen: Wann?
+
+:::: {.incremental style="font-size: 1.7rem"}
+
+- Codebeispiel: Futterstation für Haustiere
+- Ohne generische Klasse: <br> `class Hundefutterstation, class Meerschweinchen-Futterstation`, ...
+- Nachteile:
+  + redundante Logik für jeden Tier-Typ
+  + Probleme bei neuen Tierklassen
+- Mit generischer Klasse: `class Futterstation(Generic[T])`
+- Vorteile:
+  + eine Klasse für alle Tierarten
+  + Typsicherheit durch Typparameter "T": <br> `T = TypeVar("T", bound="Haustier")`
+  + weniger Code, leichter erweiterbar
+- **Merksatz: Eine generische Klasse beschreibt einen Algorithmus nur einmal und lässt den konkreten Datentyp offen.**
+
+::::
+
+
 ## Abstrakte Klassen
 
 :::: {.incremental style="font-size: 1.8rem"}
@@ -844,6 +863,29 @@ Lernkarte AP2 2025 Nr. 138
 ::: notes
 Lernkarte AP2 2025 Nr. 139
 :::
+
+
+## Abstrakte Klasse: Wann?
+
+:::: {style="font-size: 1.9rem"}
+
+**Wann wird eine abstrakte Klasse nützlich?**
+
+::: incremental
+
+- Wenn die Basisklasse gemeinsame Eigenschaften besitzt, aber nicht sinnvoll selbst existiert
+- Beispiel Escape Room, Door:
+  + Door  
+    |-- KeyDoor  
+    |-- PuzzleDoor  
+- Frage: Kommt im Spiel jemals eine "normale Tür" vor?
+- Wenn nein:  
+  `<<abstract>>`  
+  Door
+- door = Door() -> Fehler: kann nicht instanziiert werden
+
+:::
+::::
 
 
 ## Interface vs. abstrakte Klasse

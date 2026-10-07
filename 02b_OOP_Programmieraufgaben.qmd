@@ -1,5 +1,5 @@
 ---
-title: "OOP: Escape Room"
+title: "OOP: Programmieraufgaben"
 title-slide-attributes:
   data-background-color: "#D7E6F4"
 subtitle: "Objektorientierte Programmierung"
@@ -17,7 +17,7 @@ execute:
 callout-appearance: simple
 ---
 
-## Escape Room: Ziele
+## Escape Room (ER): Ziele
 
 ::: incremental
 
@@ -29,7 +29,7 @@ callout-appearance: simple
 :::
 
 
-## Kapselung
+## ER: Kapselung
 
 ::: {.incremental style="font-size: 2rem"}
 
@@ -41,7 +41,7 @@ callout-appearance: simple
 :::
 
 
-## Vererbung
+## ER: Vererbung
 
 ### Türtypen
 
@@ -60,7 +60,7 @@ Hier werden keine Methoden überschrieben, <br> sondern nur **Verhalten erweiter
 :::
 
 
-## UML: Room
+## ER: UML - Room
 
 :::: {style="font-size: 1.8rem"}
 
@@ -96,7 +96,7 @@ Room ------------------> Door
 ::::
 
 
-## UML Door
+## ER: UML - Door
 
 ::::: {style="font-size: 1.8rem"}
 
@@ -148,7 +148,7 @@ Room ------------------> Door
 :::::
 
 
-## UML: Item
+## ER: UML - Item
 
 ```
 +--------------------+
@@ -162,7 +162,7 @@ Room ------------------> Door
 ```
 
 
-## UML: Player
+## ER: UML - Player
 
 ```
 +----------------------------+
@@ -188,7 +188,7 @@ Player --> Door (go_through)
 :::
 
 
-## Aufgabe
+## ER: Aufgabe
 
 ::::: {style="font-size: 2rem"}
 
@@ -221,7 +221,7 @@ Regeln:
 :::::
 
 
-## Aufgabe: Optional
+## ER: Aufgabe - Optional
 
 ::: {.incremental style="font-size: 2.1rem"}
 
@@ -232,6 +232,35 @@ Regeln:
 - **Logging:** Jede Aktion wird protokolliert - zeigt Objekt-Interaktion
 
 :::
+
+
+## Polymorphie: Zoo
+
+:::: {.incremental style="font-size: 2rem"}
+
+Erstelle ein kleines **Zoo-System** mit verschiedenen Tierklassen. Jedes Tier kann `make_sound()` oder `feed()` ausführen.
+
+**Regel:** keine `if/switch` auf Typen. Alles über **Polymorphie**.
+
+::: fragment
+
+Erweiterungen:
+
+- Tiere haben unterschiedliche Futterarten
+- Ein Zoo-Manager ruft Methoden auf allen Tieren auf
+- Logging einbauen (z. B. "Tiger fristt 5 kg Fleisch")
+
+:::
+
+::: fragment
+
+Programmiertechniken:
+
+- optional Interfaces, abstrakte Klassen
+- Objektlisten
+
+:::
+::::
 
 
 ## <!-- -->

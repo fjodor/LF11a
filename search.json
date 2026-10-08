@@ -293,7 +293,7 @@
     "href": "02a_OOP_Pseudocode.html#polymorphie-beispiel",
     "title": "OOP, Klassendiagramm",
     "section": "Polymorphie: Beispiel",
-    "text": "Polymorphie: Beispiel\n// tiere: Liste von Tier = [neuer Hund(), neue Katze()]\nFUER JEDES t IN tiere\n    ausgabe(t.sprechen())\n    // \"Wau!\", \"Miau!\"\nENDE FUER",
+    "text": "Polymorphie: Beispiel\n\n// tiere: Liste von Tier = [neuer Hund(), neue Katze()]\n\nFUER JEDES t IN tiere\n    ausgabe(t.sprechen())\n    // \"Wau!\", \"Miau!\"\nENDE FUER",
     "crumbs": [
       "02a OOP Pseudocode"
     ]
@@ -413,7 +413,7 @@
     "href": "02a_OOP_Pseudocode.html#generische-klassen-wann",
     "title": "OOP, Klassendiagramm",
     "section": "Generische Klassen: Wann?",
-    "text": "Generische Klassen: Wann?\n\n\nCodebeispiel: Futterstation für Haustiere\nOhne generische Klasse:  class Hundefutterstation, class Meerschweinchen-Futterstation, …\nNachteile:\n\nredundante Logik für jeden Tier-Typ\nProbleme bei neuen Tierklassen\n\nMit generischer Klasse: class Futterstation(Generic[T])\nVorteile:\n\neine Klasse für alle Tierarten\nTypsicherheit durch Typparameter “T”:  T = TypeVar(\"T\", bound=\"Haustier\")\nweniger Code, leichter erweiterbar\n\nMerksatz: Eine generische Klasse beschreibt einen Algorithmus nur einmal und lässt den konkreten Datentyp offen.",
+    "text": "Generische Klassen: Wann?\n\n\nCodebeispiel: Futterstation für Haustiere\nOhne generische Klasse:  class Hundefutterstation, class MeerschweinchenFutterstation, …\nNachteile:\n\nredundante Logik für jeden Tier-Typ\nProbleme bei neuen Tierklassen\n\nMit generischer Klasse: class Futterstation(Generic[T])\nVorteile:\n\neine Klasse für alle Tierarten\nTypsicherheit durch Typparameter “T”:  T = TypeVar(\"T\", bound=\"Haustier\")\nweniger Code, leichter erweiterbar\n\nMerksatz: Eine generische Klasse beschreibt einen Algorithmus nur einmal und lässt den konkreten Datentyp offen.",
     "crumbs": [
       "02a OOP Pseudocode"
     ]

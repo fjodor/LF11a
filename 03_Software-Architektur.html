@@ -1003,17 +1003,270 @@ margin-right: 0; }
 <section id="schichten" class="slide level2">
 <h2>Schichten</h2>
 </section>
+<section id="designpatterns-übersicht" class="slide level2">
+<h2>Designpatterns: Übersicht</h2>
+<ul>
+<li class="fragment">Erzeugungsmuster: <em>Creational Patterns</em>
+<ul>
+<li class="fragment">Beispiele: Factory Pattern, Singleton</li>
+</ul></li>
+<li class="fragment">Strukturmuster: <em>Structual Patterns</em>
+<ul>
+<li class="fragment">Beispiele: Adapter, Decorator, Composite</li>
+</ul></li>
+<li class="fragment">Verhaltensmuster: <em>Behavioral Patterns</em>
+<ul>
+<li class="fragment">Beispiele: Observer, Strategy</li>
+</ul></li>
+</ul>
+<aside class="notes">
+<p>Lernkarte AP2 2025 Nr. 155</p>
+<style type="text/css">
+span.MJX_Assistive_MathML {
+position:absolute!important;
+clip: rect(1px, 1px, 1px, 1px);
+padding: 1px 0 0 0!important;
+border: 0!important;
+height: 1px!important;
+width: 1px!important;
+overflow: hidden!important;
+display:block!important;
+}</style></aside>
+</section>
+<section id="erzeugungsmuster---creational-patterns" class="slide level2">
+<h2>Erzeugungsmuster - Creational Patterns</h2>
+<ul>
+<li class="fragment">Helfen bei der Erzeugung von Objekten</li>
+<li class="fragment">Sorgen für flexible, kontrollierte und wiederverwendbare <strong>Objektinstanziierung</strong></li>
+<li class="fragment">Beispiele: Factory Pattern, Singleton</li>
+</ul>
+<aside class="notes">
+<p>Lernkarte AP2 2025 Nr. 155</p>
+<style type="text/css">
+span.MJX_Assistive_MathML {
+position:absolute!important;
+clip: rect(1px, 1px, 1px, 1px);
+padding: 1px 0 0 0!important;
+border: 0!important;
+height: 1px!important;
+width: 1px!important;
+overflow: hidden!important;
+display:block!important;
+}</style></aside>
+</section>
+<section id="strukturmuster---structural-patterns" class="slide level2">
+<h2>Strukturmuster - Structural Patterns</h2>
+<ul>
+<li class="fragment">Beschreiben, wie Klassen und Objekte zusammenarbeiten und sich zu größeren Strukturen verbinden</li>
+<li class="fragment">Helfen, komplexe Strukturen übersichtlich zu gestalten</li>
+<li class="fragment">Beispiele: Adapter, Decorator, Composite</li>
+</ul>
+<aside class="notes">
+<p>Lernkarte AP2 2025 Nr. 155</p>
+<style type="text/css">
+span.MJX_Assistive_MathML {
+position:absolute!important;
+clip: rect(1px, 1px, 1px, 1px);
+padding: 1px 0 0 0!important;
+border: 0!important;
+height: 1px!important;
+width: 1px!important;
+overflow: hidden!important;
+display:block!important;
+}</style></aside>
+</section>
+<section id="verhaltensmuster---behavioral-patterns" class="slide level2">
+<h2>Verhaltensmuster - Behavioral Patterns</h2>
+<ul>
+<li class="fragment">Definieren, wie Objekte miteinander kommunizieren und interagieren, um Aufgaben zu erfüllen</li>
+<li class="fragment">Verbessern die Interaktion und Verantwortungsverteilung</li>
+<li class="fragment">Beispiele: Observer, Strategy</li>
+</ul>
+<aside class="notes">
+<p>Lernkarte AP2 2025 Nr. 155</p>
+<style type="text/css">
+span.MJX_Assistive_MathML {
+position:absolute!important;
+clip: rect(1px, 1px, 1px, 1px);
+padding: 1px 0 0 0!important;
+border: 0!important;
+height: 1px!important;
+width: 1px!important;
+overflow: hidden!important;
+display:block!important;
+}</style></aside>
+</section>
 <section id="designpatterns-singleton" class="slide level2">
 <h2>Designpatterns: Singleton</h2>
+<div style="font-size: 1.9rem">
+<p><strong>Erklären Sie die Aufgaben des Singleton Pattern.</strong></p>
+<ul>
+<li class="fragment">Das <strong>Singleton-Entwurfsmuster</strong> ist ein Software-Entwurfsmuster, das die Instanziierung eines Klasse auf <strong>genau ein Objekt</strong> beschränkt.</li>
+<li class="fragment">Es wird verwendet, um sicherzustellen, dass eine Klasse nur <strong>eine einzige Instanz</strong> hat, und stellt einen <strong>globalen Zugangspunkt</strong> zu diesem Objekt bereit.</li>
+<li class="fragment">Hauptziel: kontrollierten Mechanismus zur Verfügung stellen, um auf <strong>begrenzte Ressourcen</strong> zuzugreifen</li>
+<li class="fragment">nützlich, wenn genau eine Instanz eines Objekts benötigt wird, um Aktionen zu koordinieren</li>
+</ul>
+</div>
+<aside class="notes">
+<p>Lernkarte AP2 2025 Nr. 160</p>
+<style type="text/css">
+span.MJX_Assistive_MathML {
+position:absolute!important;
+clip: rect(1px, 1px, 1px, 1px);
+padding: 1px 0 0 0!important;
+border: 0!important;
+height: 1px!important;
+width: 1px!important;
+overflow: hidden!important;
+display:block!important;
+}</style></aside>
 </section>
 <section id="designpatterns-observer" class="slide level2">
 <h2>Designpatterns: Observer</h2>
+<div style="font-size: 1.9rem">
+<p><strong>Was ist das Observer Muster?</strong></p>
+<ul>
+<li class="fragment">Entwurfsmuster aus dem Bereich der Softwareentwicklung</li>
+<li class="fragment">zählt zu den <strong>Verhaltensmustern</strong> <em>(Behavioral Patterns)</em></li>
+<li class="fragment">ermöglicht <strong>Einwegabhängigkeit</strong> zwischen Objekten:
+<ul>
+<li class="fragment">wenn ein Objekt seinen Zustand ändert, werden alle abhängigen Objekte benachrichtigt und automatisch aktualisiert</li>
+</ul></li>
+<li class="fragment">besonders nützlich in Situationen:
+<ul>
+<li class="fragment">in denen der Zustand eines Objekts von vielen anderen Objekten abhängig ist</li>
+<li class="fragment">und eine enge <strong>Kopplung</strong> zwischen diesen Objekten vermieden werden soll</li>
+</ul></li>
+</ul>
+</div>
+<aside class="notes">
+<p>Lernkarte AP2 2025 Nr. 156</p>
+<style type="text/css">
+span.MJX_Assistive_MathML {
+position:absolute!important;
+clip: rect(1px, 1px, 1px, 1px);
+padding: 1px 0 0 0!important;
+border: 0!important;
+height: 1px!important;
+width: 1px!important;
+overflow: hidden!important;
+display:block!important;
+}</style></aside>
+</section>
+<section id="designpatterns-observer-1" class="slide level2">
+<h2>Designpatterns: Observer</h2>
+<div style="font-size: 1.7rem">
+<p><strong>Wie funktioniert das Observer Muster?</strong></p>
+<p>Das Observer Muster funktioniert durch eine <strong>Einweg-Kommunikation</strong> von einem Subjekt zu mehreren anderen Objekten <em>(Observer)</em>.</p>
+<ol type="1">
+<li class="fragment"><strong>Registrierung:</strong> Die Observer melden sich beim Subjekt für Updates an. Das Subjekt hält eine Liste aller seiner Observer.</li>
+<li class="fragment"><strong>Änderung:</strong> Wenn das Subjekt seinen Zustand ändert, informiert es alle registrierten Observer über die Änderung.</li>
+<li class="fragment"><strong>Benachrichtigung:</strong> Das Subjekt benachrichtigt die Observer über die Zustandsänderung, indem es eine Methode (häufig <em>update</em> genannt) auf den Observern aufruft.</li>
+<li class="fragment"><strong>Abmeldung:</strong> Observer können sich jederzeit vom Subjekt abmelden, wenn sie keine weiteren Benachrichtigungen erhalten möchten.</li>
+</ol>
+</div>
+<aside class="notes">
+<p>Lernkarte AP2 2025 Nr. 157</p>
+<style type="text/css">
+span.MJX_Assistive_MathML {
+position:absolute!important;
+clip: rect(1px, 1px, 1px, 1px);
+padding: 1px 0 0 0!important;
+border: 0!important;
+height: 1px!important;
+width: 1px!important;
+overflow: hidden!important;
+display:block!important;
+}</style></aside>
 </section>
 <section id="designpatterns-factory" class="slide level2">
 <h2>Designpatterns: Factory</h2>
+<div style="font-size: 1.9rem">
+<p><strong>Was ist das Factory Pattern und welchen Vorteil bietet es bei der Objekterzeugung?</strong></p>
+<ul>
+<li class="fragment">Das <strong>Factory Pattern</strong> ist ein Entwurfsmuster, bei dem die <strong>Erzeugung</strong> von Objekten <strong>an</strong> eine <strong>eigene Methode oder Klasse ausgelagert</strong> wird.</li>
+<li class="fragment">Dadurch wird entschieden, welches konkrete Objekt erzeugt wird, ohne direkt von bestimmten Klassen abhängig zu sein.</li>
+<li class="fragment">Vorteile:
+<ul>
+<li class="fragment"><strong>Entkopplung</strong> von Erzeugung und Verwendung</li>
+<li class="fragment">Erleichtert das Hinzufügen neuer Objekttypen</li>
+<li class="fragment">Macht Code übersichtlicher und besser wartbar</li>
+</ul></li>
+</ul>
+</div>
+<aside class="notes">
+<p>Lernkarte AP2 2025 Nr. 161</p>
+<style type="text/css">
+span.MJX_Assistive_MathML {
+position:absolute!important;
+clip: rect(1px, 1px, 1px, 1px);
+padding: 1px 0 0 0!important;
+border: 0!important;
+height: 1px!important;
+width: 1px!important;
+overflow: hidden!important;
+display:block!important;
+}</style></aside>
 </section>
 <section id="designpatterns-mvc" class="slide level2">
 <h2>Designpatterns: MVC</h2>
+<div style="font-size: 1.7rem">
+<p><strong>Welche Komponenten umfasst das MVC-Muster und wie interagieren sie miteinander?</strong></p>
+<ul>
+<li class="fragment">Entwurfsmuster; oft verwendet, um <strong>Struktur</strong> von Softwareanwendungen zu organisieren</li>
+<li class="fragment">Komponenten:
+<ul>
+<li class="fragment"><strong>M</strong>odel: Verantwortlich für Daten und Geschäftslogik</li>
+<li class="fragment"><strong>V</strong>iew: Präsentiert Daten an den Benutzer</li>
+<li class="fragment"><strong>C</strong>ontroller: Verarbeitet die Benutzereingaben und aktualisiert das Model</li>
+</ul></li>
+<li class="fragment">Interaktion funktioniert wie folgt:
+<ol type="1">
+<li class="fragment">Benutzer agiert mit der <strong>View</strong>.</li>
+<li class="fragment"><strong>Controller</strong> erhält Benutzereingaben von <strong>View</strong>, führt Aktionen im <strong>Model</strong> aus.</li>
+<li class="fragment"><strong>Model</strong> benachrichtigt <strong>View</strong> über Änderungen.</li>
+<li class="fragment"><strong>View</strong> aktualisiert die Benutzeroberfläche.</li>
+</ol></li>
+</ul>
+</div>
+<aside class="notes">
+<p>Lernkarte AP2 2025 Nr. 158</p>
+<style type="text/css">
+span.MJX_Assistive_MathML {
+position:absolute!important;
+clip: rect(1px, 1px, 1px, 1px);
+padding: 1px 0 0 0!important;
+border: 0!important;
+height: 1px!important;
+width: 1px!important;
+overflow: hidden!important;
+display:block!important;
+}</style></aside>
+</section>
+<section id="schichten-architektur" class="slide level2">
+<h2>3-Schichten-Architektur</h2>
+<div style="font-size: 1.9rem">
+<p><strong>Welche Vorteile bietet die Verwendung einer 3-Schichten-Architektur bei der Entwicklung?</strong></p>
+<ul>
+<li class="fragment">Ermöglicht klare <strong>Trennung</strong> zwischen <strong>Präsentationsschicht, Anwendungslogik und Datenzugriffsschicht</strong></li>
+<li class="fragment">Dadurch wird Code besser strukturiert, Wartungsaufgaben werden vereinfacht.</li>
+<li class="fragment">Schichtung ermöglicht eine bessere <strong>Skalierbarkeit</strong>, da jede Schicht unabhängig von den anderen skaliert werden kann.</li>
+<li class="fragment">Schichtung erleichtert die <strong>Wiederverwendbarkeit</strong> von Komponenten, da jede Schicht unabhängig von den anderen entwickelt und leichter in anderen Projekten wiederverwendet werden kann.</li>
+</ul>
+</div>
+<aside class="notes">
+<p>Lernkarte AP2 2025 Nr. 149</p>
+<style type="text/css">
+span.MJX_Assistive_MathML {
+position:absolute!important;
+clip: rect(1px, 1px, 1px, 1px);
+padding: 1px 0 0 0!important;
+border: 0!important;
+height: 1px!important;
+width: 1px!important;
+overflow: hidden!important;
+display:block!important;
+}</style></aside>
 </section>
 <section id="section" class="slide level2">
 <h2><!-- --></h2>

@@ -643,32 +643,74 @@
     "text": "Schichten"
   },
   {
+    "objectID": "03_Software-Architektur.html#designpatterns-übersicht",
+    "href": "03_Software-Architektur.html#designpatterns-übersicht",
+    "title": "Software-Architektur",
+    "section": "Designpatterns: Übersicht",
+    "text": "Designpatterns: Übersicht\n\nErzeugungsmuster: Creational Patterns\n\nBeispiele: Factory Pattern, Singleton\n\nStrukturmuster: Structual Patterns\n\nBeispiele: Adapter, Decorator, Composite\n\nVerhaltensmuster: Behavioral Patterns\n\nBeispiele: Observer, Strategy\n\n\n\nLernkarte AP2 2025 Nr. 155"
+  },
+  {
+    "objectID": "03_Software-Architektur.html#erzeugungsmuster---creational-patterns",
+    "href": "03_Software-Architektur.html#erzeugungsmuster---creational-patterns",
+    "title": "Software-Architektur",
+    "section": "Erzeugungsmuster - Creational Patterns",
+    "text": "Erzeugungsmuster - Creational Patterns\n\nHelfen bei der Erzeugung von Objekten\nSorgen für flexible, kontrollierte und wiederverwendbare Objektinstanziierung\nBeispiele: Factory Pattern, Singleton\n\n\nLernkarte AP2 2025 Nr. 155"
+  },
+  {
+    "objectID": "03_Software-Architektur.html#strukturmuster---structural-patterns",
+    "href": "03_Software-Architektur.html#strukturmuster---structural-patterns",
+    "title": "Software-Architektur",
+    "section": "Strukturmuster - Structural Patterns",
+    "text": "Strukturmuster - Structural Patterns\n\nBeschreiben, wie Klassen und Objekte zusammenarbeiten und sich zu größeren Strukturen verbinden\nHelfen, komplexe Strukturen übersichtlich zu gestalten\nBeispiele: Adapter, Decorator, Composite\n\n\nLernkarte AP2 2025 Nr. 155"
+  },
+  {
+    "objectID": "03_Software-Architektur.html#verhaltensmuster---behavioral-patterns",
+    "href": "03_Software-Architektur.html#verhaltensmuster---behavioral-patterns",
+    "title": "Software-Architektur",
+    "section": "Verhaltensmuster - Behavioral Patterns",
+    "text": "Verhaltensmuster - Behavioral Patterns\n\nDefinieren, wie Objekte miteinander kommunizieren und interagieren, um Aufgaben zu erfüllen\nVerbessern die Interaktion und Verantwortungsverteilung\nBeispiele: Observer, Strategy\n\n\nLernkarte AP2 2025 Nr. 155"
+  },
+  {
     "objectID": "03_Software-Architektur.html#designpatterns-singleton",
     "href": "03_Software-Architektur.html#designpatterns-singleton",
     "title": "Software-Architektur",
     "section": "Designpatterns: Singleton",
-    "text": "Designpatterns: Singleton"
+    "text": "Designpatterns: Singleton\n\nErklären Sie die Aufgaben des Singleton Pattern.\n\nDas Singleton-Entwurfsmuster ist ein Software-Entwurfsmuster, das die Instanziierung eines Klasse auf genau ein Objekt beschränkt.\nEs wird verwendet, um sicherzustellen, dass eine Klasse nur eine einzige Instanz hat, und stellt einen globalen Zugangspunkt zu diesem Objekt bereit.\nHauptziel: kontrollierten Mechanismus zur Verfügung stellen, um auf begrenzte Ressourcen zuzugreifen\nnützlich, wenn genau eine Instanz eines Objekts benötigt wird, um Aktionen zu koordinieren\n\n\n\nLernkarte AP2 2025 Nr. 160"
   },
   {
     "objectID": "03_Software-Architektur.html#designpatterns-observer",
     "href": "03_Software-Architektur.html#designpatterns-observer",
     "title": "Software-Architektur",
     "section": "Designpatterns: Observer",
-    "text": "Designpatterns: Observer"
+    "text": "Designpatterns: Observer\n\nWas ist das Observer Muster?\n\nEntwurfsmuster aus dem Bereich der Softwareentwicklung\nzählt zu den Verhaltensmustern (Behavioral Patterns)\nermöglicht Einwegabhängigkeit zwischen Objekten:\n\nwenn ein Objekt seinen Zustand ändert, werden alle abhängigen Objekte benachrichtigt und automatisch aktualisiert\n\nbesonders nützlich in Situationen:\n\nin denen der Zustand eines Objekts von vielen anderen Objekten abhängig ist\nund eine enge Kopplung zwischen diesen Objekten vermieden werden soll\n\n\n\n\nLernkarte AP2 2025 Nr. 156"
+  },
+  {
+    "objectID": "03_Software-Architektur.html#designpatterns-observer-1",
+    "href": "03_Software-Architektur.html#designpatterns-observer-1",
+    "title": "Software-Architektur",
+    "section": "Designpatterns: Observer",
+    "text": "Designpatterns: Observer\n\nWie funktioniert das Observer Muster?\nDas Observer Muster funktioniert durch eine Einweg-Kommunikation von einem Subjekt zu mehreren anderen Objekten (Observer).\n\nRegistrierung: Die Observer melden sich beim Subjekt für Updates an. Das Subjekt hält eine Liste aller seiner Observer.\nÄnderung: Wenn das Subjekt seinen Zustand ändert, informiert es alle registrierten Observer über die Änderung.\nBenachrichtigung: Das Subjekt benachrichtigt die Observer über die Zustandsänderung, indem es eine Methode (häufig update genannt) auf den Observern aufruft.\nAbmeldung: Observer können sich jederzeit vom Subjekt abmelden, wenn sie keine weiteren Benachrichtigungen erhalten möchten.\n\n\n\nLernkarte AP2 2025 Nr. 157"
   },
   {
     "objectID": "03_Software-Architektur.html#designpatterns-factory",
     "href": "03_Software-Architektur.html#designpatterns-factory",
     "title": "Software-Architektur",
     "section": "Designpatterns: Factory",
-    "text": "Designpatterns: Factory"
+    "text": "Designpatterns: Factory\n\nWas ist das Factory Pattern und welchen Vorteil bietet es bei der Objekterzeugung?\n\nDas Factory Pattern ist ein Entwurfsmuster, bei dem die Erzeugung von Objekten an eine eigene Methode oder Klasse ausgelagert wird.\nDadurch wird entschieden, welches konkrete Objekt erzeugt wird, ohne direkt von bestimmten Klassen abhängig zu sein.\nVorteile:\n\nEntkopplung von Erzeugung und Verwendung\nErleichtert das Hinzufügen neuer Objekttypen\nMacht Code übersichtlicher und besser wartbar\n\n\n\n\nLernkarte AP2 2025 Nr. 161"
   },
   {
     "objectID": "03_Software-Architektur.html#designpatterns-mvc",
     "href": "03_Software-Architektur.html#designpatterns-mvc",
     "title": "Software-Architektur",
     "section": "Designpatterns: MVC",
-    "text": "Designpatterns: MVC"
+    "text": "Designpatterns: MVC\n\nWelche Komponenten umfasst das MVC-Muster und wie interagieren sie miteinander?\n\nEntwurfsmuster; oft verwendet, um Struktur von Softwareanwendungen zu organisieren\nKomponenten:\n\nModel: Verantwortlich für Daten und Geschäftslogik\nView: Präsentiert Daten an den Benutzer\nController: Verarbeitet die Benutzereingaben und aktualisiert das Model\n\nInteraktion funktioniert wie folgt:\n\nBenutzer agiert mit der View.\nController erhält Benutzereingaben von View, führt Aktionen im Model aus.\nModel benachrichtigt View über Änderungen.\nView aktualisiert die Benutzeroberfläche.\n\n\n\n\nLernkarte AP2 2025 Nr. 158"
+  },
+  {
+    "objectID": "03_Software-Architektur.html#schichten-architektur",
+    "href": "03_Software-Architektur.html#schichten-architektur",
+    "title": "Software-Architektur",
+    "section": "3-Schichten-Architektur",
+    "text": "3-Schichten-Architektur\n\nWelche Vorteile bietet die Verwendung einer 3-Schichten-Architektur bei der Entwicklung?\n\nErmöglicht klare Trennung zwischen Präsentationsschicht, Anwendungslogik und Datenzugriffsschicht\nDadurch wird Code besser strukturiert, Wartungsaufgaben werden vereinfacht.\nSchichtung ermöglicht eine bessere Skalierbarkeit, da jede Schicht unabhängig von den anderen skaliert werden kann.\nSchichtung erleichtert die Wiederverwendbarkeit von Komponenten, da jede Schicht unabhängig von den anderen entwickelt und leichter in anderen Projekten wiederverwendet werden kann.\n\n\n\nLernkarte AP2 2025 Nr. 149"
   },
   {
     "objectID": "03_Software-Architektur.html#section",

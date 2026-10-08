@@ -21,14 +21,207 @@ callout-appearance: simple
 
 ## Schichten
 
+## Designpatterns: Übersicht
+
+::: incremental
+
+- Erzeugungsmuster: *Creational Patterns*
+  + Beispiele: Factory Pattern, Singleton
+
+- Strukturmuster: *Structual Patterns*
+  + Beispiele: Adapter, Decorator, Composite
+
+- Verhaltensmuster: *Behavioral Patterns*
+  + Beispiele: Observer, Strategy
+
+:::
+
+::: notes
+Lernkarte AP2 2025 Nr. 155
+:::
+
+## Erzeugungsmuster - Creational Patterns
+
+:::: incremental
+
+- Helfen bei der Erzeugung von Objekten
+- Sorgen für flexible, kontrollierte und wiederverwendbare **Objektinstanziierung**
+- Beispiele: Factory Pattern, Singleton
+
+::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 155
+:::
+
+
+## Strukturmuster - Structural Patterns
+
+:::: incremental
+
+- Beschreiben, wie Klassen und Objekte zusammenarbeiten und sich zu größeren Strukturen verbinden
+- Helfen, komplexe Strukturen übersichtlich zu gestalten
+- Beispiele: Adapter, Decorator, Composite
+
+::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 155
+:::
+
+
+## Verhaltensmuster - Behavioral Patterns
+
+:::: incremental
+
+- Definieren, wie Objekte miteinander kommunizieren und interagieren, um Aufgaben zu erfüllen
+- Verbessern die Interaktion und Verantwortungsverteilung
+- Beispiele: Observer, Strategy
+
+::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 155
+:::
+
+
 ## Designpatterns: Singleton
+
+:::: {style="font-size: 1.9rem"}
+
+**Erklären Sie die Aufgaben des Singleton Pattern.**
+
+::: incremental
+
+- Das **Singleton-Entwurfsmuster** ist ein Software-Entwurfsmuster, das die Instanziierung eines Klasse auf **genau ein Objekt** beschränkt.
+- Es wird verwendet, um sicherzustellen, dass eine Klasse nur **eine einzige Instanz** hat, und stellt einen **globalen Zugangspunkt** zu diesem Objekt bereit.
+- Hauptziel: kontrollierten Mechanismus zur Verfügung stellen, um auf **begrenzte Ressourcen** zuzugreifen
+- nützlich, wenn genau eine Instanz eines Objekts benötigt wird, um Aktionen zu koordinieren
+
+:::
+::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 160
+:::
+
 
 ## Designpatterns: Observer
 
+:::: {style="font-size: 1.9rem"}
+
+**Was ist das Observer Muster?**
+
+::: incremental
+
+- Entwurfsmuster aus dem Bereich der Softwareentwicklung
+- zählt zu den **Verhaltensmustern** *(Behavioral Patterns)*
+- ermöglicht **Einwegabhängigkeit** zwischen Objekten:
+  + wenn ein Objekt seinen Zustand ändert, werden alle abhängigen Objekte benachrichtigt und automatisch aktualisiert
+- besonders nützlich in Situationen:
+  + in denen der Zustand eines Objekts von vielen anderen Objekten abhängig ist
+  + und eine enge **Kopplung** zwischen diesen Objekten vermieden werden soll
+
+:::
+::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 156
+:::
+
+
+## Designpatterns: Observer
+
+:::: {style="font-size: 1.7rem"}
+
+**Wie funktioniert das Observer Muster?**
+
+::: incremental
+
+Das Observer Muster funktioniert durch eine **Einweg-Kommunikation** von einem Subjekt zu mehreren anderen Objekten *(Observer)*.
+
+1. **Registrierung:** Die Observer melden sich beim Subjekt für Updates an. Das Subjekt hält eine Liste aller seiner Observer.
+2. **Änderung:** Wenn das Subjekt seinen Zustand ändert, informiert es alle registrierten Observer über die Änderung.
+3. **Benachrichtigung:** Das Subjekt benachrichtigt die Observer über die Zustandsänderung, indem es eine Methode (häufig *update* genannt) auf den Observern aufruft.
+4. **Abmeldung:** Observer können sich jederzeit vom Subjekt abmelden, wenn sie keine weiteren Benachrichtigungen erhalten möchten.
+
+:::
+::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 157
+:::
+
+
 ## Designpatterns: Factory
+
+:::: {style="font-size: 1.9rem"}
+
+**Was ist das Factory Pattern und welchen Vorteil bietet es bei der Objekterzeugung?**
+
+::: incremental
+
+- Das **Factory Pattern** ist ein Entwurfsmuster, bei dem die **Erzeugung** von Objekten **an** eine **eigene Methode oder Klasse ausgelagert** wird.
+- Dadurch wird entschieden, welches konkrete Objekt erzeugt wird, ohne direkt von bestimmten Klassen abhängig zu sein.
+- Vorteile:
+  + **Entkopplung** von Erzeugung und Verwendung
+  + Erleichtert das Hinzufügen neuer Objekttypen
+  + Macht Code übersichtlicher und besser wartbar
+
+:::
+::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 161
+:::
+
 
 ## Designpatterns: MVC
 
+:::: {style="font-size: 1.7rem"}
+
+**Welche Komponenten umfasst das MVC-Muster und wie interagieren sie miteinander?**
+
+::: incremental
+
+- Entwurfsmuster; oft verwendet, um **Struktur** von Softwareanwendungen zu organisieren
+- Komponenten:
+  + **M**odel: Verantwortlich für Daten und Geschäftslogik
+  + **V**iew: Präsentiert Daten an den Benutzer
+  + **C**ontroller: Verarbeitet die Benutzereingaben und aktualisiert das Model
+- Interaktion funktioniert wie folgt:
+  1. Benutzer agiert mit der **View**.
+  2. **Controller** erhält Benutzereingaben von **View**, führt Aktionen im **Model** aus.
+  3. **Model** benachrichtigt **View** über Änderungen.
+  4. **View** aktualisiert die Benutzeroberfläche.
+
+:::
+::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 158
+:::
+
+
+## 3-Schichten-Architektur
+
+:::: {style="font-size: 1.9rem"}
+
+**Welche Vorteile bietet die Verwendung einer 3-Schichten-Architektur bei der Entwicklung?**
+
+::: incremental
+
+- Ermöglicht klare **Trennung** zwischen **Präsentationsschicht, Anwendungslogik und Datenzugriffsschicht**
+- Dadurch wird Code besser strukturiert, Wartungsaufgaben werden vereinfacht.
+- Schichtung ermöglicht eine bessere **Skalierbarkeit**, da jede Schicht unabhängig von den anderen skaliert werden kann.
+- Schichtung erleichtert die **Wiederverwendbarkeit** von Komponenten, da jede Schicht unabhängig von den anderen entwickelt und leichter in anderen Projekten wiederverwendet werden kann.
+
+:::
+::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 149
+:::
 
 
 ## <!-- -->

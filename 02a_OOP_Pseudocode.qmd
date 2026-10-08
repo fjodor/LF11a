@@ -544,8 +544,11 @@ ENDE KLASSE
 
 ## Polymorphie: Beispiel
 
+<br>
+
 ```
 // tiere: Liste von Tier = [neuer Hund(), neue Katze()]
+
 FUER JEDES t IN tiere
     ausgabe(t.sprechen())
     // "Wau!", "Miau!"
@@ -829,7 +832,7 @@ Lernkarte AP2 2025 Nr. 138
 :::: {.incremental style="font-size: 1.7rem"}
 
 - Codebeispiel: Futterstation für Haustiere
-- Ohne generische Klasse: <br> `class Hundefutterstation, class Meerschweinchen-Futterstation`, ...
+- Ohne generische Klasse: <br> `class Hundefutterstation, class MeerschweinchenFutterstation`, ...
 - Nachteile:
   + redundante Logik für jeden Tier-Typ
   + Probleme bei neuen Tierklassen

@@ -17,7 +17,49 @@ execute:
 callout-appearance: simple
 ---
 
-## Sequenzdiagramme
+## Sequenzdiagramm: Nachrichten
+
+![](libs/_Images/Sequenzd_synch-async.png)
+
+
+## <!-- -->
+
+:::: columns
+::: {.column width="35%"}
+
+### Sequenz-diagramm: Lebenslinien
+
+:::
+
+::: {.column width="65%"}
+
+![](libs/_Images/Sequenzd_Lebenslinien.png)
+
+:::
+::::
+
+
+## Sequenzdiagramm: Bedingungen
+
+![](libs/_Images/Sequenzd_Bedingungen.png)
+
+
+## <!-- -->
+
+:::: columns
+::: {.column width="35%"}
+
+### Sequenz-diagramm: Überblick
+
+:::
+
+::: {.column width="65%"}
+
+![](libs/_Images/Sequenzdiagramm_AP2-So-2025.png){fig-align="center" width="100%"}
+
+:::
+::::
+
 
 ## Zustandsdiagramme
 

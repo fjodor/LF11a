@@ -29,8 +29,7 @@ Grundlagen siehe [LF7: REST](https://johannesloetzsch.github.io/LF7/rest.html)
 - API = *Application Programming Interface*  
 - REST-API: Set von Regeln und Konventionen für den Aufbau von Webdiensten
 
-
-
+:::
 ::::
 
 
@@ -71,12 +70,14 @@ Grundlagen siehe [LF7: REST](https://johannesloetzsch.github.io/LF7/rest.html)
 
 6 Datentypen in JSON:
 
-- String: "Hallo Welt"
-- Number: 42 oder 3.14
-- Boolean: true oder false
-- Null
-- Object: {"key": "value" }
-- Array: [1, 2, 3]
+Datentyp | Beispiel
+---------|----------
+String | `"Hallo Welt"`
+Number | `42` oder `3.14`
+Boolean | `true` oder `false`
+Null | `null`
+Object | `{"key": "value" }`
+Array | `[1, 2, 3]`
 
 ::::
 
@@ -133,7 +134,7 @@ Single Quotes | `{'a':'b'}`
 Unquoted Keys | `{a:1}`
 Kommentare | `// comment`
 Undefined | `undefined`
-NaN/Infinity | `NaN`
+NaN / Infinity | `NaN`
 
 ::::
 
@@ -148,10 +149,12 @@ Quelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/json-f
 
 JSON kann beliebig verschachtelt werden:
 
-- **Objekte in Objekten:** `{"user": {"name": "Max"}}`
-- **Arrays in Objekten:** `{"tags": ["a", "b"]}`
-- **Arrays von Objekten:** `[{"id": 1}, {"id": 2}]`
-- **Beliebig tief:** theoretisch unbegrenzt
+Verschachtelungs-Typ | Beispiel
+---------------------|------------
+Objekte in Objekten | `{"user": {"name": "Max"}}`
+Arrays in Objekten | `{"tags": ["a", "b"]}`
+Arrays von Objekten | `[{"id": 1}, {"id": 2}]`
+Beliebig tief | theoretisch unbegrenzt
 
 ::::
 
@@ -180,8 +183,77 @@ Quelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/json-f
 :::
 
 
-## XML
+## XML: Grundbausteine
 
+:::: {.incremental style="font-size: 2rem"}
+
+Baustein | Beispiel
+---------|-----------
+Prozessanweisung | `<?xml version="1.0"?>`
+Elemente | `<name>Wert</name>`
+Attribute | `<item id="1">`
+Text | Inhalt zwischen Tags
+Kommentare | `<!-- ... -->`
+CDATA | `<![CDATA[...]]>`
+
+::: fragment
+CDATA = *Character Data*, speichert Text ungefiltert, <br> d. h. ohne dass XML-Sonderzeichen interpretiert werden
+:::
+::::
+
+::: notes
+Quelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/xml-formatter-validator.html
+:::
+
+
+## XML: Häufige Fehler
+
+:::: {style="font-size: 2rem"}
+
+Fehler | Beispiel
+-------|----------
+Unclosed Tags | `<name>Max`
+Wrong Nesting | ` <a><b></a></b>`
+Case Sensitivity | `<Name></name>`
+Special Chars | & unescaped
+Multiple Roots | Zwei Root-Elemente <br> Beispiel: `<kunde> ... </kunde>` <br> `<bestellung> ... </bestellung>`
+Unquoted Attrs | `<item id=1>`
+
+::::
+
+::: notes
+Quelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/xml-formatter-validator.html
+:::
+
+
+## XML vs. JSON
+
+:::: {.columns style="font-size: 2rem"}
+::: {.column .incremental}
+
+### XML
+
+- XML bevorzugen bei: SOAP, Dokumenten-Formaten, XSLT, Namespaces, Attributen, Schemas (XSD)
+- XML-Vorteile: Attribute, Kommentare, Mixed Content, Namespaces, XPath / XSLT
+- oft besser für Enterprise / SOAP
+
+:::
+
+::: {.column .incremental}
+
+### JSON
+
+- JSON bevorzugen bei: REST-APIs, Konfigurationen, moderne Web-Apps, NoSQL-Datenbanken
+- JSON-Vorteile: kompakter, schneller zu parsen, native Datentypen
+- oft besser geeignet für neue Projekte
+
+:::
+
+::::
+
+::: notes
+Quelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/xml-formatter-validator.html
+:::
 
 
 ## <!-- -->

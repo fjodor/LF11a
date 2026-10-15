@@ -1,0 +1,128 @@
+---
+title: "Objektorientierte Analyse- und Designverfahren"
+title-slide-attributes:
+  data-background-color: "#D7E6F4"
+subtitle: " "
+format:
+  revealjs:
+    theme: simple
+    logo: libs/_Images/logo-AFBB.svg
+    css: libs/styles.css
+execute:
+  echo: false
+  eval: true
+  freeze: auto
+  warning: false
+  message: false
+callout-appearance: simple
+---
+
+## Ziele
+
+- Schritte der objektorientierten Analyse (OOA) kennen
+- Schritte des objektorientierten Designs (OOD) kennen
+- Klassen aus Anforderungen ableiten können
+- grundlegende Designprinzipien anwenden können
+
+
+## Objektorientierte Analyse (OOA)
+
+:::: {style="font-size: 2rem"}
+
+**Definition:** Die OOA identifiziert aus den fachlichen Anforderungen (z.B. Lastenheft) die relevanten Objekte, Klassen, Attribute und Methoden des Systems.
+
+**Vorgehen:**
+
+::: incremental
+
+1. **Anforderungen lesen** – Lastenheft, User Stories, Gesprächsprotokolle
+2. **Substantive markieren** → Kandidaten fuer **Klassen** und **Attribute**
+3. **Verben markieren** → Kandidaten fuer **Methoden**
+4. **Beziehungen identifizieren** → Assoziationen, Kompositionen, Vererbung
+5. **Erstes Klassendiagramm erstellen** → grobe Struktur
+
+:::
+::::
+
+
+## OOA: Beispiel
+
+:::: {style="font-size: 1.8rem"}
+
+> "Ein **Kunde** gibt eine **Bestellung** auf. Jede Bestellung enthält mehrere **Artikel**. Der Kunde hat einen **Namen** und eine **Adresse**. Artikel haben eine **Bezeichnung** und einen **Preis**."
+
+**Ableitung:**
+
+::: {.fragment style="font-size: 1.7rem"}
+
+| Element | Typ | Quelle |
+|:-----|:-------|:--------|
+| Kunde | Klasse | Substantiv |
+| Bestellung | Klasse | Substantiv |
+| Artikel | Klasse | Substantiv |
+| Name, Adresse | Attribute von Kunde | Substantive (Eigenschaften) |
+| Bezeichnung, Preis | Attribute von Artikel | Substantive (Eigenschaften) |
+| aufgeben() | Methode von Kunde | Verb "gibt auf" |
+| enthalten() | Beziehung Bestellung → Artikel | Verb "enthält" |
+
+:::
+::::
+
+
+## OOA: CRC-Karten
+
+::::: {style="font-size: 2rem"}
+
+**Definition:** ***CRC-Karten *(Class-Responsibility-Collaboration)*** sind ein einfaches Werkzeug zur frühen Identifikation von Klassen. Jede Karte beschreibt eine Klasse mit ihren Verantwortlichkeiten und Kooperationspartnern.
+
+<br>
+
+:::: columns
+::: column
+
+```
++----------------------------------+
+|          KLASSE: Kunde           |
++----------------------------------+
+| Verantwortlichkeiten:            |
+| - Name und Adresse verwalten     |
+| - Bestellung aufgeben            |
++----------------------------------+
+| Kooperationen:                   |
+| - Bestellung                     |
++----------------------------------+
+```
+
+:::
+::: column
+
+```
++----------------------------------+
+|       KLASSE: Bestellung         |
++----------------------------------+
+| Verantwortlichkeiten:            |
+| - Artikel verwalten              |
+| - Gesamtpreis berechnen          |
+| - Status ändern                  |
++----------------------------------+
+| Kooperationen:                   |
+| - Kunde, Artikel                 |
++----------------------------------+
+```
+
+:::
+::::
+:::::
+
+
+## <!-- -->
+
+![](libs/_Images/coffee.jpg){fig-align="center" width="50%"}
+
+::: {style="text-align: center; font-size: 1rem;"}
+[©torange.biz](https://torange.biz/cup-coffee-30851) CC-BY 4.0
+:::
+
+::: {style="color: green; text-align: center; font-size: 2.8rem"}
+**Viel Erfolg!**
+:::

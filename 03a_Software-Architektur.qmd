@@ -249,6 +249,7 @@ Lernkarte AP2 2025 Nr. 149
 **Erklären Sie das Konzept der Modularisierung in der Softwareentwicklung.**
 
 ::: incremental
+
 - **Modularisierung:** Konzept in der Softwareentwicklung: umfangreichen Code in kleinere, unabhängige, verwaltbare Einheiten / Module zerlegen
 - Jedes Modul fokussiert sich auf eine spezifische Funktion / einen bestimmten Aspekt des Gesamtprojekts
 - Ziele:
@@ -257,14 +258,12 @@ Lernkarte AP2 2025 Nr. 149
 - Module können unabhängig von einander entwickelt, getestet und überarbeitet werden
 - Erhöht **Effizienz** und **Produktivität** des Entwicklungsprozesses
 
+:::
 ::::
 
 ::: notes
 Lernkarte AP2 2025 Nr. 147
 :::
-
-
-## Schichten
 
 
 ## <!-- -->

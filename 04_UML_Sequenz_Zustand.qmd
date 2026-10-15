@@ -43,6 +43,22 @@ callout-appearance: simple
 
 ![](libs/_Images/Sequenzd_Bedingungen.png)
 
+## <!-- -->
+
+:::: columns
+::: {.column width="35%"}
+
+### Sequenz-diagramm: Überblick
+
+:::
+
+::: {.column width="65%"}
+
+![](libs/_Images/Sequenzdiagramm_AP2-So-2025.png){fig-align="center" width="100%"}
+
+:::
+::::
+
 
 ## Sequenzdiagramm: Zusammenfassung
 
@@ -57,7 +73,7 @@ callout-appearance: simple
   + einer Reihe von vertikalen **"Lebenslinien"**, die Objekte oder Klassen repräsentieren, und
   + horizontalen **"Nachrichten"**, die zwischen den Lebenslinien hin und her gehen
 - Nachrichten sind zeitlich von oben nach unten geordnet, sodass man sehen kann, in welcher Reihenfolge die Interaktionen auftreten
-- Sequenzdiagramme helfen dabei, die dynamischen Interaktionen in einem System darzustellen und zu analysieren
+- Sequenzdiagramme helfen dabei, die **dynamischen Interaktionen** in einem System darzustellen und zu analysieren
 
 :::
 ::::
@@ -65,6 +81,11 @@ callout-appearance: simple
 ::: notes
 Lernkarte AP2 2025 Nr. 128
 :::
+
+
+## Zustandsdiagramm
+
+![](libs/_Images/Zustandsdiagramm_AP2-Wi-2025-Belegsatz.png)
 
 
 ## Zustandsdiagramm: Zusammenfassung
@@ -89,27 +110,6 @@ Lernkarte AP2 2025 Nr. 128
 ::: notes
 Lernkarte AP2 2025 Nr. 130
 :::
-
-
-## <!-- -->
-
-:::: columns
-::: {.column width="35%"}
-
-### Sequenz-diagramm: Überblick
-
-:::
-
-::: {.column width="65%"}
-
-![](libs/_Images/Sequenzdiagramm_AP2-So-2025.png){fig-align="center" width="100%"}
-
-:::
-::::
-
-
-## Zustandsdiagramme
-
 
 
 ## <!-- -->

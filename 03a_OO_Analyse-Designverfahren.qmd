@@ -162,7 +162,7 @@ callout-appearance: simple
 ::::
 
 
-## Typische Pruefungsaspekte
+## Typische Prüfungsaspekte
 
 - Aus einem Anforderungstext Klassen, Attribute und Methoden ableiten
 - CRC-Karten erstellen oder interpretieren
@@ -179,9 +179,9 @@ callout-appearance: simple
 |--------|-----------|
 | Adjektive als Klassen identifiziert | Adjektive sind meist Attribute, nicht Klassen |
 | Zu viele Klassen erstellt | Nur fachlich relevante Entitäten werden Klassen |
-| OOA und OOD vermischt | OOA = fachlich (WAS), OOD = technisch (WIE) |
-| Kapselung ignoriert | Attribute sollten private sein, Zugriff über Getter / Setter |
-| Vererbung für alles verwendet | Komposition ist oft besser als Vererbung ("favor composition over inheritance") |
+| OOA und OOD vermischt | OOA = fachlich (WAS), <br> OOD = technisch (WIE) |
+| Kapselung ignoriert | Attribute sollten *private* sein, <br> Zugriff über Getter / Setter |
+| Vererbung für alles verwendet | Komposition ist oft besser als Vererbung *("favor composition over inheritance")* |
 
 ::::
 

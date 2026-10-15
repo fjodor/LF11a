@@ -1,8 +1,8 @@
 ---
-title: "Software-Architektur"
+title: "Design Patterns"
 title-slide-attributes:
   data-background-color: "#D7E6F4"
-subtitle: "Grundlagen, Design-Patterns"
+subtitle: " "
 format:
   revealjs:
     theme: simple
@@ -17,7 +17,7 @@ execute:
 callout-appearance: simple
 ---
 
-## Designpatterns: Übersicht
+## Design Patterns: Übersicht
 
 ::: incremental
 
@@ -81,7 +81,7 @@ Lernkarte AP2 2025 Nr. 155
 :::
 
 
-## Designpatterns: Singleton
+## Design Patterns: Singleton
 
 :::: {style="font-size: 1.9rem"}
 
@@ -102,7 +102,7 @@ Lernkarte AP2 2025 Nr. 160
 :::
 
 
-## Designpatterns: Observer
+## Design Patterns: Observer
 
 :::: {style="font-size: 1.9rem"}
 
@@ -126,7 +126,7 @@ Lernkarte AP2 2025 Nr. 156
 :::
 
 
-## Designpatterns: Observer
+## Design Patterns: Observer
 
 :::: {style="font-size: 1.7rem"}
 
@@ -149,7 +149,7 @@ Lernkarte AP2 2025 Nr. 157
 :::
 
 
-## Designpatterns: Factory
+## Design Patterns: Factory
 
 :::: {style="font-size: 1.9rem"}
 
@@ -172,7 +172,7 @@ Lernkarte AP2 2025 Nr. 161
 :::
 
 
-## Designpatterns: MVC
+## Design Patterns: MVC
 
 :::: {style="font-size: 1.7rem"}
 

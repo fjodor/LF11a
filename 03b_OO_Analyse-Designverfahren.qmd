@@ -73,7 +73,7 @@ callout-appearance: simple
 
 ::::: {style="font-size: 2rem"}
 
-**Definition:** ***CRC-Karten *(Class-Responsibility-Collaboration)*** sind ein einfaches Werkzeug zur frühen Identifikation von Klassen. Jede Karte beschreibt eine Klasse mit ihren Verantwortlichkeiten und Kooperationspartnern.
+**Definition:** ***CRC-Karten (Class-Responsibility-Collaboration)*** sind ein einfaches Werkzeug zur frühen Identifikation von Klassen. Jede Karte beschreibt eine Klasse mit ihren Verantwortlichkeiten und Kooperationspartnern.
 
 <br>
 
@@ -113,6 +113,77 @@ callout-appearance: simple
 :::
 ::::
 :::::
+
+
+## SOLID-Prinzipien
+
+:::: {style="font-size: 1.9rem"}
+
+| Buchstabe | Prinzip | Bedeutung |
+|:---|:-------|:-----------|
+| S | Single Responsibility | Jede Klasse hat genau eine Aufgabe |
+| O | Open/Closed | Offen für Erweiterung, geschlossen für Änderung |
+| L | Liskov Substitution | Unterklassen müssen die Oberklasse ersetzen können |
+| I | Interface Segregation | Viele kleine Interfaces statt eines großen |
+| D | Dependency Inversion | Abhängigkeiten auf Abstraktionen, nicht auf konkrete Klassen |
+
+::::
+
+
+## OOP Grundkonzepte
+
+:::: {style="font-size: 1.9rem"}
+
+| Konzept | Beschreibung |
+|---------|-------------|
+| Klasse | Bauplan für Objekte (Attribute + Methoden) |
+| Objekt | Konkrete Instanz einer Klasse |
+| Vererbung | Unterklasse übernimmt Attribute / Methoden der Oberklasse |
+| Polymorphismus | Gleiche Methode, unterschiedliches Verhalten je nach Klasse |
+| Kapselung | Zugriff auf Attribute nur über Methoden (Getter / Setter) |
+| Abstraktion | Nur relevante Eigenschaften modellieren |
+
+::::
+
+
+## OOA vs. OOD im Vergleich
+
+:::: {style="font-size: 1.9rem"}
+
+| Aspekt | OOA | OOD |
+|--------|-----|-----|
+| Ziel | Fachliche Modellierung (WAS) | Technische Modellierung (WIE) |
+| Perspektive | Kundensicht / Fachbereich | Entwicklersicht |
+| Ergebnis | Fachliches Klassendiagramm | Technisches Klassendiagramm |
+| Datentypen | Noch nicht festgelegt | Konkret (String, int, Date) |
+| Sichtbarkeiten | Noch nicht definiert | `+, -, #, ~` |
+| Design Patterns | Noch nicht angewendet | Werden eingesetzt |
+
+::::
+
+
+## Typische Pruefungsaspekte
+
+- Aus einem Anforderungstext Klassen, Attribute und Methoden ableiten
+- CRC-Karten erstellen oder interpretieren
+- OOA von OOD unterscheiden
+- OOP-Grundkonzepte (Vererbung, Kapselung, Polymorphismus) erklären
+- SOLID-Prinzipien im Grundsatz kennen
+
+
+## Häufige Fehler
+
+:::: {style="font-size: 1.9rem"}
+
+| Fehler | Korrektur |
+|--------|-----------|
+| Adjektive als Klassen identifiziert | Adjektive sind meist Attribute, nicht Klassen |
+| Zu viele Klassen erstellt | Nur fachlich relevante Entitäten werden Klassen |
+| OOA und OOD vermischt | OOA = fachlich (WAS), OOD = technisch (WIE) |
+| Kapselung ignoriert | Attribute sollten private sein, Zugriff über Getter / Setter |
+| Vererbung für alles verwendet | Komposition ist oft besser als Vererbung ("favor composition over inheritance") |
+
+::::
 
 
 ## <!-- -->

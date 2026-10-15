@@ -33,6 +33,23 @@ Grundlagen siehe [LF7: REST](https://johannesloetzsch.github.io/LF7/rest.html)
 ::::
 
 
+## REST APIs: Eigenschaften
+
+:::: {.incremental style="font-size: 2rem"}
+
+- Client-Server-Architektur: Server stellt Dienst bereit, der vom Client angefragt werden kann
+- Zustandslos: Jede REST-Nachricht enthält alle für ihre Verarbeitung erforderlichen Informationen
+- Einheitliche Schnittstelle: HTTP-Methoden wie `GET, POST, PUT, DELETE`
+- Caching
+- Code on Demand: bei Bedarf kann der Server Code an den Client schicken
+
+::::
+
+::: notes
+Lernkarte?
+:::
+
+
 ## REST APIs absichern
 
 :::: {.incremental style="font-size: 2rem"}

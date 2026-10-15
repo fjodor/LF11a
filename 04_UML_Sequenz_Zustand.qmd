@@ -60,6 +60,52 @@ callout-appearance: simple
 ::::
 
 
+## Sequenzdiagramm: Beispiel
+
+```{mermaid}
+sequenceDiagram
+    actor Benutzer
+    participant LoginController
+    participant Datenbank
+    participant Session
+
+    Benutzer->>LoginController: login(user,pw)
+    LoginController->>Datenbank: prüfeUser(user,pw)
+    Datenbank-->>LoginController: Ergebnis
+
+    alt gültig
+        LoginController->>Session: erzeugeSession()
+        Session-->>LoginController: SessionID
+        LoginController-->>Benutzer: Erfolg
+    else ungültig
+        LoginController-->>Benutzer: Fehler
+    end
+```
+
+
+## Sequenzdiagramm: Mermaid {.smaller}
+
+```
+sequenceDiagram
+    actor Benutzer
+    participant LoginController
+    participant Datenbank
+    participant Session
+
+    Benutzer->>LoginController: login(user,pw)
+    LoginController->>Datenbank: prüfeUser(user,pw)
+    Datenbank-->>LoginController: Ergebnis
+
+    alt gültig
+        LoginController->>Session: erzeugeSession()
+        Session-->>LoginController: SessionID
+        LoginController-->>Benutzer: Erfolg
+    else ungültig
+        LoginController-->>Benutzer: Fehler
+    end
+```
+
+
 ## Sequenzdiagramm: Zusammenfassung
 
 :::: {style="font-size: 1.9rem"}
@@ -86,6 +132,90 @@ Lernkarte AP2 2025 Nr. 128
 ## Zustandsdiagramm
 
 ![](libs/_Images/Zustandsdiagramm_AP2-Wi-2025-Belegsatz.png)
+
+
+## Zustandsdiagramm: Bestellung
+
+:::: {style="font-size: 1.5rem"}
+
+```{.text style="overflow: hidden;"}
+   (●)
+    |
+    v
++----------+   bestellen()    +-----------+
+|  Neu     |----------------->| Bestaetigt|
++----------+                  +-----------+
+                                   |
+                    zahlung_ok()   |
+                                   v
+                             +----------+
+            stornieren()     | Bezahlt  |
+  +----------<---------------|          |
+  |                          +----------+
+  v                                |
++----------+          versenden()  |
+|Storniert |                       v
++----------+              +-----------+
+  |                       | Versendet |
+  v                       +-----------+
+ (◉)                           |
+                  zugestellt() |
+                               v
+                        +-----------+
+                        | Geliefert |
+                        +-----------+
+                               |
+                               v
+                              (◉)
+```
+
+::::
+
+
+## Zustandsdiagramm: Bestellung
+
+```{mermaid}
+stateDiagram-v2
+
+    direction LR
+
+    [*] --> Neu
+    Neu --> Bestaetigt : bestellen()
+
+    Bestaetigt --> Bezahlt : zahlung_ok()
+    Bestaetigt --> Storniert : stornieren()
+
+    Bezahlt --> Versendet : versenden()
+    Versendet --> Geliefert : zugestellt()
+
+    Geliefert --> [*]
+    Storniert --> [*]
+```
+
+
+#### Mermaid-Code
+
+::: {.fragment style="font-size: 1.8rem"}
+
+```
+stateDiagram-v2
+
+    direction LR
+
+    [*] --> Neu
+    Neu --> Bestaetigt : bestellen()
+
+    Bestaetigt --> Bezahlt : zahlung_ok()
+    Bestaetigt --> Storniert : stornieren()
+
+    Bezahlt --> Versendet : versenden()
+    Versendet --> Geliefert : zugestellt()
+
+    Geliefert --> [*]
+    Storniert --> [*]
+```
+
+:::
 
 
 ## Zustandsdiagramm: Zusammenfassung

@@ -60,9 +60,128 @@ Grundlagen siehe [LF7: REST](https://johannesloetzsch.github.io/LF7/rest.html)
 - ORM erzeugt intern SQL
 - ORM verwendet (fast) immer parametrisierte Abfragen
 - ORM verhindert SQL Injections
-- Beispiele für Python-ORMs: SQLAlchemy, SQLModel (von FastAPI-Erfinder Sebastián Ramírez), Django ORM
+- Beispiele für Python-ORMs: *SQLAlchemy, SQLModel* (von FastAPI-Erfinder Sebastián Ramírez), *Django ORM*
 
 ::::
+
+
+## JSON: Datentypen
+
+:::: {style="font-size: 2.1rem"}
+
+6 Datentypen in JSON:
+
+- String: "Hallo Welt"
+- Number: 42 oder 3.14
+- Boolean: true oder false
+- Null
+- Object: {"key": "value" }
+- Array: [1, 2, 3]
+
+::::
+
+::: notes
+Quelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/json-formatter-validator.html
+:::
+
+
+## JSON: Anwendung
+
+:::: {.incremental style="font-size: 2.1rem"}
+
+- **REST-APIs:** Standardformat für Datenaustausch im Web
+- **Konfigurationsdateien:** `package.json, tsconfig.json`
+- **NoSQL-Datenbanken:** MongoDB, CouchDB speichern JSON
+- **Logs:** Strukturierte Log-Ausgabe
+- **Frontend-Backend-Kommunikation:** Fetch, AJAX, WebSockets
+- **JWT Tokens:** Payload ist Base64-codiertes JSON
+
+::::
+
+::: notes
+Quelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/json-formatter-validator.html
+:::
+
+
+## JSON vs. JavaScript-Objekt
+
+:::: {.incremental style="font-size: 1.9rem"}
+
+Kriterium | JSON | JavaScript-Objekt (JS)
+----------|------|-----------------------
+Keys: doppelte Anführungszeichen | erforderlich | nicht erforderlich
+Trailing Comma | verboten | erlaubt
+Kommentare | verboten | erlaubt
+Werte | nur 6 Typen | auch `undefined`, `NaN`, Funktionen
+Prototyp | keiner | Eigenschaften und Methoden können von Prototyp geerbt werden
+
+::::
+
+::: notes
+Quelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/json-formatter-validator.html
+:::
+
+
+## JSON: Häufige Fehler
+
+:::: {style="font-size: 2.1rem"}
+
+Fehler | Beispiel
+-------|----------
+Trailing Comma | `{"a":1,}`
+Single Quotes | `{'a':'b'}`
+Unquoted Keys | `{a:1}`
+Kommentare | `// comment`
+Undefined | `undefined`
+NaN/Infinity | `NaN`
+
+::::
+
+::: notes
+Quelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/json-formatter-validator.html
+:::
+
+
+## JSON: Verschachtelung
+
+:::: {.incremental style="font-size: 2.1rem"}
+
+JSON kann beliebig verschachtelt werden:
+
+- **Objekte in Objekten:** `{"user": {"name": "Max"}}`
+- **Arrays in Objekten:** `{"tags": ["a", "b"]}`
+- **Arrays von Objekten:** `[{"id": 1}, {"id": 2}]`
+- **Beliebig tief:** theoretisch unbegrenzt
+
+::::
+
+::: notes
+Quelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/json-formatter-validator.html
+:::
+
+
+## JSON: Best Practices
+
+:::: {.incremental style="font-size: 2rem"}
+
+So schreibst Du gutes JSON:
+
+- **Doppelte Anführungszeichen** für Strings und Keys
+- **2 oder 4 Spaces** für Einrückung
+- **Keine Kommentare** (nicht erlaubt in JSON)
+- **UTF-8** als Standard-Encoding
+- **Konsistente Benennung:** `camelCase` oder `snake_case`
+- **keine trailing commas**
+
+::::
+
+::: notes
+Quelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/json-formatter-validator.html
+:::
+
+
+## XML
+
 
 
 ## <!-- -->

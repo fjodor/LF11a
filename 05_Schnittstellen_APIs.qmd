@@ -79,6 +79,8 @@ Null | `null`
 Object | `{"key": "value" }`
 Array | `[1, 2, 3]`
 
+Details siehe [RFC 8259](https://www.rfc-editor.org/info/rfc8259/)
+
 ::::
 
 ::: notes

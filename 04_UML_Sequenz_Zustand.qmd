@@ -44,6 +44,53 @@ callout-appearance: simple
 ![](libs/_Images/Sequenzd_Bedingungen.png)
 
 
+## Sequenzdiagramm: Zusammenfassung
+
+:::: {style="font-size: 1.9rem"}
+
+**Was stellt ein Sequenzdiagramm in UML dar und in welchen Szenarien wird es typischerweise verwendet?**
+
+::: incremental
+
+- Ein **Sequenzdiagramm** in UML zeigt die **Interaktionen zwischen Objekten** in der **Reihenfolge**, in der sie auftreten
+- Es besteht aus 
+  + einer Reihe von vertikalen **"Lebenslinien"**, die Objekte oder Klassen repräsentieren, und
+  + horizontalen **"Nachrichten"**, die zwischen den Lebenslinien hin und her gehen
+- Nachrichten sind zeitlich von oben nach unten geordnet, sodass man sehen kann, in welcher Reihenfolge die Interaktionen auftreten
+- Sequenzdiagramme helfen dabei, die dynamischen Interaktionen in einem System darzustellen und zu analysieren
+
+:::
+::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 128
+:::
+
+
+## Zustandsdiagramm: Zusammenfassung
+
+:::: {style="font-size: 1.9rem"}
+
+**Erklären Sie die Verwendung des UML-Zustandsdiagramms zur Modellierung von Verhalten in einem System.**
+
+::: incremental
+
+- **UML-Zustandsdiagramm** bildet **Lebenszyklus** eines Objekts ab durch Darstellung seiner verschiedenen **Zustände und Übergänge**
+- Besonders nützlich bei der Modellierung von **Objekten, die komplexes Verhalten aufweisen** und viele verschiedene Zustände haben können
+- Was geben Zustandsdiagramme wieder?
+  + den aktuellen **Zustand** eines Objekts
+  + die **Aktionen**, die beim **Eintritt**, während des **Verweilen**s und beim **Verlassen des Zustands** durchgeführt werden
+  + **Bedingungen für den Übergang** zu anderen Zuständen
+- Ermöglichen die Darstellung und das Verständnis komplexer **verhaltensbasierter Systeme**
+
+:::
+::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 130
+:::
+
+
 ## <!-- -->
 
 :::: columns

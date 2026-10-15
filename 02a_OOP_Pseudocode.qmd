@@ -935,6 +935,84 @@ Lernkarte AP2 2025 Nr. 139
 :::
 
 
+## Konstruktor
+
+:::: {style="font-size: 1.9rem"}
+
+**Was ist die Rolle eines Konstruktors in der OOP?**
+
+::: incremental
+
+- **Konstruktor:** Spezielle Methode in der OOP, die zum **Erzeugen und Initialisieren** von Objekten einer Klasse verwendet wird
+- Wird automatisch aufgerufen, wenn ein neues Objekt einer Klasse erzeugt wird
+- Hauptaufgaben:
+  + Speicher für das Objekt reservieren
+  + Instanzvariablen des Objekts initialisieren
+  + Referenz auf das neu erstellte Objekt zurückgeben
+- Name: der gleiche wie die Klasse, in der er definiert ist
+- **Kein** Rückgabewert
+
+:::
+::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 144
+:::
+
+
+## Variablen: Deklaration vs. Initialisierung
+
+::::: {style="font-size: 1.9rem"}
+
+**Erklären Sie den Unterschied zwischen der Deklaration und der Initialisierung von Variablen.**
+
+[In der Programmierung sind Deklaration und Initialisierung zwei grundlegende Schritte bei der Verwendung von Variablen.]{.fragment}
+
+:::: columns
+::: {.column .fragment}
+
+### Deklaration
+
+- Variable wird durch Angabe ihres Typs und Namens **definiert**
+- Compiler reserviert dadurch Speicherplatz für die Variable
+- Der Variable wird zu diesem Zeitpunkt noch **kein spezifischer Wert** zugewiesen
+
+:::
+
+::: {.column .fragment}
+
+### Initialisierung
+
+- Bei der Initialisierung wird einer zuvor deklarierten Variablen **ein erster Wert** zugewiesen
+
+:::
+::::
+:::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 143
+:::
+
+
+## Klassenbibliothek
+
+:::: {style="font-size: 1.9rem"}
+
+**Was versteht man unter einer Klassenbibliothek in der Softwareentwicklung und welchen Vorteil bietet sie bei der Entwicklung von Anwendungen?**
+
+::: incremental
+
+- **Klassenbibliothek:** Sammlung von Klassen und Funktionen, die wiederverwendet werden können, um bestimmte Aufgaben zu erleichtern oder um komplexe Funktionalitäten bereitzustellen (ohne dass diese neu geschrieben werden müssen)
+- Bereitstellung oft als **Frameworks** oder **APIs** *(Application Programming Interface)*
+- Können Standardoperationen für Aufgaben wie *Netzwerk-Kommunikation, Datenzugriff, grafische Benutzeroberflächen* etc. bereitstellen
+
+:::
+::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 145
+:::
+
 
 ## <!-- -->
 

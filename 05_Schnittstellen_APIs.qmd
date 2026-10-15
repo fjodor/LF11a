@@ -17,9 +17,52 @@ execute:
 callout-appearance: simple
 ---
 
-## Schnittstellen, APIs
+## REST APIs: Grundlagen
+
+:::: {style="font-size: 2rem"}
+
+Grundlagen siehe [LF7: REST](https://johannesloetzsch.github.io/LF7/rest.html)
+
+::: incremental
+
+- REST = *Representational State Transfer*  
+- API = *Application Programming Interface*  
+- REST-API: Set von Regeln und Konventionen für den Aufbau von Webdiensten
 
 
+
+::::
+
+
+## REST APIs absichern
+
+:::: {.incremental style="font-size: 2rem"}
+
+- HTTPS verwenden
+- JWT / Bearer Token
+- Passwort-Hashing (bcrypt / argon2)
+- Rollen / Rechte vergeben
+- Eingabevalidierung (z. B. Pydantic)
+- Parametrisierte SQL-Abfragen bzw. ORM
+- Rate Limiting
+- Logging
+
+::::
+
+
+## REST APIs: ORM
+
+:::: {.incremental style="font-size: 2rem"}
+
+- ORM = *Object Relational Mapping*
+- Grundidee: (Python-)Objekte statt selbst SQL-Statements zu schreiben
+- ORM übersetzt zwischen (Python-)Klassen und Datenbanktabellen
+- ORM erzeugt intern SQL
+- ORM verwendet (fast) immer parametrisierte Abfragen
+- ORM verhindert SQL Injections
+- Beispiele für Python-ORMs: SQLAlchemy, SQLModel (von FastAPI-Erfinder Sebastián Ramírez), Django ORM
+
+::::
 
 
 ## <!-- -->

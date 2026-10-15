@@ -17,10 +17,6 @@ execute:
 callout-appearance: simple
 ---
 
-## Modularität
-
-## Schichten
-
 ## Designpatterns: Übersicht
 
 ::: incremental
@@ -203,6 +199,28 @@ Lernkarte AP2 2025 Nr. 158
 :::
 
 
+## MVC: Data Binding
+
+:::: {style="font-size: 1.8rem"}
+
+**Zur Aktualisierung des Views soll Datenbindung (Data Binding) eingesetzt werden. Erläutern Sie den Begriff Datenbindung (Data Binding).**
+
+::: incremental
+
+- **Datenbindung** *(Data Binding)* ist ein Prozess, der eine **Verbindung** zwischen **Daten (Modell)** und **Benutzeroberfläche (View)** herstellt
+- Ermöglicht, dass Änderungen an den Daten automatisch in der Benutzeroberfläche reflektiert werden und umgekehrt
+- Zwei Arten von Datenbindung:
+  + **Einweg-Datenbindung *(One-Way Data Binding):*** Daten fließen vom Model zum View
+  + **Zweiweg-Datenbindung *(Two-Way Data Binding):*** Daten fließen in beide Richtungen, sodass Änderungen im View auch dsa Model aktualisieren
+
+:::
+::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 159
+:::
+
+
 ## 3-Schichten-Architektur
 
 :::: {style="font-size: 1.9rem"}
@@ -222,6 +240,31 @@ Lernkarte AP2 2025 Nr. 158
 ::: notes
 Lernkarte AP2 2025 Nr. 149
 :::
+
+
+## Modularisierung: Konzept
+
+:::: {style="font-size: 2rem"}
+
+**Erklären Sie das Konzept der Modularisierung in der Softwareentwicklung.**
+
+::: incremental
+- **Modularisierung:** Konzept in der Softwareentwicklung: umfangreichen Code in kleinere, unabhängige, verwaltbare Einheiten / Module zerlegen
+- Jedes Modul fokussiert sich auf eine spezifische Funktion / einen bestimmten Aspekt des Gesamtprojekts
+- Ziele:
+  + **Komplexität** des Codes **reduzieren**
+  + Code einfacher verwalten, warten, testen und verstehen
+- Module können unabhängig von einander entwickelt, getestet und überarbeitet werden
+- Erhöht **Effizienz** und **Produktivität** des Entwicklungsprozesses
+
+::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 147
+:::
+
+
+## Schichten
 
 
 ## <!-- -->

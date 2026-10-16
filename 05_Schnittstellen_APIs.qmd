@@ -33,20 +33,40 @@ Grundlagen siehe [LF7: REST](https://johannesloetzsch.github.io/LF7/rest.html)
 ::::
 
 
-## REST APIs: Eigenschaften
+## REST APIs: 6 Prinzipien
 
-:::: {.incremental style="font-size: 2rem"}
+::: {style="font-size: 1.8rem"}
 
-- Client-Server-Architektur: Server stellt Dienst bereit, der vom Client angefragt werden kann
-- Zustandslos: Jede REST-Nachricht enthält alle für ihre Verarbeitung erforderlichen Informationen
-- Einheitliche Schnittstelle: HTTP-Methoden wie `GET, POST, PUT, DELETE`
-- Caching
-- Code on Demand: bei Bedarf kann der Server Code an den Client schicken
+| Prinzip | Bedeutung |
+|---------|-----------|
+| Client-Server | Klare Trennung von Client und Server |
+| Stateless (Zustandslos) | Jede Anfrage enthält alle nötige Information, Server speichert keinen Client-Zustand |
+| Cacheable | Antworten können zwischengespeichert werden |
+| Uniform Interface | Einheitliche Schnittstelle (URLs, HTTP-Methoden) |
+| Layered System | Mehrschichtige Architektur möglich (z.B. Load Balancer dazwischen) |
+| Code on Demand (optional) | Server kann ausführbaren Code an Client senden |
 
-::::
+:::
 
 ::: notes
-Lernkarte?
+Welche Lernkarte?
+:::
+
+
+## REST: HTTP-Methoden
+
+CRUD = **C**reate - **R**ead - **U**pdate - **D**elete
+
+::: {style="font-size: 1.8rem"}
+
+| HTTP-Methode | CRUD-Operation | Beschreibung | Beispiel |
+|-------------|---------------|-------------|----------|
+| GET | Read | Ressource abrufen | `GET /api/kunden/42` |
+| POST | Create | Neue Ressource erstellen | `POST /api/kunden` |
+| PUT | Update | Ressource vollständig ersetzen | `PUT /api/kunden/42` |
+| PATCH | Update (teilweise) | Ressource teilweise ändern | `PATCH /api/kunden/42` |
+| DELETE | Delete | Ressource löschen | `DELETE /api/kunden/42` |
+
 :::
 
 

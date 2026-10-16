@@ -150,6 +150,93 @@ Welche Lernkarte? Lernkarten ergänzen (ROLLBACK; mehrere?)
 :::
 
 
+## DDL - Data Definition Language
+
+<br>
+
+```sql
+CREATE TABLE Kunde (
+    KundenID INT PRIMARY KEY AUTO_INCREMENT,
+    Name VARCHAR(100) NOT NULL,
+    Email VARCHAR(150) UNIQUE,
+    Erstellt DATE DEFAULT CURRENT_DATE
+);
+
+ALTER TABLE Kunde ADD Telefon VARCHAR(20);
+
+CREATE INDEX idx_name ON Kunde(Name);
+```
+
+## DML (Data Manipulation Language)
+
+<br>
+
+```sql
+INSERT INTO Kunde (Name, Email) VALUES ('Mueller GmbH', 'info@mueller.de');
+
+UPDATE Kunde SET Email = 'neu@mueller.de' WHERE KundenID = 1;
+
+DELETE FROM Kunde WHERE KundenID = 5;
+```
+
+## DQL (Data Query Language)
+
+<br>
+
+```sql
+-- Projektion + Selektion
+SELECT Name, Email FROM Kunde WHERE KundenID > 10;
+
+-- Sortieren
+SELECT * FROM Kunde ORDER BY Name ASC;
+
+-- Aggregatfunktionen + Gruppieren
+SELECT AbteilungsID, COUNT(*) AS Anzahl, AVG(Gehalt) AS Durchschnitt
+FROM Mitarbeiter
+GROUP BY AbteilungsID
+HAVING COUNT(*) > 5;
+```
+
+
+## JOINs (Abfrage ueber mehrere Tabellen)
+
+::: {style="font-size: 2rem"}
+
+| JOIN-Typ | Beschreibung |
+|---|---|
+| INNER JOIN | Nur übereinstimmende Datensätze |
+| LEFT JOIN | Alle links + übereinstimmende rechts |
+| RIGHT JOIN | Alle rechts + übereinstimmende links |
+| CROSS JOIN | Kartesisches Produkt (jeder mit jedem) |
+
+:::
+
+<br>
+
+```sql
+SELECT k.Name, b.Datum, b.Betrag
+FROM Kunde k
+INNER JOIN Bestellung b ON k.KundenID = b.KundenID
+WHERE b.Betrag > 1000
+ORDER BY b.Datum DESC;
+```
+
+
+## Relationale vs. NoSQL-Datenbanken
+
+::: {style="font-size: 1.8rem"}
+
+| Merkmal | Relational (SQL) | NoSQL |
+|:---|:------|:------|
+| Struktur | Tabellen mit Spalten | Dokumente, Key-Value, Graphen |
+| Schema | Festes Schema | Flexibles / kein Schema |
+| Sprache | SQL | Abhängig vom System |
+| Konsistenz | ACID (stark) | BASE (eventual consistency) |
+| Skalierung | Vertikal (größerer Server) | Horizontal (mehr Server) |
+| Beispiele | MySQL, PostgreSQL, MariaDB | MongoDB, Redis, Cassandra, Neo4j |
+| Einsatz | Strukturierte Daten, Transaktionen | Big Data, flexible Strukturen |
+
+:::
 
 
 ## <!-- -->

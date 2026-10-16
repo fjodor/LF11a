@@ -17,9 +17,23 @@ execute:
 callout-appearance: simple
 ---
 
-## SQL
+## SQL Sprachbereiche
 
+:::: {style="font-size: 1.8rem"}
 
+Bereich | Bedeutung | Typische Befehle
+:-------------|:--------|:--------
+**DDL** - *Data Definition Language* | Datenstrukturen definieren, ändern | CREATE, ALTER, DROP
+**DML** - *Data Manipulation Language* | Daten einfügen, ändern, löschen | INSERT, UPDATE, DELETE
+**DQL** - *Data Query Language* | Daten abfragen | SELECT
+**DCL** - *Data Control Language* | Rechte, Zugriffe verwalten | GRANT, REVOKE
+**TCL** - *Transaction Control Language* | Transaktionen steuern | COMMIT, ROLLBACK, SAVEPOINT
+
+::::
+
+::: notes
+Welche Lernkarte? Lernkarten ergänzen (ROLLBACK; mehrere?)
+:::
 
 
 ## <!-- -->

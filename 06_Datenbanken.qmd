@@ -1,0 +1,165 @@
+---
+title: "Datenbanken"
+title-slide-attributes:
+  data-background-color: "#D7E6F4"
+subtitle: "SQL, ER-Modell"
+format:
+  revealjs:
+    theme: simple
+    logo: libs/_Images/logo-AFBB.svg
+    css: libs/styles.css
+execute:
+  echo: false
+  eval: true
+  freeze: auto
+  warning: false
+  message: false
+callout-appearance: simple
+---
+
+### Entity-Relationship-Modell (ER): Bestandteile
+
+:::: {style="font-size: 2rem"}
+
+| Element | Symbol | Beschreibung |
+|---|---|---|
+| Entität | Rechteck | Objekt / Datensatz (z.B. Kunde, Produkt) |
+| Attribut | Oval | Eigenschaft einer Entität (z.B. Name) |
+| Beziehung | Raute | Verbindung zwischen Entitäten |
+| Primärschlüssel | Unterstrichenes Attribut | Eindeutige Identifikation |
+
+::::
+
+
+## ER-Modell: Kardinalitäten
+
+:::: {.fragment style="font-size: 2rem"}
+
+<br>
+
+| Notation | Bedeutung | Beispiel |
+|---|---|---|
+| 1:1 | Genau eine Zuordnung | Person → Personalausweis |
+| 1:n | Eine Entität → mehrere | Abteilung → Mitarbeiter |
+| n:m | Mehrere → mehrere | Student → Vorlesung |
+
+<br>
+
+**n:m-Auflösung:** [Zwischentabelle mit Fremdschlüsseln beider Seiten]{.fragment}
+
+::::
+
+
+## todo: ER-Modell Beispiel
+
+
+## Datenbanken: Datentypen
+
+:::: {.fragment style="font-size: 1.8rem"}
+
+| Datentyp | Beschreibung | Beispiel |
+|:---|:-----|:-----|
+| INT / INTEGER | Ganzzahl | Alter, Menge |
+| FLOAT / DOUBLE | Gleitkommazahl | Preis (ungenau!) |
+| DECIMAL(p,s) | Festkommazahl | Währung: `DECIMAL(10,2)` |
+| VARCHAR(n) | Text variabler Länge | `Name VARCHAR(100)` |
+| CHAR(n) | Text fester Länge | `PLZ CHAR(5)` |
+| TEXT | Langer Text | Beschreibung |
+| DATE | Datum | Geburtsdatum |
+| DATETIME / TIMESTAMP | Datum + Uhrzeit | Erstellungszeitpunkt |
+| BOOLEAN | Wahrheitswert | Aktiv: `TRUE/FALSE` |
+| BLOB | Binärdaten | Bilder, Dateien |
+
+::::
+
+
+## DBs: Anomalien und Redundanzen
+
+:::: {.fragment style="font-size: 1.9rem"}
+
+| Anomalie | Beschreibung | Beispiel |
+|---|---|---|
+| Einfüge-Anomalie | Daten können nicht ohne Zusatzinfo eingefügt werden | Neuer Kunde ohne Auftrag |
+| Änderungs-Anomalie | Änderung an mehreren Stellen nötig | Kundenadresse in jeder Bestellung |
+| Lösch-Anomalie | Beim Löschen gehen andere Daten verloren | Letzter Auftrag gelöscht → Kundendaten weg |
+
+**Lösung:** [Normalisierung → Redundanzen eliminieren]{.fragment}
+
+::::
+
+---
+
+## Normalisierung: 1. Normalform (1NF)
+
+::: fragment
+
+- Jedes Attribut enthält nur **atomare** (unteilbare) Werte
+- Keine Wiederholungsgruppen
+
+**Verstoß:** [Telefon = "0123, 0456" → Aufteilen in separate Datensätze / Tabelle]{.fragment}
+
+:::
+
+
+## Normalisierung: 2. Normalform (2NF)
+
+::: fragment
+
+- 1NF erfüllt
+- Jedes Nicht-Schlüssel-Attribut ist **voll funktional abhängig** vom gesamten Primärschlüssel
+- Relevant bei zusammengesetzten Schlüsseln
+
+:::
+
+
+## Normalisierung: 3. Normalform (3NF)
+
+::: fragment
+
+- 2NF erfüllt
+- Keine **transitiven Abhängigkeiten** <br> Nicht-Schlüssel-Attribut hängt nicht von anderem Nicht-Schlüssel-Attribut ab
+
+**Beispiel transitive Abhängigkeit:**
+
+:::
+
+::: {.fragment style="font-size: 2rem"}
+
+Mitarbeiter → AbteilungsNr → AbteilungsName  (transitiv!)  
+Lösung: [AbteilungsName in eigene Tabelle "Abteilung"]{.fragment}
+
+:::
+
+
+## SQL Sprachbereiche
+
+:::: {.fragment style="font-size: 1.8rem"}
+
+Bereich | Bedeutung | Typische Befehle
+:-------------|:--------|:--------
+**DDL** - *Data Definition Language* | Datenstrukturen definieren, ändern | CREATE, ALTER, DROP
+**DML** - *Data Manipulation Language* | Daten einfügen, ändern, löschen | INSERT, UPDATE, DELETE
+**DQL** - *Data Query Language* | Daten abfragen | SELECT
+**DCL** - *Data Control Language* | Rechte, Zugriffe verwalten | GRANT, REVOKE
+**TCL** - *Transaction Control Language* | Transaktionen steuern | COMMIT, ROLLBACK, SAVEPOINT
+
+::::
+
+::: notes
+Welche Lernkarte? Lernkarten ergänzen (ROLLBACK; mehrere?)
+:::
+
+
+
+
+## <!-- -->
+
+![](libs/_Images/coffee.jpg){fig-align="center" width="50%"}
+
+::: {style="text-align: center; font-size: 1rem;"}
+[©torange.biz](https://torange.biz/cup-coffee-30851) CC-BY 4.0
+:::
+
+::: {style="color: green; text-align: center; font-size: 2.8rem"}
+**Viel Erfolg!**
+:::

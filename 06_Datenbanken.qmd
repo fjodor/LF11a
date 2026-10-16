@@ -131,6 +131,111 @@ Lösung: [AbteilungsName in eigene Tabelle "Abteilung"]{.fragment}
 :::
 
 
+## Datenbanken: ACID
+
+:::: {style="font-size: 1.8rem"}
+
+::: incremental
+
+- **A**: *Atomicity* = **Atomität**: Transaktion wird entweder vollständig oder gar nicht ausgeführt; falls Fehler: Rollback
+- **C**: *Consistency* = **Konsistenz**: Datenbank führt nur Transaktionen aus, die alle vordefinierten Regeln, Gesetze und Integritätsbedingungen einhalten
+- **I**: *Isolation* = **Isolation**: Gleichzeitig laufende Transaktionen behindern sich nicht gegenseitig; sie wirken so, als würden sie nacheinander ablaufen
+- **D**: *Durability* = **Dauerhaftigkeit**: Sobald eine Transaktion erfolgreich abgeschlossen *(committed)* ist, bleiben die Änderungen **dauerhaft** gespeichert - selbst bei einem Stromausfall oder Systemabsturz
+- Beispiel: Bei einer Überweisung werden beide Buchungen <br> (A: -100€; B: +100€) als eine Transaktion betrachtet.
+
+:::
+
+Vertreter: [PostgreSQL, Oracle, SQL Server, MySQL / InnoDB]{.fragment}
+
+::::
+
+::: notes
+Lernkarte? AP2
+:::
+
+
+## Datenbanken: BASE
+
+:::: {style="font-size: 1.9rem"}
+
+::: incremental
+
+- **BASE**: *Basically available, soft state, and eventually consistent* <br> = grundsätzlich verfügbar, weicher Zustand, und schließlich konsistent
+- Benutzer können jederzeit gleichzeitig zugreifen; ein Benutzer muss nicht warten, bis andere ihre Transaktionen abgeschlossen haben
+- *soft state*: Daten können vorübergehend temporäre Zustände haben, die sich auch ohne externe Trigger / Eingaben ändern können  
+  Beispiel: Beitrag in sozialen Netzwerken wird von mehreren Benutzern gleichzeitig bearbeitet; Änderung nicht sofort für alle sichtbar; später wird Beitrag automatisch aktualisiert
+- *eventually consistent*: Datensatz erreicht Konsistenz, wenn alle gleichzeitigen Aktualisierungen abgeschlossen sind
+
+:::
+
+Vertreter: [Cassandra, Riak, DynamoDB]{.fragment}
+
+::::
+
+
+## Datenbanken: ACID vs. BASE
+
+:::: {style="font-size: 1.9rem"}
+
+::: fragment
+
+ACID | BASE
+-----|-----
+sofortige Konsistenz | spätere Konsistenz
+starke Transaktionen | schwache Transaktionen
+eher vertikale Skalierung | starke horizontale Skalierung
+typische SQL-Systeme | typische NoSQL-Systeme
+Korrektheit priorisiert | Verfügbarkeit priorisiert
+
+:::
+
+::: fragment
+
+- Moderne Datenbanken sind häufig Mischformen!
+- Verteilte Cloud-Datenbanken (z. B. von Amazon, Azure, Google Cloud) bieten oft konfigurierbare Konsistenzstufen
+- Somit entscheidet der Anwender, wie weit er sich in Richtung ACID oder BASE bewegen möchte
+
+:::
+::::
+
+
+## CAP-Theorem vs. ACID und BASE
+
+::::: {style="font-size: 2rem"}
+
+CAP-Theorem: **C**onsistency, **A**vailability, **P**artition Tolerance
+
+Bei Netzwerkausfällen kann man **nicht alle drei gleichzeitig garantieren**.
+
+:::: columns
+::: column
+
+### BASE
+
+::: incremental
+
+- priorisiert *Availability* und *Partition Tolerance*
+- Datenbank bleibt hochverfügbar und verteilt
+- bessere **Skalierbarkeit**
+- Konsistenz wird notfalls erst später erreicht; *eventual consistency*
+
+:::
+:::
+
+::: column
+
+### ACID
+
+::: incremental
+
+- priorisiert *Consistency*: Datenbank nach jeder Transaktion sofort konsistent
+
+:::
+:::
+::::
+:::::
+
+
 ## SQL Sprachbereiche
 
 :::: {.fragment style="font-size: 1.8rem"}

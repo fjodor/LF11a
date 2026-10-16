@@ -17,9 +17,163 @@ execute:
 callout-appearance: simple
 ---
 
-## Tests
+## Testsoftware
 
-siehe LF10a Testsoftware!
+:::: {.incremental style="font-size: 2rem"}
+
+- Unterstützt das **Planen, Ausführen und Auswerten** von Softwaretests
+- Ziel:
+  - Fehler früh erkennen
+  - Qualität sichern
+  - Wiederholbare Tests ermöglichen
+
+### Typische Funktionen
+
+- Testfallverwaltung
+- Automatisierte Testausführung
+- Reporting & Protokollierung
+- Integration in CI/CD-Pipelines
+
+::::
+
+
+## Testsoftware: Unit Tests
+
+:::: {.columns style="font-size: 2.2rem"}
+::: {.column width="30%"}
+
+Sprache |
+--------|
+Python |
+Java |
+JavaScript |
+C# |
+
+:::
+
+::: {.column .fragment width="40%"}
+
+| Software |
+|----------|
+| pytest |
+| JUnit |
+| Jest |
+| NUnit / xUnit |
+
+:::
+::::
+
+
+## Testsoftware: API-Tests
+
+:::: {.columns style="font-size: 1.9rem"}
+::: {.column width="25%"}
+
+Sprache |
+--------|
+Python <br> &nbsp; |
+Python <br> &nbsp; |
+Java |
+JavaScript |
+JavaScript |
+C# |
+
+:::
+
+::: {.column .fragment width="75%"}
+
+| Software | Beschreibung |
+|----------|--------------|
+| requests + pytest | API-Tests über HTTP + Assertions |
+| Locust (API-Lasttests) | Last- und Performance-Tests |
+| REST Assured | Fluent API für REST-Tests |
+| Postman / Newman | API-Tests + CLI-Ausführung |
+| Supertest | Tests für Node.js-REST-APIs |
+| RestSharp + NUnit | API-Tests im .NET-Ökosystem |
+
+:::
+::::
+
+
+## Testsoftware: UI-/Browser-Tests
+
+:::: {.columns style="font-size: 2.2rem"}
+::: {.column width="30%"}
+
+Sprache |
+--------|
+Python |
+Java |
+JavaScript |
+C# |
+
+:::
+
+::: {.column .fragment width="65%"}
+
+| Software |
+|----------|
+| Playwright, Selenium |
+| Selenium |
+| Playwright, Cypress |
+| Selenium |
+
+:::
+::::
+
+
+## Testsoftware: Last-/ Performance-Tests
+
+:::: {.columns style="font-size: 2.2rem"}
+::: {.column width="30%"}
+
+Sprache |
+--------|
+Python |
+Java |
+JavaScript |
+C# |
+
+:::
+
+::: {.column .fragment width="65%"}
+
+| Software |
+|----------|
+| Locust |
+| JMeter |
+| k6 |
+| NBomber |
+
+:::
+::::
+
+
+## Testsoftware: Statische Analyse
+
+:::: {.columns style="font-size: 2.2rem"}
+::: {.column width="30%"}
+
+Sprache |
+--------|
+Python |
+Java |
+JavaScript |
+C# |
+
+:::
+
+::: {.column .fragment width="65%"}
+
+| Software |
+|----------|
+| flake8, mypy |
+| SpotBugs |
+| ESLint |
+| SonarQube |
+
+:::
+::::
 
 
 ## <!-- -->

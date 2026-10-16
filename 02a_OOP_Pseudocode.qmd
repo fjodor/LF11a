@@ -1014,6 +1014,61 @@ Lernkarte AP2 2025 Nr. 145
 :::
 
 
+## Klassenbibliothek: Vor- und Nachteile
+
+::::: {style="font-size: 1.7rem"}
+
+*Ihr Entwicklungsteam hat sich für eine Programmiersprache entschieden. Für diese gibt es eine umfassende Klassenbibliothek, die Sie im Projekt nutzen wollen. Beschreiben Sie Vor- und Nachteile (Prüfung: je 1), die sich durch den Einsatz einer Bibliothek ergeben.*
+
+:::: columns
+::: {.column .incremental}
+
+### Vorteile
+
+- Bestimmte Funktionen / Methoden / Konstruktoren zu benötigten Programmbestandteilen sind vorhanden, können direkt genutzt werden. Dadurch evtl. erheblich geringerer Entwicklungsaufwand.
+- Bei Änderungen an Bibliotheksbestandteilen muss die Anwendung nicht verändert werden. Bibliotheken können unabhängig vom Hauptprogramm gewartet werden.
+
+:::
+
+::: {.column .incremental}
+
+### Nachteile
+
+- Die zur Verfügung stehenden Bibliotheken müssen erst analysiert und bewertet werden. Außerdem muss eine Einarbeitung in die Bibliotheken erfolgen. Das Projektteam benötigt hierfür zusätzliche Zeit.
+- Bibliotheken verursachen ggf. einen Overhead im Programmablauf, die Laufzeit der Software wird hierdurch negativ beeinflusst.
+
+:::
+::::
+:::::
+
+::: notes
+AP2 Winter 2021/22 Teil 1 Planen, Aufgabe 1 b)
+:::
+
+
+## Erweiterung bestehender Klassen
+
+:::: {style="font-size: 2rem"}
+
+*Sie planen, die Bibliothek um eigene Klassen zu erweitern. Beschreiben Sie drei Aspekte, die Sie in der Dokumentation dieser Erweiterung beachten müssen.*
+
+::: incremental
+
+- **Zusammenfassende Beschreibung** der Klasse
+- Auflistung der **Konstruktoren** und **Methoden**
+- Auflistung von **vererbten** Methoden
+- Benennung der implementierten **Interfaces**
+- Benennung der **Anwendungsvoraussetzungen** der Methoden
+- Beschreibung aller **Methoden** im Detail (**Datentyp**, Bedeutung der **Parameter** und **Rückgabewerte**, **Wirkung** der Methode)
+
+:::
+::::
+
+::: notes
+AP2 Winter 2021/22 Teil 1 Planen, Aufgabe 1 bb)
+:::
+
+
 ## <!-- -->
 
 ![](libs/_Images/coffee.jpg){fig-align="center" width="50%"}

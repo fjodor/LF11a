@@ -89,7 +89,7 @@ Lernkarte AP2 2025 Nr. 155
 
 ::: incremental
 
-- Das **Singleton-Entwurfsmuster** ist ein Software-Entwurfsmuster, das die Instanziierung eines Klasse auf **genau ein Objekt** beschränkt.
+- Das **Singleton-Entwurfsmuster** ist ein Software-Entwurfsmuster, das die Instanziierung einer Klasse auf **genau ein Objekt** beschränkt.
 - Es wird verwendet, um sicherzustellen, dass eine Klasse nur **eine einzige Instanz** hat, und stellt einen **globalen Zugangspunkt** zu diesem Objekt bereit.
 - Hauptziel: kontrollierten Mechanismus zur Verfügung stellen, um auf **begrenzte Ressourcen** zuzugreifen
 - nützlich, wenn genau eine Instanz eines Objekts benötigt wird, um Aktionen zu koordinieren
@@ -169,6 +169,21 @@ Lernkarte AP2 2025 Nr. 157
 
 ::: notes
 Lernkarte AP2 2025 Nr. 161
+:::
+
+
+## Design Patterns: Strategy
+
+::: incremental
+
+- Ermöglicht die **Auswahl eines Algorithmus zur Laufzeit**
+- Dazu wird die Implementierung von Algorithmen in separate Klassen ausgelagert
+- Erleichtert die Austauschbarkeit und Erweiterbarkeit von Algorithmen, ohne die Benutzerklasse ändern zu müssen
+
+:::
+
+::: notes
+AP2 Sommer 2025 Teil 1 Planen
 :::
 
 

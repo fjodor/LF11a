@@ -115,6 +115,26 @@ callout-appearance: simple
 :::::
 
 
+## Objektorientiertes Design (OOD)
+
+:::: {style="font-size: 2rem"}
+
+**Definition:** Das **OOD** verfeinert das OOA-Modell zur technischen Umsetzung: Klassen werden detailliert, Datentypen festgelegt, Sichtbarkeiten definiert und Entwurfsmuster angewendet.
+
+### Schritte im OOD
+
+::: incremental
+
+1. OOA-Klassendiagramm verfeinern (Datentypen, Sichtbarkeiten)
+2. Entwurfsmuster (Design Patterns) anwenden
+3. Schnittstellen (Interfaces) definieren
+4. Vererbungshierarchien optimieren
+5. Sequenzdiagramme für wichtige Abläufe erstellen
+
+:::
+::::
+
+
 ## SOLID-Prinzipien
 
 :::: {style="font-size: 1.9rem"}
@@ -122,11 +142,31 @@ callout-appearance: simple
 | Buchstabe | Prinzip | Bedeutung |
 |:---|:-------|:-----------|
 | S | Single Responsibility | Jede Klasse hat genau eine Aufgabe |
-| O | Open/Closed | Offen für Erweiterung, geschlossen für Änderung |
+| O | Open / Closed | Offen für Erweiterung, geschlossen für Änderung |
 | L | Liskov Substitution | Unterklassen müssen die Oberklasse ersetzen können |
 | I | Interface Segregation | Viele kleine Interfaces statt eines großen |
 | D | Dependency Inversion | Abhängigkeiten auf Abstraktionen, nicht auf konkrete Klassen |
 
+::::
+
+
+## Liskov Substitution
+
+:::: {style="font-size: 1.9rem"}
+
+> Objekte einer Unterklasse müssen überall dort einsetzbar sein, wo Objekte der Oberklasse erwartet werden, ohne dass das Programm dadurch fehlerhaft wird.
+
+::: incremental
+
+- Einfacher: Eine abgeleitete Klasse darf die Erwartungen an die Basisklasse nicht verletzen.
+- Gegenbeispiel: Basisklasse = Rechteck, Unterklasse = Quadrat
+- Test Rechteck: Länge = 4, Breite = 5, Fläche = Länge * Breite = 20
+- Das funktioniert für ein Quadrat nicht. Länge per Definition gleich Breite.
+- *Liskov Substitution Principle* (LSP) ist verletzt.
+- Es genügt **nicht** zu prüfen: *Ist B eine Spezialisierung von A?*
+- Zusätzlich prüfen: **Kann überall, wo A verwendet wird, auch B stehen?**
+
+:::
 ::::
 
 

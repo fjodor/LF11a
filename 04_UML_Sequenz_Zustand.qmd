@@ -252,7 +252,7 @@ Lernkarte AP2 2025 Nr. 130
 | Anwendungs-falldiagramm | Funktionen und Akteure | Verhaltens-diagramm | "WAS kann das System? Wer nutzt es?" |
 | Klassen-diagramm | Statische Struktur | Struktur-diagramm | "Welche Klassen gibt es und wie hängen sie zusammen?" |
 | Sequenz-diagramm | Zeitlicher Nachrichtenaustausch | Verhaltens-diagramm | "In welcher Reihenfolge kommunizieren die Objekte?" |
-| Zustands-diagramm | Zustände und Übergaenge | Verhaltens-diagramm | "Welche Zustände hat ein Objekt?" |
+| Zustands-diagramm | Zustände und Übergänge | Verhaltens-diagramm | "Welche Zustände hat ein Objekt?" |
 
 :::
 

@@ -257,6 +257,30 @@ Lernkarte AP2 2025 Nr. 149
 :::
 
 
+## 3 Schichten: Prüfungsaufgabe
+
+<br>
+
+**Beschreiben Sie, wie die 3-Schichten-Architektur bei einer Webanwendung typischerweise aussieht und wie die entsprechenden Komponenten zusammenarbeiten.**
+
+::: notes
+AP2 Winter 2022/23 Teil 1 Planen 2.a)
+:::
+
+
+## 3 Schichten: Lösung
+
+::: fragment
+
+![](libs/_Images/KA1_3-Schichten-Musterl%C3%B6sung.png)
+
+:::
+
+::: notes
+AP2 Winter 2022/23 Teil 1 Planen 2.a)
+:::
+
+
 ## Modularisierung: Konzept
 
 :::: {style="font-size: 2rem"}

@@ -242,6 +242,37 @@ Lernkarte AP2 2025 Nr. 130
 :::
 
 
+## Wann welches Diagramm?
+
+::: {style="font-size: 1.8rem"}
+
+| Diagramm | Zeigt | Kategorie | Typische Fragestellung |
+|:-------|:-------|:-------|:-------------------|
+| Aktivitäts-diagramm | Abläufe, Workflows | Verhaltens-diagramm | "Wie läuft der Prozess ab?" |
+| Anwendungs-falldiagramm | Funktionen und Akteure | Verhaltens-diagramm | "WAS kann das System? Wer nutzt es?" |
+| Klassen-diagramm | Statische Struktur | Struktur-diagramm | "Welche Klassen gibt es und wie hängen sie zusammen?" |
+| Sequenz-diagramm | Zeitlicher Nachrichtenaustausch | Verhaltens-diagramm | "In welcher Reihenfolge kommunizieren die Objekte?" |
+| Zustands-diagramm | Zustände und Übergaenge | Verhaltens-diagramm | "Welche Zustände hat ein Objekt?" |
+
+:::
+
+
+## Häufige UML-Fehler
+
+::: {style="font-size: 1.8rem"}
+
+| Fehler | Korrektur |
+|--------|-----------|
+| Aggregation und Komposition verwechselt | Komposition = starke Abhängigkeit (Teil stirbt mit Ganzem) |
+| Include und Extend vertauscht | Include = obligatorisch, Extend = optional |
+| Klassendiagramm ohne Sichtbarkeiten | Immer +, -, # angeben |
+| Sequenzdiagramm ohne Rückgabepfeile | Synchrone Aufrufe brauchen eine Antwort (gestrichelter Pfeil) |
+| Zustandsdiagramm ohne Start- / Endzustand | Start (●) und Ende (◉) gehören immer dazu |
+| Aktivitäten im Use-Case-Diagramm | Use Cases beschreiben FUNKTIONEN, keine Ablaufschritte |
+
+:::
+
+
 ## <!-- -->
 
 ![](libs/_Images/coffee.jpg){fig-align="center" width="50%"}

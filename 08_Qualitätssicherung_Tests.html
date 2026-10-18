@@ -996,9 +996,290 @@ margin-right: 0; }
 </div>
 
 </section>
-<section id="tests" class="slide level2">
-<h2>Tests</h2>
-<p>siehe LF10a Testsoftware!</p>
+<section id="testsoftware" class="slide level2">
+<h2>Testsoftware</h2>
+<div style="font-size: 2rem">
+<ul>
+<li class="fragment">Unterstützt das <strong>Planen, Ausführen und Auswerten</strong> von Softwaretests</li>
+<li class="fragment">Ziel:
+<ul>
+<li class="fragment">Fehler früh erkennen</li>
+<li class="fragment">Qualität sichern</li>
+<li class="fragment">Wiederholbare Tests ermöglichen</li>
+</ul></li>
+</ul>
+<h3 id="typische-funktionen">Typische Funktionen</h3>
+<ul>
+<li class="fragment">Testfallverwaltung</li>
+<li class="fragment">Automatisierte Testausführung</li>
+<li class="fragment">Reporting &amp; Protokollierung</li>
+<li class="fragment">Integration in CI/CD-Pipelines</li>
+</ul>
+</div>
+</section>
+<section id="testsoftware-unit-tests" class="slide level2">
+<h2>Testsoftware: Unit Tests</h2>
+<div class="columns" style="font-size: 2.2rem">
+<div class="column" style="width:30%;">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Sprache</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Python</td>
+</tr>
+<tr class="even">
+<td>Java</td>
+</tr>
+<tr class="odd">
+<td>JavaScript</td>
+</tr>
+<tr class="even">
+<td>C#</td>
+</tr>
+</tbody>
+</table>
+</div><div class="column fragment" style="width:40%;">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Software</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>pytest</td>
+</tr>
+<tr class="even">
+<td>JUnit</td>
+</tr>
+<tr class="odd">
+<td>Jest</td>
+</tr>
+<tr class="even">
+<td>NUnit / xUnit</td>
+</tr>
+</tbody>
+</table>
+</div></div>
+</section>
+<section id="testsoftware-api-tests" class="slide level2">
+<h2>Testsoftware: API-Tests</h2>
+<div class="columns" style="font-size: 1.9rem">
+<div class="column" style="width:25%;">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Sprache</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Python <br>  </td>
+</tr>
+<tr class="even">
+<td>Python <br>  </td>
+</tr>
+<tr class="odd">
+<td>Java</td>
+</tr>
+<tr class="even">
+<td>JavaScript</td>
+</tr>
+<tr class="odd">
+<td>JavaScript</td>
+</tr>
+<tr class="even">
+<td>C#</td>
+</tr>
+</tbody>
+</table>
+</div><div class="column fragment" style="width:75%;">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Software</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>requests + pytest</td>
+<td>API-Tests über HTTP + Assertions</td>
+</tr>
+<tr class="even">
+<td>Locust (API-Lasttests)</td>
+<td>Last- und Performance-Tests</td>
+</tr>
+<tr class="odd">
+<td>REST Assured</td>
+<td>Fluent API für REST-Tests</td>
+</tr>
+<tr class="even">
+<td>Postman / Newman</td>
+<td>API-Tests + CLI-Ausführung</td>
+</tr>
+<tr class="odd">
+<td>Supertest</td>
+<td>Tests für Node.js-REST-APIs</td>
+</tr>
+<tr class="even">
+<td>RestSharp + NUnit</td>
+<td>API-Tests im .NET-Ökosystem</td>
+</tr>
+</tbody>
+</table>
+</div></div>
+</section>
+<section id="testsoftware-ui-browser-tests" class="slide level2">
+<h2>Testsoftware: UI-/Browser-Tests</h2>
+<div class="columns" style="font-size: 2.2rem">
+<div class="column" style="width:30%;">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Sprache</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Python</td>
+</tr>
+<tr class="even">
+<td>Java</td>
+</tr>
+<tr class="odd">
+<td>JavaScript</td>
+</tr>
+<tr class="even">
+<td>C#</td>
+</tr>
+</tbody>
+</table>
+</div><div class="column fragment" style="width:65%;">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Software</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Playwright, Selenium</td>
+</tr>
+<tr class="even">
+<td>Selenium</td>
+</tr>
+<tr class="odd">
+<td>Playwright, Cypress</td>
+</tr>
+<tr class="even">
+<td>Selenium</td>
+</tr>
+</tbody>
+</table>
+</div></div>
+</section>
+<section id="testsoftware-last--performance-tests" class="slide level2">
+<h2>Testsoftware: Last-/ Performance-Tests</h2>
+<div class="columns" style="font-size: 2.2rem">
+<div class="column" style="width:30%;">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Sprache</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Python</td>
+</tr>
+<tr class="even">
+<td>Java</td>
+</tr>
+<tr class="odd">
+<td>JavaScript</td>
+</tr>
+<tr class="even">
+<td>C#</td>
+</tr>
+</tbody>
+</table>
+</div><div class="column fragment" style="width:65%;">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Software</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Locust</td>
+</tr>
+<tr class="even">
+<td>JMeter</td>
+</tr>
+<tr class="odd">
+<td>k6</td>
+</tr>
+<tr class="even">
+<td>NBomber</td>
+</tr>
+</tbody>
+</table>
+</div></div>
+</section>
+<section id="testsoftware-statische-analyse" class="slide level2">
+<h2>Testsoftware: Statische Analyse</h2>
+<div class="columns" style="font-size: 2.2rem">
+<div class="column" style="width:30%;">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Sprache</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Python</td>
+</tr>
+<tr class="even">
+<td>Java</td>
+</tr>
+<tr class="odd">
+<td>JavaScript</td>
+</tr>
+<tr class="even">
+<td>C#</td>
+</tr>
+</tbody>
+</table>
+</div><div class="column fragment" style="width:65%;">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Software</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>flake8, mypy</td>
+</tr>
+<tr class="even">
+<td>SpotBugs</td>
+</tr>
+<tr class="odd">
+<td>ESLint</td>
+</tr>
+<tr class="even">
+<td>SonarQube</td>
+</tr>
+</tbody>
+</table>
+</div></div>
 </section>
 <section id="section" class="slide level2">
 <h2><!-- --></h2>

@@ -996,8 +996,563 @@ margin-right: 0; }
 </div>
 
 </section>
-<section id="schnittstellen-apis" class="slide level2">
-<h2>Schnittstellen, APIs</h2>
+<section id="rest-apis-grundlagen" class="slide level2">
+<h2>REST APIs: Grundlagen</h2>
+<div style="font-size: 2rem">
+<p>Grundlagen siehe <a href="https://johannesloetzsch.github.io/LF7/rest.html">LF7: REST</a></p>
+<ul>
+<li class="fragment">REST = <em>Representational State Transfer</em><br>
+</li>
+<li class="fragment">API = <em>Application Programming Interface</em><br>
+</li>
+<li class="fragment">REST-API: Set von Regeln und Konventionen für den Aufbau von Webdiensten</li>
+</ul>
+</div>
+</section>
+<section id="rest-apis-6-prinzipien" class="slide level2">
+<h2>REST APIs: 6 Prinzipien</h2>
+<div style="font-size: 1.8rem">
+<table class="caption-top">
+<colgroup>
+<col style="width: 45%">
+<col style="width: 55%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Prinzip</th>
+<th>Bedeutung</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Client-Server</td>
+<td>Klare Trennung von Client und Server</td>
+</tr>
+<tr class="even">
+<td>Stateless (Zustandslos)</td>
+<td>Jede Anfrage enthält alle nötige Information, Server speichert keinen Client-Zustand</td>
+</tr>
+<tr class="odd">
+<td>Cacheable</td>
+<td>Antworten können zwischengespeichert werden</td>
+</tr>
+<tr class="even">
+<td>Uniform Interface</td>
+<td>Einheitliche Schnittstelle (URLs, HTTP-Methoden)</td>
+</tr>
+<tr class="odd">
+<td>Layered System</td>
+<td>Mehrschichtige Architektur möglich (z.B. Load Balancer dazwischen)</td>
+</tr>
+<tr class="even">
+<td>Code on Demand (optional)</td>
+<td>Server kann ausführbaren Code an Client senden</td>
+</tr>
+</tbody>
+</table>
+</div>
+<aside class="notes">
+<p>Welche Lernkarte?</p>
+<style type="text/css">
+span.MJX_Assistive_MathML {
+position:absolute!important;
+clip: rect(1px, 1px, 1px, 1px);
+padding: 1px 0 0 0!important;
+border: 0!important;
+height: 1px!important;
+width: 1px!important;
+overflow: hidden!important;
+display:block!important;
+}</style></aside>
+</section>
+<section id="rest-http-methoden" class="slide level2">
+<h2>REST: HTTP-Methoden</h2>
+<p>CRUD = <strong>C</strong>reate - <strong>R</strong>ead - <strong>U</strong>pdate - <strong>D</strong>elete</p>
+<div style="font-size: 1.8rem">
+<table class="caption-top">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 29%">
+<col style="width: 25%">
+<col style="width: 19%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>HTTP-Methode</th>
+<th>CRUD-Operation</th>
+<th>Beschreibung</th>
+<th>Beispiel</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>GET</td>
+<td>Read</td>
+<td>Ressource abrufen</td>
+<td><code>GET /api/kunden/42</code></td>
+</tr>
+<tr class="even">
+<td>POST</td>
+<td>Create</td>
+<td>Neue Ressource erstellen</td>
+<td><code>POST /api/kunden</code></td>
+</tr>
+<tr class="odd">
+<td>PUT</td>
+<td>Update</td>
+<td>Ressource vollständig ersetzen</td>
+<td><code>PUT /api/kunden/42</code></td>
+</tr>
+<tr class="even">
+<td>PATCH</td>
+<td>Update (teilweise)</td>
+<td>Ressource teilweise ändern</td>
+<td><code>PATCH /api/kunden/42</code></td>
+</tr>
+<tr class="odd">
+<td>DELETE</td>
+<td>Delete</td>
+<td>Ressource löschen</td>
+<td><code>DELETE /api/kunden/42</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="rest-apis-absichern" class="slide level2">
+<h2>REST APIs absichern</h2>
+<div style="font-size: 2rem">
+<ul>
+<li class="fragment">HTTPS verwenden</li>
+<li class="fragment">JWT / Bearer Token</li>
+<li class="fragment">Passwort-Hashing (bcrypt / argon2)</li>
+<li class="fragment">Rollen / Rechte vergeben</li>
+<li class="fragment">Eingabevalidierung (z. B. Pydantic)</li>
+<li class="fragment">Parametrisierte SQL-Abfragen bzw. ORM</li>
+<li class="fragment">Rate Limiting</li>
+<li class="fragment">Logging</li>
+</ul>
+</div>
+</section>
+<section id="rest-apis-orm" class="slide level2">
+<h2>REST APIs: ORM</h2>
+<div style="font-size: 2rem">
+<ul>
+<li class="fragment">ORM = <em>Object Relational Mapping</em></li>
+<li class="fragment">Grundidee: (Python-)Objekte statt selbst SQL-Statements zu schreiben</li>
+<li class="fragment">ORM übersetzt zwischen (Python-)Klassen und Datenbanktabellen</li>
+<li class="fragment">ORM erzeugt intern SQL</li>
+<li class="fragment">ORM verwendet (fast) immer parametrisierte Abfragen</li>
+<li class="fragment">ORM verhindert SQL Injections</li>
+<li class="fragment">Beispiele für Python-ORMs: <em>SQLAlchemy, SQLModel</em> (von FastAPI-Erfinder Sebastián Ramírez), <em>Django ORM</em></li>
+</ul>
+</div>
+</section>
+<section id="json-datentypen" class="slide level2">
+<h2>JSON: Datentypen</h2>
+<div style="font-size: 2.1rem">
+<p>6 Datentypen in JSON:</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Datentyp</th>
+<th>Beispiel</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>String</td>
+<td><code>&quot;Hallo Welt&quot;</code></td>
+</tr>
+<tr class="even">
+<td>Number</td>
+<td><code>42</code> oder <code>3.14</code></td>
+</tr>
+<tr class="odd">
+<td>Boolean</td>
+<td><code>true</code> oder <code>false</code></td>
+</tr>
+<tr class="even">
+<td>Null</td>
+<td><code>null</code></td>
+</tr>
+<tr class="odd">
+<td>Object</td>
+<td><code>{&quot;key&quot;: &quot;value&quot; }</code></td>
+</tr>
+<tr class="even">
+<td>Array</td>
+<td><code>[1, 2, 3]</code></td>
+</tr>
+</tbody>
+</table>
+<p>Details siehe <a href="https://www.rfc-editor.org/info/rfc8259/">RFC 8259</a></p>
+</div>
+<aside class="notes">
+<p>Quelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/json-formatter-validator.html</p>
+<style type="text/css">
+span.MJX_Assistive_MathML {
+position:absolute!important;
+clip: rect(1px, 1px, 1px, 1px);
+padding: 1px 0 0 0!important;
+border: 0!important;
+height: 1px!important;
+width: 1px!important;
+overflow: hidden!important;
+display:block!important;
+}</style></aside>
+</section>
+<section id="json-anwendung" class="slide level2">
+<h2>JSON: Anwendung</h2>
+<div style="font-size: 2.1rem">
+<ul>
+<li class="fragment"><strong>REST-APIs:</strong> Standardformat für Datenaustausch im Web</li>
+<li class="fragment"><strong>Konfigurationsdateien:</strong> <code>package.json, tsconfig.json</code></li>
+<li class="fragment"><strong>NoSQL-Datenbanken:</strong> MongoDB, CouchDB speichern JSON</li>
+<li class="fragment"><strong>Logs:</strong> Strukturierte Log-Ausgabe</li>
+<li class="fragment"><strong>Frontend-Backend-Kommunikation:</strong> Fetch, AJAX, WebSockets</li>
+<li class="fragment"><strong>JWT Tokens:</strong> Payload ist Base64-codiertes JSON</li>
+</ul>
+</div>
+<aside class="notes">
+<p>Quelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/json-formatter-validator.html</p>
+<style type="text/css">
+span.MJX_Assistive_MathML {
+position:absolute!important;
+clip: rect(1px, 1px, 1px, 1px);
+padding: 1px 0 0 0!important;
+border: 0!important;
+height: 1px!important;
+width: 1px!important;
+overflow: hidden!important;
+display:block!important;
+}</style></aside>
+</section>
+<section id="json-vs.-javascript-objekt" class="slide level2">
+<h2>JSON vs. JavaScript-Objekt</h2>
+<div style="font-size: 1.9rem">
+<table class="caption-top">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 15%">
+<col style="width: 58%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Kriterium</th>
+<th>JSON</th>
+<th>JavaScript-Objekt (JS)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Keys: doppelte Anführungszeichen</td>
+<td>erforderlich</td>
+<td>nicht erforderlich</td>
+</tr>
+<tr class="even">
+<td>Trailing Comma</td>
+<td>verboten</td>
+<td>erlaubt</td>
+</tr>
+<tr class="odd">
+<td>Kommentare</td>
+<td>verboten</td>
+<td>erlaubt</td>
+</tr>
+<tr class="even">
+<td>Werte</td>
+<td>nur 6 Typen</td>
+<td>auch <code>undefined</code>, <code>NaN</code>, Funktionen</td>
+</tr>
+<tr class="odd">
+<td>Prototyp</td>
+<td>keiner</td>
+<td>Eigenschaften und Methoden können von Prototyp geerbt werden</td>
+</tr>
+</tbody>
+</table>
+</div>
+<aside class="notes">
+<p>Quelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/json-formatter-validator.html</p>
+<style type="text/css">
+span.MJX_Assistive_MathML {
+position:absolute!important;
+clip: rect(1px, 1px, 1px, 1px);
+padding: 1px 0 0 0!important;
+border: 0!important;
+height: 1px!important;
+width: 1px!important;
+overflow: hidden!important;
+display:block!important;
+}</style></aside>
+</section>
+<section id="json-häufige-fehler" class="slide level2">
+<h2>JSON: Häufige Fehler</h2>
+<div style="font-size: 2.1rem">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Fehler</th>
+<th>Beispiel</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Trailing Comma</td>
+<td><code>{&quot;a&quot;:1,}</code></td>
+</tr>
+<tr class="even">
+<td>Single Quotes</td>
+<td><code>{&#39;a&#39;:&#39;b&#39;}</code></td>
+</tr>
+<tr class="odd">
+<td>Unquoted Keys</td>
+<td><code>{a:1}</code></td>
+</tr>
+<tr class="even">
+<td>Kommentare</td>
+<td><code>// comment</code></td>
+</tr>
+<tr class="odd">
+<td>Undefined</td>
+<td><code>undefined</code></td>
+</tr>
+<tr class="even">
+<td>NaN / Infinity</td>
+<td><code>NaN</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<aside class="notes">
+<p>Quelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/json-formatter-validator.html</p>
+<style type="text/css">
+span.MJX_Assistive_MathML {
+position:absolute!important;
+clip: rect(1px, 1px, 1px, 1px);
+padding: 1px 0 0 0!important;
+border: 0!important;
+height: 1px!important;
+width: 1px!important;
+overflow: hidden!important;
+display:block!important;
+}</style></aside>
+</section>
+<section id="json-verschachtelung" class="slide level2">
+<h2>JSON: Verschachtelung</h2>
+<div style="font-size: 2.1rem">
+<p>JSON kann beliebig verschachtelt werden:</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Verschachtelungs-Typ</th>
+<th>Beispiel</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Objekte in Objekten</td>
+<td><code>{&quot;user&quot;: {&quot;name&quot;: &quot;Max&quot;}}</code></td>
+</tr>
+<tr class="even">
+<td>Arrays in Objekten</td>
+<td><code>{&quot;tags&quot;: [&quot;a&quot;, &quot;b&quot;]}</code></td>
+</tr>
+<tr class="odd">
+<td>Arrays von Objekten</td>
+<td><code>[{&quot;id&quot;: 1}, {&quot;id&quot;: 2}]</code></td>
+</tr>
+<tr class="even">
+<td>Beliebig tief</td>
+<td>theoretisch unbegrenzt</td>
+</tr>
+</tbody>
+</table>
+</div>
+<aside class="notes">
+<p>Quelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/json-formatter-validator.html</p>
+<style type="text/css">
+span.MJX_Assistive_MathML {
+position:absolute!important;
+clip: rect(1px, 1px, 1px, 1px);
+padding: 1px 0 0 0!important;
+border: 0!important;
+height: 1px!important;
+width: 1px!important;
+overflow: hidden!important;
+display:block!important;
+}</style></aside>
+</section>
+<section id="json-best-practices" class="slide level2">
+<h2>JSON: Best Practices</h2>
+<div style="font-size: 2rem">
+<p>So schreibst Du gutes JSON:</p>
+<ul>
+<li class="fragment"><strong>Doppelte Anführungszeichen</strong> für Strings und Keys</li>
+<li class="fragment"><strong>2 oder 4 Spaces</strong> für Einrückung</li>
+<li class="fragment"><strong>Keine Kommentare</strong> (nicht erlaubt in JSON)</li>
+<li class="fragment"><strong>UTF-8</strong> als Standard-Encoding</li>
+<li class="fragment"><strong>Konsistente Benennung:</strong> <code>camelCase</code> oder <code>snake_case</code></li>
+<li class="fragment"><strong>keine trailing commas</strong></li>
+</ul>
+</div>
+<aside class="notes">
+<p>Quelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/json-formatter-validator.html</p>
+<style type="text/css">
+span.MJX_Assistive_MathML {
+position:absolute!important;
+clip: rect(1px, 1px, 1px, 1px);
+padding: 1px 0 0 0!important;
+border: 0!important;
+height: 1px!important;
+width: 1px!important;
+overflow: hidden!important;
+display:block!important;
+}</style></aside>
+</section>
+<section id="xml-grundbausteine" class="slide level2">
+<h2>XML: Grundbausteine</h2>
+<div style="font-size: 2rem">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Baustein</th>
+<th>Beispiel</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Prozessanweisung</td>
+<td><code>&lt;?xml version=&quot;1.0&quot;?&gt;</code></td>
+</tr>
+<tr class="even">
+<td>Elemente</td>
+<td><code>&lt;name&gt;Wert&lt;/name&gt;</code></td>
+</tr>
+<tr class="odd">
+<td>Attribute</td>
+<td><code>&lt;item id=&quot;1&quot;&gt;</code></td>
+</tr>
+<tr class="even">
+<td>Text</td>
+<td>Inhalt zwischen Tags</td>
+</tr>
+<tr class="odd">
+<td>Kommentare</td>
+<td><code>&lt;!-- ... --&gt;</code></td>
+</tr>
+<tr class="even">
+<td>CDATA</td>
+<td><code>&lt;![CDATA[...]]&gt;</code></td>
+</tr>
+</tbody>
+</table>
+<div class="fragment">
+<p>CDATA = <em>Character Data</em>, speichert Text ungefiltert, <br> d. h. ohne dass XML-Sonderzeichen interpretiert werden</p>
+</div>
+</div>
+<aside class="notes">
+<p>Quelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/xml-formatter-validator.html</p>
+<style type="text/css">
+span.MJX_Assistive_MathML {
+position:absolute!important;
+clip: rect(1px, 1px, 1px, 1px);
+padding: 1px 0 0 0!important;
+border: 0!important;
+height: 1px!important;
+width: 1px!important;
+overflow: hidden!important;
+display:block!important;
+}</style></aside>
+</section>
+<section id="xml-häufige-fehler" class="slide level2">
+<h2>XML: Häufige Fehler</h2>
+<div style="font-size: 2rem">
+<table class="caption-top">
+<colgroup>
+<col style="width: 41%">
+<col style="width: 58%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Fehler</th>
+<th>Beispiel</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Unclosed Tags</td>
+<td><code>&lt;name&gt;Max</code></td>
+</tr>
+<tr class="even">
+<td>Wrong Nesting</td>
+<td><code>&lt;a&gt;&lt;b&gt;&lt;/a&gt;&lt;/b&gt;</code></td>
+</tr>
+<tr class="odd">
+<td>Case Sensitivity</td>
+<td><code>&lt;Name&gt;&lt;/name&gt;</code></td>
+</tr>
+<tr class="even">
+<td>Special Chars</td>
+<td>&amp; unescaped</td>
+</tr>
+<tr class="odd">
+<td>Multiple Roots</td>
+<td>Zwei Root-Elemente <br> Beispiel: <code>&lt;kunde&gt; ... &lt;/kunde&gt;</code> <br> <code>&lt;bestellung&gt; ... &lt;/bestellung&gt;</code></td>
+</tr>
+<tr class="even">
+<td>Unquoted Attrs</td>
+<td><code>&lt;item id=1&gt;</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<aside class="notes">
+<p>Quelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/xml-formatter-validator.html</p>
+<style type="text/css">
+span.MJX_Assistive_MathML {
+position:absolute!important;
+clip: rect(1px, 1px, 1px, 1px);
+padding: 1px 0 0 0!important;
+border: 0!important;
+height: 1px!important;
+width: 1px!important;
+overflow: hidden!important;
+display:block!important;
+}</style></aside>
+</section>
+<section id="xml-vs.-json" class="slide level2">
+<h2>XML vs. JSON</h2>
+<div class="columns" style="font-size: 2rem">
+<div class="column">
+<h3 id="xml">XML</h3>
+<ul>
+<li class="fragment">XML bevorzugen bei: SOAP, Dokumenten-Formaten, XSLT, Namespaces, Attributen, Schemas (XSD)</li>
+<li class="fragment">XML-Vorteile: Attribute, Kommentare, Mixed Content, Namespaces, XPath / XSLT</li>
+<li class="fragment">oft besser für Enterprise / SOAP</li>
+</ul>
+</div><div class="column">
+<h3 id="json">JSON</h3>
+<ul>
+<li class="fragment">JSON bevorzugen bei: REST-APIs, Konfigurationen, moderne Web-Apps, NoSQL-Datenbanken</li>
+<li class="fragment">JSON-Vorteile: kompakter, schneller zu parsen, native Datentypen</li>
+<li class="fragment">oft besser geeignet für neue Projekte</li>
+</ul>
+</div></div>
+<aside class="notes">
+<p>Quelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/xml-formatter-validator.html</p>
+<style type="text/css">
+span.MJX_Assistive_MathML {
+position:absolute!important;
+clip: rect(1px, 1px, 1px, 1px);
+padding: 1px 0 0 0!important;
+border: 0!important;
+height: 1px!important;
+width: 1px!important;
+overflow: hidden!important;
+display:block!important;
+}</style></aside>
 </section>
 <section id="section" class="slide level2">
 <h2><!-- --></h2>

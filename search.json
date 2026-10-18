@@ -1,10 +1,45 @@
 [
   {
-    "objectID": "08_Qualitätssicherung_Tests.html#tests",
-    "href": "08_Qualitätssicherung_Tests.html#tests",
+    "objectID": "08_Qualitätssicherung_Tests.html#testsoftware",
+    "href": "08_Qualitätssicherung_Tests.html#testsoftware",
     "title": "Qualitätssicherung, Tests",
-    "section": "Tests",
-    "text": "Tests\nsiehe LF10a Testsoftware!"
+    "section": "Testsoftware",
+    "text": "Testsoftware\n\n\nUnterstützt das Planen, Ausführen und Auswerten von Softwaretests\nZiel:\n\nFehler früh erkennen\nQualität sichern\nWiederholbare Tests ermöglichen\n\n\nTypische Funktionen\n\nTestfallverwaltung\nAutomatisierte Testausführung\nReporting & Protokollierung\nIntegration in CI/CD-Pipelines"
+  },
+  {
+    "objectID": "08_Qualitätssicherung_Tests.html#testsoftware-unit-tests",
+    "href": "08_Qualitätssicherung_Tests.html#testsoftware-unit-tests",
+    "title": "Qualitätssicherung, Tests",
+    "section": "Testsoftware: Unit Tests",
+    "text": "Testsoftware: Unit Tests\n\n\n\n\n\nSprache\n\n\n\n\nPython\n\n\nJava\n\n\nJavaScript\n\n\nC#\n\n\n\n\n\n\n\nSoftware\n\n\n\n\npytest\n\n\nJUnit\n\n\nJest\n\n\nNUnit / xUnit"
+  },
+  {
+    "objectID": "08_Qualitätssicherung_Tests.html#testsoftware-api-tests",
+    "href": "08_Qualitätssicherung_Tests.html#testsoftware-api-tests",
+    "title": "Qualitätssicherung, Tests",
+    "section": "Testsoftware: API-Tests",
+    "text": "Testsoftware: API-Tests\n\n\n\n\n\nSprache\n\n\n\n\nPython   \n\n\nPython   \n\n\nJava\n\n\nJavaScript\n\n\nJavaScript\n\n\nC#\n\n\n\n\n\n\n\nSoftware\nBeschreibung\n\n\n\n\nrequests + pytest\nAPI-Tests über HTTP + Assertions\n\n\nLocust (API-Lasttests)\nLast- und Performance-Tests\n\n\nREST Assured\nFluent API für REST-Tests\n\n\nPostman / Newman\nAPI-Tests + CLI-Ausführung\n\n\nSupertest\nTests für Node.js-REST-APIs\n\n\nRestSharp + NUnit\nAPI-Tests im .NET-Ökosystem"
+  },
+  {
+    "objectID": "08_Qualitätssicherung_Tests.html#testsoftware-ui-browser-tests",
+    "href": "08_Qualitätssicherung_Tests.html#testsoftware-ui-browser-tests",
+    "title": "Qualitätssicherung, Tests",
+    "section": "Testsoftware: UI-/Browser-Tests",
+    "text": "Testsoftware: UI-/Browser-Tests\n\n\n\n\n\nSprache\n\n\n\n\nPython\n\n\nJava\n\n\nJavaScript\n\n\nC#\n\n\n\n\n\n\n\nSoftware\n\n\n\n\nPlaywright, Selenium\n\n\nSelenium\n\n\nPlaywright, Cypress\n\n\nSelenium"
+  },
+  {
+    "objectID": "08_Qualitätssicherung_Tests.html#testsoftware-last--performance-tests",
+    "href": "08_Qualitätssicherung_Tests.html#testsoftware-last--performance-tests",
+    "title": "Qualitätssicherung, Tests",
+    "section": "Testsoftware: Last-/ Performance-Tests",
+    "text": "Testsoftware: Last-/ Performance-Tests\n\n\n\n\n\nSprache\n\n\n\n\nPython\n\n\nJava\n\n\nJavaScript\n\n\nC#\n\n\n\n\n\n\n\nSoftware\n\n\n\n\nLocust\n\n\nJMeter\n\n\nk6\n\n\nNBomber"
+  },
+  {
+    "objectID": "08_Qualitätssicherung_Tests.html#testsoftware-statische-analyse",
+    "href": "08_Qualitätssicherung_Tests.html#testsoftware-statische-analyse",
+    "title": "Qualitätssicherung, Tests",
+    "section": "Testsoftware: Statische Analyse",
+    "text": "Testsoftware: Statische Analyse\n\n\n\n\n\nSprache\n\n\n\n\nPython\n\n\nJava\n\n\nJavaScript\n\n\nC#\n\n\n\n\n\n\n\nSoftware\n\n\n\n\nflake8, mypy\n\n\nSpotBugs\n\n\nESLint\n\n\nSonarQube"
   },
   {
     "objectID": "08_Qualitätssicherung_Tests.html#section",
@@ -14,68 +49,471 @@
     "text": "©torange.biz CC-BY 4.0\n\n\nViel Erfolg!"
   },
   {
-    "objectID": "06_SQL.html#sql",
-    "href": "06_SQL.html#sql",
-    "title": "SQL",
-    "section": "SQL",
-    "text": "SQL"
+    "objectID": "06_Datenbanken.html#er-modell-kardinalitäten",
+    "href": "06_Datenbanken.html#er-modell-kardinalitäten",
+    "title": "Datenbanken",
+    "section": "ER-Modell: Kardinalitäten",
+    "text": "ER-Modell: Kardinalitäten\n\n\n\n\n\nNotation\nBedeutung\nBeispiel\n\n\n\n\n1:1\nGenau eine Zuordnung\nPerson → Personalausweis\n\n\n1:n\nEine Entität → mehrere\nAbteilung → Mitarbeiter\n\n\nn:m\nMehrere → mehrere\nStudent → Vorlesung\n\n\n\n\nn:m-Auflösung: Zwischentabelle mit Fremdschlüsseln beider Seiten"
   },
   {
-    "objectID": "06_SQL.html#section",
-    "href": "06_SQL.html#section",
-    "title": "SQL",
+    "objectID": "06_Datenbanken.html#todo-er-modell-beispiel",
+    "href": "06_Datenbanken.html#todo-er-modell-beispiel",
+    "title": "Datenbanken",
+    "section": "todo: ER-Modell Beispiel",
+    "text": "todo: ER-Modell Beispiel"
+  },
+  {
+    "objectID": "06_Datenbanken.html#datenbanken-datentypen",
+    "href": "06_Datenbanken.html#datenbanken-datentypen",
+    "title": "Datenbanken",
+    "section": "Datenbanken: Datentypen",
+    "text": "Datenbanken: Datentypen\n\n\n\n\nDatentyp\nBeschreibung\nBeispiel\n\n\n\n\nINT / INTEGER\nGanzzahl\nAlter, Menge\n\n\nFLOAT / DOUBLE\nGleitkommazahl\nPreis (ungenau!)\n\n\nDECIMAL(p,s)\nFestkommazahl\nWährung: DECIMAL(10,2)\n\n\nVARCHAR(n)\nText variabler Länge\nName VARCHAR(100)\n\n\nCHAR(n)\nText fester Länge\nPLZ CHAR(5)\n\n\nTEXT\nLanger Text\nBeschreibung\n\n\nDATE\nDatum\nGeburtsdatum\n\n\nDATETIME / TIMESTAMP\nDatum + Uhrzeit\nErstellungszeitpunkt\n\n\nBOOLEAN\nWahrheitswert\nAktiv: TRUE/FALSE\n\n\nBLOB\nBinärdaten\nBilder, Dateien"
+  },
+  {
+    "objectID": "06_Datenbanken.html#dbs-anomalien-und-redundanzen",
+    "href": "06_Datenbanken.html#dbs-anomalien-und-redundanzen",
+    "title": "Datenbanken",
+    "section": "DBs: Anomalien und Redundanzen",
+    "text": "DBs: Anomalien und Redundanzen\n\n\n\n\n\n\n\n\n\nAnomalie\nBeschreibung\nBeispiel\n\n\n\n\nEinfüge-Anomalie\nDaten können nicht ohne Zusatzinfo eingefügt werden\nNeuer Kunde ohne Auftrag\n\n\nÄnderungs-Anomalie\nÄnderung an mehreren Stellen nötig\nKundenadresse in jeder Bestellung\n\n\nLösch-Anomalie\nBeim Löschen gehen andere Daten verloren\nLetzter Auftrag gelöscht → Kundendaten weg\n\n\n\nLösung: Normalisierung → Redundanzen eliminieren"
+  },
+  {
+    "objectID": "06_Datenbanken.html#normalisierung-1.-normalform-1nf",
+    "href": "06_Datenbanken.html#normalisierung-1.-normalform-1nf",
+    "title": "Datenbanken",
+    "section": "Normalisierung: 1. Normalform (1NF)",
+    "text": "Normalisierung: 1. Normalform (1NF)\n\n\nJedes Attribut enthält nur atomare (unteilbare) Werte\nKeine Wiederholungsgruppen\n\nVerstoß: Telefon = “0123, 0456” → Aufteilen in separate Datensätze / Tabelle"
+  },
+  {
+    "objectID": "06_Datenbanken.html#normalisierung-2.-normalform-2nf",
+    "href": "06_Datenbanken.html#normalisierung-2.-normalform-2nf",
+    "title": "Datenbanken",
+    "section": "Normalisierung: 2. Normalform (2NF)",
+    "text": "Normalisierung: 2. Normalform (2NF)\n\n\n1NF erfüllt\nJedes Nicht-Schlüssel-Attribut ist voll funktional abhängig vom gesamten Primärschlüssel\nRelevant bei zusammengesetzten Schlüsseln"
+  },
+  {
+    "objectID": "06_Datenbanken.html#normalisierung-3.-normalform-3nf",
+    "href": "06_Datenbanken.html#normalisierung-3.-normalform-3nf",
+    "title": "Datenbanken",
+    "section": "Normalisierung: 3. Normalform (3NF)",
+    "text": "Normalisierung: 3. Normalform (3NF)\n\n\n2NF erfüllt\nKeine transitiven Abhängigkeiten  Nicht-Schlüssel-Attribut hängt nicht von anderem Nicht-Schlüssel-Attribut ab\n\nBeispiel transitive Abhängigkeit:\n\n\nMitarbeiter → AbteilungsNr → AbteilungsName (transitiv!)\nLösung: AbteilungsName in eigene Tabelle “Abteilung”"
+  },
+  {
+    "objectID": "06_Datenbanken.html#datenbanken-acid",
+    "href": "06_Datenbanken.html#datenbanken-acid",
+    "title": "Datenbanken",
+    "section": "Datenbanken: ACID",
+    "text": "Datenbanken: ACID\n\n\nA: Atomicity = Atomität: Transaktion wird entweder vollständig oder gar nicht ausgeführt; falls Fehler: Rollback\nC: Consistency = Konsistenz: Datenbank führt nur Transaktionen aus, die alle vordefinierten Regeln, Gesetze und Integritätsbedingungen einhalten\nI: Isolation = Isolation: Gleichzeitig laufende Transaktionen behindern sich nicht gegenseitig; sie wirken so, als würden sie nacheinander ablaufen\nD: Durability = Dauerhaftigkeit: Sobald eine Transaktion erfolgreich abgeschlossen (committed) ist, bleiben die Änderungen dauerhaft gespeichert - selbst bei einem Stromausfall oder Systemabsturz\nBeispiel: Bei einer Überweisung werden beide Buchungen  (A: -100€; B: +100€) als eine Transaktion betrachtet.\n\nVertreter: PostgreSQL, Oracle, SQL Server, MySQL / InnoDB\n\n\nLernkarte? AP2"
+  },
+  {
+    "objectID": "06_Datenbanken.html#datenbanken-base",
+    "href": "06_Datenbanken.html#datenbanken-base",
+    "title": "Datenbanken",
+    "section": "Datenbanken: BASE",
+    "text": "Datenbanken: BASE\n\n\nBASE: Basically available, soft state, and eventually consistent  = grundsätzlich verfügbar, weicher Zustand, und schließlich konsistent\nBenutzer können jederzeit gleichzeitig zugreifen; ein Benutzer muss nicht warten, bis andere ihre Transaktionen abgeschlossen haben\nsoft state: Daten können vorübergehend temporäre Zustände haben, die sich auch ohne externe Trigger / Eingaben ändern können\nBeispiel: Beitrag in sozialen Netzwerken wird von mehreren Benutzern gleichzeitig bearbeitet; Änderung nicht sofort für alle sichtbar; später wird Beitrag automatisch aktualisiert\neventually consistent: Datensatz erreicht Konsistenz, wenn alle gleichzeitigen Aktualisierungen abgeschlossen sind\n\nVertreter: Cassandra, Riak, DynamoDB"
+  },
+  {
+    "objectID": "06_Datenbanken.html#datenbanken-acid-vs.-base",
+    "href": "06_Datenbanken.html#datenbanken-acid-vs.-base",
+    "title": "Datenbanken",
+    "section": "Datenbanken: ACID vs. BASE",
+    "text": "Datenbanken: ACID vs. BASE\n\n\n\n\n\nACID\nBASE\n\n\n\n\nsofortige Konsistenz\nspätere Konsistenz\n\n\nstarke Transaktionen\nschwache Transaktionen\n\n\neher vertikale Skalierung\nstarke horizontale Skalierung\n\n\ntypische SQL-Systeme\ntypische NoSQL-Systeme\n\n\nKorrektheit priorisiert\nVerfügbarkeit priorisiert\n\n\n\n\n\n\nModerne Datenbanken sind häufig Mischformen!\nVerteilte Cloud-Datenbanken (z. B. von Amazon, Azure, Google Cloud) bieten oft konfigurierbare Konsistenzstufen\nSomit entscheidet der Anwender, wie weit er sich in Richtung ACID oder BASE bewegen möchte"
+  },
+  {
+    "objectID": "06_Datenbanken.html#cap-theorem-vs.-acid-und-base",
+    "href": "06_Datenbanken.html#cap-theorem-vs.-acid-und-base",
+    "title": "Datenbanken",
+    "section": "CAP-Theorem vs. ACID und BASE",
+    "text": "CAP-Theorem vs. ACID und BASE\n\nCAP-Theorem: Consistency, Availability, Partition Tolerance\nBei Netzwerkausfällen kann man nicht alle drei gleichzeitig garantieren.\n\n\nBASE\n\npriorisiert Availability und Partition Tolerance\nDatenbank bleibt hochverfügbar und verteilt\nbessere Skalierbarkeit\nKonsistenz wird notfalls erst später erreicht; eventual consistency\n\n\nACID\n\npriorisiert Consistency: Datenbank nach jeder Transaktion sofort konsistent"
+  },
+  {
+    "objectID": "06_Datenbanken.html#sql-sprachbereiche",
+    "href": "06_Datenbanken.html#sql-sprachbereiche",
+    "title": "Datenbanken",
+    "section": "SQL Sprachbereiche",
+    "text": "SQL Sprachbereiche\n\n\n\n\n\n\n\n\n\nBereich\nBedeutung\nTypische Befehle\n\n\n\n\nDDL - Data Definition Language\nDatenstrukturen definieren, ändern\nCREATE, ALTER, DROP\n\n\nDML - Data Manipulation Language\nDaten einfügen, ändern, löschen\nINSERT, UPDATE, DELETE\n\n\nDQL - Data Query Language\nDaten abfragen\nSELECT\n\n\nDCL - Data Control Language\nRechte, Zugriffe verwalten\nGRANT, REVOKE\n\n\nTCL - Transaction Control Language\nTransaktionen steuern\nCOMMIT, ROLLBACK, SAVEPOINT\n\n\n\n\n\nWelche Lernkarte? Lernkarten ergänzen (ROLLBACK; mehrere?)"
+  },
+  {
+    "objectID": "06_Datenbanken.html#ddl---data-definition-language",
+    "href": "06_Datenbanken.html#ddl---data-definition-language",
+    "title": "Datenbanken",
+    "section": "DDL - Data Definition Language",
+    "text": "DDL - Data Definition Language\n\nCREATE TABLE Kunde (\n    KundenID INT PRIMARY KEY AUTO_INCREMENT,\n    Name VARCHAR(100) NOT NULL,\n    Email VARCHAR(150) UNIQUE,\n    Erstellt DATE DEFAULT CURRENT_DATE\n);\n\nALTER TABLE Kunde ADD Telefon VARCHAR(20);\n\nCREATE INDEX idx_name ON Kunde(Name);"
+  },
+  {
+    "objectID": "06_Datenbanken.html#dml-data-manipulation-language",
+    "href": "06_Datenbanken.html#dml-data-manipulation-language",
+    "title": "Datenbanken",
+    "section": "DML (Data Manipulation Language)",
+    "text": "DML (Data Manipulation Language)\n\nINSERT INTO Kunde (Name, Email) VALUES ('Mueller GmbH', 'info@mueller.de');\n\nUPDATE Kunde SET Email = 'neu@mueller.de' WHERE KundenID = 1;\n\nDELETE FROM Kunde WHERE KundenID = 5;"
+  },
+  {
+    "objectID": "06_Datenbanken.html#dql-data-query-language",
+    "href": "06_Datenbanken.html#dql-data-query-language",
+    "title": "Datenbanken",
+    "section": "DQL (Data Query Language)",
+    "text": "DQL (Data Query Language)\n\n-- Projektion + Selektion\nSELECT Name, Email FROM Kunde WHERE KundenID &gt; 10;\n\n-- Sortieren\nSELECT * FROM Kunde ORDER BY Name ASC;\n\n-- Aggregatfunktionen + Gruppieren\nSELECT AbteilungsID, COUNT(*) AS Anzahl, AVG(Gehalt) AS Durchschnitt\nFROM Mitarbeiter\nGROUP BY AbteilungsID\nHAVING COUNT(*) &gt; 5;"
+  },
+  {
+    "objectID": "06_Datenbanken.html#joins-abfrage-ueber-mehrere-tabellen",
+    "href": "06_Datenbanken.html#joins-abfrage-ueber-mehrere-tabellen",
+    "title": "Datenbanken",
+    "section": "JOINs (Abfrage ueber mehrere Tabellen)",
+    "text": "JOINs (Abfrage ueber mehrere Tabellen)\n\n\n\n\nJOIN-Typ\nBeschreibung\n\n\n\n\nINNER JOIN\nNur übereinstimmende Datensätze\n\n\nLEFT JOIN\nAlle links + übereinstimmende rechts\n\n\nRIGHT JOIN\nAlle rechts + übereinstimmende links\n\n\nCROSS JOIN\nKartesisches Produkt (jeder mit jedem)\n\n\n\n\n\nSELECT k.Name, b.Datum, b.Betrag\nFROM Kunde k\nINNER JOIN Bestellung b ON k.KundenID = b.KundenID\nWHERE b.Betrag &gt; 1000\nORDER BY b.Datum DESC;"
+  },
+  {
+    "objectID": "06_Datenbanken.html#relationale-vs.-nosql-datenbanken",
+    "href": "06_Datenbanken.html#relationale-vs.-nosql-datenbanken",
+    "title": "Datenbanken",
+    "section": "Relationale vs. NoSQL-Datenbanken",
+    "text": "Relationale vs. NoSQL-Datenbanken\n\n\n\n\n\n\n\n\n\nMerkmal\nRelational (SQL)\nNoSQL\n\n\n\n\nStruktur\nTabellen mit Spalten\nDokumente, Key-Value, Graphen\n\n\nSchema\nFestes Schema\nFlexibles / kein Schema\n\n\nSprache\nSQL\nAbhängig vom System\n\n\nKonsistenz\nACID (stark)\nBASE (eventual consistency)\n\n\nSkalierung\nVertikal (größerer Server)\nHorizontal (mehr Server)\n\n\nBeispiele\nMySQL, PostgreSQL, MariaDB\nMongoDB, Redis, Cassandra, Neo4j\n\n\nEinsatz\nStrukturierte Daten, Transaktionen\nBig Data, flexible Strukturen"
+  },
+  {
+    "objectID": "06_Datenbanken.html#section",
+    "href": "06_Datenbanken.html#section",
+    "title": "Datenbanken",
     "section": "",
     "text": "©torange.biz CC-BY 4.0\n\n\nViel Erfolg!"
   },
   {
-    "objectID": "04_UML_Sequenz_Zustand.html#sequenzdiagramme",
-    "href": "04_UML_Sequenz_Zustand.html#sequenzdiagramme",
+    "objectID": "04_UML_Sequenz_Zustand.html#sequenzdiagramm-nachrichten",
+    "href": "04_UML_Sequenz_Zustand.html#sequenzdiagramm-nachrichten",
     "title": "UML",
-    "section": "Sequenzdiagramme",
-    "text": "Sequenzdiagramme"
-  },
-  {
-    "objectID": "04_UML_Sequenz_Zustand.html#zustandsdiagramme",
-    "href": "04_UML_Sequenz_Zustand.html#zustandsdiagramme",
-    "title": "UML",
-    "section": "Zustandsdiagramme",
-    "text": "Zustandsdiagramme"
+    "section": "Sequenzdiagramm: Nachrichten",
+    "text": "Sequenzdiagramm: Nachrichten"
   },
   {
     "objectID": "04_UML_Sequenz_Zustand.html#section",
     "href": "04_UML_Sequenz_Zustand.html#section",
     "title": "UML",
     "section": "",
+    "text": "Sequenz-diagramm: Lebenslinien"
+  },
+  {
+    "objectID": "04_UML_Sequenz_Zustand.html#sequenzdiagramm-bedingungen",
+    "href": "04_UML_Sequenz_Zustand.html#sequenzdiagramm-bedingungen",
+    "title": "UML",
+    "section": "Sequenzdiagramm: Bedingungen",
+    "text": "Sequenzdiagramm: Bedingungen"
+  },
+  {
+    "objectID": "04_UML_Sequenz_Zustand.html#section-1",
+    "href": "04_UML_Sequenz_Zustand.html#section-1",
+    "title": "UML",
+    "section": "",
+    "text": "Sequenz-diagramm: Überblick"
+  },
+  {
+    "objectID": "04_UML_Sequenz_Zustand.html#sequenzdiagramm-beispiel",
+    "href": "04_UML_Sequenz_Zustand.html#sequenzdiagramm-beispiel",
+    "title": "UML",
+    "section": "Sequenzdiagramm: Beispiel",
+    "text": "Sequenzdiagramm: Beispiel\n\n\n\n\n\nsequenceDiagram\n    actor Benutzer\n    participant LoginController\n    participant Datenbank\n    participant Session\n\n    Benutzer-&gt;&gt;LoginController: login(user,pw)\n    LoginController-&gt;&gt;Datenbank: prüfeUser(user,pw)\n    Datenbank--&gt;&gt;LoginController: Ergebnis\n\n    alt gültig\n        LoginController-&gt;&gt;Session: erzeugeSession()\n        Session--&gt;&gt;LoginController: SessionID\n        LoginController--&gt;&gt;Benutzer: Erfolg\n    else ungültig\n        LoginController--&gt;&gt;Benutzer: Fehler\n    end"
+  },
+  {
+    "objectID": "04_UML_Sequenz_Zustand.html#sequenzdiagramm-mermaid",
+    "href": "04_UML_Sequenz_Zustand.html#sequenzdiagramm-mermaid",
+    "title": "UML",
+    "section": "Sequenzdiagramm: Mermaid",
+    "text": "Sequenzdiagramm: Mermaid\nsequenceDiagram\n    actor Benutzer\n    participant LoginController\n    participant Datenbank\n    participant Session\n\n    Benutzer-&gt;&gt;LoginController: login(user,pw)\n    LoginController-&gt;&gt;Datenbank: prüfeUser(user,pw)\n    Datenbank--&gt;&gt;LoginController: Ergebnis\n\n    alt gültig\n        LoginController-&gt;&gt;Session: erzeugeSession()\n        Session--&gt;&gt;LoginController: SessionID\n        LoginController--&gt;&gt;Benutzer: Erfolg\n    else ungültig\n        LoginController--&gt;&gt;Benutzer: Fehler\n    end"
+  },
+  {
+    "objectID": "04_UML_Sequenz_Zustand.html#sequenzdiagramm-zusammenfassung",
+    "href": "04_UML_Sequenz_Zustand.html#sequenzdiagramm-zusammenfassung",
+    "title": "UML",
+    "section": "Sequenzdiagramm: Zusammenfassung",
+    "text": "Sequenzdiagramm: Zusammenfassung\n\nWas stellt ein Sequenzdiagramm in UML dar und in welchen Szenarien wird es typischerweise verwendet?\n\nEin Sequenzdiagramm in UML zeigt die Interaktionen zwischen Objekten in der Reihenfolge, in der sie auftreten\nEs besteht aus\n\neiner Reihe von vertikalen “Lebenslinien”, die Objekte oder Klassen repräsentieren, und\nhorizontalen “Nachrichten”, die zwischen den Lebenslinien hin und her gehen\n\nNachrichten sind zeitlich von oben nach unten geordnet, sodass man sehen kann, in welcher Reihenfolge die Interaktionen auftreten\nSequenzdiagramme helfen dabei, die dynamischen Interaktionen in einem System darzustellen und zu analysieren\n\n\n\nLernkarte AP2 2025 Nr. 128"
+  },
+  {
+    "objectID": "04_UML_Sequenz_Zustand.html#zustandsdiagramm",
+    "href": "04_UML_Sequenz_Zustand.html#zustandsdiagramm",
+    "title": "UML",
+    "section": "Zustandsdiagramm",
+    "text": "Zustandsdiagramm"
+  },
+  {
+    "objectID": "04_UML_Sequenz_Zustand.html#zustandsdiagramm-bestellung",
+    "href": "04_UML_Sequenz_Zustand.html#zustandsdiagramm-bestellung",
+    "title": "UML",
+    "section": "Zustandsdiagramm: Bestellung",
+    "text": "Zustandsdiagramm: Bestellung\n\n   (●)\n    |\n    v\n+----------+   bestellen()    +-----------+\n|  Neu     |-----------------&gt;| Bestaetigt|\n+----------+                  +-----------+\n                                   |\n                    zahlung_ok()   |\n                                   v\n                             +----------+\n            stornieren()     | Bezahlt  |\n  +----------&lt;---------------|          |\n  |                          +----------+\n  v                                |\n+----------+          versenden()  |\n|Storniert |                       v\n+----------+              +-----------+\n  |                       | Versendet |\n  v                       +-----------+\n (◉)                           |\n                  zugestellt() |\n                               v\n                        +-----------+\n                        | Geliefert |\n                        +-----------+\n                               |\n                               v\n                              (◉)"
+  },
+  {
+    "objectID": "04_UML_Sequenz_Zustand.html#zustandsdiagramm-bestellung-1",
+    "href": "04_UML_Sequenz_Zustand.html#zustandsdiagramm-bestellung-1",
+    "title": "UML",
+    "section": "Zustandsdiagramm: Bestellung",
+    "text": "Zustandsdiagramm: Bestellung\n\n\n\n\n\nstateDiagram-v2\n\n    direction LR\n\n    [*] --&gt; Neu\n    Neu --&gt; Bestaetigt : bestellen()\n\n    Bestaetigt --&gt; Bezahlt : zahlung_ok()\n    Bestaetigt --&gt; Storniert : stornieren()\n\n    Bezahlt --&gt; Versendet : versenden()\n    Versendet --&gt; Geliefert : zugestellt()\n\n    Geliefert --&gt; [*]\n    Storniert --&gt; [*]\n\n\n\n\n\n\nMermaid-Code\n\nstateDiagram-v2\n\n    direction LR\n\n    [*] --&gt; Neu\n    Neu --&gt; Bestaetigt : bestellen()\n\n    Bestaetigt --&gt; Bezahlt : zahlung_ok()\n    Bestaetigt --&gt; Storniert : stornieren()\n\n    Bezahlt --&gt; Versendet : versenden()\n    Versendet --&gt; Geliefert : zugestellt()\n\n    Geliefert --&gt; [*]\n    Storniert --&gt; [*]"
+  },
+  {
+    "objectID": "04_UML_Sequenz_Zustand.html#zustandsdiagramm-zusammenfassung",
+    "href": "04_UML_Sequenz_Zustand.html#zustandsdiagramm-zusammenfassung",
+    "title": "UML",
+    "section": "Zustandsdiagramm: Zusammenfassung",
+    "text": "Zustandsdiagramm: Zusammenfassung\n\nErklären Sie die Verwendung des UML-Zustandsdiagramms zur Modellierung von Verhalten in einem System.\n\nUML-Zustandsdiagramm bildet Lebenszyklus eines Objekts ab durch Darstellung seiner verschiedenen Zustände und Übergänge\nBesonders nützlich bei der Modellierung von Objekten, die komplexes Verhalten aufweisen und viele verschiedene Zustände haben können\nWas geben Zustandsdiagramme wieder?\n\nden aktuellen Zustand eines Objekts\ndie Aktionen, die beim Eintritt, während des Verweilens und beim Verlassen des Zustands durchgeführt werden\nBedingungen für den Übergang zu anderen Zuständen\n\nErmöglichen die Darstellung und das Verständnis komplexer verhaltensbasierter Systeme\n\n\n\nLernkarte AP2 2025 Nr. 130"
+  },
+  {
+    "objectID": "04_UML_Sequenz_Zustand.html#wann-welches-diagramm",
+    "href": "04_UML_Sequenz_Zustand.html#wann-welches-diagramm",
+    "title": "UML",
+    "section": "Wann welches Diagramm?",
+    "text": "Wann welches Diagramm?\n\n\n\n\n\n\n\n\n\n\nDiagramm\nZeigt\nKategorie\nTypische Fragestellung\n\n\n\n\nAktivitäts-diagramm\nAbläufe, Workflows\nVerhaltens-diagramm\n“Wie läuft der Prozess ab?”\n\n\nAnwendungs-falldiagramm\nFunktionen und Akteure\nVerhaltens-diagramm\n“WAS kann das System? Wer nutzt es?”\n\n\nKlassen-diagramm\nStatische Struktur\nStruktur-diagramm\n“Welche Klassen gibt es und wie hängen sie zusammen?”\n\n\nSequenz-diagramm\nZeitlicher Nachrichtenaustausch\nVerhaltens-diagramm\n“In welcher Reihenfolge kommunizieren die Objekte?”\n\n\nZustands-diagramm\nZustände und Übergänge\nVerhaltens-diagramm\n“Welche Zustände hat ein Objekt?”"
+  },
+  {
+    "objectID": "04_UML_Sequenz_Zustand.html#häufige-uml-fehler",
+    "href": "04_UML_Sequenz_Zustand.html#häufige-uml-fehler",
+    "title": "UML",
+    "section": "Häufige UML-Fehler",
+    "text": "Häufige UML-Fehler\n\n\n\n\n\n\n\n\nFehler\nKorrektur\n\n\n\n\nAggregation und Komposition verwechselt\nKomposition = starke Abhängigkeit (Teil stirbt mit Ganzem)\n\n\nInclude und Extend vertauscht\nInclude = obligatorisch, Extend = optional\n\n\nKlassendiagramm ohne Sichtbarkeiten\nImmer +, -, # angeben\n\n\nSequenzdiagramm ohne Rückgabepfeile\nSynchrone Aufrufe brauchen eine Antwort (gestrichelter Pfeil)\n\n\nZustandsdiagramm ohne Start- / Endzustand\nStart (●) und Ende (◉) gehören immer dazu\n\n\nAktivitäten im Use-Case-Diagramm\nUse Cases beschreiben FUNKTIONEN, keine Ablaufschritte"
+  },
+  {
+    "objectID": "04_UML_Sequenz_Zustand.html#section-2",
+    "href": "04_UML_Sequenz_Zustand.html#section-2",
+    "title": "UML",
+    "section": "",
     "text": "©torange.biz CC-BY 4.0\n\n\nViel Erfolg!"
   },
   {
-    "objectID": "02c_OOP_UML_mermaid.html",
-    "href": "02c_OOP_UML_mermaid.html",
-    "title": "OOP UML - Mermaid",
+    "objectID": "03a_OO_Analyse-Designverfahren.html#ziele",
+    "href": "03a_OO_Analyse-Designverfahren.html#ziele",
+    "title": "Objektorientierte Analyse- und Designverfahren",
+    "section": "Ziele",
+    "text": "Ziele\n\nSchritte der objektorientierten Analyse (OOA) kennen\nSchritte des objektorientierten Designs (OOD) kennen\nKlassen aus Anforderungen ableiten können\ngrundlegende Designprinzipien anwenden können"
+  },
+  {
+    "objectID": "03a_OO_Analyse-Designverfahren.html#objektorientierte-analyse-ooa",
+    "href": "03a_OO_Analyse-Designverfahren.html#objektorientierte-analyse-ooa",
+    "title": "Objektorientierte Analyse- und Designverfahren",
+    "section": "Objektorientierte Analyse (OOA)",
+    "text": "Objektorientierte Analyse (OOA)\n\nDefinition: Die OOA identifiziert aus den fachlichen Anforderungen (z.B. Lastenheft) die relevanten Objekte, Klassen, Attribute und Methoden des Systems.\nVorgehen:\n\nAnforderungen lesen – Lastenheft, User Stories, Gesprächsprotokolle\nSubstantive markieren → Kandidaten fuer Klassen und Attribute\nVerben markieren → Kandidaten fuer Methoden\nBeziehungen identifizieren → Assoziationen, Kompositionen, Vererbung\nErstes Klassendiagramm erstellen → grobe Struktur"
+  },
+  {
+    "objectID": "03a_OO_Analyse-Designverfahren.html#ooa-beispiel",
+    "href": "03a_OO_Analyse-Designverfahren.html#ooa-beispiel",
+    "title": "Objektorientierte Analyse- und Designverfahren",
+    "section": "OOA: Beispiel",
+    "text": "OOA: Beispiel\n\n\n“Ein Kunde gibt eine Bestellung auf. Jede Bestellung enthält mehrere Artikel. Der Kunde hat einen Namen und eine Adresse. Artikel haben eine Bezeichnung und einen Preis.”\n\nAbleitung:\n\n\n\n\n\n\n\n\n\nElement\nTyp\nQuelle\n\n\n\n\nKunde\nKlasse\nSubstantiv\n\n\nBestellung\nKlasse\nSubstantiv\n\n\nArtikel\nKlasse\nSubstantiv\n\n\nName, Adresse\nAttribute von Kunde\nSubstantive (Eigenschaften)\n\n\nBezeichnung, Preis\nAttribute von Artikel\nSubstantive (Eigenschaften)\n\n\naufgeben()\nMethode von Kunde\nVerb “gibt auf”\n\n\nenthalten()\nBeziehung Bestellung → Artikel\nVerb “enthält”"
+  },
+  {
+    "objectID": "03a_OO_Analyse-Designverfahren.html#ooa-crc-karten",
+    "href": "03a_OO_Analyse-Designverfahren.html#ooa-crc-karten",
+    "title": "Objektorientierte Analyse- und Designverfahren",
+    "section": "OOA: CRC-Karten",
+    "text": "OOA: CRC-Karten\n\nDefinition: CRC-Karten (Class-Responsibility-Collaboration) sind ein einfaches Werkzeug zur frühen Identifikation von Klassen. Jede Karte beschreibt eine Klasse mit ihren Verantwortlichkeiten und Kooperationspartnern.\n\n\n\n+----------------------------------+\n|          KLASSE: Kunde           |\n+----------------------------------+\n| Verantwortlichkeiten:            |\n| - Name und Adresse verwalten     |\n| - Bestellung aufgeben            |\n+----------------------------------+\n| Kooperationen:                   |\n| - Bestellung                     |\n+----------------------------------+\n\n+----------------------------------+\n|       KLASSE: Bestellung         |\n+----------------------------------+\n| Verantwortlichkeiten:            |\n| - Artikel verwalten              |\n| - Gesamtpreis berechnen          |\n| - Status ändern                  |\n+----------------------------------+\n| Kooperationen:                   |\n| - Kunde, Artikel                 |\n+----------------------------------+"
+  },
+  {
+    "objectID": "03a_OO_Analyse-Designverfahren.html#objektorientiertes-design-ood",
+    "href": "03a_OO_Analyse-Designverfahren.html#objektorientiertes-design-ood",
+    "title": "Objektorientierte Analyse- und Designverfahren",
+    "section": "Objektorientiertes Design (OOD)",
+    "text": "Objektorientiertes Design (OOD)\n\nDefinition: Das OOD verfeinert das OOA-Modell zur technischen Umsetzung: Klassen werden detailliert, Datentypen festgelegt, Sichtbarkeiten definiert und Entwurfsmuster angewendet.\nSchritte im OOD\n\nOOA-Klassendiagramm verfeinern (Datentypen, Sichtbarkeiten)\nEntwurfsmuster (Design Patterns) anwenden\nSchnittstellen (Interfaces) definieren\nVererbungshierarchien optimieren\nSequenzdiagramme für wichtige Abläufe erstellen"
+  },
+  {
+    "objectID": "03a_OO_Analyse-Designverfahren.html#solid-prinzipien",
+    "href": "03a_OO_Analyse-Designverfahren.html#solid-prinzipien",
+    "title": "Objektorientierte Analyse- und Designverfahren",
+    "section": "SOLID-Prinzipien",
+    "text": "SOLID-Prinzipien\n\n\n\n\n\n\n\n\n\nBuchstabe\nPrinzip\nBedeutung\n\n\n\n\nS\nSingle Responsibility\nJede Klasse hat genau eine Aufgabe\n\n\nO\nOpen / Closed\nOffen für Erweiterung, geschlossen für Änderung\n\n\nL\nLiskov Substitution\nUnterklassen müssen die Oberklasse ersetzen können\n\n\nI\nInterface Segregation\nViele kleine Interfaces statt eines großen\n\n\nD\nDependency Inversion\nAbhängigkeiten auf Abstraktionen, nicht auf konkrete Klassen"
+  },
+  {
+    "objectID": "03a_OO_Analyse-Designverfahren.html#liskov-substitution",
+    "href": "03a_OO_Analyse-Designverfahren.html#liskov-substitution",
+    "title": "Objektorientierte Analyse- und Designverfahren",
+    "section": "Liskov Substitution",
+    "text": "Liskov Substitution\n\n\nObjekte einer Unterklasse müssen überall dort einsetzbar sein, wo Objekte der Oberklasse erwartet werden, ohne dass das Programm dadurch fehlerhaft wird.\n\n\nEinfacher: Eine abgeleitete Klasse darf die Erwartungen an die Basisklasse nicht verletzen.\nGegenbeispiel: Basisklasse = Rechteck, Unterklasse = Quadrat\nTest Rechteck: Länge = 4, Breite = 5, Fläche = Länge * Breite = 20\nDas funktioniert für ein Quadrat nicht. Länge per Definition gleich Breite.\nLiskov Substitution Principle (LSP) ist verletzt.\nEs genügt nicht zu prüfen: Ist B eine Spezialisierung von A?\nZusätzlich prüfen: Kann überall, wo A verwendet wird, auch B stehen?"
+  },
+  {
+    "objectID": "03a_OO_Analyse-Designverfahren.html#oop-grundkonzepte",
+    "href": "03a_OO_Analyse-Designverfahren.html#oop-grundkonzepte",
+    "title": "Objektorientierte Analyse- und Designverfahren",
+    "section": "OOP Grundkonzepte",
+    "text": "OOP Grundkonzepte\n\n\n\n\n\n\n\n\nKonzept\nBeschreibung\n\n\n\n\nKlasse\nBauplan für Objekte (Attribute + Methoden)\n\n\nObjekt\nKonkrete Instanz einer Klasse\n\n\nVererbung\nUnterklasse übernimmt Attribute / Methoden der Oberklasse\n\n\nPolymorphismus\nGleiche Methode, unterschiedliches Verhalten je nach Klasse\n\n\nKapselung\nZugriff auf Attribute nur über Methoden (Getter / Setter)\n\n\nAbstraktion\nNur relevante Eigenschaften modellieren"
+  },
+  {
+    "objectID": "03a_OO_Analyse-Designverfahren.html#ooa-vs.-ood-im-vergleich",
+    "href": "03a_OO_Analyse-Designverfahren.html#ooa-vs.-ood-im-vergleich",
+    "title": "Objektorientierte Analyse- und Designverfahren",
+    "section": "OOA vs. OOD im Vergleich",
+    "text": "OOA vs. OOD im Vergleich\n\n\n\n\nAspekt\nOOA\nOOD\n\n\n\n\nZiel\nFachliche Modellierung (WAS)\nTechnische Modellierung (WIE)\n\n\nPerspektive\nKundensicht / Fachbereich\nEntwicklersicht\n\n\nErgebnis\nFachliches Klassendiagramm\nTechnisches Klassendiagramm\n\n\nDatentypen\nNoch nicht festgelegt\nKonkret (String, int, Date)\n\n\nSichtbarkeiten\nNoch nicht definiert\n+, -, #, ~\n\n\nDesign Patterns\nNoch nicht angewendet\nWerden eingesetzt"
+  },
+  {
+    "objectID": "03a_OO_Analyse-Designverfahren.html#typische-prüfungsaspekte",
+    "href": "03a_OO_Analyse-Designverfahren.html#typische-prüfungsaspekte",
+    "title": "Objektorientierte Analyse- und Designverfahren",
+    "section": "Typische Prüfungsaspekte",
+    "text": "Typische Prüfungsaspekte\n\nAus einem Anforderungstext Klassen, Attribute und Methoden ableiten\nCRC-Karten erstellen oder interpretieren\nOOA von OOD unterscheiden\nOOP-Grundkonzepte (Vererbung, Kapselung, Polymorphismus) erklären\nSOLID-Prinzipien im Grundsatz kennen"
+  },
+  {
+    "objectID": "03a_OO_Analyse-Designverfahren.html#häufige-fehler",
+    "href": "03a_OO_Analyse-Designverfahren.html#häufige-fehler",
+    "title": "Objektorientierte Analyse- und Designverfahren",
+    "section": "Häufige Fehler",
+    "text": "Häufige Fehler\n\n\n\n\n\n\n\n\nFehler\nKorrektur\n\n\n\n\nAdjektive als Klassen identifiziert\nAdjektive sind meist Attribute, nicht Klassen\n\n\nZu viele Klassen erstellt\nNur fachlich relevante Entitäten werden Klassen\n\n\nOOA und OOD vermischt\nOOA = fachlich (WAS),  OOD = technisch (WIE)\n\n\nKapselung ignoriert\nAttribute sollten private sein,  Zugriff über Getter / Setter\n\n\nVererbung für alles verwendet\nKomposition ist oft besser als Vererbung (“favor composition over inheritance”)"
+  },
+  {
+    "objectID": "03a_OO_Analyse-Designverfahren.html#section",
+    "href": "03a_OO_Analyse-Designverfahren.html#section",
+    "title": "Objektorientierte Analyse- und Designverfahren",
     "section": "",
-    "text": "classDiagram\n \nclass Room {\n- name : String\n- description : String\n- doors : Door\n- items : Item\n+ enter()\n+ show_items()\n+ show_doors()\n+ add_door()\n+ add_item()\n+ take_item()\n}\n \nclass Door {\n- target_room : Room\n- is_open : Boolean\n+ open()\n+ close()\n}\n \nclass KeyDoor {\n- required_key : String\n+ try_open(player : Player)\n}\n \nclass Item {\n- name : String\n- description : String\n+ describe()\n}\n \nclass Player {\n- current_room : Room\n- inventory : Item\n+ enter_current_room()\n+ show_inventory()\n+ has_item()\n+ take_item()\n+ go_through()\n}\n \nDoor &lt;|-- KeyDoor\n \nRoom \"1\" o-- \"0..*\" Door : doors\nRoom \"1\" o-- \"0..*\" Item : items\n \nDoor --&gt; \"1\" Room : target_room\n \nPlayer --&gt; \"1\" Room : current_room\nPlayer o-- \"0..*\" Item : inventory",
+    "text": "©torange.biz CC-BY 4.0\n\n\nViel Erfolg!"
+  },
+  {
+    "objectID": "02b_OOP_Programmieraufgaben.html#escape-room-er-ziele",
+    "href": "02b_OOP_Programmieraufgaben.html#escape-room-er-ziele",
+    "title": "OOP: Programmieraufgaben",
+    "section": "Escape Room (ER): Ziele",
+    "text": "Escape Room (ER): Ziele\n\nKlassen definieren\nAttribute kapseln\nMethoden für Zustandsänderungen\nVererbung für Spezialisierungen",
     "crumbs": [
-      "02c OOP Klassendiagramm Mermaid"
+      "02b OOP Programmieraufgaben"
     ]
   },
   {
-    "objectID": "02c_OOP_UML_mermaid.html#escape-room-uml",
-    "href": "02c_OOP_UML_mermaid.html#escape-room-uml",
-    "title": "OOP UML - Mermaid",
-    "section": "",
-    "text": "classDiagram\n \nclass Room {\n- name : String\n- description : String\n- doors : Door\n- items : Item\n+ enter()\n+ show_items()\n+ show_doors()\n+ add_door()\n+ add_item()\n+ take_item()\n}\n \nclass Door {\n- target_room : Room\n- is_open : Boolean\n+ open()\n+ close()\n}\n \nclass KeyDoor {\n- required_key : String\n+ try_open(player : Player)\n}\n \nclass Item {\n- name : String\n- description : String\n+ describe()\n}\n \nclass Player {\n- current_room : Room\n- inventory : Item\n+ enter_current_room()\n+ show_inventory()\n+ has_item()\n+ take_item()\n+ go_through()\n}\n \nDoor &lt;|-- KeyDoor\n \nRoom \"1\" o-- \"0..*\" Door : doors\nRoom \"1\" o-- \"0..*\" Item : items\n \nDoor --&gt; \"1\" Room : target_room\n \nPlayer --&gt; \"1\" Room : current_room\nPlayer o-- \"0..*\" Item : inventory",
+    "objectID": "02b_OOP_Programmieraufgaben.html#er-kapselung",
+    "href": "02b_OOP_Programmieraufgaben.html#er-kapselung",
+    "title": "OOP: Programmieraufgaben",
+    "section": "ER: Kapselung",
+    "text": "ER: Kapselung\n\n\nTüren haben einen privaten Zustand (_geschlossen)\nItems können versteckte Informationen haben\nRäume verwalten ihre Listen selbst (keine direkte Manipulation von außen)\nVerwenden Sie bewusst Getter / Setter bzw. kontrollierte Methoden",
     "crumbs": [
-      "02c OOP Klassendiagramm Mermaid"
+      "02b OOP Programmieraufgaben"
     ]
   },
   {
-    "objectID": "02c_OOP_UML_mermaid.html#escape-room-mermaid-code",
-    "href": "02c_OOP_UML_mermaid.html#escape-room-mermaid-code",
-    "title": "OOP UML - Mermaid",
-    "section": "Escape Room: Mermaid-Code",
-    "text": "Escape Room: Mermaid-Code\nclassDiagram\n \nclass Room {\n- name : String\n- description : String\n- doors : Door\n- items : Item\n+ enter()\n+ show_items()\n+ show_doors()\n+ add_door()\n+ add_item()\n+ take_item()\n}\n \nclass Door {\n- target_room : Room\n- is_open : Boolean\n+ open()\n+ close()\n}\n \nclass KeyDoor {\n- required_key : String\n+ try_open(player : Player)\n}\n \nclass Item {\n- name : String\n- description : String\n+ describe()\n}\n \nclass Player {\n- current_room : Room\n- inventory : Item\n+ enter_current_room()\n+ show_inventory()\n+ has_item()\n+ take_item()\n+ go_through()\n}\n \nDoor &lt;|-- KeyDoor\n \nRoom \"1\" o-- \"0..*\" Door : doors\nRoom \"1\" o-- \"0..*\" Item : items\n \nDoor --&gt; \"1\" Room : target_room\n \nPlayer --&gt; \"1\" Room : current_room\nPlayer o-- \"0..*\" Item : inventory",
+    "objectID": "02b_OOP_Programmieraufgaben.html#er-vererbung",
+    "href": "02b_OOP_Programmieraufgaben.html#er-vererbung",
+    "title": "OOP: Programmieraufgaben",
+    "section": "ER: Vererbung",
+    "text": "ER: Vererbung\nTürtypen\n\n\nNormaleTür erbt von Tür\nSchlüsselTür: zusätzlich benötigter Schlüsselname\nRätselTür: zusätzlich Frage und Lösung\n\n\n\nHier werden keine Methoden überschrieben,  sondern nur Verhalten erweitert.",
     "crumbs": [
-      "02c OOP Klassendiagramm Mermaid"
+      "02b OOP Programmieraufgaben"
+    ]
+  },
+  {
+    "objectID": "02b_OOP_Programmieraufgaben.html#er-uml---room",
+    "href": "02b_OOP_Programmieraufgaben.html#er-uml---room",
+    "title": "OOP: Programmieraufgaben",
+    "section": "ER: UML - Room",
+    "text": "ER: UML - Room\n\n+-----------------------------+\n|      Room                   |\n+-----------------------------+\n| - name: str                 |\n| - description: str          |\n| - doors: List&lt;Door&gt;         |\n| - items: List&lt;Item&gt;         |\n+-----------------------------+\n| + enter()                   |\n| + show_items()              |\n| + show_doors()              |\n| + add_door(d:Door)          |\n| + add_item(i:Item)          |\n| + take_item(name:str): Item |\n+-----------------------------+\nBeziehung Room - Door\n\n            1    * \nRoom ------------------&gt; Door\n            contains",
+    "crumbs": [
+      "02b OOP Programmieraufgaben"
+    ]
+  },
+  {
+    "objectID": "02b_OOP_Programmieraufgaben.html#er-uml---door",
+    "href": "02b_OOP_Programmieraufgaben.html#er-uml---door",
+    "title": "OOP: Programmieraufgaben",
+    "section": "ER: UML - Door",
+    "text": "ER: UML - Door\n\n+---------------------+\n|      Door           |\n+---------------------+\n| - target_room: Room |\n| - is_open: bool     |\n+---------------------+\n| + open()            |\n| + close()           |\n| + is_open(): bool   |\n+---------------------+\n\n        ^ \n        |\n        | inheritance\n        |\n\n\n\n+--------------------+\n|   NormalDoor       |\n+--------------------+\n|  (no extra fields) |\n+--------------------+\n\n+---------------------------------+\n|     KeyDoor                     |\n+---------------------------------+\n| - required_key: str             |\n+---------------------------------+\n| + try_open(player:Player): bool |\n+---------------------------------+",
+    "crumbs": [
+      "02b OOP Programmieraufgaben"
+    ]
+  },
+  {
+    "objectID": "02b_OOP_Programmieraufgaben.html#er-uml---item",
+    "href": "02b_OOP_Programmieraufgaben.html#er-uml---item",
+    "title": "OOP: Programmieraufgaben",
+    "section": "ER: UML - Item",
+    "text": "ER: UML - Item\n+--------------------+\n|      Item          |\n+--------------------+\n| - name: str        |\n| - description: str |\n+--------------------+\n| + describe()       |\n+--------------------+",
+    "crumbs": [
+      "02b OOP Programmieraufgaben"
+    ]
+  },
+  {
+    "objectID": "02b_OOP_Programmieraufgaben.html#er-uml---player",
+    "href": "02b_OOP_Programmieraufgaben.html#er-uml---player",
+    "title": "OOP: Programmieraufgaben",
+    "section": "ER: UML - Player",
+    "text": "ER: UML - Player\n+----------------------------+\n|     Player                 |\n+----------------------------+\n| - current_room: Room       |\n| - inventory: List&lt;Item&gt;    |\n+----------------------------+\n| + enter_current_room()     |\n| + show_inventory()         |\n| + has_item(name:str): bool |\n| + take_item(name:str)      |\n| + go_through(index:int)    |\n+----------------------------+\n\nPlayer –&gt; Room (current_room)\nPlayer –&gt; Item (inventory)\nPlayer –&gt; Door (go_through)",
+    "crumbs": [
+      "02b OOP Programmieraufgaben"
+    ]
+  },
+  {
+    "objectID": "02b_OOP_Programmieraufgaben.html#er-aufgabe",
+    "href": "02b_OOP_Programmieraufgaben.html#er-aufgabe",
+    "title": "OOP: Programmieraufgaben",
+    "section": "ER: Aufgabe",
+    "text": "ER: Aufgabe\n\n\n\nErstellt einen Mini-Escape-Room mit:\n\nmindestens 2 Räumen\nmindestens 2 Türtypen (z. B. normale Tür und Schlüsseltür)\nmindestens 2 Items\neinem Spieler, der\n\nItems aufnehmen kann\nTüren öffnen kann\nRäume wechseln kann\n\n\n\nRegeln:\n\nkeine Polymorphie\nkeine Interfaces\nFokus auf Kapselung und Vererbung\nUML-Skizze vor Programmierung\nSprache frei wählbar (Python, Java, C#, …)",
+    "crumbs": [
+      "02b OOP Programmieraufgaben"
+    ]
+  },
+  {
+    "objectID": "02b_OOP_Programmieraufgaben.html#er-aufgabe---optional",
+    "href": "02b_OOP_Programmieraufgaben.html#er-aufgabe---optional",
+    "title": "OOP: Programmieraufgaben",
+    "section": "ER: Aufgabe - Optional",
+    "text": "ER: Aufgabe - Optional\n\n\nRätsel-Tür: öffnet sich nur, wenn der Spieler eine Frage richtig beantwortet\nContainer-Item: Item, das andere Items enthalten kann (Komposition)\nRaum mit Zustand: Raum kann dunkel sein - Spieler braucht eine Lampe\nInventar-Limit: Spieler kann nur 3 Items tragen - Kapselung und Logik\nLogging: Jede Aktion wird protokolliert - zeigt Objekt-Interaktion",
+    "crumbs": [
+      "02b OOP Programmieraufgaben"
+    ]
+  },
+  {
+    "objectID": "02b_OOP_Programmieraufgaben.html#polymorphie-zoo",
+    "href": "02b_OOP_Programmieraufgaben.html#polymorphie-zoo",
+    "title": "OOP: Programmieraufgaben",
+    "section": "Polymorphie: Zoo",
+    "text": "Polymorphie: Zoo\n\nErstelle ein kleines Zoo-System mit verschiedenen Tierklassen. Jedes Tier kann make_sound() oder feed() ausführen.\nRegel: keine if/switch auf Typen. Alles über Polymorphie.\n\nErweiterungen:\n\nTiere haben unterschiedliche Futterarten\nEin Zoo-Manager ruft Methoden auf allen Tieren auf\nLogging einbauen (z. B. “Tiger fristt 5 kg Fleisch”)\n\n\n\nProgrammiertechniken:\n\noptional Interfaces, abstrakte Klassen\nObjektlisten",
+    "crumbs": [
+      "02b OOP Programmieraufgaben"
+    ]
+  },
+  {
+    "objectID": "02b_OOP_Programmieraufgaben.html#section",
+    "href": "02b_OOP_Programmieraufgaben.html#section",
+    "title": "OOP: Programmieraufgaben",
+    "section": "",
+    "text": "Viel Erfolg!",
+    "crumbs": [
+      "02b OOP Programmieraufgaben"
+    ]
+  },
+  {
+    "objectID": "01_Willkommen_Struktur.html#willkommen-in-lf11a",
+    "href": "01_Willkommen_Struktur.html#willkommen-in-lf11a",
+    "title": "Willkommen in LF11a!",
+    "section": "Willkommen in LF11a!",
+    "text": "Willkommen in LF11a!\nFunktionalität in Anwendungen realisieren\n\nQuelle: https://xkcd.com/378/",
+    "crumbs": [
+      "01 Willkommen zu LF11a - Themen und Zeitplan"
+    ]
+  },
+  {
+    "objectID": "01_Willkommen_Struktur.html#willkommen-in-lf11a-1",
+    "href": "01_Willkommen_Struktur.html#willkommen-in-lf11a-1",
+    "title": "Willkommen in LF11a!",
+    "section": "Willkommen in LF11a!",
+    "text": "Willkommen in LF11a!\nFunktionalität in Anwendungen realisieren\nThemenübersicht\n\nOOP Grundlagen\nOOP Vertiefung und Design\nObjektorientierte Modellierung und Design; UML\nSchnittstellen, APIs, SQL\nQualitätssicherung und Tests",
+    "crumbs": [
+      "01 Willkommen zu LF11a - Themen und Zeitplan"
+    ]
+  },
+  {
+    "objectID": "01_Willkommen_Struktur.html#zeitplan-und-noten",
+    "href": "01_Willkommen_Struktur.html#zeitplan-und-noten",
+    "title": "Willkommen in LF11a!",
+    "section": "Zeitplan und Noten",
+    "text": "Zeitplan und Noten\n\nKlassenarbeit am 21.10.\nKlassenarbeit am 28.10.\nSOLs am 9.10. und 23.10.\nPraxisprojekt vom 28.10. bis 02.12.\nPräsentation des Praxisprojekts am 2. Dezember: Noten für Mitarbeit und fachliche Leistung\nAm 3. Dezember beginnt LF12a",
+    "crumbs": [
+      "01 Willkommen zu LF11a - Themen und Zeitplan"
+    ]
+  },
+  {
+    "objectID": "01_Willkommen_Struktur.html#themen-für-vorträge",
+    "href": "01_Willkommen_Struktur.html#themen-für-vorträge",
+    "title": "Willkommen in LF11a!",
+    "section": "Themen für Vorträge",
+    "text": "Themen für Vorträge\n\nDo., 08.10.: Vererbung, Polymorphie (zu zweit oder zwei Einzelvorträge)\nMo., 19.10.: UML Sequenzdiagramm, Zustandsdiagramm (zu zweit oder zwei Einzelvorträge)\nDi., 20.10.: Architektur- und Designpatterns: Observer, Singleton, Factory, MVC\nMi., 21.10. / Do., 22.10.: (nach Klassenarbeit): REST-APIs; JSON; XML",
+    "crumbs": [
+      "01 Willkommen zu LF11a - Themen und Zeitplan"
+    ]
+  },
+  {
+    "objectID": "01_Willkommen_Struktur.html#section",
+    "href": "01_Willkommen_Struktur.html#section",
+    "title": "Willkommen in LF11a!",
+    "section": "",
+    "text": "©torange.biz CC-BY 4.0\n\n\nViel Erfolg!",
+    "crumbs": [
+      "01 Willkommen zu LF11a - Themen und Zeitplan"
     ]
   },
   {
@@ -273,7 +711,7 @@
     "href": "02a_OOP_Pseudocode.html#polymorphie-zwei-arten",
     "title": "OOP, Klassendiagramm",
     "section": "Polymorphie: Zwei Arten",
-    "text": "Polymorphie: Zwei Arten\n\n\n\n\n\n\n\n\n\n\nArt\nBeschreibung\nBeispiel\n\n\n\n\nÜberladen (Overloading)\nGleicher Methodenname, verschiedene Parameter\nberechne(a) und berechne(a, b)\n\n\nÜberschreiben (Overriding)\nKindklasse überschreibt Methode der Elternklasse\nHund.sprechen() statt Tier.sprechen()",
+    "text": "Polymorphie: Zwei Arten\n\n\n\n\n\n\n\n\n\n\nArt\nBeschreibung\nBeispiel\n\n\n\n\nÜberladen (Overloading)\nGleicher Methodenname, verschiedene Parameter  statische Polymorphie\nberechne(a) und berechne(a, b)\n\n\nÜberschreiben (Overriding)\nKindklasse überschreibt Methode der Elternklasse  dynamische Polymorphie\nHund.sprechen() statt Tier.sprechen()",
     "crumbs": [
       "02a OOP Pseudocode"
     ]
@@ -459,6 +897,56 @@
     ]
   },
   {
+    "objectID": "02a_OOP_Pseudocode.html#konstruktor",
+    "href": "02a_OOP_Pseudocode.html#konstruktor",
+    "title": "OOP, Klassendiagramm",
+    "section": "Konstruktor",
+    "text": "Konstruktor\n\nWas ist die Rolle eines Konstruktors in der OOP?\n\nKonstruktor: Spezielle Methode in der OOP, die zum Erzeugen und Initialisieren von Objekten einer Klasse verwendet wird\nWird automatisch aufgerufen, wenn ein neues Objekt einer Klasse erzeugt wird\nHauptaufgaben:\n\nSpeicher für das Objekt reservieren\nInstanzvariablen des Objekts initialisieren\nReferenz auf das neu erstellte Objekt zurückgeben\n\nName: der gleiche wie die Klasse, in der er definiert ist\nKein Rückgabewert\n\n\n\nLernkarte AP2 2025 Nr. 144",
+    "crumbs": [
+      "02a OOP Pseudocode"
+    ]
+  },
+  {
+    "objectID": "02a_OOP_Pseudocode.html#variablen-deklaration-vs.-initialisierung",
+    "href": "02a_OOP_Pseudocode.html#variablen-deklaration-vs.-initialisierung",
+    "title": "OOP, Klassendiagramm",
+    "section": "Variablen: Deklaration vs. Initialisierung",
+    "text": "Variablen: Deklaration vs. Initialisierung\n\nErklären Sie den Unterschied zwischen der Deklaration und der Initialisierung von Variablen.\nIn der Programmierung sind Deklaration und Initialisierung zwei grundlegende Schritte bei der Verwendung von Variablen.\n\n\nDeklaration\n\nVariable wird durch Angabe ihres Typs und Namens definiert\nCompiler reserviert dadurch Speicherplatz für die Variable\nDer Variable wird zu diesem Zeitpunkt noch kein spezifischer Wert zugewiesen\n\n\nInitialisierung\n\nBei der Initialisierung wird einer zuvor deklarierten Variablen ein erster Wert zugewiesen\n\n\n\n\nLernkarte AP2 2025 Nr. 143",
+    "crumbs": [
+      "02a OOP Pseudocode"
+    ]
+  },
+  {
+    "objectID": "02a_OOP_Pseudocode.html#klassenbibliothek",
+    "href": "02a_OOP_Pseudocode.html#klassenbibliothek",
+    "title": "OOP, Klassendiagramm",
+    "section": "Klassenbibliothek",
+    "text": "Klassenbibliothek\n\nWas versteht man unter einer Klassenbibliothek in der Softwareentwicklung und welchen Vorteil bietet sie bei der Entwicklung von Anwendungen?\n\nKlassenbibliothek: Sammlung von Klassen und Funktionen, die wiederverwendet werden können, um bestimmte Aufgaben zu erleichtern oder um komplexe Funktionalitäten bereitzustellen (ohne dass diese neu geschrieben werden müssen)\nBereitstellung oft als Frameworks oder APIs (Application Programming Interface)\nKönnen Standardoperationen für Aufgaben wie Netzwerk-Kommunikation, Datenzugriff, grafische Benutzeroberflächen etc. bereitstellen\n\n\n\nLernkarte AP2 2025 Nr. 145",
+    "crumbs": [
+      "02a OOP Pseudocode"
+    ]
+  },
+  {
+    "objectID": "02a_OOP_Pseudocode.html#klassenbibliothek-vor--und-nachteile",
+    "href": "02a_OOP_Pseudocode.html#klassenbibliothek-vor--und-nachteile",
+    "title": "OOP, Klassendiagramm",
+    "section": "Klassenbibliothek: Vor- und Nachteile",
+    "text": "Klassenbibliothek: Vor- und Nachteile\n\nIhr Entwicklungsteam hat sich für eine Programmiersprache entschieden. Für diese gibt es eine umfassende Klassenbibliothek, die Sie im Projekt nutzen wollen. Beschreiben Sie Vor- und Nachteile (Prüfung: je 1), die sich durch den Einsatz einer Bibliothek ergeben.\n\n\nVorteile\n\nBestimmte Funktionen / Methoden / Konstruktoren zu benötigten Programmbestandteilen sind vorhanden, können direkt genutzt werden. Dadurch evtl. erheblich geringerer Entwicklungsaufwand.\nBei Änderungen an Bibliotheksbestandteilen muss die Anwendung nicht verändert werden. Bibliotheken können unabhängig vom Hauptprogramm gewartet werden.\n\n\nNachteile\n\nDie zur Verfügung stehenden Bibliotheken müssen erst analysiert und bewertet werden. Außerdem muss eine Einarbeitung in die Bibliotheken erfolgen. Das Projektteam benötigt hierfür zusätzliche Zeit.\nBibliotheken verursachen ggf. einen Overhead im Programmablauf, die Laufzeit der Software wird hierdurch negativ beeinflusst.\n\n\n\n\nAP2 Winter 2021/22 Teil 1 Planen, Aufgabe 1 b)",
+    "crumbs": [
+      "02a OOP Pseudocode"
+    ]
+  },
+  {
+    "objectID": "02a_OOP_Pseudocode.html#erweiterung-bestehender-klassen",
+    "href": "02a_OOP_Pseudocode.html#erweiterung-bestehender-klassen",
+    "title": "OOP, Klassendiagramm",
+    "section": "Erweiterung bestehender Klassen",
+    "text": "Erweiterung bestehender Klassen\n\nSie planen, die Bibliothek um eigene Klassen zu erweitern. Beschreiben Sie drei Aspekte, die Sie in der Dokumentation dieser Erweiterung beachten müssen.\n\nZusammenfassende Beschreibung der Klasse\nAuflistung der Konstruktoren und Methoden\nAuflistung von vererbten Methoden\nBenennung der implementierten Interfaces\nBenennung der Anwendungsvoraussetzungen der Methoden\nBeschreibung aller Methoden im Detail (Datentyp, Bedeutung der Parameter und Rückgabewerte, Wirkung der Methode)\n\n\n\nAP2 Winter 2021/22 Teil 1 Planen, Aufgabe 1 bb)",
+    "crumbs": [
+      "02a OOP Pseudocode"
+    ]
+  },
+  {
     "objectID": "02a_OOP_Pseudocode.html#section",
     "href": "02a_OOP_Pseudocode.html#section",
     "title": "OOP, Klassendiagramm",
@@ -469,262 +957,244 @@
     ]
   },
   {
-    "objectID": "01_Willkommen_Struktur.html#willkommen-in-lf11a",
-    "href": "01_Willkommen_Struktur.html#willkommen-in-lf11a",
-    "title": "Willkommen in LF11a!",
-    "section": "Willkommen in LF11a!",
-    "text": "Willkommen in LF11a!\nFunktionalität in Anwendungen realisieren\n\nQuelle: https://xkcd.com/378/",
-    "crumbs": [
-      "01 Willkommen zu LF11a - Themen und Zeitplan"
-    ]
-  },
-  {
-    "objectID": "01_Willkommen_Struktur.html#willkommen-in-lf11a-1",
-    "href": "01_Willkommen_Struktur.html#willkommen-in-lf11a-1",
-    "title": "Willkommen in LF11a!",
-    "section": "Willkommen in LF11a!",
-    "text": "Willkommen in LF11a!\nFunktionalität in Anwendungen realisieren\nThemenübersicht\n\nOOP Grundlagen\nOOP Vertiefung und Design\nObjektorientierte Modellierung und Design; UML\nSchnittstellen, APIs, SQL\nQualitätssicherung und Tests",
-    "crumbs": [
-      "01 Willkommen zu LF11a - Themen und Zeitplan"
-    ]
-  },
-  {
-    "objectID": "01_Willkommen_Struktur.html#zeitplan-und-noten",
-    "href": "01_Willkommen_Struktur.html#zeitplan-und-noten",
-    "title": "Willkommen in LF11a!",
-    "section": "Zeitplan und Noten",
-    "text": "Zeitplan und Noten\n\nKlassenarbeit am 21.10.\nKlassenarbeit am 28.10.\nSOLs am 9.10. und 23.10.\nPraxisprojekt vom 28.10. bis 02.12.\nPräsentation des Praxisprojekts am 2. Dezember: Noten für Mitarbeit und fachliche Leistung\nAm 3. Dezember beginnt LF12a",
-    "crumbs": [
-      "01 Willkommen zu LF11a - Themen und Zeitplan"
-    ]
-  },
-  {
-    "objectID": "01_Willkommen_Struktur.html#themen-für-vorträge",
-    "href": "01_Willkommen_Struktur.html#themen-für-vorträge",
-    "title": "Willkommen in LF11a!",
-    "section": "Themen für Vorträge",
-    "text": "Themen für Vorträge\n\nDo., 08.10.: Vererbung, Polymorphie (zu zweit oder zwei Einzelvorträge)\nMo., 19.10.: UML Sequenzdiagramm, Zustandsdiagramm (zu zweit oder zwei Einzelvorträge)\nDi., 20.10.: Architektur- und Designpatterns: Observer, Singleton, Factory, MVC\nMi., 21.10. / Do., 22.10.: (nach Klassenarbeit): REST-APIs; JSON; XML",
-    "crumbs": [
-      "01 Willkommen zu LF11a - Themen und Zeitplan"
-    ]
-  },
-  {
-    "objectID": "01_Willkommen_Struktur.html#section",
-    "href": "01_Willkommen_Struktur.html#section",
-    "title": "Willkommen in LF11a!",
+    "objectID": "02c_OOP_UML_mermaid.html",
+    "href": "02c_OOP_UML_mermaid.html",
+    "title": "OOP UML - Mermaid",
     "section": "",
-    "text": "©torange.biz CC-BY 4.0\n\n\nViel Erfolg!",
+    "text": "classDiagram\n \nclass Room {\n- name : String\n- description : String\n- doors : Door\n- items : Item\n+ enter()\n+ show_items()\n+ show_doors()\n+ add_door()\n+ add_item()\n+ take_item()\n}\n \nclass Door {\n- target_room : Room\n- is_open : Boolean\n+ open()\n+ close()\n}\n \nclass KeyDoor {\n- required_key : String\n+ try_open(player : Player)\n}\n \nclass Item {\n- name : String\n- description : String\n+ describe()\n}\n \nclass Player {\n- current_room : Room\n- inventory : Item\n+ enter_current_room()\n+ show_inventory()\n+ has_item()\n+ take_item()\n+ go_through()\n}\n \nDoor &lt;|-- KeyDoor\n \nRoom \"1\" o-- \"0..*\" Door : doors\nRoom \"1\" o-- \"0..*\" Item : items\n \nDoor --&gt; \"1\" Room : target_room\n \nPlayer --&gt; \"1\" Room : current_room\nPlayer o-- \"0..*\" Item : inventory",
     "crumbs": [
-      "01 Willkommen zu LF11a - Themen und Zeitplan"
+      "02c OOP Klassendiagramm Mermaid"
     ]
   },
   {
-    "objectID": "02b_OOP_Programmieraufgaben.html#escape-room-er-ziele",
-    "href": "02b_OOP_Programmieraufgaben.html#escape-room-er-ziele",
-    "title": "OOP: Programmieraufgaben",
-    "section": "Escape Room (ER): Ziele",
-    "text": "Escape Room (ER): Ziele\n\nKlassen definieren\nAttribute kapseln\nMethoden für Zustandsänderungen\nVererbung für Spezialisierungen",
-    "crumbs": [
-      "02b OOP Programmieraufgaben"
-    ]
-  },
-  {
-    "objectID": "02b_OOP_Programmieraufgaben.html#er-kapselung",
-    "href": "02b_OOP_Programmieraufgaben.html#er-kapselung",
-    "title": "OOP: Programmieraufgaben",
-    "section": "ER: Kapselung",
-    "text": "ER: Kapselung\n\n\nTüren haben einen privaten Zustand (_geschlossen)\nItems können versteckte Informationen haben\nRäume verwalten ihre Listen selbst (keine direkte Manipulation von außen)\nVerwenden Sie bewusst Getter / Setter bzw. kontrollierte Methoden",
-    "crumbs": [
-      "02b OOP Programmieraufgaben"
-    ]
-  },
-  {
-    "objectID": "02b_OOP_Programmieraufgaben.html#er-vererbung",
-    "href": "02b_OOP_Programmieraufgaben.html#er-vererbung",
-    "title": "OOP: Programmieraufgaben",
-    "section": "ER: Vererbung",
-    "text": "ER: Vererbung\nTürtypen\n\n\nNormaleTür erbt von Tür\nSchlüsselTür: zusätzlich benötigter Schlüsselname\nRätselTür: zusätzlich Frage und Lösung\n\n\n\nHier werden keine Methoden überschrieben,  sondern nur Verhalten erweitert.",
-    "crumbs": [
-      "02b OOP Programmieraufgaben"
-    ]
-  },
-  {
-    "objectID": "02b_OOP_Programmieraufgaben.html#er-uml---room",
-    "href": "02b_OOP_Programmieraufgaben.html#er-uml---room",
-    "title": "OOP: Programmieraufgaben",
-    "section": "ER: UML - Room",
-    "text": "ER: UML - Room\n\n+-----------------------------+\n|      Room                   |\n+-----------------------------+\n| - name: str                 |\n| - description: str          |\n| - doors: List&lt;Door&gt;         |\n| - items: List&lt;Item&gt;         |\n+-----------------------------+\n| + enter()                   |\n| + show_items()              |\n| + show_doors()              |\n| + add_door(d:Door)          |\n| + add_item(i:Item)          |\n| + take_item(name:str): Item |\n+-----------------------------+\nBeziehung Room - Door\n\n            1    * \nRoom ------------------&gt; Door\n            contains",
-    "crumbs": [
-      "02b OOP Programmieraufgaben"
-    ]
-  },
-  {
-    "objectID": "02b_OOP_Programmieraufgaben.html#er-uml---door",
-    "href": "02b_OOP_Programmieraufgaben.html#er-uml---door",
-    "title": "OOP: Programmieraufgaben",
-    "section": "ER: UML - Door",
-    "text": "ER: UML - Door\n\n+---------------------+\n|      Door           |\n+---------------------+\n| - target_room: Room |\n| - is_open: bool     |\n+---------------------+\n| + open()            |\n| + close()           |\n| + is_open(): bool   |\n+---------------------+\n\n        ^ \n        |\n        | inheritance\n        |\n\n\n\n+--------------------+\n|   NormalDoor       |\n+--------------------+\n|  (no extra fields) |\n+--------------------+\n\n+---------------------------------+\n|     KeyDoor                     |\n+---------------------------------+\n| - required_key: str             |\n+---------------------------------+\n| + try_open(player:Player): bool |\n+---------------------------------+",
-    "crumbs": [
-      "02b OOP Programmieraufgaben"
-    ]
-  },
-  {
-    "objectID": "02b_OOP_Programmieraufgaben.html#er-uml---item",
-    "href": "02b_OOP_Programmieraufgaben.html#er-uml---item",
-    "title": "OOP: Programmieraufgaben",
-    "section": "ER: UML - Item",
-    "text": "ER: UML - Item\n+--------------------+\n|      Item          |\n+--------------------+\n| - name: str        |\n| - description: str |\n+--------------------+\n| + describe()       |\n+--------------------+",
-    "crumbs": [
-      "02b OOP Programmieraufgaben"
-    ]
-  },
-  {
-    "objectID": "02b_OOP_Programmieraufgaben.html#er-uml---player",
-    "href": "02b_OOP_Programmieraufgaben.html#er-uml---player",
-    "title": "OOP: Programmieraufgaben",
-    "section": "ER: UML - Player",
-    "text": "ER: UML - Player\n+----------------------------+\n|     Player                 |\n+----------------------------+\n| - current_room: Room       |\n| - inventory: List&lt;Item&gt;    |\n+----------------------------+\n| + enter_current_room()     |\n| + show_inventory()         |\n| + has_item(name:str): bool |\n| + take_item(name:str)      |\n| + go_through(index:int)    |\n+----------------------------+\n\nPlayer –&gt; Room (current_room)\nPlayer –&gt; Item (inventory)\nPlayer –&gt; Door (go_through)",
-    "crumbs": [
-      "02b OOP Programmieraufgaben"
-    ]
-  },
-  {
-    "objectID": "02b_OOP_Programmieraufgaben.html#er-aufgabe",
-    "href": "02b_OOP_Programmieraufgaben.html#er-aufgabe",
-    "title": "OOP: Programmieraufgaben",
-    "section": "ER: Aufgabe",
-    "text": "ER: Aufgabe\n\n\n\nErstellt einen Mini-Escape-Room mit:\n\nmindestens 2 Räumen\nmindestens 2 Türtypen (z. B. normale Tür und Schlüsseltür)\nmindestens 2 Items\neinem Spieler, der\n\nItems aufnehmen kann\nTüren öffnen kann\nRäume wechseln kann\n\n\n\nRegeln:\n\nkeine Polymorphie\nkeine Interfaces\nFokus auf Kapselung und Vererbung\nUML-Skizze vor Programmierung\nSprache frei wählbar (Python, Java, C#, …)",
-    "crumbs": [
-      "02b OOP Programmieraufgaben"
-    ]
-  },
-  {
-    "objectID": "02b_OOP_Programmieraufgaben.html#er-aufgabe---optional",
-    "href": "02b_OOP_Programmieraufgaben.html#er-aufgabe---optional",
-    "title": "OOP: Programmieraufgaben",
-    "section": "ER: Aufgabe - Optional",
-    "text": "ER: Aufgabe - Optional\n\n\nRätsel-Tür: öffnet sich nur, wenn der Spieler eine Frage richtig beantwortet\nContainer-Item: Item, das andere Items enthalten kann (Komposition)\nRaum mit Zustand: Raum kann dunkel sein - Spieler braucht eine Lampe\nInventar-Limit: Spieler kann nur 3 Items tragen - Kapselung und Logik\nLogging: Jede Aktion wird protokolliert - zeigt Objekt-Interaktion",
-    "crumbs": [
-      "02b OOP Programmieraufgaben"
-    ]
-  },
-  {
-    "objectID": "02b_OOP_Programmieraufgaben.html#polymorphie-zoo",
-    "href": "02b_OOP_Programmieraufgaben.html#polymorphie-zoo",
-    "title": "OOP: Programmieraufgaben",
-    "section": "Polymorphie: Zoo",
-    "text": "Polymorphie: Zoo\n\nErstelle ein kleines Zoo-System mit verschiedenen Tierklassen. Jedes Tier kann make_sound() oder feed() ausführen.\nRegel: keine if/switch auf Typen. Alles über Polymorphie.\n\nErweiterungen:\n\nTiere haben unterschiedliche Futterarten\nEin Zoo-Manager ruft Methoden auf allen Tieren auf\nLogging einbauen (z. B. “Tiger fristt 5 kg Fleisch”)\n\n\n\nProgrammiertechniken:\n\noptional Interfaces, abstrakte Klassen\nObjektlisten",
-    "crumbs": [
-      "02b OOP Programmieraufgaben"
-    ]
-  },
-  {
-    "objectID": "02b_OOP_Programmieraufgaben.html#section",
-    "href": "02b_OOP_Programmieraufgaben.html#section",
-    "title": "OOP: Programmieraufgaben",
+    "objectID": "02c_OOP_UML_mermaid.html#escape-room-uml",
+    "href": "02c_OOP_UML_mermaid.html#escape-room-uml",
+    "title": "OOP UML - Mermaid",
     "section": "",
-    "text": "Viel Erfolg!",
+    "text": "classDiagram\n \nclass Room {\n- name : String\n- description : String\n- doors : Door\n- items : Item\n+ enter()\n+ show_items()\n+ show_doors()\n+ add_door()\n+ add_item()\n+ take_item()\n}\n \nclass Door {\n- target_room : Room\n- is_open : Boolean\n+ open()\n+ close()\n}\n \nclass KeyDoor {\n- required_key : String\n+ try_open(player : Player)\n}\n \nclass Item {\n- name : String\n- description : String\n+ describe()\n}\n \nclass Player {\n- current_room : Room\n- inventory : Item\n+ enter_current_room()\n+ show_inventory()\n+ has_item()\n+ take_item()\n+ go_through()\n}\n \nDoor &lt;|-- KeyDoor\n \nRoom \"1\" o-- \"0..*\" Door : doors\nRoom \"1\" o-- \"0..*\" Item : items\n \nDoor --&gt; \"1\" Room : target_room\n \nPlayer --&gt; \"1\" Room : current_room\nPlayer o-- \"0..*\" Item : inventory",
     "crumbs": [
-      "02b OOP Programmieraufgaben"
+      "02c OOP Klassendiagramm Mermaid"
     ]
   },
   {
-    "objectID": "03_Software-Architektur.html#modularität",
-    "href": "03_Software-Architektur.html#modularität",
-    "title": "Software-Architektur",
-    "section": "Modularität",
-    "text": "Modularität"
+    "objectID": "02c_OOP_UML_mermaid.html#escape-room-mermaid-code",
+    "href": "02c_OOP_UML_mermaid.html#escape-room-mermaid-code",
+    "title": "OOP UML - Mermaid",
+    "section": "Escape Room: Mermaid-Code",
+    "text": "Escape Room: Mermaid-Code\nclassDiagram\n \nclass Room {\n- name : String\n- description : String\n- doors : Door\n- items : Item\n+ enter()\n+ show_items()\n+ show_doors()\n+ add_door()\n+ add_item()\n+ take_item()\n}\n \nclass Door {\n- target_room : Room\n- is_open : Boolean\n+ open()\n+ close()\n}\n \nclass KeyDoor {\n- required_key : String\n+ try_open(player : Player)\n}\n \nclass Item {\n- name : String\n- description : String\n+ describe()\n}\n \nclass Player {\n- current_room : Room\n- inventory : Item\n+ enter_current_room()\n+ show_inventory()\n+ has_item()\n+ take_item()\n+ go_through()\n}\n \nDoor &lt;|-- KeyDoor\n \nRoom \"1\" o-- \"0..*\" Door : doors\nRoom \"1\" o-- \"0..*\" Item : items\n \nDoor --&gt; \"1\" Room : target_room\n \nPlayer --&gt; \"1\" Room : current_room\nPlayer o-- \"0..*\" Item : inventory",
+    "crumbs": [
+      "02c OOP Klassendiagramm Mermaid"
+    ]
   },
   {
-    "objectID": "03_Software-Architektur.html#schichten",
-    "href": "03_Software-Architektur.html#schichten",
-    "title": "Software-Architektur",
-    "section": "Schichten",
-    "text": "Schichten"
+    "objectID": "03b_Design-Patterns.html#design-patterns-übersicht",
+    "href": "03b_Design-Patterns.html#design-patterns-übersicht",
+    "title": "Design Patterns",
+    "section": "Design Patterns: Übersicht",
+    "text": "Design Patterns: Übersicht\n\nErzeugungsmuster: Creational Patterns\n\nBeispiele: Factory Pattern, Singleton\n\nStrukturmuster: Structual Patterns\n\nBeispiele: Adapter, Decorator, Composite\n\nVerhaltensmuster: Behavioral Patterns\n\nBeispiele: Observer, Strategy\n\n\n\nLernkarte AP2 2025 Nr. 155"
   },
   {
-    "objectID": "03_Software-Architektur.html#designpatterns-übersicht",
-    "href": "03_Software-Architektur.html#designpatterns-übersicht",
-    "title": "Software-Architektur",
-    "section": "Designpatterns: Übersicht",
-    "text": "Designpatterns: Übersicht\n\nErzeugungsmuster: Creational Patterns\n\nBeispiele: Factory Pattern, Singleton\n\nStrukturmuster: Structual Patterns\n\nBeispiele: Adapter, Decorator, Composite\n\nVerhaltensmuster: Behavioral Patterns\n\nBeispiele: Observer, Strategy\n\n\n\nLernkarte AP2 2025 Nr. 155"
-  },
-  {
-    "objectID": "03_Software-Architektur.html#erzeugungsmuster---creational-patterns",
-    "href": "03_Software-Architektur.html#erzeugungsmuster---creational-patterns",
-    "title": "Software-Architektur",
+    "objectID": "03b_Design-Patterns.html#erzeugungsmuster---creational-patterns",
+    "href": "03b_Design-Patterns.html#erzeugungsmuster---creational-patterns",
+    "title": "Design Patterns",
     "section": "Erzeugungsmuster - Creational Patterns",
     "text": "Erzeugungsmuster - Creational Patterns\n\nHelfen bei der Erzeugung von Objekten\nSorgen für flexible, kontrollierte und wiederverwendbare Objektinstanziierung\nBeispiele: Factory Pattern, Singleton\n\n\nLernkarte AP2 2025 Nr. 155"
   },
   {
-    "objectID": "03_Software-Architektur.html#strukturmuster---structural-patterns",
-    "href": "03_Software-Architektur.html#strukturmuster---structural-patterns",
-    "title": "Software-Architektur",
+    "objectID": "03b_Design-Patterns.html#strukturmuster---structural-patterns",
+    "href": "03b_Design-Patterns.html#strukturmuster---structural-patterns",
+    "title": "Design Patterns",
     "section": "Strukturmuster - Structural Patterns",
     "text": "Strukturmuster - Structural Patterns\n\nBeschreiben, wie Klassen und Objekte zusammenarbeiten und sich zu größeren Strukturen verbinden\nHelfen, komplexe Strukturen übersichtlich zu gestalten\nBeispiele: Adapter, Decorator, Composite\n\n\nLernkarte AP2 2025 Nr. 155"
   },
   {
-    "objectID": "03_Software-Architektur.html#verhaltensmuster---behavioral-patterns",
-    "href": "03_Software-Architektur.html#verhaltensmuster---behavioral-patterns",
-    "title": "Software-Architektur",
+    "objectID": "03b_Design-Patterns.html#verhaltensmuster---behavioral-patterns",
+    "href": "03b_Design-Patterns.html#verhaltensmuster---behavioral-patterns",
+    "title": "Design Patterns",
     "section": "Verhaltensmuster - Behavioral Patterns",
     "text": "Verhaltensmuster - Behavioral Patterns\n\nDefinieren, wie Objekte miteinander kommunizieren und interagieren, um Aufgaben zu erfüllen\nVerbessern die Interaktion und Verantwortungsverteilung\nBeispiele: Observer, Strategy\n\n\nLernkarte AP2 2025 Nr. 155"
   },
   {
-    "objectID": "03_Software-Architektur.html#designpatterns-singleton",
-    "href": "03_Software-Architektur.html#designpatterns-singleton",
-    "title": "Software-Architektur",
-    "section": "Designpatterns: Singleton",
-    "text": "Designpatterns: Singleton\n\nErklären Sie die Aufgaben des Singleton Pattern.\n\nDas Singleton-Entwurfsmuster ist ein Software-Entwurfsmuster, das die Instanziierung eines Klasse auf genau ein Objekt beschränkt.\nEs wird verwendet, um sicherzustellen, dass eine Klasse nur eine einzige Instanz hat, und stellt einen globalen Zugangspunkt zu diesem Objekt bereit.\nHauptziel: kontrollierten Mechanismus zur Verfügung stellen, um auf begrenzte Ressourcen zuzugreifen\nnützlich, wenn genau eine Instanz eines Objekts benötigt wird, um Aktionen zu koordinieren\n\n\n\nLernkarte AP2 2025 Nr. 160"
+    "objectID": "03b_Design-Patterns.html#design-patterns-singleton",
+    "href": "03b_Design-Patterns.html#design-patterns-singleton",
+    "title": "Design Patterns",
+    "section": "Design Patterns: Singleton",
+    "text": "Design Patterns: Singleton\n\nErklären Sie die Aufgaben des Singleton Pattern.\n\nDas Singleton-Entwurfsmuster ist ein Software-Entwurfsmuster, das die Instanziierung einer Klasse auf genau ein Objekt beschränkt.\nEs wird verwendet, um sicherzustellen, dass eine Klasse nur eine einzige Instanz hat, und stellt einen globalen Zugangspunkt zu diesem Objekt bereit.\nHauptziel: kontrollierten Mechanismus zur Verfügung stellen, um auf begrenzte Ressourcen zuzugreifen\nnützlich, wenn genau eine Instanz eines Objekts benötigt wird, um Aktionen zu koordinieren\n\n\n\nLernkarte AP2 2025 Nr. 160"
   },
   {
-    "objectID": "03_Software-Architektur.html#designpatterns-observer",
-    "href": "03_Software-Architektur.html#designpatterns-observer",
-    "title": "Software-Architektur",
-    "section": "Designpatterns: Observer",
-    "text": "Designpatterns: Observer\n\nWas ist das Observer Muster?\n\nEntwurfsmuster aus dem Bereich der Softwareentwicklung\nzählt zu den Verhaltensmustern (Behavioral Patterns)\nermöglicht Einwegabhängigkeit zwischen Objekten:\n\nwenn ein Objekt seinen Zustand ändert, werden alle abhängigen Objekte benachrichtigt und automatisch aktualisiert\n\nbesonders nützlich in Situationen:\n\nin denen der Zustand eines Objekts von vielen anderen Objekten abhängig ist\nund eine enge Kopplung zwischen diesen Objekten vermieden werden soll\n\n\n\n\nLernkarte AP2 2025 Nr. 156"
+    "objectID": "03b_Design-Patterns.html#design-patterns-observer",
+    "href": "03b_Design-Patterns.html#design-patterns-observer",
+    "title": "Design Patterns",
+    "section": "Design Patterns: Observer",
+    "text": "Design Patterns: Observer\n\nWas ist das Observer Muster?\n\nEntwurfsmuster aus dem Bereich der Softwareentwicklung\nzählt zu den Verhaltensmustern (Behavioral Patterns)\nermöglicht Einwegabhängigkeit zwischen Objekten:\n\nwenn ein Objekt seinen Zustand ändert, werden alle abhängigen Objekte benachrichtigt und automatisch aktualisiert\n\nbesonders nützlich in Situationen:\n\nin denen der Zustand eines Objekts von vielen anderen Objekten abhängig ist\nund eine enge Kopplung zwischen diesen Objekten vermieden werden soll\n\n\n\n\nLernkarte AP2 2025 Nr. 156"
   },
   {
-    "objectID": "03_Software-Architektur.html#designpatterns-observer-1",
-    "href": "03_Software-Architektur.html#designpatterns-observer-1",
-    "title": "Software-Architektur",
-    "section": "Designpatterns: Observer",
-    "text": "Designpatterns: Observer\n\nWie funktioniert das Observer Muster?\nDas Observer Muster funktioniert durch eine Einweg-Kommunikation von einem Subjekt zu mehreren anderen Objekten (Observer).\n\nRegistrierung: Die Observer melden sich beim Subjekt für Updates an. Das Subjekt hält eine Liste aller seiner Observer.\nÄnderung: Wenn das Subjekt seinen Zustand ändert, informiert es alle registrierten Observer über die Änderung.\nBenachrichtigung: Das Subjekt benachrichtigt die Observer über die Zustandsänderung, indem es eine Methode (häufig update genannt) auf den Observern aufruft.\nAbmeldung: Observer können sich jederzeit vom Subjekt abmelden, wenn sie keine weiteren Benachrichtigungen erhalten möchten.\n\n\n\nLernkarte AP2 2025 Nr. 157"
+    "objectID": "03b_Design-Patterns.html#design-patterns-observer-1",
+    "href": "03b_Design-Patterns.html#design-patterns-observer-1",
+    "title": "Design Patterns",
+    "section": "Design Patterns: Observer",
+    "text": "Design Patterns: Observer\n\nWie funktioniert das Observer Muster?\nDas Observer Muster funktioniert durch eine Einweg-Kommunikation von einem Subjekt zu mehreren anderen Objekten (Observer).\n\nRegistrierung: Die Observer melden sich beim Subjekt für Updates an. Das Subjekt hält eine Liste aller seiner Observer.\nÄnderung: Wenn das Subjekt seinen Zustand ändert, informiert es alle registrierten Observer über die Änderung.\nBenachrichtigung: Das Subjekt benachrichtigt die Observer über die Zustandsänderung, indem es eine Methode (häufig update genannt) auf den Observern aufruft.\nAbmeldung: Observer können sich jederzeit vom Subjekt abmelden, wenn sie keine weiteren Benachrichtigungen erhalten möchten.\n\n\n\nLernkarte AP2 2025 Nr. 157"
   },
   {
-    "objectID": "03_Software-Architektur.html#designpatterns-factory",
-    "href": "03_Software-Architektur.html#designpatterns-factory",
-    "title": "Software-Architektur",
-    "section": "Designpatterns: Factory",
-    "text": "Designpatterns: Factory\n\nWas ist das Factory Pattern und welchen Vorteil bietet es bei der Objekterzeugung?\n\nDas Factory Pattern ist ein Entwurfsmuster, bei dem die Erzeugung von Objekten an eine eigene Methode oder Klasse ausgelagert wird.\nDadurch wird entschieden, welches konkrete Objekt erzeugt wird, ohne direkt von bestimmten Klassen abhängig zu sein.\nVorteile:\n\nEntkopplung von Erzeugung und Verwendung\nErleichtert das Hinzufügen neuer Objekttypen\nMacht Code übersichtlicher und besser wartbar\n\n\n\n\nLernkarte AP2 2025 Nr. 161"
+    "objectID": "03b_Design-Patterns.html#design-patterns-factory",
+    "href": "03b_Design-Patterns.html#design-patterns-factory",
+    "title": "Design Patterns",
+    "section": "Design Patterns: Factory",
+    "text": "Design Patterns: Factory\n\nWas ist das Factory Pattern und welchen Vorteil bietet es bei der Objekterzeugung?\n\nDas Factory Pattern ist ein Entwurfsmuster, bei dem die Erzeugung von Objekten an eine eigene Methode oder Klasse ausgelagert wird.\nDadurch wird entschieden, welches konkrete Objekt erzeugt wird, ohne direkt von bestimmten Klassen abhängig zu sein.\nVorteile:\n\nEntkopplung von Erzeugung und Verwendung\nErleichtert das Hinzufügen neuer Objekttypen\nMacht Code übersichtlicher und besser wartbar\n\n\n\n\nLernkarte AP2 2025 Nr. 161"
   },
   {
-    "objectID": "03_Software-Architektur.html#designpatterns-mvc",
-    "href": "03_Software-Architektur.html#designpatterns-mvc",
-    "title": "Software-Architektur",
-    "section": "Designpatterns: MVC",
-    "text": "Designpatterns: MVC\n\nWelche Komponenten umfasst das MVC-Muster und wie interagieren sie miteinander?\n\nEntwurfsmuster; oft verwendet, um Struktur von Softwareanwendungen zu organisieren\nKomponenten:\n\nModel: Verantwortlich für Daten und Geschäftslogik\nView: Präsentiert Daten an den Benutzer\nController: Verarbeitet die Benutzereingaben und aktualisiert das Model\n\nInteraktion funktioniert wie folgt:\n\nBenutzer agiert mit der View.\nController erhält Benutzereingaben von View, führt Aktionen im Model aus.\nModel benachrichtigt View über Änderungen.\nView aktualisiert die Benutzeroberfläche.\n\n\n\n\nLernkarte AP2 2025 Nr. 158"
+    "objectID": "03b_Design-Patterns.html#design-patterns-strategy",
+    "href": "03b_Design-Patterns.html#design-patterns-strategy",
+    "title": "Design Patterns",
+    "section": "Design Patterns: Strategy",
+    "text": "Design Patterns: Strategy\n\nErmöglicht die Auswahl eines Algorithmus zur Laufzeit\nDazu wird die Implementierung von Algorithmen in separate Klassen ausgelagert\nErleichtert die Austauschbarkeit und Erweiterbarkeit von Algorithmen, ohne die Benutzerklasse ändern zu müssen\n\n\nAP2 Sommer 2025 Teil 1 Planen"
   },
   {
-    "objectID": "03_Software-Architektur.html#schichten-architektur",
-    "href": "03_Software-Architektur.html#schichten-architektur",
-    "title": "Software-Architektur",
+    "objectID": "03b_Design-Patterns.html#design-patterns-mvc",
+    "href": "03b_Design-Patterns.html#design-patterns-mvc",
+    "title": "Design Patterns",
+    "section": "Design Patterns: MVC",
+    "text": "Design Patterns: MVC\n\nWelche Komponenten umfasst das MVC-Muster und wie interagieren sie miteinander?\n\nEntwurfsmuster; oft verwendet, um Struktur von Softwareanwendungen zu organisieren\nKomponenten:\n\nModel: Verantwortlich für Daten und Geschäftslogik\nView: Präsentiert Daten an den Benutzer\nController: Verarbeitet die Benutzereingaben und aktualisiert das Model\n\nInteraktion funktioniert wie folgt:\n\nBenutzer agiert mit der View.\nController erhält Benutzereingaben von View, führt Aktionen im Model aus.\nModel benachrichtigt View über Änderungen.\nView aktualisiert die Benutzeroberfläche.\n\n\n\n\nLernkarte AP2 2025 Nr. 158"
+  },
+  {
+    "objectID": "03b_Design-Patterns.html#mvc-data-binding",
+    "href": "03b_Design-Patterns.html#mvc-data-binding",
+    "title": "Design Patterns",
+    "section": "MVC: Data Binding",
+    "text": "MVC: Data Binding\n\nZur Aktualisierung des Views soll Datenbindung (Data Binding) eingesetzt werden. Erläutern Sie den Begriff Datenbindung (Data Binding).\n\nDatenbindung (Data Binding) ist ein Prozess, der eine Verbindung zwischen Daten (Modell) und Benutzeroberfläche (View) herstellt\nErmöglicht, dass Änderungen an den Daten automatisch in der Benutzeroberfläche reflektiert werden und umgekehrt\nZwei Arten von Datenbindung:\n\nEinweg-Datenbindung (One-Way Data Binding): Daten fließen vom Model zum View\nZweiweg-Datenbindung (Two-Way Data Binding): Daten fließen in beide Richtungen, sodass Änderungen im View auch dsa Model aktualisieren\n\n\n\n\nLernkarte AP2 2025 Nr. 159"
+  },
+  {
+    "objectID": "03b_Design-Patterns.html#schichten-architektur",
+    "href": "03b_Design-Patterns.html#schichten-architektur",
+    "title": "Design Patterns",
     "section": "3-Schichten-Architektur",
     "text": "3-Schichten-Architektur\n\nWelche Vorteile bietet die Verwendung einer 3-Schichten-Architektur bei der Entwicklung?\n\nErmöglicht klare Trennung zwischen Präsentationsschicht, Anwendungslogik und Datenzugriffsschicht\nDadurch wird Code besser strukturiert, Wartungsaufgaben werden vereinfacht.\nSchichtung ermöglicht eine bessere Skalierbarkeit, da jede Schicht unabhängig von den anderen skaliert werden kann.\nSchichtung erleichtert die Wiederverwendbarkeit von Komponenten, da jede Schicht unabhängig von den anderen entwickelt und leichter in anderen Projekten wiederverwendet werden kann.\n\n\n\nLernkarte AP2 2025 Nr. 149"
   },
   {
-    "objectID": "03_Software-Architektur.html#section",
-    "href": "03_Software-Architektur.html#section",
-    "title": "Software-Architektur",
+    "objectID": "03b_Design-Patterns.html#schichten-prüfungsaufgabe",
+    "href": "03b_Design-Patterns.html#schichten-prüfungsaufgabe",
+    "title": "Design Patterns",
+    "section": "3 Schichten: Prüfungsaufgabe",
+    "text": "3 Schichten: Prüfungsaufgabe\n\nBeschreiben Sie, wie die 3-Schichten-Architektur bei einer Webanwendung typischerweise aussieht und wie die entsprechenden Komponenten zusammenarbeiten.\n\nAP2 Winter 2022/23 Teil 1 Planen 2.a)"
+  },
+  {
+    "objectID": "03b_Design-Patterns.html#schichten-lösung",
+    "href": "03b_Design-Patterns.html#schichten-lösung",
+    "title": "Design Patterns",
+    "section": "3 Schichten: Lösung",
+    "text": "3 Schichten: Lösung\n\n\n\n\nAP2 Winter 2022/23 Teil 1 Planen 2.a)"
+  },
+  {
+    "objectID": "03b_Design-Patterns.html#modularisierung-konzept",
+    "href": "03b_Design-Patterns.html#modularisierung-konzept",
+    "title": "Design Patterns",
+    "section": "Modularisierung: Konzept",
+    "text": "Modularisierung: Konzept\n\nErklären Sie das Konzept der Modularisierung in der Softwareentwicklung.\n\nModularisierung: Konzept in der Softwareentwicklung: umfangreichen Code in kleinere, unabhängige, verwaltbare Einheiten / Module zerlegen\nJedes Modul fokussiert sich auf eine spezifische Funktion / einen bestimmten Aspekt des Gesamtprojekts\nZiele:\n\nKomplexität des Codes reduzieren\nCode einfacher verwalten, warten, testen und verstehen\n\nModule können unabhängig von einander entwickelt, getestet und überarbeitet werden\nErhöht Effizienz und Produktivität des Entwicklungsprozesses\n\n\n\nLernkarte AP2 2025 Nr. 147"
+  },
+  {
+    "objectID": "03b_Design-Patterns.html#section",
+    "href": "03b_Design-Patterns.html#section",
+    "title": "Design Patterns",
     "section": "",
     "text": "©torange.biz CC-BY 4.0\n\n\nViel Erfolg!"
   },
   {
-    "objectID": "05_Schnittstellen_APIs.html#schnittstellen-apis",
-    "href": "05_Schnittstellen_APIs.html#schnittstellen-apis",
+    "objectID": "05_Schnittstellen_APIs.html#rest-apis-grundlagen",
+    "href": "05_Schnittstellen_APIs.html#rest-apis-grundlagen",
     "title": "Schnittstellen, APIs",
-    "section": "Schnittstellen, APIs",
-    "text": "Schnittstellen, APIs"
+    "section": "REST APIs: Grundlagen",
+    "text": "REST APIs: Grundlagen\n\nGrundlagen siehe LF7: REST\n\nREST = Representational State Transfer\n\nAPI = Application Programming Interface\n\nREST-API: Set von Regeln und Konventionen für den Aufbau von Webdiensten"
+  },
+  {
+    "objectID": "05_Schnittstellen_APIs.html#rest-apis-6-prinzipien",
+    "href": "05_Schnittstellen_APIs.html#rest-apis-6-prinzipien",
+    "title": "Schnittstellen, APIs",
+    "section": "REST APIs: 6 Prinzipien",
+    "text": "REST APIs: 6 Prinzipien\n\n\n\n\n\n\n\n\nPrinzip\nBedeutung\n\n\n\n\nClient-Server\nKlare Trennung von Client und Server\n\n\nStateless (Zustandslos)\nJede Anfrage enthält alle nötige Information, Server speichert keinen Client-Zustand\n\n\nCacheable\nAntworten können zwischengespeichert werden\n\n\nUniform Interface\nEinheitliche Schnittstelle (URLs, HTTP-Methoden)\n\n\nLayered System\nMehrschichtige Architektur möglich (z.B. Load Balancer dazwischen)\n\n\nCode on Demand (optional)\nServer kann ausführbaren Code an Client senden\n\n\n\n\n\nWelche Lernkarte?"
+  },
+  {
+    "objectID": "05_Schnittstellen_APIs.html#rest-http-methoden",
+    "href": "05_Schnittstellen_APIs.html#rest-http-methoden",
+    "title": "Schnittstellen, APIs",
+    "section": "REST: HTTP-Methoden",
+    "text": "REST: HTTP-Methoden\nCRUD = Create - Read - Update - Delete\n\n\n\n\n\n\n\n\n\n\nHTTP-Methode\nCRUD-Operation\nBeschreibung\nBeispiel\n\n\n\n\nGET\nRead\nRessource abrufen\nGET /api/kunden/42\n\n\nPOST\nCreate\nNeue Ressource erstellen\nPOST /api/kunden\n\n\nPUT\nUpdate\nRessource vollständig ersetzen\nPUT /api/kunden/42\n\n\nPATCH\nUpdate (teilweise)\nRessource teilweise ändern\nPATCH /api/kunden/42\n\n\nDELETE\nDelete\nRessource löschen\nDELETE /api/kunden/42"
+  },
+  {
+    "objectID": "05_Schnittstellen_APIs.html#rest-apis-absichern",
+    "href": "05_Schnittstellen_APIs.html#rest-apis-absichern",
+    "title": "Schnittstellen, APIs",
+    "section": "REST APIs absichern",
+    "text": "REST APIs absichern\n\n\nHTTPS verwenden\nJWT / Bearer Token\nPasswort-Hashing (bcrypt / argon2)\nRollen / Rechte vergeben\nEingabevalidierung (z. B. Pydantic)\nParametrisierte SQL-Abfragen bzw. ORM\nRate Limiting\nLogging"
+  },
+  {
+    "objectID": "05_Schnittstellen_APIs.html#rest-apis-orm",
+    "href": "05_Schnittstellen_APIs.html#rest-apis-orm",
+    "title": "Schnittstellen, APIs",
+    "section": "REST APIs: ORM",
+    "text": "REST APIs: ORM\n\n\nORM = Object Relational Mapping\nGrundidee: (Python-)Objekte statt selbst SQL-Statements zu schreiben\nORM übersetzt zwischen (Python-)Klassen und Datenbanktabellen\nORM erzeugt intern SQL\nORM verwendet (fast) immer parametrisierte Abfragen\nORM verhindert SQL Injections\nBeispiele für Python-ORMs: SQLAlchemy, SQLModel (von FastAPI-Erfinder Sebastián Ramírez), Django ORM"
+  },
+  {
+    "objectID": "05_Schnittstellen_APIs.html#json-datentypen",
+    "href": "05_Schnittstellen_APIs.html#json-datentypen",
+    "title": "Schnittstellen, APIs",
+    "section": "JSON: Datentypen",
+    "text": "JSON: Datentypen\n\n6 Datentypen in JSON:\n\n\n\nDatentyp\nBeispiel\n\n\n\n\nString\n\"Hallo Welt\"\n\n\nNumber\n42 oder 3.14\n\n\nBoolean\ntrue oder false\n\n\nNull\nnull\n\n\nObject\n{\"key\": \"value\" }\n\n\nArray\n[1, 2, 3]\n\n\n\nDetails siehe RFC 8259\n\n\nQuelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/json-formatter-validator.html"
+  },
+  {
+    "objectID": "05_Schnittstellen_APIs.html#json-anwendung",
+    "href": "05_Schnittstellen_APIs.html#json-anwendung",
+    "title": "Schnittstellen, APIs",
+    "section": "JSON: Anwendung",
+    "text": "JSON: Anwendung\n\n\nREST-APIs: Standardformat für Datenaustausch im Web\nKonfigurationsdateien: package.json, tsconfig.json\nNoSQL-Datenbanken: MongoDB, CouchDB speichern JSON\nLogs: Strukturierte Log-Ausgabe\nFrontend-Backend-Kommunikation: Fetch, AJAX, WebSockets\nJWT Tokens: Payload ist Base64-codiertes JSON\n\n\n\nQuelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/json-formatter-validator.html"
+  },
+  {
+    "objectID": "05_Schnittstellen_APIs.html#json-vs.-javascript-objekt",
+    "href": "05_Schnittstellen_APIs.html#json-vs.-javascript-objekt",
+    "title": "Schnittstellen, APIs",
+    "section": "JSON vs. JavaScript-Objekt",
+    "text": "JSON vs. JavaScript-Objekt\n\n\n\n\n\n\n\n\n\nKriterium\nJSON\nJavaScript-Objekt (JS)\n\n\n\n\nKeys: doppelte Anführungszeichen\nerforderlich\nnicht erforderlich\n\n\nTrailing Comma\nverboten\nerlaubt\n\n\nKommentare\nverboten\nerlaubt\n\n\nWerte\nnur 6 Typen\nauch undefined, NaN, Funktionen\n\n\nPrototyp\nkeiner\nEigenschaften und Methoden können von Prototyp geerbt werden\n\n\n\n\n\nQuelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/json-formatter-validator.html"
+  },
+  {
+    "objectID": "05_Schnittstellen_APIs.html#json-häufige-fehler",
+    "href": "05_Schnittstellen_APIs.html#json-häufige-fehler",
+    "title": "Schnittstellen, APIs",
+    "section": "JSON: Häufige Fehler",
+    "text": "JSON: Häufige Fehler\n\n\n\n\nFehler\nBeispiel\n\n\n\n\nTrailing Comma\n{\"a\":1,}\n\n\nSingle Quotes\n{'a':'b'}\n\n\nUnquoted Keys\n{a:1}\n\n\nKommentare\n// comment\n\n\nUndefined\nundefined\n\n\nNaN / Infinity\nNaN\n\n\n\n\n\nQuelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/json-formatter-validator.html"
+  },
+  {
+    "objectID": "05_Schnittstellen_APIs.html#json-verschachtelung",
+    "href": "05_Schnittstellen_APIs.html#json-verschachtelung",
+    "title": "Schnittstellen, APIs",
+    "section": "JSON: Verschachtelung",
+    "text": "JSON: Verschachtelung\n\nJSON kann beliebig verschachtelt werden:\n\n\n\nVerschachtelungs-Typ\nBeispiel\n\n\n\n\nObjekte in Objekten\n{\"user\": {\"name\": \"Max\"}}\n\n\nArrays in Objekten\n{\"tags\": [\"a\", \"b\"]}\n\n\nArrays von Objekten\n[{\"id\": 1}, {\"id\": 2}]\n\n\nBeliebig tief\ntheoretisch unbegrenzt\n\n\n\n\n\nQuelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/json-formatter-validator.html"
+  },
+  {
+    "objectID": "05_Schnittstellen_APIs.html#json-best-practices",
+    "href": "05_Schnittstellen_APIs.html#json-best-practices",
+    "title": "Schnittstellen, APIs",
+    "section": "JSON: Best Practices",
+    "text": "JSON: Best Practices\n\nSo schreibst Du gutes JSON:\n\nDoppelte Anführungszeichen für Strings und Keys\n2 oder 4 Spaces für Einrückung\nKeine Kommentare (nicht erlaubt in JSON)\nUTF-8 als Standard-Encoding\nKonsistente Benennung: camelCase oder snake_case\nkeine trailing commas\n\n\n\nQuelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/json-formatter-validator.html"
+  },
+  {
+    "objectID": "05_Schnittstellen_APIs.html#xml-grundbausteine",
+    "href": "05_Schnittstellen_APIs.html#xml-grundbausteine",
+    "title": "Schnittstellen, APIs",
+    "section": "XML: Grundbausteine",
+    "text": "XML: Grundbausteine\n\n\n\n\nBaustein\nBeispiel\n\n\n\n\nProzessanweisung\n&lt;?xml version=\"1.0\"?&gt;\n\n\nElemente\n&lt;name&gt;Wert&lt;/name&gt;\n\n\nAttribute\n&lt;item id=\"1\"&gt;\n\n\nText\nInhalt zwischen Tags\n\n\nKommentare\n&lt;!-- ... --&gt;\n\n\nCDATA\n&lt;![CDATA[...]]&gt;\n\n\n\n\nCDATA = Character Data, speichert Text ungefiltert,  d. h. ohne dass XML-Sonderzeichen interpretiert werden\n\n\n\nQuelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/xml-formatter-validator.html"
+  },
+  {
+    "objectID": "05_Schnittstellen_APIs.html#xml-häufige-fehler",
+    "href": "05_Schnittstellen_APIs.html#xml-häufige-fehler",
+    "title": "Schnittstellen, APIs",
+    "section": "XML: Häufige Fehler",
+    "text": "XML: Häufige Fehler\n\n\n\n\n\n\n\n\nFehler\nBeispiel\n\n\n\n\nUnclosed Tags\n&lt;name&gt;Max\n\n\nWrong Nesting\n&lt;a&gt;&lt;b&gt;&lt;/a&gt;&lt;/b&gt;\n\n\nCase Sensitivity\n&lt;Name&gt;&lt;/name&gt;\n\n\nSpecial Chars\n& unescaped\n\n\nMultiple Roots\nZwei Root-Elemente  Beispiel: &lt;kunde&gt; ... &lt;/kunde&gt;  &lt;bestellung&gt; ... &lt;/bestellung&gt;\n\n\nUnquoted Attrs\n&lt;item id=1&gt;\n\n\n\n\n\nQuelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/xml-formatter-validator.html"
+  },
+  {
+    "objectID": "05_Schnittstellen_APIs.html#xml-vs.-json",
+    "href": "05_Schnittstellen_APIs.html#xml-vs.-json",
+    "title": "Schnittstellen, APIs",
+    "section": "XML vs. JSON",
+    "text": "XML vs. JSON\n\n\nXML\n\nXML bevorzugen bei: SOAP, Dokumenten-Formaten, XSLT, Namespaces, Attributen, Schemas (XSD)\nXML-Vorteile: Attribute, Kommentare, Mixed Content, Namespaces, XPath / XSLT\noft besser für Enterprise / SOAP\n\n\nJSON\n\nJSON bevorzugen bei: REST-APIs, Konfigurationen, moderne Web-Apps, NoSQL-Datenbanken\nJSON-Vorteile: kompakter, schneller zu parsen, native Datentypen\noft besser geeignet für neue Projekte\n\n\n\nQuelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/xml-formatter-validator.html"
   },
   {
     "objectID": "05_Schnittstellen_APIs.html#section",
@@ -745,7 +1215,7 @@
     "href": "07_Frameworks_Laufzeitumgebungen.html#laufzeitumgebungen",
     "title": "Frameworks, Laufzeitumgebungen",
     "section": "Laufzeitumgebungen",
-    "text": "Laufzeitumgebungen"
+    "text": "Laufzeitumgebungen\n\nAP2 Winter 2021/2022 Teil 1 Planen: Interpreter Vor- und Nachteile"
   },
   {
     "objectID": "07_Frameworks_Laufzeitumgebungen.html#section",

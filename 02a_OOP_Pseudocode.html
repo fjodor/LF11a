@@ -1593,13 +1593,13 @@ display:block!important;
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">Überladen (<em>Overloading</em>)</td>
-<td style="text-align: left;">Gleicher Methodenname, verschiedene Parameter</td>
+<td style="text-align: left;"><strong>Überladen</strong> <em>(Overloading)</em></td>
+<td style="text-align: left;">Gleicher Methodenname, verschiedene Parameter <br> <strong>statische Polymorphie</strong></td>
 <td style="text-align: left;"><code>berechne(a)</code> und <code>berechne(a, b)</code></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Überschreiben (<em>Overriding</em>)</td>
-<td style="text-align: left;">Kindklasse überschreibt Methode der Elternklasse</td>
+<td style="text-align: left;"><strong>Überschreiben</strong> <em>(Overriding)</em></td>
+<td style="text-align: left;">Kindklasse überschreibt Methode der Elternklasse <br> <strong>dynamische Polymorphie</strong></td>
 <td style="text-align: left;"><code>Hund.sprechen()</code> statt <code>Tier.sprechen()</code></td>
 </tr>
 </tbody>
@@ -2063,6 +2063,155 @@ Door</li>
 | + drucke(): void  |       | + drucke(): void  |
 +-------------------+       +-------------------+</code></pre>
 </div>
+</section>
+<section id="konstruktor" class="slide level2">
+<h2>Konstruktor</h2>
+<div style="font-size: 1.9rem">
+<p><strong>Was ist die Rolle eines Konstruktors in der OOP?</strong></p>
+<ul>
+<li class="fragment"><strong>Konstruktor:</strong> Spezielle Methode in der OOP, die zum <strong>Erzeugen und Initialisieren</strong> von Objekten einer Klasse verwendet wird</li>
+<li class="fragment">Wird automatisch aufgerufen, wenn ein neues Objekt einer Klasse erzeugt wird</li>
+<li class="fragment">Hauptaufgaben:
+<ul>
+<li class="fragment">Speicher für das Objekt reservieren</li>
+<li class="fragment">Instanzvariablen des Objekts initialisieren</li>
+<li class="fragment">Referenz auf das neu erstellte Objekt zurückgeben</li>
+</ul></li>
+<li class="fragment">Name: der gleiche wie die Klasse, in der er definiert ist</li>
+<li class="fragment"><strong>Kein</strong> Rückgabewert</li>
+</ul>
+</div>
+<aside class="notes">
+<p>Lernkarte AP2 2025 Nr. 144</p>
+<style type="text/css">
+span.MJX_Assistive_MathML {
+position:absolute!important;
+clip: rect(1px, 1px, 1px, 1px);
+padding: 1px 0 0 0!important;
+border: 0!important;
+height: 1px!important;
+width: 1px!important;
+overflow: hidden!important;
+display:block!important;
+}</style></aside>
+</section>
+<section id="variablen-deklaration-vs.-initialisierung" class="slide level2">
+<h2>Variablen: Deklaration vs. Initialisierung</h2>
+<div style="font-size: 1.9rem">
+<p><strong>Erklären Sie den Unterschied zwischen der Deklaration und der Initialisierung von Variablen.</strong></p>
+<p><span class="fragment">In der Programmierung sind Deklaration und Initialisierung zwei grundlegende Schritte bei der Verwendung von Variablen.</span></p>
+<div class="columns">
+<div class="column fragment">
+<h3 id="deklaration">Deklaration</h3>
+<ul>
+<li>Variable wird durch Angabe ihres Typs und Namens <strong>definiert</strong></li>
+<li>Compiler reserviert dadurch Speicherplatz für die Variable</li>
+<li>Der Variable wird zu diesem Zeitpunkt noch <strong>kein spezifischer Wert</strong> zugewiesen</li>
+</ul>
+</div><div class="column fragment">
+<h3 id="initialisierung">Initialisierung</h3>
+<ul>
+<li>Bei der Initialisierung wird einer zuvor deklarierten Variablen <strong>ein erster Wert</strong> zugewiesen</li>
+</ul>
+</div></div>
+</div>
+<aside class="notes">
+<p>Lernkarte AP2 2025 Nr. 143</p>
+<style type="text/css">
+span.MJX_Assistive_MathML {
+position:absolute!important;
+clip: rect(1px, 1px, 1px, 1px);
+padding: 1px 0 0 0!important;
+border: 0!important;
+height: 1px!important;
+width: 1px!important;
+overflow: hidden!important;
+display:block!important;
+}</style></aside>
+</section>
+<section id="klassenbibliothek" class="slide level2">
+<h2>Klassenbibliothek</h2>
+<div style="font-size: 1.9rem">
+<p><strong>Was versteht man unter einer Klassenbibliothek in der Softwareentwicklung und welchen Vorteil bietet sie bei der Entwicklung von Anwendungen?</strong></p>
+<ul>
+<li class="fragment"><strong>Klassenbibliothek:</strong> Sammlung von Klassen und Funktionen, die wiederverwendet werden können, um bestimmte Aufgaben zu erleichtern oder um komplexe Funktionalitäten bereitzustellen (ohne dass diese neu geschrieben werden müssen)</li>
+<li class="fragment">Bereitstellung oft als <strong>Frameworks</strong> oder <strong>APIs</strong> <em>(Application Programming Interface)</em></li>
+<li class="fragment">Können Standardoperationen für Aufgaben wie <em>Netzwerk-Kommunikation, Datenzugriff, grafische Benutzeroberflächen</em> etc. bereitstellen</li>
+</ul>
+</div>
+<aside class="notes">
+<p>Lernkarte AP2 2025 Nr. 145</p>
+<style type="text/css">
+span.MJX_Assistive_MathML {
+position:absolute!important;
+clip: rect(1px, 1px, 1px, 1px);
+padding: 1px 0 0 0!important;
+border: 0!important;
+height: 1px!important;
+width: 1px!important;
+overflow: hidden!important;
+display:block!important;
+}</style></aside>
+</section>
+<section id="klassenbibliothek-vor--und-nachteile" class="slide level2">
+<h2>Klassenbibliothek: Vor- und Nachteile</h2>
+<div style="font-size: 1.7rem">
+<p><em>Ihr Entwicklungsteam hat sich für eine Programmiersprache entschieden. Für diese gibt es eine umfassende Klassenbibliothek, die Sie im Projekt nutzen wollen. Beschreiben Sie Vor- und Nachteile (Prüfung: je 1), die sich durch den Einsatz einer Bibliothek ergeben.</em></p>
+<div class="columns">
+<div class="column">
+<h3 id="vorteile">Vorteile</h3>
+<ul>
+<li class="fragment">Bestimmte Funktionen / Methoden / Konstruktoren zu benötigten Programmbestandteilen sind vorhanden, können direkt genutzt werden. Dadurch evtl. erheblich geringerer Entwicklungsaufwand.</li>
+<li class="fragment">Bei Änderungen an Bibliotheksbestandteilen muss die Anwendung nicht verändert werden. Bibliotheken können unabhängig vom Hauptprogramm gewartet werden.</li>
+</ul>
+</div><div class="column">
+<h3 id="nachteile">Nachteile</h3>
+<ul>
+<li class="fragment">Die zur Verfügung stehenden Bibliotheken müssen erst analysiert und bewertet werden. Außerdem muss eine Einarbeitung in die Bibliotheken erfolgen. Das Projektteam benötigt hierfür zusätzliche Zeit.</li>
+<li class="fragment">Bibliotheken verursachen ggf. einen Overhead im Programmablauf, die Laufzeit der Software wird hierdurch negativ beeinflusst.</li>
+</ul>
+</div></div>
+</div>
+<aside class="notes">
+<p>AP2 Winter 2021/22 Teil 1 Planen, Aufgabe 1 b)</p>
+<style type="text/css">
+span.MJX_Assistive_MathML {
+position:absolute!important;
+clip: rect(1px, 1px, 1px, 1px);
+padding: 1px 0 0 0!important;
+border: 0!important;
+height: 1px!important;
+width: 1px!important;
+overflow: hidden!important;
+display:block!important;
+}</style></aside>
+</section>
+<section id="erweiterung-bestehender-klassen" class="slide level2">
+<h2>Erweiterung bestehender Klassen</h2>
+<div style="font-size: 2rem">
+<p><em>Sie planen, die Bibliothek um eigene Klassen zu erweitern. Beschreiben Sie drei Aspekte, die Sie in der Dokumentation dieser Erweiterung beachten müssen.</em></p>
+<ul>
+<li class="fragment"><strong>Zusammenfassende Beschreibung</strong> der Klasse</li>
+<li class="fragment">Auflistung der <strong>Konstruktoren</strong> und <strong>Methoden</strong></li>
+<li class="fragment">Auflistung von <strong>vererbten</strong> Methoden</li>
+<li class="fragment">Benennung der implementierten <strong>Interfaces</strong></li>
+<li class="fragment">Benennung der <strong>Anwendungsvoraussetzungen</strong> der Methoden</li>
+<li class="fragment">Beschreibung aller <strong>Methoden</strong> im Detail (<strong>Datentyp</strong>, Bedeutung der <strong>Parameter</strong> und <strong>Rückgabewerte</strong>, <strong>Wirkung</strong> der Methode)</li>
+</ul>
+</div>
+<aside class="notes">
+<p>AP2 Winter 2021/22 Teil 1 Planen, Aufgabe 1 bb)</p>
+<style type="text/css">
+span.MJX_Assistive_MathML {
+position:absolute!important;
+clip: rect(1px, 1px, 1px, 1px);
+padding: 1px 0 0 0!important;
+border: 0!important;
+height: 1px!important;
+width: 1px!important;
+overflow: hidden!important;
+display:block!important;
+}</style></aside>
 </section>
 <section id="section" class="slide level2">
 <h2><!-- --></h2>

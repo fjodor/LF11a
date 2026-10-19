@@ -176,6 +176,11 @@ C# |
 ::::
 
 
+## E2E: Playwright
+
+{{< video https://www.youtube.com/embed/eBT4hQscYog?si=ImKqSSxTDKlfuxtr width="400" height="600" >}}
+
+
 ## <!-- -->
 
 ![](libs/_Images/coffee.jpg){fig-align="center" width="50%"}

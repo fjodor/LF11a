@@ -179,98 +179,140 @@
     "href": "04_UML_Sequenz_Zustand.html#sequenzdiagramm-nachrichten",
     "title": "UML",
     "section": "Sequenzdiagramm: Nachrichten",
-    "text": "Sequenzdiagramm: Nachrichten"
+    "text": "Sequenzdiagramm: Nachrichten",
+    "crumbs": [
+      "UML Sequenz- und Zustandsdiagramm"
+    ]
   },
   {
     "objectID": "04_UML_Sequenz_Zustand.html#section",
     "href": "04_UML_Sequenz_Zustand.html#section",
     "title": "UML",
     "section": "",
-    "text": "Sequenz-diagramm: Lebenslinien"
+    "text": "Sequenz-diagramm: Lebenslinien",
+    "crumbs": [
+      "UML Sequenz- und Zustandsdiagramm"
+    ]
   },
   {
     "objectID": "04_UML_Sequenz_Zustand.html#sequenzdiagramm-bedingungen",
     "href": "04_UML_Sequenz_Zustand.html#sequenzdiagramm-bedingungen",
     "title": "UML",
     "section": "Sequenzdiagramm: Bedingungen",
-    "text": "Sequenzdiagramm: Bedingungen"
+    "text": "Sequenzdiagramm: Bedingungen",
+    "crumbs": [
+      "UML Sequenz- und Zustandsdiagramm"
+    ]
   },
   {
     "objectID": "04_UML_Sequenz_Zustand.html#section-1",
     "href": "04_UML_Sequenz_Zustand.html#section-1",
     "title": "UML",
     "section": "",
-    "text": "Sequenz-diagramm: Überblick"
+    "text": "Sequenz-diagramm: Überblick",
+    "crumbs": [
+      "UML Sequenz- und Zustandsdiagramm"
+    ]
   },
   {
     "objectID": "04_UML_Sequenz_Zustand.html#sequenzdiagramm-beispiel",
     "href": "04_UML_Sequenz_Zustand.html#sequenzdiagramm-beispiel",
     "title": "UML",
     "section": "Sequenzdiagramm: Beispiel",
-    "text": "Sequenzdiagramm: Beispiel\n\n\n\n\n\nsequenceDiagram\n    actor Benutzer\n    participant LoginController\n    participant Datenbank\n    participant Session\n\n    Benutzer-&gt;&gt;LoginController: login(user,pw)\n    LoginController-&gt;&gt;Datenbank: prüfeUser(user,pw)\n    Datenbank--&gt;&gt;LoginController: Ergebnis\n\n    alt gültig\n        LoginController-&gt;&gt;Session: erzeugeSession()\n        Session--&gt;&gt;LoginController: SessionID\n        LoginController--&gt;&gt;Benutzer: Erfolg\n    else ungültig\n        LoginController--&gt;&gt;Benutzer: Fehler\n    end"
+    "text": "Sequenzdiagramm: Beispiel\n\n\n\n\n\nsequenceDiagram\n    actor Benutzer\n    participant LoginController\n    participant Datenbank\n    participant Session\n\n    Benutzer-&gt;&gt;LoginController: login(user,pw)\n    LoginController-&gt;&gt;Datenbank: prüfeUser(user,pw)\n    Datenbank--&gt;&gt;LoginController: Ergebnis\n\n    alt gültig\n        LoginController-&gt;&gt;Session: erzeugeSession()\n        Session--&gt;&gt;LoginController: SessionID\n        LoginController--&gt;&gt;Benutzer: Erfolg\n    else ungültig\n        LoginController--&gt;&gt;Benutzer: Fehler\n    end",
+    "crumbs": [
+      "UML Sequenz- und Zustandsdiagramm"
+    ]
   },
   {
     "objectID": "04_UML_Sequenz_Zustand.html#sequenzdiagramm-mermaid",
     "href": "04_UML_Sequenz_Zustand.html#sequenzdiagramm-mermaid",
     "title": "UML",
     "section": "Sequenzdiagramm: Mermaid",
-    "text": "Sequenzdiagramm: Mermaid\nsequenceDiagram\n    actor Benutzer\n    participant LoginController\n    participant Datenbank\n    participant Session\n\n    Benutzer-&gt;&gt;LoginController: login(user,pw)\n    LoginController-&gt;&gt;Datenbank: prüfeUser(user,pw)\n    Datenbank--&gt;&gt;LoginController: Ergebnis\n\n    alt gültig\n        LoginController-&gt;&gt;Session: erzeugeSession()\n        Session--&gt;&gt;LoginController: SessionID\n        LoginController--&gt;&gt;Benutzer: Erfolg\n    else ungültig\n        LoginController--&gt;&gt;Benutzer: Fehler\n    end"
+    "text": "Sequenzdiagramm: Mermaid\nsequenceDiagram\n    actor Benutzer\n    participant LoginController\n    participant Datenbank\n    participant Session\n\n    Benutzer-&gt;&gt;LoginController: login(user,pw)\n    LoginController-&gt;&gt;Datenbank: prüfeUser(user,pw)\n    Datenbank--&gt;&gt;LoginController: Ergebnis\n\n    alt gültig\n        LoginController-&gt;&gt;Session: erzeugeSession()\n        Session--&gt;&gt;LoginController: SessionID\n        LoginController--&gt;&gt;Benutzer: Erfolg\n    else ungültig\n        LoginController--&gt;&gt;Benutzer: Fehler\n    end",
+    "crumbs": [
+      "UML Sequenz- und Zustandsdiagramm"
+    ]
   },
   {
     "objectID": "04_UML_Sequenz_Zustand.html#sequenzdiagramm-zusammenfassung",
     "href": "04_UML_Sequenz_Zustand.html#sequenzdiagramm-zusammenfassung",
     "title": "UML",
     "section": "Sequenzdiagramm: Zusammenfassung",
-    "text": "Sequenzdiagramm: Zusammenfassung\n\nWas stellt ein Sequenzdiagramm in UML dar und in welchen Szenarien wird es typischerweise verwendet?\n\nEin Sequenzdiagramm in UML zeigt die Interaktionen zwischen Objekten in der Reihenfolge, in der sie auftreten\nEs besteht aus\n\neiner Reihe von vertikalen “Lebenslinien”, die Objekte oder Klassen repräsentieren, und\nhorizontalen “Nachrichten”, die zwischen den Lebenslinien hin und her gehen\n\nNachrichten sind zeitlich von oben nach unten geordnet, sodass man sehen kann, in welcher Reihenfolge die Interaktionen auftreten\nSequenzdiagramme helfen dabei, die dynamischen Interaktionen in einem System darzustellen und zu analysieren\n\n\n\nLernkarte AP2 2025 Nr. 128"
+    "text": "Sequenzdiagramm: Zusammenfassung\n\nWas stellt ein Sequenzdiagramm in UML dar und in welchen Szenarien wird es typischerweise verwendet?\n\nEin Sequenzdiagramm in UML zeigt die Interaktionen zwischen Objekten in der Reihenfolge, in der sie auftreten\nEs besteht aus\n\neiner Reihe von vertikalen “Lebenslinien”, die Objekte oder Klassen repräsentieren, und\nhorizontalen “Nachrichten”, die zwischen den Lebenslinien hin und her gehen\n\nNachrichten sind zeitlich von oben nach unten geordnet, sodass man sehen kann, in welcher Reihenfolge die Interaktionen auftreten\nSequenzdiagramme helfen dabei, die dynamischen Interaktionen in einem System darzustellen und zu analysieren\n\n\n\nLernkarte AP2 2025 Nr. 128",
+    "crumbs": [
+      "UML Sequenz- und Zustandsdiagramm"
+    ]
   },
   {
     "objectID": "04_UML_Sequenz_Zustand.html#zustandsdiagramm",
     "href": "04_UML_Sequenz_Zustand.html#zustandsdiagramm",
     "title": "UML",
     "section": "Zustandsdiagramm",
-    "text": "Zustandsdiagramm"
+    "text": "Zustandsdiagramm",
+    "crumbs": [
+      "UML Sequenz- und Zustandsdiagramm"
+    ]
   },
   {
     "objectID": "04_UML_Sequenz_Zustand.html#zustandsdiagramm-bestellung",
     "href": "04_UML_Sequenz_Zustand.html#zustandsdiagramm-bestellung",
     "title": "UML",
     "section": "Zustandsdiagramm: Bestellung",
-    "text": "Zustandsdiagramm: Bestellung\n\n   (●)\n    |\n    v\n+----------+   bestellen()    +-----------+\n|  Neu     |-----------------&gt;| Bestaetigt|\n+----------+                  +-----------+\n                                   |\n                    zahlung_ok()   |\n                                   v\n                             +----------+\n            stornieren()     | Bezahlt  |\n  +----------&lt;---------------|          |\n  |                          +----------+\n  v                                |\n+----------+          versenden()  |\n|Storniert |                       v\n+----------+              +-----------+\n  |                       | Versendet |\n  v                       +-----------+\n (◉)                           |\n                  zugestellt() |\n                               v\n                        +-----------+\n                        | Geliefert |\n                        +-----------+\n                               |\n                               v\n                              (◉)"
+    "text": "Zustandsdiagramm: Bestellung\n\n   (●)\n    |\n    v\n+----------+   bestellen()    +-----------+\n|  Neu     |-----------------&gt;| Bestaetigt|\n+----------+                  +-----------+\n                                   |\n                    zahlung_ok()   |\n                                   v\n                             +----------+\n            stornieren()     | Bezahlt  |\n  +----------&lt;---------------|          |\n  |                          +----------+\n  v                                |\n+----------+          versenden()  |\n|Storniert |                       v\n+----------+              +-----------+\n  |                       | Versendet |\n  v                       +-----------+\n (◉)                           |\n                  zugestellt() |\n                               v\n                        +-----------+\n                        | Geliefert |\n                        +-----------+\n                               |\n                               v\n                              (◉)",
+    "crumbs": [
+      "UML Sequenz- und Zustandsdiagramm"
+    ]
   },
   {
     "objectID": "04_UML_Sequenz_Zustand.html#zustandsdiagramm-bestellung-1",
     "href": "04_UML_Sequenz_Zustand.html#zustandsdiagramm-bestellung-1",
     "title": "UML",
     "section": "Zustandsdiagramm: Bestellung",
-    "text": "Zustandsdiagramm: Bestellung\n\n\n\n\n\nstateDiagram-v2\n\n    direction LR\n\n    [*] --&gt; Neu\n    Neu --&gt; Bestaetigt : bestellen()\n\n    Bestaetigt --&gt; Bezahlt : zahlung_ok()\n    Bestaetigt --&gt; Storniert : stornieren()\n\n    Bezahlt --&gt; Versendet : versenden()\n    Versendet --&gt; Geliefert : zugestellt()\n\n    Geliefert --&gt; [*]\n    Storniert --&gt; [*]\n\n\n\n\n\n\nMermaid-Code\n\nstateDiagram-v2\n\n    direction LR\n\n    [*] --&gt; Neu\n    Neu --&gt; Bestaetigt : bestellen()\n\n    Bestaetigt --&gt; Bezahlt : zahlung_ok()\n    Bestaetigt --&gt; Storniert : stornieren()\n\n    Bezahlt --&gt; Versendet : versenden()\n    Versendet --&gt; Geliefert : zugestellt()\n\n    Geliefert --&gt; [*]\n    Storniert --&gt; [*]"
+    "text": "Zustandsdiagramm: Bestellung\n\n\n\n\n\nstateDiagram-v2\n\n    direction LR\n\n    [*] --&gt; Neu\n    Neu --&gt; Bestaetigt : bestellen()\n\n    Bestaetigt --&gt; Bezahlt : zahlung_ok()\n    Bestaetigt --&gt; Storniert : stornieren()\n\n    Bezahlt --&gt; Versendet : versenden()\n    Versendet --&gt; Geliefert : zugestellt()\n\n    Geliefert --&gt; [*]\n    Storniert --&gt; [*]\n\n\n\n\n\n\nMermaid-Code\n\nstateDiagram-v2\n\n    direction LR\n\n    [*] --&gt; Neu\n    Neu --&gt; Bestaetigt : bestellen()\n\n    Bestaetigt --&gt; Bezahlt : zahlung_ok()\n    Bestaetigt --&gt; Storniert : stornieren()\n\n    Bezahlt --&gt; Versendet : versenden()\n    Versendet --&gt; Geliefert : zugestellt()\n\n    Geliefert --&gt; [*]\n    Storniert --&gt; [*]",
+    "crumbs": [
+      "UML Sequenz- und Zustandsdiagramm"
+    ]
   },
   {
     "objectID": "04_UML_Sequenz_Zustand.html#zustandsdiagramm-zusammenfassung",
     "href": "04_UML_Sequenz_Zustand.html#zustandsdiagramm-zusammenfassung",
     "title": "UML",
     "section": "Zustandsdiagramm: Zusammenfassung",
-    "text": "Zustandsdiagramm: Zusammenfassung\n\nErklären Sie die Verwendung des UML-Zustandsdiagramms zur Modellierung von Verhalten in einem System.\n\nUML-Zustandsdiagramm bildet Lebenszyklus eines Objekts ab durch Darstellung seiner verschiedenen Zustände und Übergänge\nBesonders nützlich bei der Modellierung von Objekten, die komplexes Verhalten aufweisen und viele verschiedene Zustände haben können\nWas geben Zustandsdiagramme wieder?\n\nden aktuellen Zustand eines Objekts\ndie Aktionen, die beim Eintritt, während des Verweilens und beim Verlassen des Zustands durchgeführt werden\nBedingungen für den Übergang zu anderen Zuständen\n\nErmöglichen die Darstellung und das Verständnis komplexer verhaltensbasierter Systeme\n\n\n\nLernkarte AP2 2025 Nr. 130"
+    "text": "Zustandsdiagramm: Zusammenfassung\n\nErklären Sie die Verwendung des UML-Zustandsdiagramms zur Modellierung von Verhalten in einem System.\n\nUML-Zustandsdiagramm bildet Lebenszyklus eines Objekts ab durch Darstellung seiner verschiedenen Zustände und Übergänge\nBesonders nützlich bei der Modellierung von Objekten, die komplexes Verhalten aufweisen und viele verschiedene Zustände haben können\nWas geben Zustandsdiagramme wieder?\n\nden aktuellen Zustand eines Objekts\ndie Aktionen, die beim Eintritt, während des Verweilens und beim Verlassen des Zustands durchgeführt werden\nBedingungen für den Übergang zu anderen Zuständen\n\nErmöglichen die Darstellung und das Verständnis komplexer verhaltensbasierter Systeme\n\n\n\nLernkarte AP2 2025 Nr. 130",
+    "crumbs": [
+      "UML Sequenz- und Zustandsdiagramm"
+    ]
   },
   {
     "objectID": "04_UML_Sequenz_Zustand.html#wann-welches-diagramm",
     "href": "04_UML_Sequenz_Zustand.html#wann-welches-diagramm",
     "title": "UML",
     "section": "Wann welches Diagramm?",
-    "text": "Wann welches Diagramm?\n\n\n\n\n\n\n\n\n\n\nDiagramm\nZeigt\nKategorie\nTypische Fragestellung\n\n\n\n\nAktivitäts-diagramm\nAbläufe, Workflows\nVerhaltens-diagramm\n“Wie läuft der Prozess ab?”\n\n\nAnwendungs-falldiagramm\nFunktionen und Akteure\nVerhaltens-diagramm\n“WAS kann das System? Wer nutzt es?”\n\n\nKlassen-diagramm\nStatische Struktur\nStruktur-diagramm\n“Welche Klassen gibt es und wie hängen sie zusammen?”\n\n\nSequenz-diagramm\nZeitlicher Nachrichtenaustausch\nVerhaltens-diagramm\n“In welcher Reihenfolge kommunizieren die Objekte?”\n\n\nZustands-diagramm\nZustände und Übergänge\nVerhaltens-diagramm\n“Welche Zustände hat ein Objekt?”"
+    "text": "Wann welches Diagramm?\n\n\n\n\n\n\n\n\n\n\nDiagramm\nZeigt\nKategorie\nTypische Fragestellung\n\n\n\n\nAktivitäts-diagramm\nAbläufe, Workflows\nVerhaltens-diagramm\n“Wie läuft der Prozess ab?”\n\n\nAnwendungs-falldiagramm\nFunktionen und Akteure\nVerhaltens-diagramm\n“WAS kann das System? Wer nutzt es?”\n\n\nKlassen-diagramm\nStatische Struktur\nStruktur-diagramm\n“Welche Klassen gibt es und wie hängen sie zusammen?”\n\n\nSequenz-diagramm\nZeitlicher Nachrichtenaustausch\nVerhaltens-diagramm\n“In welcher Reihenfolge kommunizieren die Objekte?”\n\n\nZustands-diagramm\nZustände und Übergänge\nVerhaltens-diagramm\n“Welche Zustände hat ein Objekt?”",
+    "crumbs": [
+      "UML Sequenz- und Zustandsdiagramm"
+    ]
   },
   {
     "objectID": "04_UML_Sequenz_Zustand.html#häufige-uml-fehler",
     "href": "04_UML_Sequenz_Zustand.html#häufige-uml-fehler",
     "title": "UML",
     "section": "Häufige UML-Fehler",
-    "text": "Häufige UML-Fehler\n\n\n\n\n\n\n\n\nFehler\nKorrektur\n\n\n\n\nAggregation und Komposition verwechselt\nKomposition = starke Abhängigkeit (Teil stirbt mit Ganzem)\n\n\nInclude und Extend vertauscht\nInclude = obligatorisch, Extend = optional\n\n\nKlassendiagramm ohne Sichtbarkeiten\nImmer +, -, # angeben\n\n\nSequenzdiagramm ohne Rückgabepfeile\nSynchrone Aufrufe brauchen eine Antwort (gestrichelter Pfeil)\n\n\nZustandsdiagramm ohne Start- / Endzustand\nStart (●) und Ende (◉) gehören immer dazu\n\n\nAktivitäten im Use-Case-Diagramm\nUse Cases beschreiben FUNKTIONEN, keine Ablaufschritte"
+    "text": "Häufige UML-Fehler\n\n\n\n\n\n\n\n\nFehler\nKorrektur\n\n\n\n\nAggregation und Komposition verwechselt\nKomposition = starke Abhängigkeit (Teil stirbt mit Ganzem)\n\n\nInclude und Extend vertauscht\nInclude = obligatorisch, Extend = optional\n\n\nKlassendiagramm ohne Sichtbarkeiten\nImmer +, -, # angeben\n\n\nSequenzdiagramm ohne Rückgabepfeile\nSynchrone Aufrufe brauchen eine Antwort (gestrichelter Pfeil)\n\n\nZustandsdiagramm ohne Start- / Endzustand\nStart (●) und Ende (◉) gehören immer dazu\n\n\nAktivitäten im Use-Case-Diagramm\nUse Cases beschreiben FUNKTIONEN, keine Ablaufschritte",
+    "crumbs": [
+      "UML Sequenz- und Zustandsdiagramm"
+    ]
   },
   {
     "objectID": "04_UML_Sequenz_Zustand.html#section-2",
     "href": "04_UML_Sequenz_Zustand.html#section-2",
     "title": "UML",
     "section": "",
-    "text": "©torange.biz CC-BY 4.0\n\n\nViel Erfolg!"
+    "text": "©torange.biz CC-BY 4.0\n\n\nViel Erfolg!",
+    "crumbs": [
+      "UML Sequenz- und Zustandsdiagramm"
+    ]
   },
   {
     "objectID": "03a_OO_Analyse-Designverfahren.html#ziele",
@@ -284,7 +326,7 @@
     "href": "03a_OO_Analyse-Designverfahren.html#objektorientierte-analyse-ooa",
     "title": "Objektorientierte Analyse- und Designverfahren",
     "section": "Objektorientierte Analyse (OOA)",
-    "text": "Objektorientierte Analyse (OOA)\n\nDefinition: Die OOA identifiziert aus den fachlichen Anforderungen (z.B. Lastenheft) die relevanten Objekte, Klassen, Attribute und Methoden des Systems.\nVorgehen:\n\nAnforderungen lesen – Lastenheft, User Stories, Gesprächsprotokolle\nSubstantive markieren → Kandidaten fuer Klassen und Attribute\nVerben markieren → Kandidaten fuer Methoden\nBeziehungen identifizieren → Assoziationen, Kompositionen, Vererbung\nErstes Klassendiagramm erstellen → grobe Struktur"
+    "text": "Objektorientierte Analyse (OOA)\n\nDefinition: Die OOA identifiziert aus den fachlichen Anforderungen (z.B. Lastenheft) die relevanten Objekte, Klassen, Attribute und Methoden des Systems.\nVorgehen:\n\nAnforderungen lesen – Lastenheft, User Stories, Gesprächsprotokolle\nSubstantive markieren → Kandidaten für Klassen und Attribute\nVerben markieren → Kandidaten für Methoden\nBeziehungen identifizieren → Assoziationen, Kompositionen, Vererbung\nErstes Klassendiagramm erstellen → grobe Struktur"
   },
   {
     "objectID": "03a_OO_Analyse-Designverfahren.html#ooa-beispiel",

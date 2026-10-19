@@ -36,8 +36,8 @@ callout-appearance: simple
 ::: incremental
 
 1. **Anforderungen lesen** – Lastenheft, User Stories, Gesprächsprotokolle
-2. **Substantive markieren** → Kandidaten fuer **Klassen** und **Attribute**
-3. **Verben markieren** → Kandidaten fuer **Methoden**
+2. **Substantive markieren** → Kandidaten für **Klassen** und **Attribute**
+3. **Verben markieren** → Kandidaten für **Methoden**
 4. **Beziehungen identifizieren** → Assoziationen, Kompositionen, Vererbung
 5. **Erstes Klassendiagramm erstellen** → grobe Struktur
 

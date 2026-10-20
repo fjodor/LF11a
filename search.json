@@ -1,5 +1,26 @@
 [
   {
+    "objectID": "08_Qualitätssicherung_Tests.html#blue-green-deployment",
+    "href": "08_Qualitätssicherung_Tests.html#blue-green-deployment",
+    "title": "Qualitätssicherung, Tests",
+    "section": "Blue-Green-Deployment",
+    "text": "Blue-Green-Deployment\n\nErläutern Sie die Methode des Blue-Green-Deployments.\n\nIdee des Blue-Green-Deployments: zwei separate, identische Umgebungen (Blue, Green) bereitstellen\nBlue: aktuelle Produktionsversion ist live\nGreen: Neue Version der Anwendung wird in der separaten Umgebung bereitgestellt und getestet\nSobald Tests erfolgreich abgeschlossen: Umleitung des Datenverkehrs von Blue auf Green\nUmleitung erfolgt schrittweise, um sicherzustellen, dass das System in der Green-Umgebung ordnungsgemäß funktioniert\nFalls Probleme in der Green-Umgebung auftreten, kann der Datenverkehr schnell auf die Blue-Umgebung zurückgeleitet werden\n\n\n\nLernkarte AP2 2025 Nr. 90"
+  },
+  {
+    "objectID": "08_Qualitätssicherung_Tests.html#regressionstest",
+    "href": "08_Qualitätssicherung_Tests.html#regressionstest",
+    "title": "Qualitätssicherung, Tests",
+    "section": "Regressionstest",
+    "text": "Regressionstest\n\nWas ist das Ziel eines Regressionstests?\n\nRegressionstest dient dazu, die Stabilität und Zuverlässigkeit der Anwendung nach Durchführung einer Aktualisierung zu prüfen\nWird durchgeführt, um sicherzustellen, dass neue Änderungen oder Updates an einer Software keine unerwünschten Auswirkungen auf bereits vorhandene Funktionen haben\n\n\n\nLernkarte AP2 2025 Nr. 80"
+  },
+  {
+    "objectID": "08_Qualitätssicherung_Tests.html#zweigüberdeckung-vs.-pfadüberdeckung",
+    "href": "08_Qualitätssicherung_Tests.html#zweigüberdeckung-vs.-pfadüberdeckung",
+    "title": "Qualitätssicherung, Tests",
+    "section": "Zweigüberdeckung vs. Pfadüberdeckung",
+    "text": "Zweigüberdeckung vs. Pfadüberdeckung\n\nBeschreiben Sie den Unterschied zwischen Zweigüberdeckung und Pfadüberdeckung.\n\n\nZweigüberdeckung\n\nAlle Entscheidungszweige im Code müssen durch Tests abgedeckt sein\nEin Entscheidungszweig tritt auf, wenn ein Programm an einem Punkt zwischen zwei möglichen Wegen wählen muss\nZiel: jeder mögliche Pfad durch Bedingungsanweisungen im Code wird mindestens ein Mal getestet\n\n\nPfadüberdeckung\n\nJeder mögliche Pfad im Programm muss mindestens ein Mal durchlaufen werden\nPfad = Sequenz von Anweisungen im Code, die von einem Startpunkt zu einem Endpunkt führen\nPfadüberdeckung berücksichtigt die vollständige Ausführung aller Anweisungen und die möglichen Verzweigungen\n\n\n\n\nLernkarte AP2 2025 Nr. 77"
+  },
+  {
     "objectID": "08_Qualitätssicherung_Tests.html#testsoftware",
     "href": "08_Qualitätssicherung_Tests.html#testsoftware",
     "title": "Qualitätssicherung, Tests",
@@ -42,11 +63,46 @@
     "text": "Testsoftware: Statische Analyse\n\n\n\n\n\nSprache\n\n\n\n\nPython\n\n\nJava\n\n\nJavaScript\n\n\nC#\n\n\n\n\n\n\n\nSoftware\n\n\n\n\nflake8, mypy\n\n\nSpotBugs\n\n\nESLint\n\n\nSonarQube"
   },
   {
+    "objectID": "08_Qualitätssicherung_Tests.html#e2e-playwright",
+    "href": "08_Qualitätssicherung_Tests.html#e2e-playwright",
+    "title": "Qualitätssicherung, Tests",
+    "section": "E2E: Playwright",
+    "text": "E2E: Playwright"
+  },
+  {
     "objectID": "08_Qualitätssicherung_Tests.html#section",
     "href": "08_Qualitätssicherung_Tests.html#section",
     "title": "Qualitätssicherung, Tests",
     "section": "",
     "text": "©torange.biz CC-BY 4.0\n\n\nViel Erfolg!"
+  },
+  {
+    "objectID": "06_Datenbanken.html#relationale-vs.-nicht-relationale-dbs",
+    "href": "06_Datenbanken.html#relationale-vs.-nicht-relationale-dbs",
+    "title": "Datenbanken",
+    "section": "Relationale vs. Nicht-relationale DBs",
+    "text": "Relationale vs. Nicht-relationale DBs\n\nWas sind relationale Datenbanken? - Nennen Sie zwei Beispiele für nicht-relationale Datenbanktypen.\n\n\nRelationale Datenbanken\n\nDatenbanken, die auf dem relationalen Datenbankmodell basieren\nSpeichern Daten in Tabellen, die aus Zeilen und Spalten bestehen\nBeziehungen zwischen Tabellen werden durch Primärschlüssel-Fremdschlüssel-Beziehungen hergestellt\n\n\nNicht-relationale Datenbanktypen: Beispiele\n\nDokumentenorientierte Datenbanken\nSchlüssel-Wert-Datenbanken\nSpaltenorientierte Datenbanken\nGraphdatenbanken\nZeitreihendatenbanken\nObjektorientierte Datenbanken\n\n\n\n\nLernkarte AP2 2025 Nr. 98"
+  },
+  {
+    "objectID": "06_Datenbanken.html#relationale-vs.-nosql-datenbanken",
+    "href": "06_Datenbanken.html#relationale-vs.-nosql-datenbanken",
+    "title": "Datenbanken",
+    "section": "Relationale vs. NoSQL-Datenbanken",
+    "text": "Relationale vs. NoSQL-Datenbanken\n\n\n\n\n\n\n\n\n\nMerkmal\nRelational (SQL)\nNoSQL\n\n\n\n\nStruktur\nTabellen mit Spalten\nDokumente, Key-Value, Graphen\n\n\nSchema\nFestes Schema\nFlexibles / kein Schema\n\n\nSprache\nSQL\nAbhängig vom System\n\n\nKonsistenz\nACID (stark)\nBASE (eventual consistency)\n\n\nSkalierung\nVertikal (größerer Server)\nHorizontal (mehr Server)\n\n\nBeispiele\nMySQL, PostgreSQL, MariaDB\nMongoDB, Redis, Cassandra, Neo4j\n\n\nEinsatz\nStrukturierte Daten, Transaktionen\nBig Data, flexible Strukturen"
+  },
+  {
+    "objectID": "06_Datenbanken.html#odbc",
+    "href": "06_Datenbanken.html#odbc",
+    "title": "Datenbanken",
+    "section": "ODBC",
+    "text": "ODBC\n\nWofür steht die Abkürzung ODBC?\n\nODBC = Open Database Connectivity\nStandardisierte Schnittstelle für den Zugriff auf verschiedene Datenbankmanagementsysteme (DBMS)\nSie ermöglicht Anwendungen, SQL-Abfragen unabhängig vom verwendeten Datenbanktyp auszuführen\n\n\n\nLernkarte AP2 2025 Nr. 117"
+  },
+  {
+    "objectID": "06_Datenbanken.html#primärschlüssel-vs.-fremdschlüssel",
+    "href": "06_Datenbanken.html#primärschlüssel-vs.-fremdschlüssel",
+    "title": "Datenbanken",
+    "section": "Primärschlüssel vs. Fremdschlüssel",
+    "text": "Primärschlüssel vs. Fremdschlüssel\n\nErklären Sie in Bezug auf Datenbanken die Begriffe Primärschlüssel und Fremdschlüssel.\n\n\nPrimärschlüssel\n\nFeld oder Kombination von Feldern in einer Tabelle, das / die jede Zeile eindeutig identifiziert\nJeder Primärschlüssel ist eindeutig innerhalb der Tabelle und es darf keine Duplikate oder Nullwerte geben\n\n\nFremdschlüssel\n\nFeld oder Kombination von Feldern in einer Tabelle, das auf den Primärschlüssel einer anderen Tabelle verweist\nZweck: Integrität der Daten zu gewährleisten und Beziehungen zwischen Tabellen herzustellen\n\n\n\n\nLernkarte AP2 2025 Nr. 103"
   },
   {
     "objectID": "06_Datenbanken.html#er-modell-kardinalitäten",
@@ -56,25 +112,32 @@
     "text": "ER-Modell: Kardinalitäten\n\n\n\n\n\nNotation\nBedeutung\nBeispiel\n\n\n\n\n1:1\nGenau eine Zuordnung\nPerson → Personalausweis\n\n\n1:n\nEine Entität → mehrere\nAbteilung → Mitarbeiter\n\n\nn:m\nMehrere → mehrere\nStudent → Vorlesung\n\n\n\n\nn:m-Auflösung: Zwischentabelle mit Fremdschlüsseln beider Seiten"
   },
   {
-    "objectID": "06_Datenbanken.html#todo-er-modell-beispiel",
-    "href": "06_Datenbanken.html#todo-er-modell-beispiel",
-    "title": "Datenbanken",
-    "section": "todo: ER-Modell Beispiel",
-    "text": "todo: ER-Modell Beispiel"
-  },
-  {
     "objectID": "06_Datenbanken.html#datenbanken-datentypen",
     "href": "06_Datenbanken.html#datenbanken-datentypen",
     "title": "Datenbanken",
     "section": "Datenbanken: Datentypen",
-    "text": "Datenbanken: Datentypen\n\n\n\n\nDatentyp\nBeschreibung\nBeispiel\n\n\n\n\nINT / INTEGER\nGanzzahl\nAlter, Menge\n\n\nFLOAT / DOUBLE\nGleitkommazahl\nPreis (ungenau!)\n\n\nDECIMAL(p,s)\nFestkommazahl\nWährung: DECIMAL(10,2)\n\n\nVARCHAR(n)\nText variabler Länge\nName VARCHAR(100)\n\n\nCHAR(n)\nText fester Länge\nPLZ CHAR(5)\n\n\nTEXT\nLanger Text\nBeschreibung\n\n\nDATE\nDatum\nGeburtsdatum\n\n\nDATETIME / TIMESTAMP\nDatum + Uhrzeit\nErstellungszeitpunkt\n\n\nBOOLEAN\nWahrheitswert\nAktiv: TRUE/FALSE\n\n\nBLOB\nBinärdaten\nBilder, Dateien"
+    "text": "Datenbanken: Datentypen\n\n\n\n\nDatentyp\nBeschreibung\nBeispiel\n\n\n\n\nINT / INTEGER\nGanzzahl\nAlter, Menge\n\n\nFLOAT / DOUBLE\nGleitkommazahl\nPreis (ungenau!)\n\n\nDECIMAL(p,s)\nFestkommazahl\nWährung: DECIMAL(10,2)\n\n\nVARCHAR(n)\nText variabler Länge\nName VARCHAR(100)\n\n\nCHAR(n)\nText fester Länge\nPLZ CHAR(5)\n\n\nTEXT\nLanger Text\nBeschreibung\n\n\nDATE\nDatum\nGeburtsdatum\n\n\nDATETIME / TIMESTAMP\nDatum + Uhrzeit\nErstellungszeitpunkt\n\n\nBOOLEAN\nWahrheitswert\nAktiv: TRUE/FALSE\n\n\nBLOB / BINARY\nBinärdaten, Binär-String\nBilder, Dateien\n\n\n\nRichtiger Datentyp: Datenintegrität, Speichereffizienz\n\n\nvgl. Lernkarte AP2 2025 Nr. 102"
+  },
+  {
+    "objectID": "06_Datenbanken.html#null",
+    "href": "06_Datenbanken.html#null",
+    "title": "Datenbanken",
+    "section": "NULL",
+    "text": "NULL\n\nWas bedeutet der Begriff NULL in Bezug auf Datenbanken und welche Rolle spielt es bei der Datenverarbeitung und -abfrage?\n\nNULL in DBS: Feld hat keinen Wert: NULL ≠ 0; NULL ≠ Leerzeichen!\nNULL repräsentiert fehlende oder unbekannte Daten\nBei fehlenden Daten kann NULL eingefügt werden\nIn Abfragen wird IS NULL oder IS NOT NULL verwendet, um NULL-Werte zu finden\nArithmetische Operationen mit NULL ergeben NULL\nAggregatfunktionen wie COUNT oder SUM ignorieren NULL-Werte\nOft werden NULL-Werte in Datenbankindizes nicht berücksichtigt\n\n\n\nLernkarte AP2 2025 Nr. 115"
+  },
+  {
+    "objectID": "06_Datenbanken.html#spalten-indizierung",
+    "href": "06_Datenbanken.html#spalten-indizierung",
+    "title": "Datenbanken",
+    "section": "Spalten-Indizierung",
+    "text": "Spalten-Indizierung\n\nWarum ist die Indizierung von Spalten in einer Datenbank wichtig und wie kann sie die Leistung von Abfragen verbessern?\n\nIndex bietet schnellen Zugriff auf Daten\nEnthält eine sortierte Liste von Werten einer bestimmten Spalte und Verweise auf Speicherorte der zugehörigen Daten\nWenn Abfrage indizierte Spalte verwendet -&gt; DB-System kann Index verwenden, um schnell zu den benötigten Daten zu navigieren, anstatt alle Zeilen durchsuchen zu müssen\nKann Leistung von Abfragen erheblich verbessern\nNachteil: gewisser Overhead: Speicherplatz sowie Verarbeitungszeit bei Schreibvorgängen, da Index immer aktualisiert werden muss\n\n\n\nLernkarte AP2 2025 Nr. 111"
   },
   {
     "objectID": "06_Datenbanken.html#dbs-anomalien-und-redundanzen",
     "href": "06_Datenbanken.html#dbs-anomalien-und-redundanzen",
     "title": "Datenbanken",
     "section": "DBs: Anomalien und Redundanzen",
-    "text": "DBs: Anomalien und Redundanzen\n\n\n\n\n\n\n\n\n\nAnomalie\nBeschreibung\nBeispiel\n\n\n\n\nEinfüge-Anomalie\nDaten können nicht ohne Zusatzinfo eingefügt werden\nNeuer Kunde ohne Auftrag\n\n\nÄnderungs-Anomalie\nÄnderung an mehreren Stellen nötig\nKundenadresse in jeder Bestellung\n\n\nLösch-Anomalie\nBeim Löschen gehen andere Daten verloren\nLetzter Auftrag gelöscht → Kundendaten weg\n\n\n\nLösung: Normalisierung → Redundanzen eliminieren"
+    "text": "DBs: Anomalien und Redundanzen\n\nDef.: Datenbankanomalien sind Probleme, die in einer Datenbank auftreten und zu Inkonsistenzen oder unerwünschten Effekten führen können.\n\n\n\n\n\n\n\n\n\nAnomalie\nBeschreibung\nBeispiel\n\n\n\n\nEinfüge-Anomalie\nDaten können nicht ohne Zusatzinfo eingefügt werden\nNeuer Kunde ohne Auftrag\n\n\nÄnderungs-Anomalie\nÄnderung an mehreren Stellen nötig\nKundenadresse in jeder Bestellung\n\n\nLösch-Anomalie\nBeim Löschen gehen andere Daten verloren\nLetzter Auftrag gelöscht → Kundendaten weg\n\n\n\n\nLösung:\n\nNormalisierung → Redundanzen eliminieren:\n\nAufteilung von Tabellen\nklare Definition von Beziehungen zwischen Tabellen\n\n\n\n\nvgl. Lernkarte AP2 2025 Nr. 105"
   },
   {
     "objectID": "06_Datenbanken.html#normalisierung-1.-normalform-1nf",
@@ -154,18 +217,11 @@
     "text": "DQL (Data Query Language)\n\n-- Projektion + Selektion\nSELECT Name, Email FROM Kunde WHERE KundenID &gt; 10;\n\n-- Sortieren\nSELECT * FROM Kunde ORDER BY Name ASC;\n\n-- Aggregatfunktionen + Gruppieren\nSELECT AbteilungsID, COUNT(*) AS Anzahl, AVG(Gehalt) AS Durchschnitt\nFROM Mitarbeiter\nGROUP BY AbteilungsID\nHAVING COUNT(*) &gt; 5;"
   },
   {
-    "objectID": "06_Datenbanken.html#joins-abfrage-ueber-mehrere-tabellen",
-    "href": "06_Datenbanken.html#joins-abfrage-ueber-mehrere-tabellen",
+    "objectID": "06_Datenbanken.html#joins-abfrage-über-mehrere-tabellen",
+    "href": "06_Datenbanken.html#joins-abfrage-über-mehrere-tabellen",
     "title": "Datenbanken",
-    "section": "JOINs (Abfrage ueber mehrere Tabellen)",
-    "text": "JOINs (Abfrage ueber mehrere Tabellen)\n\n\n\n\nJOIN-Typ\nBeschreibung\n\n\n\n\nINNER JOIN\nNur übereinstimmende Datensätze\n\n\nLEFT JOIN\nAlle links + übereinstimmende rechts\n\n\nRIGHT JOIN\nAlle rechts + übereinstimmende links\n\n\nCROSS JOIN\nKartesisches Produkt (jeder mit jedem)\n\n\n\n\n\nSELECT k.Name, b.Datum, b.Betrag\nFROM Kunde k\nINNER JOIN Bestellung b ON k.KundenID = b.KundenID\nWHERE b.Betrag &gt; 1000\nORDER BY b.Datum DESC;"
-  },
-  {
-    "objectID": "06_Datenbanken.html#relationale-vs.-nosql-datenbanken",
-    "href": "06_Datenbanken.html#relationale-vs.-nosql-datenbanken",
-    "title": "Datenbanken",
-    "section": "Relationale vs. NoSQL-Datenbanken",
-    "text": "Relationale vs. NoSQL-Datenbanken\n\n\n\n\n\n\n\n\n\nMerkmal\nRelational (SQL)\nNoSQL\n\n\n\n\nStruktur\nTabellen mit Spalten\nDokumente, Key-Value, Graphen\n\n\nSchema\nFestes Schema\nFlexibles / kein Schema\n\n\nSprache\nSQL\nAbhängig vom System\n\n\nKonsistenz\nACID (stark)\nBASE (eventual consistency)\n\n\nSkalierung\nVertikal (größerer Server)\nHorizontal (mehr Server)\n\n\nBeispiele\nMySQL, PostgreSQL, MariaDB\nMongoDB, Redis, Cassandra, Neo4j\n\n\nEinsatz\nStrukturierte Daten, Transaktionen\nBig Data, flexible Strukturen"
+    "section": "JOINs (Abfrage über mehrere Tabellen)",
+    "text": "JOINs (Abfrage über mehrere Tabellen)\n\n\n\n\n\n\n\n\nJOIN-Typ\nBeschreibung\n\n\n\n\nINNER JOIN\nNur übereinstimmende Datensätze\n\n\nLEFT JOIN\nAlle links + übereinstimmende rechts\n\n\nRIGHT JOIN\nAlle rechts + übereinstimmende links\n\n\nFULL JOIN\nAlle Zeilen mit Übereinstimmung in min. einer der Tabellen\n\n\nCROSS JOIN\nKartesisches Produkt (jeder mit jedem)\n\n\n\n\n\nSELECT k.Name, b.Datum, b.Betrag\nFROM Kunde k\nINNER JOIN Bestellung b ON k.KundenID = b.KundenID\nWHERE b.Betrag &gt; 1000\nORDER BY b.Datum DESC;\n\nähnlich Lernkarte AP2 2025 Nr. 114"
   },
   {
     "objectID": "06_Datenbanken.html#section",
@@ -181,7 +237,7 @@
     "section": "Sequenzdiagramm: Nachrichten",
     "text": "Sequenzdiagramm: Nachrichten",
     "crumbs": [
-      "UML Sequenz- und Zustandsdiagramm"
+      "UML - Sequenz- und Zustandsdiagramm"
     ]
   },
   {
@@ -191,7 +247,7 @@
     "section": "",
     "text": "Sequenz-diagramm: Lebenslinien",
     "crumbs": [
-      "UML Sequenz- und Zustandsdiagramm"
+      "UML - Sequenz- und Zustandsdiagramm"
     ]
   },
   {
@@ -201,7 +257,7 @@
     "section": "Sequenzdiagramm: Bedingungen",
     "text": "Sequenzdiagramm: Bedingungen",
     "crumbs": [
-      "UML Sequenz- und Zustandsdiagramm"
+      "UML - Sequenz- und Zustandsdiagramm"
     ]
   },
   {
@@ -211,7 +267,7 @@
     "section": "",
     "text": "Sequenz-diagramm: Überblick",
     "crumbs": [
-      "UML Sequenz- und Zustandsdiagramm"
+      "UML - Sequenz- und Zustandsdiagramm"
     ]
   },
   {
@@ -221,7 +277,7 @@
     "section": "Sequenzdiagramm: Beispiel",
     "text": "Sequenzdiagramm: Beispiel\n\n\n\n\n\nsequenceDiagram\n    actor Benutzer\n    participant LoginController\n    participant Datenbank\n    participant Session\n\n    Benutzer-&gt;&gt;LoginController: login(user,pw)\n    LoginController-&gt;&gt;Datenbank: prüfeUser(user,pw)\n    Datenbank--&gt;&gt;LoginController: Ergebnis\n\n    alt gültig\n        LoginController-&gt;&gt;Session: erzeugeSession()\n        Session--&gt;&gt;LoginController: SessionID\n        LoginController--&gt;&gt;Benutzer: Erfolg\n    else ungültig\n        LoginController--&gt;&gt;Benutzer: Fehler\n    end",
     "crumbs": [
-      "UML Sequenz- und Zustandsdiagramm"
+      "UML - Sequenz- und Zustandsdiagramm"
     ]
   },
   {
@@ -231,7 +287,7 @@
     "section": "Sequenzdiagramm: Mermaid",
     "text": "Sequenzdiagramm: Mermaid\nsequenceDiagram\n    actor Benutzer\n    participant LoginController\n    participant Datenbank\n    participant Session\n\n    Benutzer-&gt;&gt;LoginController: login(user,pw)\n    LoginController-&gt;&gt;Datenbank: prüfeUser(user,pw)\n    Datenbank--&gt;&gt;LoginController: Ergebnis\n\n    alt gültig\n        LoginController-&gt;&gt;Session: erzeugeSession()\n        Session--&gt;&gt;LoginController: SessionID\n        LoginController--&gt;&gt;Benutzer: Erfolg\n    else ungültig\n        LoginController--&gt;&gt;Benutzer: Fehler\n    end",
     "crumbs": [
-      "UML Sequenz- und Zustandsdiagramm"
+      "UML - Sequenz- und Zustandsdiagramm"
     ]
   },
   {
@@ -241,7 +297,7 @@
     "section": "Sequenzdiagramm: Zusammenfassung",
     "text": "Sequenzdiagramm: Zusammenfassung\n\nWas stellt ein Sequenzdiagramm in UML dar und in welchen Szenarien wird es typischerweise verwendet?\n\nEin Sequenzdiagramm in UML zeigt die Interaktionen zwischen Objekten in der Reihenfolge, in der sie auftreten\nEs besteht aus\n\neiner Reihe von vertikalen “Lebenslinien”, die Objekte oder Klassen repräsentieren, und\nhorizontalen “Nachrichten”, die zwischen den Lebenslinien hin und her gehen\n\nNachrichten sind zeitlich von oben nach unten geordnet, sodass man sehen kann, in welcher Reihenfolge die Interaktionen auftreten\nSequenzdiagramme helfen dabei, die dynamischen Interaktionen in einem System darzustellen und zu analysieren\n\n\n\nLernkarte AP2 2025 Nr. 128",
     "crumbs": [
-      "UML Sequenz- und Zustandsdiagramm"
+      "UML - Sequenz- und Zustandsdiagramm"
     ]
   },
   {
@@ -251,7 +307,7 @@
     "section": "Zustandsdiagramm",
     "text": "Zustandsdiagramm",
     "crumbs": [
-      "UML Sequenz- und Zustandsdiagramm"
+      "UML - Sequenz- und Zustandsdiagramm"
     ]
   },
   {
@@ -261,7 +317,7 @@
     "section": "Zustandsdiagramm: Bestellung",
     "text": "Zustandsdiagramm: Bestellung\n\n   (●)\n    |\n    v\n+----------+   bestellen()    +-----------+\n|  Neu     |-----------------&gt;| Bestaetigt|\n+----------+                  +-----------+\n                                   |\n                    zahlung_ok()   |\n                                   v\n                             +----------+\n            stornieren()     | Bezahlt  |\n  +----------&lt;---------------|          |\n  |                          +----------+\n  v                                |\n+----------+          versenden()  |\n|Storniert |                       v\n+----------+              +-----------+\n  |                       | Versendet |\n  v                       +-----------+\n (◉)                           |\n                  zugestellt() |\n                               v\n                        +-----------+\n                        | Geliefert |\n                        +-----------+\n                               |\n                               v\n                              (◉)",
     "crumbs": [
-      "UML Sequenz- und Zustandsdiagramm"
+      "UML - Sequenz- und Zustandsdiagramm"
     ]
   },
   {
@@ -271,7 +327,7 @@
     "section": "Zustandsdiagramm: Bestellung",
     "text": "Zustandsdiagramm: Bestellung\n\n\n\n\n\nstateDiagram-v2\n\n    direction LR\n\n    [*] --&gt; Neu\n    Neu --&gt; Bestaetigt : bestellen()\n\n    Bestaetigt --&gt; Bezahlt : zahlung_ok()\n    Bestaetigt --&gt; Storniert : stornieren()\n\n    Bezahlt --&gt; Versendet : versenden()\n    Versendet --&gt; Geliefert : zugestellt()\n\n    Geliefert --&gt; [*]\n    Storniert --&gt; [*]\n\n\n\n\n\n\nMermaid-Code\n\nstateDiagram-v2\n\n    direction LR\n\n    [*] --&gt; Neu\n    Neu --&gt; Bestaetigt : bestellen()\n\n    Bestaetigt --&gt; Bezahlt : zahlung_ok()\n    Bestaetigt --&gt; Storniert : stornieren()\n\n    Bezahlt --&gt; Versendet : versenden()\n    Versendet --&gt; Geliefert : zugestellt()\n\n    Geliefert --&gt; [*]\n    Storniert --&gt; [*]",
     "crumbs": [
-      "UML Sequenz- und Zustandsdiagramm"
+      "UML - Sequenz- und Zustandsdiagramm"
     ]
   },
   {
@@ -281,7 +337,7 @@
     "section": "Zustandsdiagramm: Zusammenfassung",
     "text": "Zustandsdiagramm: Zusammenfassung\n\nErklären Sie die Verwendung des UML-Zustandsdiagramms zur Modellierung von Verhalten in einem System.\n\nUML-Zustandsdiagramm bildet Lebenszyklus eines Objekts ab durch Darstellung seiner verschiedenen Zustände und Übergänge\nBesonders nützlich bei der Modellierung von Objekten, die komplexes Verhalten aufweisen und viele verschiedene Zustände haben können\nWas geben Zustandsdiagramme wieder?\n\nden aktuellen Zustand eines Objekts\ndie Aktionen, die beim Eintritt, während des Verweilens und beim Verlassen des Zustands durchgeführt werden\nBedingungen für den Übergang zu anderen Zuständen\n\nErmöglichen die Darstellung und das Verständnis komplexer verhaltensbasierter Systeme\n\n\n\nLernkarte AP2 2025 Nr. 130",
     "crumbs": [
-      "UML Sequenz- und Zustandsdiagramm"
+      "UML - Sequenz- und Zustandsdiagramm"
     ]
   },
   {
@@ -291,7 +347,7 @@
     "section": "Wann welches Diagramm?",
     "text": "Wann welches Diagramm?\n\n\n\n\n\n\n\n\n\n\nDiagramm\nZeigt\nKategorie\nTypische Fragestellung\n\n\n\n\nAktivitäts-diagramm\nAbläufe, Workflows\nVerhaltens-diagramm\n“Wie läuft der Prozess ab?”\n\n\nAnwendungs-falldiagramm\nFunktionen und Akteure\nVerhaltens-diagramm\n“WAS kann das System? Wer nutzt es?”\n\n\nKlassen-diagramm\nStatische Struktur\nStruktur-diagramm\n“Welche Klassen gibt es und wie hängen sie zusammen?”\n\n\nSequenz-diagramm\nZeitlicher Nachrichtenaustausch\nVerhaltens-diagramm\n“In welcher Reihenfolge kommunizieren die Objekte?”\n\n\nZustands-diagramm\nZustände und Übergänge\nVerhaltens-diagramm\n“Welche Zustände hat ein Objekt?”",
     "crumbs": [
-      "UML Sequenz- und Zustandsdiagramm"
+      "UML - Sequenz- und Zustandsdiagramm"
     ]
   },
   {
@@ -301,7 +357,7 @@
     "section": "Häufige UML-Fehler",
     "text": "Häufige UML-Fehler\n\n\n\n\n\n\n\n\nFehler\nKorrektur\n\n\n\n\nAggregation und Komposition verwechselt\nKomposition = starke Abhängigkeit (Teil stirbt mit Ganzem)\n\n\nInclude und Extend vertauscht\nInclude = obligatorisch, Extend = optional\n\n\nKlassendiagramm ohne Sichtbarkeiten\nImmer +, -, # angeben\n\n\nSequenzdiagramm ohne Rückgabepfeile\nSynchrone Aufrufe brauchen eine Antwort (gestrichelter Pfeil)\n\n\nZustandsdiagramm ohne Start- / Endzustand\nStart (●) und Ende (◉) gehören immer dazu\n\n\nAktivitäten im Use-Case-Diagramm\nUse Cases beschreiben FUNKTIONEN, keine Ablaufschritte",
     "crumbs": [
-      "UML Sequenz- und Zustandsdiagramm"
+      "UML - Sequenz- und Zustandsdiagramm"
     ]
   },
   {
@@ -311,7 +367,7 @@
     "section": "",
     "text": "©torange.biz CC-BY 4.0\n\n\nViel Erfolg!",
     "crumbs": [
-      "UML Sequenz- und Zustandsdiagramm"
+      "UML - Sequenz- und Zustandsdiagramm"
     ]
   },
   {
@@ -1145,14 +1201,14 @@
     "href": "05_Schnittstellen_APIs.html#rest-apis-grundlagen",
     "title": "Schnittstellen, APIs",
     "section": "REST APIs: Grundlagen",
-    "text": "REST APIs: Grundlagen\n\nGrundlagen siehe LF7: REST\n\nREST = Representational State Transfer\n\nAPI = Application Programming Interface\n\nREST-API: Set von Regeln und Konventionen für den Aufbau von Webdiensten"
+    "text": "REST APIs: Grundlagen\n\nGrundlagen siehe LF7: REST\n\nREST = Representational State Transfer\n\nAPI = Application Programming Interface\n\nREST-API: Set von Regeln und Konventionen für den Aufbau von Webdiensten\nNutzt Standard-HTTP-Methoden (wie GET, POST, PUT, DELETE) zur Interaktion mit Ressourcen, die durch eindeutige URLs identifiziert werden\nZustandslos: jede Anfrage enthält alle Informationen, die benötigt werden, um sie zu bearbeiten, ohne sich auf frühere Anfragen zu beziehen\n\n\n\nLernkarte AP2 2025 Nr. 163"
   },
   {
     "objectID": "05_Schnittstellen_APIs.html#rest-apis-6-prinzipien",
     "href": "05_Schnittstellen_APIs.html#rest-apis-6-prinzipien",
     "title": "Schnittstellen, APIs",
     "section": "REST APIs: 6 Prinzipien",
-    "text": "REST APIs: 6 Prinzipien\n\n\n\n\n\n\n\n\nPrinzip\nBedeutung\n\n\n\n\nClient-Server\nKlare Trennung von Client und Server\n\n\nStateless (Zustandslos)\nJede Anfrage enthält alle nötige Information, Server speichert keinen Client-Zustand\n\n\nCacheable\nAntworten können zwischengespeichert werden\n\n\nUniform Interface\nEinheitliche Schnittstelle (URLs, HTTP-Methoden)\n\n\nLayered System\nMehrschichtige Architektur möglich (z.B. Load Balancer dazwischen)\n\n\nCode on Demand (optional)\nServer kann ausführbaren Code an Client senden\n\n\n\n\n\nWelche Lernkarte?"
+    "text": "REST APIs: 6 Prinzipien\n\n\n\n\n\n\n\n\nPrinzip\nBedeutung\n\n\n\n\nClient-Server\nKlare Trennung von Client und Server\n\n\nStateless (Zustandslos)\nJede Anfrage enthält alle nötige Information, Server speichert keinen Client-Zustand\n\n\nCacheable\nAntworten können zwischengespeichert werden, um Leistung zu verbessern\n\n\nUniform Interface\nEinheitliche Schnittstelle (URLs, HTTP-Methoden)\n\n\nLayered System\nMehrschichtige Architektur möglich (z.B. Load Balancer dazwischen); gewährleistet Flexibilität\n\n\nCode on Demand (optional)\nServer kann ausführbaren Code an Client senden\n\n\n\n\n\nLernkarte AP2 2025 Nr. 164"
   },
   {
     "objectID": "05_Schnittstellen_APIs.html#rest-http-methoden",
@@ -1223,6 +1279,20 @@
     "title": "Schnittstellen, APIs",
     "section": "XML: Grundbausteine",
     "text": "XML: Grundbausteine\n\n\n\n\nBaustein\nBeispiel\n\n\n\n\nProzessanweisung\n&lt;?xml version=\"1.0\"?&gt;\n\n\nElemente\n&lt;name&gt;Wert&lt;/name&gt;\n\n\nAttribute\n&lt;item id=\"1\"&gt;\n\n\nText\nInhalt zwischen Tags\n\n\nKommentare\n&lt;!-- ... --&gt;\n\n\nCDATA\n&lt;![CDATA[...]]&gt;\n\n\n\n\nCDATA = Character Data, speichert Text ungefiltert,  d. h. ohne dass XML-Sonderzeichen interpretiert werden\n\n\n\nQuelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/xml-formatter-validator.html"
+  },
+  {
+    "objectID": "05_Schnittstellen_APIs.html#xml-dtd",
+    "href": "05_Schnittstellen_APIs.html#xml-dtd",
+    "title": "Schnittstellen, APIs",
+    "section": "XML: DTD",
+    "text": "XML: DTD\n\nWozu dient die DTD (Dokumenttyp-Definition) bei der Verwendung von XML-Dateien?\n\nDokumenttyp-Definition (DTD): Möglichkeit, Struktur und Inhalt von XML-Dokumenten zu definieren\nLegt Regeln und Beschränkungen für Elemente, Attribute und deren Beziehungen in einem XML-Dokument fest\nStellt eine formale Beschreibung bereit, die es ermöglicht, die Gültigkeit und Konformität eines XML-Dokuments zu überprüfen\n\n\n\nLernkarte AP2 2025 Nr. 124"
+  },
+  {
+    "objectID": "05_Schnittstellen_APIs.html#xml-vs.-csv",
+    "href": "05_Schnittstellen_APIs.html#xml-vs.-csv",
+    "title": "Schnittstellen, APIs",
+    "section": "XML vs. CSV",
+    "text": "XML vs. CSV\n\nCSV (Comma-Separated Values) und XML (eXtensible Markup Language) sind verschiedene Dateiformate, die zur Speicherung und Übertragung von strukturierten Daten verwendet werden.\n\n\nCSV\n\nTextbasiertes Format, bei dem Daten in Tabellenform organisiert sind\nJede Zeile repräsentiert einen Datensatz\ndie einzelnen Werte innerhalb einer Zeile sind durch Trennzeichen getrennt\nCSV enthält normalerweise keine Strukturinformationen oder Hierarchie\n\n\nXML\n\nMarkup-Sprache, die eine hierarchische Struktur verwendet\nDaten werden in Tags eingebettet und können hierarchisch verschachtelt werden, um komplexe Hierarchien darzustellen\n\n\n\n\nLernkarte AP2 2025 Nr. 123"
   },
   {
     "objectID": "05_Schnittstellen_APIs.html#xml-häufige-fehler",

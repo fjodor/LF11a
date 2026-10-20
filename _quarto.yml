@@ -12,7 +12,7 @@ website:
       - href: 01_Willkommen_Struktur.qmd
         text: 01 Willkommen zu LF11a - Themen und Zeitplan
       - href: 02a_OOP_Pseudocode.qmd
-        text: 02a OOP Pseudocode 
+        text: 02a OOP, Pseudocode, Klassendiagramm
       - href: 02b_OOP_Programmieraufgaben.qmd
         text: 02b OOP Programmieraufgaben
       - href: 02c_OOP_UML_mermaid.qmd

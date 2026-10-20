@@ -371,88 +371,164 @@
     ]
   },
   {
-    "objectID": "03a_OO_Analyse-Designverfahren.html#ziele",
-    "href": "03a_OO_Analyse-Designverfahren.html#ziele",
-    "title": "Objektorientierte Analyse- und Designverfahren",
-    "section": "Ziele",
-    "text": "Ziele\n\nSchritte der objektorientierten Analyse (OOA) kennen\nSchritte des objektorientierten Designs (OOD) kennen\nKlassen aus Anforderungen ableiten können\ngrundlegende Designprinzipien anwenden können"
+    "objectID": "03a_Design-Patterns.html#design-patterns-übersicht",
+    "href": "03a_Design-Patterns.html#design-patterns-übersicht",
+    "title": "Design Patterns",
+    "section": "Design Patterns: Übersicht",
+    "text": "Design Patterns: Übersicht\n\nErzeugungsmuster: Creational Patterns\n\nBeispiele: Factory Pattern, Singleton\n\nStrukturmuster: Structual Patterns\n\nBeispiele: Adapter, Decorator, Composite\n\nVerhaltensmuster: Behavioral Patterns\n\nBeispiele: Observer, Strategy\n\n\n\nLernkarte AP2 2025 Nr. 155",
+    "crumbs": [
+      "03a Design Patterns"
+    ]
   },
   {
-    "objectID": "03a_OO_Analyse-Designverfahren.html#objektorientierte-analyse-ooa",
-    "href": "03a_OO_Analyse-Designverfahren.html#objektorientierte-analyse-ooa",
-    "title": "Objektorientierte Analyse- und Designverfahren",
-    "section": "Objektorientierte Analyse (OOA)",
-    "text": "Objektorientierte Analyse (OOA)\n\nDefinition: Die OOA identifiziert aus den fachlichen Anforderungen (z.B. Lastenheft) die relevanten Objekte, Klassen, Attribute und Methoden des Systems.\nVorgehen:\n\nAnforderungen lesen – Lastenheft, User Stories, Gesprächsprotokolle\nSubstantive markieren → Kandidaten für Klassen und Attribute\nVerben markieren → Kandidaten für Methoden\nBeziehungen identifizieren → Assoziationen, Kompositionen, Vererbung\nErstes Klassendiagramm erstellen → grobe Struktur"
+    "objectID": "03a_Design-Patterns.html#erzeugungsmuster---creational-patterns",
+    "href": "03a_Design-Patterns.html#erzeugungsmuster---creational-patterns",
+    "title": "Design Patterns",
+    "section": "Erzeugungsmuster - Creational Patterns",
+    "text": "Erzeugungsmuster - Creational Patterns\n\nHelfen bei der Erzeugung von Objekten\nSorgen für flexible, kontrollierte und wiederverwendbare Objektinstanziierung\nBeispiele: Factory Pattern, Singleton\n\n\nLernkarte AP2 2025 Nr. 155",
+    "crumbs": [
+      "03a Design Patterns"
+    ]
   },
   {
-    "objectID": "03a_OO_Analyse-Designverfahren.html#ooa-beispiel",
-    "href": "03a_OO_Analyse-Designverfahren.html#ooa-beispiel",
-    "title": "Objektorientierte Analyse- und Designverfahren",
-    "section": "OOA: Beispiel",
-    "text": "OOA: Beispiel\n\n\n“Ein Kunde gibt eine Bestellung auf. Jede Bestellung enthält mehrere Artikel. Der Kunde hat einen Namen und eine Adresse. Artikel haben eine Bezeichnung und einen Preis.”\n\nAbleitung:\n\n\n\n\n\n\n\n\n\nElement\nTyp\nQuelle\n\n\n\n\nKunde\nKlasse\nSubstantiv\n\n\nBestellung\nKlasse\nSubstantiv\n\n\nArtikel\nKlasse\nSubstantiv\n\n\nName, Adresse\nAttribute von Kunde\nSubstantive (Eigenschaften)\n\n\nBezeichnung, Preis\nAttribute von Artikel\nSubstantive (Eigenschaften)\n\n\naufgeben()\nMethode von Kunde\nVerb “gibt auf”\n\n\nenthalten()\nBeziehung Bestellung → Artikel\nVerb “enthält”"
+    "objectID": "03a_Design-Patterns.html#strukturmuster---structural-patterns",
+    "href": "03a_Design-Patterns.html#strukturmuster---structural-patterns",
+    "title": "Design Patterns",
+    "section": "Strukturmuster - Structural Patterns",
+    "text": "Strukturmuster - Structural Patterns\n\nBeschreiben, wie Klassen und Objekte zusammenarbeiten und sich zu größeren Strukturen verbinden\nHelfen, komplexe Strukturen übersichtlich zu gestalten\nBeispiele: Adapter, Decorator, Composite\n\n\nLernkarte AP2 2025 Nr. 155",
+    "crumbs": [
+      "03a Design Patterns"
+    ]
   },
   {
-    "objectID": "03a_OO_Analyse-Designverfahren.html#ooa-crc-karten",
-    "href": "03a_OO_Analyse-Designverfahren.html#ooa-crc-karten",
-    "title": "Objektorientierte Analyse- und Designverfahren",
-    "section": "OOA: CRC-Karten",
-    "text": "OOA: CRC-Karten\n\nDefinition: CRC-Karten (Class-Responsibility-Collaboration) sind ein einfaches Werkzeug zur frühen Identifikation von Klassen. Jede Karte beschreibt eine Klasse mit ihren Verantwortlichkeiten und Kooperationspartnern.\n\n\n\n+----------------------------------+\n|          KLASSE: Kunde           |\n+----------------------------------+\n| Verantwortlichkeiten:            |\n| - Name und Adresse verwalten     |\n| - Bestellung aufgeben            |\n+----------------------------------+\n| Kooperationen:                   |\n| - Bestellung                     |\n+----------------------------------+\n\n+----------------------------------+\n|       KLASSE: Bestellung         |\n+----------------------------------+\n| Verantwortlichkeiten:            |\n| - Artikel verwalten              |\n| - Gesamtpreis berechnen          |\n| - Status ändern                  |\n+----------------------------------+\n| Kooperationen:                   |\n| - Kunde, Artikel                 |\n+----------------------------------+"
+    "objectID": "03a_Design-Patterns.html#verhaltensmuster---behavioral-patterns",
+    "href": "03a_Design-Patterns.html#verhaltensmuster---behavioral-patterns",
+    "title": "Design Patterns",
+    "section": "Verhaltensmuster - Behavioral Patterns",
+    "text": "Verhaltensmuster - Behavioral Patterns\n\nDefinieren, wie Objekte miteinander kommunizieren und interagieren, um Aufgaben zu erfüllen\nVerbessern die Interaktion und Verantwortungsverteilung\nBeispiele: Observer, Strategy\n\n\nLernkarte AP2 2025 Nr. 155",
+    "crumbs": [
+      "03a Design Patterns"
+    ]
   },
   {
-    "objectID": "03a_OO_Analyse-Designverfahren.html#objektorientiertes-design-ood",
-    "href": "03a_OO_Analyse-Designverfahren.html#objektorientiertes-design-ood",
-    "title": "Objektorientierte Analyse- und Designverfahren",
-    "section": "Objektorientiertes Design (OOD)",
-    "text": "Objektorientiertes Design (OOD)\n\nDefinition: Das OOD verfeinert das OOA-Modell zur technischen Umsetzung: Klassen werden detailliert, Datentypen festgelegt, Sichtbarkeiten definiert und Entwurfsmuster angewendet.\nSchritte im OOD\n\nOOA-Klassendiagramm verfeinern (Datentypen, Sichtbarkeiten)\nEntwurfsmuster (Design Patterns) anwenden\nSchnittstellen (Interfaces) definieren\nVererbungshierarchien optimieren\nSequenzdiagramme für wichtige Abläufe erstellen"
+    "objectID": "03a_Design-Patterns.html#design-patterns-singleton",
+    "href": "03a_Design-Patterns.html#design-patterns-singleton",
+    "title": "Design Patterns",
+    "section": "Design Patterns: Singleton",
+    "text": "Design Patterns: Singleton\n\nErklären Sie die Aufgaben des Singleton Pattern.\n\nDas Singleton-Entwurfsmuster ist ein Software-Entwurfsmuster, das die Instanziierung einer Klasse auf genau ein Objekt beschränkt.\nEs wird verwendet, um sicherzustellen, dass eine Klasse nur eine einzige Instanz hat, und stellt einen globalen Zugangspunkt zu diesem Objekt bereit.\nHauptziel: kontrollierten Mechanismus zur Verfügung stellen, um auf begrenzte Ressourcen zuzugreifen\nnützlich, wenn genau eine Instanz eines Objekts benötigt wird, um Aktionen zu koordinieren\n\n\n\nLernkarte AP2 2025 Nr. 160",
+    "crumbs": [
+      "03a Design Patterns"
+    ]
   },
   {
-    "objectID": "03a_OO_Analyse-Designverfahren.html#solid-prinzipien",
-    "href": "03a_OO_Analyse-Designverfahren.html#solid-prinzipien",
-    "title": "Objektorientierte Analyse- und Designverfahren",
-    "section": "SOLID-Prinzipien",
-    "text": "SOLID-Prinzipien\n\n\n\n\n\n\n\n\n\nBuchstabe\nPrinzip\nBedeutung\n\n\n\n\nS\nSingle Responsibility\nJede Klasse hat genau eine Aufgabe\n\n\nO\nOpen / Closed\nOffen für Erweiterung, geschlossen für Änderung\n\n\nL\nLiskov Substitution\nUnterklassen müssen die Oberklasse ersetzen können\n\n\nI\nInterface Segregation\nViele kleine Interfaces statt eines großen\n\n\nD\nDependency Inversion\nAbhängigkeiten auf Abstraktionen, nicht auf konkrete Klassen"
+    "objectID": "03a_Design-Patterns.html#design-patterns-observer",
+    "href": "03a_Design-Patterns.html#design-patterns-observer",
+    "title": "Design Patterns",
+    "section": "Design Patterns: Observer",
+    "text": "Design Patterns: Observer\n\nWas ist das Observer Muster?\n\nEntwurfsmuster aus dem Bereich der Softwareentwicklung\nzählt zu den Verhaltensmustern (Behavioral Patterns)\nermöglicht Einwegabhängigkeit zwischen Objekten:\n\nwenn ein Objekt seinen Zustand ändert, werden alle abhängigen Objekte benachrichtigt und automatisch aktualisiert\n\nbesonders nützlich in Situationen:\n\nin denen der Zustand eines Objekts von vielen anderen Objekten abhängig ist\nund eine enge Kopplung zwischen diesen Objekten vermieden werden soll\n\n\n\n\nLernkarte AP2 2025 Nr. 156",
+    "crumbs": [
+      "03a Design Patterns"
+    ]
   },
   {
-    "objectID": "03a_OO_Analyse-Designverfahren.html#liskov-substitution",
-    "href": "03a_OO_Analyse-Designverfahren.html#liskov-substitution",
-    "title": "Objektorientierte Analyse- und Designverfahren",
-    "section": "Liskov Substitution",
-    "text": "Liskov Substitution\n\n\nObjekte einer Unterklasse müssen überall dort einsetzbar sein, wo Objekte der Oberklasse erwartet werden, ohne dass das Programm dadurch fehlerhaft wird.\n\n\nEinfacher: Eine abgeleitete Klasse darf die Erwartungen an die Basisklasse nicht verletzen.\nGegenbeispiel: Basisklasse = Rechteck, Unterklasse = Quadrat\nTest Rechteck: Länge = 4, Breite = 5, Fläche = Länge * Breite = 20\nDas funktioniert für ein Quadrat nicht. Länge per Definition gleich Breite.\nLiskov Substitution Principle (LSP) ist verletzt.\nEs genügt nicht zu prüfen: Ist B eine Spezialisierung von A?\nZusätzlich prüfen: Kann überall, wo A verwendet wird, auch B stehen?"
+    "objectID": "03a_Design-Patterns.html#design-patterns-observer-1",
+    "href": "03a_Design-Patterns.html#design-patterns-observer-1",
+    "title": "Design Patterns",
+    "section": "Design Patterns: Observer",
+    "text": "Design Patterns: Observer\n\nWie funktioniert das Observer Muster?\nDas Observer Muster funktioniert durch eine Einweg-Kommunikation von einem Subjekt zu mehreren anderen Objekten (Observer).\n\nRegistrierung: Die Observer melden sich beim Subjekt für Updates an. Das Subjekt hält eine Liste aller seiner Observer.\nÄnderung: Wenn das Subjekt seinen Zustand ändert, informiert es alle registrierten Observer über die Änderung.\nBenachrichtigung: Das Subjekt benachrichtigt die Observer über die Zustandsänderung, indem es eine Methode (häufig update genannt) auf den Observern aufruft.\nAbmeldung: Observer können sich jederzeit vom Subjekt abmelden, wenn sie keine weiteren Benachrichtigungen erhalten möchten.\n\n\n\nLernkarte AP2 2025 Nr. 157",
+    "crumbs": [
+      "03a Design Patterns"
+    ]
   },
   {
-    "objectID": "03a_OO_Analyse-Designverfahren.html#oop-grundkonzepte",
-    "href": "03a_OO_Analyse-Designverfahren.html#oop-grundkonzepte",
-    "title": "Objektorientierte Analyse- und Designverfahren",
-    "section": "OOP Grundkonzepte",
-    "text": "OOP Grundkonzepte\n\n\n\n\n\n\n\n\nKonzept\nBeschreibung\n\n\n\n\nKlasse\nBauplan für Objekte (Attribute + Methoden)\n\n\nObjekt\nKonkrete Instanz einer Klasse\n\n\nVererbung\nUnterklasse übernimmt Attribute / Methoden der Oberklasse\n\n\nPolymorphismus\nGleiche Methode, unterschiedliches Verhalten je nach Klasse\n\n\nKapselung\nZugriff auf Attribute nur über Methoden (Getter / Setter)\n\n\nAbstraktion\nNur relevante Eigenschaften modellieren"
+    "objectID": "03a_Design-Patterns.html#design-patterns-factory",
+    "href": "03a_Design-Patterns.html#design-patterns-factory",
+    "title": "Design Patterns",
+    "section": "Design Patterns: Factory",
+    "text": "Design Patterns: Factory\n\nWas ist das Factory Pattern und welchen Vorteil bietet es bei der Objekterzeugung?\n\nDas Factory Pattern ist ein Entwurfsmuster, bei dem die Erzeugung von Objekten an eine eigene Methode oder Klasse ausgelagert wird.\nDadurch wird entschieden, welches konkrete Objekt erzeugt wird, ohne direkt von bestimmten Klassen abhängig zu sein.\nVorteile:\n\nEntkopplung von Erzeugung und Verwendung\nErleichtert das Hinzufügen neuer Objekttypen\nMacht Code übersichtlicher und besser wartbar\n\n\n\n\nLernkarte AP2 2025 Nr. 161",
+    "crumbs": [
+      "03a Design Patterns"
+    ]
   },
   {
-    "objectID": "03a_OO_Analyse-Designverfahren.html#ooa-vs.-ood-im-vergleich",
-    "href": "03a_OO_Analyse-Designverfahren.html#ooa-vs.-ood-im-vergleich",
-    "title": "Objektorientierte Analyse- und Designverfahren",
-    "section": "OOA vs. OOD im Vergleich",
-    "text": "OOA vs. OOD im Vergleich\n\n\n\n\nAspekt\nOOA\nOOD\n\n\n\n\nZiel\nFachliche Modellierung (WAS)\nTechnische Modellierung (WIE)\n\n\nPerspektive\nKundensicht / Fachbereich\nEntwicklersicht\n\n\nErgebnis\nFachliches Klassendiagramm\nTechnisches Klassendiagramm\n\n\nDatentypen\nNoch nicht festgelegt\nKonkret (String, int, Date)\n\n\nSichtbarkeiten\nNoch nicht definiert\n+, -, #, ~\n\n\nDesign Patterns\nNoch nicht angewendet\nWerden eingesetzt"
+    "objectID": "03a_Design-Patterns.html#design-patterns-strategy",
+    "href": "03a_Design-Patterns.html#design-patterns-strategy",
+    "title": "Design Patterns",
+    "section": "Design Patterns: Strategy",
+    "text": "Design Patterns: Strategy\n\nErmöglicht die Auswahl eines Algorithmus zur Laufzeit\nDazu wird die Implementierung von Algorithmen in separate Klassen ausgelagert\nErleichtert die Austauschbarkeit und Erweiterbarkeit von Algorithmen, ohne die Benutzerklasse ändern zu müssen\n\n\nAP2 Sommer 2025 Teil 1 Planen",
+    "crumbs": [
+      "03a Design Patterns"
+    ]
   },
   {
-    "objectID": "03a_OO_Analyse-Designverfahren.html#typische-prüfungsaspekte",
-    "href": "03a_OO_Analyse-Designverfahren.html#typische-prüfungsaspekte",
-    "title": "Objektorientierte Analyse- und Designverfahren",
-    "section": "Typische Prüfungsaspekte",
-    "text": "Typische Prüfungsaspekte\n\nAus einem Anforderungstext Klassen, Attribute und Methoden ableiten\nCRC-Karten erstellen oder interpretieren\nOOA von OOD unterscheiden\nOOP-Grundkonzepte (Vererbung, Kapselung, Polymorphismus) erklären\nSOLID-Prinzipien im Grundsatz kennen"
+    "objectID": "03a_Design-Patterns.html#design-patterns-mvc",
+    "href": "03a_Design-Patterns.html#design-patterns-mvc",
+    "title": "Design Patterns",
+    "section": "Design Patterns: MVC",
+    "text": "Design Patterns: MVC\n\nWelche Komponenten umfasst das MVC-Muster und wie interagieren sie miteinander?\n\nEntwurfsmuster; oft verwendet, um Struktur von Softwareanwendungen zu organisieren\nKomponenten:\n\nModel: Verantwortlich für Daten und Geschäftslogik\nView: Präsentiert Daten an den Benutzer\nController: Verarbeitet die Benutzereingaben und aktualisiert das Model\n\nInteraktion funktioniert wie folgt:\n\nBenutzer agiert mit der View.\nController erhält Benutzereingaben von View, führt Aktionen im Model aus.\nModel benachrichtigt View über Änderungen.\nView aktualisiert die Benutzeroberfläche.\n\n\n\n\nLernkarte AP2 2025 Nr. 158",
+    "crumbs": [
+      "03a Design Patterns"
+    ]
   },
   {
-    "objectID": "03a_OO_Analyse-Designverfahren.html#häufige-fehler",
-    "href": "03a_OO_Analyse-Designverfahren.html#häufige-fehler",
-    "title": "Objektorientierte Analyse- und Designverfahren",
-    "section": "Häufige Fehler",
-    "text": "Häufige Fehler\n\n\n\n\n\n\n\n\nFehler\nKorrektur\n\n\n\n\nAdjektive als Klassen identifiziert\nAdjektive sind meist Attribute, nicht Klassen\n\n\nZu viele Klassen erstellt\nNur fachlich relevante Entitäten werden Klassen\n\n\nOOA und OOD vermischt\nOOA = fachlich (WAS),  OOD = technisch (WIE)\n\n\nKapselung ignoriert\nAttribute sollten private sein,  Zugriff über Getter / Setter\n\n\nVererbung für alles verwendet\nKomposition ist oft besser als Vererbung (“favor composition over inheritance”)"
+    "objectID": "03a_Design-Patterns.html#mvc-data-binding",
+    "href": "03a_Design-Patterns.html#mvc-data-binding",
+    "title": "Design Patterns",
+    "section": "MVC: Data Binding",
+    "text": "MVC: Data Binding\n\nZur Aktualisierung des Views soll Datenbindung (Data Binding) eingesetzt werden. Erläutern Sie den Begriff Datenbindung (Data Binding).\n\nDatenbindung (Data Binding) ist ein Prozess, der eine Verbindung zwischen Daten (Modell) und Benutzeroberfläche (View) herstellt\nErmöglicht, dass Änderungen an den Daten automatisch in der Benutzeroberfläche reflektiert werden und umgekehrt\nZwei Arten von Datenbindung:\n\nEinweg-Datenbindung (One-Way Data Binding): Daten fließen vom Model zum View\nZweiweg-Datenbindung (Two-Way Data Binding): Daten fließen in beide Richtungen, sodass Änderungen im View auch das Model aktualisieren\n\n\n\n\nLernkarte AP2 2025 Nr. 159",
+    "crumbs": [
+      "03a Design Patterns"
+    ]
   },
   {
-    "objectID": "03a_OO_Analyse-Designverfahren.html#section",
-    "href": "03a_OO_Analyse-Designverfahren.html#section",
-    "title": "Objektorientierte Analyse- und Designverfahren",
+    "objectID": "03a_Design-Patterns.html#schichten-architektur",
+    "href": "03a_Design-Patterns.html#schichten-architektur",
+    "title": "Design Patterns",
+    "section": "3-Schichten-Architektur",
+    "text": "3-Schichten-Architektur\n\nWelche Vorteile bietet die Verwendung einer 3-Schichten-Architektur bei der Entwicklung?\n\nErmöglicht klare Trennung zwischen Präsentationsschicht, Anwendungslogik und Datenzugriffsschicht\nDadurch wird Code besser strukturiert, Wartungsaufgaben werden vereinfacht.\nSchichtung ermöglicht eine bessere Skalierbarkeit, da jede Schicht unabhängig von den anderen skaliert werden kann.\nSchichtung erleichtert die Wiederverwendbarkeit von Komponenten, da jede Schicht unabhängig von den anderen entwickelt und leichter in anderen Projekten wiederverwendet werden kann.\n\n\n\nLernkarte AP2 2025 Nr. 149",
+    "crumbs": [
+      "03a Design Patterns"
+    ]
+  },
+  {
+    "objectID": "03a_Design-Patterns.html#schichten-prüfungsaufgabe",
+    "href": "03a_Design-Patterns.html#schichten-prüfungsaufgabe",
+    "title": "Design Patterns",
+    "section": "3 Schichten: Prüfungsaufgabe",
+    "text": "3 Schichten: Prüfungsaufgabe\n\nBeschreiben Sie, wie die 3-Schichten-Architektur bei einer Webanwendung typischerweise aussieht und wie die entsprechenden Komponenten zusammenarbeiten.\n\nAP2 Winter 2022/23 Teil 1 Planen 2.a)",
+    "crumbs": [
+      "03a Design Patterns"
+    ]
+  },
+  {
+    "objectID": "03a_Design-Patterns.html#schichten-lösung",
+    "href": "03a_Design-Patterns.html#schichten-lösung",
+    "title": "Design Patterns",
+    "section": "3 Schichten: Lösung",
+    "text": "3 Schichten: Lösung\n\n\n\n\nAP2 Winter 2022/23 Teil 1 Planen 2.a)",
+    "crumbs": [
+      "03a Design Patterns"
+    ]
+  },
+  {
+    "objectID": "03a_Design-Patterns.html#modularisierung-konzept",
+    "href": "03a_Design-Patterns.html#modularisierung-konzept",
+    "title": "Design Patterns",
+    "section": "Modularisierung: Konzept",
+    "text": "Modularisierung: Konzept\n\nErklären Sie das Konzept der Modularisierung in der Softwareentwicklung.\n\nModularisierung: Konzept in der Softwareentwicklung: umfangreichen Code in kleinere, unabhängige, verwaltbare Einheiten / Module zerlegen\nJedes Modul fokussiert sich auf eine spezifische Funktion / einen bestimmten Aspekt des Gesamtprojekts\nZiele:\n\nKomplexität des Codes reduzieren\nCode einfacher verwalten, warten, testen und verstehen\n\nModule können unabhängig von einander entwickelt, getestet und überarbeitet werden\nErhöht Effizienz und Produktivität des Entwicklungsprozesses\n\n\n\nLernkarte AP2 2025 Nr. 147",
+    "crumbs": [
+      "03a Design Patterns"
+    ]
+  },
+  {
+    "objectID": "03a_Design-Patterns.html#section",
+    "href": "03a_Design-Patterns.html#section",
+    "title": "Design Patterns",
     "section": "",
-    "text": "©torange.biz CC-BY 4.0\n\n\nViel Erfolg!"
+    "text": "©torange.biz CC-BY 4.0\n\n\nViel Erfolg!",
+    "crumbs": [
+      "03a Design Patterns"
+    ]
   },
   {
     "objectID": "02b_OOP_Programmieraufgaben.html#escape-room-er-ziele",
@@ -1085,163 +1161,123 @@
     ]
   },
   {
-    "objectID": "03b_Design-Patterns.html#design-patterns-übersicht",
-    "href": "03b_Design-Patterns.html#design-patterns-übersicht",
-    "title": "Design Patterns",
-    "section": "Design Patterns: Übersicht",
-    "text": "Design Patterns: Übersicht\n\nErzeugungsmuster: Creational Patterns\n\nBeispiele: Factory Pattern, Singleton\n\nStrukturmuster: Structual Patterns\n\nBeispiele: Adapter, Decorator, Composite\n\nVerhaltensmuster: Behavioral Patterns\n\nBeispiele: Observer, Strategy\n\n\n\nLernkarte AP2 2025 Nr. 155",
+    "objectID": "03b_OO_Analyse-Designverfahren.html#ziele",
+    "href": "03b_OO_Analyse-Designverfahren.html#ziele",
+    "title": "Objektorientierte Analyse- und Designverfahren",
+    "section": "Ziele",
+    "text": "Ziele\n\nSchritte der objektorientierten Analyse (OOA) kennen\nSchritte des objektorientierten Designs (OOD) kennen\nKlassen aus Anforderungen ableiten können\ngrundlegende Designprinzipien anwenden können",
     "crumbs": [
-      "03 Design Patterns"
+      "03b Objektorientierte Analyse- und Designverfahren"
     ]
   },
   {
-    "objectID": "03b_Design-Patterns.html#erzeugungsmuster---creational-patterns",
-    "href": "03b_Design-Patterns.html#erzeugungsmuster---creational-patterns",
-    "title": "Design Patterns",
-    "section": "Erzeugungsmuster - Creational Patterns",
-    "text": "Erzeugungsmuster - Creational Patterns\n\nHelfen bei der Erzeugung von Objekten\nSorgen für flexible, kontrollierte und wiederverwendbare Objektinstanziierung\nBeispiele: Factory Pattern, Singleton\n\n\nLernkarte AP2 2025 Nr. 155",
+    "objectID": "03b_OO_Analyse-Designverfahren.html#objektorientierte-analyse-ooa",
+    "href": "03b_OO_Analyse-Designverfahren.html#objektorientierte-analyse-ooa",
+    "title": "Objektorientierte Analyse- und Designverfahren",
+    "section": "Objektorientierte Analyse (OOA)",
+    "text": "Objektorientierte Analyse (OOA)\n\nDefinition: Die OOA identifiziert aus den fachlichen Anforderungen (z.B. Lastenheft) die relevanten Objekte, Klassen, Attribute und Methoden des Systems.\nVorgehen:\n\nAnforderungen lesen – Lastenheft, User Stories, Gesprächsprotokolle\nSubstantive markieren → Kandidaten für Klassen und Attribute\nVerben markieren → Kandidaten für Methoden\nBeziehungen identifizieren → Assoziationen, Kompositionen, Vererbung\nErstes Klassendiagramm erstellen → grobe Struktur",
     "crumbs": [
-      "03 Design Patterns"
+      "03b Objektorientierte Analyse- und Designverfahren"
     ]
   },
   {
-    "objectID": "03b_Design-Patterns.html#strukturmuster---structural-patterns",
-    "href": "03b_Design-Patterns.html#strukturmuster---structural-patterns",
-    "title": "Design Patterns",
-    "section": "Strukturmuster - Structural Patterns",
-    "text": "Strukturmuster - Structural Patterns\n\nBeschreiben, wie Klassen und Objekte zusammenarbeiten und sich zu größeren Strukturen verbinden\nHelfen, komplexe Strukturen übersichtlich zu gestalten\nBeispiele: Adapter, Decorator, Composite\n\n\nLernkarte AP2 2025 Nr. 155",
+    "objectID": "03b_OO_Analyse-Designverfahren.html#ooa-beispiel",
+    "href": "03b_OO_Analyse-Designverfahren.html#ooa-beispiel",
+    "title": "Objektorientierte Analyse- und Designverfahren",
+    "section": "OOA: Beispiel",
+    "text": "OOA: Beispiel\n\n\n“Ein Kunde gibt eine Bestellung auf. Jede Bestellung enthält mehrere Artikel. Der Kunde hat einen Namen und eine Adresse. Artikel haben eine Bezeichnung und einen Preis.”\n\nAbleitung:\n\n\n\n\n\n\n\n\n\nElement\nTyp\nQuelle\n\n\n\n\nKunde\nKlasse\nSubstantiv\n\n\nBestellung\nKlasse\nSubstantiv\n\n\nArtikel\nKlasse\nSubstantiv\n\n\nName, Adresse\nAttribute von Kunde\nSubstantive (Eigenschaften)\n\n\nBezeichnung, Preis\nAttribute von Artikel\nSubstantive (Eigenschaften)\n\n\naufgeben()\nMethode von Kunde\nVerb “gibt auf”\n\n\nenthalten()\nBeziehung Bestellung → Artikel\nVerb “enthält”",
     "crumbs": [
-      "03 Design Patterns"
+      "03b Objektorientierte Analyse- und Designverfahren"
     ]
   },
   {
-    "objectID": "03b_Design-Patterns.html#verhaltensmuster---behavioral-patterns",
-    "href": "03b_Design-Patterns.html#verhaltensmuster---behavioral-patterns",
-    "title": "Design Patterns",
-    "section": "Verhaltensmuster - Behavioral Patterns",
-    "text": "Verhaltensmuster - Behavioral Patterns\n\nDefinieren, wie Objekte miteinander kommunizieren und interagieren, um Aufgaben zu erfüllen\nVerbessern die Interaktion und Verantwortungsverteilung\nBeispiele: Observer, Strategy\n\n\nLernkarte AP2 2025 Nr. 155",
+    "objectID": "03b_OO_Analyse-Designverfahren.html#ooa-crc-karten",
+    "href": "03b_OO_Analyse-Designverfahren.html#ooa-crc-karten",
+    "title": "Objektorientierte Analyse- und Designverfahren",
+    "section": "OOA: CRC-Karten",
+    "text": "OOA: CRC-Karten\n\nDefinition: CRC-Karten (Class-Responsibility-Collaboration) sind ein einfaches Werkzeug zur frühen Identifikation von Klassen. Jede Karte beschreibt eine Klasse mit ihren Verantwortlichkeiten und Kooperationspartnern.\n\n\n\n+----------------------------------+\n|          KLASSE: Kunde           |\n+----------------------------------+\n| Verantwortlichkeiten:            |\n| - Name und Adresse verwalten     |\n| - Bestellung aufgeben            |\n+----------------------------------+\n| Kooperationen:                   |\n| - Bestellung                     |\n+----------------------------------+\n\n+----------------------------------+\n|       KLASSE: Bestellung         |\n+----------------------------------+\n| Verantwortlichkeiten:            |\n| - Artikel verwalten              |\n| - Gesamtpreis berechnen          |\n| - Status ändern                  |\n+----------------------------------+\n| Kooperationen:                   |\n| - Kunde, Artikel                 |\n+----------------------------------+",
     "crumbs": [
-      "03 Design Patterns"
+      "03b Objektorientierte Analyse- und Designverfahren"
     ]
   },
   {
-    "objectID": "03b_Design-Patterns.html#design-patterns-singleton",
-    "href": "03b_Design-Patterns.html#design-patterns-singleton",
-    "title": "Design Patterns",
-    "section": "Design Patterns: Singleton",
-    "text": "Design Patterns: Singleton\n\nErklären Sie die Aufgaben des Singleton Pattern.\n\nDas Singleton-Entwurfsmuster ist ein Software-Entwurfsmuster, das die Instanziierung einer Klasse auf genau ein Objekt beschränkt.\nEs wird verwendet, um sicherzustellen, dass eine Klasse nur eine einzige Instanz hat, und stellt einen globalen Zugangspunkt zu diesem Objekt bereit.\nHauptziel: kontrollierten Mechanismus zur Verfügung stellen, um auf begrenzte Ressourcen zuzugreifen\nnützlich, wenn genau eine Instanz eines Objekts benötigt wird, um Aktionen zu koordinieren\n\n\n\nLernkarte AP2 2025 Nr. 160",
+    "objectID": "03b_OO_Analyse-Designverfahren.html#objektorientiertes-design-ood",
+    "href": "03b_OO_Analyse-Designverfahren.html#objektorientiertes-design-ood",
+    "title": "Objektorientierte Analyse- und Designverfahren",
+    "section": "Objektorientiertes Design (OOD)",
+    "text": "Objektorientiertes Design (OOD)\n\nDefinition: Das OOD verfeinert das OOA-Modell zur technischen Umsetzung: Klassen werden detailliert, Datentypen festgelegt, Sichtbarkeiten definiert und Entwurfsmuster angewendet.\nSchritte im OOD\n\nOOA-Klassendiagramm verfeinern (Datentypen, Sichtbarkeiten)\nEntwurfsmuster (Design Patterns) anwenden\nSchnittstellen (Interfaces) definieren\nVererbungshierarchien optimieren\nSequenzdiagramme für wichtige Abläufe erstellen",
     "crumbs": [
-      "03 Design Patterns"
+      "03b Objektorientierte Analyse- und Designverfahren"
     ]
   },
   {
-    "objectID": "03b_Design-Patterns.html#design-patterns-observer",
-    "href": "03b_Design-Patterns.html#design-patterns-observer",
-    "title": "Design Patterns",
-    "section": "Design Patterns: Observer",
-    "text": "Design Patterns: Observer\n\nWas ist das Observer Muster?\n\nEntwurfsmuster aus dem Bereich der Softwareentwicklung\nzählt zu den Verhaltensmustern (Behavioral Patterns)\nermöglicht Einwegabhängigkeit zwischen Objekten:\n\nwenn ein Objekt seinen Zustand ändert, werden alle abhängigen Objekte benachrichtigt und automatisch aktualisiert\n\nbesonders nützlich in Situationen:\n\nin denen der Zustand eines Objekts von vielen anderen Objekten abhängig ist\nund eine enge Kopplung zwischen diesen Objekten vermieden werden soll\n\n\n\n\nLernkarte AP2 2025 Nr. 156",
+    "objectID": "03b_OO_Analyse-Designverfahren.html#solid-prinzipien",
+    "href": "03b_OO_Analyse-Designverfahren.html#solid-prinzipien",
+    "title": "Objektorientierte Analyse- und Designverfahren",
+    "section": "SOLID-Prinzipien",
+    "text": "SOLID-Prinzipien\n\n\n\n\n\n\n\n\n\nBuchstabe\nPrinzip\nBedeutung\n\n\n\n\nS\nSingle Responsibility\nJede Klasse hat genau eine Aufgabe\n\n\nO\nOpen / Closed\nOffen für Erweiterung, geschlossen für Änderung\n\n\nL\nLiskov Substitution\nUnterklassen müssen die Oberklasse ersetzen können\n\n\nI\nInterface Segregation\nViele kleine Interfaces statt eines großen\n\n\nD\nDependency Inversion\nAbhängigkeiten auf Abstraktionen, nicht auf konkrete Klassen",
     "crumbs": [
-      "03 Design Patterns"
+      "03b Objektorientierte Analyse- und Designverfahren"
     ]
   },
   {
-    "objectID": "03b_Design-Patterns.html#design-patterns-observer-1",
-    "href": "03b_Design-Patterns.html#design-patterns-observer-1",
-    "title": "Design Patterns",
-    "section": "Design Patterns: Observer",
-    "text": "Design Patterns: Observer\n\nWie funktioniert das Observer Muster?\nDas Observer Muster funktioniert durch eine Einweg-Kommunikation von einem Subjekt zu mehreren anderen Objekten (Observer).\n\nRegistrierung: Die Observer melden sich beim Subjekt für Updates an. Das Subjekt hält eine Liste aller seiner Observer.\nÄnderung: Wenn das Subjekt seinen Zustand ändert, informiert es alle registrierten Observer über die Änderung.\nBenachrichtigung: Das Subjekt benachrichtigt die Observer über die Zustandsänderung, indem es eine Methode (häufig update genannt) auf den Observern aufruft.\nAbmeldung: Observer können sich jederzeit vom Subjekt abmelden, wenn sie keine weiteren Benachrichtigungen erhalten möchten.\n\n\n\nLernkarte AP2 2025 Nr. 157",
+    "objectID": "03b_OO_Analyse-Designverfahren.html#liskov-substitution",
+    "href": "03b_OO_Analyse-Designverfahren.html#liskov-substitution",
+    "title": "Objektorientierte Analyse- und Designverfahren",
+    "section": "Liskov Substitution",
+    "text": "Liskov Substitution\n\n\nObjekte einer Unterklasse müssen überall dort einsetzbar sein, wo Objekte der Oberklasse erwartet werden, ohne dass das Programm dadurch fehlerhaft wird.\n\n\nEinfacher: Eine abgeleitete Klasse darf die Erwartungen an die Basisklasse nicht verletzen.\nGegenbeispiel: Basisklasse = Rechteck, Unterklasse = Quadrat\nTest Rechteck: Länge = 4, Breite = 5, Fläche = Länge * Breite = 20\nDas funktioniert für ein Quadrat nicht. Länge per Definition gleich Breite.\nLiskov Substitution Principle (LSP) ist verletzt.\nEs genügt nicht zu prüfen: Ist B eine Spezialisierung von A?\nZusätzlich prüfen: Kann überall, wo A verwendet wird, auch B stehen?",
     "crumbs": [
-      "03 Design Patterns"
+      "03b Objektorientierte Analyse- und Designverfahren"
     ]
   },
   {
-    "objectID": "03b_Design-Patterns.html#design-patterns-factory",
-    "href": "03b_Design-Patterns.html#design-patterns-factory",
-    "title": "Design Patterns",
-    "section": "Design Patterns: Factory",
-    "text": "Design Patterns: Factory\n\nWas ist das Factory Pattern und welchen Vorteil bietet es bei der Objekterzeugung?\n\nDas Factory Pattern ist ein Entwurfsmuster, bei dem die Erzeugung von Objekten an eine eigene Methode oder Klasse ausgelagert wird.\nDadurch wird entschieden, welches konkrete Objekt erzeugt wird, ohne direkt von bestimmten Klassen abhängig zu sein.\nVorteile:\n\nEntkopplung von Erzeugung und Verwendung\nErleichtert das Hinzufügen neuer Objekttypen\nMacht Code übersichtlicher und besser wartbar\n\n\n\n\nLernkarte AP2 2025 Nr. 161",
+    "objectID": "03b_OO_Analyse-Designverfahren.html#oop-grundkonzepte",
+    "href": "03b_OO_Analyse-Designverfahren.html#oop-grundkonzepte",
+    "title": "Objektorientierte Analyse- und Designverfahren",
+    "section": "OOP Grundkonzepte",
+    "text": "OOP Grundkonzepte\n\n\n\n\n\n\n\n\nKonzept\nBeschreibung\n\n\n\n\nKlasse\nBauplan für Objekte (Attribute + Methoden)\n\n\nObjekt\nKonkrete Instanz einer Klasse\n\n\nVererbung\nUnterklasse übernimmt Attribute / Methoden der Oberklasse\n\n\nPolymorphismus\nGleiche Methode, unterschiedliches Verhalten je nach Klasse\n\n\nKapselung\nZugriff auf Attribute nur über Methoden (Getter / Setter)\n\n\nAbstraktion\nNur relevante Eigenschaften modellieren",
     "crumbs": [
-      "03 Design Patterns"
+      "03b Objektorientierte Analyse- und Designverfahren"
     ]
   },
   {
-    "objectID": "03b_Design-Patterns.html#design-patterns-strategy",
-    "href": "03b_Design-Patterns.html#design-patterns-strategy",
-    "title": "Design Patterns",
-    "section": "Design Patterns: Strategy",
-    "text": "Design Patterns: Strategy\n\nErmöglicht die Auswahl eines Algorithmus zur Laufzeit\nDazu wird die Implementierung von Algorithmen in separate Klassen ausgelagert\nErleichtert die Austauschbarkeit und Erweiterbarkeit von Algorithmen, ohne die Benutzerklasse ändern zu müssen\n\n\nAP2 Sommer 2025 Teil 1 Planen",
+    "objectID": "03b_OO_Analyse-Designverfahren.html#ooa-vs.-ood-im-vergleich",
+    "href": "03b_OO_Analyse-Designverfahren.html#ooa-vs.-ood-im-vergleich",
+    "title": "Objektorientierte Analyse- und Designverfahren",
+    "section": "OOA vs. OOD im Vergleich",
+    "text": "OOA vs. OOD im Vergleich\n\n\n\n\nAspekt\nOOA\nOOD\n\n\n\n\nZiel\nFachliche Modellierung (WAS)\nTechnische Modellierung (WIE)\n\n\nPerspektive\nKundensicht / Fachbereich\nEntwicklersicht\n\n\nErgebnis\nFachliches Klassendiagramm\nTechnisches Klassendiagramm\n\n\nDatentypen\nNoch nicht festgelegt\nKonkret (String, int, Date)\n\n\nSichtbarkeiten\nNoch nicht definiert\n+, -, #, ~\n\n\nDesign Patterns\nNoch nicht angewendet\nWerden eingesetzt",
     "crumbs": [
-      "03 Design Patterns"
+      "03b Objektorientierte Analyse- und Designverfahren"
     ]
   },
   {
-    "objectID": "03b_Design-Patterns.html#design-patterns-mvc",
-    "href": "03b_Design-Patterns.html#design-patterns-mvc",
-    "title": "Design Patterns",
-    "section": "Design Patterns: MVC",
-    "text": "Design Patterns: MVC\n\nWelche Komponenten umfasst das MVC-Muster und wie interagieren sie miteinander?\n\nEntwurfsmuster; oft verwendet, um Struktur von Softwareanwendungen zu organisieren\nKomponenten:\n\nModel: Verantwortlich für Daten und Geschäftslogik\nView: Präsentiert Daten an den Benutzer\nController: Verarbeitet die Benutzereingaben und aktualisiert das Model\n\nInteraktion funktioniert wie folgt:\n\nBenutzer agiert mit der View.\nController erhält Benutzereingaben von View, führt Aktionen im Model aus.\nModel benachrichtigt View über Änderungen.\nView aktualisiert die Benutzeroberfläche.\n\n\n\n\nLernkarte AP2 2025 Nr. 158",
+    "objectID": "03b_OO_Analyse-Designverfahren.html#typische-prüfungsaspekte",
+    "href": "03b_OO_Analyse-Designverfahren.html#typische-prüfungsaspekte",
+    "title": "Objektorientierte Analyse- und Designverfahren",
+    "section": "Typische Prüfungsaspekte",
+    "text": "Typische Prüfungsaspekte\n\nAus einem Anforderungstext Klassen, Attribute und Methoden ableiten\nCRC-Karten erstellen oder interpretieren\nOOA von OOD unterscheiden\nOOP-Grundkonzepte (Vererbung, Kapselung, Polymorphismus) erklären\nSOLID-Prinzipien im Grundsatz kennen",
     "crumbs": [
-      "03 Design Patterns"
+      "03b Objektorientierte Analyse- und Designverfahren"
     ]
   },
   {
-    "objectID": "03b_Design-Patterns.html#mvc-data-binding",
-    "href": "03b_Design-Patterns.html#mvc-data-binding",
-    "title": "Design Patterns",
-    "section": "MVC: Data Binding",
-    "text": "MVC: Data Binding\n\nZur Aktualisierung des Views soll Datenbindung (Data Binding) eingesetzt werden. Erläutern Sie den Begriff Datenbindung (Data Binding).\n\nDatenbindung (Data Binding) ist ein Prozess, der eine Verbindung zwischen Daten (Modell) und Benutzeroberfläche (View) herstellt\nErmöglicht, dass Änderungen an den Daten automatisch in der Benutzeroberfläche reflektiert werden und umgekehrt\nZwei Arten von Datenbindung:\n\nEinweg-Datenbindung (One-Way Data Binding): Daten fließen vom Model zum View\nZweiweg-Datenbindung (Two-Way Data Binding): Daten fließen in beide Richtungen, sodass Änderungen im View auch dsa Model aktualisieren\n\n\n\n\nLernkarte AP2 2025 Nr. 159",
+    "objectID": "03b_OO_Analyse-Designverfahren.html#häufige-fehler",
+    "href": "03b_OO_Analyse-Designverfahren.html#häufige-fehler",
+    "title": "Objektorientierte Analyse- und Designverfahren",
+    "section": "Häufige Fehler",
+    "text": "Häufige Fehler\n\n\n\n\n\n\n\n\nFehler\nKorrektur\n\n\n\n\nAdjektive als Klassen identifiziert\nAdjektive sind meist Attribute, nicht Klassen\n\n\nZu viele Klassen erstellt\nNur fachlich relevante Entitäten werden Klassen\n\n\nOOA und OOD vermischt\nOOA = fachlich (WAS),  OOD = technisch (WIE)\n\n\nKapselung ignoriert\nAttribute sollten private sein,  Zugriff über Getter / Setter\n\n\nVererbung für alles verwendet\nKomposition ist oft besser als Vererbung (“favor composition over inheritance”)",
     "crumbs": [
-      "03 Design Patterns"
+      "03b Objektorientierte Analyse- und Designverfahren"
     ]
   },
   {
-    "objectID": "03b_Design-Patterns.html#schichten-architektur",
-    "href": "03b_Design-Patterns.html#schichten-architektur",
-    "title": "Design Patterns",
-    "section": "3-Schichten-Architektur",
-    "text": "3-Schichten-Architektur\n\nWelche Vorteile bietet die Verwendung einer 3-Schichten-Architektur bei der Entwicklung?\n\nErmöglicht klare Trennung zwischen Präsentationsschicht, Anwendungslogik und Datenzugriffsschicht\nDadurch wird Code besser strukturiert, Wartungsaufgaben werden vereinfacht.\nSchichtung ermöglicht eine bessere Skalierbarkeit, da jede Schicht unabhängig von den anderen skaliert werden kann.\nSchichtung erleichtert die Wiederverwendbarkeit von Komponenten, da jede Schicht unabhängig von den anderen entwickelt und leichter in anderen Projekten wiederverwendet werden kann.\n\n\n\nLernkarte AP2 2025 Nr. 149",
-    "crumbs": [
-      "03 Design Patterns"
-    ]
-  },
-  {
-    "objectID": "03b_Design-Patterns.html#schichten-prüfungsaufgabe",
-    "href": "03b_Design-Patterns.html#schichten-prüfungsaufgabe",
-    "title": "Design Patterns",
-    "section": "3 Schichten: Prüfungsaufgabe",
-    "text": "3 Schichten: Prüfungsaufgabe\n\nBeschreiben Sie, wie die 3-Schichten-Architektur bei einer Webanwendung typischerweise aussieht und wie die entsprechenden Komponenten zusammenarbeiten.\n\nAP2 Winter 2022/23 Teil 1 Planen 2.a)",
-    "crumbs": [
-      "03 Design Patterns"
-    ]
-  },
-  {
-    "objectID": "03b_Design-Patterns.html#schichten-lösung",
-    "href": "03b_Design-Patterns.html#schichten-lösung",
-    "title": "Design Patterns",
-    "section": "3 Schichten: Lösung",
-    "text": "3 Schichten: Lösung\n\n\n\n\nAP2 Winter 2022/23 Teil 1 Planen 2.a)",
-    "crumbs": [
-      "03 Design Patterns"
-    ]
-  },
-  {
-    "objectID": "03b_Design-Patterns.html#modularisierung-konzept",
-    "href": "03b_Design-Patterns.html#modularisierung-konzept",
-    "title": "Design Patterns",
-    "section": "Modularisierung: Konzept",
-    "text": "Modularisierung: Konzept\n\nErklären Sie das Konzept der Modularisierung in der Softwareentwicklung.\n\nModularisierung: Konzept in der Softwareentwicklung: umfangreichen Code in kleinere, unabhängige, verwaltbare Einheiten / Module zerlegen\nJedes Modul fokussiert sich auf eine spezifische Funktion / einen bestimmten Aspekt des Gesamtprojekts\nZiele:\n\nKomplexität des Codes reduzieren\nCode einfacher verwalten, warten, testen und verstehen\n\nModule können unabhängig von einander entwickelt, getestet und überarbeitet werden\nErhöht Effizienz und Produktivität des Entwicklungsprozesses\n\n\n\nLernkarte AP2 2025 Nr. 147",
-    "crumbs": [
-      "03 Design Patterns"
-    ]
-  },
-  {
-    "objectID": "03b_Design-Patterns.html#section",
-    "href": "03b_Design-Patterns.html#section",
-    "title": "Design Patterns",
+    "objectID": "03b_OO_Analyse-Designverfahren.html#section",
+    "href": "03b_OO_Analyse-Designverfahren.html#section",
+    "title": "Objektorientierte Analyse- und Designverfahren",
     "section": "",
     "text": "©torange.biz CC-BY 4.0\n\n\nViel Erfolg!",
     "crumbs": [
-      "03 Design Patterns"
+      "03b Objektorientierte Analyse- und Designverfahren"
     ]
   },
   {

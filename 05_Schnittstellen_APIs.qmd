@@ -19,7 +19,7 @@ callout-appearance: simple
 
 ## REST APIs: Grundlagen
 
-:::: {style="font-size: 2rem"}
+:::: {style="font-size: 1.9rem"}
 
 Grundlagen siehe [LF7: REST](https://johannesloetzsch.github.io/LF7/rest.html)
 
@@ -28,9 +28,15 @@ Grundlagen siehe [LF7: REST](https://johannesloetzsch.github.io/LF7/rest.html)
 - REST = *Representational State Transfer*  
 - API = *Application Programming Interface*  
 - REST-API: Set von Regeln und Konventionen für den Aufbau von Webdiensten
+- Nutzt **Standard-HTTP-Methoden** (wie `GET, POST, PUT, DELETE`) zur Interaktion mit Ressourcen, die durch **eindeutige URLs** identifiziert werden
+- Zustandslos: jede Anfrage enthält alle Informationen, die benötigt werden, um sie zu bearbeiten, ohne sich auf frühere Anfragen zu beziehen
 
 :::
 ::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 163
+:::
 
 
 ## REST APIs: 6 Prinzipien
@@ -40,16 +46,16 @@ Grundlagen siehe [LF7: REST](https://johannesloetzsch.github.io/LF7/rest.html)
 | Prinzip | Bedeutung |
 |---------|-----------|
 | Client-Server | Klare Trennung von Client und Server |
-| Stateless (Zustandslos) | Jede Anfrage enthält alle nötige Information, Server speichert keinen Client-Zustand |
-| Cacheable | Antworten können zwischengespeichert werden |
-| Uniform Interface | Einheitliche Schnittstelle (URLs, HTTP-Methoden) |
-| Layered System | Mehrschichtige Architektur möglich (z.B. Load Balancer dazwischen) |
-| Code on Demand (optional) | Server kann ausführbaren Code an Client senden |
+| *Stateless* (Zustandslos) | Jede Anfrage enthält alle nötige Information, Server speichert keinen Client-Zustand |
+| *Cacheable* | Antworten können zwischengespeichert werden, um Leistung zu verbessern |
+| *Uniform Interface* | Einheitliche Schnittstelle (URLs, HTTP-Methoden) |
+| *Layered System* | Mehrschichtige Architektur möglich (z.B. Load Balancer dazwischen); gewährleistet Flexibilität |
+| *Code on Demand* (optional) | Server kann ausführbaren Code an Client senden |
 
 :::
 
 ::: notes
-Welche Lernkarte?
+Lernkarte AP2 2025 Nr. 164
 :::
 
 
@@ -242,6 +248,57 @@ CDATA = *Character Data*, speichert Text ungefiltert, <br> d. h. ohne dass XML-S
 
 ::: notes
 Quelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/xml-formatter-validator.html
+:::
+
+
+## XML: DTD
+
+:::: {.incremental style="font-size: 2rem"}
+
+**Wozu dient die DTD (Dokumenttyp-Definition)** bei der Verwendung von XML-Dateien?
+
+- Dokumenttyp-Definition (DTD): Möglichkeit, Struktur und Inhalt von XML-Dokumenten zu definieren
+- Legt Regeln und Beschränkungen für Elemente, Attribute und deren Beziehungen in einem XML-Dokument fest
+- Stellt eine formale Beschreibung bereit, die es ermöglicht, die **Gültigkeit** und **Konformität** eines XML-Dokuments zu überprüfen
+
+::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 124
+:::
+
+
+## XML vs. CSV
+
+::::: {style="font-size: 1.8rem"}
+
+**CSV** *(Comma-Separated Values)* und **XML** *(eXtensible Markup Language)* sind verschiedene Dateiformate, die zur Speicherung und Übertragung von strukturierten Daten verwendet werden.
+
+:::: columns
+::: {.column .incremental}
+
+### CSV
+
+- Textbasiertes Format, bei dem Daten in Tabellenform organisiert sind
+- Jede Zeile repräsentiert einen Datensatz
+- die einzelnen Werte innerhalb einer Zeile sind durch Trennzeichen getrennt
+- CSV enthält normalerweise keine Strukturinformationen oder Hierarchie
+
+:::
+
+::: {.column .incremental}
+
+### XML
+
+- Markup-Sprache, die eine hierarchische Struktur verwendet
+- Daten werden in Tags eingebettet und können hierarchisch verschachtelt werden, um komplexe Hierarchien darzustellen
+
+:::
+::::
+:::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 123
 :::
 
 

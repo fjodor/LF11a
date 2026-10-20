@@ -17,8 +17,10 @@ website:
         text: 02b OOP Programmieraufgaben
       - href: 02c_OOP_UML_mermaid.qmd
         text: 02c OOP Klassendiagramm Mermaid
-      - href: 03b_Design-Patterns.qmd
-        text: 03 Design Patterns
+      - href: 03a_Design-Patterns.qmd
+        text: 03a Design Patterns
+      - href: 03b_OO_Analyse-Designverfahren.qmd
+        text: 03b Objektorientierte Analyse- und Designverfahren
       - href: 04_UML_Sequenz_Zustand.qmd
         text: 04 UML - Sequenz- und Zustandsdiagramm
 

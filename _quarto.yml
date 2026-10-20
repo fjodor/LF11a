@@ -18,7 +18,7 @@ website:
       - href: 02c_OOP_UML_mermaid.qmd
         text: 02c OOP Klassendiagramm Mermaid
       - href: 04_UML_Sequenz_Zustand.qmd
-        text: UML: Sequenz- und Zustandsdiagramm
+        text: UML - Sequenz- und Zustandsdiagramm
 
 format:
   revealjs:

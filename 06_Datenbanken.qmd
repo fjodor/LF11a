@@ -17,6 +17,110 @@ execute:
 callout-appearance: simple
 ---
 
+## Relationale vs. Nicht-relationale DBs
+
+::::: {style="font-size: 1.8rem"}
+
+**Was sind relationale Datenbanken? - Nennen Sie zwei Beispiele für nicht-relationale Datenbanktypen.**
+
+:::: columns
+::: {.column .incremental}
+
+### Relationale Datenbanken
+
+- Datenbanken, die auf dem **relationalen Datenbankmodell** basieren
+- Speichern Daten in Tabellen, die aus Zeilen und Spalten bestehen
+- Beziehungen zwischen Tabellen werden durch **Primärschlüssel-Fremdschlüssel-Beziehungen** hergestellt
+
+:::
+
+::: {.column .incremental}
+
+### Nicht-relationale Datenbanktypen: Beispiele
+
+- Dokumentenorientierte Datenbanken
+- Schlüssel-Wert-Datenbanken
+- Spaltenorientierte Datenbanken
+- Graphdatenbanken
+- Zeitreihendatenbanken
+- Objektorientierte Datenbanken
+
+:::
+::::
+:::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 98
+:::
+
+
+## Relationale vs. NoSQL-Datenbanken
+
+::: {style="font-size: 1.8rem"}
+
+| Merkmal | Relational (SQL) | NoSQL |
+|:---|:------|:------|
+| Struktur | Tabellen mit Spalten | Dokumente, Key-Value, Graphen |
+| Schema | Festes Schema | Flexibles / kein Schema |
+| Sprache | SQL | Abhängig vom System |
+| Konsistenz | ACID (stark) | BASE (eventual consistency) |
+| Skalierung | Vertikal (größerer Server) | Horizontal (mehr Server) |
+| Beispiele | MySQL, PostgreSQL, MariaDB | MongoDB, Redis, Cassandra, Neo4j |
+| Einsatz | Strukturierte Daten, Transaktionen | Big Data, flexible Strukturen |
+
+:::
+
+
+## ODBC
+
+:::: {.incremental style="font-size: 2.1rem"}
+
+**Wofür steht die Abkürzung ODBC?**
+
+- **ODBC** = ***Open Database Connectivity***
+- Standardisierte Schnittstelle für den Zugriff auf verschiedene Datenbankmanagementsysteme (DBMS)
+- Sie ermöglicht Anwendungen, SQL-Abfragen unabhängig vom verwendeten Datenbanktyp auszuführen
+
+::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 117
+:::
+
+
+## Primärschlüssel vs. Fremdschlüssel
+
+::::: {style="font-size: 1.9rem"}
+
+**Erklären Sie in Bezug auf Datenbanken die Begriffe *Primärschlüssel* und *Fremdschlüssel*.**
+
+:::: columns
+::: {.column .incremental}
+
+### Primärschlüssel
+
+- **Feld** oder **Kombination von Feldern** in einer Tabelle, das / die **jede Zeile eindeutig identifiziert**
+- Jeder Primärschlüssel ist **eindeutig** innerhalb der Tabelle und es darf keine Duplikate oder Nullwerte geben
+
+:::
+
+::: {.column .incremental}
+
+### Fremdschlüssel
+
+- **Feld** oder **Kombination von Feldern** in einer Tabelle, das **auf** den **Primärschlüssel** einer anderen Tabelle **verweist**
+- Zweck: **Integrität** der Daten zu gewährleisten und **Beziehungen** zwischen Tabellen herzustellen
+
+:::
+::::
+:::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 103
+:::
+
+---
+
 ### Entity-Relationship-Modell (ER): Bestandteile
 
 :::: {style="font-size: 2rem"}
@@ -50,9 +154,6 @@ callout-appearance: simple
 ::::
 
 
-## todo: ER-Modell Beispiel
-
-
 ## Datenbanken: Datentypen
 
 :::: {.fragment style="font-size: 1.8rem"}
@@ -71,6 +172,27 @@ callout-appearance: simple
 | BLOB | Binärdaten | Bilder, Dateien |
 
 ::::
+
+
+## NULL
+
+:::: {.incremental style="font-size: 1.9rem"}
+
+**Was bedeutet der Begriff `NULL` in Bezug auf Datenbanken und welche Rolle spielt es bei der Datenverarbeitung und -abfrage?**
+
+- `NULL` in DBS: Feld hat keinen Wert: **NULL ≠ 0; NULL ≠ Leerzeichen**!
+- `NULL` repräsentiert **fehlende oder unbekannte Daten**
+- Bei fehlenden Daten kann `NULL` eingefügt werden
+- In Abfragen wird `IS NULL` oder `IS NOT NULL` verwendet, um `NULL`-Werte zu finden
+- Arithmetische Operationen mit `NULL` ergeben `NULL`
+- Aggregatfunktionen wie `COUNT` oder `SUM` ignorieren `NULL`-Werte
+- Oft werden `NULL`-Werte in Datenbankindizes nicht berücksichtigt
+
+::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 115
+:::
 
 
 ## DBs: Anomalien und Redundanzen
@@ -325,23 +447,6 @@ INNER JOIN Bestellung b ON k.KundenID = b.KundenID
 WHERE b.Betrag > 1000
 ORDER BY b.Datum DESC;
 ```
-
-
-## Relationale vs. NoSQL-Datenbanken
-
-::: {style="font-size: 1.8rem"}
-
-| Merkmal | Relational (SQL) | NoSQL |
-|:---|:------|:------|
-| Struktur | Tabellen mit Spalten | Dokumente, Key-Value, Graphen |
-| Schema | Festes Schema | Flexibles / kein Schema |
-| Sprache | SQL | Abhängig vom System |
-| Konsistenz | ACID (stark) | BASE (eventual consistency) |
-| Skalierung | Vertikal (größerer Server) | Horizontal (mehr Server) |
-| Beispiele | MySQL, PostgreSQL, MariaDB | MongoDB, Redis, Cassandra, Neo4j |
-| Einsatz | Strukturierte Daten, Transaktionen | Big Data, flexible Strukturen |
-
-:::
 
 
 ## <!-- -->

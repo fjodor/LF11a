@@ -17,6 +17,76 @@ execute:
 callout-appearance: simple
 ---
 
+## Blue-Green-Deployment
+
+:::: {.incremental style="font-size: 1.9rem"}
+
+**Erläutern Sie die Methode des Blue-Green-Deployments.**
+
+- Idee des **Blue-Green-Deployments:** zwei separate, identische Umgebungen *(Blue, Green)* bereitstellen
+- **Blue:** aktuelle Produktionsversion ist live
+- **Green:** Neue Version der Anwendung wird in der separaten Umgebung bereitgestellt und getestet
+- Sobald Tests erfolgreich abgeschlossen: **Umleitung des Datenverkehrs** von **Blue** auf **Green**
+- Umleitung erfolgt **schrittweise**, um sicherzustellen, dass das System in der **Green**-Umgebung ordnungsgemäß funktioniert
+- Falls Probleme in der **Green**-Umgebung auftreten, kann der Datenverkehr schnell auf die **Blue**-Umgebung zurückgeleitet werden
+
+::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 90
+:::
+
+
+## Regressionstest
+
+:::: {.incremental style="font-size: 2rem"}
+
+**Was ist das Ziel eines Regressionstests?**
+
+- **Regressionstest** dient dazu, die Stabilität und Zuverlässigkeit der Anwendung **nach Durchführung einer Aktualisierung** zu prüfen
+- Wird durchgeführt, um sicherzustellen, dass neue Änderungen oder Updates an einer Software keine unerwünschten Auswirkungen auf bereits vorhandene Funktionen haben
+
+::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 80
+:::
+
+
+## Zweigüberdeckung vs. Pfadüberdeckung
+
+::::: {style="font-size: 1.8rem"}
+
+**Beschreiben Sie den Unterschied zwischen Zweigüberdeckung und Pfadüberdeckung.**
+
+:::: columns
+::: {.column .incremental}
+
+### Zweigüberdeckung
+
+- Alle **Entscheidungszweige** im Code müssen durch Tests abgedeckt sein
+- Ein Entscheidungszweig tritt auf, wenn ein Programm an einem Punkt **zwischen zwei möglichen Wegen wählen muss**
+- Ziel: **jeder mögliche Pfad** durch Bedingungsanweisungen im Code wird **mindestens ein Mal getestet**
+
+:::
+
+::: {.column .incremental}
+
+### Pfadüberdeckung
+
+- **Jeder mögliche Pfad** im Programm muss **mindestens ein Mal durchlaufen** werden
+- Pfad = Sequenz von Anweisungen im Code, die von einem Startpunkt zu einem Endpunkt führen
+- **Pfadüberdeckung** berücksichtigt die **vollständige Ausführung** aller Anweisungen und die möglichen Verzweigungen
+
+:::
+::::
+:::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 77
+:::
+
+
 ## Testsoftware
 
 :::: {.incremental style="font-size: 2rem"}

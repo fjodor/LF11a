@@ -226,7 +226,7 @@ Lernkarte AP2 2025 Nr. 158
 - Ermöglicht, dass Änderungen an den Daten automatisch in der Benutzeroberfläche reflektiert werden und umgekehrt
 - Zwei Arten von Datenbindung:
   + **Einweg-Datenbindung *(One-Way Data Binding):*** Daten fließen vom Model zum View
-  + **Zweiweg-Datenbindung *(Two-Way Data Binding):*** Daten fließen in beide Richtungen, sodass Änderungen im View auch dsa Model aktualisieren
+  + **Zweiweg-Datenbindung *(Two-Way Data Binding):*** Daten fließen in beide Richtungen, sodass Änderungen im View auch das Model aktualisieren
 
 :::
 ::::

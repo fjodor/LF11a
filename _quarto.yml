@@ -23,6 +23,8 @@ website:
         text: 03b Objektorientierte Analyse- und Designverfahren
       - href: 04_UML_Sequenz_Zustand.qmd
         text: 04 UML - Sequenz- und Zustandsdiagramm
+      - href: 05_Schnittstellen_APIs.qmd
+        text: 05 APIs, JSON, XML
 
 format:
   revealjs:

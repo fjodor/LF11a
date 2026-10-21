@@ -471,7 +471,7 @@ HAVING COUNT(*) > 5;
 ::: {style="font-size: 2rem"}
 
 | JOIN-Typ | Beschreibung |
-|---|---|
+|:---|:------|
 | INNER JOIN | Nur übereinstimmende Datensätze |
 | LEFT JOIN | Alle links + übereinstimmende rechts |
 | RIGHT JOIN | Alle rechts + übereinstimmende links |
@@ -479,6 +479,13 @@ HAVING COUNT(*) > 5;
 | CROSS JOIN | Kartesisches Produkt (jeder mit jedem) |
 
 :::
+
+::: notes
+ähnlich Lernkarte AP2 2025 Nr. 114
+:::
+
+
+## INNER JOIN
 
 <br>
 
@@ -489,10 +496,6 @@ INNER JOIN Bestellung b ON k.KundenID = b.KundenID
 WHERE b.Betrag > 1000
 ORDER BY b.Datum DESC;
 ```
-
-::: notes
-ähnlich Lernkarte AP2 2025 Nr. 114
-:::
 
 
 ## <!-- -->

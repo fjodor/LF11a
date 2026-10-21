@@ -352,6 +352,21 @@ Quelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/xml-fo
 :::
 
 
+## XML Ausblick
+
+:::: {.incremental style="font-size: 2rem"}
+
+- XSD: moderner Nachfolger von DTD
+  + beschreibt und validiert XML-Dateien
+  + kann im Gegensatz zu DTD Datentypen und Wertebereiche prüfen
+  + Beispiel: Mit XSD kann man festlegen, dass `alter` eine Ganzzahl zwischen 0 und 150 sein muss
+  + DTD kann nur festlegen, dass das Element `alter` vorhanden ist und Text enthält
+- XPath: findet Elemente in XML
+- XSLT: transformiert XML in andere Formate
+
+::::
+
+
 ## <!-- -->
 
 ![](libs/_Images/coffee.jpg){fig-align="center" width="50%"}

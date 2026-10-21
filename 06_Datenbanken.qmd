@@ -296,14 +296,7 @@ Lösung: [AbteilungsName in eigene Tabelle "Abteilung"]{.fragment}
 
 ## DB Design
 
-<style>
- .noscroll pre { 
-  overflow: visible !important; 
-  max-height: none !important; 
-  } 
-</style>
-
-:::: {.noscroll style="font-size: 1.6rem"}
+:::: {style="font-size: 1.6rem"}
 
 ```text
 Anforderungsanalyse

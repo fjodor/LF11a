@@ -21,6 +21,76 @@
     "text": "Zweigüberdeckung vs. Pfadüberdeckung\n\nBeschreiben Sie den Unterschied zwischen Zweigüberdeckung und Pfadüberdeckung.\n\n\nZweigüberdeckung\n\nAlle Entscheidungszweige im Code müssen durch Tests abgedeckt sein\nEin Entscheidungszweig tritt auf, wenn ein Programm an einem Punkt zwischen zwei möglichen Wegen wählen muss\nZiel: jeder mögliche Pfad durch Bedingungsanweisungen im Code wird mindestens ein Mal getestet\n\n\nPfadüberdeckung\n\nJeder mögliche Pfad im Programm muss mindestens ein Mal durchlaufen werden\nPfad = Sequenz von Anweisungen im Code, die von einem Startpunkt zu einem Endpunkt führen\nPfadüberdeckung berücksichtigt die vollständige Ausführung aller Anweisungen und die möglichen Verzweigungen\n\n\n\n\nLernkarte AP2 2025 Nr. 77"
   },
   {
+    "objectID": "08_Qualitätssicherung_Tests.html#anweisungsüberdeckung",
+    "href": "08_Qualitätssicherung_Tests.html#anweisungsüberdeckung",
+    "title": "Qualitätssicherung, Tests",
+    "section": "Anweisungsüberdeckung",
+    "text": "Anweisungsüberdeckung\n\nErklären Sie das Prinzip der Anweisungsüberdeckung.\n\nAnweisungsüberdeckung: grundlegender Aspekt des Softwaretests\nMethode der Code-Überdeckungsanalyse\nZielt darauf ab, jede Anweisung / Code-Zeile mindestens einmal während des Testprozesses auszuführen\nTester / Entwickler kann somit bestätigen, dass jeder Codeabschnitt ausgeführt und getestet wurde\nHauptziel: sicherstellen, dasss jede Anweisung funktioniert wie erwartet und korrekte Ergebnisse liefert\nBeinhaltet auch Aufdecken von “totem Code”: Codeabschnitte, die nie ausgeführt werden und potenziell entfernt werden könnten\n\n\n\nLernkarte AP2 2025 Nr. 76"
+  },
+  {
+    "objectID": "08_Qualitätssicherung_Tests.html#debugger",
+    "href": "08_Qualitätssicherung_Tests.html#debugger",
+    "title": "Qualitätssicherung, Tests",
+    "section": "Debugger",
+    "text": "Debugger\n\nBeim Programmtest stellen Sie fest, dass ein Programm nicht wie gewünscht funktioniert. Geben Sie die möglichen Vorgehensweisen an, die Fehlersuche mit Hilfe der Möglichkeiten eines Debuggers vorzunehmen.\n\nBreakpoints setzen: Anhalten des Programms an gesetzten Punkten zur Überprüfung des aktuellen Zustands\nSchritt-für-Schritt-Ausführung: die genaue Kontrolle des Ablaufs zeigt, wann das Programm vom erwarteten Verhalten abweicht\nVariablen beobachten: Überwachung der Werte von Variablen während der Programmausführung\nStack Inspektion: Überprüfen der Reihenfolge der aufgerufenen Funktionen und ihrer Parameter\nException Handling: Identifikation der genauen Punkte im Code, an denen ein Fehler aufgetreten ist\nLogging: Protokollierung der Programmaktivitäten\n\n\n\nLernkarte AP2 2025 Nr. 81"
+  },
+  {
+    "objectID": "08_Qualitätssicherung_Tests.html#syntaxfehler-vs.-semantikfehler",
+    "href": "08_Qualitätssicherung_Tests.html#syntaxfehler-vs.-semantikfehler",
+    "title": "Qualitätssicherung, Tests",
+    "section": "Syntaxfehler vs. Semantikfehler",
+    "text": "Syntaxfehler vs. Semantikfehler\n\nWas ist der Unterschied zwischen einem Syntaxfehler und einem Semantikfehler?\n\n\nSyntaxfehler\n\ntritt auf, wenn ein Programm gegen die Regeln der Programmiersprache verstößt\nProgramm kann nicht ausgeführt werden, weil der Code nicht korrekt ist\n\n\nSemantikfehler\n\nliegt vor, wenn der Code formal korrekt ist, aber nicht das tut, was beabsichtigt war\nProgramm läuft ohne Fehlermeldung, liefert aber falsche oder unerwartete Ergebnisse\n\n\n\n\nLernkarte AP2 2025 Nr. 82"
+  },
+  {
+    "objectID": "08_Qualitätssicherung_Tests.html#performance-testing",
+    "href": "08_Qualitätssicherung_Tests.html#performance-testing",
+    "title": "Qualitätssicherung, Tests",
+    "section": "Performance Testing",
+    "text": "Performance Testing\n\nWarum ist Performance Testing in der Softwareentwicklung wichtig?\n\nPerformance Testing ist wichtig, um sicherzustellen, dass eine Anwendung unter verschiedenen Lastbedingungen effizient und zuverlässig funktioniert\nBeantwortung folgender Fragen:\n\nWie reagiert die Anwendung unter normaler oder erwarteter Last?\nWie skaliert die Anwendung mit steigender Last?\nWie reagiert die Anwendung unter Spitzenlastbedingungen?\nWie verhält sich die Anwendung über einen längeren Zeitraum?\nGibt es Engpässe oder Flaschenhälse in der Anwendung?\n\n\n\n\nLernkarte AP2 2025 Nr. 83"
+  },
+  {
+    "objectID": "08_Qualitätssicherung_Tests.html#black-box--und-white-box-test",
+    "href": "08_Qualitätssicherung_Tests.html#black-box--und-white-box-test",
+    "title": "Qualitätssicherung, Tests",
+    "section": "Black-Box- und White-Box-Test",
+    "text": "Black-Box- und White-Box-Test\n\nErklären Sie die Testverfahren Black-Box- und White-Box-Test.\n\n\nBlack-Box-Test\n\nTestpersonen kennen die interne Funktionsweise der Software nicht\nStattdessen konzentrieren sie sich auf die Eingaben und Ausgaben der Software, um zu prüfen, ob sie wie erwartet funktioniert\nBlack-Box-Test wird durchgeführt, um die Funktionalität und Benutzerfreundlichkeit einer Software zu überprüfen\n\n\nWhite-Box-Test\n\nTestende verfügen über Kenntnisse über die interne Funktionsweise der Software\nSie untersuchen die Struktur und das Design der Software\nWhite-Box-Test wird durchgeführt, um sicherzustellen, dass der Code einer Software den Anforderungen entspricht und effizient funktioniert\n\n\n\n\nLernkarte AP2 2025 Nr. 74"
+  },
+  {
+    "objectID": "08_Qualitätssicherung_Tests.html#code-review",
+    "href": "08_Qualitätssicherung_Tests.html#code-review",
+    "title": "Qualitätssicherung, Tests",
+    "section": "Code Review",
+    "text": "Code Review\n\nWas versteht man unter einem Code Review?\n\n\nDef. und Vorgehen\n\nsystematische Untersuchung von Programmcode\nzählt zu statischen Testverfahren\nÜberprüfung des Codes auf folgende Aspekte:\n\nFunktionalität\nLesbarkeit, Verständlichkeit\nWartbarkeit\nBest Practices, Standards\n\n\n\nNachteile\n\nCode Reviews erfordern Zeit und Ressourcen\nCode Reviews können subjektiv sein, da die Meinungen der Reviewer variieren können\nder Programmcode wird nicht ausgeführt\n\n\n\n\nLernkarte AP2 2025 Nr. 75"
+  },
+  {
+    "objectID": "08_Qualitätssicherung_Tests.html#extremwertetest",
+    "href": "08_Qualitätssicherung_Tests.html#extremwertetest",
+    "title": "Qualitätssicherung, Tests",
+    "section": "Extremwertetest",
+    "text": "Extremwertetest\n\nWas ist unter einem Extremwertetest zu verstehen?\n\nFehler treten häufig bei extremen Eingabewerten auf\nFokus beim Extremwertetest: Testen der Werte, welche nahe an den Extremwerten liegen\nZiel: Systemverhalten an oder jenseits seiner Spezifikationsgrenzen zu beobachten\nVerstehen, ob das System unter diesen Bedingungen korrekt funktioniert oder wie und wann es versagt\nHilft, Fehler, Schwachstellen oder Begrenzungen der Software aufzudecken, die nur unter extremen Bedingungen sichtbar werden\n\n\n\nLernkarte AP2 2025 Nr. 72"
+  },
+  {
+    "objectID": "08_Qualitätssicherung_Tests.html#äquivalenzklassen",
+    "href": "08_Qualitätssicherung_Tests.html#äquivalenzklassen",
+    "title": "Qualitätssicherung, Tests",
+    "section": "Äquivalenzklassen",
+    "text": "Äquivalenzklassen\n\nWie können Äquivalenzklassen genutzt werden, um eine effiziente und repräsentative Auswahl von Testfällen für ein System oder eine Funktion zu definieren?\n\nÄquivalenzklassen dienen der repräsentativen Auswahl von Testfällen\nEingabedaten werden in Gruppen aufgeteilt, die ähnliche Verhaltensweisen oder Eigenschaften aufweisen\nBreite Abdeckung der verschiedenen Szenarien durch Auswahl eines Testfalls aus jeder Äquivalenzklasse\nSo muss man nicht alle möglichen Kombinationen von Eingabewerten testen\nIdee: Wenn ein Testfall aus einer Äquivalenzklasse erfolgreich besteht oder scheitert: die anderen Testfälle derselben Klassen würden wahrscheinlich ein ähnliches Ergebnis liefern\n\n\n\nLernkarte AP2 2025 Nr. 73"
+  },
+  {
+    "objectID": "08_Qualitätssicherung_Tests.html#end-to-end-test-e2e-test",
+    "href": "08_Qualitätssicherung_Tests.html#end-to-end-test-e2e-test",
+    "title": "Qualitätssicherung, Tests",
+    "section": "End-to-End-Test (E2E-Test)",
+    "text": "End-to-End-Test (E2E-Test)\n\nWas ist ein End-to-End-Test (E2E-Test) und welches Ziel wird mit seiner Durchführung verfolgt?\n\nEnd-to-End (E2E) Testing ist ein Softwarest, um die gesamte Funktionalität einer Anwendung von Anfang bis Ende zu überprüfen\nZiele:\n\nüberprüfen, ob alle Systemkomponenten gemeinsam korrekt funktionieren\nsicherstellen, dass der gesamte Ablauf fehlerfrei ist\n\n\n\n\nLernkarte AP2 2025 Nr. 89"
+  },
+  {
+    "objectID": "08_Qualitätssicherung_Tests.html#statische-vs.-dynamische-testverfahren",
+    "href": "08_Qualitätssicherung_Tests.html#statische-vs.-dynamische-testverfahren",
+    "title": "Qualitätssicherung, Tests",
+    "section": "Statische vs. dynamische Testverfahren",
+    "text": "Statische vs. dynamische Testverfahren\n\nBeschreiben Sie den Unterschied zwischen statischen und dynamischen Testverfahren und nennen Sie jeweils zwei Beispiele.\n\n\nStatische Testverfahren\n\nProgrammkomponenten werden nicht ausgeführt\nÜberprüfung und Fehlersuche erfolgt anhand des Quellcodes oder anderen Dokumenten\nBeispiele:\n\nSchreibtischtest\nReview von Anforderungen, Architektur, Design und Quellcode\n\n\n\nDynamische Testverfahren\n\nTest der Programmkomponenten erfolgt durch die Ausführung in einer Testumgebung\n\nBlack-Box-Test\nWhite-Box-Test\nExtremwertetest\n\n\n\n\n\nLernkarte AP2 2025 Nr. 71"
+  },
+  {
     "objectID": "08_Qualitätssicherung_Tests.html#testsoftware",
     "href": "08_Qualitätssicherung_Tests.html#testsoftware",
     "title": "Qualitätssicherung, Tests",

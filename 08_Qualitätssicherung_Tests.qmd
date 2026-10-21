@@ -87,6 +87,135 @@ Lernkarte AP2 2025 Nr. 77
 :::
 
 
+## Anweisungsüberdeckung
+
+:::: {.incremental style="font-size: 1.9rem"}
+
+**Erklären Sie das Prinzip der Anweisungsüberdeckung.**
+
+- **Anweisungsüberdeckung:** grundlegender Aspekt des Softwaretests
+- Methode der **Code-Überdeckungsanalyse**
+- Zielt darauf ab, jede Anweisung / Code-Zeile **mindestens einmal während des Testprozesses auszuführen**
+- Tester / Entwickler kann somit bestätigen, dass jeder Codeabschnitt ausgeführt und getestet wurde
+- Hauptziel: sicherstellen, dasss **jede Anweisung funktioniert wie erwartet** und **korrekte Ergebnisse** liefert
+- Beinhaltet auch Aufdecken von **"totem Code"**: Codeabschnitte, die **nie ausgeführt werden** und potenziell entfernt werden könnten
+
+::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 76
+:::
+
+
+## Debugger
+
+:::: {.incremental style="font-size: 1.7rem"}
+
+**Beim Programmtest stellen Sie fest, dass ein Programm nicht wie gewünscht funktioniert. Geben Sie die möglichen Vorgehensweisen an, die Fehlersuche mit Hilfe der Möglichkeiten eines Debuggers vorzunehmen.**
+
+- **Breakpoints setzen:** Anhalten des Programms an gesetzten Punkten zur Überprüfung des aktuellen Zustands
+- **Schritt-für-Schritt-Ausführung:** die genaue Kontrolle des Ablaufs zeigt, wann das Programm vom erwarteten Verhalten abweicht
+- **Variablen beobachten:** Überwachung der Werte von Variablen während der Programmausführung
+- **Stack Inspektion:** Überprüfen der Reihenfolge der aufgerufenen Funktionen und ihrer Parameter
+- **Exception Handling:** Identifikation der genauen Punkte im Code, an denen ein Fehler aufgetreten ist
+- **Logging:** Protokollierung der Programmaktivitäten
+
+::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 81
+:::
+
+
+## Syntaxfehler vs. Semantikfehler
+
+::::: {style="font-size: 1.9rem"}
+
+**Was ist der Unterschied zwischen einem Syntaxfehler und einem Semantikfehler?**
+
+:::: columns
+::: {.incremental .column}
+
+### Syntaxfehler
+
+- tritt auf, wenn ein Programm **gegen die Regeln der Programmiersprache verstößt**
+- Programm **kann nicht ausgeführt werden**, weil der Code nicht korrekt ist
+
+:::
+
+::: {.incremental .column}
+
+### Semantikfehler
+
+- liegt vor, wenn der Code **formal korrekt** ist, aber **nicht das tut, was beabsichtigt war**
+- Programm **läuft ohne Fehlermeldung**, liefert aber **falsche oder unerwartete Ergebnisse**
+
+:::
+::::
+:::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 82
+:::
+
+
+## Performance Testing
+
+:::: {.incremental style="font-size: 1.9rem"}
+
+**Warum ist Performance Testing in der Softwareentwicklung wichtig?**
+
+- **Performance Testing** ist wichtig, um sicherzustellen, dass eine Anwendung **unter verschiedenen Lastbedingungen** effizient und zuverlässig funktioniert
+- Beantwortung folgender Fragen:
+  + Wie reagiert die Anwendung **unter normaler** oder **erwarteter Last**?
+  + Wie **skaliert** die Anwendung **mit steigender Last**?
+  + Wie reagiert die Anwendung unter **Spitzenlastbedingungen**?
+  + Wie verhält sich die Anwendung **über einen längeren Zeitraum**?
+  + Gibt es **Engpässe** oder **Flaschenhälse** in der Anwendung?
+
+::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 83
+:::
+
+
+## Statische vs. dynamische Testverfahren
+
+::::: {.incremental style="font-size: 1.9rem"}
+**Beschreiben Sie den Unterschied zwischen statischen und dynamischen Testverfahren und nennen Sie jeweils zwei Beispiele.**
+
+:::: columns
+::: {.column .incremental}
+
+### Statische Testverfahren
+
+- Programmkomponenten werden **nicht ausgeführt**
+- Überprüfung und Fehlersuche erfolgt anhand des **Quellcodes** oder anderen Dokumenten
+- Beispiele:
+  + Schreibtischtest
+  + Review von Anforderungen, Architektur, Design und Quellcode
+
+:::
+
+::: {.column .incremental}
+
+### Dynamische Testverfahren
+
+- Test der Programmkomponenten erfolgt durch die **Ausführung in einer Testumgebung**
+  + Black-Box-Test
+  + White-Box-Test
+  + Extremwertetest
+
+:::
+::::
+:::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 71
+:::
+
+
 ## Testsoftware
 
 :::: {.incremental style="font-size: 2rem"}

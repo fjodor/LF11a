@@ -231,6 +231,41 @@
     "text": "Normalisierung: 3. Normalform (3NF)\n\n\n2NF erfüllt\nKeine transitiven Abhängigkeiten  Nicht-Schlüssel-Attribut hängt nicht von anderem Nicht-Schlüssel-Attribut ab\n\nBeispiel transitive Abhängigkeit:\n\n\nMitarbeiter → AbteilungsNr → AbteilungsName (transitiv!)\nLösung: AbteilungsName in eigene Tabelle “Abteilung”"
   },
   {
+    "objectID": "06_Datenbanken.html#db-design",
+    "href": "06_Datenbanken.html#db-design",
+    "title": "Datenbanken",
+    "section": "DB Design",
+    "text": "DB Design\n\nAnforderungsanalyse\n        |\n        v\n+----------------+     +------------------+\n| ER-Modell      |----&gt;| Relationales     |\n| (konzeptionell)|     | Modell (logisch) |\n+----------------+     +------------------+\n                              |\n            +---------+-------+\n            |                 |\n  +----------------+      +--------------+\n  | Normalisierung |      | SQL (DDL)    |\n  | 1NF-3NF        |      | CREATE TABLE |\n  +----------------+      +--------------+\n             |                |\n             v                v\n      Redundanzfreies     Physische\n      Datenmodell         Datenbank\n                              |\n                          +---+----------+\n                          |              |\n                     +---------+     +-----------+\n                     | DML     |     | DQL       |\n                     | INSERT  |     | SELECT    |\n                     | UPDATE  |     | JOIN      |\n                     | DELETE  |     | GROUP BY  |\n                     +---------+     +-----------+"
+  },
+  {
+    "objectID": "06_Datenbanken.html#normalisierung-beispiel",
+    "href": "06_Datenbanken.html#normalisierung-beispiel",
+    "title": "Datenbanken",
+    "section": "Normalisierung: Beispiel",
+    "text": "Normalisierung: Beispiel\n\nAusgangspunkt\n\n\n\n\n\n\n\n\n\n\n\n\nBestellNr\nDatum\nKundenName\nKundenOrt\nArtikel\nPreis\n\n\n\n\n1001\n2024-01-15\nMüller GmbH\nBerlin\nServer, Switch\n5000, 500\n\n\n1002\n2024-01-20\nMüller GmbH\nBerlin\nKabel\n50\n\n\n\n\n\nProbleme\n\nMehrere Werte in einer Zelle (Artikel, Preis)\nRedundanz (KundenName / Ort)"
+  },
+  {
+    "objectID": "06_Datenbanken.html#beispiel-1nf",
+    "href": "06_Datenbanken.html#beispiel-1nf",
+    "title": "Datenbanken",
+    "section": "Beispiel: 1NF",
+    "text": "Beispiel: 1NF\n\n\nForderung: Jedes Attribut enthält nur atomare (unteilbare) Werte\n\n\n\n\n\n\nBestellNr\nDatum\nKundenName\nKundenOrt\nArtikel\nPreis\n\n\n\n\n1001\n2024-01-15\nMüller GmbH\nBerlin\nServer\n5000\n\n\n1001\n2024-01-15\nMüller GmbH\nBerlin\nSwitch\n500\n\n\n1002\n2024-01-20\nMüller GmbH\nBerlin\nKabel\n50"
+  },
+  {
+    "objectID": "06_Datenbanken.html#beispiel-2nf",
+    "href": "06_Datenbanken.html#beispiel-2nf",
+    "title": "Datenbanken",
+    "section": "Beispiel: 2NF",
+    "text": "Beispiel: 2NF\n\nForderung: Jedes Nicht-Schlüssel-Attribut ist voll funktional abhängig vom gesamten Primärschlüssel\n\nWas ist der Primärschlüssel?\n\nPK ist {BestellNr, Artikel}.\n\nWo ist 2NF verletzt?\n\nKundenName / Ort hängen nur von BestellNr ab\n\nLösung?\n\nAbhängige Attribute in separate Tabelle auslagern\n\nNeue Tabellen:\n\nBestellung: BestellNr, Datum, KundenName, KundenOrt\nBestellPosition: BestellNr, Artikel, Preis"
+  },
+  {
+    "objectID": "06_Datenbanken.html#beispiel-3nf",
+    "href": "06_Datenbanken.html#beispiel-3nf",
+    "title": "Datenbanken",
+    "section": "Beispiel: 3NF",
+    "text": "Beispiel: 3NF\n\nForderung: Keine transitiven Abhängigkeiten\n\nWo ist 3NF verletzt?\n\nKundenOrt hängt von KundenName ab (transitiv)\n\nLösung?\n\nAuslagerung in separate Tabelle\n\nNeue Tabellen in 3NF:\n\nKunde: KundenID, KundenName, KundenOrt\nBestellung: BestellNr, Datum, KundenID (FK)\nBestellPosition: BestellNr (FK), Artikel, Preis"
+  },
+  {
     "objectID": "06_Datenbanken.html#datenbanken-acid",
     "href": "06_Datenbanken.html#datenbanken-acid",
     "title": "Datenbanken",
@@ -1513,6 +1548,16 @@
     "title": "Schnittstellen",
     "section": "XML vs. JSON",
     "text": "XML vs. JSON\n\n\nXML\n\nXML bevorzugen bei: SOAP, Dokumenten-Formaten, XSLT, Namespaces, Attributen, Schemas (XSD)\nXML-Vorteile: Attribute, Kommentare, Mixed Content, Namespaces, XPath / XSLT\noft besser für Enterprise / SOAP\n\n\nJSON\n\nJSON bevorzugen bei: REST-APIs, Konfigurationen, moderne Web-Apps, NoSQL-Datenbanken\nJSON-Vorteile: kompakter, schneller zu parsen, native Datentypen\noft besser geeignet für neue Projekte\n\n\n\nQuelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/xml-formatter-validator.html",
+    "crumbs": [
+      "05 APIs, JSON, XML"
+    ]
+  },
+  {
+    "objectID": "05_Schnittstellen_APIs.html#xml-ausblick",
+    "href": "05_Schnittstellen_APIs.html#xml-ausblick",
+    "title": "Schnittstellen",
+    "section": "XML Ausblick",
+    "text": "XML Ausblick\n\n\nXSD: moderner Nachfolger von DTD\n\nbeschreibt und validiert XML-Dateien\nkann im Gegensatz zu DTD Datentypen und Wertebereiche prüfen\nBeispiel: Mit XSD kann man festlegen, dass alter eine Ganzzahl zwischen 0 und 150 sein muss\nDTD kann nur festlegen, dass das Element alter vorhanden ist und Text enthält\n\nXPath: findet Elemente in XML\nXSLT: transformiert XML in andere Formate",
     "crumbs": [
       "05 APIs, JSON, XML"
     ]

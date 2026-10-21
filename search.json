@@ -1427,7 +1427,7 @@
     "href": "05_Schnittstellen_APIs.html#rest-apis-absichern",
     "title": "Schnittstellen",
     "section": "REST APIs absichern",
-    "text": "REST APIs absichern\n\n\nHTTPS verwenden\nJWT / Bearer Token\nPasswort-Hashing (bcrypt / argon2)\nRollen / Rechte vergeben\nEingabevalidierung (z. B. Pydantic)\nParametrisierte SQL-Abfragen bzw. ORM\nRate Limiting\nLogging",
+    "text": "REST APIs absichern\n\n\nHTTPS verwenden\nJWT / Bearer Token\nPasswort-Hashing (bcrypt / argon2)\nAuthentifizierung und Autorisierung: Rollen / Rechte vergeben\nEingabevalidierung (z. B. Pydantic)\nParametrisierte SQL-Abfragen bzw. ORM\nRate Limiting\nLogging",
     "crumbs": [
       "05 APIs, JSON, XML"
     ]

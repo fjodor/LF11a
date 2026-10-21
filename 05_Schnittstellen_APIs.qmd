@@ -1,8 +1,8 @@
 ---
-title: "Schnittstellen, APIs"
+title: "Schnittstellen"
 title-slide-attributes:
   data-background-color: "#D7E6F4"
-subtitle: ""
+subtitle: "APIs, JSON, XML"
 format:
   revealjs:
     theme: simple

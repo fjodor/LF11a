@@ -294,6 +294,144 @@ Lösung: [AbteilungsName in eigene Tabelle "Abteilung"]{.fragment}
 :::
 
 
+## DB Design
+
+<style>
+ .noscroll pre { 
+  overflow: visible !important; 
+  max-height: none !important; 
+  } 
+</style>
+
+:::: {.noscroll style="font-size: 1.6rem"}
+
+```text
+Anforderungsanalyse
+        |
+        v
++----------------+     +------------------+
+| ER-Modell      |---->| Relationales     |
+| (konzeptionell)|     | Modell (logisch) |
++----------------+     +------------------+
+                              |
+            +---------+-------+
+            |                 |
+  +----------------+      +--------------+
+  | Normalisierung |      | SQL (DDL)    |
+  | 1NF-3NF        |      | CREATE TABLE |
+  +----------------+      +--------------+
+             |                |
+             v                v
+      Redundanzfreies     Physische
+      Datenmodell         Datenbank
+                              |
+                          +---+----------+
+                          |              |
+                     +---------+     +-----------+
+                     | DML     |     | DQL       |
+                     | INSERT  |     | SELECT    |
+                     | UPDATE  |     | JOIN      |
+                     | DELETE  |     | GROUP BY  |
+                     +---------+     +-----------+
+```
+
+::::
+
+
+## Normalisierung: Beispiel
+
+:::: {style="font-size: 2rem"}
+
+### Ausgangspunkt
+
+::: {style="font-size: 1.6rem"}
+
+| BestellNr | Datum | KundenName | KundenOrt | Artikel | Preis |
+|---|---|---|---|---|---|
+| 1001 | 2024-01-15 | Müller GmbH | Berlin | Server, Switch | 5000, 500 |
+| 1002 | 2024-01-20 | Müller GmbH | Berlin | Kabel | 50 |
+
+:::
+
+<br>
+
+### Probleme
+
+::: incremental
+
+- Mehrere Werte in einer Zelle (Artikel, Preis)
+- Redundanz (KundenName / Ort)
+
+:::
+::::
+
+
+## Beispiel: 1NF
+
+<br>
+
+::: {style="font-size: 2rem"}
+
+**Forderung:** [Jedes Attribut enthält nur **atomare** (unteilbare) Werte]{.fragment}
+
+:::
+
+<br>
+
+::: {.fragment style="font-size: 1.7rem"}
+
+| BestellNr | Datum | KundenName | KundenOrt | Artikel | Preis |
+|---|---|---|---|---|---|
+| 1001 | 2024-01-15 | Müller GmbH | Berlin | Server | 5000 |
+| 1001 | 2024-01-15 | Müller GmbH | Berlin | Switch | 500 |
+| 1002 | 2024-01-20 | Müller GmbH | Berlin | Kabel | 50 |
+
+:::
+
+
+## Beispiel: 2NF
+
+:::: {style="font-size: 2rem"}
+
+**Forderung:** [Jedes Nicht-Schlüssel-Attribut ist **voll funktional abhängig** vom gesamten Primärschlüssel]{.fragment}
+
+::: incremental
+
+- Was ist der Primärschlüssel?
+  + PK ist {BestellNr, Artikel}.
+- Wo ist 2NF verletzt?
+  + KundenName / Ort hängen nur von BestellNr ab
+- Lösung?
+  + Abhängige Attribute in separate Tabelle auslagern
+- Neue Tabellen:
+  + **Bestellung:** BestellNr, Datum, KundenName, KundenOrt
+  + **BestellPosition:** BestellNr, Artikel, Preis
+
+:::
+::::
+
+
+## Beispiel: 3NF
+
+:::: {style="font-size: 2rem"}
+
+**Forderung:** [Keine transitiven Abhängigkeiten]{.fragment}
+
+::: incremental
+
+- Wo ist 3NF verletzt?
+  + KundenOrt hängt von KundenName ab (transitiv)
+- Lösung?
+  + Auslagerung in separate Tabelle
+- Neue Tabellen in 3NF:
+  + **Kunde:** KundenID, KundenName, KundenOrt
+  + **Bestellung:** BestellNr, Datum, KundenID (FK)
+  + **BestellPosition:** BestellNr (FK), Artikel, Preis
+
+:::
+::::
+
+
 ## Datenbanken: ACID
 
 :::: {style="font-size: 1.8rem"}

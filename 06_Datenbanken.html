@@ -1725,45 +1725,39 @@ display:block!important;
 <div style="font-size: 2rem">
 <table class="caption-top">
 <colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
+<col style="width: 36%">
+<col style="width: 63%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>JOIN-Typ</th>
-<th>Beschreibung</th>
+<th style="text-align: left;">JOIN-Typ</th>
+<th style="text-align: left;">Beschreibung</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>INNER JOIN</td>
-<td>Nur übereinstimmende Datensätze</td>
+<td style="text-align: left;">INNER JOIN</td>
+<td style="text-align: left;">Nur übereinstimmende Datensätze</td>
 </tr>
 <tr class="even">
-<td>LEFT JOIN</td>
-<td>Alle links + übereinstimmende rechts</td>
+<td style="text-align: left;">LEFT JOIN</td>
+<td style="text-align: left;">Alle links + übereinstimmende rechts</td>
 </tr>
 <tr class="odd">
-<td>RIGHT JOIN</td>
-<td>Alle rechts + übereinstimmende links</td>
+<td style="text-align: left;">RIGHT JOIN</td>
+<td style="text-align: left;">Alle rechts + übereinstimmende links</td>
 </tr>
 <tr class="even">
-<td>FULL JOIN</td>
-<td>Alle Zeilen mit Übereinstimmung in min. <strong>einer</strong> der Tabellen</td>
+<td style="text-align: left;">FULL JOIN</td>
+<td style="text-align: left;">Alle Zeilen mit Übereinstimmung in min. <strong>einer</strong> der Tabellen</td>
 </tr>
 <tr class="odd">
-<td>CROSS JOIN</td>
-<td>Kartesisches Produkt (jeder mit jedem)</td>
+<td style="text-align: left;">CROSS JOIN</td>
+<td style="text-align: left;">Kartesisches Produkt (jeder mit jedem)</td>
 </tr>
 </tbody>
 </table>
 </div>
-<p><br></p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource sql number-lines code-with-copy"><code class="sourceCode sql"><span id="cb4-1"><a aria-label="1"></a><span class="kw">SELECT</span> k.Name, b.Datum, b.Betrag</span>
-<span id="cb4-2"><a aria-label="2"></a><span class="kw">FROM</span> Kunde k</span>
-<span id="cb4-3"><a aria-label="3"></a><span class="kw">INNER</span> <span class="kw">JOIN</span> Bestellung b <span class="kw">ON</span> k.KundenID <span class="op">=</span> b.KundenID</span>
-<span id="cb4-4"><a aria-label="4"></a><span class="kw">WHERE</span> b.Betrag <span class="op">&gt;</span> <span class="dv">1000</span></span>
-<span id="cb4-5"><a aria-label="5"></a><span class="kw">ORDER</span> <span class="kw">BY</span> b.Datum <span class="kw">DESC</span>;</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <aside class="notes">
 <p>ähnlich Lernkarte AP2 2025 Nr. 114</p>
 <style type="text/css">
@@ -1777,6 +1771,15 @@ width: 1px!important;
 overflow: hidden!important;
 display:block!important;
 }</style></aside>
+</section>
+<section id="inner-join" class="slide level2">
+<h2>INNER JOIN</h2>
+<p><br></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource sql number-lines code-with-copy"><code class="sourceCode sql"><span id="cb4-1"><a aria-label="1"></a><span class="kw">SELECT</span> k.Name, b.Datum, b.Betrag</span>
+<span id="cb4-2"><a aria-label="2"></a><span class="kw">FROM</span> Kunde k</span>
+<span id="cb4-3"><a aria-label="3"></a><span class="kw">INNER</span> <span class="kw">JOIN</span> Bestellung b <span class="kw">ON</span> k.KundenID <span class="op">=</span> b.KundenID</span>
+<span id="cb4-4"><a aria-label="4"></a><span class="kw">WHERE</span> b.Betrag <span class="op">&gt;</span> <span class="dv">1000</span></span>
+<span id="cb4-5"><a aria-label="5"></a><span class="kw">ORDER</span> <span class="kw">BY</span> b.Datum <span class="kw">DESC</span>;</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="section" class="slide level2">
 <h2><!-- --></h2>

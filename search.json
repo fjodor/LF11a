@@ -291,7 +291,14 @@
     "href": "06_Datenbanken.html#joins-abfrage-über-mehrere-tabellen",
     "title": "Datenbanken",
     "section": "JOINs (Abfrage über mehrere Tabellen)",
-    "text": "JOINs (Abfrage über mehrere Tabellen)\n\n\n\n\n\n\n\n\nJOIN-Typ\nBeschreibung\n\n\n\n\nINNER JOIN\nNur übereinstimmende Datensätze\n\n\nLEFT JOIN\nAlle links + übereinstimmende rechts\n\n\nRIGHT JOIN\nAlle rechts + übereinstimmende links\n\n\nFULL JOIN\nAlle Zeilen mit Übereinstimmung in min. einer der Tabellen\n\n\nCROSS JOIN\nKartesisches Produkt (jeder mit jedem)\n\n\n\n\n\nSELECT k.Name, b.Datum, b.Betrag\nFROM Kunde k\nINNER JOIN Bestellung b ON k.KundenID = b.KundenID\nWHERE b.Betrag &gt; 1000\nORDER BY b.Datum DESC;\n\nähnlich Lernkarte AP2 2025 Nr. 114"
+    "text": "JOINs (Abfrage über mehrere Tabellen)\n\n\n\n\n\n\n\n\nJOIN-Typ\nBeschreibung\n\n\n\n\nINNER JOIN\nNur übereinstimmende Datensätze\n\n\nLEFT JOIN\nAlle links + übereinstimmende rechts\n\n\nRIGHT JOIN\nAlle rechts + übereinstimmende links\n\n\nFULL JOIN\nAlle Zeilen mit Übereinstimmung in min. einer der Tabellen\n\n\nCROSS JOIN\nKartesisches Produkt (jeder mit jedem)\n\n\n\n\n\nähnlich Lernkarte AP2 2025 Nr. 114"
+  },
+  {
+    "objectID": "06_Datenbanken.html#inner-join",
+    "href": "06_Datenbanken.html#inner-join",
+    "title": "Datenbanken",
+    "section": "INNER JOIN",
+    "text": "INNER JOIN\n\nSELECT k.Name, b.Datum, b.Betrag\nFROM Kunde k\nINNER JOIN Bestellung b ON k.KundenID = b.KundenID\nWHERE b.Betrag &gt; 1000\nORDER BY b.Datum DESC;"
   },
   {
     "objectID": "06_Datenbanken.html#section",
@@ -1355,119 +1362,170 @@
     "href": "05_Schnittstellen_APIs.html#rest-apis-grundlagen",
     "title": "Schnittstellen, APIs",
     "section": "REST APIs: Grundlagen",
-    "text": "REST APIs: Grundlagen\n\nGrundlagen siehe LF7: REST\n\nREST = Representational State Transfer\n\nAPI = Application Programming Interface\n\nREST-API: Set von Regeln und Konventionen für den Aufbau von Webdiensten\nNutzt Standard-HTTP-Methoden (wie GET, POST, PUT, DELETE) zur Interaktion mit Ressourcen, die durch eindeutige URLs identifiziert werden\nZustandslos: jede Anfrage enthält alle Informationen, die benötigt werden, um sie zu bearbeiten, ohne sich auf frühere Anfragen zu beziehen\n\n\n\nLernkarte AP2 2025 Nr. 163"
+    "text": "REST APIs: Grundlagen\n\nGrundlagen siehe LF7: REST\n\nREST = Representational State Transfer\n\nAPI = Application Programming Interface\n\nREST-API: Set von Regeln und Konventionen für den Aufbau von Webdiensten\nNutzt Standard-HTTP-Methoden (wie GET, POST, PUT, DELETE) zur Interaktion mit Ressourcen, die durch eindeutige URLs identifiziert werden\nZustandslos: jede Anfrage enthält alle Informationen, die benötigt werden, um sie zu bearbeiten, ohne sich auf frühere Anfragen zu beziehen\n\n\n\nLernkarte AP2 2025 Nr. 163",
+    "crumbs": [
+      "05 APIs, JSON, XML"
+    ]
   },
   {
     "objectID": "05_Schnittstellen_APIs.html#rest-apis-6-prinzipien",
     "href": "05_Schnittstellen_APIs.html#rest-apis-6-prinzipien",
     "title": "Schnittstellen, APIs",
     "section": "REST APIs: 6 Prinzipien",
-    "text": "REST APIs: 6 Prinzipien\n\n\n\n\n\n\n\n\nPrinzip\nBedeutung\n\n\n\n\nClient-Server\nKlare Trennung von Client und Server\n\n\nStateless (Zustandslos)\nJede Anfrage enthält alle nötige Information, Server speichert keinen Client-Zustand\n\n\nCacheable\nAntworten können zwischengespeichert werden, um Leistung zu verbessern\n\n\nUniform Interface\nEinheitliche Schnittstelle (URLs, HTTP-Methoden)\n\n\nLayered System\nMehrschichtige Architektur möglich (z.B. Load Balancer dazwischen); gewährleistet Flexibilität\n\n\nCode on Demand (optional)\nServer kann ausführbaren Code an Client senden\n\n\n\n\n\nLernkarte AP2 2025 Nr. 164"
+    "text": "REST APIs: 6 Prinzipien\n\n\n\n\n\n\n\n\nPrinzip\nBedeutung\n\n\n\n\nClient-Server\nKlare Trennung von Client und Server\n\n\nStateless (Zustandslos)\nJede Anfrage enthält alle nötige Information, Server speichert keinen Client-Zustand\n\n\nCacheable\nAntworten können zwischengespeichert werden, um Leistung zu verbessern\n\n\nUniform Interface\nEinheitliche Schnittstelle (URLs, HTTP-Methoden)\n\n\nLayered System\nMehrschichtige Architektur möglich (z.B. Load Balancer dazwischen); gewährleistet Flexibilität\n\n\nCode on Demand (optional)\nServer kann ausführbaren Code an Client senden\n\n\n\n\n\nLernkarte AP2 2025 Nr. 164",
+    "crumbs": [
+      "05 APIs, JSON, XML"
+    ]
   },
   {
     "objectID": "05_Schnittstellen_APIs.html#rest-http-methoden",
     "href": "05_Schnittstellen_APIs.html#rest-http-methoden",
     "title": "Schnittstellen, APIs",
     "section": "REST: HTTP-Methoden",
-    "text": "REST: HTTP-Methoden\nCRUD = Create - Read - Update - Delete\n\n\n\n\n\n\n\n\n\n\nHTTP-Methode\nCRUD-Operation\nBeschreibung\nBeispiel\n\n\n\n\nGET\nRead\nRessource abrufen\nGET /api/kunden/42\n\n\nPOST\nCreate\nNeue Ressource erstellen\nPOST /api/kunden\n\n\nPUT\nUpdate\nRessource vollständig ersetzen\nPUT /api/kunden/42\n\n\nPATCH\nUpdate (teilweise)\nRessource teilweise ändern\nPATCH /api/kunden/42\n\n\nDELETE\nDelete\nRessource löschen\nDELETE /api/kunden/42"
+    "text": "REST: HTTP-Methoden\nCRUD = Create - Read - Update - Delete\n\n\n\n\n\n\n\n\n\n\nHTTP-Methode\nCRUD-Operation\nBeschreibung\nBeispiel\n\n\n\n\nGET\nRead\nRessource abrufen\nGET /api/kunden/42\n\n\nPOST\nCreate\nNeue Ressource erstellen\nPOST /api/kunden\n\n\nPUT\nUpdate\nRessource vollständig ersetzen\nPUT /api/kunden/42\n\n\nPATCH\nUpdate (teilweise)\nRessource teilweise ändern\nPATCH /api/kunden/42\n\n\nDELETE\nDelete\nRessource löschen\nDELETE /api/kunden/42",
+    "crumbs": [
+      "05 APIs, JSON, XML"
+    ]
   },
   {
     "objectID": "05_Schnittstellen_APIs.html#rest-apis-absichern",
     "href": "05_Schnittstellen_APIs.html#rest-apis-absichern",
     "title": "Schnittstellen, APIs",
     "section": "REST APIs absichern",
-    "text": "REST APIs absichern\n\n\nHTTPS verwenden\nJWT / Bearer Token\nPasswort-Hashing (bcrypt / argon2)\nRollen / Rechte vergeben\nEingabevalidierung (z. B. Pydantic)\nParametrisierte SQL-Abfragen bzw. ORM\nRate Limiting\nLogging"
+    "text": "REST APIs absichern\n\n\nHTTPS verwenden\nJWT / Bearer Token\nPasswort-Hashing (bcrypt / argon2)\nRollen / Rechte vergeben\nEingabevalidierung (z. B. Pydantic)\nParametrisierte SQL-Abfragen bzw. ORM\nRate Limiting\nLogging",
+    "crumbs": [
+      "05 APIs, JSON, XML"
+    ]
   },
   {
     "objectID": "05_Schnittstellen_APIs.html#rest-apis-orm",
     "href": "05_Schnittstellen_APIs.html#rest-apis-orm",
     "title": "Schnittstellen, APIs",
     "section": "REST APIs: ORM",
-    "text": "REST APIs: ORM\n\n\nORM = Object Relational Mapping\nGrundidee: (Python-)Objekte statt selbst SQL-Statements zu schreiben\nORM übersetzt zwischen (Python-)Klassen und Datenbanktabellen\nORM erzeugt intern SQL\nORM verwendet (fast) immer parametrisierte Abfragen\nORM verhindert SQL Injections\nBeispiele für Python-ORMs: SQLAlchemy, SQLModel (von FastAPI-Erfinder Sebastián Ramírez), Django ORM"
+    "text": "REST APIs: ORM\n\n\nORM = Object Relational Mapping\nGrundidee: (Python-)Objekte statt selbst SQL-Statements zu schreiben\nORM übersetzt zwischen (Python-)Klassen und Datenbanktabellen\nORM erzeugt intern SQL\nORM verwendet (fast) immer parametrisierte Abfragen\nORM verhindert SQL Injections\nBeispiele für Python-ORMs: SQLAlchemy, SQLModel (von FastAPI-Erfinder Sebastián Ramírez), Django ORM",
+    "crumbs": [
+      "05 APIs, JSON, XML"
+    ]
   },
   {
     "objectID": "05_Schnittstellen_APIs.html#json-datentypen",
     "href": "05_Schnittstellen_APIs.html#json-datentypen",
     "title": "Schnittstellen, APIs",
     "section": "JSON: Datentypen",
-    "text": "JSON: Datentypen\n\n6 Datentypen in JSON:\n\n\n\nDatentyp\nBeispiel\n\n\n\n\nString\n\"Hallo Welt\"\n\n\nNumber\n42 oder 3.14\n\n\nBoolean\ntrue oder false\n\n\nNull\nnull\n\n\nObject\n{\"key\": \"value\" }\n\n\nArray\n[1, 2, 3]\n\n\n\nDetails siehe RFC 8259\n\n\nQuelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/json-formatter-validator.html"
+    "text": "JSON: Datentypen\n\n6 Datentypen in JSON:\n\n\n\nDatentyp\nBeispiel\n\n\n\n\nString\n\"Hallo Welt\"\n\n\nNumber\n42 oder 3.14\n\n\nBoolean\ntrue oder false\n\n\nNull\nnull\n\n\nObject\n{\"key\": \"value\" }\n\n\nArray\n[1, 2, 3]\n\n\n\nDetails siehe RFC 8259\n\n\nQuelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/json-formatter-validator.html",
+    "crumbs": [
+      "05 APIs, JSON, XML"
+    ]
   },
   {
     "objectID": "05_Schnittstellen_APIs.html#json-anwendung",
     "href": "05_Schnittstellen_APIs.html#json-anwendung",
     "title": "Schnittstellen, APIs",
     "section": "JSON: Anwendung",
-    "text": "JSON: Anwendung\n\n\nREST-APIs: Standardformat für Datenaustausch im Web\nKonfigurationsdateien: package.json, tsconfig.json\nNoSQL-Datenbanken: MongoDB, CouchDB speichern JSON\nLogs: Strukturierte Log-Ausgabe\nFrontend-Backend-Kommunikation: Fetch, AJAX, WebSockets\nJWT Tokens: Payload ist Base64-codiertes JSON\n\n\n\nQuelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/json-formatter-validator.html"
+    "text": "JSON: Anwendung\n\n\nREST-APIs: Standardformat für Datenaustausch im Web\nKonfigurationsdateien: package.json, tsconfig.json\nNoSQL-Datenbanken: MongoDB, CouchDB speichern JSON\nLogs: Strukturierte Log-Ausgabe\nFrontend-Backend-Kommunikation: Fetch, AJAX, WebSockets\nJWT Tokens: Payload ist Base64-codiertes JSON\n\n\n\nQuelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/json-formatter-validator.html",
+    "crumbs": [
+      "05 APIs, JSON, XML"
+    ]
   },
   {
     "objectID": "05_Schnittstellen_APIs.html#json-vs.-javascript-objekt",
     "href": "05_Schnittstellen_APIs.html#json-vs.-javascript-objekt",
     "title": "Schnittstellen, APIs",
     "section": "JSON vs. JavaScript-Objekt",
-    "text": "JSON vs. JavaScript-Objekt\n\n\n\n\n\n\n\n\n\nKriterium\nJSON\nJavaScript-Objekt (JS)\n\n\n\n\nKeys: doppelte Anführungszeichen\nerforderlich\nnicht erforderlich\n\n\nTrailing Comma\nverboten\nerlaubt\n\n\nKommentare\nverboten\nerlaubt\n\n\nWerte\nnur 6 Typen\nauch undefined, NaN, Funktionen\n\n\nPrototyp\nkeiner\nEigenschaften und Methoden können von Prototyp geerbt werden\n\n\n\n\n\nQuelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/json-formatter-validator.html"
+    "text": "JSON vs. JavaScript-Objekt\n\n\n\n\n\n\n\n\n\nKriterium\nJSON\nJavaScript-Objekt (JS)\n\n\n\n\nKeys: doppelte Anführungszeichen\nerforderlich\nnicht erforderlich\n\n\nTrailing Comma\nverboten\nerlaubt\n\n\nKommentare\nverboten\nerlaubt\n\n\nWerte\nnur 6 Typen\nauch undefined, NaN, Funktionen\n\n\nPrototyp\nkeiner\nEigenschaften und Methoden können von Prototyp geerbt werden\n\n\n\n\n\nQuelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/json-formatter-validator.html",
+    "crumbs": [
+      "05 APIs, JSON, XML"
+    ]
   },
   {
     "objectID": "05_Schnittstellen_APIs.html#json-häufige-fehler",
     "href": "05_Schnittstellen_APIs.html#json-häufige-fehler",
     "title": "Schnittstellen, APIs",
     "section": "JSON: Häufige Fehler",
-    "text": "JSON: Häufige Fehler\n\n\n\n\nFehler\nBeispiel\n\n\n\n\nTrailing Comma\n{\"a\":1,}\n\n\nSingle Quotes\n{'a':'b'}\n\n\nUnquoted Keys\n{a:1}\n\n\nKommentare\n// comment\n\n\nUndefined\nundefined\n\n\nNaN / Infinity\nNaN\n\n\n\n\n\nQuelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/json-formatter-validator.html"
+    "text": "JSON: Häufige Fehler\n\n\n\n\nFehler\nBeispiel\n\n\n\n\nTrailing Comma\n{\"a\":1,}\n\n\nSingle Quotes\n{'a':'b'}\n\n\nUnquoted Keys\n{a:1}\n\n\nKommentare\n// comment\n\n\nUndefined\nundefined\n\n\nNaN / Infinity\nNaN\n\n\n\n\n\nQuelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/json-formatter-validator.html",
+    "crumbs": [
+      "05 APIs, JSON, XML"
+    ]
   },
   {
     "objectID": "05_Schnittstellen_APIs.html#json-verschachtelung",
     "href": "05_Schnittstellen_APIs.html#json-verschachtelung",
     "title": "Schnittstellen, APIs",
     "section": "JSON: Verschachtelung",
-    "text": "JSON: Verschachtelung\n\nJSON kann beliebig verschachtelt werden:\n\n\n\nVerschachtelungs-Typ\nBeispiel\n\n\n\n\nObjekte in Objekten\n{\"user\": {\"name\": \"Max\"}}\n\n\nArrays in Objekten\n{\"tags\": [\"a\", \"b\"]}\n\n\nArrays von Objekten\n[{\"id\": 1}, {\"id\": 2}]\n\n\nBeliebig tief\ntheoretisch unbegrenzt\n\n\n\n\n\nQuelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/json-formatter-validator.html"
+    "text": "JSON: Verschachtelung\n\nJSON kann beliebig verschachtelt werden:\n\n\n\nVerschachtelungs-Typ\nBeispiel\n\n\n\n\nObjekte in Objekten\n{\"user\": {\"name\": \"Max\"}}\n\n\nArrays in Objekten\n{\"tags\": [\"a\", \"b\"]}\n\n\nArrays von Objekten\n[{\"id\": 1}, {\"id\": 2}]\n\n\nBeliebig tief\ntheoretisch unbegrenzt\n\n\n\n\n\nQuelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/json-formatter-validator.html",
+    "crumbs": [
+      "05 APIs, JSON, XML"
+    ]
   },
   {
     "objectID": "05_Schnittstellen_APIs.html#json-best-practices",
     "href": "05_Schnittstellen_APIs.html#json-best-practices",
     "title": "Schnittstellen, APIs",
     "section": "JSON: Best Practices",
-    "text": "JSON: Best Practices\n\nSo schreibst Du gutes JSON:\n\nDoppelte Anführungszeichen für Strings und Keys\n2 oder 4 Spaces für Einrückung\nKeine Kommentare (nicht erlaubt in JSON)\nUTF-8 als Standard-Encoding\nKonsistente Benennung: camelCase oder snake_case\nkeine trailing commas\n\n\n\nQuelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/json-formatter-validator.html"
+    "text": "JSON: Best Practices\n\nSo schreibst Du gutes JSON:\n\nDoppelte Anführungszeichen für Strings und Keys\n2 oder 4 Spaces für Einrückung\nKeine Kommentare (nicht erlaubt in JSON)\nUTF-8 als Standard-Encoding\nKonsistente Benennung: camelCase oder snake_case\nkeine trailing commas\n\n\n\nQuelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/json-formatter-validator.html",
+    "crumbs": [
+      "05 APIs, JSON, XML"
+    ]
   },
   {
     "objectID": "05_Schnittstellen_APIs.html#xml-grundbausteine",
     "href": "05_Schnittstellen_APIs.html#xml-grundbausteine",
     "title": "Schnittstellen, APIs",
     "section": "XML: Grundbausteine",
-    "text": "XML: Grundbausteine\n\n\n\n\nBaustein\nBeispiel\n\n\n\n\nProzessanweisung\n&lt;?xml version=\"1.0\"?&gt;\n\n\nElemente\n&lt;name&gt;Wert&lt;/name&gt;\n\n\nAttribute\n&lt;item id=\"1\"&gt;\n\n\nText\nInhalt zwischen Tags\n\n\nKommentare\n&lt;!-- ... --&gt;\n\n\nCDATA\n&lt;![CDATA[...]]&gt;\n\n\n\n\nCDATA = Character Data, speichert Text ungefiltert,  d. h. ohne dass XML-Sonderzeichen interpretiert werden\n\n\n\nQuelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/xml-formatter-validator.html"
+    "text": "XML: Grundbausteine\n\n\n\n\nBaustein\nBeispiel\n\n\n\n\nProzessanweisung\n&lt;?xml version=\"1.0\"?&gt;\n\n\nElemente\n&lt;name&gt;Wert&lt;/name&gt;\n\n\nAttribute\n&lt;item id=\"1\"&gt;\n\n\nText\nInhalt zwischen Tags\n\n\nKommentare\n&lt;!-- ... --&gt;\n\n\nCDATA\n&lt;![CDATA[...]]&gt;\n\n\n\n\nCDATA = Character Data, speichert Text ungefiltert,  d. h. ohne dass XML-Sonderzeichen interpretiert werden\n\n\n\nQuelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/xml-formatter-validator.html",
+    "crumbs": [
+      "05 APIs, JSON, XML"
+    ]
   },
   {
     "objectID": "05_Schnittstellen_APIs.html#xml-dtd",
     "href": "05_Schnittstellen_APIs.html#xml-dtd",
     "title": "Schnittstellen, APIs",
     "section": "XML: DTD",
-    "text": "XML: DTD\n\nWozu dient die DTD (Dokumenttyp-Definition) bei der Verwendung von XML-Dateien?\n\nDokumenttyp-Definition (DTD): Möglichkeit, Struktur und Inhalt von XML-Dokumenten zu definieren\nLegt Regeln und Beschränkungen für Elemente, Attribute und deren Beziehungen in einem XML-Dokument fest\nStellt eine formale Beschreibung bereit, die es ermöglicht, die Gültigkeit und Konformität eines XML-Dokuments zu überprüfen\n\n\n\nLernkarte AP2 2025 Nr. 124"
+    "text": "XML: DTD\n\nWozu dient die DTD (Dokumenttyp-Definition) bei der Verwendung von XML-Dateien?\n\nDokumenttyp-Definition (DTD): Möglichkeit, Struktur und Inhalt von XML-Dokumenten zu definieren\nLegt Regeln und Beschränkungen für Elemente, Attribute und deren Beziehungen in einem XML-Dokument fest\nStellt eine formale Beschreibung bereit, die es ermöglicht, die Gültigkeit und Konformität eines XML-Dokuments zu überprüfen\n\n\n\nLernkarte AP2 2025 Nr. 124",
+    "crumbs": [
+      "05 APIs, JSON, XML"
+    ]
   },
   {
     "objectID": "05_Schnittstellen_APIs.html#xml-vs.-csv",
     "href": "05_Schnittstellen_APIs.html#xml-vs.-csv",
     "title": "Schnittstellen, APIs",
     "section": "XML vs. CSV",
-    "text": "XML vs. CSV\n\nCSV (Comma-Separated Values) und XML (eXtensible Markup Language) sind verschiedene Dateiformate, die zur Speicherung und Übertragung von strukturierten Daten verwendet werden.\n\n\nCSV\n\nTextbasiertes Format, bei dem Daten in Tabellenform organisiert sind\nJede Zeile repräsentiert einen Datensatz\ndie einzelnen Werte innerhalb einer Zeile sind durch Trennzeichen getrennt\nCSV enthält normalerweise keine Strukturinformationen oder Hierarchie\n\n\nXML\n\nMarkup-Sprache, die eine hierarchische Struktur verwendet\nDaten werden in Tags eingebettet und können hierarchisch verschachtelt werden, um komplexe Hierarchien darzustellen\n\n\n\n\nLernkarte AP2 2025 Nr. 123"
+    "text": "XML vs. CSV\n\nCSV (Comma-Separated Values) und XML (eXtensible Markup Language) sind verschiedene Dateiformate, die zur Speicherung und Übertragung von strukturierten Daten verwendet werden.\n\n\nCSV\n\nTextbasiertes Format, bei dem Daten in Tabellenform organisiert sind\nJede Zeile repräsentiert einen Datensatz\ndie einzelnen Werte innerhalb einer Zeile sind durch Trennzeichen getrennt\nCSV enthält normalerweise keine Strukturinformationen oder Hierarchie\n\n\nXML\n\nMarkup-Sprache, die eine hierarchische Struktur verwendet\nDaten werden in Tags eingebettet und können hierarchisch verschachtelt werden, um komplexe Hierarchien darzustellen\n\n\n\n\nLernkarte AP2 2025 Nr. 123",
+    "crumbs": [
+      "05 APIs, JSON, XML"
+    ]
   },
   {
     "objectID": "05_Schnittstellen_APIs.html#xml-häufige-fehler",
     "href": "05_Schnittstellen_APIs.html#xml-häufige-fehler",
     "title": "Schnittstellen, APIs",
     "section": "XML: Häufige Fehler",
-    "text": "XML: Häufige Fehler\n\n\n\n\n\n\n\n\nFehler\nBeispiel\n\n\n\n\nUnclosed Tags\n&lt;name&gt;Max\n\n\nWrong Nesting\n&lt;a&gt;&lt;b&gt;&lt;/a&gt;&lt;/b&gt;\n\n\nCase Sensitivity\n&lt;Name&gt;&lt;/name&gt;\n\n\nSpecial Chars\n& unescaped\n\n\nMultiple Roots\nZwei Root-Elemente  Beispiel: &lt;kunde&gt; ... &lt;/kunde&gt;  &lt;bestellung&gt; ... &lt;/bestellung&gt;\n\n\nUnquoted Attrs\n&lt;item id=1&gt;\n\n\n\n\n\nQuelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/xml-formatter-validator.html"
+    "text": "XML: Häufige Fehler\n\n\n\n\n\n\n\n\nFehler\nBeispiel\n\n\n\n\nUnclosed Tags\n&lt;name&gt;Max\n\n\nWrong Nesting\n&lt;a&gt;&lt;b&gt;&lt;/a&gt;&lt;/b&gt;\n\n\nCase Sensitivity\n&lt;Name&gt;&lt;/name&gt;\n\n\nSpecial Chars\n& unescaped\n\n\nMultiple Roots\nZwei Root-Elemente  Beispiel: &lt;kunde&gt; ... &lt;/kunde&gt;  &lt;bestellung&gt; ... &lt;/bestellung&gt;\n\n\nUnquoted Attrs\n&lt;item id=1&gt;\n\n\n\n\n\nQuelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/xml-formatter-validator.html",
+    "crumbs": [
+      "05 APIs, JSON, XML"
+    ]
   },
   {
     "objectID": "05_Schnittstellen_APIs.html#xml-vs.-json",
     "href": "05_Schnittstellen_APIs.html#xml-vs.-json",
     "title": "Schnittstellen, APIs",
     "section": "XML vs. JSON",
-    "text": "XML vs. JSON\n\n\nXML\n\nXML bevorzugen bei: SOAP, Dokumenten-Formaten, XSLT, Namespaces, Attributen, Schemas (XSD)\nXML-Vorteile: Attribute, Kommentare, Mixed Content, Namespaces, XPath / XSLT\noft besser für Enterprise / SOAP\n\n\nJSON\n\nJSON bevorzugen bei: REST-APIs, Konfigurationen, moderne Web-Apps, NoSQL-Datenbanken\nJSON-Vorteile: kompakter, schneller zu parsen, native Datentypen\noft besser geeignet für neue Projekte\n\n\n\nQuelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/xml-formatter-validator.html"
+    "text": "XML vs. JSON\n\n\nXML\n\nXML bevorzugen bei: SOAP, Dokumenten-Formaten, XSLT, Namespaces, Attributen, Schemas (XSD)\nXML-Vorteile: Attribute, Kommentare, Mixed Content, Namespaces, XPath / XSLT\noft besser für Enterprise / SOAP\n\n\nJSON\n\nJSON bevorzugen bei: REST-APIs, Konfigurationen, moderne Web-Apps, NoSQL-Datenbanken\nJSON-Vorteile: kompakter, schneller zu parsen, native Datentypen\noft besser geeignet für neue Projekte\n\n\n\nQuelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/xml-formatter-validator.html",
+    "crumbs": [
+      "05 APIs, JSON, XML"
+    ]
   },
   {
     "objectID": "05_Schnittstellen_APIs.html#section",
     "href": "05_Schnittstellen_APIs.html#section",
     "title": "Schnittstellen, APIs",
     "section": "",
-    "text": "©torange.biz CC-BY 4.0\n\n\nViel Erfolg!"
+    "text": "©torange.biz CC-BY 4.0\n\n\nViel Erfolg!",
+    "crumbs": [
+      "05 APIs, JSON, XML"
+    ]
   },
   {
     "objectID": "07_Frameworks_Laufzeitumgebungen.html#frameworks",

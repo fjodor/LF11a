@@ -180,9 +180,166 @@ Lernkarte AP2 2025 Nr. 83
 :::
 
 
+## Black-Box- und White-Box-Test
+
+::::: {.incremental style="font-size: 1.9rem"}
+
+**Erklären Sie die Testverfahren Black-Box- und White-Box-Test.**
+
+:::: columns
+::: {.column .incremental}
+
+### Black-Box-Test
+
+- Testpersonen kennen die interne Funktionsweise der Software nicht
+- Stattdessen konzentrieren sie sich auf die **Eingaben und Ausgaben** der Software, um zu prüfen, ob sie wie erwartet funktioniert
+- Black-Box-Test wird durchgeführt, um die **Funktionalität und Benutzerfreundlichkeit** einer Software zu überprüfen
+
+:::
+
+::: {.column .incremental}
+
+### White-Box-Test
+
+- Testende verfügen über Kenntnisse über die **interne Funktionsweise der Software**
+- Sie untersuchen **die Struktur und das Design** der Software
+- White-Box-Test wird durchgeführt, um sicherzustellen, dass der Code einer Software **den Anforderungen entspricht** und **effizient funktioniert**
+
+:::
+::::
+:::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 74
+:::
+
+
+## Code Review
+
+::::: {.incremental style="font-size: 1.9rem"}
+
+**Was versteht man unter einem Code Review?**
+
+:::: columns
+::: {.column .incremental}
+
+### Def. und Vorgehen
+
+- systematische Untersuchung von Programmcode
+- zählt zu **statischen Testverfahren**
+- Überprüfung des Codes auf folgende Aspekte:
+  + Funktionalität
+  + Lesbarkeit, Verständlichkeit
+  + Wartbarkeit
+  + Best Practices, Standards
+
+:::
+
+::: {.column .incremental}
+
+### Nachteile
+
+- Code Reviews erfordern Zeit und Ressourcen
+- Code Reviews können **subjektiv** sein, da die Meinungen der Reviewer variieren können
+- der Programmcode wird nicht ausgeführt
+
+:::
+::::
+:::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 75
+:::
+
+
+## Extremwertetest
+
+:::: {.incremental style="font-size: 2rem"}
+
+**Was ist unter einem Extremwertetest zu verstehen?**
+
+- Fehler treten häufig bei extremen Eingabewerten auf
+- Fokus beim **Extremwertetest**: Testen der Werte, welche **nahe an den Extremwerten** liegen
+- Ziel: **Systemverhalten an oder jenseits seiner Spezifikationsgrenzen** zu beobachten
+- Verstehen, ob das System unter diesen Bedingungen korrekt funktioniert oder **wie und wann es versagt**
+- Hilft, **Fehler, Schwachstellen oder Begrenzungen** der Software **aufzudecken**, die nur unter extremen Bedingungen sichtbar werden
+
+::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 72
+:::
+
+
+## Äquivalenzklassen
+
+:::: {.incremental style="font-size: 1.9rem"}
+
+**Wie können Äquivalenzklassen genutzt werden, um eine effiziente und repräsentative Auswahl von Testfällen für ein System oder eine Funktion zu definieren?**
+
+- Äquivalenzklassen dienen der **repräsentativen Auswahl von Testfällen**
+- Eingabedaten werden **in Gruppen** aufgeteilt, die **ähnliche Verhaltensweisen oder Eigenschaften** aufweisen
+- Breite Abdeckung der verschiedenen Szenarien durch **Auswahl eines Testfalls aus jeder Äquivalenzklasse**
+- So muss man nicht alle möglichen Kombinationen von Eingabewerten testen
+- Idee: Wenn ein Testfall aus einer Äquivalenzklasse erfolgreich besteht oder scheitert: die anderen Testfälle derselben Klassen würden wahrscheinlich ein ähnliches Ergebnis liefern
+
+::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 73
+:::
+
+
+---
+
+### Komponenten-, Funktions- und Integrationstests
+
+:::: {.incremental style="font-size: 1.7rem"}
+
+### Komponententests
+
+- überprüfen einzelne Softwarekomponenten, wie Funktionen, Klassen oder Module, **isoliert** von einander
+- sollen sicherstellen, dass jede Komponente ordnungsgemäß funktioniert und die erwarteten Ergebnisse liefert
+
+### Funktionstests
+
+- testen die Software auf die **funktionalen Anforderungen**
+- überprüfen, ob das **System als Ganzes** die gewünschten Funktionen und Verhaltensweisen korrekt umsetzt
+
+### Integrationstests
+
+- prüfen die **Interaktion zwischen verschiedenen Komponenten** und stellen sicher, dass sie zusammenarbeiten und korrekt integriert sind
+- testen die **Schnittstellen und Kommunikation** zwischen den Komponenten
+
+::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 88
+:::
+
+
+## End-to-End-Test (E2E-Test)
+
+:::: {.incremental style="font-size: 2.1rem"}
+
+**Was ist ein End-to-End-Test (E2E-Test) und welches Ziel wird mit seiner Durchführung verfolgt?**
+
+- End-to-End (E2E) Testing ist ein Softwarest, um **die gesamte Funktionalität** einer Anwendung **von Anfang bis Ende** zu überprüfen
+- Ziele:
+  + überprüfen, ob **alle Systemkomponenten gemeinsam** korrekt funktionieren
+  + sicherstellen, dass der gesamte Ablauf fehlerfrei ist 
+
+::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 89
+:::
+
+
 ## Statische vs. dynamische Testverfahren
 
 ::::: {.incremental style="font-size: 1.9rem"}
+
 **Beschreiben Sie den Unterschied zwischen statischen und dynamischen Testverfahren und nennen Sie jeweils zwei Beispiele.**
 
 :::: columns

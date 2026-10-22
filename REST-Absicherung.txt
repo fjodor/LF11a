@@ -1,0 +1,65 @@
+Das BSI definiert meines Wissens keine Checkliste "Eine REST-API ist sicher, wenn ..."`, sondern beschreibt Anforderungen in verschiedenen IT-Grundschutz-Bausteinen, insbesondere zu Webanwendungen, Individualsoftware und Schnittstellenmanagement. REST-APIs fallen typischerweise in diese Bereiche.
+
+Für eine typische REST-API würde man aus Sicht des IT-Grundschutzes mindestens folgende Maßnahmen erwarten:
+
+Authentisierung
+API-Zugriffe nur für bekannte Benutzer oder Systeme
+z. B. OAuth 2.0, OpenID Connect, API Keys oder Client-Zertifikate
+
+Autorisierung
+
+Jeder Benutzer darf nur auf die erlaubten Ressourcen zugreifen
+Rollen- und Rechtekonzept (RBAC)
+
+Verschlüsselte Kommunikation
+
+TLS/HTTPS für alle produktiven Verbindungen
+Schutz vor Mithören und Manipulation
+
+Sichere Eingabeverarbeitung
+
+Validierung aller Parameter
+Schutz vor SQL-Injection, Command Injection usw.
+
+Sichere Passworthandhabung
+
+Keine Klartext-Passwörter
+Hashverfahren wie Argon2 oder bcrypt
+
+Protokollierung und Monitoring
+
+Anmeldeversuche
+Fehlgeschlagene Zugriffe
+Sicherheitsrelevante Ereignisse
+
+Schutz vor Missbrauch
+
+Rate Limiting
+Sperrung nach vielen Fehlversuchen
+DDoS-Schutz je nach Schutzbedarf
+
+Fehlerbehandlung
+
+Keine internen Informationen in Fehlermeldungen
+Keine Stacktraces oder SQL-Fehler an den Client
+
+Sichere Entwicklung und Tests
+
+Code Reviews
+Schwachstellenscans
+Sicherheitsupdates und Patchmanagement
+
+Geheimnisse schützen
+
+API-Schlüssel, Tokens und Zertifikate nicht im Quellcode
+Verwendung eines Secret Stores oder sicherer Konfigurationen
+
+Für den Unterricht oder die Prüfungsvorbereitung würde ich die Faustregel verwenden:
+
+Eine REST-API gilt als grundlegend abgesichert, wenn HTTPS, Authentisierung, Autorisierung, Eingabevalidierung, sichere Passwortspeicherung, Logging und regelmäßige Updates umgesetzt sind.
+
+Das deckt einen großen Teil dessen ab, was man unter „Stand der Technik“ bzw. BSI-Grundschutz für normale Web-APIs erwarten würde.
+
+Für eine Fachinformatiker-Klausur reicht oft die Merkhilfe:
+
+HTTPS + Authentisierung + Autorisierung + Validierung + Logging + Updates.

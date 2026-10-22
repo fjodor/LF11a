@@ -80,10 +80,10 @@ CRUD = **C**reate - **R**ead - **U**pdate - **D**elete
 
 :::: {.incremental style="font-size: 2rem"}
 
-- HTTPS verwenden
+- Authentifizierung und Autorisierung: Rollen / Rechte vergeben
+- Verschlüsselung: HTTPS verwenden
 - JWT / Bearer Token
 - Passwort-Hashing (bcrypt / argon2)
-- Authentifizierung und Autorisierung: Rollen / Rechte vergeben
 - Eingabevalidierung (z. B. Pydantic)
 - Parametrisierte SQL-Abfragen bzw. ORM
 - Rate Limiting

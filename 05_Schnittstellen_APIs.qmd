@@ -78,16 +78,17 @@ CRUD = **C**reate - **R**ead - **U**pdate - **D**elete
 
 ## REST APIs absichern
 
-:::: {.incremental style="font-size: 2rem"}
+:::: {.incremental style="font-size: 1.7rem"}
 
-- Authentifizierung und Autorisierung: Rollen / Rechte vergeben
-- Verschlüsselung: HTTPS verwenden
-- JWT / Bearer Token
-- Passwort-Hashing (bcrypt / argon2)
-- Eingabevalidierung (z. B. Pydantic)
-- Parametrisierte SQL-Abfragen bzw. ORM
-- Rate Limiting
-- Logging
+- **Authentifizierung:** Zugriff nur für bekannte Benutzer und Systeme
+- **Autorisierung:** RBAC = *Role Based Access Control*; JWT
+- **Verschlüsselung:** TLS, HTTPS für alle produktiven Verbindungen
+- **Eingabevalidierung**, z. B. Pydantic; parametrisierte SQL-Abfragen bzw. ORM; Schutz vor SQL Injection, Command Injection etc.
+- **Sichere Passwort-Handhabung:** Passwort-Hashing, z. B. bcrypt / argon2
+- **Protokollierung und Monitoring:** Logging; Anmeldeversuche, fehlgeschlagene Zugriffe, sicherheitsrelevante Ereignisse
+- **Rate Limiting**; Sperrung nach vielen Fehlversuchen; DDoS-Schutz je nach Schutzbedarf
+- **Fehlerbehandlung:** keine internen Informationen in Fehlermeldungen
+- **Sichere Entwicklung und Tests:** Code Reviews, Schwachstellen-Scans, Updates, Patch-Management
 
 ::::
 

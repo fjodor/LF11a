@@ -25,6 +25,10 @@ website:
         text: 04 UML - Sequenz- und Zustandsdiagramm
       - href: 05_Schnittstellen_APIs.qmd
         text: 05 APIs, JSON, XML
+      - href: 06_Qualitätssicherung_Tests.qmd.qmd
+        text: 06 Software-Tests
+      - href: 07_Datenbanken.qmd
+        text: 07 Datenbanken, SQL
 
 format:
   revealjs:

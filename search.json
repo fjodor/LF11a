@@ -1427,7 +1427,7 @@
     "href": "05_Schnittstellen_APIs.html#rest-apis-absichern",
     "title": "Schnittstellen",
     "section": "REST APIs absichern",
-    "text": "REST APIs absichern\n\n\nHTTPS verwenden\nJWT / Bearer Token\nPasswort-Hashing (bcrypt / argon2)\nAuthentifizierung und Autorisierung: Rollen / Rechte vergeben\nEingabevalidierung (z. B. Pydantic)\nParametrisierte SQL-Abfragen bzw. ORM\nRate Limiting\nLogging",
+    "text": "REST APIs absichern\n\n\nAuthentifizierung: Zugriff nur für bekannte Benutzer und Systeme\nAutorisierung: RBAC = Role Based Access Control; JWT\nVerschlüsselung: TLS, HTTPS für alle produktiven Verbindungen\nEingabevalidierung, z. B. Pydantic; parametrisierte SQL-Abfragen bzw. ORM; Schutz vor SQL Injection, Command Injection etc.\nSichere Passwort-Handhabung: Passwort-Hashing, z. B. bcrypt / argon2\nProtokollierung und Monitoring: Logging; Anmeldeversuche, fehlgeschlagene Zugriffe, sicherheitsrelevante Ereignisse\nRate Limiting; Sperrung nach vielen Fehlversuchen; DDoS-Schutz je nach Schutzbedarf\nFehlerbehandlung: keine internen Informationen in Fehlermeldungen\nSichere Entwicklung und Tests: Code Reviews, Schwachstellen-Scans, Updates, Patch-Management",
     "crumbs": [
       "05 APIs, JSON, XML"
     ]

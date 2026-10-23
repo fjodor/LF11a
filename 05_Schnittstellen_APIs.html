@@ -1137,16 +1137,17 @@ display:block!important;
 </section>
 <section id="rest-apis-absichern" class="slide level2">
 <h2>REST APIs absichern</h2>
-<div style="font-size: 2rem">
+<div style="font-size: 1.7rem">
 <ul>
-<li class="fragment">HTTPS verwenden</li>
-<li class="fragment">JWT / Bearer Token</li>
-<li class="fragment">Passwort-Hashing (bcrypt / argon2)</li>
-<li class="fragment">Authentifizierung und Autorisierung: Rollen / Rechte vergeben</li>
-<li class="fragment">Eingabevalidierung (z. B. Pydantic)</li>
-<li class="fragment">Parametrisierte SQL-Abfragen bzw. ORM</li>
-<li class="fragment">Rate Limiting</li>
-<li class="fragment">Logging</li>
+<li class="fragment"><strong>Authentifizierung:</strong> Zugriff nur für bekannte Benutzer und Systeme</li>
+<li class="fragment"><strong>Autorisierung:</strong> RBAC = <em>Role Based Access Control</em>; JWT</li>
+<li class="fragment"><strong>Verschlüsselung:</strong> TLS, HTTPS für alle produktiven Verbindungen</li>
+<li class="fragment"><strong>Eingabevalidierung</strong>, z. B. Pydantic; parametrisierte SQL-Abfragen bzw. ORM; Schutz vor SQL Injection, Command Injection etc.</li>
+<li class="fragment"><strong>Sichere Passwort-Handhabung:</strong> Passwort-Hashing, z. B. bcrypt / argon2</li>
+<li class="fragment"><strong>Protokollierung und Monitoring:</strong> Logging; Anmeldeversuche, fehlgeschlagene Zugriffe, sicherheitsrelevante Ereignisse</li>
+<li class="fragment"><strong>Rate Limiting</strong>; Sperrung nach vielen Fehlversuchen; DDoS-Schutz je nach Schutzbedarf</li>
+<li class="fragment"><strong>Fehlerbehandlung:</strong> keine internen Informationen in Fehlermeldungen</li>
+<li class="fragment"><strong>Sichere Entwicklung und Tests:</strong> Code Reviews, Schwachstellen-Scans, Updates, Patch-Management</li>
 </ul>
 </div>
 </section>

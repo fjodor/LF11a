@@ -566,7 +566,7 @@ ALTER TABLE Kunde ADD Telefon VARCHAR(20);
 CREATE INDEX idx_name ON Kunde(Name);
 ```
 
-## DML (Data Manipulation Language)
+## DML - Data Manipulation Language
 
 <br>
 
@@ -578,7 +578,7 @@ UPDATE Kunde SET Email = 'neu@mueller.de' WHERE KundenID = 1;
 DELETE FROM Kunde WHERE KundenID = 5;
 ```
 
-## DQL (Data Query Language)
+## DQL - Data Query Language
 
 <br>
 

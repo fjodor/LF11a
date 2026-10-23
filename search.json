@@ -1,346 +1,234 @@
 [
   {
-    "objectID": "08_Qualitätssicherung_Tests.html#blue-green-deployment",
-    "href": "08_Qualitätssicherung_Tests.html#blue-green-deployment",
+    "objectID": "08_Frameworks_Laufzeitumgebungen.html#frameworks",
+    "href": "08_Frameworks_Laufzeitumgebungen.html#frameworks",
+    "title": "Frameworks, Laufzeitumgebungen",
+    "section": "Frameworks",
+    "text": "Frameworks"
+  },
+  {
+    "objectID": "08_Frameworks_Laufzeitumgebungen.html#laufzeitumgebungen",
+    "href": "08_Frameworks_Laufzeitumgebungen.html#laufzeitumgebungen",
+    "title": "Frameworks, Laufzeitumgebungen",
+    "section": "Laufzeitumgebungen",
+    "text": "Laufzeitumgebungen\n\nAP2 Winter 2021/2022 Teil 1 Planen: Interpreter Vor- und Nachteile"
+  },
+  {
+    "objectID": "08_Frameworks_Laufzeitumgebungen.html#section",
+    "href": "08_Frameworks_Laufzeitumgebungen.html#section",
+    "title": "Frameworks, Laufzeitumgebungen",
+    "section": "",
+    "text": "©torange.biz CC-BY 4.0\n\n\nViel Erfolg!"
+  },
+  {
+    "objectID": "06_Qualitätssicherung_Tests.html#blue-green-deployment",
+    "href": "06_Qualitätssicherung_Tests.html#blue-green-deployment",
     "title": "Qualitätssicherung, Tests",
     "section": "Blue-Green-Deployment",
-    "text": "Blue-Green-Deployment\n\nErläutern Sie die Methode des Blue-Green-Deployments.\n\nIdee des Blue-Green-Deployments: zwei separate, identische Umgebungen (Blue, Green) bereitstellen\nBlue: aktuelle Produktionsversion ist live\nGreen: Neue Version der Anwendung wird in der separaten Umgebung bereitgestellt und getestet\nSobald Tests erfolgreich abgeschlossen: Umleitung des Datenverkehrs von Blue auf Green\nUmleitung erfolgt schrittweise, um sicherzustellen, dass das System in der Green-Umgebung ordnungsgemäß funktioniert\nFalls Probleme in der Green-Umgebung auftreten, kann der Datenverkehr schnell auf die Blue-Umgebung zurückgeleitet werden\n\n\n\nLernkarte AP2 2025 Nr. 90"
+    "text": "Blue-Green-Deployment\n\nErläutern Sie die Methode des Blue-Green-Deployments.\n\nIdee des Blue-Green-Deployments: zwei separate, identische Umgebungen (Blue, Green) bereitstellen\nBlue: aktuelle Produktionsversion ist live\nGreen: Neue Version der Anwendung wird in der separaten Umgebung bereitgestellt und getestet\nSobald Tests erfolgreich abgeschlossen: Umleitung des Datenverkehrs von Blue auf Green\nUmleitung erfolgt schrittweise, um sicherzustellen, dass das System in der Green-Umgebung ordnungsgemäß funktioniert\nFalls Probleme in der Green-Umgebung auftreten, kann der Datenverkehr schnell auf die Blue-Umgebung zurückgeleitet werden\n\n\n\nLernkarte AP2 2025 Nr. 90",
+    "crumbs": [
+      "06 Software-Tests"
+    ]
   },
   {
-    "objectID": "08_Qualitätssicherung_Tests.html#regressionstest",
-    "href": "08_Qualitätssicherung_Tests.html#regressionstest",
+    "objectID": "06_Qualitätssicherung_Tests.html#regressionstest",
+    "href": "06_Qualitätssicherung_Tests.html#regressionstest",
     "title": "Qualitätssicherung, Tests",
     "section": "Regressionstest",
-    "text": "Regressionstest\n\nWas ist das Ziel eines Regressionstests?\n\nRegressionstest dient dazu, die Stabilität und Zuverlässigkeit der Anwendung nach Durchführung einer Aktualisierung zu prüfen\nWird durchgeführt, um sicherzustellen, dass neue Änderungen oder Updates an einer Software keine unerwünschten Auswirkungen auf bereits vorhandene Funktionen haben\n\n\n\nLernkarte AP2 2025 Nr. 80"
+    "text": "Regressionstest\n\nWas ist das Ziel eines Regressionstests?\n\nRegressionstest dient dazu, die Stabilität und Zuverlässigkeit der Anwendung nach Durchführung einer Aktualisierung zu prüfen\nWird durchgeführt, um sicherzustellen, dass neue Änderungen oder Updates an einer Software keine unerwünschten Auswirkungen auf bereits vorhandene Funktionen haben\n\n\n\nLernkarte AP2 2025 Nr. 80",
+    "crumbs": [
+      "06 Software-Tests"
+    ]
   },
   {
-    "objectID": "08_Qualitätssicherung_Tests.html#zweigüberdeckung-vs.-pfadüberdeckung",
-    "href": "08_Qualitätssicherung_Tests.html#zweigüberdeckung-vs.-pfadüberdeckung",
+    "objectID": "06_Qualitätssicherung_Tests.html#zweigüberdeckung-vs.-pfadüberdeckung",
+    "href": "06_Qualitätssicherung_Tests.html#zweigüberdeckung-vs.-pfadüberdeckung",
     "title": "Qualitätssicherung, Tests",
     "section": "Zweigüberdeckung vs. Pfadüberdeckung",
-    "text": "Zweigüberdeckung vs. Pfadüberdeckung\n\nBeschreiben Sie den Unterschied zwischen Zweigüberdeckung und Pfadüberdeckung.\n\n\nZweigüberdeckung\n\nAlle Entscheidungszweige im Code müssen durch Tests abgedeckt sein\nEin Entscheidungszweig tritt auf, wenn ein Programm an einem Punkt zwischen zwei möglichen Wegen wählen muss\nZiel: jeder mögliche Pfad durch Bedingungsanweisungen im Code wird mindestens ein Mal getestet\n\n\nPfadüberdeckung\n\nJeder mögliche Pfad im Programm muss mindestens ein Mal durchlaufen werden\nPfad = Sequenz von Anweisungen im Code, die von einem Startpunkt zu einem Endpunkt führen\nPfadüberdeckung berücksichtigt die vollständige Ausführung aller Anweisungen und die möglichen Verzweigungen\n\n\n\n\nLernkarte AP2 2025 Nr. 77"
+    "text": "Zweigüberdeckung vs. Pfadüberdeckung\n\nBeschreiben Sie den Unterschied zwischen Zweigüberdeckung und Pfadüberdeckung.\n\n\nZweigüberdeckung\n\nAlle Entscheidungszweige im Code müssen durch Tests abgedeckt sein\nEin Entscheidungszweig tritt auf, wenn ein Programm an einem Punkt zwischen zwei möglichen Wegen wählen muss\nZiel: jeder mögliche Pfad durch Bedingungsanweisungen im Code wird mindestens ein Mal getestet\n\n\nPfadüberdeckung\n\nJeder mögliche Pfad im Programm muss mindestens ein Mal durchlaufen werden\nPfad = Sequenz von Anweisungen im Code, die von einem Startpunkt zu einem Endpunkt führen\nPfadüberdeckung berücksichtigt die vollständige Ausführung aller Anweisungen und die möglichen Verzweigungen\n\n\n\n\nLernkarte AP2 2025 Nr. 77",
+    "crumbs": [
+      "06 Software-Tests"
+    ]
   },
   {
-    "objectID": "08_Qualitätssicherung_Tests.html#anweisungsüberdeckung",
-    "href": "08_Qualitätssicherung_Tests.html#anweisungsüberdeckung",
+    "objectID": "06_Qualitätssicherung_Tests.html#anweisungsüberdeckung",
+    "href": "06_Qualitätssicherung_Tests.html#anweisungsüberdeckung",
     "title": "Qualitätssicherung, Tests",
     "section": "Anweisungsüberdeckung",
-    "text": "Anweisungsüberdeckung\n\nErklären Sie das Prinzip der Anweisungsüberdeckung.\n\nAnweisungsüberdeckung: grundlegender Aspekt des Softwaretests\nMethode der Code-Überdeckungsanalyse\nZielt darauf ab, jede Anweisung / Code-Zeile mindestens einmal während des Testprozesses auszuführen\nTester / Entwickler kann somit bestätigen, dass jeder Codeabschnitt ausgeführt und getestet wurde\nHauptziel: sicherstellen, dasss jede Anweisung funktioniert wie erwartet und korrekte Ergebnisse liefert\nBeinhaltet auch Aufdecken von “totem Code”: Codeabschnitte, die nie ausgeführt werden und potenziell entfernt werden könnten\n\n\n\nLernkarte AP2 2025 Nr. 76"
+    "text": "Anweisungsüberdeckung\n\nErklären Sie das Prinzip der Anweisungsüberdeckung.\n\nAnweisungsüberdeckung: grundlegender Aspekt des Softwaretests\nMethode der Code-Überdeckungsanalyse\nZielt darauf ab, jede Anweisung / Code-Zeile mindestens einmal während des Testprozesses auszuführen\nTester / Entwickler kann somit bestätigen, dass jeder Codeabschnitt ausgeführt und getestet wurde\nHauptziel: sicherstellen, dasss jede Anweisung funktioniert wie erwartet und korrekte Ergebnisse liefert\nBeinhaltet auch Aufdecken von “totem Code”: Codeabschnitte, die nie ausgeführt werden und potenziell entfernt werden könnten\n\n\n\nLernkarte AP2 2025 Nr. 76",
+    "crumbs": [
+      "06 Software-Tests"
+    ]
   },
   {
-    "objectID": "08_Qualitätssicherung_Tests.html#debugger",
-    "href": "08_Qualitätssicherung_Tests.html#debugger",
+    "objectID": "06_Qualitätssicherung_Tests.html#debugger",
+    "href": "06_Qualitätssicherung_Tests.html#debugger",
     "title": "Qualitätssicherung, Tests",
     "section": "Debugger",
-    "text": "Debugger\n\nBeim Programmtest stellen Sie fest, dass ein Programm nicht wie gewünscht funktioniert. Geben Sie die möglichen Vorgehensweisen an, die Fehlersuche mit Hilfe der Möglichkeiten eines Debuggers vorzunehmen.\n\nBreakpoints setzen: Anhalten des Programms an gesetzten Punkten zur Überprüfung des aktuellen Zustands\nSchritt-für-Schritt-Ausführung: die genaue Kontrolle des Ablaufs zeigt, wann das Programm vom erwarteten Verhalten abweicht\nVariablen beobachten: Überwachung der Werte von Variablen während der Programmausführung\nStack Inspektion: Überprüfen der Reihenfolge der aufgerufenen Funktionen und ihrer Parameter\nException Handling: Identifikation der genauen Punkte im Code, an denen ein Fehler aufgetreten ist\nLogging: Protokollierung der Programmaktivitäten\n\n\n\nLernkarte AP2 2025 Nr. 81"
+    "text": "Debugger\n\nBeim Programmtest stellen Sie fest, dass ein Programm nicht wie gewünscht funktioniert. Geben Sie die möglichen Vorgehensweisen an, die Fehlersuche mit Hilfe der Möglichkeiten eines Debuggers vorzunehmen.\n\nBreakpoints setzen: Anhalten des Programms an gesetzten Punkten zur Überprüfung des aktuellen Zustands\nSchritt-für-Schritt-Ausführung: die genaue Kontrolle des Ablaufs zeigt, wann das Programm vom erwarteten Verhalten abweicht\nVariablen beobachten: Überwachung der Werte von Variablen während der Programmausführung\nStack Inspektion: Überprüfen der Reihenfolge der aufgerufenen Funktionen und ihrer Parameter\nException Handling: Identifikation der genauen Punkte im Code, an denen ein Fehler aufgetreten ist\nLogging: Protokollierung der Programmaktivitäten\n\n\n\nLernkarte AP2 2025 Nr. 81",
+    "crumbs": [
+      "06 Software-Tests"
+    ]
   },
   {
-    "objectID": "08_Qualitätssicherung_Tests.html#syntaxfehler-vs.-semantikfehler",
-    "href": "08_Qualitätssicherung_Tests.html#syntaxfehler-vs.-semantikfehler",
+    "objectID": "06_Qualitätssicherung_Tests.html#syntaxfehler-vs.-semantikfehler",
+    "href": "06_Qualitätssicherung_Tests.html#syntaxfehler-vs.-semantikfehler",
     "title": "Qualitätssicherung, Tests",
     "section": "Syntaxfehler vs. Semantikfehler",
-    "text": "Syntaxfehler vs. Semantikfehler\n\nWas ist der Unterschied zwischen einem Syntaxfehler und einem Semantikfehler?\n\n\nSyntaxfehler\n\ntritt auf, wenn ein Programm gegen die Regeln der Programmiersprache verstößt\nProgramm kann nicht ausgeführt werden, weil der Code nicht korrekt ist\n\n\nSemantikfehler\n\nliegt vor, wenn der Code formal korrekt ist, aber nicht das tut, was beabsichtigt war\nProgramm läuft ohne Fehlermeldung, liefert aber falsche oder unerwartete Ergebnisse\n\n\n\n\nLernkarte AP2 2025 Nr. 82"
+    "text": "Syntaxfehler vs. Semantikfehler\n\nWas ist der Unterschied zwischen einem Syntaxfehler und einem Semantikfehler?\n\n\nSyntaxfehler\n\ntritt auf, wenn ein Programm gegen die Regeln der Programmiersprache verstößt\nProgramm kann nicht ausgeführt werden, weil der Code nicht korrekt ist\n\n\nSemantikfehler\n\nliegt vor, wenn der Code formal korrekt ist, aber nicht das tut, was beabsichtigt war\nProgramm läuft ohne Fehlermeldung, liefert aber falsche oder unerwartete Ergebnisse\n\n\n\n\nLernkarte AP2 2025 Nr. 82",
+    "crumbs": [
+      "06 Software-Tests"
+    ]
   },
   {
-    "objectID": "08_Qualitätssicherung_Tests.html#performance-testing",
-    "href": "08_Qualitätssicherung_Tests.html#performance-testing",
+    "objectID": "06_Qualitätssicherung_Tests.html#performance-testing",
+    "href": "06_Qualitätssicherung_Tests.html#performance-testing",
     "title": "Qualitätssicherung, Tests",
     "section": "Performance Testing",
-    "text": "Performance Testing\n\nWarum ist Performance Testing in der Softwareentwicklung wichtig?\n\nPerformance Testing ist wichtig, um sicherzustellen, dass eine Anwendung unter verschiedenen Lastbedingungen effizient und zuverlässig funktioniert\nBeantwortung folgender Fragen:\n\nWie reagiert die Anwendung unter normaler oder erwarteter Last?\nWie skaliert die Anwendung mit steigender Last?\nWie reagiert die Anwendung unter Spitzenlastbedingungen?\nWie verhält sich die Anwendung über einen längeren Zeitraum?\nGibt es Engpässe oder Flaschenhälse in der Anwendung?\n\n\n\n\nLernkarte AP2 2025 Nr. 83"
+    "text": "Performance Testing\n\nWarum ist Performance Testing in der Softwareentwicklung wichtig?\n\nPerformance Testing ist wichtig, um sicherzustellen, dass eine Anwendung unter verschiedenen Lastbedingungen effizient und zuverlässig funktioniert\nBeantwortung folgender Fragen:\n\nWie reagiert die Anwendung unter normaler oder erwarteter Last?\nWie skaliert die Anwendung mit steigender Last?\nWie reagiert die Anwendung unter Spitzenlastbedingungen?\nWie verhält sich die Anwendung über einen längeren Zeitraum?\nGibt es Engpässe oder Flaschenhälse in der Anwendung?\n\n\n\n\nLernkarte AP2 2025 Nr. 83",
+    "crumbs": [
+      "06 Software-Tests"
+    ]
   },
   {
-    "objectID": "08_Qualitätssicherung_Tests.html#black-box--und-white-box-test",
-    "href": "08_Qualitätssicherung_Tests.html#black-box--und-white-box-test",
+    "objectID": "06_Qualitätssicherung_Tests.html#black-box--und-white-box-test",
+    "href": "06_Qualitätssicherung_Tests.html#black-box--und-white-box-test",
     "title": "Qualitätssicherung, Tests",
     "section": "Black-Box- und White-Box-Test",
-    "text": "Black-Box- und White-Box-Test\n\nErklären Sie die Testverfahren Black-Box- und White-Box-Test.\n\n\nBlack-Box-Test\n\nTestpersonen kennen die interne Funktionsweise der Software nicht\nStattdessen konzentrieren sie sich auf die Eingaben und Ausgaben der Software, um zu prüfen, ob sie wie erwartet funktioniert\nBlack-Box-Test wird durchgeführt, um die Funktionalität und Benutzerfreundlichkeit einer Software zu überprüfen\n\n\nWhite-Box-Test\n\nTestende verfügen über Kenntnisse über die interne Funktionsweise der Software\nSie untersuchen die Struktur und das Design der Software\nWhite-Box-Test wird durchgeführt, um sicherzustellen, dass der Code einer Software den Anforderungen entspricht und effizient funktioniert\n\n\n\n\nLernkarte AP2 2025 Nr. 74"
+    "text": "Black-Box- und White-Box-Test\n\nErklären Sie die Testverfahren Black-Box- und White-Box-Test.\n\n\nBlack-Box-Test\n\nTestpersonen kennen die interne Funktionsweise der Software nicht\nStattdessen konzentrieren sie sich auf die Eingaben und Ausgaben der Software, um zu prüfen, ob sie wie erwartet funktioniert\nBlack-Box-Test wird durchgeführt, um die Funktionalität und Benutzerfreundlichkeit einer Software zu überprüfen\n\n\nWhite-Box-Test\n\nTestende verfügen über Kenntnisse über die interne Funktionsweise der Software\nSie untersuchen die Struktur und das Design der Software\nWhite-Box-Test wird durchgeführt, um sicherzustellen, dass der Code einer Software den Anforderungen entspricht und effizient funktioniert\n\n\n\n\nLernkarte AP2 2025 Nr. 74",
+    "crumbs": [
+      "06 Software-Tests"
+    ]
   },
   {
-    "objectID": "08_Qualitätssicherung_Tests.html#code-review",
-    "href": "08_Qualitätssicherung_Tests.html#code-review",
+    "objectID": "06_Qualitätssicherung_Tests.html#code-review",
+    "href": "06_Qualitätssicherung_Tests.html#code-review",
     "title": "Qualitätssicherung, Tests",
     "section": "Code Review",
-    "text": "Code Review\n\nWas versteht man unter einem Code Review?\n\n\nDef. und Vorgehen\n\nsystematische Untersuchung von Programmcode\nzählt zu statischen Testverfahren\nÜberprüfung des Codes auf folgende Aspekte:\n\nFunktionalität\nLesbarkeit, Verständlichkeit\nWartbarkeit\nBest Practices, Standards\n\n\n\nNachteile\n\nCode Reviews erfordern Zeit und Ressourcen\nCode Reviews können subjektiv sein, da die Meinungen der Reviewer variieren können\nder Programmcode wird nicht ausgeführt\n\n\n\n\nLernkarte AP2 2025 Nr. 75"
+    "text": "Code Review\n\nWas versteht man unter einem Code Review?\n\n\nDef. und Vorgehen\n\nsystematische Untersuchung von Programmcode\nzählt zu statischen Testverfahren\nÜberprüfung des Codes auf folgende Aspekte:\n\nFunktionalität\nLesbarkeit, Verständlichkeit\nWartbarkeit\nBest Practices, Standards\n\n\n\nNachteile\n\nCode Reviews erfordern Zeit und Ressourcen\nCode Reviews können subjektiv sein, da die Meinungen der Reviewer variieren können\nder Programmcode wird nicht ausgeführt\n\n\n\n\nLernkarte AP2 2025 Nr. 75",
+    "crumbs": [
+      "06 Software-Tests"
+    ]
   },
   {
-    "objectID": "08_Qualitätssicherung_Tests.html#extremwertetest",
-    "href": "08_Qualitätssicherung_Tests.html#extremwertetest",
+    "objectID": "06_Qualitätssicherung_Tests.html#extremwertetest",
+    "href": "06_Qualitätssicherung_Tests.html#extremwertetest",
     "title": "Qualitätssicherung, Tests",
     "section": "Extremwertetest",
-    "text": "Extremwertetest\n\nWas ist unter einem Extremwertetest zu verstehen?\n\nFehler treten häufig bei extremen Eingabewerten auf\nFokus beim Extremwertetest: Testen der Werte, welche nahe an den Extremwerten liegen\nZiel: Systemverhalten an oder jenseits seiner Spezifikationsgrenzen zu beobachten\nVerstehen, ob das System unter diesen Bedingungen korrekt funktioniert oder wie und wann es versagt\nHilft, Fehler, Schwachstellen oder Begrenzungen der Software aufzudecken, die nur unter extremen Bedingungen sichtbar werden\n\n\n\nLernkarte AP2 2025 Nr. 72"
+    "text": "Extremwertetest\n\nWas ist unter einem Extremwertetest zu verstehen?\n\nFehler treten häufig bei extremen Eingabewerten auf\nFokus beim Extremwertetest: Testen der Werte, welche nahe an den Extremwerten liegen\nZiel: Systemverhalten an oder jenseits seiner Spezifikationsgrenzen zu beobachten\nVerstehen, ob das System unter diesen Bedingungen korrekt funktioniert oder wie und wann es versagt\nHilft, Fehler, Schwachstellen oder Begrenzungen der Software aufzudecken, die nur unter extremen Bedingungen sichtbar werden\n\n\n\nLernkarte AP2 2025 Nr. 72",
+    "crumbs": [
+      "06 Software-Tests"
+    ]
   },
   {
-    "objectID": "08_Qualitätssicherung_Tests.html#äquivalenzklassen",
-    "href": "08_Qualitätssicherung_Tests.html#äquivalenzklassen",
+    "objectID": "06_Qualitätssicherung_Tests.html#äquivalenzklassen",
+    "href": "06_Qualitätssicherung_Tests.html#äquivalenzklassen",
     "title": "Qualitätssicherung, Tests",
     "section": "Äquivalenzklassen",
-    "text": "Äquivalenzklassen\n\nWie können Äquivalenzklassen genutzt werden, um eine effiziente und repräsentative Auswahl von Testfällen für ein System oder eine Funktion zu definieren?\n\nÄquivalenzklassen dienen der repräsentativen Auswahl von Testfällen\nEingabedaten werden in Gruppen aufgeteilt, die ähnliche Verhaltensweisen oder Eigenschaften aufweisen\nBreite Abdeckung der verschiedenen Szenarien durch Auswahl eines Testfalls aus jeder Äquivalenzklasse\nSo muss man nicht alle möglichen Kombinationen von Eingabewerten testen\nIdee: Wenn ein Testfall aus einer Äquivalenzklasse erfolgreich besteht oder scheitert: die anderen Testfälle derselben Klassen würden wahrscheinlich ein ähnliches Ergebnis liefern\n\n\n\nLernkarte AP2 2025 Nr. 73"
+    "text": "Äquivalenzklassen\n\nWie können Äquivalenzklassen genutzt werden, um eine effiziente und repräsentative Auswahl von Testfällen für ein System oder eine Funktion zu definieren?\n\nÄquivalenzklassen dienen der repräsentativen Auswahl von Testfällen\nEingabedaten werden in Gruppen aufgeteilt, die ähnliche Verhaltensweisen oder Eigenschaften aufweisen\nBreite Abdeckung der verschiedenen Szenarien durch Auswahl eines Testfalls aus jeder Äquivalenzklasse\nSo muss man nicht alle möglichen Kombinationen von Eingabewerten testen\nIdee: Wenn ein Testfall aus einer Äquivalenzklasse erfolgreich besteht oder scheitert: die anderen Testfälle derselben Klassen würden wahrscheinlich ein ähnliches Ergebnis liefern\n\n\n\nLernkarte AP2 2025 Nr. 73",
+    "crumbs": [
+      "06 Software-Tests"
+    ]
   },
   {
-    "objectID": "08_Qualitätssicherung_Tests.html#end-to-end-test-e2e-test",
-    "href": "08_Qualitätssicherung_Tests.html#end-to-end-test-e2e-test",
+    "objectID": "06_Qualitätssicherung_Tests.html#end-to-end-test-e2e-test",
+    "href": "06_Qualitätssicherung_Tests.html#end-to-end-test-e2e-test",
     "title": "Qualitätssicherung, Tests",
     "section": "End-to-End-Test (E2E-Test)",
-    "text": "End-to-End-Test (E2E-Test)\n\nWas ist ein End-to-End-Test (E2E-Test) und welches Ziel wird mit seiner Durchführung verfolgt?\n\nEnd-to-End (E2E) Testing ist ein Softwarest, um die gesamte Funktionalität einer Anwendung von Anfang bis Ende zu überprüfen\nZiele:\n\nüberprüfen, ob alle Systemkomponenten gemeinsam korrekt funktionieren\nsicherstellen, dass der gesamte Ablauf fehlerfrei ist\n\n\n\n\nLernkarte AP2 2025 Nr. 89"
+    "text": "End-to-End-Test (E2E-Test)\n\nWas ist ein End-to-End-Test (E2E-Test) und welches Ziel wird mit seiner Durchführung verfolgt?\n\nEnd-to-End (E2E) Testing ist ein Softwarest, um die gesamte Funktionalität einer Anwendung von Anfang bis Ende zu überprüfen\nZiele:\n\nüberprüfen, ob alle Systemkomponenten gemeinsam korrekt funktionieren\nsicherstellen, dass der gesamte Ablauf fehlerfrei ist\n\n\n\n\nLernkarte AP2 2025 Nr. 89",
+    "crumbs": [
+      "06 Software-Tests"
+    ]
   },
   {
-    "objectID": "08_Qualitätssicherung_Tests.html#statische-vs.-dynamische-testverfahren",
-    "href": "08_Qualitätssicherung_Tests.html#statische-vs.-dynamische-testverfahren",
+    "objectID": "06_Qualitätssicherung_Tests.html#statische-vs.-dynamische-testverfahren",
+    "href": "06_Qualitätssicherung_Tests.html#statische-vs.-dynamische-testverfahren",
     "title": "Qualitätssicherung, Tests",
     "section": "Statische vs. dynamische Testverfahren",
-    "text": "Statische vs. dynamische Testverfahren\n\nBeschreiben Sie den Unterschied zwischen statischen und dynamischen Testverfahren und nennen Sie jeweils zwei Beispiele.\n\n\nStatische Testverfahren\n\nProgrammkomponenten werden nicht ausgeführt\nÜberprüfung und Fehlersuche erfolgt anhand des Quellcodes oder anderen Dokumenten\nBeispiele:\n\nSchreibtischtest\nReview von Anforderungen, Architektur, Design und Quellcode\n\n\n\nDynamische Testverfahren\n\nTest der Programmkomponenten erfolgt durch die Ausführung in einer Testumgebung\n\nBlack-Box-Test\nWhite-Box-Test\nExtremwertetest\n\n\n\n\n\nLernkarte AP2 2025 Nr. 71"
+    "text": "Statische vs. dynamische Testverfahren\n\nBeschreiben Sie den Unterschied zwischen statischen und dynamischen Testverfahren und nennen Sie jeweils zwei Beispiele.\n\n\nStatische Testverfahren\n\nProgrammkomponenten werden nicht ausgeführt\nÜberprüfung und Fehlersuche erfolgt anhand des Quellcodes oder anderen Dokumenten\nBeispiele:\n\nSchreibtischtest\nReview von Anforderungen, Architektur, Design und Quellcode\n\n\n\nDynamische Testverfahren\n\nTest der Programmkomponenten erfolgt durch die Ausführung in einer Testumgebung\n\nBlack-Box-Test\nWhite-Box-Test\nExtremwertetest\n\n\n\n\n\nLernkarte AP2 2025 Nr. 71",
+    "crumbs": [
+      "06 Software-Tests"
+    ]
   },
   {
-    "objectID": "08_Qualitätssicherung_Tests.html#testsoftware",
-    "href": "08_Qualitätssicherung_Tests.html#testsoftware",
+    "objectID": "06_Qualitätssicherung_Tests.html#testsoftware",
+    "href": "06_Qualitätssicherung_Tests.html#testsoftware",
     "title": "Qualitätssicherung, Tests",
     "section": "Testsoftware",
-    "text": "Testsoftware\n\n\nUnterstützt das Planen, Ausführen und Auswerten von Softwaretests\nZiel:\n\nFehler früh erkennen\nQualität sichern\nWiederholbare Tests ermöglichen\n\n\nTypische Funktionen\n\nTestfallverwaltung\nAutomatisierte Testausführung\nReporting & Protokollierung\nIntegration in CI/CD-Pipelines"
+    "text": "Testsoftware\n\n\nUnterstützt das Planen, Ausführen und Auswerten von Softwaretests\nZiel:\n\nFehler früh erkennen\nQualität sichern\nWiederholbare Tests ermöglichen\n\n\nTypische Funktionen\n\nTestfallverwaltung\nAutomatisierte Testausführung\nReporting & Protokollierung\nIntegration in CI/CD-Pipelines",
+    "crumbs": [
+      "06 Software-Tests"
+    ]
   },
   {
-    "objectID": "08_Qualitätssicherung_Tests.html#testsoftware-unit-tests",
-    "href": "08_Qualitätssicherung_Tests.html#testsoftware-unit-tests",
+    "objectID": "06_Qualitätssicherung_Tests.html#testsoftware-unit-tests",
+    "href": "06_Qualitätssicherung_Tests.html#testsoftware-unit-tests",
     "title": "Qualitätssicherung, Tests",
     "section": "Testsoftware: Unit Tests",
-    "text": "Testsoftware: Unit Tests\n\n\n\n\n\nSprache\n\n\n\n\nPython\n\n\nJava\n\n\nJavaScript\n\n\nC#\n\n\n\n\n\n\n\nSoftware\n\n\n\n\npytest\n\n\nJUnit\n\n\nJest\n\n\nNUnit / xUnit"
+    "text": "Testsoftware: Unit Tests\n\n\n\n\n\nSprache\n\n\n\n\nPython\n\n\nJava\n\n\nJavaScript\n\n\nC#\n\n\n\n\n\n\n\nSoftware\n\n\n\n\npytest\n\n\nJUnit\n\n\nJest\n\n\nNUnit / xUnit",
+    "crumbs": [
+      "06 Software-Tests"
+    ]
   },
   {
-    "objectID": "08_Qualitätssicherung_Tests.html#testsoftware-api-tests",
-    "href": "08_Qualitätssicherung_Tests.html#testsoftware-api-tests",
+    "objectID": "06_Qualitätssicherung_Tests.html#testsoftware-api-tests",
+    "href": "06_Qualitätssicherung_Tests.html#testsoftware-api-tests",
     "title": "Qualitätssicherung, Tests",
     "section": "Testsoftware: API-Tests",
-    "text": "Testsoftware: API-Tests\n\n\n\n\n\nSprache\n\n\n\n\nPython   \n\n\nPython   \n\n\nJava\n\n\nJavaScript\n\n\nJavaScript\n\n\nC#\n\n\n\n\n\n\n\nSoftware\nBeschreibung\n\n\n\n\nrequests + pytest\nAPI-Tests über HTTP + Assertions\n\n\nLocust (API-Lasttests)\nLast- und Performance-Tests\n\n\nREST Assured\nFluent API für REST-Tests\n\n\nPostman / Newman\nAPI-Tests + CLI-Ausführung\n\n\nSupertest\nTests für Node.js-REST-APIs\n\n\nRestSharp + NUnit\nAPI-Tests im .NET-Ökosystem"
+    "text": "Testsoftware: API-Tests\n\n\n\n\n\nSprache\n\n\n\n\nPython   \n\n\nPython   \n\n\nJava\n\n\nJavaScript\n\n\nJavaScript\n\n\nC#\n\n\n\n\n\n\n\nSoftware\nBeschreibung\n\n\n\n\nrequests + pytest\nAPI-Tests über HTTP + Assertions\n\n\nLocust (API-Lasttests)\nLast- und Performance-Tests\n\n\nREST Assured\nFluent API für REST-Tests\n\n\nPostman / Newman\nAPI-Tests + CLI-Ausführung\n\n\nSupertest\nTests für Node.js-REST-APIs\n\n\nRestSharp + NUnit\nAPI-Tests im .NET-Ökosystem",
+    "crumbs": [
+      "06 Software-Tests"
+    ]
   },
   {
-    "objectID": "08_Qualitätssicherung_Tests.html#testsoftware-ui-browser-tests",
-    "href": "08_Qualitätssicherung_Tests.html#testsoftware-ui-browser-tests",
+    "objectID": "06_Qualitätssicherung_Tests.html#testsoftware-ui-browser-tests",
+    "href": "06_Qualitätssicherung_Tests.html#testsoftware-ui-browser-tests",
     "title": "Qualitätssicherung, Tests",
     "section": "Testsoftware: UI-/Browser-Tests",
-    "text": "Testsoftware: UI-/Browser-Tests\n\n\n\n\n\nSprache\n\n\n\n\nPython\n\n\nJava\n\n\nJavaScript\n\n\nC#\n\n\n\n\n\n\n\nSoftware\n\n\n\n\nPlaywright, Selenium\n\n\nSelenium\n\n\nPlaywright, Cypress\n\n\nSelenium"
+    "text": "Testsoftware: UI-/Browser-Tests\n\n\n\n\n\nSprache\n\n\n\n\nPython\n\n\nJava\n\n\nJavaScript\n\n\nC#\n\n\n\n\n\n\n\nSoftware\n\n\n\n\nPlaywright, Selenium\n\n\nSelenium\n\n\nPlaywright, Cypress\n\n\nSelenium",
+    "crumbs": [
+      "06 Software-Tests"
+    ]
   },
   {
-    "objectID": "08_Qualitätssicherung_Tests.html#testsoftware-last--performance-tests",
-    "href": "08_Qualitätssicherung_Tests.html#testsoftware-last--performance-tests",
+    "objectID": "06_Qualitätssicherung_Tests.html#testsoftware-last--performance-tests",
+    "href": "06_Qualitätssicherung_Tests.html#testsoftware-last--performance-tests",
     "title": "Qualitätssicherung, Tests",
     "section": "Testsoftware: Last-/ Performance-Tests",
-    "text": "Testsoftware: Last-/ Performance-Tests\n\n\n\n\n\nSprache\n\n\n\n\nPython\n\n\nJava\n\n\nJavaScript\n\n\nC#\n\n\n\n\n\n\n\nSoftware\n\n\n\n\nLocust\n\n\nJMeter\n\n\nk6\n\n\nNBomber"
+    "text": "Testsoftware: Last-/ Performance-Tests\n\n\n\n\n\nSprache\n\n\n\n\nPython\n\n\nJava\n\n\nJavaScript\n\n\nC#\n\n\n\n\n\n\n\nSoftware\n\n\n\n\nLocust\n\n\nJMeter\n\n\nk6\n\n\nNBomber",
+    "crumbs": [
+      "06 Software-Tests"
+    ]
   },
   {
-    "objectID": "08_Qualitätssicherung_Tests.html#testsoftware-statische-analyse",
-    "href": "08_Qualitätssicherung_Tests.html#testsoftware-statische-analyse",
+    "objectID": "06_Qualitätssicherung_Tests.html#testsoftware-statische-analyse",
+    "href": "06_Qualitätssicherung_Tests.html#testsoftware-statische-analyse",
     "title": "Qualitätssicherung, Tests",
     "section": "Testsoftware: Statische Analyse",
-    "text": "Testsoftware: Statische Analyse\n\n\n\n\n\nSprache\n\n\n\n\nPython\n\n\nJava\n\n\nJavaScript\n\n\nC#\n\n\n\n\n\n\n\nSoftware\n\n\n\n\nflake8, mypy\n\n\nSpotBugs\n\n\nESLint\n\n\nSonarQube"
+    "text": "Testsoftware: Statische Analyse\n\n\n\n\n\nSprache\n\n\n\n\nPython\n\n\nJava\n\n\nJavaScript\n\n\nC#\n\n\n\n\n\n\n\nSoftware\n\n\n\n\nflake8, mypy\n\n\nSpotBugs\n\n\nESLint\n\n\nSonarQube",
+    "crumbs": [
+      "06 Software-Tests"
+    ]
   },
   {
-    "objectID": "08_Qualitätssicherung_Tests.html#e2e-playwright",
-    "href": "08_Qualitätssicherung_Tests.html#e2e-playwright",
+    "objectID": "06_Qualitätssicherung_Tests.html#e2e-playwright",
+    "href": "06_Qualitätssicherung_Tests.html#e2e-playwright",
     "title": "Qualitätssicherung, Tests",
     "section": "E2E: Playwright",
-    "text": "E2E: Playwright"
+    "text": "E2E: Playwright",
+    "crumbs": [
+      "06 Software-Tests"
+    ]
   },
   {
-    "objectID": "08_Qualitätssicherung_Tests.html#section",
-    "href": "08_Qualitätssicherung_Tests.html#section",
+    "objectID": "06_Qualitätssicherung_Tests.html#section",
+    "href": "06_Qualitätssicherung_Tests.html#section",
     "title": "Qualitätssicherung, Tests",
     "section": "",
-    "text": "©torange.biz CC-BY 4.0\n\n\nViel Erfolg!"
-  },
-  {
-    "objectID": "06_Datenbanken.html#relationale-vs.-nicht-relationale-dbs",
-    "href": "06_Datenbanken.html#relationale-vs.-nicht-relationale-dbs",
-    "title": "Datenbanken",
-    "section": "Relationale vs. Nicht-relationale DBs",
-    "text": "Relationale vs. Nicht-relationale DBs\n\nWas sind relationale Datenbanken? - Nennen Sie zwei Beispiele für nicht-relationale Datenbanktypen.\n\n\nRelationale Datenbanken\n\nDatenbanken, die auf dem relationalen Datenbankmodell basieren\nSpeichern Daten in Tabellen, die aus Zeilen und Spalten bestehen\nBeziehungen zwischen Tabellen werden durch Primärschlüssel-Fremdschlüssel-Beziehungen hergestellt\n\n\nNicht-relationale Datenbanktypen: Beispiele\n\nDokumentenorientierte Datenbanken\nSchlüssel-Wert-Datenbanken\nSpaltenorientierte Datenbanken\nGraphdatenbanken\nZeitreihendatenbanken\nObjektorientierte Datenbanken\n\n\n\n\nLernkarte AP2 2025 Nr. 98"
-  },
-  {
-    "objectID": "06_Datenbanken.html#relationale-vs.-nosql-datenbanken",
-    "href": "06_Datenbanken.html#relationale-vs.-nosql-datenbanken",
-    "title": "Datenbanken",
-    "section": "Relationale vs. NoSQL-Datenbanken",
-    "text": "Relationale vs. NoSQL-Datenbanken\n\n\n\n\n\n\n\n\n\nMerkmal\nRelational (SQL)\nNoSQL\n\n\n\n\nStruktur\nTabellen mit Spalten\nDokumente, Key-Value, Graphen\n\n\nSchema\nFestes Schema\nFlexibles / kein Schema\n\n\nSprache\nSQL\nAbhängig vom System\n\n\nKonsistenz\nACID (stark)\nBASE (eventual consistency)\n\n\nSkalierung\nVertikal (größerer Server)\nHorizontal (mehr Server)\n\n\nBeispiele\nMySQL, PostgreSQL, MariaDB\nMongoDB, Redis, Cassandra, Neo4j\n\n\nEinsatz\nStrukturierte Daten, Transaktionen\nBig Data, flexible Strukturen"
-  },
-  {
-    "objectID": "06_Datenbanken.html#odbc",
-    "href": "06_Datenbanken.html#odbc",
-    "title": "Datenbanken",
-    "section": "ODBC",
-    "text": "ODBC\n\nWofür steht die Abkürzung ODBC?\n\nODBC = Open Database Connectivity\nStandardisierte Schnittstelle für den Zugriff auf verschiedene Datenbankmanagementsysteme (DBMS)\nSie ermöglicht Anwendungen, SQL-Abfragen unabhängig vom verwendeten Datenbanktyp auszuführen\n\n\n\nLernkarte AP2 2025 Nr. 117"
-  },
-  {
-    "objectID": "06_Datenbanken.html#primärschlüssel-vs.-fremdschlüssel",
-    "href": "06_Datenbanken.html#primärschlüssel-vs.-fremdschlüssel",
-    "title": "Datenbanken",
-    "section": "Primärschlüssel vs. Fremdschlüssel",
-    "text": "Primärschlüssel vs. Fremdschlüssel\n\nErklären Sie in Bezug auf Datenbanken die Begriffe Primärschlüssel und Fremdschlüssel.\n\n\nPrimärschlüssel\n\nFeld oder Kombination von Feldern in einer Tabelle, das / die jede Zeile eindeutig identifiziert\nJeder Primärschlüssel ist eindeutig innerhalb der Tabelle und es darf keine Duplikate oder Nullwerte geben\n\n\nFremdschlüssel\n\nFeld oder Kombination von Feldern in einer Tabelle, das auf den Primärschlüssel einer anderen Tabelle verweist\nZweck: Integrität der Daten zu gewährleisten und Beziehungen zwischen Tabellen herzustellen\n\n\n\n\nLernkarte AP2 2025 Nr. 103"
-  },
-  {
-    "objectID": "06_Datenbanken.html#er-modell-kardinalitäten",
-    "href": "06_Datenbanken.html#er-modell-kardinalitäten",
-    "title": "Datenbanken",
-    "section": "ER-Modell: Kardinalitäten",
-    "text": "ER-Modell: Kardinalitäten\n\n\n\n\n\nNotation\nBedeutung\nBeispiel\n\n\n\n\n1:1\nGenau eine Zuordnung\nPerson → Personalausweis\n\n\n1:n\nEine Entität → mehrere\nAbteilung → Mitarbeiter\n\n\nn:m\nMehrere → mehrere\nStudent → Vorlesung\n\n\n\n\nn:m-Auflösung: Zwischentabelle mit Fremdschlüsseln beider Seiten"
-  },
-  {
-    "objectID": "06_Datenbanken.html#datenbanken-datentypen",
-    "href": "06_Datenbanken.html#datenbanken-datentypen",
-    "title": "Datenbanken",
-    "section": "Datenbanken: Datentypen",
-    "text": "Datenbanken: Datentypen\n\n\n\n\nDatentyp\nBeschreibung\nBeispiel\n\n\n\n\nINT / INTEGER\nGanzzahl\nAlter, Menge\n\n\nFLOAT / DOUBLE\nGleitkommazahl\nPreis (ungenau!)\n\n\nDECIMAL(p,s)\nFestkommazahl\nWährung: DECIMAL(10,2)\n\n\nVARCHAR(n)\nText variabler Länge\nName VARCHAR(100)\n\n\nCHAR(n)\nText fester Länge\nPLZ CHAR(5)\n\n\nTEXT\nLanger Text\nBeschreibung\n\n\nDATE\nDatum\nGeburtsdatum\n\n\nDATETIME / TIMESTAMP\nDatum + Uhrzeit\nErstellungszeitpunkt\n\n\nBOOLEAN\nWahrheitswert\nAktiv: TRUE/FALSE\n\n\nBLOB / BINARY\nBinärdaten, Binär-String\nBilder, Dateien\n\n\n\nRichtiger Datentyp: Datenintegrität, Speichereffizienz\n\n\nvgl. Lernkarte AP2 2025 Nr. 102"
-  },
-  {
-    "objectID": "06_Datenbanken.html#null",
-    "href": "06_Datenbanken.html#null",
-    "title": "Datenbanken",
-    "section": "NULL",
-    "text": "NULL\n\nWas bedeutet der Begriff NULL in Bezug auf Datenbanken und welche Rolle spielt es bei der Datenverarbeitung und -abfrage?\n\nNULL in DBS: Feld hat keinen Wert: NULL ≠ 0; NULL ≠ Leerzeichen!\nNULL repräsentiert fehlende oder unbekannte Daten\nBei fehlenden Daten kann NULL eingefügt werden\nIn Abfragen wird IS NULL oder IS NOT NULL verwendet, um NULL-Werte zu finden\nArithmetische Operationen mit NULL ergeben NULL\nAggregatfunktionen wie COUNT oder SUM ignorieren NULL-Werte\nOft werden NULL-Werte in Datenbankindizes nicht berücksichtigt\n\n\n\nLernkarte AP2 2025 Nr. 115"
-  },
-  {
-    "objectID": "06_Datenbanken.html#spalten-indizierung",
-    "href": "06_Datenbanken.html#spalten-indizierung",
-    "title": "Datenbanken",
-    "section": "Spalten-Indizierung",
-    "text": "Spalten-Indizierung\n\nWarum ist die Indizierung von Spalten in einer Datenbank wichtig und wie kann sie die Leistung von Abfragen verbessern?\n\nIndex bietet schnellen Zugriff auf Daten\nEnthält eine sortierte Liste von Werten einer bestimmten Spalte und Verweise auf Speicherorte der zugehörigen Daten\nWenn Abfrage indizierte Spalte verwendet -&gt; DB-System kann Index verwenden, um schnell zu den benötigten Daten zu navigieren, anstatt alle Zeilen durchsuchen zu müssen\nKann Leistung von Abfragen erheblich verbessern\nNachteil: gewisser Overhead: Speicherplatz sowie Verarbeitungszeit bei Schreibvorgängen, da Index immer aktualisiert werden muss\n\n\n\nLernkarte AP2 2025 Nr. 111"
-  },
-  {
-    "objectID": "06_Datenbanken.html#dbs-anomalien-und-redundanzen",
-    "href": "06_Datenbanken.html#dbs-anomalien-und-redundanzen",
-    "title": "Datenbanken",
-    "section": "DBs: Anomalien und Redundanzen",
-    "text": "DBs: Anomalien und Redundanzen\n\nDef.: Datenbankanomalien sind Probleme, die in einer Datenbank auftreten und zu Inkonsistenzen oder unerwünschten Effekten führen können.\n\n\n\n\n\n\n\n\n\nAnomalie\nBeschreibung\nBeispiel\n\n\n\n\nEinfüge-Anomalie\nDaten können nicht ohne Zusatzinfo eingefügt werden\nNeuer Kunde ohne Auftrag\n\n\nÄnderungs-Anomalie\nÄnderung an mehreren Stellen nötig\nKundenadresse in jeder Bestellung\n\n\nLösch-Anomalie\nBeim Löschen gehen andere Daten verloren\nLetzter Auftrag gelöscht → Kundendaten weg\n\n\n\n\nLösung:\n\nNormalisierung → Redundanzen eliminieren:\n\nAufteilung von Tabellen\nklare Definition von Beziehungen zwischen Tabellen\n\n\n\n\nvgl. Lernkarte AP2 2025 Nr. 105"
-  },
-  {
-    "objectID": "06_Datenbanken.html#normalisierung-1.-normalform-1nf",
-    "href": "06_Datenbanken.html#normalisierung-1.-normalform-1nf",
-    "title": "Datenbanken",
-    "section": "Normalisierung: 1. Normalform (1NF)",
-    "text": "Normalisierung: 1. Normalform (1NF)\n\n\nJedes Attribut enthält nur atomare (unteilbare) Werte\nKeine Wiederholungsgruppen\n\nVerstoß: Telefon = “0123, 0456” → Aufteilen in separate Datensätze / Tabelle"
-  },
-  {
-    "objectID": "06_Datenbanken.html#normalisierung-2.-normalform-2nf",
-    "href": "06_Datenbanken.html#normalisierung-2.-normalform-2nf",
-    "title": "Datenbanken",
-    "section": "Normalisierung: 2. Normalform (2NF)",
-    "text": "Normalisierung: 2. Normalform (2NF)\n\n\n1NF erfüllt\nJedes Nicht-Schlüssel-Attribut ist voll funktional abhängig vom gesamten Primärschlüssel\nRelevant bei zusammengesetzten Schlüsseln"
-  },
-  {
-    "objectID": "06_Datenbanken.html#normalisierung-3.-normalform-3nf",
-    "href": "06_Datenbanken.html#normalisierung-3.-normalform-3nf",
-    "title": "Datenbanken",
-    "section": "Normalisierung: 3. Normalform (3NF)",
-    "text": "Normalisierung: 3. Normalform (3NF)\n\n\n2NF erfüllt\nKeine transitiven Abhängigkeiten  Nicht-Schlüssel-Attribut hängt nicht von anderem Nicht-Schlüssel-Attribut ab\n\nBeispiel transitive Abhängigkeit:\n\n\nMitarbeiter → AbteilungsNr → AbteilungsName (transitiv!)\nLösung: AbteilungsName in eigene Tabelle “Abteilung”"
-  },
-  {
-    "objectID": "06_Datenbanken.html#db-design",
-    "href": "06_Datenbanken.html#db-design",
-    "title": "Datenbanken",
-    "section": "DB Design",
-    "text": "DB Design\n\nAnforderungsanalyse\n        |\n        v\n+----------------+     +------------------+\n| ER-Modell      |----&gt;| Relationales     |\n| (konzeptionell)|     | Modell (logisch) |\n+----------------+     +------------------+\n                              |\n            +---------+-------+\n            |                 |\n  +----------------+      +--------------+\n  | Normalisierung |      | SQL (DDL)    |\n  | 1NF-3NF        |      | CREATE TABLE |\n  +----------------+      +--------------+\n             |                |\n             v                v\n      Redundanzfreies     Physische\n      Datenmodell         Datenbank\n                              |\n                          +---+----------+\n                          |              |\n                     +---------+     +-----------+\n                     | DML     |     | DQL       |\n                     | INSERT  |     | SELECT    |\n                     | UPDATE  |     | JOIN      |\n                     | DELETE  |     | GROUP BY  |\n                     +---------+     +-----------+"
-  },
-  {
-    "objectID": "06_Datenbanken.html#normalisierung-beispiel",
-    "href": "06_Datenbanken.html#normalisierung-beispiel",
-    "title": "Datenbanken",
-    "section": "Normalisierung: Beispiel",
-    "text": "Normalisierung: Beispiel\n\nAusgangspunkt\n\n\n\n\n\n\n\n\n\n\n\n\nBestellNr\nDatum\nKundenName\nKundenOrt\nArtikel\nPreis\n\n\n\n\n1001\n2024-01-15\nMüller GmbH\nBerlin\nServer, Switch\n5000, 500\n\n\n1002\n2024-01-20\nMüller GmbH\nBerlin\nKabel\n50\n\n\n\n\n\nProbleme\n\nMehrere Werte in einer Zelle (Artikel, Preis)\nRedundanz (KundenName / Ort)"
-  },
-  {
-    "objectID": "06_Datenbanken.html#beispiel-1nf",
-    "href": "06_Datenbanken.html#beispiel-1nf",
-    "title": "Datenbanken",
-    "section": "Beispiel: 1NF",
-    "text": "Beispiel: 1NF\n\n\nForderung: Jedes Attribut enthält nur atomare (unteilbare) Werte\n\n\n\n\n\n\nBestellNr\nDatum\nKundenName\nKundenOrt\nArtikel\nPreis\n\n\n\n\n1001\n2024-01-15\nMüller GmbH\nBerlin\nServer\n5000\n\n\n1001\n2024-01-15\nMüller GmbH\nBerlin\nSwitch\n500\n\n\n1002\n2024-01-20\nMüller GmbH\nBerlin\nKabel\n50"
-  },
-  {
-    "objectID": "06_Datenbanken.html#beispiel-2nf",
-    "href": "06_Datenbanken.html#beispiel-2nf",
-    "title": "Datenbanken",
-    "section": "Beispiel: 2NF",
-    "text": "Beispiel: 2NF\n\nForderung: Jedes Nicht-Schlüssel-Attribut ist voll funktional abhängig vom gesamten Primärschlüssel\n\nWas ist der Primärschlüssel?\n\nPK ist {BestellNr, Artikel}.\n\nWo ist 2NF verletzt?\n\nKundenName / Ort hängen nur von BestellNr ab\n\nLösung?\n\nAbhängige Attribute in separate Tabelle auslagern\n\nNeue Tabellen:\n\nBestellung: BestellNr, Datum, KundenName, KundenOrt\nBestellPosition: BestellNr, Artikel, Preis"
-  },
-  {
-    "objectID": "06_Datenbanken.html#beispiel-3nf",
-    "href": "06_Datenbanken.html#beispiel-3nf",
-    "title": "Datenbanken",
-    "section": "Beispiel: 3NF",
-    "text": "Beispiel: 3NF\n\nForderung: Keine transitiven Abhängigkeiten\n\nWo ist 3NF verletzt?\n\nKundenOrt hängt von KundenName ab (transitiv)\n\nLösung?\n\nAuslagerung in separate Tabelle\n\nNeue Tabellen in 3NF:\n\nKunde: KundenID, KundenName, KundenOrt\nBestellung: BestellNr, Datum, KundenID (FK)\nBestellPosition: BestellNr (FK), Artikel, Preis"
-  },
-  {
-    "objectID": "06_Datenbanken.html#datenbanken-acid",
-    "href": "06_Datenbanken.html#datenbanken-acid",
-    "title": "Datenbanken",
-    "section": "Datenbanken: ACID",
-    "text": "Datenbanken: ACID\n\n\nA: Atomicity = Atomität: Transaktion wird entweder vollständig oder gar nicht ausgeführt; falls Fehler: Rollback\nC: Consistency = Konsistenz: Datenbank führt nur Transaktionen aus, die alle vordefinierten Regeln, Gesetze und Integritätsbedingungen einhalten\nI: Isolation = Isolation: Gleichzeitig laufende Transaktionen behindern sich nicht gegenseitig; sie wirken so, als würden sie nacheinander ablaufen\nD: Durability = Dauerhaftigkeit: Sobald eine Transaktion erfolgreich abgeschlossen (committed) ist, bleiben die Änderungen dauerhaft gespeichert - selbst bei einem Stromausfall oder Systemabsturz\nBeispiel: Bei einer Überweisung werden beide Buchungen  (A: -100€; B: +100€) als eine Transaktion betrachtet.\n\nVertreter: PostgreSQL, Oracle, SQL Server, MySQL / InnoDB\n\n\nLernkarte? AP2"
-  },
-  {
-    "objectID": "06_Datenbanken.html#datenbanken-base",
-    "href": "06_Datenbanken.html#datenbanken-base",
-    "title": "Datenbanken",
-    "section": "Datenbanken: BASE",
-    "text": "Datenbanken: BASE\n\n\nBASE: Basically available, soft state, and eventually consistent  = grundsätzlich verfügbar, weicher Zustand, und schließlich konsistent\nBenutzer können jederzeit gleichzeitig zugreifen; ein Benutzer muss nicht warten, bis andere ihre Transaktionen abgeschlossen haben\nsoft state: Daten können vorübergehend temporäre Zustände haben, die sich auch ohne externe Trigger / Eingaben ändern können\nBeispiel: Beitrag in sozialen Netzwerken wird von mehreren Benutzern gleichzeitig bearbeitet; Änderung nicht sofort für alle sichtbar; später wird Beitrag automatisch aktualisiert\neventually consistent: Datensatz erreicht Konsistenz, wenn alle gleichzeitigen Aktualisierungen abgeschlossen sind\n\nVertreter: Cassandra, Riak, DynamoDB"
-  },
-  {
-    "objectID": "06_Datenbanken.html#datenbanken-acid-vs.-base",
-    "href": "06_Datenbanken.html#datenbanken-acid-vs.-base",
-    "title": "Datenbanken",
-    "section": "Datenbanken: ACID vs. BASE",
-    "text": "Datenbanken: ACID vs. BASE\n\n\n\n\n\nACID\nBASE\n\n\n\n\nsofortige Konsistenz\nspätere Konsistenz\n\n\nstarke Transaktionen\nschwache Transaktionen\n\n\neher vertikale Skalierung\nstarke horizontale Skalierung\n\n\ntypische SQL-Systeme\ntypische NoSQL-Systeme\n\n\nKorrektheit priorisiert\nVerfügbarkeit priorisiert\n\n\n\n\n\n\nModerne Datenbanken sind häufig Mischformen!\nVerteilte Cloud-Datenbanken (z. B. von Amazon, Azure, Google Cloud) bieten oft konfigurierbare Konsistenzstufen\nSomit entscheidet der Anwender, wie weit er sich in Richtung ACID oder BASE bewegen möchte"
-  },
-  {
-    "objectID": "06_Datenbanken.html#cap-theorem-vs.-acid-und-base",
-    "href": "06_Datenbanken.html#cap-theorem-vs.-acid-und-base",
-    "title": "Datenbanken",
-    "section": "CAP-Theorem vs. ACID und BASE",
-    "text": "CAP-Theorem vs. ACID und BASE\n\nCAP-Theorem: Consistency, Availability, Partition Tolerance\nBei Netzwerkausfällen kann man nicht alle drei gleichzeitig garantieren.\n\n\nBASE\n\npriorisiert Availability und Partition Tolerance\nDatenbank bleibt hochverfügbar und verteilt\nbessere Skalierbarkeit\nKonsistenz wird notfalls erst später erreicht; eventual consistency\n\n\nACID\n\npriorisiert Consistency: Datenbank nach jeder Transaktion sofort konsistent"
-  },
-  {
-    "objectID": "06_Datenbanken.html#sql-sprachbereiche",
-    "href": "06_Datenbanken.html#sql-sprachbereiche",
-    "title": "Datenbanken",
-    "section": "SQL Sprachbereiche",
-    "text": "SQL Sprachbereiche\n\n\n\n\n\n\n\n\n\nBereich\nBedeutung\nTypische Befehle\n\n\n\n\nDDL - Data Definition Language\nDatenstrukturen definieren, ändern\nCREATE, ALTER, DROP\n\n\nDML - Data Manipulation Language\nDaten einfügen, ändern, löschen\nINSERT, UPDATE, DELETE\n\n\nDQL - Data Query Language\nDaten abfragen\nSELECT\n\n\nDCL - Data Control Language\nRechte, Zugriffe verwalten\nGRANT, REVOKE\n\n\nTCL - Transaction Control Language\nTransaktionen steuern\nCOMMIT, ROLLBACK, SAVEPOINT\n\n\n\n\n\nWelche Lernkarte? Lernkarten ergänzen (ROLLBACK; mehrere?)"
-  },
-  {
-    "objectID": "06_Datenbanken.html#ddl---data-definition-language",
-    "href": "06_Datenbanken.html#ddl---data-definition-language",
-    "title": "Datenbanken",
-    "section": "DDL - Data Definition Language",
-    "text": "DDL - Data Definition Language\n\nCREATE TABLE Kunde (\n    KundenID INT PRIMARY KEY AUTO_INCREMENT,\n    Name VARCHAR(100) NOT NULL,\n    Email VARCHAR(150) UNIQUE,\n    Erstellt DATE DEFAULT CURRENT_DATE\n);\n\nALTER TABLE Kunde ADD Telefon VARCHAR(20);\n\nCREATE INDEX idx_name ON Kunde(Name);"
-  },
-  {
-    "objectID": "06_Datenbanken.html#dml-data-manipulation-language",
-    "href": "06_Datenbanken.html#dml-data-manipulation-language",
-    "title": "Datenbanken",
-    "section": "DML (Data Manipulation Language)",
-    "text": "DML (Data Manipulation Language)\n\nINSERT INTO Kunde (Name, Email) VALUES ('Mueller GmbH', 'info@mueller.de');\n\nUPDATE Kunde SET Email = 'neu@mueller.de' WHERE KundenID = 1;\n\nDELETE FROM Kunde WHERE KundenID = 5;"
-  },
-  {
-    "objectID": "06_Datenbanken.html#dql-data-query-language",
-    "href": "06_Datenbanken.html#dql-data-query-language",
-    "title": "Datenbanken",
-    "section": "DQL (Data Query Language)",
-    "text": "DQL (Data Query Language)\n\n-- Projektion + Selektion\nSELECT Name, Email FROM Kunde WHERE KundenID &gt; 10;\n\n-- Sortieren\nSELECT * FROM Kunde ORDER BY Name ASC;\n\n-- Aggregatfunktionen + Gruppieren\nSELECT AbteilungsID, COUNT(*) AS Anzahl, AVG(Gehalt) AS Durchschnitt\nFROM Mitarbeiter\nGROUP BY AbteilungsID\nHAVING COUNT(*) &gt; 5;"
-  },
-  {
-    "objectID": "06_Datenbanken.html#joins-abfrage-über-mehrere-tabellen",
-    "href": "06_Datenbanken.html#joins-abfrage-über-mehrere-tabellen",
-    "title": "Datenbanken",
-    "section": "JOINs (Abfrage über mehrere Tabellen)",
-    "text": "JOINs (Abfrage über mehrere Tabellen)\n\n\n\n\n\n\n\n\nJOIN-Typ\nBeschreibung\n\n\n\n\nINNER JOIN\nNur übereinstimmende Datensätze\n\n\nLEFT JOIN\nAlle links + übereinstimmende rechts\n\n\nRIGHT JOIN\nAlle rechts + übereinstimmende links\n\n\nFULL JOIN\nAlle Zeilen mit Übereinstimmung in min. einer der Tabellen\n\n\nCROSS JOIN\nKartesisches Produkt (jeder mit jedem)\n\n\n\n\n\nähnlich Lernkarte AP2 2025 Nr. 114"
-  },
-  {
-    "objectID": "06_Datenbanken.html#inner-join",
-    "href": "06_Datenbanken.html#inner-join",
-    "title": "Datenbanken",
-    "section": "INNER JOIN",
-    "text": "INNER JOIN\n\nSELECT k.Name, b.Datum, b.Betrag\nFROM Kunde k\nINNER JOIN Bestellung b ON k.KundenID = b.KundenID\nWHERE b.Betrag &gt; 1000\nORDER BY b.Datum DESC;"
-  },
-  {
-    "objectID": "06_Datenbanken.html#section",
-    "href": "06_Datenbanken.html#section",
-    "title": "Datenbanken",
-    "section": "",
-    "text": "©torange.biz CC-BY 4.0\n\n\nViel Erfolg!"
+    "text": "©torange.biz CC-BY 4.0\n\n\nViel Erfolg!",
+    "crumbs": [
+      "06 Software-Tests"
+    ]
   },
   {
     "objectID": "04_UML_Sequenz_Zustand.html#sequenzdiagramm-nachrichten",
@@ -1573,25 +1461,284 @@
     ]
   },
   {
-    "objectID": "07_Frameworks_Laufzeitumgebungen.html#frameworks",
-    "href": "07_Frameworks_Laufzeitumgebungen.html#frameworks",
-    "title": "Frameworks, Laufzeitumgebungen",
-    "section": "Frameworks",
-    "text": "Frameworks"
+    "objectID": "07_Datenbanken.html#relationale-vs.-nicht-relationale-dbs",
+    "href": "07_Datenbanken.html#relationale-vs.-nicht-relationale-dbs",
+    "title": "Datenbanken",
+    "section": "Relationale vs. Nicht-relationale DBs",
+    "text": "Relationale vs. Nicht-relationale DBs\n\nWas sind relationale Datenbanken? - Nennen Sie zwei Beispiele für nicht-relationale Datenbanktypen.\n\n\nRelationale Datenbanken\n\nDatenbanken, die auf dem relationalen Datenbankmodell basieren\nSpeichern Daten in Tabellen, die aus Zeilen und Spalten bestehen\nBeziehungen zwischen Tabellen werden durch Primärschlüssel-Fremdschlüssel-Beziehungen hergestellt\n\n\nNicht-relationale Datenbanktypen: Beispiele\n\nDokumentenorientierte Datenbanken\nSchlüssel-Wert-Datenbanken\nSpaltenorientierte Datenbanken\nGraphdatenbanken\nZeitreihendatenbanken\nObjektorientierte Datenbanken\n\n\n\n\nLernkarte AP2 2025 Nr. 98",
+    "crumbs": [
+      "07 Datenbanken, SQL"
+    ]
   },
   {
-    "objectID": "07_Frameworks_Laufzeitumgebungen.html#laufzeitumgebungen",
-    "href": "07_Frameworks_Laufzeitumgebungen.html#laufzeitumgebungen",
-    "title": "Frameworks, Laufzeitumgebungen",
-    "section": "Laufzeitumgebungen",
-    "text": "Laufzeitumgebungen\n\nAP2 Winter 2021/2022 Teil 1 Planen: Interpreter Vor- und Nachteile"
+    "objectID": "07_Datenbanken.html#relationale-vs.-nosql-datenbanken",
+    "href": "07_Datenbanken.html#relationale-vs.-nosql-datenbanken",
+    "title": "Datenbanken",
+    "section": "Relationale vs. NoSQL-Datenbanken",
+    "text": "Relationale vs. NoSQL-Datenbanken\n\n\n\n\n\n\n\n\n\nMerkmal\nRelational (SQL)\nNoSQL\n\n\n\n\nStruktur\nTabellen mit Spalten\nDokumente, Key-Value, Graphen\n\n\nSchema\nFestes Schema\nFlexibles / kein Schema\n\n\nSprache\nSQL\nAbhängig vom System\n\n\nKonsistenz\nACID (stark)\nBASE (eventual consistency)\n\n\nSkalierung\nVertikal (größerer Server)\nHorizontal (mehr Server)\n\n\nBeispiele\nMySQL, PostgreSQL, MariaDB\nMongoDB, Redis, Cassandra, Neo4j\n\n\nEinsatz\nStrukturierte Daten, Transaktionen\nBig Data, flexible Strukturen",
+    "crumbs": [
+      "07 Datenbanken, SQL"
+    ]
   },
   {
-    "objectID": "07_Frameworks_Laufzeitumgebungen.html#section",
-    "href": "07_Frameworks_Laufzeitumgebungen.html#section",
-    "title": "Frameworks, Laufzeitumgebungen",
+    "objectID": "07_Datenbanken.html#odbc",
+    "href": "07_Datenbanken.html#odbc",
+    "title": "Datenbanken",
+    "section": "ODBC",
+    "text": "ODBC\n\nWofür steht die Abkürzung ODBC?\n\nODBC = Open Database Connectivity\nStandardisierte Schnittstelle für den Zugriff auf verschiedene Datenbankmanagementsysteme (DBMS)\nSie ermöglicht Anwendungen, SQL-Abfragen unabhängig vom verwendeten Datenbanktyp auszuführen\n\n\n\nLernkarte AP2 2025 Nr. 117",
+    "crumbs": [
+      "07 Datenbanken, SQL"
+    ]
+  },
+  {
+    "objectID": "07_Datenbanken.html#primärschlüssel-vs.-fremdschlüssel",
+    "href": "07_Datenbanken.html#primärschlüssel-vs.-fremdschlüssel",
+    "title": "Datenbanken",
+    "section": "Primärschlüssel vs. Fremdschlüssel",
+    "text": "Primärschlüssel vs. Fremdschlüssel\n\nErklären Sie in Bezug auf Datenbanken die Begriffe Primärschlüssel und Fremdschlüssel.\n\n\nPrimärschlüssel\n\nFeld oder Kombination von Feldern in einer Tabelle, das / die jede Zeile eindeutig identifiziert\nJeder Primärschlüssel ist eindeutig innerhalb der Tabelle und es darf keine Duplikate oder Nullwerte geben\n\n\nFremdschlüssel\n\nFeld oder Kombination von Feldern in einer Tabelle, das auf den Primärschlüssel einer anderen Tabelle verweist\nZweck: Integrität der Daten zu gewährleisten und Beziehungen zwischen Tabellen herzustellen\n\n\n\n\nLernkarte AP2 2025 Nr. 103",
+    "crumbs": [
+      "07 Datenbanken, SQL"
+    ]
+  },
+  {
+    "objectID": "07_Datenbanken.html#er-modell-kardinalitäten",
+    "href": "07_Datenbanken.html#er-modell-kardinalitäten",
+    "title": "Datenbanken",
+    "section": "ER-Modell: Kardinalitäten",
+    "text": "ER-Modell: Kardinalitäten\n\n\n\n\n\nNotation\nBedeutung\nBeispiel\n\n\n\n\n1:1\nGenau eine Zuordnung\nPerson → Personalausweis\n\n\n1:n\nEine Entität → mehrere\nAbteilung → Mitarbeiter\n\n\nn:m\nMehrere → mehrere\nStudent → Vorlesung\n\n\n\n\nn:m-Auflösung: Zwischentabelle mit Fremdschlüsseln beider Seiten",
+    "crumbs": [
+      "07 Datenbanken, SQL"
+    ]
+  },
+  {
+    "objectID": "07_Datenbanken.html#datenbanken-datentypen",
+    "href": "07_Datenbanken.html#datenbanken-datentypen",
+    "title": "Datenbanken",
+    "section": "Datenbanken: Datentypen",
+    "text": "Datenbanken: Datentypen\n\n\n\n\nDatentyp\nBeschreibung\nBeispiel\n\n\n\n\nINT / INTEGER\nGanzzahl\nAlter, Menge\n\n\nFLOAT / DOUBLE\nGleitkommazahl\nPreis (ungenau!)\n\n\nDECIMAL(p,s)\nFestkommazahl\nWährung: DECIMAL(10,2)\n\n\nVARCHAR(n)\nText variabler Länge\nName VARCHAR(100)\n\n\nCHAR(n)\nText fester Länge\nPLZ CHAR(5)\n\n\nTEXT\nLanger Text\nBeschreibung\n\n\nDATE\nDatum\nGeburtsdatum\n\n\nDATETIME / TIMESTAMP\nDatum + Uhrzeit\nErstellungszeitpunkt\n\n\nBOOLEAN\nWahrheitswert\nAktiv: TRUE/FALSE\n\n\nBLOB / BINARY\nBinärdaten, Binär-String\nBilder, Dateien\n\n\n\nRichtiger Datentyp: Datenintegrität, Speichereffizienz\n\n\nvgl. Lernkarte AP2 2025 Nr. 102",
+    "crumbs": [
+      "07 Datenbanken, SQL"
+    ]
+  },
+  {
+    "objectID": "07_Datenbanken.html#null",
+    "href": "07_Datenbanken.html#null",
+    "title": "Datenbanken",
+    "section": "NULL",
+    "text": "NULL\n\nWas bedeutet der Begriff NULL in Bezug auf Datenbanken und welche Rolle spielt es bei der Datenverarbeitung und -abfrage?\n\nNULL in DBS: Feld hat keinen Wert: NULL ≠ 0; NULL ≠ Leerzeichen!\nNULL repräsentiert fehlende oder unbekannte Daten\nBei fehlenden Daten kann NULL eingefügt werden\nIn Abfragen wird IS NULL oder IS NOT NULL verwendet, um NULL-Werte zu finden\nArithmetische Operationen mit NULL ergeben NULL\nAggregatfunktionen wie COUNT oder SUM ignorieren NULL-Werte\nOft werden NULL-Werte in Datenbankindizes nicht berücksichtigt\n\n\n\nLernkarte AP2 2025 Nr. 115",
+    "crumbs": [
+      "07 Datenbanken, SQL"
+    ]
+  },
+  {
+    "objectID": "07_Datenbanken.html#spalten-indizierung",
+    "href": "07_Datenbanken.html#spalten-indizierung",
+    "title": "Datenbanken",
+    "section": "Spalten-Indizierung",
+    "text": "Spalten-Indizierung\n\nWarum ist die Indizierung von Spalten in einer Datenbank wichtig und wie kann sie die Leistung von Abfragen verbessern?\n\nIndex bietet schnellen Zugriff auf Daten\nEnthält eine sortierte Liste von Werten einer bestimmten Spalte und Verweise auf Speicherorte der zugehörigen Daten\nWenn Abfrage indizierte Spalte verwendet -&gt; DB-System kann Index verwenden, um schnell zu den benötigten Daten zu navigieren, anstatt alle Zeilen durchsuchen zu müssen\nKann Leistung von Abfragen erheblich verbessern\nNachteil: gewisser Overhead: Speicherplatz sowie Verarbeitungszeit bei Schreibvorgängen, da Index immer aktualisiert werden muss\n\n\n\nLernkarte AP2 2025 Nr. 111",
+    "crumbs": [
+      "07 Datenbanken, SQL"
+    ]
+  },
+  {
+    "objectID": "07_Datenbanken.html#dbs-anomalien-und-redundanzen",
+    "href": "07_Datenbanken.html#dbs-anomalien-und-redundanzen",
+    "title": "Datenbanken",
+    "section": "DBs: Anomalien und Redundanzen",
+    "text": "DBs: Anomalien und Redundanzen\n\nDef.: Datenbankanomalien sind Probleme, die in einer Datenbank auftreten und zu Inkonsistenzen oder unerwünschten Effekten führen können.\n\n\n\n\n\n\n\n\n\nAnomalie\nBeschreibung\nBeispiel\n\n\n\n\nEinfüge-Anomalie\nDaten können nicht ohne Zusatzinfo eingefügt werden\nNeuer Kunde ohne Auftrag\n\n\nÄnderungs-Anomalie\nÄnderung an mehreren Stellen nötig\nKundenadresse in jeder Bestellung\n\n\nLösch-Anomalie\nBeim Löschen gehen andere Daten verloren\nLetzter Auftrag gelöscht → Kundendaten weg\n\n\n\n\nLösung:\n\nNormalisierung → Redundanzen eliminieren:\n\nAufteilung von Tabellen\nklare Definition von Beziehungen zwischen Tabellen\n\n\n\n\nvgl. Lernkarte AP2 2025 Nr. 105",
+    "crumbs": [
+      "07 Datenbanken, SQL"
+    ]
+  },
+  {
+    "objectID": "07_Datenbanken.html#normalisierung-1.-normalform-1nf",
+    "href": "07_Datenbanken.html#normalisierung-1.-normalform-1nf",
+    "title": "Datenbanken",
+    "section": "Normalisierung: 1. Normalform (1NF)",
+    "text": "Normalisierung: 1. Normalform (1NF)\n\n\nJedes Attribut enthält nur atomare (unteilbare) Werte\nKeine Wiederholungsgruppen\n\nVerstoß: Telefon = “0123, 0456” → Aufteilen in separate Datensätze / Tabelle",
+    "crumbs": [
+      "07 Datenbanken, SQL"
+    ]
+  },
+  {
+    "objectID": "07_Datenbanken.html#normalisierung-2.-normalform-2nf",
+    "href": "07_Datenbanken.html#normalisierung-2.-normalform-2nf",
+    "title": "Datenbanken",
+    "section": "Normalisierung: 2. Normalform (2NF)",
+    "text": "Normalisierung: 2. Normalform (2NF)\n\n\n1NF erfüllt\nJedes Nicht-Schlüssel-Attribut ist voll funktional abhängig vom gesamten Primärschlüssel\nRelevant bei zusammengesetzten Schlüsseln",
+    "crumbs": [
+      "07 Datenbanken, SQL"
+    ]
+  },
+  {
+    "objectID": "07_Datenbanken.html#normalisierung-3.-normalform-3nf",
+    "href": "07_Datenbanken.html#normalisierung-3.-normalform-3nf",
+    "title": "Datenbanken",
+    "section": "Normalisierung: 3. Normalform (3NF)",
+    "text": "Normalisierung: 3. Normalform (3NF)\n\n\n2NF erfüllt\nKeine transitiven Abhängigkeiten  Nicht-Schlüssel-Attribut hängt nicht von anderem Nicht-Schlüssel-Attribut ab\n\nBeispiel transitive Abhängigkeit:\n\n\nMitarbeiter → AbteilungsNr → AbteilungsName (transitiv!)\nLösung: AbteilungsName in eigene Tabelle “Abteilung”",
+    "crumbs": [
+      "07 Datenbanken, SQL"
+    ]
+  },
+  {
+    "objectID": "07_Datenbanken.html#db-design",
+    "href": "07_Datenbanken.html#db-design",
+    "title": "Datenbanken",
+    "section": "DB Design",
+    "text": "DB Design\n\nAnforderungsanalyse\n        |\n        v\n+----------------+     +------------------+\n| ER-Modell      |----&gt;| Relationales     |\n| (konzeptionell)|     | Modell (logisch) |\n+----------------+     +------------------+\n                              |\n            +---------+-------+\n            |                 |\n  +----------------+      +--------------+\n  | Normalisierung |      | SQL (DDL)    |\n  | 1NF-3NF        |      | CREATE TABLE |\n  +----------------+      +--------------+\n             |                |\n             v                v\n      Redundanzfreies     Physische\n      Datenmodell         Datenbank\n                              |\n                          +---+----------+\n                          |              |\n                     +---------+     +-----------+\n                     | DML     |     | DQL       |\n                     | INSERT  |     | SELECT    |\n                     | UPDATE  |     | JOIN      |\n                     | DELETE  |     | GROUP BY  |\n                     +---------+     +-----------+",
+    "crumbs": [
+      "07 Datenbanken, SQL"
+    ]
+  },
+  {
+    "objectID": "07_Datenbanken.html#normalisierung-beispiel",
+    "href": "07_Datenbanken.html#normalisierung-beispiel",
+    "title": "Datenbanken",
+    "section": "Normalisierung: Beispiel",
+    "text": "Normalisierung: Beispiel\n\nAusgangspunkt\n\n\n\n\n\n\n\n\n\n\n\n\nBestellNr\nDatum\nKundenName\nKundenOrt\nArtikel\nPreis\n\n\n\n\n1001\n2024-01-15\nMüller GmbH\nBerlin\nServer, Switch\n5000, 500\n\n\n1002\n2024-01-20\nMüller GmbH\nBerlin\nKabel\n50\n\n\n\n\n\nProbleme\n\nMehrere Werte in einer Zelle (Artikel, Preis)\nRedundanz (KundenName / Ort)",
+    "crumbs": [
+      "07 Datenbanken, SQL"
+    ]
+  },
+  {
+    "objectID": "07_Datenbanken.html#beispiel-1nf",
+    "href": "07_Datenbanken.html#beispiel-1nf",
+    "title": "Datenbanken",
+    "section": "Beispiel: 1NF",
+    "text": "Beispiel: 1NF\n\n\nForderung: Jedes Attribut enthält nur atomare (unteilbare) Werte\n\n\n\n\n\n\nBestellNr\nDatum\nKundenName\nKundenOrt\nArtikel\nPreis\n\n\n\n\n1001\n2024-01-15\nMüller GmbH\nBerlin\nServer\n5000\n\n\n1001\n2024-01-15\nMüller GmbH\nBerlin\nSwitch\n500\n\n\n1002\n2024-01-20\nMüller GmbH\nBerlin\nKabel\n50",
+    "crumbs": [
+      "07 Datenbanken, SQL"
+    ]
+  },
+  {
+    "objectID": "07_Datenbanken.html#beispiel-2nf",
+    "href": "07_Datenbanken.html#beispiel-2nf",
+    "title": "Datenbanken",
+    "section": "Beispiel: 2NF",
+    "text": "Beispiel: 2NF\n\nForderung: Jedes Nicht-Schlüssel-Attribut ist voll funktional abhängig vom gesamten Primärschlüssel\n\nWas ist der Primärschlüssel?\n\nPK ist {BestellNr, Artikel}.\n\nWo ist 2NF verletzt?\n\nKundenName / Ort hängen nur von BestellNr ab\n\nLösung?\n\nAbhängige Attribute in separate Tabelle auslagern\n\nNeue Tabellen:\n\nBestellung: BestellNr, Datum, KundenName, KundenOrt\nBestellPosition: BestellNr, Artikel, Preis",
+    "crumbs": [
+      "07 Datenbanken, SQL"
+    ]
+  },
+  {
+    "objectID": "07_Datenbanken.html#beispiel-3nf",
+    "href": "07_Datenbanken.html#beispiel-3nf",
+    "title": "Datenbanken",
+    "section": "Beispiel: 3NF",
+    "text": "Beispiel: 3NF\n\nForderung: Keine transitiven Abhängigkeiten\n\nWo ist 3NF verletzt?\n\nKundenOrt hängt von KundenName ab (transitiv)\n\nLösung?\n\nAuslagerung in separate Tabelle\n\nNeue Tabellen in 3NF:\n\nKunde: KundenID, KundenName, KundenOrt\nBestellung: BestellNr, Datum, KundenID (FK)\nBestellPosition: BestellNr (FK), Artikel, Preis",
+    "crumbs": [
+      "07 Datenbanken, SQL"
+    ]
+  },
+  {
+    "objectID": "07_Datenbanken.html#datenbanken-acid",
+    "href": "07_Datenbanken.html#datenbanken-acid",
+    "title": "Datenbanken",
+    "section": "Datenbanken: ACID",
+    "text": "Datenbanken: ACID\n\n\nA: Atomicity = Atomität: Transaktion wird entweder vollständig oder gar nicht ausgeführt; falls Fehler: Rollback\nC: Consistency = Konsistenz: Datenbank führt nur Transaktionen aus, die alle vordefinierten Regeln, Gesetze und Integritätsbedingungen einhalten\nI: Isolation = Isolation: Gleichzeitig laufende Transaktionen behindern sich nicht gegenseitig; sie wirken so, als würden sie nacheinander ablaufen\nD: Durability = Dauerhaftigkeit: Sobald eine Transaktion erfolgreich abgeschlossen (committed) ist, bleiben die Änderungen dauerhaft gespeichert - selbst bei einem Stromausfall oder Systemabsturz\nBeispiel: Bei einer Überweisung werden beide Buchungen  (A: -100€; B: +100€) als eine Transaktion betrachtet.\n\nVertreter: PostgreSQL, Oracle, SQL Server, MySQL / InnoDB\n\n\nLernkarte? AP2",
+    "crumbs": [
+      "07 Datenbanken, SQL"
+    ]
+  },
+  {
+    "objectID": "07_Datenbanken.html#datenbanken-base",
+    "href": "07_Datenbanken.html#datenbanken-base",
+    "title": "Datenbanken",
+    "section": "Datenbanken: BASE",
+    "text": "Datenbanken: BASE\n\n\nBASE: Basically available, soft state, and eventually consistent  = grundsätzlich verfügbar, weicher Zustand, und schließlich konsistent\nBenutzer können jederzeit gleichzeitig zugreifen; ein Benutzer muss nicht warten, bis andere ihre Transaktionen abgeschlossen haben\nsoft state: Daten können vorübergehend temporäre Zustände haben, die sich auch ohne externe Trigger / Eingaben ändern können\nBeispiel: Beitrag in sozialen Netzwerken wird von mehreren Benutzern gleichzeitig bearbeitet; Änderung nicht sofort für alle sichtbar; später wird Beitrag automatisch aktualisiert\neventually consistent: Datensatz erreicht Konsistenz, wenn alle gleichzeitigen Aktualisierungen abgeschlossen sind\n\nVertreter: Cassandra, Riak, DynamoDB",
+    "crumbs": [
+      "07 Datenbanken, SQL"
+    ]
+  },
+  {
+    "objectID": "07_Datenbanken.html#datenbanken-acid-vs.-base",
+    "href": "07_Datenbanken.html#datenbanken-acid-vs.-base",
+    "title": "Datenbanken",
+    "section": "Datenbanken: ACID vs. BASE",
+    "text": "Datenbanken: ACID vs. BASE\n\n\n\n\n\nACID\nBASE\n\n\n\n\nsofortige Konsistenz\nspätere Konsistenz\n\n\nstarke Transaktionen\nschwache Transaktionen\n\n\neher vertikale Skalierung\nstarke horizontale Skalierung\n\n\ntypische SQL-Systeme\ntypische NoSQL-Systeme\n\n\nKorrektheit priorisiert\nVerfügbarkeit priorisiert\n\n\n\n\n\n\nModerne Datenbanken sind häufig Mischformen!\nVerteilte Cloud-Datenbanken (z. B. von Amazon, Azure, Google Cloud) bieten oft konfigurierbare Konsistenzstufen\nSomit entscheidet der Anwender, wie weit er sich in Richtung ACID oder BASE bewegen möchte",
+    "crumbs": [
+      "07 Datenbanken, SQL"
+    ]
+  },
+  {
+    "objectID": "07_Datenbanken.html#cap-theorem-vs.-acid-und-base",
+    "href": "07_Datenbanken.html#cap-theorem-vs.-acid-und-base",
+    "title": "Datenbanken",
+    "section": "CAP-Theorem vs. ACID und BASE",
+    "text": "CAP-Theorem vs. ACID und BASE\n\nCAP-Theorem: Consistency, Availability, Partition Tolerance\nBei Netzwerkausfällen kann man nicht alle drei gleichzeitig garantieren.\n\n\nBASE\n\npriorisiert Availability und Partition Tolerance\nDatenbank bleibt hochverfügbar und verteilt\nbessere Skalierbarkeit\nKonsistenz wird notfalls erst später erreicht; eventual consistency\n\n\nACID\n\npriorisiert Consistency: Datenbank nach jeder Transaktion sofort konsistent",
+    "crumbs": [
+      "07 Datenbanken, SQL"
+    ]
+  },
+  {
+    "objectID": "07_Datenbanken.html#sql-sprachbereiche",
+    "href": "07_Datenbanken.html#sql-sprachbereiche",
+    "title": "Datenbanken",
+    "section": "SQL Sprachbereiche",
+    "text": "SQL Sprachbereiche\n\n\n\n\n\n\n\n\n\nBereich\nBedeutung\nTypische Befehle\n\n\n\n\nDDL - Data Definition Language\nDatenstrukturen definieren, ändern\nCREATE, ALTER, DROP\n\n\nDML - Data Manipulation Language\nDaten einfügen, ändern, löschen\nINSERT, UPDATE, DELETE\n\n\nDQL - Data Query Language\nDaten abfragen\nSELECT\n\n\nDCL - Data Control Language\nRechte, Zugriffe verwalten\nGRANT, REVOKE\n\n\nTCL - Transaction Control Language\nTransaktionen steuern\nCOMMIT, ROLLBACK, SAVEPOINT\n\n\n\n\n\nWelche Lernkarte? Lernkarten ergänzen (ROLLBACK; mehrere?)",
+    "crumbs": [
+      "07 Datenbanken, SQL"
+    ]
+  },
+  {
+    "objectID": "07_Datenbanken.html#ddl---data-definition-language",
+    "href": "07_Datenbanken.html#ddl---data-definition-language",
+    "title": "Datenbanken",
+    "section": "DDL - Data Definition Language",
+    "text": "DDL - Data Definition Language\n\nCREATE TABLE Kunde (\n    KundenID INT PRIMARY KEY AUTO_INCREMENT,\n    Name VARCHAR(100) NOT NULL,\n    Email VARCHAR(150) UNIQUE,\n    Erstellt DATE DEFAULT CURRENT_DATE\n);\n\nALTER TABLE Kunde ADD Telefon VARCHAR(20);\n\nCREATE INDEX idx_name ON Kunde(Name);",
+    "crumbs": [
+      "07 Datenbanken, SQL"
+    ]
+  },
+  {
+    "objectID": "07_Datenbanken.html#dml---data-manipulation-language",
+    "href": "07_Datenbanken.html#dml---data-manipulation-language",
+    "title": "Datenbanken",
+    "section": "DML - Data Manipulation Language",
+    "text": "DML - Data Manipulation Language\n\nINSERT INTO Kunde (Name, Email) VALUES ('Mueller GmbH', 'info@mueller.de');\n\nUPDATE Kunde SET Email = 'neu@mueller.de' WHERE KundenID = 1;\n\nDELETE FROM Kunde WHERE KundenID = 5;",
+    "crumbs": [
+      "07 Datenbanken, SQL"
+    ]
+  },
+  {
+    "objectID": "07_Datenbanken.html#dql---data-query-language",
+    "href": "07_Datenbanken.html#dql---data-query-language",
+    "title": "Datenbanken",
+    "section": "DQL - Data Query Language",
+    "text": "DQL - Data Query Language\n\n-- Projektion + Selektion\nSELECT Name, Email FROM Kunde WHERE KundenID &gt; 10;\n\n-- Sortieren\nSELECT * FROM Kunde ORDER BY Name ASC;\n\n-- Aggregatfunktionen + Gruppieren\nSELECT AbteilungsID, COUNT(*) AS Anzahl, AVG(Gehalt) AS Durchschnitt\nFROM Mitarbeiter\nGROUP BY AbteilungsID\nHAVING COUNT(*) &gt; 5;",
+    "crumbs": [
+      "07 Datenbanken, SQL"
+    ]
+  },
+  {
+    "objectID": "07_Datenbanken.html#joins-abfrage-über-mehrere-tabellen",
+    "href": "07_Datenbanken.html#joins-abfrage-über-mehrere-tabellen",
+    "title": "Datenbanken",
+    "section": "JOINs (Abfrage über mehrere Tabellen)",
+    "text": "JOINs (Abfrage über mehrere Tabellen)\n\n\n\n\n\n\n\n\nJOIN-Typ\nBeschreibung\n\n\n\n\nINNER JOIN\nNur übereinstimmende Datensätze\n\n\nLEFT JOIN\nAlle links + übereinstimmende rechts\n\n\nRIGHT JOIN\nAlle rechts + übereinstimmende links\n\n\nFULL JOIN\nAlle Zeilen mit Übereinstimmung in min. einer der Tabellen\n\n\nCROSS JOIN\nKartesisches Produkt (jeder mit jedem)\n\n\n\n\n\nähnlich Lernkarte AP2 2025 Nr. 114",
+    "crumbs": [
+      "07 Datenbanken, SQL"
+    ]
+  },
+  {
+    "objectID": "07_Datenbanken.html#inner-join",
+    "href": "07_Datenbanken.html#inner-join",
+    "title": "Datenbanken",
+    "section": "INNER JOIN",
+    "text": "INNER JOIN\n\nSELECT k.Name, b.Datum, b.Betrag\nFROM Kunde k\nINNER JOIN Bestellung b ON k.KundenID = b.KundenID\nWHERE b.Betrag &gt; 1000\nORDER BY b.Datum DESC;",
+    "crumbs": [
+      "07 Datenbanken, SQL"
+    ]
+  },
+  {
+    "objectID": "07_Datenbanken.html#section",
+    "href": "07_Datenbanken.html#section",
+    "title": "Datenbanken",
     "section": "",
-    "text": "©torange.biz CC-BY 4.0\n\n\nViel Erfolg!"
+    "text": "©torange.biz CC-BY 4.0\n\n\nViel Erfolg!",
+    "crumbs": [
+      "07 Datenbanken, SQL"
+    ]
   },
   {
     "objectID": "index.html",

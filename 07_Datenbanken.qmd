@@ -119,6 +119,16 @@ Lernkarte AP2 2025 Nr. 117
 Lernkarte AP2 2025 Nr. 103
 :::
 
+
+---
+
+### Entity-Relationship-Modell (ER): Beispiele
+
+![](libs/_Images/ER-Modell_jl.png)
+
+Siehe [J. Loetzsch, LF7 Github](https://github.com/johannesloetzsch/LF7/blob/main/src/pruefung/uml.md#entity-relationship-modell-erm)
+
+
 ---
 
 ### Entity-Relationship-Modell (ER): Bestandteile

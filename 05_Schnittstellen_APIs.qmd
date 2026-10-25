@@ -269,6 +269,39 @@ Lernkarte AP2 2025 Nr. 124
 :::
 
 
+## XML: well-formed vs. valid
+
+::::: {.incremental style="font-size: 1.8rem"}
+
+**Was  sind die Unterschiede zwischen einer *well-formed* und einer *valid* XML-Datei?**
+
+:::: columns
+::: {.column .incremental}
+
+### Well-formed
+
+- Eine *well-formed* XML-Datei erfüllt die **syntaktischen Regeln** des XML-Formats
+- folgt den XML-Konventionen: korrektes **Verschachteln** von Elementen, Verwendung von **Tags und Attribute**n gemäß XML-Spezifikation
+- kann von einem **XML-Parser** gelesen werden, **ohne** dass **Syntaxfehler** auftreten
+
+:::
+
+::: {.column .incremental}
+
+### Valid
+
+- Eine *valid* XML-Datei erfüllt nicht nur die syntaktischen Anforderungen, sondern entspricht auch den **Regeln und Einschränkungen** einer definierten **Dokumenttyp-Definition (DTD)** oder eines **XML-Schemas**
+- wird auf Konformität mit den in der DTD oder im XML-Schema festgelegten Regeln überprüft
+
+:::
+::::
+:::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 125
+:::
+
+
 ## XML vs. CSV
 
 ::::: {style="font-size: 1.8rem"}

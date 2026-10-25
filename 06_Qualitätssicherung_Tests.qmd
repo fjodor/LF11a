@@ -17,6 +17,43 @@ execute:
 callout-appearance: simple
 ---
 
+## Unit Tests
+
+:::: {.incremental style="font-size: 2rem"}
+
+**Was sind Unit-Tests und warum sind sie wichtig in der Softwareentwicklung?**
+
+- Unit-Test: Methode in der Softwareentwicklung, bei der **einzelne Komponenten des Codes** (Funktionen, Methoden) **isoliert** getestet werden
+- Zweck: überprüfen, ob jede Komponente korrekt funktioniert
+- helfen, Fehler frühzeitig zu erkennen und sicherzustellen, dass **Änderungen am Code nicht zu unerwarteten Problemen führen**
+- wichtiger Teil des Testprozesses, aber werden oft **mit anderen Testmethoden kombiniert**, um das Gesamtverhalten der Software zu überprüfen
+
+::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 78
+:::
+
+
+## Unit Tests: FIRST
+
+:::: {.incremental style="font-size: 2rem"}
+
+**Welche Eigenschaften sollten Unit-Tests erfüllen, um das FIRST-Prinzip zu befolgen?**
+
+- **Fast:** Sie sollten schnell laufen, um den Entwicklungsprozess nicht zu verlangsamen
+- **Independent:** Tests sollten unabhängig von einander sein und **in beliebiger Reihenfolge** dasselbe Ergebnis liefern
+- **Repeatable:** Sie sollten unter gleichen Bedingungen stets **dasselbe Ergebnis** liefern
+- **Self-Validating:** Tests sollten selbst bestimmen können, ob sie erfolgreich waren oder nicht
+- **Timely:** Unit-Tests sollten bereits **vor der Entwicklung des Produktivcodes** definiert werden
+
+::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 79
+:::
+
+
 ## Blue-Green-Deployment
 
 :::: {.incremental style="font-size: 1.9rem"}

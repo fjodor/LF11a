@@ -278,6 +278,10 @@ vgl. Lernkarte AP2 2025 Nr. 105
 
 :::
 
+::: notes
+vgl. Lernkarte AP2 2025 Nr. 106 für alle drei NF
+:::
+
 
 ## Normalisierung: 2. Normalform (2NF)
 
@@ -702,6 +706,47 @@ Anforderungsanalyse
 ```
 
 ::::
+
+
+## DB: Stored Procedure
+
+:::: {.incremental style="font-size: 1.7rem"}
+
+**Was ist eine Stored Procedure und welche Vorteile bietet sie in der Datenbankentwicklung?**
+
+- **Stored Procedure** = vorbereitete SQL-Anweisung, die auf der DB gespeichert ist
+- Kann **parametrisiert** werden und mehrere SQL-Anweisungen enthalten, die komplexe Operationen ausführen
+
+**Vorteile:**
+
+- **Leistung:** effizienter bei wiederholten und komplexen Anfragen, da sie einmal kompiliert und direkt auf dem Server ausgeführt werden
+- **Wiederverwendbarkeit:** Sie können in verschiedenen Anwendungen wiederverwendet werden
+- **Sicherheit:** Sie begrenzen den direkten Zugriff auf die Datenbank
+- **Transaktionskontrolle:** Sie erlauben es, mehrere Operationen als eine einzige Transaktion zu behandeln
+
+::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 109
+:::
+
+
+## DB: Trigger
+
+:::: {.incremental style="font-size: 2rem"}
+
+**Wie funktionieren Trigger in Datenbank-Umgebungen und wie können sie zur automatischen Ausführung von Aktionen verwendet werden?**
+
+- Trigger = Art von *Stored Procedure*, die automatisch in **Reaktion auf** bestimmte **Ereignisse** in einer spezifischen Tabelle oder Ansicht in der Datenbank ausgeführt wird
+- Ereignisse können **Einfügen, Aktualisieren oder Löschen** von Daten sein
+- Ein Trigger wird immer **mit einer Tabelle verknüpft**
+- Trigger aktiviert sich, wenn eine angegebene Datenmanipulations-Operation (DML) ausgeführt wird
+
+::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 110
+:::
 
 
 ## <!-- -->

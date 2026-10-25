@@ -75,6 +75,10 @@ CRUD = **C**reate - **R**ead - **U**pdate - **D**elete
 
 :::
 
+::: notes
+Vgl. Lernkarte AP2 2025 Nr. 116: ohne HTML, nur CRUD
+:::
+
 
 ## REST APIs absichern
 
@@ -91,6 +95,31 @@ CRUD = **C**reate - **R**ead - **U**pdate - **D**elete
 - **Sichere Entwicklung und Tests:** Code Reviews, Schwachstellen-Scans, Updates, Patch-Management
 
 ::::
+
+
+## SQL Injection
+
+:::: {style="font-size: 2rem"}
+
+**Erklären Sie das Sicherheitsproblem *SQL Injection*.**
+
+::: fragment
+
+**SQL Injection** ist eine **Sicherheitslücke**, bei der Angreifer schädlichen SQL-Code in eine Abfrage einschleusen, um unbefugt auf Daten oder eine Datenbank zuzugreifen oder um sie zu manipulieren.
+
+:::
+::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 26
+:::
+
+
+## SQL Injection: Bobby Tables
+
+![](libs/_Images/xkcd-327-SQL-Injection.png)
+
+[Quelle: <https://xkcd.com/327/>]{style="font-size: 1.2rem"}
 
 
 ## REST APIs: ORM

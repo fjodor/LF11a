@@ -672,6 +672,37 @@ HAVING COUNT(*) > 5;
 ```
 
 
+## DCL - Data Control Language
+
+<br>
+
+:::: columns
+::: column
+
+```sql
+GRANT SELECT, INSERT, UPDATE
+ON kunden
+TO max;
+```
+
+[Max darf Tabelle `kunden` lesen, dort Daten einfügen und aktualisieren.]{style="font-size: 2rem"}
+
+:::
+
+::: column
+
+```sql
+REVOKE UPDATE
+ON kunden
+FROM max;
+```
+
+[Max darf Tabelle `kunden` weiter lesen und Datensätze anlegen, aber keine bestehenden Datensätze mehr ändern.]{style="font-size: 2rem"}
+
+:::
+::::
+
+
 ## SQL: Transaktion
 
 :::: {.incremental style="font-size: 1.8rem"}

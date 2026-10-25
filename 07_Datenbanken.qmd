@@ -503,10 +503,6 @@ Vertreter: [PostgreSQL, Oracle, SQL Server, MySQL / InnoDB]{.fragment}
 
 ::::
 
-::: notes
-Lernkarte? AP2
-:::
-
 
 ## Datenbanken: BASE
 
@@ -590,6 +586,25 @@ Bei Netzwerkausfällen kann man **nicht alle drei gleichzeitig garantieren**.
 :::::
 
 
+## Referenzielle Integrität
+
+:::: {.incremental style="font-size: 2rem"}
+
+**Was ist referenzielle Integrität in Bezug auf Datenbanken?**
+
+- **Referenzielle Integrität** bezieht sich auf die **Konsistenz von Beziehungen** zwischen Tabellen
+- Sie soll sicherstellen, dass in einer Beziehung zwischen zwei Tabellen **der Wert des Fremdschlüssels in der referenzierten Tabelle immer auf einen gültigen Wert verweist**
+- Wenn eine Änderung oder Löschung in einer Tabelle vorgenommen wird:
+  + referenzielle Integrität prüft, ob dies Auswirkungen auf andere Tabellen hat und
+  + ob die Konsistenz der Beziehungen erhalten bleibt
+
+::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 104
+:::
+
+
 ## SQL Sprachbereiche
 
 :::: {.fragment style="font-size: 1.8rem"}
@@ -655,6 +670,43 @@ FROM Mitarbeiter
 GROUP BY AbteilungsID
 HAVING COUNT(*) > 5;
 ```
+
+
+## SQL: Transaktion
+
+:::: {.incremental style="font-size: 1.8rem"}
+
+**Was versteht man unter dem Begriff *Transaktion* im Kontext von SQL-Statements?**
+
+- Transaktion in SQL: **Gruppe von miteinander verbundenen Anweisungen, die als eine einzelne Arbeitseinheit behandelt werden**
+- Sie folgen dem **ACID-Prinzip:**
+  + **Atomarität (Atomicity):** Alles oder nichts. Alle Operationen der Transaktion werden erfolgreich ausgeführt oder gar keine.
+  + **Konsistenz (Consistency):** Die Transaktion bringt die Datenbank von einem konsistenten Zustand in einen anderen.
+  + **Isolation:** Jede Transaktion wird so behandelt, als ob sie isoiert von anderen läuft.
+  + **Dauerhaftigkeit (Durability):** Nachdem eine Transaktion abgeschlossen ist, sind ihre Auswirkungen dauerhaft.
+
+::::
+
+::: notes
+Lernkarten AP2 2025 Nr. 112
+:::
+
+
+## TCL - Transaction Control Language
+
+:::: {.incremental style="font-size: 2rem"}
+
+**Erklären Sie die Funktion und Verwendung der folgenden SQL-Befehle im Zusammenhang mit Transaktionen: `BEGIN TRANSACTION; COMMIT; ROLLBACK;`**
+
+- `BEGIN TRANSACTION`: Dieser Befehl signalisiert den Beginn einer Transaktion.
+- `COMMIT`: Schließt die Transaktion ab und speichert alle Änderungen **dauerhaft** in der Datenbank. Nach einem `COMMIT` kann die Transaktion nicht mehr rückgängig gemacht werden.
+- `ROLLBACK`: Macht alle Änderungen, die in der **aktuellen Transaktion** gemacht wurden, rückgängig, wenn eine Fehler auftritt oder wenn die Transaktion aus irgendeinem Grund nicht abgeschlossen werden kann.
+
+::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 113
+:::
 
 
 ## JOINs (Abfrage über mehrere Tabellen)

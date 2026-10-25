@@ -164,6 +164,24 @@ Siehe [J. Loetzsch, LF7 Github](https://github.com/johannesloetzsch/LF7/blob/mai
 ::::
 
 
+## ER-Diagramm: Schritte
+
+:::: {.incremental style="font-size: 1.9rem"}
+
+**Welche Schritte sind notwendig, um Datenstrukturen in einem ER-Diagramm zu modellieren?**
+
+1. **Identifizieren der Entitäten:** Das sind die Hauptobjekte oder Konzepte in der Datenbank.
+2. **Bestimmen der Attribute:** Das sind die Eigenschaften oder Merkmale der Entitäten.
+3. **Identifizieren der Beziehungen:** Das sind die Verbindungen und Interaktionen zwischen den Entitäten.
+4. **Bestimmen der Kardinalität:** Das definiert, wie viele Instanzen einer Entität mit einer Instanz einer anderen Entität in Beziehung stehen können.
+
+::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 107
+:::
+
+
 ## Datenbanken: Datentypen
 
 :::: {.fragment style="font-size: 1.7rem"}

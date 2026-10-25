@@ -262,6 +262,11 @@ vgl. Lernkarte AP2 2025 Nr. 105
 :::
 
 
+## Normalisierung: Warum?
+
+**Normalisierung ist ein systematisches Verfahren zur Strukturierung relationaler Datenbanken, um Redundanzen zu vermeiden und Anomalien (Einfüge-, Änderungs- und Löschanomalien) zu verhindern.**
+
+
 ## Normalisierung: 1. Normalform (1NF)
 
 ::: fragment
@@ -285,6 +290,26 @@ vgl. Lernkarte AP2 2025 Nr. 105
 :::
 
 
+## Normalisierung: Funktionale Abhängigkeit
+
+:::: {style = "font-size: 2.1rem"}
+
+**Definition:** [Ein Attribut B ist funktional abhängig von Attribut A, wenn zu jedem Wert von A genau ein Wert von B gehört.]{.fragment}
+
+**Schreibweise:** [A → B (A bestimmt B)]{.fragment}
+
+::: incremental
+
+**Beispiele:**
+
+- KundenNr → Name (zu jeder KundenNr gehört genau ein Name)
+- BestellNr → Datum (zu jeder BestellNr gehört genau ein Datum)
+- PLZ → Ort (zu jeder PLZ gehört genau ein Ort) - vereinfacht
+
+:::
+::::
+
+
 ## Normalisierung: 3. Normalform (3NF)
 
 ::: fragment
@@ -304,40 +329,23 @@ Lösung: [AbteilungsName in eigene Tabelle "Abteilung"]{.fragment}
 :::
 
 
-## DB Design
+## Normalisierung: Transitive Abhängigkeit
 
-:::: {style="font-size: 1.6rem"}
+:::: {style = "font-size: 2.1rem"}
 
-```text
-Anforderungsanalyse
-        |
-        v
-+----------------+     +------------------+
-| ER-Modell      |---->| Relationales     |
-| (konzeptionell)|     | Modell (logisch) |
-+----------------+     +------------------+
-                              |
-            +---------+-------+
-            |                 |
-  +----------------+      +--------------+
-  | Normalisierung |      | SQL (DDL)    |
-  | 1NF-3NF        |      | CREATE TABLE |
-  +----------------+      +--------------+
-             |                |
-             v                v
-      Redundanzfreies     Physische
-      Datenmodell         Datenbank
-                              |
-                          +---+----------+
-                          |              |
-                     +---------+     +-----------+
-                     | DML     |     | DQL       |
-                     | INSERT  |     | SELECT    |
-                     | UPDATE  |     | JOIN      |
-                     | DELETE  |     | GROUP BY  |
-                     +---------+     +-----------+
-```
+**Definition:** [B ist transitiv abhängig von A, wenn A → C und C → B gilt, wobei C kein Schlüsselattribut ist.]{.fragment}
 
+**Schreibweise:** [A → C → B]{.fragment}
+
+::: incremental
+
+**Beispiel:** [KundenNr → PLZ → Ort]{.fragment}
+
+- KundenNr bestimmt PLZ
+- PLZ bestimmt Ort
+- Also: Ort ist transitiv abhängig von KundenNr (über PLZ)
+
+:::
 ::::
 
 
@@ -394,42 +402,62 @@ Anforderungsanalyse
 
 ## Beispiel: 2NF
 
-:::: {style="font-size: 2rem"}
+::: {style="font-size: 1.7rem"}
+
+| BestellNr | Datum | KundenName | KundenOrt | Artikel | Preis |
+|---|---|---|---|---|---|
+| 1001 | 2024-01-15 | Müller GmbH | Berlin | Server | 5000 |
+| 1001 | 2024-01-15 | Müller GmbH | Berlin | Switch | 500 |
+| 1002 | 2024-01-20 | Müller GmbH | Berlin | Kabel | 50 |
+
+:::
+
+:::: {style="font-size: 1.8rem"}
 
 **Forderung:** [Jedes Nicht-Schlüssel-Attribut ist **voll funktional abhängig** vom gesamten Primärschlüssel]{.fragment}
 
-::: incremental
+- Was ist der Primärschlüssel? [{BestellNr, Artikel}]{.fragment}
+- Wo ist 2NF verletzt? [KundenName / KundenOrt hängen nur von BestellNr ab]{.fragment}
+- Lösung? [Abhängige Attribute in separate Tabelle auslagern]{.fragment}
+  + [**Bestellung:** BestellNr, Datum, KundenName, KundenOrt]{.fragment}
+  + [**BestellPosition:** BestellNr, Artikel, Preis]{.fragment}
 
-- Was ist der Primärschlüssel?
-  + PK ist {BestellNr, Artikel}.
-- Wo ist 2NF verletzt?
-  + KundenName / Ort hängen nur von BestellNr ab
-- Lösung?
-  + Abhängige Attribute in separate Tabelle auslagern
-- Neue Tabellen:
-  + **Bestellung:** BestellNr, Datum, KundenName, KundenOrt
-  + **BestellPosition:** BestellNr, Artikel, Preis
-
-:::
 ::::
 
 
 ## Beispiel: 3NF
 
-:::: {style="font-size: 2rem"}
+:::: {.columns style="font-size: 1.6rem"}
+::: {.column width="60%"}
+
+| BestellNr | Datum | KundenName | KOrt
+|---|---|---|---|
+| 1001 | 2024-01-15 | Müller GmbH | Berlin
+| 1001 | 2024-01-15 | Müller GmbH | Berlin
+
+:::
+
+::: {.column width="40%"}
+
+| BestellNr | Artikel | Preis
+|---|---|---
+1001 | Server | 5000
+1001 | Switch | 500
+
+:::
+::::
+
+:::: {style="font-size: 1.8rem"}
 
 **Forderung:** [Keine transitiven Abhängigkeiten]{.fragment}
 
 ::: incremental
 
-- Wo ist 3NF verletzt?
-  + KundenOrt hängt von KundenName ab (transitiv)
-- Lösung?
-  + Auslagerung in separate Tabelle
-- Neue Tabellen in 3NF:
-  + **Kunde:** KundenID, KundenName, KundenOrt
-  + **Bestellung:** BestellNr, Datum, KundenID (FK)
-  + **BestellPosition:** BestellNr (FK), Artikel, Preis
+- Wo ist 3NF verletzt? [KundenOrt hängt von KundenName ab (transitiv)]{.fragment}
+- Lösung? [Auslagerung in separate Tabelle]{.fragment}
+  + [**Kunde:** KundenID, KundenName, KundenOrt]{.fragment}
+  + [**Bestellung:** BestellNr, Datum, KundenID (FK)]{.fragment}
+  + [**BestellPosition:** BestellNr (FK), Artikel, Preis]{.fragment}
 
 :::
 ::::
@@ -637,6 +665,43 @@ INNER JOIN Bestellung b ON k.KundenID = b.KundenID
 WHERE b.Betrag > 1000
 ORDER BY b.Datum DESC;
 ```
+
+
+## DB Design
+
+:::: {style="font-size: 1.6rem"}
+
+```text
+Anforderungsanalyse
+        |
+        v
++----------------+     +------------------+
+| ER-Modell      |---->| Relationales     |
+| (konzeptionell)|     | Modell (logisch) |
++----------------+     +------------------+
+                              |
+            +---------+-------+
+            |                 |
+  +----------------+      +--------------+
+  | Normalisierung |      | SQL (DDL)    |
+  | 1NF-3NF        |      | CREATE TABLE |
+  +----------------+      +--------------+
+             |                |
+             v                v
+      Redundanzfreies     Physische
+      Datenmodell         Datenbank
+                              |
+                          +---+----------+
+                          |              |
+                     +---------+     +-----------+
+                     | DML     |     | DQL       |
+                     | INSERT  |     | SELECT    |
+                     | UPDATE  |     | JOIN      |
+                     | DELETE  |     | GROUP BY  |
+                     +---------+     +-----------+
+```
+
+::::
 
 
 ## <!-- -->

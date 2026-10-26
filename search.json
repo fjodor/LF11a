@@ -21,6 +21,26 @@
     "text": "©torange.biz CC-BY 4.0\n\n\nViel Erfolg!"
   },
   {
+    "objectID": "06_Qualitätssicherung_Tests.html#unit-tests",
+    "href": "06_Qualitätssicherung_Tests.html#unit-tests",
+    "title": "Qualitätssicherung, Tests",
+    "section": "Unit Tests",
+    "text": "Unit Tests\n\nWas sind Unit-Tests und warum sind sie wichtig in der Softwareentwicklung?\n\nUnit-Test: Methode in der Softwareentwicklung, bei der einzelne Komponenten des Codes (Funktionen, Methoden) isoliert getestet werden\nZweck: überprüfen, ob jede Komponente korrekt funktioniert\nhelfen, Fehler frühzeitig zu erkennen und sicherzustellen, dass Änderungen am Code nicht zu unerwarteten Problemen führen\nwichtiger Teil des Testprozesses, aber werden oft mit anderen Testmethoden kombiniert, um das Gesamtverhalten der Software zu überprüfen\n\n\n\nLernkarte AP2 2025 Nr. 78",
+    "crumbs": [
+      "06 Software-Tests"
+    ]
+  },
+  {
+    "objectID": "06_Qualitätssicherung_Tests.html#unit-tests-first",
+    "href": "06_Qualitätssicherung_Tests.html#unit-tests-first",
+    "title": "Qualitätssicherung, Tests",
+    "section": "Unit Tests: FIRST",
+    "text": "Unit Tests: FIRST\n\nWelche Eigenschaften sollten Unit-Tests erfüllen, um das FIRST-Prinzip zu befolgen?\n\nFast: Sie sollten schnell laufen, um den Entwicklungsprozess nicht zu verlangsamen\nIndependent: Tests sollten unabhängig von einander sein und in beliebiger Reihenfolge dasselbe Ergebnis liefern\nRepeatable: Sie sollten unter gleichen Bedingungen stets dasselbe Ergebnis liefern\nSelf-Validating: Tests sollten selbst bestimmen können, ob sie erfolgreich waren oder nicht\nTimely: Unit-Tests sollten bereits vor der Entwicklung des Produktivcodes definiert werden\n\n\n\nLernkarte AP2 2025 Nr. 79",
+    "crumbs": [
+      "06 Software-Tests"
+    ]
+  },
+  {
     "objectID": "06_Qualitätssicherung_Tests.html#blue-green-deployment",
     "href": "06_Qualitätssicherung_Tests.html#blue-green-deployment",
     "title": "Qualitätssicherung, Tests",
@@ -1305,7 +1325,7 @@
     "href": "05_Schnittstellen_APIs.html#rest-http-methoden",
     "title": "Schnittstellen",
     "section": "REST: HTTP-Methoden",
-    "text": "REST: HTTP-Methoden\nCRUD = Create - Read - Update - Delete\n\n\n\n\n\n\n\n\n\n\nHTTP-Methode\nCRUD-Operation\nBeschreibung\nBeispiel\n\n\n\n\nGET\nRead\nRessource abrufen\nGET /api/kunden/42\n\n\nPOST\nCreate\nNeue Ressource erstellen\nPOST /api/kunden\n\n\nPUT\nUpdate\nRessource vollständig ersetzen\nPUT /api/kunden/42\n\n\nPATCH\nUpdate (teilweise)\nRessource teilweise ändern\nPATCH /api/kunden/42\n\n\nDELETE\nDelete\nRessource löschen\nDELETE /api/kunden/42",
+    "text": "REST: HTTP-Methoden\nCRUD = Create - Read - Update - Delete\n\n\n\n\n\n\n\n\n\n\nHTTP-Methode\nCRUD-Operation\nBeschreibung\nBeispiel\n\n\n\n\nGET\nRead\nRessource abrufen\nGET /api/kunden/42\n\n\nPOST\nCreate\nNeue Ressource erstellen\nPOST /api/kunden\n\n\nPUT\nUpdate\nRessource vollständig ersetzen\nPUT /api/kunden/42\n\n\nPATCH\nUpdate (teilweise)\nRessource teilweise ändern\nPATCH /api/kunden/42\n\n\nDELETE\nDelete\nRessource löschen\nDELETE /api/kunden/42\n\n\n\n\n\nVgl. Lernkarte AP2 2025 Nr. 116: ohne HTML, nur CRUD",
     "crumbs": [
       "05 APIs, JSON, XML"
     ]
@@ -1316,6 +1336,26 @@
     "title": "Schnittstellen",
     "section": "REST APIs absichern",
     "text": "REST APIs absichern\n\n\nAuthentifizierung: Zugriff nur für bekannte Benutzer und Systeme\nAutorisierung: RBAC = Role Based Access Control; JWT\nVerschlüsselung: TLS, HTTPS für alle produktiven Verbindungen\nEingabevalidierung, z. B. Pydantic; parametrisierte SQL-Abfragen bzw. ORM; Schutz vor SQL Injection, Command Injection etc.\nSichere Passwort-Handhabung: Passwort-Hashing, z. B. bcrypt / argon2\nProtokollierung und Monitoring: Logging; Anmeldeversuche, fehlgeschlagene Zugriffe, sicherheitsrelevante Ereignisse\nRate Limiting; Sperrung nach vielen Fehlversuchen; DDoS-Schutz je nach Schutzbedarf\nFehlerbehandlung: keine internen Informationen in Fehlermeldungen\nSichere Entwicklung und Tests: Code Reviews, Schwachstellen-Scans, Updates, Patch-Management",
+    "crumbs": [
+      "05 APIs, JSON, XML"
+    ]
+  },
+  {
+    "objectID": "05_Schnittstellen_APIs.html#sql-injection",
+    "href": "05_Schnittstellen_APIs.html#sql-injection",
+    "title": "Schnittstellen",
+    "section": "SQL Injection",
+    "text": "SQL Injection\n\nErklären Sie das Sicherheitsproblem SQL Injection.\n\nSQL Injection ist eine Sicherheitslücke, bei der Angreifer schädlichen SQL-Code in eine Abfrage einschleusen, um unbefugt auf Daten oder eine Datenbank zuzugreifen oder um sie zu manipulieren.\n\n\n\nLernkarte AP2 2025 Nr. 26",
+    "crumbs": [
+      "05 APIs, JSON, XML"
+    ]
+  },
+  {
+    "objectID": "05_Schnittstellen_APIs.html#sql-injection-bobby-tables",
+    "href": "05_Schnittstellen_APIs.html#sql-injection-bobby-tables",
+    "title": "Schnittstellen",
+    "section": "SQL Injection: Bobby Tables",
+    "text": "SQL Injection: Bobby Tables\n\nQuelle: https://xkcd.com/327/",
     "crumbs": [
       "05 APIs, JSON, XML"
     ]
@@ -1411,6 +1451,16 @@
     ]
   },
   {
+    "objectID": "05_Schnittstellen_APIs.html#xml-well-formed-vs.-valid",
+    "href": "05_Schnittstellen_APIs.html#xml-well-formed-vs.-valid",
+    "title": "Schnittstellen",
+    "section": "XML: well-formed vs. valid",
+    "text": "XML: well-formed vs. valid\n\nWas sind die Unterschiede zwischen einer well-formed und einer valid XML-Datei?\n\n\nWell-formed\n\nEine well-formed XML-Datei erfüllt die syntaktischen Regeln des XML-Formats\nfolgt den XML-Konventionen: korrektes Verschachteln von Elementen, Verwendung von Tags und Attributen gemäß XML-Spezifikation\nkann von einem XML-Parser gelesen werden, ohne dass Syntaxfehler auftreten\n\n\nValid\n\nEine valid XML-Datei erfüllt nicht nur die syntaktischen Anforderungen, sondern entspricht auch den Regeln und Einschränkungen einer definierten Dokumenttyp-Definition (DTD) oder eines XML-Schemas\nwird auf Konformität mit den in der DTD oder im XML-Schema festgelegten Regeln überprüft\n\n\n\n\nLernkarte AP2 2025 Nr. 125",
+    "crumbs": [
+      "05 APIs, JSON, XML"
+    ]
+  },
+  {
     "objectID": "05_Schnittstellen_APIs.html#xml-vs.-csv",
     "href": "05_Schnittstellen_APIs.html#xml-vs.-csv",
     "title": "Schnittstellen",
@@ -1441,11 +1491,21 @@
     ]
   },
   {
-    "objectID": "05_Schnittstellen_APIs.html#xml-ausblick",
-    "href": "05_Schnittstellen_APIs.html#xml-ausblick",
+    "objectID": "05_Schnittstellen_APIs.html#xml-xsd-xpath-xslt",
+    "href": "05_Schnittstellen_APIs.html#xml-xsd-xpath-xslt",
     "title": "Schnittstellen",
-    "section": "XML Ausblick",
-    "text": "XML Ausblick\n\n\nXSD: moderner Nachfolger von DTD\n\nbeschreibt und validiert XML-Dateien\nkann im Gegensatz zu DTD Datentypen und Wertebereiche prüfen\nBeispiel: Mit XSD kann man festlegen, dass alter eine Ganzzahl zwischen 0 und 150 sein muss\nDTD kann nur festlegen, dass das Element alter vorhanden ist und Text enthält\n\nXPath: findet Elemente in XML\nXSLT: transformiert XML in andere Formate",
+    "section": "XML: XSD, XPath, XSLT",
+    "text": "XML: XSD, XPath, XSLT\n\n\nXSD: XML Schema Definition, moderner Nachfolger von  DTD - Document Type Definition\n\nbeschreibt und validiert XML-Dateien\nkann im Gegensatz zu DTD Datentypen und Wertebereiche prüfen\nBeispiel: Mit XSD kann man festlegen, dass alter eine Ganzzahl zwischen 0 und 150 sein muss\nDTD kann nur festlegen, dass das Element alter vorhanden ist und Text enthält\n\nXPath: findet Elemente in XML\nXSLT: transformiert XML in andere Formate",
+    "crumbs": [
+      "05 APIs, JSON, XML"
+    ]
+  },
+  {
+    "objectID": "05_Schnittstellen_APIs.html#xsd-beispiel",
+    "href": "05_Schnittstellen_APIs.html#xsd-beispiel",
+    "title": "Schnittstellen",
+    "section": "XSD: Beispiel",
+    "text": "XSD: Beispiel\n\n\nXSD-Schema\n&lt;?xml version=\"1.0\"?&gt;\n&lt;xs:schema xmlns:xs=\"http://www.w3.org/2001/XMLSchema\"&gt;\n &lt;xs:element name=\"note\"&gt;\n  &lt;xs:complexType&gt;\n   &lt;xs:sequence&gt;\n    &lt;xs:element name=\"to\" type=\"xs:string\"/&gt;\n    &lt;xs:element name=\"from\" type=\"xs:string\"/&gt;\n    &lt;xs:element name=\"heading\" type=\"xs:string\"/&gt;\n    &lt;xs:element name=\"body\" type=\"xs:string\"/&gt;\n   &lt;/xs:sequence&gt;\n  &lt;/xs:complexType&gt;\n &lt;/xs:element&gt;\n&lt;/xs:schema&gt;\n\nPassendes XML\n&lt;?xml version=\"1.0\"?&gt;\n&lt;note&gt;\n &lt;to&gt;Max&lt;/to&gt;\n &lt;from&gt;Lisa&lt;/from&gt;\n &lt;heading&gt;Erinnerung&lt;/heading&gt;\n &lt;body&gt;Treffen um 10 Uhr&lt;/body&gt;\n&lt;/note&gt;",
     "crumbs": [
       "05 APIs, JSON, XML"
     ]
@@ -1511,6 +1571,16 @@
     ]
   },
   {
+    "objectID": "07_Datenbanken.html#er-diagramm-schritte",
+    "href": "07_Datenbanken.html#er-diagramm-schritte",
+    "title": "Datenbanken",
+    "section": "ER-Diagramm: Schritte",
+    "text": "ER-Diagramm: Schritte\n\nWelche Schritte sind notwendig, um Datenstrukturen in einem ER-Diagramm zu modellieren?\n\nIdentifizieren der Entitäten: Das sind die Hauptobjekte oder Konzepte in der Datenbank.\nBestimmen der Attribute: Das sind die Eigenschaften oder Merkmale der Entitäten.\nIdentifizieren der Beziehungen: Das sind die Verbindungen und Interaktionen zwischen den Entitäten.\nBestimmen der Kardinalität: Das definiert, wie viele Instanzen einer Entität mit einer Instanz einer anderen Entität in Beziehung stehen können.\n\n\n\nLernkarte AP2 2025 Nr. 107",
+    "crumbs": [
+      "07 Datenbanken, SQL"
+    ]
+  },
+  {
     "objectID": "07_Datenbanken.html#datenbanken-datentypen",
     "href": "07_Datenbanken.html#datenbanken-datentypen",
     "title": "Datenbanken",
@@ -1551,11 +1621,21 @@
     ]
   },
   {
+    "objectID": "07_Datenbanken.html#normalisierung-warum",
+    "href": "07_Datenbanken.html#normalisierung-warum",
+    "title": "Datenbanken",
+    "section": "Normalisierung: Warum?",
+    "text": "Normalisierung: Warum?\nNormalisierung ist ein systematisches Verfahren zur Strukturierung relationaler Datenbanken, um Redundanzen zu vermeiden und Anomalien (Einfüge-, Änderungs- und Löschanomalien) zu verhindern.",
+    "crumbs": [
+      "07 Datenbanken, SQL"
+    ]
+  },
+  {
     "objectID": "07_Datenbanken.html#normalisierung-1.-normalform-1nf",
     "href": "07_Datenbanken.html#normalisierung-1.-normalform-1nf",
     "title": "Datenbanken",
     "section": "Normalisierung: 1. Normalform (1NF)",
-    "text": "Normalisierung: 1. Normalform (1NF)\n\n\nJedes Attribut enthält nur atomare (unteilbare) Werte\nKeine Wiederholungsgruppen\n\nVerstoß: Telefon = “0123, 0456” → Aufteilen in separate Datensätze / Tabelle",
+    "text": "Normalisierung: 1. Normalform (1NF)\n\n\nJedes Attribut enthält nur atomare (unteilbare) Werte\nKeine Wiederholungsgruppen\n\nVerstoß: Telefon = “0123, 0456” → Aufteilen in separate Datensätze / Tabelle\n\n\nvgl. Lernkarte AP2 2025 Nr. 106 für alle drei NF",
     "crumbs": [
       "07 Datenbanken, SQL"
     ]
@@ -1571,6 +1651,16 @@
     ]
   },
   {
+    "objectID": "07_Datenbanken.html#normalisierung-funktionale-abhängigkeit",
+    "href": "07_Datenbanken.html#normalisierung-funktionale-abhängigkeit",
+    "title": "Datenbanken",
+    "section": "Normalisierung: Funktionale Abhängigkeit",
+    "text": "Normalisierung: Funktionale Abhängigkeit\n\nDefinition: Ein Attribut B ist funktional abhängig von Attribut A, wenn zu jedem Wert von A genau ein Wert von B gehört.\nSchreibweise: A → B (A bestimmt B)\nBeispiele:\n\nKundenNr → Name (zu jeder KundenNr gehört genau ein Name)\nBestellNr → Datum (zu jeder BestellNr gehört genau ein Datum)\nPLZ → Ort (zu jeder PLZ gehört genau ein Ort) - vereinfacht",
+    "crumbs": [
+      "07 Datenbanken, SQL"
+    ]
+  },
+  {
     "objectID": "07_Datenbanken.html#normalisierung-3.-normalform-3nf",
     "href": "07_Datenbanken.html#normalisierung-3.-normalform-3nf",
     "title": "Datenbanken",
@@ -1581,11 +1671,11 @@
     ]
   },
   {
-    "objectID": "07_Datenbanken.html#db-design",
-    "href": "07_Datenbanken.html#db-design",
+    "objectID": "07_Datenbanken.html#normalisierung-transitive-abhängigkeit",
+    "href": "07_Datenbanken.html#normalisierung-transitive-abhängigkeit",
     "title": "Datenbanken",
-    "section": "DB Design",
-    "text": "DB Design\n\nAnforderungsanalyse\n        |\n        v\n+----------------+     +------------------+\n| ER-Modell      |----&gt;| Relationales     |\n| (konzeptionell)|     | Modell (logisch) |\n+----------------+     +------------------+\n                              |\n            +---------+-------+\n            |                 |\n  +----------------+      +--------------+\n  | Normalisierung |      | SQL (DDL)    |\n  | 1NF-3NF        |      | CREATE TABLE |\n  +----------------+      +--------------+\n             |                |\n             v                v\n      Redundanzfreies     Physische\n      Datenmodell         Datenbank\n                              |\n                          +---+----------+\n                          |              |\n                     +---------+     +-----------+\n                     | DML     |     | DQL       |\n                     | INSERT  |     | SELECT    |\n                     | UPDATE  |     | JOIN      |\n                     | DELETE  |     | GROUP BY  |\n                     +---------+     +-----------+",
+    "section": "Normalisierung: Transitive Abhängigkeit",
+    "text": "Normalisierung: Transitive Abhängigkeit\n\nDefinition: B ist transitiv abhängig von A, wenn A → C und C → B gilt, wobei C kein Schlüsselattribut ist.\nSchreibweise: A → C → B\nBeispiel: KundenNr → PLZ → Ort\n\nKundenNr bestimmt PLZ\nPLZ bestimmt Ort\nAlso: Ort ist transitiv abhängig von KundenNr (über PLZ)",
     "crumbs": [
       "07 Datenbanken, SQL"
     ]
@@ -1615,7 +1705,7 @@
     "href": "07_Datenbanken.html#beispiel-2nf",
     "title": "Datenbanken",
     "section": "Beispiel: 2NF",
-    "text": "Beispiel: 2NF\n\nForderung: Jedes Nicht-Schlüssel-Attribut ist voll funktional abhängig vom gesamten Primärschlüssel\n\nWas ist der Primärschlüssel?\n\nPK ist {BestellNr, Artikel}.\n\nWo ist 2NF verletzt?\n\nKundenName / Ort hängen nur von BestellNr ab\n\nLösung?\n\nAbhängige Attribute in separate Tabelle auslagern\n\nNeue Tabellen:\n\nBestellung: BestellNr, Datum, KundenName, KundenOrt\nBestellPosition: BestellNr, Artikel, Preis",
+    "text": "Beispiel: 2NF\n\n\n\n\nBestellNr\nDatum\nKundenName\nKundenOrt\nArtikel\nPreis\n\n\n\n\n1001\n2024-01-15\nMüller GmbH\nBerlin\nServer\n5000\n\n\n1001\n2024-01-15\nMüller GmbH\nBerlin\nSwitch\n500\n\n\n1002\n2024-01-20\nMüller GmbH\nBerlin\nKabel\n50\n\n\n\n\n\nForderung: Jedes Nicht-Schlüssel-Attribut ist voll funktional abhängig vom gesamten Primärschlüssel\n\nWas ist der Primärschlüssel? {BestellNr, Artikel}\nWo ist 2NF verletzt? KundenName / KundenOrt hängen nur von BestellNr ab\nLösung? Abhängige Attribute in separate Tabelle auslagern\n\nBestellung: BestellNr, Datum, KundenName, KundenOrt\nBestellPosition: BestellNr, Artikel, Preis",
     "crumbs": [
       "07 Datenbanken, SQL"
     ]
@@ -1625,7 +1715,7 @@
     "href": "07_Datenbanken.html#beispiel-3nf",
     "title": "Datenbanken",
     "section": "Beispiel: 3NF",
-    "text": "Beispiel: 3NF\n\nForderung: Keine transitiven Abhängigkeiten\n\nWo ist 3NF verletzt?\n\nKundenOrt hängt von KundenName ab (transitiv)\n\nLösung?\n\nAuslagerung in separate Tabelle\n\nNeue Tabellen in 3NF:\n\nKunde: KundenID, KundenName, KundenOrt\nBestellung: BestellNr, Datum, KundenID (FK)\nBestellPosition: BestellNr (FK), Artikel, Preis",
+    "text": "Beispiel: 3NF\n\n\n\n\n\nBestellNr\nDatum\nKundenName\nKOrt\n\n\n\n\n1001\n2024-01-15\nMüller GmbH\nBerlin\n\n\n1001\n2024-01-15\nMüller GmbH\nBerlin\n\n\n\n\n\n\n\nBestellNr\nArtikel\nPreis\n\n\n\n\n1001\nServer\n5000\n\n\n1001\nSwitch\n500\n\n\n\n\n\nForderung: Keine transitiven Abhängigkeiten\n\nWo ist 3NF verletzt? KundenOrt hängt von KundenName ab (transitiv)\nLösung? Auslagerung in separate Tabelle\n\nKunde: KundenID, KundenName, KundenOrt\nBestellung: BestellNr, Datum, KundenID (FK)\nBestellPosition: BestellNr (FK), Artikel, Preis",
     "crumbs": [
       "07 Datenbanken, SQL"
     ]
@@ -1635,7 +1725,7 @@
     "href": "07_Datenbanken.html#datenbanken-acid",
     "title": "Datenbanken",
     "section": "Datenbanken: ACID",
-    "text": "Datenbanken: ACID\n\n\nA: Atomicity = Atomität: Transaktion wird entweder vollständig oder gar nicht ausgeführt; falls Fehler: Rollback\nC: Consistency = Konsistenz: Datenbank führt nur Transaktionen aus, die alle vordefinierten Regeln, Gesetze und Integritätsbedingungen einhalten\nI: Isolation = Isolation: Gleichzeitig laufende Transaktionen behindern sich nicht gegenseitig; sie wirken so, als würden sie nacheinander ablaufen\nD: Durability = Dauerhaftigkeit: Sobald eine Transaktion erfolgreich abgeschlossen (committed) ist, bleiben die Änderungen dauerhaft gespeichert - selbst bei einem Stromausfall oder Systemabsturz\nBeispiel: Bei einer Überweisung werden beide Buchungen  (A: -100€; B: +100€) als eine Transaktion betrachtet.\n\nVertreter: PostgreSQL, Oracle, SQL Server, MySQL / InnoDB\n\n\nLernkarte? AP2",
+    "text": "Datenbanken: ACID\n\n\nA: Atomicity = Atomität: Transaktion wird entweder vollständig oder gar nicht ausgeführt; falls Fehler: Rollback\nC: Consistency = Konsistenz: Datenbank führt nur Transaktionen aus, die alle vordefinierten Regeln, Gesetze und Integritätsbedingungen einhalten\nI: Isolation = Isolation: Gleichzeitig laufende Transaktionen behindern sich nicht gegenseitig; sie wirken so, als würden sie nacheinander ablaufen\nD: Durability = Dauerhaftigkeit: Sobald eine Transaktion erfolgreich abgeschlossen (committed) ist, bleiben die Änderungen dauerhaft gespeichert - selbst bei einem Stromausfall oder Systemabsturz\nBeispiel: Bei einer Überweisung werden beide Buchungen  (A: -100€; B: +100€) als eine Transaktion betrachtet.\n\nVertreter: PostgreSQL, Oracle, SQL Server, MySQL / InnoDB",
     "crumbs": [
       "07 Datenbanken, SQL"
     ]
@@ -1666,6 +1756,16 @@
     "title": "Datenbanken",
     "section": "CAP-Theorem vs. ACID und BASE",
     "text": "CAP-Theorem vs. ACID und BASE\n\nCAP-Theorem: Consistency, Availability, Partition Tolerance\nBei Netzwerkausfällen kann man nicht alle drei gleichzeitig garantieren.\n\n\nBASE\n\npriorisiert Availability und Partition Tolerance\nDatenbank bleibt hochverfügbar und verteilt\nbessere Skalierbarkeit\nKonsistenz wird notfalls erst später erreicht; eventual consistency\n\n\nACID\n\npriorisiert Consistency: Datenbank nach jeder Transaktion sofort konsistent",
+    "crumbs": [
+      "07 Datenbanken, SQL"
+    ]
+  },
+  {
+    "objectID": "07_Datenbanken.html#referenzielle-integrität",
+    "href": "07_Datenbanken.html#referenzielle-integrität",
+    "title": "Datenbanken",
+    "section": "Referenzielle Integrität",
+    "text": "Referenzielle Integrität\n\nWas ist referenzielle Integrität in Bezug auf Datenbanken?\n\nReferenzielle Integrität bezieht sich auf die Konsistenz von Beziehungen zwischen Tabellen\nSie soll sicherstellen, dass in einer Beziehung zwischen zwei Tabellen der Wert des Fremdschlüssels in der referenzierten Tabelle immer auf einen gültigen Wert verweist\nWenn eine Änderung oder Löschung in einer Tabelle vorgenommen wird:\n\nreferenzielle Integrität prüft, ob dies Auswirkungen auf andere Tabellen hat und\nob die Konsistenz der Beziehungen erhalten bleibt\n\n\n\n\nLernkarte AP2 2025 Nr. 104",
     "crumbs": [
       "07 Datenbanken, SQL"
     ]
@@ -1711,6 +1811,36 @@
     ]
   },
   {
+    "objectID": "07_Datenbanken.html#dcl---data-control-language",
+    "href": "07_Datenbanken.html#dcl---data-control-language",
+    "title": "Datenbanken",
+    "section": "DCL - Data Control Language",
+    "text": "DCL - Data Control Language\n\n\n\nGRANT SELECT, INSERT, UPDATE\nON kunden\nTO max;\nMax darf Tabelle kunden lesen, dort Daten einfügen und aktualisieren.\n\nREVOKE UPDATE\nON kunden\nFROM max;\nMax darf Tabelle kunden weiter lesen und Datensätze anlegen, aber keine bestehenden Datensätze mehr ändern.",
+    "crumbs": [
+      "07 Datenbanken, SQL"
+    ]
+  },
+  {
+    "objectID": "07_Datenbanken.html#sql-transaktion",
+    "href": "07_Datenbanken.html#sql-transaktion",
+    "title": "Datenbanken",
+    "section": "SQL: Transaktion",
+    "text": "SQL: Transaktion\n\nWas versteht man unter dem Begriff Transaktion im Kontext von SQL-Statements?\n\nTransaktion in SQL: Gruppe von miteinander verbundenen Anweisungen, die als eine einzelne Arbeitseinheit behandelt werden\nSie folgen dem ACID-Prinzip:\n\nAtomarität (Atomicity): Alles oder nichts. Alle Operationen der Transaktion werden erfolgreich ausgeführt oder gar keine.\nKonsistenz (Consistency): Die Transaktion bringt die Datenbank von einem konsistenten Zustand in einen anderen.\nIsolation: Jede Transaktion wird so behandelt, als ob sie isoiert von anderen läuft.\nDauerhaftigkeit (Durability): Nachdem eine Transaktion abgeschlossen ist, sind ihre Auswirkungen dauerhaft.\n\n\n\n\nLernkarten AP2 2025 Nr. 112",
+    "crumbs": [
+      "07 Datenbanken, SQL"
+    ]
+  },
+  {
+    "objectID": "07_Datenbanken.html#tcl---transaction-control-language",
+    "href": "07_Datenbanken.html#tcl---transaction-control-language",
+    "title": "Datenbanken",
+    "section": "TCL - Transaction Control Language",
+    "text": "TCL - Transaction Control Language\n\nErklären Sie die Funktion und Verwendung der folgenden SQL-Befehle im Zusammenhang mit Transaktionen: BEGIN TRANSACTION; COMMIT; ROLLBACK;\n\nBEGIN TRANSACTION: Dieser Befehl signalisiert den Beginn einer Transaktion.\nCOMMIT: Schließt die Transaktion ab und speichert alle Änderungen dauerhaft in der Datenbank. Nach einem COMMIT kann die Transaktion nicht mehr rückgängig gemacht werden.\nROLLBACK: Macht alle Änderungen, die in der aktuellen Transaktion gemacht wurden, rückgängig, wenn eine Fehler auftritt oder wenn die Transaktion aus irgendeinem Grund nicht abgeschlossen werden kann.\n\n\n\nLernkarte AP2 2025 Nr. 113",
+    "crumbs": [
+      "07 Datenbanken, SQL"
+    ]
+  },
+  {
     "objectID": "07_Datenbanken.html#joins-abfrage-über-mehrere-tabellen",
     "href": "07_Datenbanken.html#joins-abfrage-über-mehrere-tabellen",
     "title": "Datenbanken",
@@ -1726,6 +1856,36 @@
     "title": "Datenbanken",
     "section": "INNER JOIN",
     "text": "INNER JOIN\n\nSELECT k.Name, b.Datum, b.Betrag\nFROM Kunde k\nINNER JOIN Bestellung b ON k.KundenID = b.KundenID\nWHERE b.Betrag &gt; 1000\nORDER BY b.Datum DESC;",
+    "crumbs": [
+      "07 Datenbanken, SQL"
+    ]
+  },
+  {
+    "objectID": "07_Datenbanken.html#db-design",
+    "href": "07_Datenbanken.html#db-design",
+    "title": "Datenbanken",
+    "section": "DB Design",
+    "text": "DB Design\n\nAnforderungsanalyse\n        |\n        v\n+----------------+     +------------------+\n| ER-Modell      |----&gt;| Relationales     |\n| (konzeptionell)|     | Modell (logisch) |\n+----------------+     +------------------+\n                              |\n            +---------+-------+\n            |                 |\n  +----------------+      +--------------+\n  | Normalisierung |      | SQL (DDL)    |\n  | 1NF-3NF        |      | CREATE TABLE |\n  +----------------+      +--------------+\n             |                |\n             v                v\n      Redundanzfreies     Physische\n      Datenmodell         Datenbank\n                              |\n                          +---+----------+\n                          |              |\n                     +---------+     +-----------+\n                     | DML     |     | DQL       |\n                     | INSERT  |     | SELECT    |\n                     | UPDATE  |     | JOIN      |\n                     | DELETE  |     | GROUP BY  |\n                     +---------+     +-----------+",
+    "crumbs": [
+      "07 Datenbanken, SQL"
+    ]
+  },
+  {
+    "objectID": "07_Datenbanken.html#db-stored-procedure",
+    "href": "07_Datenbanken.html#db-stored-procedure",
+    "title": "Datenbanken",
+    "section": "DB: Stored Procedure",
+    "text": "DB: Stored Procedure\n\nWas ist eine Stored Procedure und welche Vorteile bietet sie in der Datenbankentwicklung?\n\nStored Procedure = vorbereitete SQL-Anweisung, die auf der DB gespeichert ist\nKann parametrisiert werden und mehrere SQL-Anweisungen enthalten, die komplexe Operationen ausführen\n\nVorteile:\n\nLeistung: effizienter bei wiederholten und komplexen Anfragen, da sie einmal kompiliert und direkt auf dem Server ausgeführt werden\nWiederverwendbarkeit: Sie können in verschiedenen Anwendungen wiederverwendet werden\nSicherheit: Sie begrenzen den direkten Zugriff auf die Datenbank\nTransaktionskontrolle: Sie erlauben es, mehrere Operationen als eine einzige Transaktion zu behandeln\n\n\n\nLernkarte AP2 2025 Nr. 109",
+    "crumbs": [
+      "07 Datenbanken, SQL"
+    ]
+  },
+  {
+    "objectID": "07_Datenbanken.html#db-trigger",
+    "href": "07_Datenbanken.html#db-trigger",
+    "title": "Datenbanken",
+    "section": "DB: Trigger",
+    "text": "DB: Trigger\n\nWie funktionieren Trigger in Datenbank-Umgebungen und wie können sie zur automatischen Ausführung von Aktionen verwendet werden?\n\nTrigger = Art von Stored Procedure, die automatisch in Reaktion auf bestimmte Ereignisse in einer spezifischen Tabelle oder Ansicht in der Datenbank ausgeführt wird\nEreignisse können Einfügen, Aktualisieren oder Löschen von Daten sein\nEin Trigger wird immer mit einer Tabelle verknüpft\nTrigger aktiviert sich, wenn eine angegebene Datenmanipulations-Operation (DML) ausgeführt wird\n\n\n\nLernkarte AP2 2025 Nr. 110",
     "crumbs": [
       "07 Datenbanken, SQL"
     ]

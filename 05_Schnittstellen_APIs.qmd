@@ -415,11 +415,11 @@ Quelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/xml-fo
 :::
 
 
-## XML Ausblick
+## XML: XSD, XPath, XSLT
 
 :::: {.incremental style="font-size: 2rem"}
 
-- XSD: moderner Nachfolger von DTD
+- XSD: *XML Schema Definition*, moderner Nachfolger von <br> DTD - *Document Type Definition*
   + beschreibt und validiert XML-Dateien
   + kann im Gegensatz zu DTD Datentypen und Wertebereiche prüfen
   + Beispiel: Mit XSD kann man festlegen, dass `alter` eine Ganzzahl zwischen 0 und 150 sein muss
@@ -427,6 +427,49 @@ Quelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/xml-fo
 - XPath: findet Elemente in XML
 - XSLT: transformiert XML in andere Formate
 
+::::
+
+
+## XSD: Beispiel
+
+:::: {.columns style="font-size: 1.8rem"}
+::: {.column width="60%"}
+
+### XSD-Schema
+
+```text
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+ <xs:element name="note">
+  <xs:complexType>
+   <xs:sequence>
+    <xs:element name="to" type="xs:string"/>
+    <xs:element name="from" type="xs:string"/>
+    <xs:element name="heading" type="xs:string"/>
+    <xs:element name="body" type="xs:string"/>
+   </xs:sequence>
+  </xs:complexType>
+ </xs:element>
+</xs:schema>
+```
+
+:::
+
+::: {.column .fragment width="40%"}
+
+### Passendes XML
+
+```text
+<?xml version="1.0"?>
+<note>
+ <to>Max</to>
+ <from>Lisa</from>
+ <heading>Erinnerung</heading>
+ <body>Treffen um 10 Uhr</body>
+</note>
+```
+
+:::
 ::::
 
 

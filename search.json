@@ -1715,7 +1715,7 @@
     "href": "07_Datenbanken.html#beispiel-3nf",
     "title": "Datenbanken",
     "section": "Beispiel: 3NF",
-    "text": "Beispiel: 3NF\n\n\n\n\n\nBestellNr\nDatum\nKundenName\nKOrt\n\n\n\n\n1001\n2024-01-15\nMüller GmbH\nBerlin\n\n\n1001\n2024-01-15\nMüller GmbH\nBerlin\n\n\n\n\n\n\n\nBestellNr\nArtikel\nPreis\n\n\n\n\n1001\nServer\n5000\n\n\n1001\nSwitch\n500\n\n\n\n\n\nForderung: Keine transitiven Abhängigkeiten\n\nWo ist 3NF verletzt? KundenOrt hängt von KundenName ab (transitiv)\nLösung? Auslagerung in separate Tabelle\n\nKunde: KundenID, KundenName, KundenOrt\nBestellung: BestellNr, Datum, KundenID (FK)\nBestellPosition: BestellNr (FK), Artikel, Preis",
+    "text": "Beispiel: 3NF\n\n\n\n\n\nBestellNr\nDatum\nKundenName\nKOrt\n\n\n\n\n1001\n2024-01-15\nMüller GmbH\nBerlin\n\n\n\n\n\n\n\nBestellNr\nArtikel\nPreis\n\n\n\n\n1001\nServer\n5000\n\n\n1001\nSwitch\n500\n\n\n\n\n\nForderung: Keine transitiven Abhängigkeiten\n\nWo ist 3NF verletzt? KundenOrt hängt von KundenName ab (transitiv)\nLösung? Auslagerung in separate Tabelle\n\nKunde: KundenID, KundenName, KundenOrt\nBestellung: BestellNr, Datum, KundenID (FK)\nBestellPosition: BestellNr (FK), Artikel, Preis",
     "crumbs": [
       "07 Datenbanken, SQL"
     ]
@@ -1825,7 +1825,7 @@
     "href": "07_Datenbanken.html#sql-transaktion",
     "title": "Datenbanken",
     "section": "SQL: Transaktion",
-    "text": "SQL: Transaktion\n\nWas versteht man unter dem Begriff Transaktion im Kontext von SQL-Statements?\n\nTransaktion in SQL: Gruppe von miteinander verbundenen Anweisungen, die als eine einzelne Arbeitseinheit behandelt werden\nSie folgen dem ACID-Prinzip:\n\nAtomarität (Atomicity): Alles oder nichts. Alle Operationen der Transaktion werden erfolgreich ausgeführt oder gar keine.\nKonsistenz (Consistency): Die Transaktion bringt die Datenbank von einem konsistenten Zustand in einen anderen.\nIsolation: Jede Transaktion wird so behandelt, als ob sie isoiert von anderen läuft.\nDauerhaftigkeit (Durability): Nachdem eine Transaktion abgeschlossen ist, sind ihre Auswirkungen dauerhaft.\n\n\n\n\nLernkarten AP2 2025 Nr. 112",
+    "text": "SQL: Transaktion\n\nWas versteht man unter dem Begriff Transaktion im Kontext von SQL-Statements?\n\nTransaktion in SQL: Gruppe von miteinander verbundenen Anweisungen, die als eine einzelne Arbeitseinheit behandelt werden\nSie folgen dem ACID-Prinzip:\n\nAtomarität (Atomicity): Alles oder nichts. Alle Operationen der Transaktion werden erfolgreich ausgeführt oder gar keine.\nKonsistenz (Consistency): Die Transaktion bringt die Datenbank von einem konsistenten Zustand in einen anderen.\nIsolation: Jede Transaktion wird so behandelt, als ob sie isoliert von anderen läuft.\nDauerhaftigkeit (Durability): Nachdem eine Transaktion abgeschlossen ist, sind ihre Auswirkungen dauerhaft.\n\n\n\n\nLernkarten AP2 2025 Nr. 112",
     "crumbs": [
       "07 Datenbanken, SQL"
     ]

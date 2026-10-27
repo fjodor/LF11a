@@ -68,6 +68,8 @@ Lernkarte AP2 2025 Nr. 98
 | Beispiele | MySQL, PostgreSQL, MariaDB | MongoDB, Redis, Cassandra, Neo4j |
 | Einsatz | Strukturierte Daten, Transaktionen | Big Data, flexible Strukturen |
 
+NoSQL-Beispiele: <https://hedgedoc.c3d2.de/AE#Beispiele-NoSQL>
+
 :::
 
 

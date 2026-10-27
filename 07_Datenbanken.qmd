@@ -455,7 +455,6 @@ Lösung: [AbteilungsName in eigene Tabelle "Abteilung"]{.fragment}
 | BestellNr | Datum | KundenName | KOrt
 |---|---|---|---|
 | 1001 | 2024-01-15 | Müller GmbH | Berlin
-| 1001 | 2024-01-15 | Müller GmbH | Berlin
 
 :::
 
@@ -713,7 +712,7 @@ FROM max;
 - Sie folgen dem **ACID-Prinzip:**
   + **Atomarität (Atomicity):** Alles oder nichts. Alle Operationen der Transaktion werden erfolgreich ausgeführt oder gar keine.
   + **Konsistenz (Consistency):** Die Transaktion bringt die Datenbank von einem konsistenten Zustand in einen anderen.
-  + **Isolation:** Jede Transaktion wird so behandelt, als ob sie isoiert von anderen läuft.
+  + **Isolation:** Jede Transaktion wird so behandelt, als ob sie isoliert von anderen läuft.
   + **Dauerhaftigkeit (Durability):** Nachdem eine Transaktion abgeschlossen ist, sind ihre Auswirkungen dauerhaft.
 
 ::::

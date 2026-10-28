@@ -1371,6 +1371,16 @@
     ]
   },
   {
+    "objectID": "05_Schnittstellen_APIs.html#soap",
+    "href": "05_Schnittstellen_APIs.html#soap",
+    "title": "Schnittstellen",
+    "section": "SOAP",
+    "text": "SOAP\n\nWas ist SOAP (Simple Object Access Protocol) und wie wird es in der Webentwicklung eingesetzt?\n\nProtokoll für den Austausch strukturierter Informationen in der Implementierung von Webdiensten über das Internet\nXML-basiert\nKann mit jedem Programmiersprachencode verwendet werden, der XML generieren und analysieren kann\nUnabhängig vom Transportprotokoll: Nachrichten können über das gängigste HTTP-Protokoll, aber auch über SMTP, FTP und mehr übertragen werden\nWird in der Webentwicklung häuptsächlich für Webservice-Kommunikation und -interoperabilität verwendet\n\n\n\nLernkarte AP2 2025 Nr. 162",
+    "crumbs": [
+      "05 APIs, JSON, XML"
+    ]
+  },
+  {
     "objectID": "05_Schnittstellen_APIs.html#json-datentypen",
     "href": "05_Schnittstellen_APIs.html#json-datentypen",
     "title": "Schnittstellen",
@@ -1535,7 +1545,7 @@
     "href": "07_Datenbanken.html#relationale-vs.-nosql-datenbanken",
     "title": "Datenbanken",
     "section": "Relationale vs. NoSQL-Datenbanken",
-    "text": "Relationale vs. NoSQL-Datenbanken\n\n\n\n\n\n\n\n\n\nMerkmal\nRelational (SQL)\nNoSQL\n\n\n\n\nStruktur\nTabellen mit Spalten\nDokumente, Key-Value, Graphen\n\n\nSchema\nFestes Schema\nFlexibles / kein Schema\n\n\nSprache\nSQL\nAbhängig vom System\n\n\nKonsistenz\nACID (stark)\nBASE (eventual consistency)\n\n\nSkalierung\nVertikal (größerer Server)\nHorizontal (mehr Server)\n\n\nBeispiele\nMySQL, PostgreSQL, MariaDB\nMongoDB, Redis, Cassandra, Neo4j\n\n\nEinsatz\nStrukturierte Daten, Transaktionen\nBig Data, flexible Strukturen",
+    "text": "Relationale vs. NoSQL-Datenbanken\n\n\n\n\n\n\n\n\n\nMerkmal\nRelational (SQL)\nNoSQL\n\n\n\n\nStruktur\nTabellen mit Spalten\nDokumente, Key-Value, Graphen\n\n\nSchema\nFestes Schema\nFlexibles / kein Schema\n\n\nSprache\nSQL\nAbhängig vom System\n\n\nKonsistenz\nACID (stark)\nBASE (eventual consistency)\n\n\nSkalierung\nVertikal (größerer Server)\nHorizontal (mehr Server)\n\n\nBeispiele\nMySQL, PostgreSQL, MariaDB\nMongoDB, Redis, Cassandra, Neo4j\n\n\nEinsatz\nStrukturierte Daten, Transaktionen\nBig Data, flexible Strukturen\n\n\n\nNoSQL-Beispiele: https://hedgedoc.c3d2.de/AE#Beispiele-NoSQL",
     "crumbs": [
       "07 Datenbanken, SQL"
     ]
@@ -1716,6 +1726,16 @@
     "title": "Datenbanken",
     "section": "Beispiel: 3NF",
     "text": "Beispiel: 3NF\n\n\n\n\n\nBestellNr\nDatum\nKundenName\nKOrt\n\n\n\n\n1001\n2024-01-15\nMüller GmbH\nBerlin\n\n\n\n\n\n\n\nBestellNr\nArtikel\nPreis\n\n\n\n\n1001\nServer\n5000\n\n\n1001\nSwitch\n500\n\n\n\n\n\nForderung: Keine transitiven Abhängigkeiten\n\nWo ist 3NF verletzt? KundenOrt hängt von KundenName ab (transitiv)\nLösung? Auslagerung in separate Tabelle\n\nKunde: KundenID, KundenName, KundenOrt\nBestellung: BestellNr, Datum, KundenID (FK)\nBestellPosition: BestellNr (FK), Artikel, Preis",
+    "crumbs": [
+      "07 Datenbanken, SQL"
+    ]
+  },
+  {
+    "objectID": "07_Datenbanken.html#normalisierung-häufige-fehler",
+    "href": "07_Datenbanken.html#normalisierung-häufige-fehler",
+    "title": "Datenbanken",
+    "section": "Normalisierung: Häufige Fehler",
+    "text": "Normalisierung: Häufige Fehler\n\n\n\n\n\n\n\n\nFehler\nKorrektur\n\n\n\n\n2NF bei einfachem PK prüfen\n2NF ist nur bei zusammengesetztem PK relevant (bei einfachem PK ist 2NF automatisch erfüllt)\n\n\n3NF-Verstoß nicht erkannt\nImmer prüfen: Hängt ein Nichtschlüssel-Attribut von einem anderen Nichtschlüssel-Attribut ab?\n\n\nNormalformen nicht in Reihenfolge geprüft\nImmer erst 1NF, dann 2NF, dann 3NF prüfen\n\n\nZwischentabelle vergessen\nBei n:m-Beziehungen immer eine Zwischentabelle anlegen\n\n\nOrt direkt in Kundentabelle gelassen\nPLZ → Ort ist transitive Abhängigkeit → auslagern (3NF)",
     "crumbs": [
       "07 Datenbanken, SQL"
     ]

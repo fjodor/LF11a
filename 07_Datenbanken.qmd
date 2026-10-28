@@ -485,6 +485,21 @@ Lösung: [AbteilungsName in eigene Tabelle "Abteilung"]{.fragment}
 ::::
 
 
+## Normalisierung: Häufige Fehler
+
+:::: {style="font-size: 1.9rem"}
+
+| Fehler | Korrektur |
+|:-----|:-----------|
+| 2NF bei einfachem PK prüfen | 2NF ist nur bei zusammengesetztem PK relevant (bei einfachem PK ist 2NF automatisch erfüllt) |
+| 3NF-Verstoß nicht erkannt | Immer prüfen: Hängt ein Nichtschlüssel-Attribut von einem anderen Nichtschlüssel-Attribut ab? |
+| Normalformen nicht in Reihenfolge geprüft | Immer erst 1NF, dann 2NF, dann 3NF prüfen |
+| Zwischentabelle vergessen | Bei n:m-Beziehungen immer eine Zwischentabelle anlegen |
+| Ort direkt in Kundentabelle gelassen | PLZ → Ort ist transitive Abhängigkeit → auslagern (3NF) |
+
+::::
+
+
 ## Datenbanken: ACID
 
 :::: {style="font-size: 1.8rem"}

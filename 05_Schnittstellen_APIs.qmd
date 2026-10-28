@@ -137,6 +137,25 @@ Lernkarte AP2 2025 Nr. 26
 ::::
 
 
+## SOAP
+
+:::: {.incremental style="font-size: 1.9rem"}
+
+**Was ist SOAP *(Simple Object Access Protocol)* und wie wird es in der Webentwicklung eingesetzt?**
+
+- Protokoll für den **Austausch strukturierter Informationen** in der Implementierung von Webdiensten über das Internet
+- **XML-basiert**
+- Kann mit jedem Programmiersprachencode verwendet werden, der XML generieren und analysieren kann
+- **Unabhängig vom Transportprotokoll:** Nachrichten können über das gängigste **HTTP**-Protokoll, aber auch über **SMTP, FTP** und mehr übertragen werden
+- Wird in der Webentwicklung häuptsächlich für Webservice-Kommunikation und -interoperabilität verwendet
+
+::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 162
+:::
+
+
 ## JSON: Datentypen
 
 :::: {style="font-size: 2.1rem"}
@@ -471,6 +490,38 @@ Quelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/xml-fo
 
 :::
 ::::
+
+
+---
+
+### Strukturierte vs. semi- und unstrukturierte Daten
+
+:::: {.incremental style="font-size: 1.6rem"}
+
+**Welche Unterschied bestehen zwischen strukturierten, semi-strukturierten und unstrukturierten Daten?**
+
+#### Strukturierte Daten
+
+- Klar definierte, erwartete Struktur
+- Können leicht in relationalen Datenbanken gespeichert und abgefragt werden
+
+#### Semistrukturierte Daten
+
+- Fallen irgendwo zwischen strukturierte und unstruktierte Daten
+- Haben eine gewisse Struktur, die aber nicht so streng definiert ist
+- Können Metadaten oder Tags enthalten, die den Daten Kontext und Bedeutung verleihen, wie z. B. XML und JSON-Dateien
+
+#### Unstrukturierte Daten
+
+- Haben keine spezifische Struktur
+- Kommen in vielen verschiedenen Formaten vor
+- Beispiele: Bilder, Audio- und Videodateien und Webseiten
+
+::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 99
+:::
 
 
 ## <!-- -->

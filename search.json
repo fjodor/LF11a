@@ -51,6 +51,16 @@
     ]
   },
   {
+    "objectID": "06_Qualitätssicherung_Tests.html#staging-testing",
+    "href": "06_Qualitätssicherung_Tests.html#staging-testing",
+    "title": "Qualitätssicherung, Tests",
+    "section": "Staging-Testing",
+    "text": "Staging-Testing\n\nWas ist das Staging-Testing in Bezug auf Softwareentwicklung und -bereitstellung?\n\nAnwendungen werden in einer Staging-Umgebung getestet, bevor sie in der Produktionsumgebung bereitgestellt werden\nStaging-Umgebung: separate Umgebung, die der Produktionsumgebung ähnelt und oft als Zwischenschritt zwischen Entwicklung und Produktion fungiert\nZweck: Sicherstellen, dass die Software ordnungsgemäß funktioniert, bevor sie für die tatsächlichen Benutzer in der Produktionsumgebung verfügbar gemacht wird\nErmöglicht es, potenzielle Probleme oder Fehler zu identifizieren und zu beheben, bevor die Software in den Live-Betrieb geht\n\n\n\nLernkarte AP2 2025 Nr. 87",
+    "crumbs": [
+      "06 Software-Tests"
+    ]
+  },
+  {
     "objectID": "06_Qualitätssicherung_Tests.html#regressionstest",
     "href": "06_Qualitätssicherung_Tests.html#regressionstest",
     "title": "Qualitätssicherung, Tests",
@@ -146,6 +156,16 @@
     "title": "Qualitätssicherung, Tests",
     "section": "Äquivalenzklassen",
     "text": "Äquivalenzklassen\n\nWie können Äquivalenzklassen genutzt werden, um eine effiziente und repräsentative Auswahl von Testfällen für ein System oder eine Funktion zu definieren?\n\nÄquivalenzklassen dienen der repräsentativen Auswahl von Testfällen\nEingabedaten werden in Gruppen aufgeteilt, die ähnliche Verhaltensweisen oder Eigenschaften aufweisen\nBreite Abdeckung der verschiedenen Szenarien durch Auswahl eines Testfalls aus jeder Äquivalenzklasse\nSo muss man nicht alle möglichen Kombinationen von Eingabewerten testen\nIdee: Wenn ein Testfall aus einer Äquivalenzklasse erfolgreich besteht oder scheitert: die anderen Testfälle derselben Klassen würden wahrscheinlich ein ähnliches Ergebnis liefern\n\n\n\nLernkarte AP2 2025 Nr. 73",
+    "crumbs": [
+      "06 Software-Tests"
+    ]
+  },
+  {
+    "objectID": "06_Qualitätssicherung_Tests.html#penetrationstest",
+    "href": "06_Qualitätssicherung_Tests.html#penetrationstest",
+    "title": "Qualitätssicherung, Tests",
+    "section": "Penetrationstest",
+    "text": "Penetrationstest\n\nWas ist ein Penetrationstest und wie wird er durchgeführt?\n\nProaktiver Sicherheitstest\nWird durchgeführt, um Schwachstellen und Sicherheitslücken eines Systems, Netzwerks oder einer Anwendung zu identifizieren\nHauptziel: Sicherheit verbessern, indem potenzielle Angriffsszenarien simuliert und ausgewertet werden\nDurchführung: Mehrere Phasen\n\nInformationsbeschaffung\nAufdeckung von Schwachstellen\nAusnutzung von Schwachstellen\nErgebnisanalyse\nBerichterstattung\n\n\n\n\nLernkarte AP2 Nr. 173",
     "crumbs": [
       "06 Software-Tests"
     ]

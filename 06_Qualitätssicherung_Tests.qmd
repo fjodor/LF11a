@@ -74,6 +74,24 @@ Lernkarte AP2 2025 Nr. 90
 :::
 
 
+## Staging-Testing
+
+:::: {.incremental style="font-size: 2rem"}
+
+**Was ist das Staging-Testing in Bezug auf Softwareentwicklung und -bereitstellung?**
+
+- Anwendungen werden in einer **Staging-Umgebung** getestet, bevor sie in der Produktionsumgebung bereitgestellt werden
+- Staging-Umgebung: separate Umgebung, die der Produktionsumgebung ähnelt und oft als **Zwischenschritt** zwischen Entwicklung und Produktion fungiert
+- Zweck: Sicherstellen, dass die Software ordnungsgemäß funktioniert, bevor sie für die tatsächlichen Benutzer in der Produktionsumgebung verfügbar gemacht wird
+- Ermöglicht es, potenzielle Probleme oder Fehler zu identifizieren und zu beheben, bevor die Software in den Live-Betrieb geht
+
+::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 87
+:::
+
+
 ## Regressionstest
 
 :::: {.incremental style="font-size: 2rem"}
@@ -352,6 +370,29 @@ Lernkarte AP2 2025 Nr. 73
 
 ::: notes
 Lernkarte AP2 2025 Nr. 88
+:::
+
+
+## Penetrationstest
+
+:::: {.incremental style="font-size: 1.9rem"}
+
+**Was ist ein Penetrationstest und wie wird er durchgeführt?**
+
+- Proaktiver Sicherheitstest
+- Wird durchgeführt, um **Schwachstellen und Sicherheitslücken** eines Systems, Netzwerks oder einer Anwendung zu identifizieren
+- Hauptziel: Sicherheit verbessern, indem potenzielle Angriffsszenarien simuliert und ausgewertet werden
+- Durchführung: Mehrere Phasen
+  + Informationsbeschaffung
+  + Aufdeckung von Schwachstellen
+  + Ausnutzung von Schwachstellen
+  + Ergebnisanalyse
+  + Berichterstattung
+
+::::
+
+::: notes
+Lernkarte AP2 Nr. 173
 :::
 
 
